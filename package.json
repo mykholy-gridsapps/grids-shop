@@ -1,0 +1,31 @@
+{
+  "name": "grids-apps-shop",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.16",
+    "@mui/material": "^5.10.17",
+    "@reduxjs/toolkit": "^1.9.1",
+    "axios": "^1.2.1",
+    "eslint": "8.29.0",
+    "eslint-config-next": "13.0.6",
+    "i18next": "^22.0.8",
+    "next": "13.0.6",
+    "next-i18next": "^13.0.0",
+    "next-redux-wrapper": "^8.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "^12.1.0",
+    "react-redux": "^8.0.5",
+    "sass": "^1.56.1",
+    "universal-cookie": "^4.0.4"
+  }
+}
