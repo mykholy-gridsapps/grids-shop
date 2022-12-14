@@ -1,10 +1,14 @@
 @import "./mixins.scss";
 @import "./variables.scss";
-// @font-face {
-//   font-family: IBMPlexSansArabic;
-//   src: url("../../public/fonts/IBMPlexSansArabic-Regular.ttf");
-//   font-display: swap;
-// }
+
+@font-face {
+  font-family: "porto";
+  src: url("../public/font/porto.eot?64334846");
+  src: url("../public/font/porto.eot?64334846#iefix") format("embedded-opentype"), url("../public/font/porto.woff2?64334846") format("woff2"), url("../public/font/porto.woff?64334846") format("woff"), url("../public/font/porto.ttf?64334846") format("truetype"), url("../public/font/porto.svg?64334846#porto") format("svg");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap
+}
 
 /***************  { General Styles For Elements }   *****************/
 $mainColor: #ba2025;
@@ -129,13 +133,10 @@ h6 {
   font-size: $h6;
 }
 
-p {
-  line-height: 25px;
-  font-size: $p;
-}
 
 /****** Medium Screen ******/
 @include md {
+
   span,
   p {
     font-size: 15px;
@@ -143,6 +144,7 @@ p {
 }
 
 @include xs {
+
   span,
   p {
     font-size: 14px;
@@ -206,6 +208,7 @@ img {
 
 // QUICK VIEW MULTI CAROUSEL COMPONENT STYLES
 .thumbnails {
+
   // padding: 0 50px;
   .react-multiple-carousel__arrow--left {
     background-color: var(--secondary-background);
@@ -214,6 +217,7 @@ img {
     border-radius: 0;
     padding: 0;
     margin: 0;
+
     &::before {
       font-size: 15px;
       font-weight: bold;
@@ -232,6 +236,7 @@ img {
     border-radius: 0;
     padding: 0;
     width: 5px;
+
     &::before {
       font-size: 15px;
       font-weight: bold;
@@ -261,34 +266,41 @@ img {
   border-radius: 30px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+
   div {
     color: var(--text-color);
   }
+
   button {
     box-shadow: none;
     color: var(--text-color);
     border-radius: 5px;
     font-size: 1.1rem;
     color: var(--text-color);
+
     &.Mui-selected {
       background-color: var(--main-color);
       color: #fff;
       border: 1px solid var(--main-color);
+
       &:hover {
         background-color: var(--main-color);
         color: #fff;
         border: 1px solid var(--main-color);
       }
     }
+
     &:hover {
       background-color: var(--main-color);
       color: #fff;
       border: 1px solid var(--main-color);
     }
   }
+
   @include xs {
     transform: scale(0.9);
     padding: 10px 0;
+
     button {
       font-size: 0.8rem;
       margin: 0 !important;
@@ -311,6 +323,7 @@ button.swal2-confirm {
   font-size: 15px;
   margin: 0 5px;
   cursor: pointer;
+
   &:hover {
     background-color: #fff;
     color: var(--main-color);
@@ -331,6 +344,7 @@ button.swal2-cancel {
   font-weight: 500;
   cursor: pointer;
   color: var(--main-color);
+
   &:hover {
     background-color: #fff;
     color: var(--main-color);
@@ -343,9 +357,11 @@ button.swal2-cancel {
     .swal2-icon {
       transform: scale(0.9);
     }
+
     h2 {
       font-size: 24px;
     }
+
     div {
       font-size: 18px;
     }
@@ -357,9 +373,11 @@ button.swal2-cancel {
     .swal2-icon {
       transform: scale(0.8);
     }
+
     h2 {
       font-size: 20px;
     }
+
     div {
       font-size: 17px;
     }
@@ -373,10 +391,12 @@ button.swal2-cancel {
 // MUI5 DATE PICKER GLOBAL STYLES
 .MuiCalendarPicker-root {
   background-color: var(--secondary-background);
+
   button {
     background-color: var(--default-background);
     color: var(--text-color);
   }
+
   span {
     color: var(--text-color);
   }
@@ -408,22 +428,26 @@ button.swal2-cancel {
   align-items: center;
   min-height: 250px;
   height: 80%;
+
   img {
     width: 150px;
     height: 150px;
     opacity: 0.7;
     margin-bottom: 10px;
   }
+
   h6 {
     color: var(--text-color);
     opacity: 0.9;
     font-size: 1.2rem;
   }
+
   @include sm {
     img {
       width: 80px;
       height: 80px;
     }
+
     p {
       font-size: 0.9rem;
     }
@@ -438,22 +462,26 @@ button.swal2-cancel {
   align-items: center;
   min-height: 250px;
   height: 80%;
+
   img {
     width: 100px;
     height: 100px;
     opacity: 0.7;
     margin-bottom: 10px;
   }
+
   h6 {
     color: var(--text-color);
     opacity: 0.9;
     font-size: 1rem;
   }
+
   @include sm {
     img {
       width: 80px;
       height: 80px;
     }
+
     p {
       font-size: 0.9rem;
     }
@@ -468,37 +496,47 @@ button.swal2-cancel {
         h5 {
           animation: showLabel 1s ease-in-out;
         }
+
         h1 {
           animation: showTitle 1s ease-in-out;
         }
+
         p {
           animation: showTitle 1s ease-in-out;
         }
+
         button {
           animation: showButton 1s ease-in-out;
         }
+
         img {
           animation: showImage 1s ease-in-out;
         }
+
         .aboutOffer {
           animation: showDiv 1s ease-in-out;
+
           p {
             animation: showDiv 1s ease-in-out;
           }
+
           h5 {
             animation: unset;
           }
         }
       }
     }
+
     .control-dots {
       transform: translateY(-0px);
+
       li {
         width: 10px;
         height: 10px;
         background: #fff;
         opacity: 1;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1) !important;
+
         &.selected {
           background-color: var(--main-color);
           width: 30px;
@@ -508,28 +546,36 @@ button.swal2-cancel {
     }
   }
 }
+
 .header__slider {
   .slide {
     h5 {
       animation: showLabel 1s ease-in-out;
     }
+
     h1 {
       animation: showTitle 1s ease-in-out;
     }
+
     p {
       animation: showTitle 1s ease-in-out;
     }
+
     button {
       animation: showButton 1s ease-in-out;
     }
+
     img {
       animation: showImage 1s ease-in-out;
     }
+
     .aboutOffer {
       animation: showDiv 1s ease-in-out;
+
       p {
         animation: showDiv 1s ease-in-out;
       }
+
       h5 {
         animation: unset;
       }
@@ -542,46 +588,55 @@ button.swal2-cancel {
     transform: translateY(-100px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0px);
     opacity: 1;
   }
 }
+
 @keyframes showTitle {
   0% {
     transform: translateX(-300px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0px);
     opacity: 1;
   }
 }
+
 @keyframes showButton {
   0% {
     transform: translateY(100px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0px);
     opacity: 1;
   }
 }
+
 @keyframes showImage {
   0% {
     transform: scale(0.2);
     opacity: 0;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
   }
 }
+
 @keyframes showDiv {
   0% {
     transform: translateX(300px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0px);
     opacity: 1;
@@ -596,25 +651,32 @@ button.swal2-cancel {
   background-color: var(--default-background);
   color: var(--main-color) !important;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+
   &:after {
     font-size: 1rem !important;
     font-weight: 600;
   }
+
   &.swiper-button-prev {
     transform: translateX(-6px);
   }
+
   &.swiper-button-next {
     transform: translateX(6px);
   }
+
   &:hover {
     background-color: var(--main-color);
+
     &:after {
       color: #fff;
     }
   }
+
   @include xs {
     width: 35px;
     height: 35px;
+
     &:after {
       font-size: 0.8rem;
     }
@@ -625,6 +687,7 @@ button.swal2-cancel {
   display: flex;
   align-items: center;
   gap: 5px;
+
   input {
     width: 70px;
     height: 40px;
@@ -637,6 +700,7 @@ button.swal2-cancel {
     font-weight: 600;
     padding: 0 0 0 10px;
     text-align: center !important;
+
     &.ar {
       padding: 0 17px 0 0px;
     }
@@ -659,6 +723,7 @@ button.swal2-cancel {
   position: relative;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 5px;
+
   span {
     position: absolute;
     width: 20%;
@@ -669,10 +734,15 @@ button.swal2-cancel {
     left: 0;
     border-radius: 5px;
   }
+
   &.ar {
     span {
       left: unset;
       right: 0;
     }
   }
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }

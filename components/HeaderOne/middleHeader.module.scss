@@ -1,0 +1,370 @@
+@import '../../styles/extends.scss';
+
+.headerMiddle {
+    padding: 27px 0;
+
+    .headerLeft,
+    .headerRight {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .headerRight {
+        padding-right: 26px;
+        padding-left: 5px;
+        margin-left: auto;
+    }
+
+    .mobileMenuToggler {
+        border: 0;
+        background: transparent;
+        color: var(--text-dark);
+        padding: 1rem 0.5rem;
+        margin-right: 0.5rem;
+        font-size: 20px;
+        line-height: 0;
+        cursor: pointer;
+    }
+
+    .headerSearch {
+        position: relative;
+        width: 100%;
+
+        &.headerIcon {
+            &.headerSearchInline {
+                margin-right: 16px;
+                margin-left: 2px;
+
+                .formControl {
+                    min-width: 210px;
+                    padding: 10px 20px;
+                    border-radius: 50px 0 0 50px;
+                    background: #f7f7f7;
+                    margin: 0;
+                    border: 0;
+                    color: inherit !important;
+                    font-size: 13px;
+                    height: 100%;
+                    box-shadow: none;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    display: block;
+                    width: 100%;
+
+                    &:focus-visible {
+                        border: none;
+                        box-shadow: none;
+                        outline: none;
+                    }
+
+                    &::placeholder {
+                        color: #a8a8a8;
+                        opacity: 1;
+                    }
+                }
+
+                .headerSearchWrapper {
+                    display: flex;
+                    display: -ms-flex;
+                    position: static;
+                    margin: 0;
+                    border-width: 0;
+                    color: #8d8d8d !important;
+                    box-sizing: content-box;
+                    height: 40px;
+                    border-radius: 50px;
+
+                    @include md {
+                        &:not(.show) {
+                            display: none !important;
+                        }
+
+                        &.show {
+                            display: flex;
+                            display: -ms-flexbox;
+                            position: absolute;
+                            right: -23px;
+                            z-index: 999;
+                            margin-top: 10px;
+                            color: #8d8d8d;
+                            box-sizing: content-box;
+                            height: 40px;
+                            border-radius: 50px;
+                            border: 5px solid #08c;
+                        }
+
+                    }
+                    @include xs {
+                        
+                    }
+
+                    .selectCustom {
+                        margin: 0;
+                        width: 129px;
+                        flex: 0 0 129px;
+                        background: #f7f7f7;
+                        position: relative;
+
+                        select {
+                            width: 100%;
+                            border: none;
+                            border-left: 1px solid #e7e7e7;
+                            padding-left: 10px;
+                            padding-right: 15px;
+                            line-height: 36px;
+                            letter-spacing: 0.005px;
+                            -moz-appearance: none;
+                            -webkit-appearance: none;
+                            margin: 0;
+                            color: #a8a8a8 !important;
+                            font-size: 13px;
+                            height: 100%;
+                            box-shadow: none;
+                            background: transparent;
+                            position: relative;
+                            z-index: 1;
+                        }
+
+                        &::after {
+                            display: inline-block;
+                            position: absolute;
+                            top: 50%;
+                            right: 19px;
+                            transform: translateY(-50%);
+                            font-family: "Font Awesome 6 Pro";
+                            font-size: 14px;
+                            content: "\f107";
+                            padding-bottom: 2px;
+                            font-weight: 400;
+                            color: #a8a8a8 !important;
+                        }
+                    }
+
+                    .btn {
+                        position: relative;
+                        padding: 0 0 3px 0;
+                        border: 0;
+                        border-left: 1px solid #e7e7e7;
+                        min-width: 48px;
+                        color: #a8a8a8;
+                        font-size: 16px;
+                        background: #f7f7f7;
+                        border-radius: 0 50px 50px 0;
+                        text-align: center !important;
+
+                        ::before {
+                            content: "";
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .searchToggle {
+                    i {
+                        &::before {
+                            content: "";
+                        }
+                    }
+
+                    display: none;
+
+                    @include md {
+                        display: block;
+
+                        &.show {
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                right: calc(50% - 10px);
+                                bottom: -10px;
+                                border: 10px solid transparent;
+                                border-bottom-color: transparent;
+                                border-bottom-color: #08c;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .headerContact {
+        display: flex !important;
+        align-items: center;
+        text-transform: uppercase;
+        margin-right: 10px;
+        padding-right: 30px;
+        margin-left: 30px;
+
+        @include md {
+            display: none !important;
+        }
+
+        @include lg {
+            margin-right: 30px;
+            padding-right: 0px;
+
+
+        }
+
+        .iconPhone {
+            margin-right: 11px;
+            font-size: 29px;
+
+            &::before {
+                content: "";
+                font-family: "porto";
+                font-style: normal;
+                font-weight: normal;
+                speak: none;
+                display: inline-block;
+                text-decoration: inherit;
+                width: 1em;
+                text-align: center;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+
+            }
+        }
+
+        h6 {
+            margin: 0;
+            font-size: 11px;
+            color: var(--text-color) !important;
+            padding-top: 2.5px;
+            line-height: 1 !important;
+            font-weight: 600;
+
+            a {
+                display: block;
+                font-size: 18px;
+                font-weight: 700;
+                white-space: nowrap;
+                color: var(--text-dark) !important;
+            }
+        }
+    }
+
+    .headerIcon {
+        i {
+            font-size: 27px;
+            font-family: "porto";
+            font-style: normal;
+            font-weight: normal;
+            speak: none;
+            display: inline-block;
+            text-decoration: inherit;
+            width: 1em;
+            text-align: center;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        &.headerIconUser {
+            margin-right: 25px;
+            margin-left: -1px;
+
+            i {
+                &::before {
+                    content: "";
+
+                }
+            }
+        }
+
+        &.iconWishlist {
+            margin-right: 24px;
+
+            i {
+                &::before {
+                    content: "";
+                }
+
+            }
+        }
+    }
+
+    .cartDropdown {
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative;
+
+        .cartToggle {
+            .minicartIcon {
+                font-size: 28px;
+                display: inline-block;
+                vertical-align: middle;
+                width: 25px;
+                height: 20px;
+                border: 2px solid var(--text-dark);
+                border-radius: 0 0 5px 5px;
+                position: relative;
+                opacity: 0.9;
+                margin: 6px 3px 0;
+                z-index: 1;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    border: 2px solid;
+                    border-color: inherit;
+                    border-bottom: none;
+                    border-radius: 10px 10px 0 0;
+                    left: 50%;
+                    top: -8px;
+                    margin-left: -7px;
+                    width: 15px;
+                    height: 11px;
+                }
+
+            }
+
+            .badgeCircle {
+                top: -5px;
+                left: 23px;
+                z-index: 1;
+                position: absolute;
+                right: 0;
+                width: 16px;
+                border-radius: 50%;
+                color: #fff !important;
+                background: #ff5b5b;
+                font-weight: 600;
+                font-size: 11px;
+                line-height: 16px;
+                font-family: "Open Sans", sans-serif;
+                text-align: center !important;
+            }
+
+            &::after {
+                position: absolute;
+                right: -28px;
+                font-size: 17px;
+                top: 6px;
+                content: "";
+                border: 0;
+                margin: -5px 2px 0 11px;
+                font-family: porto;
+                width: auto;
+                height: auto;
+            }
+        }
+
+    }
+
+}
+
+.textDark {
+    * {
+        color: var(--text-dark) !important;
+    }
+}

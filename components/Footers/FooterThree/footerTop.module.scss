@@ -1,0 +1,150 @@
+@import '../../../styles/mixins.scss';
+
+.footerTop {
+    border-top: 1px solid #e7e7e7;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    display: flex !important;
+
+    .footerLeft {
+        align-items: center !important;
+        display: flex !important;
+
+        @include md {
+            display: flex !important;
+        }
+
+        .widgetNewsletterInfo {
+            margin-right: 48px;
+
+            .widgetNewsletterTitle {
+                letter-spacing: 0.075em;
+                font-size: 14px;
+                padding-bottom: 1px;
+                margin-bottom: 4px !important;
+                text-transform: uppercase !important;
+                line-height: 1.429;
+                color: #222529;
+                font-weight: 700;
+            }
+
+            .widgetNewsletterContent {
+                line-height: 20px;
+                letter-spacing: 0;
+                color: #777777;
+                margin-bottom: 0 !important;
+            }
+        }
+
+        form {
+            margin: 0;
+
+            .footerSubmitWrapper {
+                display: flex !important;
+
+                .formControl {
+                    padding: 16.2px 12px 13.8px;
+                    width: 100%;
+                    height: auto;
+                    margin: 0;
+                    border: none;
+                    color: #777;
+                    background-color: #f4f4f4;
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 12px;
+                    outline: none;
+
+                    &::placeholder {
+                        color: #999;
+                    }
+                }
+
+                .btn {
+                    transition: all 0.3s;
+                    text-transform: uppercase;
+                    border-radius: 0;
+                    font-weight: 700;
+                    line-height: 1.429;
+                    padding: 7.7px 13.5px 6.6px;
+                    border-color: #222529;
+                    background-color: #222529;
+                    color: #fff;
+                    box-shadow: none;
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+
+    .footerRight {
+        .socialIcons {
+            margin-right: 2px;
+
+            .socialIcon {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                text-decoration: none;
+                opacity: 1;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+                line-height: 40px;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                &::before {
+                    font-family: "porto";
+                    font-style: normal;
+                    font-weight: normal;
+                    speak: none;
+                    display: inline-block;
+                    text-decoration: inherit;
+                    width: 1em;
+                    text-align: center;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+
+                &:not(:hover):not(:active):not(:focus) {
+                    color: #525252;
+                    background: transparent;
+                }
+
+                &.socialFacebook {
+                    background-color: #3b5a9a;
+
+                    &::before {
+                        content: "";
+                    }
+                }
+
+                &.socialTwitter {
+                    background-color: #1aa9e1;
+
+                    &::before {
+                        content: "";
+                    }
+                }
+
+                &.socialInstagram {
+                    background-color: #7c4a3a;
+
+                    &::before {
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
+}

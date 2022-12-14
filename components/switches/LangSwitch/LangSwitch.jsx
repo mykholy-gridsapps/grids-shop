@@ -37,19 +37,21 @@ const LangSwitch = () => {
       img: "/imgs/navbar/america.png",
       method: switchLang,
       param: "en",
+      text: "eng"
     },
     {
       option: `${t("arabic")}`,
       img: "/imgs/navbar/suadi.png",
       method: switchLang,
       param: "ar",
+      text: "عربي"
     },
   ];
 
   if (!hasMounted) return null;
 
   return (
-    <div className={cls.lang}>
+    <div className={cls.headerDropdown}>
       <DropDown menu={menu} side={true} />
     </div>
   );

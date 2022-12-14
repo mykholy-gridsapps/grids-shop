@@ -29,8 +29,14 @@ function MyApp({ Component, ...rest }) {
     if (!cookie.get("grids-apps-shop-mode")) {
       cookie.set("grids-apps-shop-mode", "light", { path: "/" });
     }
-    if (!cookie.get("grrids-apps-shop-lang")) {
-      cookie.set("grrids-apps-shop-lang", "en", { path: "/" });
+    if (!cookie.get("grids-apps-shop-lang")) {
+      cookie.set("grids-apps-shop-lang", "en", { path: "/" });
+    }
+    if (!cookie.get("grids-apps-shop-currency")) {
+      cookie.set("grids-apps-shop-currency", "usd", { path: "/" });
+    }
+    if (!cookie.get("grids-apps-shop-theme")) {
+      cookie.set("grids-apps-shop-theme", "portoTen", { path: "/" });
     }
     // SHOW AND HIDE LOADING BETWEEN PAGES
     Router.events.on("routeChangeStart", () => {

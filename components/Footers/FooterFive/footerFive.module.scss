@@ -1,0 +1,12 @@
+.footer {
+  font-size: 13px;
+  color: #a8a8a8;
+  line-height: 24px;
+
+  a {
+    color: #a8a8a8;
+    &:hover {
+      color: var(--text-color);
+    }
+  }
+}

@@ -29,7 +29,7 @@ const DropDown = ({ menu }) => {
   const handleClose = () => {
     setOpenMenu(false);
   };
-
+  
   return (
     <div className={cls.dropdown}>
       {openMenu && <div className={cls.overlay} onClick={handleClose}></div>}
@@ -40,7 +40,9 @@ const DropDown = ({ menu }) => {
         onClick={handleClick}
       />
 
-      <i className="fa-solid fa-caret-down" onClick={handleClick}></i>
+      <span onClick={handleClick}>{menu.find((item) => item.param === lang).text}</span>
+      
+      <i className="fa-solid fa-angle-down" onClick={handleClick}></i>
 
       <Box
         className={`${cls.dropdownMenu} ${openMenu ? cls.show : ""} ${

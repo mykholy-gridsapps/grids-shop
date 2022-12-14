@@ -243,14 +243,15 @@
       p {
         margin: 0;
         padding: 0 !important;
-        font-size: 0.9rem;
+        font-size: inherit;
       }
       img {
         border-radius: 0;
-        width: 20px;
-        height: 15px;
+        width: 16px;
+        height: 11px;
         left: 0 !important;
         right: 0 !important;
+        margin: 0 1px;
       }
       &:hover {
         background-color: rgba(0, 0, 0, 0.1);

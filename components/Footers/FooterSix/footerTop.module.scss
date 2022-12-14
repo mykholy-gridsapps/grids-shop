@@ -1,0 +1,126 @@
+@import '../../../styles/mixins.scss';
+
+.footerTop {
+    padding-top: 85px;
+
+    .widget {
+        margin-bottom: 10px;
+
+        .widgetTitle {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0 0 10px;
+            line-height: 1.4;
+        }
+
+        form {
+            margin-bottom: 0;
+            padding-bottom: 5px !important;
+            width: 100% !important;
+            display: flex !important;
+
+            input {
+                max-width: 677px;
+                padding: 1px 0 0 2.5rem;
+                border-width: 0;
+                border-radius: 32px 0 0 32px;
+                height: 48px;
+                max-height: 48px;
+                transition: all 0.3s;
+                background-color: #fff;
+                color: #777;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1.5;
+                margin-bottom: 0 !important;
+                display: block;
+                width: 100%;
+                background-clip: padding-box;
+            }
+
+            button {
+                cursor: pointer;
+                padding: 0 24px 2px 23px;
+                border-radius: 0 30px 30px 0;
+                max-height: 48px;
+                border-color: var(--main-color);
+                background-color: var(--main-color);
+                color: #fff;
+                box-shadow: none;
+                border: none;
+                font-size: 14px;
+            }
+        }
+
+        .socialIcons {
+            padding-bottom: .25rem !important;
+
+            .socialIcon {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                border-radius: 50%;
+                border: 1px solid #313438;
+                color: #fff;
+                font-size: 14px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                text-decoration: none;
+                opacity: 1;
+                margin-right: 5px;
+
+                &:hover {
+                    color: #fff;
+                }
+
+                &::before {
+                    font-family: "porto";
+                    font-style: normal;
+                    font-weight: normal;
+                    speak: none;
+                    display: inline-block;
+                    text-decoration: inherit;
+                    width: 1em;
+                    text-align: center;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+
+                &:not(:hover):not(:active):not(:focus) {
+                    background: transparent;
+                }
+
+                &.socialFacebook {
+                    background-color: #3b5a9a;
+
+                    &::before {
+                        content: "";
+                    }
+                }
+
+                &.socialTwitter {
+                    background-color: #1aa9e1;
+
+                    &::before {
+                        content: "";
+                    }
+                }
+
+                &.socialInstagram {
+                    background-color: #7c4a3a;
+
+                    &::before {
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
+}
