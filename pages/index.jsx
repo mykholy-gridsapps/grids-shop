@@ -12,14 +12,56 @@ import { useTranslation } from "next-i18next";
 import { wrapper } from "../store/store";
 // MATERIAL STUFF
 import Container from "@mui/material/Container";
+import { Grid } from "@mui/material";
+import ProductOne from "../components/ProductCard/ProductOne/ProductOne";
+import ProductTwo from "../components/ProductCard/ProductTwo/ProductTwo";
+import ProductThree from "../components/ProductCard/ProductThree/ProductThree";
+import ProductFour from "../components/ProductCard/ProductFour/ProductFour";
+import ProductFive from "../components/ProductCard/ProductFive/ProductFive";
+import ProductSix from "../components/ProductCard/ProductSix/ProductSix";
+import ProductSeven from "../components/ProductCard/ProductSeven/ProductSeven";
+import ProductEight from "../components/ProductCard/ProductEight/ProductEight";
 
 const Home = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
     <div>
-      <Container>
-        <h1>{t("welcome")}</h1>
+      <Container >
+        <Grid container spacing={2}>
+          <Grid item lg={3} md={4}>
+            <ProductOne />
+          </Grid>
+          
+          <Grid item lg={3} md={4}>
+            <ProductTwo />
+          </Grid>
+
+          <Grid item lg={3} md={4}>
+            <ProductThree />
+          </Grid>
+
+          <Grid item lg={3} md={4}>
+            <ProductFour />
+          </Grid>
+          
+          <Grid item lg={3} md={4}>
+            <ProductFive />
+          </Grid>
+          
+          <Grid item lg={3} md={4}>
+            <ProductSix />
+          </Grid>
+
+          <Grid item lg={3} md={4}>
+            <ProductSeven />
+          </Grid>
+
+          <Grid item lg={4} md={4}>
+            <ProductEight />
+          </Grid>
+          
+        </Grid>
       </Container>
     </div>
   );

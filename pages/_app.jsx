@@ -36,7 +36,7 @@ function MyApp({ Component, ...rest }) {
       cookie.set("grids-apps-shop-currency", "usd", { path: "/" });
     }
     if (!cookie.get("grids-apps-shop-theme")) {
-      cookie.set("grids-apps-shop-theme", "portoTen", { path: "/" });
+      cookie.set("grids-apps-shop-theme", "portoOne", { path: "/" });
     }
     // SHOW AND HIDE LOADING BETWEEN PAGES
     Router.events.on("routeChangeStart", () => {
