@@ -21,46 +21,48 @@ import ProductFive from "../components/ProductCard/ProductFive/ProductFive";
 import ProductSix from "../components/ProductCard/ProductSix/ProductSix";
 import ProductSeven from "../components/ProductCard/ProductSeven/ProductSeven";
 import ProductEight from "../components/ProductCard/ProductEight/ProductEight";
+import FeaturesOne from "../components/Features/FeaturesOne/FeaturesOne";
+import FeaturesTwo from "../components/Features/FeaturesTwo/FeaturesTwo";
+import FeaturesThree from "../components/Features/FeaturesThree/FeaturesThree";
+import FeaturesFour from "../components/Features/FeaturesFour/FeaturesFour";
+import FeaturesFive from "../components/Features/FeaturesFive/FeaturesFive";
+import FeaturesSix from "../components/Features/FeaturesSix/FeaturesSix";
+import FeaturesSeven from "../components/Features/FeaturesSeven/FeaturesSeven";
+import FeaturesEight from "../components/Features/FeaturesEight/FeaturesEight";
 
 const Home = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
     <div>
-      <Container >
-        <Grid container spacing={2}>
-          <Grid item lg={3} md={4}>
-            <ProductOne />
+      <Container maxWidth='xl'>
+        <Grid container>
+          <Grid item lg={12}>
+            <FeaturesOne />
           </Grid>
-          
-          <Grid item lg={3} md={4}>
-            <ProductTwo />
+          <Grid item lg={12}>
+            <FeaturesTwo />
           </Grid>
-
-          <Grid item lg={3} md={4}>
-            <ProductThree />
+        </Grid>
+      </Container>
+      <FeaturesThree />
+      <Container maxWidth='xl'>
+        <Grid container>
+          <Grid item lg={12}>
+            <FeaturesFour />
           </Grid>
-
-          <Grid item lg={3} md={4}>
-            <ProductFour />
+          <Grid item lg={12}>
+            <FeaturesFive />
           </Grid>
-          
-          <Grid item lg={3} md={4}>
-            <ProductFive />
+          <Grid item lg={12}>
+            <FeaturesSix />
           </Grid>
-          
-          <Grid item lg={3} md={4}>
-            <ProductSix />
+          <Grid item lg={3}>
+            <FeaturesSeven />
           </Grid>
-
-          <Grid item lg={3} md={4}>
-            <ProductSeven />
+          <Grid item lg={12}>
+            <FeaturesEight />
           </Grid>
-
-          <Grid item lg={4} md={4}>
-            <ProductEight />
-          </Grid>
-          
         </Grid>
       </Container>
     </div>

@@ -1,0 +1,93 @@
+.featureBoxesContainer {
+    padding-top: 3px;
+
+    .featureBox {
+        color: var(--text-color);
+        font-size: 15px;
+        line-height: 2;
+        margin-bottom: 40px;
+        text-align: center !important;
+
+        i {
+            margin-bottom: 16px;
+            width: 84px;
+            height: 84px;
+            border: 2px solid var(--main-color);
+            color: var(--main-color);
+            border-radius: 50%;
+            font-size: 35px;
+            line-height: 80px;
+            display: inline-block;
+            text-align: center !important;
+
+            &::before {
+                font-family: "porto";
+                font-style: normal;
+                font-weight: normal;
+                speak: none;
+                display: inline-block;
+                text-decoration: inherit;
+                width: 1em;
+                text-align: center;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            &.iconEarphonesAlt {
+
+                &::before {
+                    content: "";
+                }
+            }
+
+            &.iconCreditCard {
+
+                &::before {
+                    content: "";
+                }
+            }
+
+            &.iconActionUndo {
+                &::before {
+                    content: "";
+
+                }
+            }
+        }
+
+        .featureBoxContent {
+            color: var(--text-dark);
+            font-size: 15px;
+            line-height: 1.9;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            h3 {
+                margin-bottom: 2.5px;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 1.1;
+                letter-spacing: 0;
+                text-align: center !important;
+            }
+
+            h5 {
+                color: #555;
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 10px;
+                padding-bottom: 2.5px;
+                text-align: center !important;
+            }
+            
+            p {
+                font-size: 13px;
+                text-align: center !important;
+            }
+        }
+    }
+}

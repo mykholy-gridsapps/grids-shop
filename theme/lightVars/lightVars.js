@@ -126,9 +126,9 @@ if (cookie.get("grids-apps-shop-theme") === 'portoOne') {
 
     document.querySelector(":root").style.setProperty("--background-light", "#FAFAFA");
 
-    document.querySelector(":root").style.setProperty("--hover-color", "#08C");
+    document.querySelector(":root").style.setProperty("--hover-color", "#000");
 
-    document.querySelector(":root").style.setProperty("--main-color", "#08c");
+    document.querySelector(":root").style.setProperty("--main-color", "#000");
 
     document.querySelector(":root").style.setProperty("--error-alert", "#ee6a6a");
 
