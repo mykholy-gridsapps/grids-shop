@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+$sliderOneColor1: #777;
+$sliderOneColor2: #222529;
+$sliderOneColor3: #4dae65;
+$sliderOneColor4: #fff;
+$sliderTwoColor1: #777;
+$sliderTwoColor2: #222529;
+$sliderTwoColor3: #ee8379;
+$sliderTwoColor4: #fff;
+
+
+.slider {
+    img {
+        object-fit: cover;
+        max-width: 100%;
+        object-position: center top;
+        min-height: 360px;
+    }
+
+    .slide1 {
+        position: relative;
+
+        .bannerLayer {
+            position: absolute;
+            left: 20.7%;
+            right: auto;
+            top: 50%;
+            transform: translateY(-50%);
+
+            h4 {
+                font-size: 19px;
+                font-weight: 400;
+                letter-spacing: 1.87px;
+                line-height: normal;
+                margin-bottom: 8px;
+                margin-top: 0px;
+                opacity: 1;
+                text-align: left !important;
+                color: $sliderOneColor1;
+            }
+
+            h2 {
+                font-size: 52px;
+                font-weight: 700;
+                letter-spacing: 2.6px;
+                line-height: 52px;
+                margin-bottom: 13px;
+                margin-left: -3.2px;
+                margin-right: 8px;
+                margin-top: 0px;
+                opacity: 1;
+                padding-right: 48px;
+                text-align: left !important;
+                color: $sliderOneColor2;
+            }
+
+            .positionRelative {
+                position: relative;
+
+                h3 {
+                    font-size: 40px;
+                    font-weight: 500;
+                    letter-spacing: 4.8px;
+                    line-height: 40px;
+                    margin-bottom: 40px;
+                    margin-top: 0px;
+                    text-align: left !important;
+                    color: $sliderOneColor2;
+                }
+
+                h5 {
+                    font-size: 40px;
+                    font-weight: 400;
+                    line-height: 40px;
+                    margin-bottom: 14px;
+                    margin-top: 0px;
+                    position: absolute;
+                    right: 18px;
+                    top: 0;
+                    text-align: left !important;
+                    transform: rotate(-30deg);
+                    color: $sliderOneColor3;
+                    font-family: "Segoe Script"
+                }
+            }
+
+            p {
+                font-size: 21px;
+                font-weight: 300;
+                letter-spacing: 4.1px;
+                line-height: normal;
+                margin-bottom: 5px;
+                margin-top: 0px;
+                opacity: 1;
+                text-align: right !important;
+                text-transform: uppercase;
+                color: $sliderOneColor1;
+            }
+
+            h6 {
+                font-size: 72px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                line-height: 108px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                text-align: right !important;
+                text-transform: uppercase;
+
+                sup {
+                    font-size: 33%;
+                    font-weight: 700;
+                    color: $sliderOneColor2;
+                    top: -32px;
+                    margin-right: 16px;
+                    letter-spacing: -0.03em;
+                }
+
+                strong {
+                    color: $sliderOneColor4;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 9px;
+                        left: -7px;
+                        right: 0;
+                        bottom: 11px;
+                        width: 170px;
+                        background-color: $sliderOneColor2;
+                        z-index: -1;
+                        transform: rotate(-2deg);
+                    }
+                }
+            }
+
+
+            .btn {
+                display: inline-flex;
+                color: $sliderOneColor2;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 22px;
+                font-weight: 400;
+                letter-spacing: 0.219996px;
+                line-height: 31.4333px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-top: 0px;
+                text-align: center;
+                vertical-align: middle;
+                white-space: nowrap;
+
+                span {
+                    margin-right: 8px;
+                    display: inline-block;
+                    border-bottom: 1px solid;
+                    line-height: 1.4;
+                }
+
+                i {
+                    font-size: 15px;
+                    font-weight: 400;
+                    letter-spacing: 0.219996px;
+                    line-height: 22px;
+                    margin-bottom: 0px;
+                    margin-left: 2px;
+                    margin-right: 1px;
+                    margin-top: 0px;
+                    text-align: center;
+                    text-transform: none;
+                    vertical-align: middle;
+                    white-space: nowrap
+                }
+            }
+        }
+    }
+
+    .slide2 {
+        position: relative;
+
+        .bannerLayer {
+            position: absolute;
+            left: auto;
+            right: 22.3%;
+            top: 50%;
+            transform: translateY(-50%);
+
+            h4 {
+                font-size: 19px;
+                font-weight: 400;
+                letter-spacing: 1.87px;
+                line-height: normal;
+                margin-bottom: 8px;
+                margin-top: 0px;
+                opacity: 1;
+                text-align: left !important;
+                color: $sliderTwoColor1;
+            }
+
+            h2 {
+                font-size: 52px;
+                font-weight: 700;
+                letter-spacing: 2.6px;
+                line-height: 52px;
+                margin-bottom: 13px;
+                margin-left: -3.2px;
+                margin-right: 8px;
+                margin-top: 0px;
+                opacity: 1;
+                padding-right: 48px;
+                text-align: left !important;
+                color: $sliderTwoColor2;
+            }
+
+            .positionRelative {
+                position: relative;
+
+                h3 {
+                    font-size: 40px;
+                    font-weight: 500;
+                    letter-spacing: 4.8px;
+                    line-height: 40px;
+                    margin-bottom: 40px;
+                    margin-top: 0px;
+                    text-align: left !important;
+                    color: $sliderTwoColor2;
+                }
+
+                h5 {
+                    font-size: 26px;
+                    font-weight: 400;
+                    line-height: 40px;
+                    margin-bottom: 14px;
+                    margin-top: 0px;
+                    position: absolute;
+                    right: 18px;
+                    top: 0;
+                    text-align: left !important;
+                    transform: rotate(-30deg);
+                    color: $sliderTwoColor3;
+                    font-family: "Segoe Script"
+                }
+            }
+
+            p {
+                font-size: 21px;
+                font-weight: 300;
+                letter-spacing: 4.1px;
+                line-height: normal;
+                margin-bottom: 5px;
+                margin-top: 0px;
+                opacity: 1;
+                text-align: right !important;
+                text-transform: uppercase;
+                color: $sliderTwoColor1;
+            }
+
+            h6 {
+                font-size: 72px;
+                font-weight: 400;
+                letter-spacing: 1px;
+                line-height: 108px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                text-align: right !important;
+                text-transform: uppercase;
+
+                sup {
+                    font-size: 33%;
+                    font-weight: 400;
+                    color: $sliderTwoColor2;
+                    top: -32px;
+                    margin-right: 16px;
+                    letter-spacing: -0.03em;
+                }
+
+                strong {
+                    color: $sliderTwoColor4;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 9px;
+                        left: -7px;
+                        right: 0;
+                        bottom: 11px;
+                        width: 170px;
+                        background-color: $sliderTwoColor2;
+                        z-index: -1;
+                        transform: rotate(-2deg);
+                    }
+                }
+            }
+        }
+    }
+}

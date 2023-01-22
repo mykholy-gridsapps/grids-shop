@@ -1,0 +1,39 @@
+.widgetTestimonials {
+
+    :global(.swiper-pagination) {
+        margin: 25px 0 0;
+        line-height: 1;
+        text-align: center !important;
+        position: relative;
+
+        :global(.swiper-pagination-bullet) {
+            border: 2px solid var(--border-color);
+            width: 14px;
+            height: 14px;
+            background: transparent;
+            opacity: 1;
+            position: relative;
+
+            &:hover {
+                border: 2px solid var(--main-color);
+            }
+
+            &:global(.swiper-pagination-bullet-active) {
+                border: 2px solid var(--main-color);
+
+                &::before {
+                    width: 4px;
+                    height: 4px;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 3px;
+                    top: 3px;
+                    background-color: var(--main-color);
+                    transition: all 0.3s;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,280 @@
+@import url('https://fonts.cdnfonts.com/css/savoye-let');
+$sliderOneColor1: rgba(34, 37, 41, 0.7);
+$sliderOneColor2: #222529;
+$sliderTwoColor1: #d93c81;
+$sliderTwoColor2: #a2a2a2;
+$sliderTwoColor3: #fff;
+$sliderTwoColor4: #222529;
+$sliderOneBadge: #ff7272;
+
+.slider {
+    img {
+        height: 428px;
+        object-position: center center;
+        object-fit: cover;
+        max-width: 100%;
+    }
+
+    .slide1 {
+        position: relative;
+
+
+        .bannerLayer {
+            width: 48%;
+            left: 2%;
+            padding-right: 1.6rem;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+            right: 6%;
+            width: 404px;
+
+            h4 {
+                font-size: 17px;
+                font-weight: 500;
+                letter-spacing: 1.105px;
+                line-height: 17px;
+                margin-bottom: 8px;
+                margin-top: 0px;
+                opacity: 1;
+                padding-right: 4px;
+                text-align: right !important;
+                color: $sliderOneColor1;
+            }
+
+            h2 {
+                font-size: 58px;
+                font-weight: 700;
+                letter-spacing: 0.9px;
+                line-height: 58px;
+                margin-bottom: 18px;
+                margin-top: 0px;
+                opacity: 1;
+                text-align: right !important;
+                text-transform: uppercase;
+                color: $sliderOneColor2;
+            }
+
+            h3 {
+                padding: 37px 28px 112px;
+                margin-left: 44px;
+                font-size: 56px;
+                letter-spacing: -0.08em;
+                white-space: nowrap;
+                color: #fff;
+                background: url(../../../public/imgs/slider/slider-7-1-badge.png) center no-repeat;
+                background-size: auto;
+                background-size: contain;
+
+                small {
+                    display: inline-block;
+                    font-size: 70%;
+                    font-weight: inherit;
+                    letter-spacing: -0.025em;
+                    line-height: 0.3;
+
+                    sup {
+                        position: static;
+                        font-size: 75%;
+                    }
+
+                    sub {
+                        display: block;
+                        position: static;
+                        font-size: 36%;
+                        line-height: 1;
+                        font-weight: 400;
+                        letter-spacing: 0;
+                        padding-left: 0.1em;
+                    }
+                }
+
+            }
+
+            .descount {
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 24px;
+
+                h5 {
+                    font-size: 13px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    margin-bottom: 18px;
+                    margin-right: 3px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: left;
+                    display: inline-block;
+                    text-transform: uppercase;
+                    color: $sliderOneColor2;
+                }
+
+                h6 {
+                    font-size: 13px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    margin-bottom: 14px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    padding-bottom: 4px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 6px;
+                    position: relative;
+                    text-align: left;
+                    display: inline-block;
+                    line-height: 1;
+                    color: #fff;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        z-index: -1;
+                        background-color: $sliderOneBadge;
+                        transform: rotate(-2deg);
+                    }
+
+                    b {
+                        font-size: 200%;
+                        vertical-align: text-top;
+                    }
+                }
+            }
+
+            .btn {
+                border-color: var(--text-dark);
+                background-color: var(--text-dark);
+                color: #fff;
+                box-shadow: none;
+                font-size: 14px;
+                padding: 12px 44px;
+                display: inline-block;
+            }
+        }
+    }
+
+    .slide2 {
+        .bannerLayer {
+            position: absolute;
+            left: 6%;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 12%;
+            text-align: right !important;
+
+            h2 {
+                font-size: 30px;
+                font-weight: 700;
+                letter-spacing: -0.6px;
+                line-height: 30px;
+                margin-bottom: 8px;
+                margin-top: 0px;
+                opacity: 1;
+                text-align: right !important;
+                text-transform: uppercase;
+                color: $sliderTwoColor1;
+            }
+
+            h4 {
+                font-size: 22px;
+                font-weight: 500;
+                letter-spacing: 4.4px;
+                line-height: 26.4px;
+                margin-bottom: 8px;
+                margin-right: -5px;
+                margin-top: 0px;
+                opacity: 1;
+                text-align: right !important;
+                color: $sliderTwoColor2;
+            }
+
+            h3 {
+                font-size: 32px;
+                font-weight: 700;
+                letter-spacing: -0.64px;
+                line-height: 35.2px;
+                margin-bottom: 24px;
+                margin-top: 0px;
+                opacity: 1;
+                text-align: right !important;
+                text-transform: uppercase;
+                color: $sliderTwoColor3;
+
+                sup {
+                    font-size: 16px;
+                    font-weight: 700;
+                    letter-spacing: -0.64px;
+                    line-height: 0px;
+                    margin-left: 2.5px;
+                    padding-left: 5px;
+                    position: relative;
+                    text-align: right;
+                    text-transform: uppercase;
+                    top: -8px;
+                    vertical-align: baseline;
+
+                    &:last-of-type {
+                        margin-left: 0;
+                        padding-left: 0;
+                    }
+                }
+            }
+
+            .btn {
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 20px;
+                margin-top: 2px;
+                padding-bottom: 14.7px;
+                padding-left: 35.98px;
+                padding-right: 35.98px;
+                padding-top: 14.98px;
+                text-align: center !important;
+                text-transform: uppercase;
+                background-color: $sliderTwoColor3;
+                color: $sliderTwoColor4;
+            }
+        }
+    }
+
+    :global(.swiper-pagination) {
+        margin: 16px 5.5% 0;
+        position: absolute;
+        bottom: 10%;
+
+        :global(.swiper-pagination-bullet) {
+            border: 2px solid var(--text-dark);
+            width: 14px;
+            height: 14px;
+            background: transparent;
+            opacity: 1;
+            position: relative;
+
+            &:hover {
+                border: 2px solid var(--text-dark);
+            }
+
+            &:global(.swiper-pagination-bullet-active) {
+                border: 2px solid var(--text-dark);
+
+                &::before {
+                    width: 4px;
+                    height: 4px;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 3px;
+                    top: 3px;
+                    background-color: var(--text-dark);
+                    transition: all 0.3s;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

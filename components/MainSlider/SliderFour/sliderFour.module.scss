@@ -1,0 +1,224 @@
+@import url('https://fonts.cdnfonts.com/css/savoye-let');
+$sliderOneColor1: #222529;
+$sliderOneColor12: #fff;
+$sliderTwoColor1: #222529;
+$sliderTwoColor2: #ff7272;
+$sliderOneBadge: #ff7272;
+
+.slider {
+    background-color: var(--bg-alt-color);
+
+    img {
+        min-height: 510px;
+        object-position: center center;
+        object-fit: cover;
+        max-width: 100%;
+    }
+
+    .slide1 {
+        position: relative;
+
+
+        .bannerLayer {
+            position: absolute;
+            padding-bottom: 3px;
+            left: 7%;
+            right: 6%;
+            top: 50%;
+            transform: translateY(-50%);
+
+            h4 {
+                font-size: 19px;
+                font-weight: 500;
+                letter-spacing: 0.08em;
+                opacity: 0.7;
+                padding-bottom: 14px;
+                color: $sliderOneColor1;
+                margin: 0;
+            }
+
+            h2 {
+                font-size: 62px;
+                letter-spacing: 0.002em;
+                color: $sliderOneColor1;
+                font-family: 'Savoye LET', sans-serif;
+                line-height: 1;
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 74px;
+                margin-bottom: 16px !important;
+                line-height: 1;
+                color: $sliderOneColor1;
+                text-transform: uppercase !important;
+
+                em {
+                    display: inline-block;
+                    font-size: 45%;
+                    font-weight: inherit;
+                    font-style: normal;
+                    line-height: 1.1;
+                    margin-right: 0.2em;
+                    text-align: center;
+                }
+            }
+
+            h5 {
+                margin-right: -2px;
+                font-size: 14px;
+                margin-top: -4px;
+                line-height: 1;
+                color: $sliderOneColor1;
+                display: inline-block !important;
+                text-transform: uppercase !important;
+                margin: 0;
+                vertical-align: text-bottom !important;
+
+                b {
+                    color: $sliderOneColor12;
+                    background-color: $sliderOneBadge;
+                    position: relative;
+                    padding: 4px 8px;
+                    margin: 0 6px 0 12px;
+                    font-size: 15px;
+                    transform: rotate(-2deg);
+                    display: inline-block;
+                    font-weight: 600;
+
+
+                    em {
+                        font-size: 29px;
+                        font-style: normal;
+                        vertical-align: text-top !important;
+                    }
+
+                }
+            }
+
+            .btn {
+                border-color: var(--text-dark);
+                background-color: var(--text-dark);
+                color: #fff;
+                box-shadow: none;
+                font-size: 15px;
+                padding: 15px 40px 18px;
+            }
+        }
+    }
+
+    .slide2 {
+        position: relative;
+
+        .bannerLayer {
+            position: absolute;
+            padding-bottom: 3px;
+            left: 7%;
+            right: 6%;
+            top: 50%;
+            transform: translateY(-50%);
+
+            h2 {
+                font-size: 39px;
+                font-weight: 500;
+                color: $sliderTwoColor1;
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 98px;
+                font-weight: 700;
+                color: $sliderTwoColor1;
+                margin: 0;
+
+                em {
+                    display: inline-block;
+                    font-size: 45%;
+                    font-weight: inherit;
+                    font-style: normal;
+                    line-height: 1.1;
+                    margin-right: 0.2em;
+                    text-align: center;
+                }
+
+            }
+
+            h5 {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 1;
+                text-transform: uppercase !important;
+                color: $sliderTwoColor1;
+                display: inline-block;
+
+                span {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $sliderTwoColor2;
+                    padding-right: 30px;
+                    margin-right: 30px;
+                    margin-left: 5px;
+
+                    em {
+                        font-size: 40px;
+                        font-style: normal;
+                        vertical-align: middle;
+                        position: relative;
+                        top: 1px;
+                    }
+                }
+            }
+
+            .btn {
+                border-color: var(--text-dark);
+                background-color: var(--text-dark);
+                color: #fff;
+                box-shadow: none;
+                font-size: 16px;
+                font-weight: 700;
+                padding: 20px 68px 20px;
+            }
+        }
+    }
+
+    :global(.swiper-button-prev) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor1 !important;
+        left: 100px;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            color: $sliderOneColor1 !important;
+            font-size: 1.5rem !important;
+        }
+    }
+
+    :global(.swiper-button-next) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor1 !important;
+        right: 100px;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            color: $sliderOneColor1 !important;
+            font-size: 1.5rem !important;
+        }
+
+    }
+
+    &:hover {
+        :global(.swiper-button-prev) {
+            display: block;
+        }
+
+        :global(.swiper-button-next) {
+            display: block;
+        }
+    }
+}

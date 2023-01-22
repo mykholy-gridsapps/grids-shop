@@ -1,0 +1,39 @@
+.categoriesCarousel {
+    background: var(--bg-alt-color);
+    background: linear-gradient(180deg, var(--bg-alt-color) 0%, var(--bg-color) 100%); 
+    padding: 20px 60px 27px;
+    overflow: hidden;
+
+    :global(.swiper) {
+        overflow: visible;
+    }
+
+    :global(.swiper-button-prev){
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: var(--bg-color) !important;
+        left: -50px;
+        top: 30%;
+        &:hover {
+            &::after{
+                color: var(--bg-color) !important;
+            }
+        }
+    }
+    :global(.swiper-button-next) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: var(--bg-color) !important;
+        right: -50px;
+        top: 30%;
+        &:hover {
+            &::after{
+                color: var(--bg-color) !important;
+            }
+        }
+    }
+
+    
+}

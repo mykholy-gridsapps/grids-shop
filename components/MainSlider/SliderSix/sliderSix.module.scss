@@ -1,0 +1,302 @@
+@import url('https://fonts.cdnfonts.com/css/savoye-let');
+$sliderOneColor1: #222529;
+$sliderOneColor2: #fff;
+$sliderOneColor3: rgba(255, 255, 255, 0.5);
+$sliderTwoColor1: #222529;
+$sliderTwoColor2: #e13b3f;
+$sliderOneBg: #e13b3f;
+$sliderTwoBg: #222529;
+
+.slider {
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #3f3f3f;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 2;
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+    }
+
+    .slide1 {
+        display: flex;
+        position: relative;
+        min-height: 568.92px;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+
+        .bannerLayer {
+            position: absolute;
+            right: 0%;
+            bottom: 0%;
+            left: 49%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            font-size: 10px;
+            z-index: 10;
+            text-align: left !important;
+
+            .textContainer {
+                background-color: $sliderOneBg;
+                padding: 0 24px;
+                margin: 0;
+                width: 100%;
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 300;
+                    letter-spacing: 2.88px;
+                    line-height: 18px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: left !important;
+                    text-transform: uppercase;
+                    color: $sliderOneColor3;
+                }
+
+                h3 {
+                    font-size: 43px;
+                    font-weight: 700;
+                    letter-spacing: 1.075px;
+                    line-height: 43px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: left !important;
+                    text-transform: uppercase;
+                    color: $sliderOneColor2;
+                }
+
+                h2 {
+                    font-size: 184px;
+                    letter-spacing: -4.6px;
+                    line-height: 0.72;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    position: relative;
+                    text-align: left;
+                    color: #fff;
+                    top: 3px;
+                    color: $sliderOneColor2;
+
+
+                    small {
+                        position: absolute;
+                        font-size: 25.9992px;
+                        font-weight: 700;
+                        letter-spacing: normal;
+                        line-height: 26px;
+                        right: 58px;
+                        text-align: center;
+                        top: 64.4px;
+                        letter-spacing: 0;
+                        line-height: 1;
+                        text-align: center;
+                        transform: translateY(-54%);
+
+                        ins {
+                            display: block;
+                            text-decoration: none;
+                            font-size: 50%;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+
+            }
+
+            .btnContainer {
+                text-align: center !important;
+                display: flex;
+                margin-top: 30px;
+                justify-content: end;
+
+                .btn {
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.18px;
+                    line-height: 25.7167px;
+                    padding-bottom: 18px;
+                    padding-left: 63px;
+                    padding-right: 63px;
+                    padding-top: 18px;
+                    text-align: center;
+                    border: 3px solid $sliderOneColor1;
+                    color: $sliderOneColor2;
+                    text-transform: uppercase;
+                    background-color: $sliderOneColor1;
+
+                }
+            }
+
+        }
+
+    }
+
+    .slide2 {
+        display: flex;
+        position: relative;
+        min-height: 568.92px;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+
+        .bannerLayer {
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            right: 49%;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            font-size: 10px;
+            z-index: 10;
+            text-align: left !important;
+
+            .textContainer {
+                background-color: $sliderTwoBg;
+                padding: 0 24px;
+                margin: 0;
+                width: 100%;
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 300;
+                    letter-spacing: 2.88px;
+                    line-height: 18px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: left !important;
+                    text-transform: uppercase;
+                    color: $sliderOneColor3;
+                }
+
+                h3 {
+                    font-size: 43px;
+                    font-weight: 700;
+                    letter-spacing: 1.075px;
+                    line-height: 43px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: left !important;
+                    text-transform: uppercase;
+                    color: $sliderOneColor2;
+                }
+
+                h2 {
+                    font-size: 184px;
+                    letter-spacing: -4.6px;
+                    line-height: 0.72;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    position: relative;
+                    text-align: left;
+                    color: #fff;
+                    top: 3px;
+                    color: $sliderOneColor2;
+
+
+                    small {
+                        position: absolute;
+                        font-size: 25.9992px;
+                        font-weight: 700;
+                        letter-spacing: normal;
+                        line-height: 26px;
+                        right: 58px;
+                        text-align: center;
+                        top: 64.4px;
+                        letter-spacing: 0;
+                        line-height: 1;
+                        text-align: center;
+                        transform: translateY(-54%);
+
+                        ins {
+                            display: block;
+                            text-decoration: none;
+                            font-size: 50%;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+
+            }
+
+            .btnContainer {
+                text-align: center !important;
+                display: flex;
+                margin-top: 30px;
+                justify-content: start;
+
+                .btn {
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.18px;
+                    line-height: 25.7167px;
+                    padding-bottom: 18px;
+                    padding-left: 63px;
+                    padding-right: 63px;
+                    padding-top: 18px;
+                    text-align: center;
+                    border: 3px solid $sliderTwoColor2;
+                    color: $sliderOneColor2;
+                    text-transform: uppercase;
+                    background-color: $sliderTwoColor2;
+
+                }
+            }
+
+        }
+
+    }
+
+    :global(.swiper-button-prev) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor1 !important;
+        left: 100px;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            color: $sliderOneColor1 !important;
+            font-size: 1.5rem !important;
+        }
+    }
+
+    :global(.swiper-button-next) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor1 !important;
+        right: 100px;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            color: $sliderOneColor1 !important;
+            font-size: 1.5rem !important;
+        }
+
+    }
+
+    &:hover {
+        :global(.swiper-button-prev) {
+            display: block;
+        }
+
+        :global(.swiper-button-next) {
+            display: block;
+        }
+    }
+}

@@ -44,6 +44,49 @@ import NewsletterTwelve from "../components/Newsletter/NewsletterTwelve/Newslett
 import NewsletterThirteen from "../components/Newsletter/NewsletterThirteen/NewsletterThirteen";
 import NewsletterFourteen from "../components/Newsletter/NewsletterFourteen/NewsletterFourteen";
 import NewsletterFifteen from "../components/Newsletter/NewsletterFifteen/NewsletterFifteen";
+import TestimonalOne from "../components/Testimonials/TestimonialOne/TestimonialOne";
+import TestimonialOneCarousel from "../components/Testimonials/TestimonialOne/TestimonialOneCarousel";
+import TestimonialTwoCarousel from "../components/Testimonials/TestimonialTwo/TestimonialTwoCarousel";
+import TestimonialThreeCarousel from "../components/Testimonials/TestimonialThree/TestimonialThreeCarousel";
+import TestimonialFourCarousel from "../components/Testimonials/TestimonialFour/TestimonialFourCarousel";
+import TestimonialFiveCarousel from "../components/Testimonials/TestimonialFive/TestimonialFiveCarousel";
+import CategoryOne from "../components/Categories/CategoriesOne/CategoryOne";
+import CategoryOneCarousel from "../components/Categories/CategoriesOne/CategoryOneCarousel";
+import CategoryTwoCarousel from "../components/Categories/CategoriesTwo/CategoryTwoCarousel";
+import CategoryThreeCarousel from "../components/Categories/CategoriesThree/CategoryThreeCarousel";
+import CategoryFourCarousel from "../components/Categories/CategoriesFour/CategoryFourCarousel";
+import CategoryFiveCarousel from "../components/Categories/CategoriesFive/CategoryFiveCarousel";
+import CategorySixCarousel from "../components/Categories/CategoriesSix/CategorySixCarousel";
+import CategorySevenCarousel from "../components/Categories/CategoriesSeven/CategorySevenCarousel";
+import CategoryEightCarousel from "../components/Categories/CategoriesEight/CategoryEightCarousel";
+import CategoryNineCarousel from "../components/Categories/CategoriesNine/CategoryNineCarousel";
+import CategoryTenCarousel from "../components/Categories/CategoriesTen/CategoryTenCarousel";
+import CategoryElevenCarousel from "../components/Categories/CategoriesEleven/CategoryElevenCarousel";
+import CategoryTwelveCarousel from "../components/Categories/CategoriesTwelve/CategoryTwelveCarousel";
+import CategoryThirteenCarousel from "../components/Categories/CategoriesThirteen/CategoryThirteenCarousel";
+import CategoryFourteenCarousel from "../components/Categories/CategoriesFourteen/CategoryFourteenCarousel";
+import SliderOne from "../components/MainSlider/SliderOne/SliderOne";
+import SliderTwo from "../components/MainSlider/SliderTwo/SliderTwo";
+import SliderThree from "../components/MainSlider/SliderThree/SliderThree";
+import SliderFour from "../components/MainSlider/SliderFour/SliderFour";
+import SliderFive from "../components/MainSlider/SliderFive/SliderFive";
+import SliderSix from "../components/MainSlider/SliderSix/SliderSix";
+import SliderSeven from "../components/MainSlider/SliderSeven/SliderSeven";
+import SliderEight from "../components/MainSlider/SliderEight/SliderEight";
+import SliderNine from "../components/MainSlider/SliderNine/SliderNine";
+import SliderTen from "../components/MainSlider/SliderTen/SliderTen";
+import SliderEleven from "../components/MainSlider/SliderEleven/SliderEleven";
+import SliderTwelve from "../components/MainSlider/SliderTwelve/SliderTwelve";
+import SliderThirteen from "../components/MainSlider/SliderThirteen/SliderThirteen";
+import BlogOneCarousel from "../components/Blogs/BlogOne/BlogOneCarousel";
+import BlogTwoCarousel from "../components/Blogs/BlogTwo/BlogTwoCarousel";
+import BlogThree from "../components/Blogs/BlogThree/BlogThree";
+import BlogFourCarousel from "../components/Blogs/BlogFour/BlogFourCarousel";
+import BlogFiveCarousel from "../components/Blogs/BlogFive/BlogFiveCarousel";
+import BlogSix from "../components/Blogs/BlogSix/BlogSix";
+import BlogSevenCarousel from "../components/Blogs/BlogSeven/BlogSevenCarousel";
+import BlogEightCarousel from "../components/Blogs/BlogEight/BlogEightCarousel";
+import SaleOne from "../components/Sale/SaleOne/SaleOne";
 
 const Home = () => {
   const { t, i18n } = useTranslation("common");
@@ -51,48 +94,10 @@ const Home = () => {
   return (
     <div>
       <Container maxWidth='xl'>
-        <Grid container>
-          <Grid item lg={12}>
-            <NewsletterOne />
-          </Grid>
+        <Grid container spacing={2}>
           <Grid item lg={3}>
-            <NewsletterTwo />
+            <SaleOne />
           </Grid>
-          <Grid item lg={12}>
-            <NewsletterThree />
-          </Grid>
-        </Grid>
-      </Container>
-      <NewsletterFour />
-      <Container maxWidth='xl'>
-        <Grid item lg={12}>
-          <NewsletterFive />
-        </Grid>
-        <Grid item lg={12}>
-          <NewsletterSix />
-        </Grid>
-      </Container>
-      <NewsletterSeven />
-      <Container maxWidth='xl'>
-        <Grid item lg={12}>
-          <NewsletterEight />
-        </Grid>
-        <Grid item lg={12}>
-          <NewsletterNine />
-        </Grid>
-      </Container>
-      <NewsletterTen />
-      <NewsletterEleven />
-      <NewsletterTwelve />
-      <Container maxWidth='xl'>
-        <Grid item lg={12}>
-          <NewsletterThirteen />
-        </Grid>
-        <Grid item lg={12}>
-          <NewsletterFourteen />
-        </Grid>
-        <Grid item lg={12}>
-          <NewsletterFifteen />
         </Grid>
       </Container>
     </div>

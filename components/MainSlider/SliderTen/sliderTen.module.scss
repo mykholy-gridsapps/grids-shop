@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+$sliderBg: #e2e2e0;
+$sliderOneColor1: #c59b9c;
+$sliderOneColor2: rgb(102, 102, 102);
+$sliderOneColor3: #222529;
+$sliderTwoColor1: #999;
+$sliderTwoColor2: #222529;
+$sliderOneBadge: #ff7272;
+
+.slider {
+    background-color: $sliderBg;
+
+    img {
+        object-fit: cover;
+        max-width: 100%;
+        object-position: center top;
+        min-height: 360px;
+    }
+
+    .slide1 {
+        position: relative;
+
+        .bannerLayer {
+            position: absolute;
+            padding-bottom: 3px;
+            left: 0;
+            right: auto;
+            top: 50%;
+            transform: translateY(-50%);
+
+            h2 {
+                font-family: 'Nanum Brush Script';
+                font-size: 68px;
+                font-weight: 300;
+                letter-spacing: 0.679994px;
+                line-height: 40px;
+                margin-bottom: 18px;
+                margin-top: 0px;
+                text-align: left !important;
+                color: $sliderOneColor1;
+            }
+
+            .btn {
+                display: inline-flex;
+                color: $sliderOneColor2;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 22px;
+                font-weight: 400;
+                letter-spacing: 0.219996px;
+                line-height: 31.4333px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-top: 0px;
+                text-align: center;
+                vertical-align: middle;
+                white-space: nowrap;
+
+                span {
+                    margin-right: 8px;
+                    display: inline-block;
+                    border-bottom: 1px solid;
+                    line-height: 1.4;
+                }
+
+                i {
+                    font-size: 15px;
+                    font-weight: 400;
+                    letter-spacing: 0.219996px;
+                    line-height: 22px;
+                    margin-bottom: 0px;
+                    margin-left: 2px;
+                    margin-right: 1px;
+                    margin-top: 0px;
+                    text-align: center;
+                    text-transform: none;
+                    vertical-align: middle;
+                    white-space: nowrap
+                }
+            }
+        }
+    }
+
+    .slide2 {
+        position: relative;
+
+        .bannerLayer {
+            position: absolute;
+            padding-bottom: 3px;
+            right: 0;
+            left: auto;
+            top: 50%;
+            transform: translateY(-50%);
+
+            h2 {
+                font-family: 'Nanum Brush Script';
+                font-size: 68px;
+                font-weight: 300;
+                letter-spacing: 0.679994px;
+                line-height: 40px;
+                margin-bottom: 18px;
+                margin-top: 0px;
+                text-align: left !important;
+                color: $sliderOneColor1;
+            }
+
+            .btn {
+                display: inline-flex;
+                color: $sliderOneColor2;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 22px;
+                font-weight: 400;
+                letter-spacing: 0.219996px;
+                line-height: 31.4333px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-top: 0px;
+                text-align: center;
+                vertical-align: middle;
+                white-space: nowrap;
+
+                span {
+                    margin-right: 8px;
+                    display: inline-block;
+                    border-bottom: 1px solid;
+                    line-height: 1.4;
+                }
+
+                i {
+                    font-size: 15px;
+                    font-weight: 400;
+                    letter-spacing: 0.219996px;
+                    line-height: 22px;
+                    margin-bottom: 0px;
+                    margin-left: 2px;
+                    margin-right: 1px;
+                    margin-top: 0px;
+                    text-align: center;
+                    text-transform: none;
+                    vertical-align: middle;
+                    white-space: nowrap
+                }
+            }
+        }
+    }
+
+    :global(.swiper-button-prev) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor3 !important;
+        left: 5%;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            color: $sliderOneColor3 !important;
+            font-size: 18px !important;
+        }
+    }
+
+    :global(.swiper-button-next) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor3 !important;
+        right: 5%;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            color: $sliderOneColor3 !important;
+            font-size: 18px !important;
+        }
+
+    }
+
+    &:hover {
+        :global(.swiper-button-prev) {
+            display: block;
+        }
+
+        :global(.swiper-button-next) {
+            display: block;
+        }
+    }
+}

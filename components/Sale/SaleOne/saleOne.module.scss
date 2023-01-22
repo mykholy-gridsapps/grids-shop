@@ -1,0 +1,269 @@
+.sale {
+    :global(.swiper) {
+        border: 1px solid var(--border-color);
+        margin-bottom: 24px;
+        text-align: center !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+
+        .banner {
+            font-size: 16px;
+            position: relative;
+            -ms-flex-align: center !important;
+            align-items: center !important;
+            -ms-flex-direction: column !important;
+            flex-direction: column !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+
+            .badgeSale {
+                width: 113px;
+                height: 113px;
+                margin-top: 25px;
+                margin-bottom: 17px;
+                font-size: 12px;
+                font-weight: 400;
+                color: #fff;
+                border-radius: 50%;
+                letter-spacing: 0.06em;
+                background-color: var(--main-color);
+                text-align: center !important;
+                text-transform: uppercase !important;
+                -ms-flex-align: center !important;
+                align-items: center !important;
+                -ms-flex-pack: center !important;
+                justify-content: center !important;
+                -ms-flex-direction: column !important;
+                flex-direction: column !important;
+                display: -ms-flexbox !important;
+                display: flex !important;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    width: 1px;
+                    height: 25px;
+                    background: #e7e7e7;
+                }
+
+                em {
+                    display: block;
+                    padding-top: 8px;
+                    margin-bottom: -1px;
+                    color: #fff;
+                    font-size: 29px;
+                    font-style: normal;
+                    font-weight: 800;
+                    letter-spacing: 0.015em;
+                    text-align: center !important;
+
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 33px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-radius: 50%;
+                    width: 9px;
+                    height: 9px;
+                    background: #fff;
+                }
+            }
+
+            .saleText {
+                position: relative;
+                margin-right: 3px;
+                margin-bottom: 15px;
+                font-size: 70px;
+                letter-spacing: -0.05em;
+                color: var(--text-dark);
+                line-height: 1;
+
+                small {
+                    display: block;
+                    position: absolute;
+                    margin: 2px 0 4px;
+                    left: -22px;
+                    bottom: 32px;
+                    font-size: 10px;
+                    font-weight: 700;
+                    opacity: 0.6;
+                    transform: rotateZ(-90deg);
+                    letter-spacing: normal;
+                }
+
+                sup {
+                    font-size: 60%;
+                    font-weight: 700;
+                    top: -21px;
+                    position: relative;
+                    line-height: 0;
+                    vertical-align: baseline;
+                }
+
+                sub {
+                    font-size: 16px;
+                    position: absolute;
+                    right: -3px;
+                    bottom: 7px;
+                    font-weight: 700;
+                    line-height: 22.5px;
+                    letter-spacing: 0;
+                    text-transform: uppercase !important;
+                }
+            }
+
+            p {
+                margin-bottom: 16px;
+                font-size: 0.875em;
+                max-width: 100%;
+                letter-spacing: -0.025em;
+                text-align: center !important;
+            }
+
+            .btn {
+                padding: 11px 27px;
+                border-color: var(--text-dark);
+                background-color: var(--text-dark);
+                color: #fff;
+                box-shadow: none;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+
+        .banner2 {
+            font-size: 16px;
+            position: relative;
+            margin-top: 25px;
+
+            h4 {
+                margin: -3px 0 25px 4px;
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 1;
+                letter-spacing: 0.5em;
+                text-align: center !important;
+            }
+            figure {
+                margin-bottom: 16px !important;
+                img {
+                    width: auto;
+                    margin: auto;
+                }
+            }
+
+
+            .couponSaleContent {
+                text-align: center !important;
+
+                > h4 {
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    margin-top: 32px;
+                    color: var(--text-dark);
+                    letter-spacing: normal;
+                    text-align: center !important;
+                }
+
+                h5 {
+                    margin-bottom: 15px;
+                    font-size: 16px;
+                    margin-right: 3px;
+                    position: relative;
+                    text-align: center !important;
+                    display: inline-block;
+                    color: var(--text-dark);
+
+
+                    i {
+                        position: absolute;
+                        left: -21.6px;
+                        top: 50%;
+                        transform: translateY(-50%) rotate(-90deg);
+                        font-size: 10px;
+                        font-style: normal;
+                        opacity: 0.6;
+                        letter-spacing: 0;
+                        color: var(--text-color);
+                    }
+
+                    b {
+                        padding: 6px 8px;
+                        margin-left: 3px;
+                        font-size: 26px;
+                        display: inline-block;
+                        background-color: var(--text-dark);
+                        color: #fff;
+                        line-height: 1;
+                        transform: rotate(-2deg);
+                        font-weight: 600;
+                    }
+                }
+
+                p {
+                    margin-bottom: 16px;
+                    font-size: 14px;
+                    max-width: 100%;
+                    letter-spacing: -0.025em;
+                    text-align: center !important;
+                }
+
+                .btn {
+                    padding: 11px 27px;
+                    border-color: var(--text-dark);
+                    background-color: var(--text-dark);
+                    color: #fff;
+                    box-shadow: none;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    display: inline-block;
+                }
+            }
+        }
+
+        :global(.swiper-pagination) {
+            margin: 16px;
+            position: relative;
+            bottom: 0px;
+            text-align: center !important;
+            margin: 18px 0 23px;
+
+            :global(.swiper-pagination-bullet) {
+                border: 2px solid var(--text-dark);
+                width: 14px;
+                height: 14px;
+                background: transparent;
+                opacity: 0.1;
+                position: relative;
+
+                &:hover {
+                    opacity: 1;
+                    border: 2px solid var(--main-color);
+                }
+
+                &:global(.swiper-pagination-bullet-active) {
+                    opacity: 1;
+                    border: 2px solid var(--main-color);
+
+                    &::before {
+                        width: 4px;
+                        height: 4px;
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        left: 3px;
+                        top: 3px;
+                        background-color: var(--main-color);
+                        transition: all 0.3s;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

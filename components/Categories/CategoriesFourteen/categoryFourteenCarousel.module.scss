@@ -1,0 +1,47 @@
+.categoriesCarousel {
+    padding-top: 60px;
+    padding-bottom: 33px;
+
+    .title {
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -0.025em;
+            color: var(--text-dark);
+            margin-right: 24px;
+            padding-right: 24px;
+            border-right: 1px solid #e7e7e7;
+            position: relative;
+            margin-bottom: 40px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 46px;
+                left: 0;
+                padding: 0 28px;
+                border: 2px solid var(--main-color);
+            }
+        }
+
+        a {
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: -0.025em;
+            color: var(--main-color);
+            margin-bottom: 40px;
+
+            i {
+                margin-left: 1.5rem;
+                color: var(--text-dark);
+            }
+        }
+    }
+}
