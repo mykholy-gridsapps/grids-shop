@@ -1,0 +1,51 @@
+@import url('https://fonts.cdnfonts.com/css/savoye-let');
+
+.banner {
+    background-image: url("../../../public/imgs/sale/sale-28-1.png");
+    padding: 60px 0;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 41% auto;
+    font-size: 16px;
+    background-color: #3256f4;
+
+    h5 {
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.5;
+        font-weight: 400 !important;
+        text-transform: uppercase !important;
+        margin: 0 !important;
+    }
+
+    .inlineBlock {
+        display: inline-block;
+
+        h2 {
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 1.3793;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.333333;
+            color: #fff !important;
+            text-transform: uppercase !important;
+            text-align: right !important;
+        }
+    }
+
+    a {
+        padding: 13px 32px;
+        font-size: 16px;
+        font-weight: 500;
+        border-color: var(--text-dark);
+        background-color: var(--text-dark);
+        color: #fff;
+        box-shadow: none;
+    }
+
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.cdnfonts.com/css/savoye-let');
+
+.banner {
+    background-image: url("../../../public/imgs/sale/sale-22-1.jpg");
+    height: 589px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+
+    .container {
+        position: relative;
+
+        .bannerLayer {
+            right: 0;
+            left: auto;
+            padding-right: 12px;
+            transform: translateY(71%);
+            top: 50%;
+            position: absolute;
+            text-align: right !important;
+            margin-left: auto !important;
+            float: right !important;
+
+            h2 {
+                font-family: "Savoye LET";
+                font-weight: 700;
+                line-height: 1;
+                margin-right: -2px;
+                font-size: 44px;
+                margin-bottom: 8px !important;
+                color: var(--text-dark);
+            }
+
+            h3 {
+                margin-right: -7px;
+                font-size: 102px;
+                line-height: 1;
+                padding-left: 27px;
+                color: var(--text-dark);
+
+                small {
+                    display: inline-block;
+                    position: absolute;
+                    left: -27px;
+                    top: 50%;
+                    transform: translateY(-68%) rotate(-90deg);
+                    font-size: 27px;
+                    font-weight: 500;
+                    text-transform: uppercase !important;
+                }
+            }
+
+            hr {
+                margin: 16px auto 0 4px;
+                width: 10%;
+                border: none;
+                border-top: 5px solid var(--text-dark);
+            }
+
+            h5 {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 1;
+                vertical-align: middle;
+                color: var(--text-dark);
+                text-transform: uppercase !important;
+                padding-top: 5px !important;
+                padding-right: 2.5px !important;
+                margin-right: 22px;
+                display: inline-block !important;
+                font-weight: 500;
+
+                strong {
+                    display: inline;
+                    font-size: 36px;
+                    font-style: normal;
+                    vertical-align: text-top;
+                    display: inline-block;
+                    letter-spacing: -0.02em;
+                }
+            }
+
+            a {
+                padding: 22px 54px;
+                font-size: 17px;
+                border-color: var(--text-dark);
+                background-color: var(--text-dark);
+                color: #fff;
+                box-shadow: none;
+                text-transform: uppercase;
+                display: inline-block;
+            }
+        }
+    }
+
+
+}

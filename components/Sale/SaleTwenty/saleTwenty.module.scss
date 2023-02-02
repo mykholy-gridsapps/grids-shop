@@ -1,0 +1,60 @@
+.banner {
+    position: relative;
+    font-size: 16px;
+
+    img {
+        display: block;
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 10px;
+        object-fit: cover;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .bannerLayer {
+        padding: 16px 0;
+        margin: 0 1.25em;
+        transform: translateY(-50%);
+        margin-bottom: -10%;
+        position: relative;
+        background-color: var(--text-dark);
+        text-align: center !important;
+
+        h5 {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 4px;
+            margin-top: 0;
+            text-align: center !important;
+            
+            a {
+                color: var(--main-color);
+                font-weight: 400;
+                
+                &:hover {
+                    text-decoration: underline;
+                    transition: all 0.3s;
+                }
+            }
+        }
+        
+        h4 {
+            font-size: 46px;
+            line-height: 1;
+            margin-bottom: 4px;
+            color: #fff;
+            text-align: center !important;
+        }
+        
+        h6 {
+            font-size: 16px;
+            line-height: 1;
+            font-weight: 500;
+            color: #fff;
+            text-align: center !important;
+        }
+
+    }
+}

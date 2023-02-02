@@ -1,0 +1,59 @@
+.banner {
+    transition: box-shadow 0.35s;
+    position: relative;
+    font-size: 16px;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+
+    &:hover {
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    figure {
+        margin: 0;
+        width: 100%;
+
+        img {
+            height: 170px;
+            object-fit: cover;
+            border: solid var(--border-color);
+            border-width: 0.9em;
+        }
+    }
+
+    .bannerLayer {
+        padding-bottom: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center !important;
+
+        h3 {
+            font-size: 20px;
+            color: var(--text-dark);
+            line-height: 1;
+            margin-bottom: 8px !important;
+        text-align: center !important;
+
+        }
+
+        h4 {
+            padding-bottom: 1px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 25px !important;
+            text-align: center !important;
+
+
+        }
+
+        a {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+    }
+}
