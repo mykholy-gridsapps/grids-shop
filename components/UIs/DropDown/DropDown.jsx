@@ -13,7 +13,7 @@ import cls from "./dropDown.module.scss";
 
 const cookie = new Cookies();
 
-const DropDown = ({ menu }) => {
+const DropDown = ({ menu, color }) => {
   const [openMenu, setOpenMenu] = useState(false);
   const [lang, setLang] = useState(cookie.get("grids-apps-shop-lang"));
   const { i18n } = useTranslation();
@@ -40,9 +40,9 @@ const DropDown = ({ menu }) => {
         onClick={handleClick}
       />
 
-      <span onClick={handleClick}>{menu.find((item) => item.param === lang).text}</span>
+      <span onClick={handleClick} style={{ color: color }}>{menu.find((item) => item.param === lang).text}</span>
       
-      <i className="fa-solid fa-angle-down" onClick={handleClick}></i>
+      <i className="fa-solid fa-angle-down" onClick={handleClick} style={{ color: color }}></i>
 
       <Box
         className={`${cls.dropdownMenu} ${openMenu ? cls.show : ""} ${

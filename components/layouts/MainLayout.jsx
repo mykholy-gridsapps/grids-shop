@@ -8,12 +8,17 @@ import FooterFour from "../Footers/FooterFour/FooterFour";
 import FooterThree from "../Footers/FooterThree/FooterThree";
 import FooterTwo from "../Footers/FooterTwo/FooterTwo";
 import FooterOne from "../Footers/FooterOne/FooterOne";
-import HeaderOne from "../HeaderOne/HeaderOne";
+
+import HeaderOne from "../Headers/HeaderOne/HeaderOne";
+import HeaderTwo from "../Headers/HeaderTwo/HeaderTwo";
+import HeaderThree from "../Headers/HeaderThree/HeaderThree";
 
 const MainLayout = ({ children }) => {
   return (
     <>
-      <HeaderOne />
+      {/* <HeaderOne /> */}
+      {/* <HeaderTwo /> */}
+      <HeaderThree />
       {children}
       <FooterTen />
     </>

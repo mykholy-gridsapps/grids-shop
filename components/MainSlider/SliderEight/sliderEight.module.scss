@@ -82,7 +82,7 @@ $sliderOneBadge: #ff7272;
             }
             .btnContainer {
                 display: flex;
-                justify-content: end;
+                justify-content: flex-end;
                 .btn {
                     border-color: var(--text-dark);
                     background-color: var(--text-dark);
@@ -163,7 +163,7 @@ $sliderOneBadge: #ff7272;
             }
             .btnContainer {
                 display: flex;
-                justify-content: start;
+                justify-content: flex-start;
                 .btn {
                     border-color: var(--text-dark);
                     background-color: var(--text-dark);

@@ -11,7 +11,7 @@ const cookie = new Cookies();
 
 import cls from "./langSwitch.module.scss";
 
-const LangSwitch = () => {
+const LangSwitch = ({ color }) => {
   const [hasMounted, setHasMounted] = useState(false);
   const router = useRouter();
   const { t, i18n } = useTranslation("common");
@@ -37,7 +37,7 @@ const LangSwitch = () => {
       img: "/imgs/navbar/america.png",
       method: switchLang,
       param: "en",
-      text: "eng"
+      text: "En"
     },
     {
       option: `${t("arabic")}`,
@@ -52,7 +52,7 @@ const LangSwitch = () => {
 
   return (
     <div className={cls.headerDropdown}>
-      <DropDown menu={menu} side={true} />
+      <DropDown menu={menu} side={true} color={color} />
     </div>
   );
 };

@@ -1,77 +1,139 @@
-import { useState } from 'react'
-import { Box, Container, Grid } from '@mui/material'
-import cls from './middleHeader.module.scss'
+/* eslint-disable @next/next/no-img-element */
+import { useState } from "react";
+
+import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
+
+import cls from "./middleHeader.module.scss";
 
 const MiddleHeader = () => {
+  const [toggleSearch, setToggleSearch] = useState(false);
+  return (
+    <div className={[cls.headerMiddle, cls.textDark].join(" ")}>
+      <Container maxWidth="xl">
+        <Grid container>
+          <Grid item lg={2} className={cls.headerLeft} sx={{ pr: "10px" }}>
+            <Box
+              component="button"
+              className={cls.mobileMenuToggler}
+              sx={{ display: { lg: "none", xs: "block" }, mr: "5px" }}
+              type="button"
+            >
+              <i class="fas fa-bars"></i>
+            </Box>
+            <a href="demo1.html" class="logo">
+              <img
+                src="./imgs/logos/logo.png"
+                width="111"
+                height="44"
+                alt="Porto Logo"
+              />
+            </a>
+          </Grid>
 
-    const [toggleSearch, setToggleSearch] = useState(false)
-    return (
-        <div className={[cls.headerMiddle, cls.textDark].join(' ')}>
-            <Container maxWidth="xl">
-                <Grid container>
+          <Grid className={cls.headerRight} lg={10}>
+            <div
+              className={[
+                cls.headerSearch,
+                cls.headerIcon,
+                cls.headerSearchInline,
+                cls.headerSearchCategory,
+              ].join(" ")}
+            >
+              <a
+                href="#"
+                onClick={() => setToggleSearch(!toggleSearch)}
+                className={[
+                  cls.searchToggle,
+                  `${toggleSearch ? cls.show : ""}`,
+                ].join(" ")}
+                role="button"
+              >
+                <i></i>
+              </a>
+              <form action="#" method="get">
+                <div
+                  className={[
+                    cls.headerSearchWrapper,
+                    `${toggleSearch ? cls.show : ""}`,
+                  ].join(" ")}
+                >
+                  <input
+                    type="search"
+                    className={cls.formControl}
+                    name="q"
+                    id="q"
+                    placeholder="Search..."
+                    required
+                  />
+                  <div className={cls.selectCustom}>
+                    <select id="cat" name="cat">
+                      <option value="">All Categories</option>
+                      <option value="4">Fashion</option>
+                      <option value="12">- Women</option>
+                      <option value="13">- Men</option>
+                      <option value="66">- Jewellery</option>
+                      <option value="67">- Kids Fashion</option>
+                      <option value="5">Electronics</option>
+                      <option value="21">- Smart TVs</option>
+                      <option value="22">- Cameras</option>
+                      <option value="63">- Games</option>
+                      <option value="7">Home &amp; Garden</option>
+                      <option value="11">Motors</option>
+                      <option value="31">- Cars and Trucks</option>
+                      <option value="32">
+                        - Motorcycles &amp; Powersports
+                      </option>
+                      <option value="33">- Parts &amp; Accessories</option>
+                      <option value="34">- Boats</option>
+                      <option value="57">- Auto Tools &amp; Supplies</option>
+                    </select>
+                  </div>
+                  <button className={cls.btn} type="submit">
+                    <i></i>
+                  </button>
+                </div>
+              </form>
+            </div>
 
-                    <Grid item lg={2} className={cls.headerLeft} sx={{pr: '10px'}}  >
-                        <Box component="button" className={cls.mobileMenuToggler} sx={{ display:{ lg: 'none', xs: 'block' }, mr: '5px' }} type="button">
-                            <i class="fas fa-bars"></i>
-                        </Box>
-                        <a href="demo1.html" class="logo">
-                            <img src="./imgs/logos/logo.png" width="111" height="44" alt="Porto Logo" />
-                        </a>
-                    </Grid>
+            <div className={cls.headerContact}>
+              <i className={cls.iconPhone}></i>
+              <h6>
+                Call us now<a href="tel:#">+123 5678 890</a>
+              </h6>
+            </div>
 
-                    <Grid className={cls.headerRight} lg={10}>
-                        <div className={[cls.headerSearch, cls.headerIcon, cls.headerSearchInline, cls.headerSearchCategory].join(' ')}>
-                            <a href="#" onClick={ () => setToggleSearch( !toggleSearch)} className={[cls.searchToggle, `${ toggleSearch ? cls.show : ''  }`].join(' ')} role="button"><i></i></a>
-                            <form action="#" method="get">
-                                <div className={[cls.headerSearchWrapper, `${ toggleSearch ? cls.show : ''  }`].join(' ')}>
-                                    <input type="search" className={cls.formControl} name="q" id="q" placeholder="Search..." required />
-                                    <div className={cls.selectCustom}>
-                                        <select id="cat" name="cat">
-                                            <option value="">All Categories</option>
-                                            <option value="4">Fashion</option>
-                                            <option value="12">- Women</option>
-                                            <option value="13">- Men</option>
-                                            <option value="66">- Jewellery</option>
-                                            <option value="67">- Kids Fashion</option>
-                                            <option value="5">Electronics</option>
-                                            <option value="21">- Smart TVs</option>
-                                            <option value="22">- Cameras</option>
-                                            <option value="63">- Games</option>
-                                            <option value="7">Home &amp; Garden</option>
-                                            <option value="11">Motors</option>
-                                            <option value="31">- Cars and Trucks</option>
-                                            <option value="32">- Motorcycles &amp; Powersports</option>
-                                            <option value="33">- Parts &amp; Accessories</option>
-                                            <option value="34">- Boats</option>
-                                            <option value="57">- Auto Tools &amp; Supplies</option>
-                                        </select>
-                                    </div>
-                                    <button className={cls.btn} type="submit">
-                                        <i></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
+            <a
+              href="login.html"
+              className={[cls.headerIcon, cls.headerIconUser].join(" ")}
+            >
+              <i></i>
+            </a>
 
-                        <div className={cls.headerContact}>
-                            <i className={cls.iconPhone}></i>
-                            <h6>Call us now<a href="tel:#">+123
-                                5678 890</a></h6>
-                        </div>
+            <a
+              href="wishlist.html"
+              className={[cls.headerIcon, cls.iconWishlist].join(" ")}
+            >
+              <i></i>
+            </a>
 
-                        <a href="login.html" className={[cls.headerIcon, cls.headerIconUser].join(' ')}><i></i></a>
+            <div className={cls.cartDropdown}>
+              <a
+                href="#"
+                title="Cart"
+                className={cls.cartToggle}
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                data-display="static"
+              >
+                <i className={cls.minicartIcon}></i>
+                <span className={cls.badgeCircle}>3</span>
+              </a>
 
-                        <a href="wishlist.html" className={[cls.headerIcon, cls.iconWishlist].join(' ')}><i></i></a>
-
-                        <div className={cls.cartDropdown}>
-                            <a href="#" title="Cart" className={cls.cartToggle}
-                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                data-display="static">
-                                <i className={cls.minicartIcon}></i>
-                                <span className={cls.badgeCircle}>3</span>
-                            </a>
-
-                            {/* <div class="cart-overlay"></div>
+              {/* <div class="cart-overlay"></div>
 
                             <div class="dropdown-menu mobile-cart">
                                 <a href="#" title="Close (Esc)" class="btn-close">×</a>
@@ -156,13 +218,12 @@ const MiddleHeader = () => {
                                     </div>
                                 </div>
                             </div> */}
-                        </div >
-                    </Grid >
-                </Grid>
+            </div>
+          </Grid>
+        </Grid>
+      </Container>
 
-            </Container>
-
-            {/* <div class="mobile-menu-overlay"></div>
+      {/* <div class="mobile-menu-overlay"></div>
 
             <div class="mobile-menu-container">
                 <div class="mobile-menu-wrapper">
@@ -283,9 +344,8 @@ const MiddleHeader = () => {
                     </div>
                 </div>
             </div > */}
+    </div>
+  );
+};
 
-        </div >
-    )
-}
-
-export default MiddleHeader
+export default MiddleHeader;

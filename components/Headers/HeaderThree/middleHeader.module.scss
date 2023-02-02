@@ -1,0 +1,71 @@
+@import '../../../styles/mixins.scss';
+
+.middleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+  .logo {
+    cursor: pointer;
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  .links {
+    ul {
+      display: flex;
+      gap: 20px;
+      li {
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        &.active {
+          a {
+            color: var(--main-color);
+          }
+        }
+        
+        @keyframes show {
+          0% {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0px);
+          }
+        }
+        .pagesDropdown {
+          position: absolute;
+          z-index: 9999;
+          top: 65%;
+          left: 0;
+          width: 100%;
+          min-height: 400px;
+          background-color: var(--secondary-background);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+          padding: 10px 20px;
+          border-top: 3px solid var(--main-color);
+          animation: show 0.3s forwards;
+        }
+      }
+    }
+  }
+  .support {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    i {
+      font-size: 3rem;
+      color: var(--main-color);
+    }
+    h6, span {
+      font-size: 0.95rem;
+    }
+  }
+  @include md {
+    display: none;
+  }
+}
