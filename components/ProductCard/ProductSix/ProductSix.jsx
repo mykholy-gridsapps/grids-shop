@@ -40,30 +40,30 @@ const ProductSix = () => {
                     <a href="product.html">Men Black Gentle Belt</a>
                 </h3>
                 <div className={cls.ratingsContainer}>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-regular fa-star"></i>
+                    <i className="fa-regular fa-star"></i>
                 </div>
                 <div className={cls.priceBox}>
                     <span className={cls.oldPrice}>$59.00</span>
                     <span className={cls.productPrice}>$9.00</span>
                 </div>
-                <div class="product-action">
+                <div className="product-action">
                     <div className={cls.productSingleQty}>
                         <div className={cls.inputGroup}>
                             <span className={cls.inputGroupAppend}>
-                                <button onClick={() => changeQuantity('minus')} type="button"><i class="fa-light fa-minus"></i></button>
+                                <button onClick={() => changeQuantity('minus')} type="button"><i className="fa-light fa-minus"></i></button>
                             </span>
                             <input type="text" value={quantity} />
                             <span className={cls.inputGroupPrepend}>
-                                <button onClick={() => changeQuantity('plus')} type="button"><i class="fa-light fa-plus"></i></button>
+                                <button onClick={() => changeQuantity('plus')} type="button"><i className="fa-light fa-plus"></i></button>
                             </span>
                         </div>
                     </div>
                     <a href="demo14-product.html" className={cls.btnAddCart}>
-                        <i class="icon-shopping-cart"></i>ADD TO CART</a>
+                        <i className="icon-shopping-cart"></i>ADD TO CART</a>
                 </div>
             </div>
         </div>

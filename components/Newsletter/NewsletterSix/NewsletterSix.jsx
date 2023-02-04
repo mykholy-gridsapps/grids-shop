@@ -12,12 +12,12 @@ const NewsletterSix = () => {
             </figure>
 
             <div className={cls.bannerLayer}>
-                <h4 class="mt-0 m-b-1">Subscribe To Our Newsletter</h4>
-                <p class="font2 text-body m-b-4">Get all the latest information on events, sales
+                <h4 className="mt-0 m-b-1">Subscribe To Our Newsletter</h4>
+                <p className="font2 text-body m-b-4">Get all the latest information on events, sales
                     and offers.</p>
 
-                <form action="#" class="d-flex mb-0 mx-auto">
-                    <input type="email" class="form-control mb-0" placeholder="Email address" required />
+                <form action="#" className="d-flex mb-0 mx-auto">
+                    <input type="email" className="form-control mb-0" placeholder="Email address" required />
 
                     <button>Subscribe</button>
                 </form>

@@ -8,14 +8,14 @@ const NewsletterEight = () => {
         <div className={cls.newsletterBanner}>
             <div className={cls.bannerContent}>
                 <p>
-                    <i class="fa-regular fa-envelope"></i>
+                    <i className="fa-regular fa-envelope"></i>
                 </p>
                 <h2>subscribe to our newsletter</h2>
                 <h5>Get all the latest information on Events, Sales and Offers.</h5>
                 <div>
                     <form>
-                        <input type="email" class="form-control mb-1" placeholder="Email address" required />
-                        <button class="btn btn-primary">subscribe</button>
+                        <input type="email" className="form-control mb-1" placeholder="Email address" required />
+                        <button className="btn btn-primary">subscribe</button>
                     </form>
                 </div>
             </div>

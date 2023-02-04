@@ -24,7 +24,7 @@ const BlogOne = () => {
                     <span className={cls.month}>Jun</span>
                 </div>
                 <span className={cls.prodFullScreen}>
-                    <i class="fas fa-search" onClick={() => setOpen(true)}></i>
+                    <i className="fas fa-search" onClick={() => setOpen(true)}></i>
                 </span>
             </div>
             <div className={cls.postBody}>
@@ -35,7 +35,7 @@ const BlogOne = () => {
                 <div className={cls.postContent}>
                     <p>Leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with... </p>
 
-                    <a href="single.html" class="read-more">read more <i class="fa-solid fa-chevron-right"></i></a>
+                    <a href="single.html" className="read-more">read more <i className="fa-solid fa-chevron-right"></i></a>
                 </div>
             </div>
             <Lightbox

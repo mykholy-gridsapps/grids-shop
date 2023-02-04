@@ -8,7 +8,7 @@ const BlogSix = () => {
             <div className={cls.sectionTitle}>
                 <h2>RECENT ARTICLE</h2>
                 <hr />
-                <a href="#" class="with-icon mr-sm-auto ml-4 mr-4 ml-sm-0">VIEW BLOG<i class="fas fa-long-arrow-alt-right"></i></a>
+                <a href="#" className="with-icon mr-sm-auto ml-4 mr-4 ml-sm-0">VIEW BLOG<i className="fas fa-long-arrow-alt-right"></i></a>
             </div>
             <article className={cls.post}>
                 <Grid container alignItems={'center'}>

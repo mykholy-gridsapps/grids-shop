@@ -20,8 +20,8 @@ const SliderTwo = () => {
 
                         <div className={cls.bannerLayer} >
                             <h2>Winter Fashion Trends</h2>
-                            <h3 class="text-uppercase mb-0">Get up to 30% off</h3>
-                            <h4 class="m-b-4">on Jackets</h4>
+                            <h3 className="text-uppercase mb-0">Get up to 30% off</h3>
+                            <h4 className="m-b-4">on Jackets</h4>
 
                             <h5 >Starting at<span><sup>$</sup>199<sup>99</sup></span></h5>
                             <a href="demo3-shop.html" className={cls.btn} role="button">Shop Now</a>
@@ -40,7 +40,7 @@ const SliderTwo = () => {
                             <h5>Starting at <span>$<em>19</em>99</span>
                             </h5>
                             <a href="demo3-shop.html" className={cls.btn} role="button">Shop Now <i
-                                class="fas fa-long-arrow-alt-right"></i></a>
+                                className="fas fa-long-arrow-alt-right"></i></a>
                         </div>
                     </div>
                 </SwiperSlide>

@@ -14,8 +14,8 @@ const SaleTwentyEight = () => {
                             <p>* Selected books</p>
                         </div>
                     </Grid>
-                    <Grid lg={3} xs={7} >
-                        <a href="demo25-shop.html">Explore Books <i class="fas fa-long-arrow-alt-right"></i></a>
+                    <Grid item lg={3} xs={7} >
+                        <a href="demo25-shop.html">Explore Books <i className="fas fa-long-arrow-alt-right"></i></a>
                     </Grid>
                 </Grid>
             </Container>

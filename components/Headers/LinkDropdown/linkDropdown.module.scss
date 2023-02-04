@@ -1,0 +1,23 @@
+.linkDropdown {
+  h5 {
+    color: var(--main-color);
+    font-size: 1rem;
+  }
+  ul {
+    display: block;
+    li {
+      color: var(--text-color) !important;
+      padding: 5px 0 !important;
+      font-weight: 500;
+      border: none !important;
+      line-height: 22px !important;
+      height: auto !important;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  img {
+    object-fit: contain;
+  }
+}

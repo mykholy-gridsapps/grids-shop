@@ -34,7 +34,7 @@ const FooterMiddle = () => {
 
                                 <Grid container>
                                     <Grid item sm={6}>
-                                        <ul class="links mb-0">
+                                        <ul className="links mb-0">
                                             <li><a href="demo6-about.html">About us</a></li>
                                             <li><a href="demo6-contact.html">Contact us</a></li>
                                             <li><a href="dashboard.html">My Account</a></li>
@@ -42,7 +42,7 @@ const FooterMiddle = () => {
                                     </Grid>
 
                                     <Grid item sm={6}>
-                                        <ul class="links">
+                                        <ul className="links">
                                             <li><a href="#">Order history</a></li>
                                             <li><a href="#">Advanced search</a></li>
                                             <li><a href="login.html">Login</a></li>
@@ -57,7 +57,7 @@ const FooterMiddle = () => {
 
                                 <Grid container>
                                     <Grid item sm={6}>
-                                        <ul class="links mb-0">
+                                        <ul className="links mb-0">
                                             <li><a href="#">Super Fast HTML Template</a></li>
                                             <li><a href="#">1st Fully working Ajax Theme</a></li>
                                             <li><a href="#">33 Unique Shop Layouts</a></li>
@@ -65,7 +65,7 @@ const FooterMiddle = () => {
                                     </Grid>
 
                                     <Grid item sm={6}>
-                                        <ul class="links">
+                                        <ul className="links">
                                             <li><a href="#">Powerful Admin Panel</a></li>
                                             <li><a href="#">Mobile & Retina Optimized</a></li>
                                         </ul>

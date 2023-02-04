@@ -50,7 +50,7 @@ const TopHeader = () => {
                   <a href="cart.html">Cart</a>
                 </li>
                 <li>
-                  <a href="#" class="login-link">
+                  <a href="#" className="login-link">
                     Log In
                   </a>
                 </li>
@@ -62,7 +62,7 @@ const TopHeader = () => {
 
               <span className={cls.separator}></span>
 
-              <div class="social-icons">
+              <div className="social-icons">
                 <Box
                   component="a"
                   href="#"

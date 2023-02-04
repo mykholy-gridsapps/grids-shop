@@ -8,10 +8,10 @@ const FeaturesSeven = () => {
             <Grid container>
                 <Grid item lg={12}>
                     <div className={cls.featureBox}>
-                        <i class="fa-regular fa-headset"></i>
+                        <i className="fa-regular fa-headset"></i>
 
                         <div className={cls.featureBoxContent}>
-                            <h3 class="text-uppercase">Customer Support</h3>
+                            <h3 className="text-uppercase">Customer Support</h3>
                             <h5>Need Assistence?</h5>
 
                             <p>Lorem ipsum dolor amet, consectetur.</p>
@@ -20,10 +20,10 @@ const FeaturesSeven = () => {
                 </Grid>
                 <Grid item lg={12}>
                     <div className={cls.featureBox}>
-                        <i class="fa-regular fa-credit-card"></i>
+                        <i className="fa-regular fa-credit-card"></i>
 
                         <div className={cls.featureBoxContent}>
-                            <h3 class="text-uppercase">Secured Payment</h3>
+                            <h3 className="text-uppercase">Secured Payment</h3>
                             <h5>Safe & Fast</h5>
 
                             <p>Lorem ipsum dolor amet, consectetur.</p>
@@ -32,10 +32,10 @@ const FeaturesSeven = () => {
                 </Grid>
                 <Grid item lg={12}>
                     <div className={cls.featureBox}>
-                        <i class="fa-regular fa-share"></i>
+                        <i className="fa-regular fa-share"></i>
 
                         <div className={cls.featureBoxContent}>
-                            <h3 class="text-uppercase">Free Returns</h3>
+                            <h3 className="text-uppercase">Free Returns</h3>
                             <h5>Easy & Free</h5>
 
                             <p>Lorem ipsum dolor amet, consectetur.</p>

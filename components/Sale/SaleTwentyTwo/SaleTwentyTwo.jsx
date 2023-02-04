@@ -14,7 +14,7 @@ const SaleTwentyTwo = () => {
                     <hr/>
 
                     <h5 >Starting at<span>$<strong>39</strong>99</span></h5>
-                    <a href="demo16-shop.html">Shop Now <i class="fas fa-long-arrow-alt-right"></i>
+                    <a href="demo16-shop.html">Shop Now <i className="fas fa-long-arrow-alt-right"></i>
                     </a>
                 </div>
             </Container>

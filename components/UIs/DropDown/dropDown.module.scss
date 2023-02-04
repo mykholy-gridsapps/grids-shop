@@ -11,14 +11,15 @@
   }
 
   img {
-    width: 25px;
-    height: 20px;
-
+    width: 24px;
+    height: 18px;
+    // border-radius: 50%;
+    object-fit: fill;
   }
 
   span {
     font-size: 0.9rem;
-    padding: 0 5px;
+    padding: 0 3px;
   }
 
   i {
@@ -39,9 +40,13 @@
     display: flex;
     gap: 5px;
     padding: 0.5em 7px;
-    color: #777;
+    color: #777 !important;
     white-space: nowrap;
-    font-size: 0.9rem;
-
+    font-size: 0.9rem !important;
+    font-weight: normal !important;
+    text-transform: unset !important;
+    p {
+      margin: 0 !important;
+    }
   }
 }

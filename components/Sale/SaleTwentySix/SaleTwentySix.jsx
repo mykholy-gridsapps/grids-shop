@@ -12,11 +12,11 @@ const SaleTwentySix = () => {
             <div className={cls.bannerLayer}>
                 <Grid container justifyContent="space-between">
                     <Grid item lg={4} xs={6}>
-                        <h3 class="font1 text-uppercase ls-0 mb-0">Action<br />Cameras</h3>
+                        <h3 className="font1 text-uppercase ls-0 mb-0">Action<br />Cameras</h3>
                     </Grid>
-                    <Grid lg={4} xs={6} paddingLeft="40px">
-                        <h4 class="font1 ls-n-10">Starting From <b>$399</b></h4>
-                        <a href="demo21-shop.html" class="btn btn-primary ls-n-25">Shop Now</a>
+                    <Grid item lg={4} xs={6} paddingLeft="40px">
+                        <h4 className="font1 ls-n-10">Starting From <b>$399</b></h4>
+                        <a href="demo21-shop.html" className="btn btn-primary ls-n-25">Shop Now</a>
                     </Grid>
                 </Grid>
             </div>

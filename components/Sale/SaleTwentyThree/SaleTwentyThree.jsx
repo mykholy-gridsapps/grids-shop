@@ -10,8 +10,8 @@ const SaleTwentyThree = () => {
 
             <div className={cls.bannerLayer}>
                 <div className={cls.bannerLayerLeft}>
-                    <h4 class="text-white mb-0">Flash Sale</h4>
-                    <h5 class="text-uppercase text-white mb-0">30% off</h5>
+                    <h4 className="text-white mb-0">Flash Sale</h4>
+                    <h5 className="text-uppercase text-white mb-0">30% off</h5>
                 </div>
 
                 <a href="demo18-shop.html" className={cls.btn}>Shop now</a>

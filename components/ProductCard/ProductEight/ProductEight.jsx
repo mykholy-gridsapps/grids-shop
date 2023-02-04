@@ -13,11 +13,11 @@ const ProductEight = () => {
                 </a>
                 <div className={cls.btnIconGroup}>
                     <a href="#" className={cls.btnIcon}>
-                        <i class="fa-regular fa-bag-shopping"></i>
+                        <i className="fa-regular fa-bag-shopping"></i>
                     </a>
                     <button className={cls.btnIcon} data-toggle="modal"
                         data-target="#addCartModal">
-                        <i class="fa-regular fa-heart"></i>
+                        <i className="fa-regular fa-heart"></i>
                     </button>
                 </div>
                 <a href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">Quick
@@ -30,11 +30,11 @@ const ProductEight = () => {
                 </div>
                 <h3 className={cls.productTitle}> <a href="demo1-product.html">Black Grey Headset</a> </h3>
                 <div className={cls.productRatings}>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-regular fa-star"></i>
+                    <i className="fa-regular fa-star"></i>
                 </div>
                 <div className={cls.priceBox}>
                     <span className={cls.oldPrice}>$59.00</span>

@@ -20,7 +20,7 @@ const BlogSeven = () => {
                     <img src="./imgs/blog/post-6-1.png" alt="Post" width="280" height="209" />
                 </a>
                 <span className={cls.prodFullScreen}>
-                    <i class="fas fa-search" onClick={() => setOpen(true)}></i>
+                    <i className="fas fa-search" onClick={() => setOpen(true)}></i>
                 </span>
             </div>
             <div className={cls.postBody}>

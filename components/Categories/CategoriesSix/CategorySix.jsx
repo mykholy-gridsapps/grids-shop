@@ -3,10 +3,10 @@ import cls from './categorySix.module.scss'
 
 const CategorySix = () => {
     return (
-        <div class={cls.productCategory}>
+        <div className={cls.productCategory}>
             <a href="demo21-shop.html">
                 <div className={cls.categoryContent}>
-                <i class="fa-regular fa-gift"></i>
+                <i className="fa-regular fa-gift"></i>
                     <h3>Gifts</h3>
                 </div>
             </a>

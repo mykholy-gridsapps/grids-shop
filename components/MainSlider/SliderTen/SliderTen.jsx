@@ -20,7 +20,7 @@ const SliderTen = () => {
 
                             <div className={cls.bannerLayer} >
                                 <h2>Discover our Arrivals!</h2>
-                                <a href="demo1-shop.html" className={cls.btn}><span>View our Dresses </span><i class="fa-solid fa-chevron-right"></i></a>
+                                <a href="demo1-shop.html" className={cls.btn}><span>View our Dresses </span><i className="fa-solid fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </Container>
@@ -31,7 +31,7 @@ const SliderTen = () => {
                             <img src="./imgs/slider/slider-10-2.jpg" alt="client" />
                             <div className={cls.bannerLayer} >
                                 <h2>Trendy Collections!</h2>
-                                <a href="demo1-shop.html" className={cls.btn}><span>View our Specials</span><i class="fa-solid fa-chevron-right"></i></a>
+                                <a href="demo1-shop.html" className={cls.btn}><span>View our Specials</span><i className="fa-solid fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </Container>

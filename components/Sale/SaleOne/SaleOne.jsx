@@ -44,10 +44,10 @@ const SaleOne = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={cls.banner2}>
-                        <div class="banner banner5">
+                        <div className="banner banner5">
                             <h4>HEADPHONES SALE</h4>
 
-                            <figure class="m-b-3">
+                            <figure className="m-b-3">
                                 <img src="./imgs/sale/sale-1-2.jpg" alt="banner" />
                             </figure>
 

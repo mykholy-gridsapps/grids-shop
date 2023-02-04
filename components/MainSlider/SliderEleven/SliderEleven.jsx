@@ -31,7 +31,7 @@ const SliderEleven = () => {
                                         </div>
                                     </div>
                                     <div className={cls.btnIconGroup}>
-                                        <a href="demo1-shop.html" className={cls.btn}><i class="fa-solid fa-arrow-right"></i>Select Options</a>
+                                        <a href="demo1-shop.html" className={cls.btn}><i className="fa-solid fa-arrow-right"></i>Select Options</a>
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@ const SliderEleven = () => {
                                         </div>
                                     </div>
                                     <div className={cls.btnIconGroup}>
-                                        <a href="demo1-shop.html" className={cls.btn}><i class="fa-solid fa-arrow-right"></i>Select Options</a>
+                                        <a href="demo1-shop.html" className={cls.btn}><i className="fa-solid fa-arrow-right"></i>Select Options</a>
                                     </div>
                                 </div>
                                 <figure>

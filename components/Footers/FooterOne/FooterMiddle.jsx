@@ -50,7 +50,7 @@ const FooterMiddle = () => {
                         <div className={cls.widget}>
                             <Box component='h4' className={cls.widgetTitle} sx={{pb :"2.5px"}} >Customer Service</Box>
 
-                            <ul class="links">
+                            <ul className="links">
                                 <li><a href="#">Help & FAQs</a></li>
                                 <li><a href="#">Order Tracking</a></li>
                                 <li><a href="#">Shipping & Delivery</a></li>

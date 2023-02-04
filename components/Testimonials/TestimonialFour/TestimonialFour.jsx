@@ -12,7 +12,7 @@ const TestimonialFour = () => {
                 </p>
             </blockquote>
 
-            <h5 class="testi-author">- Joe Doe</h5>
+            <h5 className="testi-author">- Joe Doe</h5>
 
         </div>
     )

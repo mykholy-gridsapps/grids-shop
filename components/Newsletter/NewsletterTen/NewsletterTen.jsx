@@ -11,7 +11,7 @@ const NewsletterTen = () => {
                 <Grid container className={cls.container} justifyContent='center' alignItems="center">
                     <Grid item className={cls.leftSec}>
                         <div className={cls.text} >
-                            <i class="fa-regular fa-envelope"></i>
+                            <i className="fa-regular fa-envelope"></i>
 
                             <div className={cls.newsletterContent}>
                                 <h3>Get Special Offers and Savings</h3>
@@ -26,7 +26,7 @@ const NewsletterTen = () => {
                         </form>
                     </Grid>
                     <Grid item>
-                        <div class="social-icons my-3">
+                        <div className="social-icons my-3">
                             <a href="#" className={[cls.socialIcon, cls.socialFacebook, 'fab fa-facebook-f'].join(' ')} target="_blank"></a>
                             <a href="#" className={[cls.socialIcon, cls.socialTwitter, 'fab fa-twitter'].join(' ')} target="_blank"></a>
                             <a href="#" className={[cls.socialIcon, cls.socialLinked, 'fab fa-linkedin-in'].join(' ')} target="_blank"></a>

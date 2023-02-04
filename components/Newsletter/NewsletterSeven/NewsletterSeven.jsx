@@ -16,7 +16,7 @@ const NewsletterSeven = () => {
                         <p>
                             Get all the latest information on Events, Sales and Offers.
                         </p>
-                        <span class="widget-newsletter-content d-block font-weight-bold ls-n-10 text-white">Receive $10 coupon for first shopping.</span>
+                        <span className="widget-newsletter-content d-block font-weight-bold ls-n-10 text-white">Receive $10 coupon for first shopping.</span>
                     </Grid>
                     <Grid item md={10} lg={5} xs={12}>
                         <form action="#">

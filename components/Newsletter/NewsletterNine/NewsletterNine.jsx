@@ -8,7 +8,7 @@ const NewsletterNine = () => {
         <div className={cls.newsletterBanner}>
             <Grid container justifyContent='center' alignItems="center">
                 <Grid className={cls.text} item md={6} xs={12}>
-                    <i class="fa-regular fa-envelope"></i>
+                    <i className="fa-regular fa-envelope"></i>
 
                     <div className={cls.newsletterContent}>
                         <h3>Get Special Offers and Savings</h3>

@@ -13,9 +13,9 @@ const CategoryFourCarousel = () => {
 
     return (
         <div className={cls.categoriesCarousel}>
-            <h2 class="section-title text-center">
+            <h2 className="section-title text-center">
                 Browse Categories</h2>
-            <p class="section-description text-center">Amazing categories with only top fashion products</p>
+            <p className="section-description text-center">Amazing categories with only top fashion products</p>
             <Swiper slidesPerView={5} spaceBetween={20}>
                 {array.map(_ =>
 

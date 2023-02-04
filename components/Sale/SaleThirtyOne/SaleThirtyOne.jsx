@@ -14,7 +14,7 @@ const SaleThirty = () => {
                     <a href="#">go coupon</a>
                     <h3><span>$100</span>off</h3>
                     <p>starting from $199</p>
-                    <a href="demo29-shop.html" className={cls.btn} >shop now <i class="fas fa-long-arrow-alt-right"></i></a>
+                    <a href="demo29-shop.html" className={cls.btn} >shop now <i className="fas fa-long-arrow-alt-right"></i></a>
                 </div>
             </div>
         </div>

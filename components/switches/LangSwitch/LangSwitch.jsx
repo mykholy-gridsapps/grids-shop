@@ -44,7 +44,7 @@ const LangSwitch = ({ color }) => {
       img: "/imgs/navbar/suadi.png",
       method: switchLang,
       param: "ar",
-      text: "عربي"
+      text: "Ar"
     },
   ];
 

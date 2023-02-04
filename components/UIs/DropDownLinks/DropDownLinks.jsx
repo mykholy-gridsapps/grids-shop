@@ -34,7 +34,7 @@ const DropDownLinks = ({ }) => {
                     <li><a href="wishlist.html">My Wishlist</a></li>
                     <li><a href="#">Site Map</a></li>
                     <li><a href="cart.html">Cart</a></li>
-                    <li><a href="#" class="login-link">Log In</a></li>
+                    <li><a href="#" className="login-link">Log In</a></li>
                 </ul>
             </Box>
         </div>

@@ -3,9 +3,9 @@ import cls from './categorySeven.module.scss'
 
 const CategorySeven = () => {
     return (
-        <div class={cls.productCategory}>
+        <div className={cls.productCategory}>
             <a href="demo22-shop.html">
-            <i class="fa-regular fa-gift"></i>
+            <i className="fa-regular fa-gift"></i>
 
                 <span>Music</span>
             </a>

@@ -3,7 +3,7 @@ import cls from './categoryEight.module.scss'
 
 const CategoryEight = () => {
     return (
-        <div class={cls.productCategory}>
+        <div className={cls.productCategory}>
             <a href="demo23-shop.html">
                 <figure>
                 <img src="imgs/category/category-4.jpg" width="273" height="273"

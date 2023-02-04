@@ -17,7 +17,7 @@ const ProductTwo = () => {
                 </div>
                 <div className={cls.btnIconGroup}>
                     <a href="demo1-product.html" className={cls.btnIcon}>
-                        <i class="fa-regular fa-bag-shopping"></i>
+                        <i className="fa-regular fa-bag-shopping"></i>
                     </a>
                 </div>
                 <a href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">Quick
@@ -26,7 +26,7 @@ const ProductTwo = () => {
             <div className={cls.productDetails}>
                 <div className={cls.categoryWrap}>
                     <div className={cls.categoryList}>
-                        <a href="demo1-shop.html" class="product-category">category</a>
+                        <a href="demo1-shop.html" className="product-category">category</a>
                     </div>
                     <a href="wishlist.html" title="Add to Wishlist" className={cls.btnIconWish}>
                         <i className={cls.iconHeart}></i>
@@ -34,11 +34,11 @@ const ProductTwo = () => {
                 </div>
                 <h3 className={cls.productTitle}> <a href="demo1-product.html">Black Grey Headset</a> </h3>
                 <div className={cls.ratingsContainer}>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-regular fa-star"></i>
+                    <i className="fa-regular fa-star"></i>
                 </div>
                 <div className={cls.priceBox}>
                     <span className={cls.oldPrice}>$59.00</span>

@@ -24,11 +24,11 @@ const ProductFive = () => {
                     <a href="product.html">Men Black Gentle Belt</a>
                 </h3>
                 <div className={cls.ratingsContainer}>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-regular fa-star"></i>
+                    <i className="fa-regular fa-star"></i>
                 </div>
                 <div className={cls.priceBox}>
                     <span className={cls.oldPrice}>$59.00</span>
@@ -37,9 +37,9 @@ const ProductFive = () => {
                 <div className={cls.productAction}>
                     <a href="wishlist.html" className={cls.btnIconWish} title="wishlist"><i className={cls.iconHeart}></i></a>
                     <a href="#" className={cls.btnAddCart}><i
-                        class="icon-shopping-cart"></i><span>ADD TO CART</span></a>
+                        className="icon-shopping-cart"></i><span>ADD TO CART</span></a>
                     <a href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">
-                        <i class="fas fa-external-link-alt"></i></a>
+                        <i className="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>

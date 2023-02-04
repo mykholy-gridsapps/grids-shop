@@ -12,7 +12,7 @@ const TopHeader = () => {
 
   return (
     <div className={cls.topHeader}>
-      <Container maxWidth="xxl" className={`${cls.wrapper}`}>
+      <Container maxWidth="xl" className={`${cls.wrapper}`}>
         <div>
           <span>Welcome To Our Shop</span>
         </div>

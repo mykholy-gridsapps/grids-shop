@@ -11,8 +11,8 @@ const FeaturesOne = () => {
                         <i className={cls.iconEarphonesAlt}></i>
 
                         <div className={cls.featureBoxContent}>
-                            <h3 class="mb-0 pb-1">Customer Support</h3>
-                            <h5 class="mb-1 pb-1">Need Assistance?</h5>
+                            <h3 className="mb-0 pb-1">Customer Support</h3>
+                            <h5 className="mb-1 pb-1">Need Assistance?</h5>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapib.
                             </p>
@@ -24,8 +24,8 @@ const FeaturesOne = () => {
                         <i className={cls.iconCreditCard}></i>
 
                         <div className={cls.featureBoxContent}>
-                            <h3 class="mb-0 pb-1">Secured Payment</h3>
-                            <h5 class="mb-1 pb-1">Safe & Fast</h5>
+                            <h3 className="mb-0 pb-1">Secured Payment</h3>
+                            <h5 className="mb-1 pb-1">Safe & Fast</h5>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapib.
                             </p>
@@ -37,8 +37,8 @@ const FeaturesOne = () => {
                         <i className={cls.iconActionUndo}></i>
 
                         <div className={cls.featureBoxContent}>
-                            <h3 class="mb-0 pb-1">Returns</h3>
-                            <h5 class="mb-1 pb-1">Easy & Free</h5>
+                            <h3 className="mb-0 pb-1">Returns</h3>
+                            <h5 className="mb-1 pb-1">Easy & Free</h5>
 
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec vestibulum magna, et dapib.
                             </p>

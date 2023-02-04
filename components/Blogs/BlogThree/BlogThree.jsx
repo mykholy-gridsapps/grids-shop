@@ -21,7 +21,7 @@ const BlogThree = () => {
                 <div className={cls.postContent}>
                     <p>Leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with... </p>
                     <div className={cls.postMeta}>
-                        <i class="fa-regular fa-comments"></i>
+                        <i className="fa-regular fa-comments"></i>
                         <a href="#" title="Comment on Top Jeans Collection">0 COMMENTS</a>
                     </div>
                 </div>

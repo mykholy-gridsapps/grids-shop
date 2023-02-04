@@ -5,9 +5,11 @@ import { useRouter } from "next/router";
 
 import TopHeader from "./TopHeader";
 import HeaderThreeMiddle from "./MiddleHeader";
+import CartDropdown from "../CartDropdown/CartDropdown";
+import WishlistDropdown from "../WishlistDropdown/WishlistDropdown";
 import LangSwitch from "../../switches/LangSwitch/LangSwitch";
 import ModeSwitch from "../../switches/ModeSwitch/ModeSwitch";
-// import MobSidebar from "./MobSidebar/MobSidebar";
+import MobSidebar from "../MobSidebar/MobSidebar";
 
 import Container from "@mui/material/Container";
 import Tooltip from "@mui/material/Tooltip";
@@ -30,7 +32,7 @@ const Navbar = ({ rounded }) => {
       <HeaderThreeMiddle />
 
       <div className={cls.navbar__search}>
-        <Container maxWidth="xxl" className={`${cls.search__wrapper}`}>
+        <Container maxWidth="xl" className={`${cls.search__wrapper}`}>
           <div className={cls.smallLogo}>
             <i
               className="fa-light fa-grid-2"
@@ -78,49 +80,7 @@ const Navbar = ({ rounded }) => {
               </Tooltip>
 
               {navDropdown === "wishlist" && (
-                <div
-                  className={`${cls.wishlist__dropdown} ${cls[i18n.language]}`}
-                >
-                  {/* <div className={cls.item}>
-
-                    <img src="/imgs/products/laptop.png" alt="productImage" />
-
-                    <div>
-
-                      <h6>Dell Vostro 3500 laptop - 11th Intel core i7-1165G7, 8GB RAM, 1TB HDD</h6>
-
-                    </div>
-
-                  </div>
-                    
-                  <div className={cls.item}>
-
-                    <img src="/imgs/products/laptop.png" alt="productImage" />
-
-                    <div>
-
-                      <h6>Dell Vostro 3500 laptop - 11th Intel core i7-1165G7, 8GB RAM, 1TB HDD</h6>
-
-                    </div>
-
-                  </div> */}
-
-                  <div className="smallEmpty">
-                    <img src="/imgs/empty/wishlist.png" alt="emptyImage" />
-                    <h6>No items in wishlist</h6>
-                  </div>
-
-                  <div className={cls.actions}>
-                    <button
-                      className={cls.view}
-                      onClick={() => router.push("/wishlist")}
-                    >
-                      View wishlist
-                    </button>
-
-                    <button>Clear wishlist</button>
-                  </div>
-                </div>
+                <WishlistDropdown />
               )}
             </div>
 
@@ -137,35 +97,7 @@ const Navbar = ({ rounded }) => {
               </Tooltip>
 
               {navDropdown === "cart" && (
-                <div className={`${cls.cart__dropdown} ${cls[i18n.language]}`}>
-                  {/* <div className={cls.item}>
-
-                    <img src="/imgs/products/laptop.png" alt="productImage" />
-
-                    <div>
-
-                      <h6>Dell Vostro 3500 laptop - 11th Intel core i7-1165G7, 8GB RAM, 1TB HDD</h6>
-
-                    </div>
-
-                  </div> */}
-
-                  <div className="smallEmpty">
-                    <img src="/imgs/empty/cart.png" alt="emptyImage" />
-                    <h6>No items in cart</h6>
-                  </div>
-
-                  <div className={cls.actions}>
-                    <button
-                      className={cls.view}
-                      onClick={() => router.push("/cart")}
-                    >
-                      view cart
-                    </button>
-
-                    <button>Clear cart</button>
-                  </div>
-                </div>
+                <CartDropdown />
               )}
             </div>
           </div>
@@ -173,11 +105,11 @@ const Navbar = ({ rounded }) => {
       </div>
 
       {/* SMALL SCREEN SIDE BAR */}
-      {/* <MobSidebar
+      <MobSidebar
         className={openSidebar ? cls.show : cls.hide}
         isOpen={openSidebar}
         closeMobileMenu={setOpenSidebar}
-      /> */}
+      />
     </div>
   );
 };

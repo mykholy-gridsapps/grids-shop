@@ -15,8 +15,8 @@ const NewsletterThree = () => {
                 <Grid item md={5}>
 
                     <form>
-                        <input type="email" class="form-control mb-1" placeholder="Email address" required />
-                        <button class="btn btn-primary">subscribe</button>
+                        <input type="email" className="form-control mb-1" placeholder="Email address" required />
+                        <button className="btn btn-primary">subscribe</button>
                     </form>
                 </Grid>
             </Grid >

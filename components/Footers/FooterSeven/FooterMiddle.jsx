@@ -43,12 +43,12 @@ const FooterMiddle = () => {
                     <Grid item lg={3} sm={6} sx={{ pb: '0' }}>
                         <Box component='div' className={[cls.widget, cls.widgetPost].join(' ')} sx={{ mb: { sm: "30px", xs: "10px", } }}>
                             <h4 className={cls.widgetTitle}>Latest News</h4>
-                            <ul class="links">
-                                <li><a href="#">Top Jeans Collection<br /><span class="font1">JULY 23,
+                            <ul className="links">
+                                <li><a href="#">Top Jeans Collection<br /><span className="font1">JULY 23,
                                     2021</span></a></li>
-                                <li><a href="#">Post Format Standard<br /><span class="font1">FEBRUARY 26,
+                                <li><a href="#">Post Format Standard<br /><span className="font1">FEBRUARY 26,
                                     2020</span></a></li>
-                                <li><a href="#">Post Format Video<br /><span class="font1">FEBRUARY 26,
+                                <li><a href="#">Post Format Video<br /><span className="font1">FEBRUARY 26,
                                     2019</span></a></li>
                             </ul>
                         </Box>

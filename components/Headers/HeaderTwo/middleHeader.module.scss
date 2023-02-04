@@ -1,0 +1,72 @@
+@import '../../../styles/mixins.scss';
+
+  .search__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .logo {
+      cursor: pointer;
+      h1 {
+      font-size: 1.3rem;
+      }
+    }
+
+    .navbar__search__searchArea {
+      input {
+        width: 550px;
+        height: 40px;
+        padding: 8px 20px;
+        border: 1px solid #000;
+        outline: none;
+        font-size: 0.9rem;
+      }
+      button {
+        height: 40px;
+        width: 50px;
+        background-color: #000;
+        text-align: center !important;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        top: 1.2px;
+      }
+      @include lg {
+        input {
+          width: 450px;
+        }
+      }
+      &.rounded {
+        input {
+          border-radius: 20px 0 0 20px;
+        }
+        button {
+          border-radius: 0 20px 20px 0;
+        }
+        &.ar {
+          input {
+            border-radius: 0px 20px 20px 0px;
+          }
+          button {
+            border-radius: 20px 0px 0px 20px;
+          }
+        }
+      }
+    }
+    .support {
+      display: flex;
+      align-items: center;
+      gap: 0px;
+    svg {
+      width: auto !important;
+      height: 80px !important;
+    }
+      h6, span {
+        font-size: 0.9rem;
+      }
+    }
+    @include md {
+      display: none;
+    }
+  }

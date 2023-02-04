@@ -15,13 +15,13 @@ const TestimonialFive = () => {
                 <img src="./imgs/clients/client.jpg" alt="client" />
             </figure>
 
-            <h5 class="testi-author">Joe Doe</h5>
+            <h5 className="testi-author">Joe Doe</h5>
             <div className={cls.ratings}>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-solid fa-star"></i>
+                <i className="fa-regular fa-star"></i>
             </div>
 
         </div>

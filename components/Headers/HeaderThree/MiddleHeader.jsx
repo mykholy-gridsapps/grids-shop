@@ -2,7 +2,11 @@ import { useState } from 'react';
 import Link from "next/link";
 import { useRouter } from 'next/router';
 
+import AnimatedIcons from "../../UIs/AnimatedIcons/AnimatedIcons";
+
 import Container from "@mui/material/Container";
+
+import * as animationData from "../../../public/animated/support.json";
 
 import cls from './middleHeader.module.scss';
 
@@ -11,7 +15,7 @@ const MiddleHeader = () => {
   const [navDropdown, setNavDropdown] = useState("");
 
   return (
-    <Container maxWidth="xxl" className={`${cls.middleHeader}`}>
+    <Container maxWidth="xl" className={`${cls.middleHeader}`}>
       <div className={cls.logo}>
         <h1 onClick={() => router.push("/")}>Grids Apps</h1>
       </div>
@@ -59,7 +63,7 @@ const MiddleHeader = () => {
       </div>
 
       <div className={cls.support}>
-        <i className="fa-thin fa-hands-holding-heart"></i>
+        <AnimatedIcons animationData={animationData} />
 
         <div>
           <h6>Support: 01025864313</h6>

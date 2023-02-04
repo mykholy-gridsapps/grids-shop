@@ -20,15 +20,15 @@ const BlogEight = () => {
                     <img src="./imgs/blog/post-7-1.jpg" />
                 </a>
                 <span className={cls.prodFullScreen}>
-                    <i class="fas fa-search" onClick={() => setOpen(true)}></i>
+                    <i className="fas fa-search" onClick={() => setOpen(true)}></i>
                 </span>
             </div>
             <div className={cls.postBody}>
                 <div className={cls.postMeta}>
-                    <span className={cls.metaDate}><i class="far fa-calendar-alt"></i>December 1,
+                    <span className={cls.metaDate}><i className="far fa-calendar-alt"></i>December 1,
                         2020</span>
-                    <span class="meta-author"><i class="far fa-user"></i>By <a href="#" title="Posts by John Doe" rel="author">John Doe</a></span>
-                    <span class="meta-comments"><i class="far fa-comments"></i><a href="#" title="Comment on Lorem ipsum dolor sit amet">0 Comments</a></span>
+                    <span className="meta-author"><i className="far fa-user"></i>By <a href="#" title="Posts by John Doe" rel="author">John Doe</a></span>
+                    <span className="meta-comments"><i className="far fa-comments"></i><a href="#" title="Comment on Lorem ipsum dolor sit amet">0 Comments</a></span>
                 </div>
                 <h2>
                     <a href="single.html">Fashion News</a>

@@ -47,7 +47,7 @@ const SliderSeven = () => {
                                 TOP BRANDS<br />SUMMER SUNGLASSES
                             </h4>
                             <h3>
-                                STARTING<br />AT<sup class="pl-2 ml-1">$</sup>199<sup>99</sup>
+                                STARTING<br />AT<sup className="pl-2 ml-1">$</sup>199<sup>99</sup>
                             </h3>
                             <a href="demo1-shop.html" className={cls.btn}>View Sale</a>
                         </div>

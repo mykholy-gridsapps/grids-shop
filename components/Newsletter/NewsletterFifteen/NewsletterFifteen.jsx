@@ -12,9 +12,9 @@ const NewsletterFifteen = () => {
                 <h5>Get all the latest information on Events, Sales and Offers.</h5>
                 <div>
                     <form>
-                        <i class="fa-regular fa-envelope"></i>
-                        <input type="email" class="form-control mb-1" placeholder="Email address" required />
-                        <button class="btn btn-primary">OK</button>
+                        <i className="fa-regular fa-envelope"></i>
+                        <input type="email" className="form-control mb-1" placeholder="Email address" required />
+                        <button className="btn btn-primary">OK</button>
                     </form>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import cls from './categoryEleven.module.scss'
 
 const CategoryEleven = () => {
     return (
-        <div class={cls.productCategory}>
+        <div className={cls.productCategory}>
             <a href="demo33-shop.html">
                 <figure>
                     <img src="imgs/category/category-7.jpg" width="273" height="273"
@@ -13,7 +13,7 @@ const CategoryEleven = () => {
                 <div className={cls.categoryContent}>
                     <h3>Sunglasses</h3>
                     <span>
-                        <mark class="count">22</mark> products</span>
+                        <mark className="count">22</mark> products</span>
                 </div>
             </a>
         </div>

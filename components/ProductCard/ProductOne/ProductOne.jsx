@@ -17,7 +17,7 @@ const ProductOne = () => {
                 </div>
                 <div className={cls.btnIconGroup}>
                     <a href="demo1-product.html" className={cls.btnIcon}>
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <i className="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
                 <a href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">Quick View</a>
@@ -33,11 +33,11 @@ const ProductOne = () => {
                 </div>
                 <h3 className={cls.productTitle}> <a href="demo1-product.html">Black Grey Headset</a> </h3>
                 <div className={cls.ratingsContainer}>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-solid fa-star"></i>
+                    <i className="fa-regular fa-star"></i>
+                    <i className="fa-regular fa-star"></i>
                 </div>
                 <div className={cls.priceBox}>
                     <span className={cls.productPrice}>$9.00</span>

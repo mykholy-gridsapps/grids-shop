@@ -14,8 +14,8 @@ const NewsletterOne = () => {
                             sales and offers. Sign up for newsletter:</h5>
                         <div>
                             <form>
-                                <input type="email" class="form-control mb-1" placeholder="Email address" required />
-                                <button class="btn btn-primary">subscribe</button>
+                                <input type="email" className="form-control mb-1" placeholder="Email address" required />
+                                <button className="btn btn-primary">subscribe</button>
                             </form>
                         </div>
                     </div>

@@ -15,7 +15,7 @@ const TestimonalOne = () => {
                 </div>
             </div>
 
-            <blockquote class="ml-4 pr-0">
+            <blockquote className="ml-4 pr-0">
                 <p>Lorem ipsum dolor sit amet, consectetur elitad adipiscing Cras non placerat mi.
                 </p>
             </blockquote>

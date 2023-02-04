@@ -15,7 +15,7 @@ const CategoryFourteenCarousel = () => {
         <div className={cls.categoriesCarousel}>
             <div className={cls.title}>
                 <h2>Shop Categories</h2>
-                <a href="demo42-shop.html">VIEW CATEGORIES<i class="fas fa-arrow-right"></i></a>
+                <a href="demo42-shop.html">VIEW CATEGORIES<i className="fas fa-arrow-right"></i></a>
             </div>
             <Swiper slidesPerView={4} spaceBetween={0}>
                 {array.map(_ =>

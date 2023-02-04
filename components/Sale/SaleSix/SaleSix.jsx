@@ -15,7 +15,7 @@ const SaleSix = () => {
                     <h4>
                         Exclusive COUPON
                     </h4>
-                    <h5><i class="ls-0">UP TO</i><b>$100</b> OFF</h5>
+                    <h5><i className="ls-0">UP TO</i><b>$100</b> OFF</h5>
                     <a href="demo2-shop.html">Get Yours!</a>
                 </div>
             </div>

@@ -21,7 +21,7 @@ const SaleTwentySeven = () => {
                     </h5>
                 </Grid>
                 <Grid item md={6} lg={2} padding="30px 0">
-                    <div class="px-5 px-md-0">
+                    <div className="px-5 px-md-0">
                         <a href="demo22-shop.html" >View All Now</a>
                     </div>
                 </Grid>

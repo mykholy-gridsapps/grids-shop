@@ -4,7 +4,7 @@ import cls from './categoryFourteen.module.scss'
 const CategoryFourteen = () => {
     return (
         <div className={cls.category}>
-            <div class="product-category">
+            <div className="product-category">
                 <a href="demo42-shop.html">
                     <figure>
                     <img src="imgs/category/category-14.jpg" width="273" height="273"
@@ -12,8 +12,8 @@ const CategoryFourteen = () => {
                     </figure>
                 </a>
                 <div className={cls.categoryContent}>
-                    <h3 class="category-title">Auto Parts</h3>
-                    <ul class="sub-categories">
+                    <h3 className="category-title">Auto Parts</h3>
+                    <ul className="sub-categories">
                         <li><a href="#">Batteries, Starting And Charging</a></li>
                         <li><a href="#">Brakes And Traction Control</a></li>
                         <li><a href="#">Climate Control</a></li>

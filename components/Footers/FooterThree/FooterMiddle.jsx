@@ -48,8 +48,8 @@ const FooterMiddle = () => {
                                 <li><a href="dashboard.html">My Account</a></li>
                             </Grid>
                             <Grid item component='ul' xl={8} className={cls.linkPart}>
-                                <li class="pl-xl-2 ml-xl-1"><a href="#">Orders History</a></li>
-                                <li class="pl-xl-2 ml-xl-1"><a href="#">Advanced Search</a></li>
+                                <li className="pl-xl-2 ml-xl-1"><a href="#">Orders History</a></li>
+                                <li className="pl-xl-2 ml-xl-1"><a href="#">Advanced Search</a></li>
                             </Grid>
                         </Grid>
                     </div>

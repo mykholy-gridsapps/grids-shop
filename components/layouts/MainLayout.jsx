@@ -16,9 +16,9 @@ import HeaderThree from "../Headers/HeaderThree/HeaderThree";
 const MainLayout = ({ children }) => {
   return (
     <>
-      {/* <HeaderOne /> */}
+      <HeaderOne />
       {/* <HeaderTwo /> */}
-      <HeaderThree />
+      {/* <HeaderThree /> */}
       {children}
       <FooterTen />
     </>

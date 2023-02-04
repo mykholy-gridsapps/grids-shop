@@ -11,7 +11,7 @@ const CategoryTwo = () => {
                 </figure>
                 <div className={cls.categoryContent}>
                     <h3>Sunglasses</h3>
-                    <span><mark class="count">8</mark> products</span>
+                    <span><mark className="count">8</mark> products</span>
                 </div>
             </a>
         </div>

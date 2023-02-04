@@ -31,7 +31,7 @@ const BlogFour = () => {
                 <div className={cls.postContent}>
                     <p>Quisque elementum nibh at dolor pellentesque, a eleifend libero... </p>
 
-                    <a href="single.html" className={cls.readMore}>read more <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <a href="single.html" className={cls.readMore}>read more <i className="fa-solid fa-arrow-right-long"></i></a>
                 </div>
             </div>
             <Lightbox
