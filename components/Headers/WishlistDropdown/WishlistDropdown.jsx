@@ -11,28 +11,17 @@ const WishlistDropdown = () => {
   return (
     <div className={`${cls.wishlist__dropdown} ${cls[i18n.language]}`}>
       {/* <div className={cls.item}>
-
-                    <img src="/imgs/products/laptop.png" alt="productImage" />
-
-                    <div>
-
-                      <h6>Dell Vostro 3500 laptop - 11th Intel core i7-1165G7, 8GB RAM, 1TB HDD</h6>
-
-                    </div>
-
-                  </div>
-                    
-                  <div className={cls.item}>
-
-                    <img src="/imgs/products/laptop.png" alt="productImage" />
-
-                    <div>
-
-                      <h6>Dell Vostro 3500 laptop - 11th Intel core i7-1165G7, 8GB RAM, 1TB HDD</h6>
-
-                    </div>
-
-                  </div> */}
+        <img src="/imgs/products/laptop.png" alt="productImage" />
+        <div>
+          <h6>Dell Vostro 3500 laptop - 11th Intel core i7-1165G7, 8GB RAM, 1TB HDD</h6>
+        </div>
+      </div>
+      <div className={cls.item}>
+        <img src="/imgs/products/laptop.png" alt="productImage" />
+        <div>
+          <h6>Dell Vostro 3500 laptop - 11th Intel core i7-1165G7, 8GB RAM, 1TB HDD</h6>
+        </div>
+      </div> */}
 
       <div className={cls.wishlistEmpty}>
         <AnimatedIcons animationData={animationData} />

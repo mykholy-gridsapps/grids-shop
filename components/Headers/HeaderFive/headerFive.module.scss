@@ -1,0 +1,61 @@
+@import '../../../styles/mixins.scss';
+
+.navbar {
+  .navbar__main {
+    background-color: var(--main-color);
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    .navbar_mainNav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      .links {
+        ul.navLinks {
+          display: flex;
+          li {
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            color: #fff;
+            height: 45px;
+            line-height: 45px;
+            border-left: 1px solid rgb(211, 211, 211);
+            padding: 0 20px;
+            @include lg {
+              padding: 0 15px;
+              font-size: 0.8rem;
+            }
+            a {
+              color: #fff;
+            }
+            i {
+              font-size: 0.8rem;
+            }
+            &:hover {
+              color: var(--secondary-color);
+              background-color: rgba(0, 0, 0, 0.2)
+            }
+          }
+          &.ar {
+            li {
+              border-left: unset;
+              border-right: 1px solid #e0e0e0;
+            }
+          }
+        }
+        @include md {
+          display: none;
+        }
+      }
+      .switches {
+        display: flex;
+        align-items: center;
+        gap: 10px
+      }
+    }
+    @include md {
+      display: none;
+    }
+  }
+}

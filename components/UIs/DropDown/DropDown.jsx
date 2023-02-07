@@ -40,9 +40,15 @@ const DropDown = ({ menu, color }) => {
         onClick={handleClick}
       />
 
-      <span onClick={handleClick} style={{ color: color }}>{menu.find((item) => item.param === lang).text}</span>
-      
-      <i className="fa-solid fa-angle-down" onClick={handleClick} style={{ color: color }}></i>
+      <span onClick={handleClick} style={{ color: color }}>
+        {menu.find((item) => item.param === lang).text}
+      </span>
+
+      <i
+        className="fa-solid fa-angle-down"
+        onClick={handleClick}
+        style={{ color: color }}
+      ></i>
 
       <Box
         className={`${cls.dropdownMenu} ${openMenu ? cls.show : ""} ${

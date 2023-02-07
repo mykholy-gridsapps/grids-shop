@@ -36,21 +36,9 @@
   line-height: 1.5;
   padding: 5px 0;
   cursor: pointer;
-
   span {
     padding: 0 5px;
-    font-size: 11px;
-
-    ::after {
-      content: "";
-      font-family: "porto";
-      font-weight: 400;
-      margin-left: 0.5rem
-    }
   }
-
-  ;
-
   img {
     display: inline-block;
     max-width: none;
@@ -58,7 +46,4 @@
     width: 16px;
     height: 11px;
   }
-
-  ;
-
 }

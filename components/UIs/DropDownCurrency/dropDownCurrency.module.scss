@@ -10,6 +10,11 @@
     margin: 0 !important;
   }
 
+  span {
+    font-size: 0.9rem;
+    border: none !important;
+  }
+
   .dropdownMenu {
     position: absolute;
     z-index: 1150;
@@ -20,10 +25,15 @@
     box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease-out;
   };
+  ul {
+    display: unset !important;
+  }
   li {
     display: block;
     padding: 0.5em 7px;
     color: #777;
     white-space: nowrap;
+    font-size: 0.9rem !important;
+    font-weight: normal !important;
   }
 }

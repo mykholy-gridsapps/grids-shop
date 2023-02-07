@@ -8,29 +8,35 @@
     padding-bottom: 5px;
     .logo {
       cursor: pointer;
-      h1 {
-      font-size: 1.3rem;
+      .bigImage {
+        height: 75px;
+        @include md {
+          display: none;
+        }
       }
     }
 
     .navbar__search__searchArea {
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
       input {
         width: 550px;
         height: 40px;
         padding: 8px 20px;
-        border: 1px solid #000;
+        border: 1px solid #fff;
         outline: none;
         font-size: 0.9rem;
       }
       button {
         height: 40px;
-        width: 50px;
-        background-color: #000;
+        width: 60px;
+        background-color: var(--secondary-color);
         text-align: center !important;
         color: #fff;
         cursor: pointer;
-        position: relative;
-        top: 1.2px;
+        border: none;
       }
       @include lg {
         input {
@@ -38,32 +44,22 @@
         }
       }
       &.rounded {
-        input {
-          border-radius: 20px 0 0 20px;
-        }
-        button {
-          border-radius: 0 20px 20px 0;
-        }
-        &.ar {
-          input {
-            border-radius: 0px 20px 20px 0px;
-          }
-          button {
-            border-radius: 20px 0px 0px 20px;
-          }
-        }
+        border-radius: 20px;
       }
     }
     .support {
       display: flex;
       align-items: center;
       gap: 0px;
-    svg {
-      width: auto !important;
-      height: 80px !important;
-    }
+      svg {
+        width: auto !important;
+        height: 80px !important;
+      }
       h6, span {
         font-size: 0.9rem;
+      }
+      span {
+        font-size: 0.85rem;
       }
     }
     @include md {

@@ -7,8 +7,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
-  transition: all ease-in-out 0.3s !important;
+  transition: all ease-in-out 0.4s !important;
   .mobileMenu {
     width: 300px;
     height: 100vh;
@@ -200,15 +199,14 @@
   }
   
   &.show {
-    z-index: 99999;
+    z-index: 9999;
     background-color: rgba(0, 0, 0, 0.3);
     .mobileMenu {
       left: 0px;
-      animation: show 0.2s ease-in-out 1;
+      animation: show 0.5s ease-in-out 1;
       animation: showOp 0.1s ease-in-out 1;
       z-index: 9999;
       opacity: 1;
-
       &.ar {
         left: unset;
         right: 0;
@@ -232,12 +230,12 @@
     }
   }
   &.hide {
-    z-index: -1;
+    z-index: -1 !important;
     background-color: transparent;
     .mobileMenu {
       left: -300px;
-      animation: hide 0.2s ease-in-out 1;
-      animation: hideOp 0.5s ease-in-out 1;
+      animation: hide 0.5s ease-in-out;
+      animation: hideOp 0.5s ease-in-out;
       z-index: -1;
       opacity: 0;
     }

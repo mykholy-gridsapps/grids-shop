@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
+
 import AnimatedIcons from "../../UIs/AnimatedIcons/AnimatedIcons";
 
 import Container from "@mui/material/Container";
@@ -14,7 +17,13 @@ const MiddleHeader = () => {
   return (
     <Container maxWidth="xl" className={`${cls.search__wrapper}`}>
       <div className={cls.logo}>
-        <h1 onClick={() => router.push("/")}>Grids Apps</h1>
+        <Link href='/'>
+          <img
+            className={cls.bigImage}
+            src="./imgs/logos/coloredLogo.png"
+            alt="tripple-shop-logo"
+          />
+        </Link>
       </div>
 
       <div

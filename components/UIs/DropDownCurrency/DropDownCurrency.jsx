@@ -15,7 +15,7 @@ const cookie = new Cookies();
 
 const DropDown = ({ menu }) => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [currency, setCurrency] = useState(cookie.get("grids-apps-shop-currency"));
+  const [currency, setCurrency] = useState(cookie.get("grids-apps-shop-currency") || 'USD');
 
   useEffect(() => {
     setCurrency(cookie.get("grids-apps-shop-currency"));
@@ -41,9 +41,9 @@ const DropDown = ({ menu }) => {
         className={`${cls.dropdownMenu} ${openMenu ? cls.show : ""}`}
       >
         <ul>
-          {menu.map((item) => (
+          {menu.map((item, idx) => (
             <li
-              key={item.option}
+              key={idx}
               onClick={() => {
                 item.method(item.text);
                 handleClose();

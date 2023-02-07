@@ -14,7 +14,7 @@ const FeaturesThree = () => {
 
                             <div className={cls.featureBoxContent}>
                                 <h3 className="mb-0 pb-1">Customer Support</h3>
-                                <h5 className="mb-1 pb-1">You Won't Be Alone</h5>
+                                <h5 className="mb-1 pb-1">You Wont Be Alone</h5>
 
                                 <p>We really care about you and your website as much as you do. Purchasing Porto or any
 								other theme from us you get 100% free support.</p>

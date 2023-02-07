@@ -9,9 +9,14 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      // padding: 5px 0px;
       .smallLogo {
         display: none;
+        .smallImage {
+          height: 50px;
+          @include md {
+            display: inline-block;
+          }
+        }
       }
       .switches {
         display: flex;
@@ -19,23 +24,25 @@
         gap: 10px;
       }
       .navbar__search__searchArea {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
         input {
-          width: 650px;
+          width: 600px;
           height: 40px;
           padding: 8px 20px;
-          border: 1px solid var(--main-color);
+          border: none;
           outline: none;
           font-size: 0.9rem;
         }
         button {
           height: 40px;
-          width: 50px;
-          background-color: #000;
+          width: 60px;
+          background-color: var(--secondary-color);
           text-align: center !important;
           color: #fff;
           cursor: pointer;
-          position: relative;
-          top: 1px;
+          border: none;
         }
         @include lg {
           input {
@@ -43,20 +50,7 @@
           }
         }
         &.rounded {
-          input {
-            border-radius: 20px 0 0 20px;
-          }
-          button {
-            border-radius: 0 20px 20px 0;
-          }
-          &.ar {
-            input {
-              border-radius: 0px 20px 20px 0px;
-            }
-            button {
-              border-radius: 20px 0px 0px 20px;
-            }
-          }
+          border-radius: 20px;
         }
       }
       .navbar__search__account {
@@ -94,6 +88,8 @@
         }
       }
       @include md {
+        padding-top: 5px;
+        padding-bottom: 5px;
         .smallLogo {
           display: inline;
           color: #fff;

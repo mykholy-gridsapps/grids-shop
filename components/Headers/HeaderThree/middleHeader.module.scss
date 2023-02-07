@@ -4,13 +4,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 0;
   position: relative;
   .logo {
     cursor: pointer;
-    h1 {
-      font-size: 1.3rem;
+    .bigImage {
+      height: 75px;
+      @include md {
+        display: none;
+      }
     }
   }
   .links {
@@ -20,10 +22,17 @@
       li {
         font-size: 0.95rem;
         font-weight: 600;
+        height: 80px;
+        line-height: 80px;
         cursor: pointer;
         &.active {
           a {
-            color: var(--main-color);
+            color: var(--secondary-color);
+          }
+        }
+        &:hover {
+          a {
+            color: var(--secondary-color)
           }
         }
         
@@ -36,19 +45,6 @@
             opacity: 1;
             transform: translateY(0px);
           }
-        }
-        .pagesDropdown {
-          position: absolute;
-          z-index: 9999;
-          top: 65%;
-          left: 0;
-          width: 100%;
-          min-height: 400px;
-          background-color: var(--secondary-background);
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-          padding: 10px 20px;
-          border-top: 3px solid var(--main-color);
-          animation: show 0.3s forwards;
         }
       }
     }
@@ -63,6 +59,9 @@
     }
     h6, span {
       font-size: 0.9rem;
+    }
+    span {
+      font-size: 0.85rem;
     }
   }
   @include md {

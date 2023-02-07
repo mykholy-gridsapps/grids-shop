@@ -17,18 +17,21 @@ const CurrencySwitch = () => {
     setHasMounted(true);
   }, []);
 
-  const CurrencySwitch = (currency) => {
-    i18n.changeLanguage(lang);
-    cookie.set("grids-apps-shop-lang", currency, { path: "/" });
+  // const CurrencySwitch = (currency) => {
+  //   i18n.changeLanguage(lang);
+  //   cookie.set("grids-apps-shop-lang", currency, { path: "/" });
 
-  };
+  // };
 
   const menu = [
     {
-      text: "usd"
+      text: "USD",
     },
     {
-      text: "eur"
+      text: "EUR",
+    },
+    {
+      text: "EGP",
     },
   ];
 

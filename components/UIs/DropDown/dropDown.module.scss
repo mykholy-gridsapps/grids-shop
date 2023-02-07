@@ -20,10 +20,11 @@
   span {
     font-size: 0.9rem;
     padding: 0 3px;
+    border: none !important;
   }
 
   i {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 
   .dropdownMenu {
@@ -36,6 +37,9 @@
     box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease-out;
   };
+  ul {
+    display: unset !important;
+  }
   li {
     display: flex;
     gap: 5px;

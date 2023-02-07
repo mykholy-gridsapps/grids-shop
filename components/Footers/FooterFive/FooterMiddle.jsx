@@ -2,6 +2,7 @@ import { Grid } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import React from "react";
 import cls from "./footerMiddle.module.scss"
+import Link from "next/link";
 
 const FooterMiddle = () => {
     return (
@@ -90,7 +91,7 @@ const FooterMiddle = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-            </Container >
+            </Container>
         </div >
     )
 }

@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import { useState } from 'react';
 import Link from "next/link";
 import { useRouter } from 'next/router';
 
 import AnimatedIcons from "../../UIs/AnimatedIcons/AnimatedIcons";
+import LinkDropdown from '../LinkDropdown/LinkDropdown';
 
 import Container from "@mui/material/Container";
 
@@ -17,13 +19,19 @@ const MiddleHeader = () => {
   return (
     <Container maxWidth="xl" className={`${cls.middleHeader}`}>
       <div className={cls.logo}>
-        <h1 onClick={() => router.push("/")}>Grids Apps</h1>
+        <Link href="/">
+          <img
+            className={cls.bigImage}
+            src="./imgs/logos/coloredLogo.png"
+            alt="tripple-shop-logo"
+          />
+        </Link>
       </div>
 
       <div className={cls.links}>
         <ul>
           <li className={`${router.pathname == "/" ? cls.active : ""}`}>
-            <Link href="/" exact>
+            <Link href="/">
               Home
             </Link>
           </li>
@@ -47,9 +55,7 @@ const MiddleHeader = () => {
               </span>
             </Link>
 
-            {navDropdown === "pages" && (
-              <div className={cls.pagesDropdown}></div>
-            )}
+            {navDropdown === "pages" && <LinkDropdown />}
           </li>
 
           <li className={`${router.pathname == "/policy" ? cls.active : ""}`}>

@@ -12,6 +12,12 @@
       position: relative;
       .smallLogo {
         display: none;
+        .smallImage {
+          height: 50px;
+          @include md {
+            display: inline-block;
+          }
+        }
       }
       .switches {
         display: flex;
@@ -21,19 +27,18 @@
       .links {
         ul.navLinks {
           display: flex;
-          gap: 5px;
           li {
             font-size: 0.85rem;
             font-weight: 600;
             cursor: pointer;
             color: #fff;
-            height: 50px;
-            line-height: 50px;
+            height: 45px;
+            line-height: 45px;
             border-right: 1px solid #e0e0e0;
-            padding: 0 10px;
+            padding: 0 15px;
             @include lg {
               padding: 0 5px;
-            font-size: 0.8rem;
+              font-size: 0.8rem;
             }
             a {
               color: #fff;
@@ -41,18 +46,9 @@
             i {
               font-size: 0.8rem;
             }
-            .pagesDropdown {
-              position: absolute;
-              z-index: 9999;
-              top: 80%;
-              left: 0;
-              width: 100%;
-              min-height: 400px;
-              background-color: var(--secondary-background);
-              box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-              padding: 10px 20px;
-              border-top: 3px solid var(--main-color);
-              animation: show 0.3s forwards;
+            &:hover {
+              color: var(--secondary-color);
+              background-color: rgba(0, 0, 0, 0.2)
             }
           }
           &.ar {
@@ -104,6 +100,8 @@
         }
       }
       @include md {
+        padding-top: 5px;
+        padding-bottom: 5px;
         .smallLogo {
           display: inline;
           color: #fff;

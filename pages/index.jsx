@@ -12,7 +12,10 @@ import { useTranslation } from "next-i18next";
 import { wrapper } from "../store/store";
 // MATERIAL STUFF
 import Container from "@mui/material/Container";
-import { Grid } from "@mui/material";
+import Grid from "@mui/material/Grid";
+
+// import { BlogOne, BlogTwo } from "../components";
+
 import ProductOne from "../components/ProductCard/ProductOne/ProductOne";
 import ProductTwo from "../components/ProductCard/ProductTwo/ProductTwo";
 import ProductThree from "../components/ProductCard/ProductThree/ProductThree";

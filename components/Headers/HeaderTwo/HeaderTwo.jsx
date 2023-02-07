@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
@@ -37,7 +38,13 @@ const Navbar = ({ rounded }) => {
               className="fa-light fa-grid-2"
               onClick={() => setOpenSidebar(!openSidebar)}
             ></i>{" "}
-            <h5>{t("nav.logo")}</h5>
+            <Link href="/">
+              <img
+                className={cls.smallImage}
+                src="./imgs/logos/whiteSmallLogo.png"
+                alt="tripple-shop-logo"
+              />
+            </Link>
           </div>
 
           <div className={cls.switches}>
@@ -58,9 +65,7 @@ const Navbar = ({ rounded }) => {
                 </span>
 
                 {navDropdown === 1 && (
-                  <div className={cls.pagesDropdown}>
-                    <LinkDropdown />
-                  </div>
+                  <LinkDropdown />
                 )}
               </li>
 
@@ -75,9 +80,7 @@ const Navbar = ({ rounded }) => {
                 </span>
 
                 {navDropdown === 2 && (
-                  <div className={cls.pagesDropdown}>
-                    <LinkDropdown />
-                  </div>
+                  <LinkDropdown />
                 )}
               </li>
 
@@ -91,9 +94,7 @@ const Navbar = ({ rounded }) => {
                 </span>
 
                 {navDropdown === 3 && (
-                  <div className={cls.pagesDropdown}>
-                    <LinkDropdown />
-                  </div>
+                  <LinkDropdown />
                 )}
               </li>
 
@@ -107,9 +108,7 @@ const Navbar = ({ rounded }) => {
                 </span>
 
                 {navDropdown === 4 && (
-                  <div className={cls.pagesDropdown}>
-                    <LinkDropdown />
-                  </div>
+                  <LinkDropdown />
                 )}
               </li>
 
@@ -123,9 +122,7 @@ const Navbar = ({ rounded }) => {
                 </span>
 
                 {navDropdown === 5 && (
-                  <div className={cls.pagesDropdown}>
-                    <LinkDropdown />
-                  </div>
+                  <LinkDropdown />
                 )}
               </li>
 
@@ -139,9 +136,7 @@ const Navbar = ({ rounded }) => {
                 </span>
 
                 {navDropdown === 6 && (
-                  <div className={cls.pagesDropdown}>
-                    <LinkDropdown />
-                  </div>
+                  <LinkDropdown />
                 )}
               </li>
             </ul>

@@ -19,7 +19,7 @@ const SliderEight = () => {
 
                             <div className={cls.bannerLayer} >
                                 <h4>Luxury With Brands We Love</h4>
-                                <h3>Women's Lingerie</h3>
+                                <h3>Womens Lingerie</h3>
                                 <h5>
                                     Starting At
                                 </h5>
@@ -40,7 +40,7 @@ const SliderEight = () => {
 
                             <div className={cls.bannerLayer} >
                                 <h4>Luxury With Brands We Love</h4>
-                                <h3>Women's Hats</h3>
+                                <h3>{`Women's`} Hats</h3>
                                 <h5>
                                     Starting At
                                 </h5>

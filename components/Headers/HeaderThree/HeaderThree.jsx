@@ -26,7 +26,6 @@ const Navbar = ({ rounded }) => {
 
   return (
     <div className={cls.navbar}>
-
       <TopHeader />
 
       <HeaderThreeMiddle />
@@ -38,7 +37,13 @@ const Navbar = ({ rounded }) => {
               className="fa-light fa-grid-2"
               onClick={() => setOpenSidebar(!openSidebar)}
             ></i>{" "}
-            <h5>Grids Apps</h5>
+            <Link href="/">
+              <img
+                className={cls.smallImage}
+                src="./imgs/logos/whiteSmallLogo.png"
+                alt="tripple-shop-logo"
+              />
+            </Link>
           </div>
 
           <div className={cls.switches}>
@@ -48,7 +53,7 @@ const Navbar = ({ rounded }) => {
           </div>
 
           <div
-            className={`${cls.navbar__search__searchArea} ${cls.rounded} ${
+            className={`${cls.navbar__search__searchArea} ${
               rounded ? cls.rounded : ""
             } ${cls[i18n.language]}`}
           >
@@ -79,9 +84,7 @@ const Navbar = ({ rounded }) => {
                 </span>
               </Tooltip>
 
-              {navDropdown === "wishlist" && (
-                <WishlistDropdown />
-              )}
+              {navDropdown === "wishlist" && <WishlistDropdown />}
             </div>
 
             <div
@@ -96,9 +99,7 @@ const Navbar = ({ rounded }) => {
                 </span>
               </Tooltip>
 
-              {navDropdown === "cart" && (
-                <CartDropdown />
-              )}
+              {navDropdown === "cart" && <CartDropdown />}
             </div>
           </div>
         </Container>
