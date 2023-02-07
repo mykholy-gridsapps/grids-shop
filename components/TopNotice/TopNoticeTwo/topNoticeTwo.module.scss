@@ -1,0 +1,94 @@
+.topNotice {
+    position: relative;
+    padding: 9px 20px 10px;
+    font-size: 13px;
+    line-height: 2;
+    letter-spacing: 0.025em;
+    background-color: var(--bg-alt-color);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .notifyLeft {
+            -ms-flex-align: center !important;
+            align-items: center !important;
+            -ms-flex-wrap: wrap !important;
+            flex-wrap: wrap !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+
+            h5 {
+                margin: 0;
+                letter-spacing: -0.02em;
+                font-size: 18px;
+                line-height: 1;
+                font-weight: 500;
+                color: #fff;
+
+                strong {
+                    display: block;
+                    margin-right: 1.7rem;
+                    padding: 0.8rem 1rem;
+                    transform: rotate(-1.5deg);
+                    color: #fff;
+                    line-height: 1;
+                    background-color: var(--text-dark);
+                }
+
+            }
+
+            .mainHeading {
+                h5 {
+                    color: var(--text-color);
+                    margin: 0;
+
+
+                    b {
+                        color: var(--text-dark) !important;
+                        margin: 0 5px;
+                    }
+                }
+
+                h6 {
+                    font-size: 13px;
+                    line-height: 1.385;
+                    font-weight: 600;
+                    margin: 0;
+                    letter-spacing: -0.02em;
+                }
+            }
+        }
+
+        .notifyRight {
+            margin-top: 5px;
+            text-align: right;
+
+            h4 {
+                margin: 0;
+                letter-spacing: 0.01em;
+                font-size: 18px;
+                line-height: 1;
+                color: var(--text-dark);
+            }
+            h6 {
+                font-size: 13px;
+                line-height: 1.385;
+                font-weight: 600;
+                margin: 0;
+                letter-spacing: -0.02em;
+            }
+        }
+        button {
+            position: absolute;
+            top: -3%;
+            right: 1%;
+            color: var(--text-dark);
+            padding: 0;
+            background: transparent;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,160 +1,146 @@
-@import url('https://fonts.cdnfonts.com/css/savoye-let');
-
-.banner {
-    position: relative;
-    padding-bottom: 20px;
-    padding-top: 20px;
-
-    figure {
+.sale {
+    .banner {
+        transition: box-shadow 0.3s;
         position: relative;
-        height: 100%;
-        margin: 0;
-
-        &::after {
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            transition: all 0.25s;
-            z-index: 3;
-            content: "";
-        }
+        font-size: 16px;
 
         &:hover {
-            &::after {
-                opacity: 1;
-            }
+            box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
         }
 
         img {
             width: 100%;
-            height: 100%;
             object-fit: cover;
-            object-position: 75%;
             display: block;
             max-width: 100%;
-        }
-    }
-
-    .bannerContent {
-        letter-spacing: 0.01em;
-        line-height: 1;
-        text-transform: uppercase;
-        z-index: 3;
-        padding: 0 10px;
-        left: calc(5.79% - 9px);
-        top: 51.3%;
-        transform: translateY(-50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        line-height: 1;
-        text-transform: uppercase;
-        z-index: 3;
-        padding: 0 10px;
-
-        h3 {
-            margin-bottom: 35px;
-            font-size: 45px;
-            line-height: 1.1;
-            letter-spacing: 0.007em;
-            text-align: right !important;
-            color: var(--text-dark);
-            text-transform: none;
-            font-weight: 600;
-
-            strong {
-                line-height: 1.3;
-                text-transform: uppercase;
-                font-weight: 600;
-            }
+            height: auto;
         }
 
-        .bannerInfo {
-            padding-left: 3px;
-
-            a {
-                &:first-of-type {
-                    margin-bottom: 9px;
-                    font-size: 24px;
-                    color: #fff;
-                    background-color: var(--text-dark);
-                    padding: 7px 13px 8px;
-                    letter-spacing: 0.01em;
-                    border: none;
-                    transform: rotate(-2.5deg);
-                    text-transform: uppercase;
-                    display: inline-block;
-                    line-height: normal;
-    
-                    &:hover {
-                        background-color: var(--main-color);
-                    }
-                }
-            }
+        .bannerLayerTop {
+            top: 7.5%;
+            position: absolute;
+            left: 6%;
+            right: 6%;
 
             h3 {
-                margin-bottom: 43px;
-                font-size: 21px;
+                margin-top: 0;
+                margin-bottom: 6px;
+                font-size: 22px;
+                line-height: 1;
                 color: var(--text-dark);
-                text-transform: uppercase;
-                text-align: left !important;
-                position: relative;
-                transform: rotate(-2deg);
-
-                &::before {
-                    content: "UP TO";
-                    font-size: 13px;
-                    letter-spacing: 0;
-                    color: var(--text-dark);
-                    opacity: 0.6;
-                    position: absolute;
-                    left: 0;
-                    top: 50%;
-                    transform: translate(-80%, -50%) rotate(-90deg);
-                }
-
-                span {
-                    display: inline-block;
-                    padding: 1px 12px 2px 12px;
-                    margin-right: 5px;
-                    font-size: 34px;
-                    letter-spacing: 0;
-                    line-height: 1.2;
-                    color: #fff;
-                    background-color: var(--text-dark);
-                }
             }
 
-            p {
-                color: var(--main-color);
-                font-weight: 600;
-                margin-bottom: 32px;
-                font-size: 20px;
+            h4 {
+                display: flex;
+                font-size: 16px;
+                line-height: 1;
+                margin-top: 0;
+                margin-bottom: 18px;
+                color: var(--text-dark);
+
+                del {
+                    display: block;
+                    margin-top: 1px;
+                    font-size: 21px;
+                }
+
+                strong {
+                    font-size: 28px;
+                    font-weight: 800;
+                    color: var(--main-color);
+                }
             }
+        }
+
+        .bannerLayerBottom {
+            right: 5%;
+            left: 5%;
+            bottom: 5%;
+            position: absolute;
 
             .btn {
-                padding: 16px 23px;
-                margin-bottom: 40px;
-                font-size: 14px;
-                color: var(--main-color);
-                letter-spacing: 0.15em;
-                line-height: 1;
-                background: transparent;
-                border: 2px solid var(--main-color);
-                font-weight: 700;
+                padding: 14px 30px;
+                background-color: var(--text-dark);
+                border-color: var(--text-dark);
+                color: #fff;
+            }
 
-                &:hover {
-                    background-color: var(--main-color);
-                    border-color: var(--main-color);
-                    color: #fff;
-                }
+            img {
+                margin-right: 5px;
+                margin-bottom: 5px;
+                display: block;
+                margin-left: 100%;
+                transform: rotate(270deg);
+                object-fit: cover;
+                transform-origin: bottom left;
+                width: auto !important;
+                max-width: 100%;
+                height: auto;
             }
         }
     }
 
+    .banner2 {
+        h3 {
+            text-align: center !important;
+        }
+
+        .bannerLayerCircle {
+            top: 50%;
+            left: 45%;
+            right: auto;
+            transform: translate(50%, -50%);
+            position: absolute;
+
+            h4 {
+                font-size: 42px;
+                display: flex;
+                line-height: 1;
+                display: flex;
+                display: -ms-flexbox;
+                align-items: center;
+                -ms-flex-align: center;
+                justify-content: center;
+                -ms-flex-pack: center;
+                margin-bottom: 12px;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                color: #fff;
+                background-color: var(--main-color);
+            }
+        }
+        .bannerLayerBottom {
+            text-align: center !important;
+        }
+    }
+    .banner3 {
+        .bannerLayerTop {
+            h3 {
+                text-align: right !important;
+            }
+            h4 {
+                justify-content: end;
+            }
+        }
+        .bannerLayerBottom {
+            text-align: right !important;
+        }
+        .bannerLeft {
+            right: auto;
+            img {
+                margin-right: 5px;
+                margin-bottom: 5px;
+                display: block;
+                margin-left: 5px;
+                transform: rotate(270deg);
+                object-fit: cover;
+                transform-origin: bottom left;
+                width: auto !important;
+                max-width: 100%;
+                height: auto;
+            }
+
+        }
+    }
 }

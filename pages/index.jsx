@@ -115,111 +115,34 @@ import SaleTwentySeven from "../components/Sale/SaleTwentySeven/SaleTwentySeven"
 import SaleTwentyEight from "../components/Sale/SaleTwentyEight/SaleTwentyEight";
 import SaleTwentyNine from "../components/Sale/SaleTwentyNine/SaleTwentyNine";
 import SaleThirty from "../components/Sale/SaleThirty/SaleThirty";
+import SaleThirtyOne from "../components/Sale/SaleThirtyOne/SaleThirtyOne";
+import SaleThirtyTwo from "../components/Sale/SaleThirtyTwo/SaleThirtyTwo";
+import SaleThirtyThree from "../components/Sale/SaleThirtyThree/SaleThirtyThree";
+import BrandsOne from "../components/Brands/BrandsOne/BrandsOne";
+import BrandsTwo from "../components/Brands/BrandsTwo/BrandsTwo";
+import BrandsThree from "../components/Brands/BrandsThree/BrandsThree";
+import BrandsFour from "../components/Brands/BrandsFour/BrandsFour";
+import BrandsFive from "../components/Brands/BrandsFive/BrandsFive";
+import BrandsSix from "../components/Brands/BrandsSix/BrandsSix";
+import BrandsSeven from "../components/Brands/BrandsSeven/BrandsSeven";
+import BrandsEight from "../components/Brands/BrandsEight/BrandsEight";
+import InfoBoxOne from "../components/InfoBox/InfoBoxOne/InfoBoxOne";
+import InfoBoxTwo from "../components/InfoBox/InfoBoxTwo/InfoBoxTwo";
+import InfoBoxThree from "../components/InfoBox/InfoBoxThree/InfoBoxThree";
+import InfoBoxFour from "../components/InfoBox/InfoBoxFour/InfoBoxFour";
+import InfoBoxFive from "../components/InfoBox/InfoBoxFive/InfoBoxFive";
+import InfoBoxSix from "../components/InfoBox/InfoBoxSix/InfoBoxSix";
+import InfoBoxSeven from "../components/InfoBox/InfoBoxSeven/InfoBoxSeven";
+import TopNoticeOne from "../components/TopNotice/TopNoticeOne/TopNoticeOne";
+import TopNoticeTwo from "../components/TopNotice/TopNoticeTwo/TopNoticeTwo";
 
 const Home = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
     <div>
-      <Container maxWidth='xl'>
-        <Grid container spacing={2}>
-          <Grid item lg={3}>
-            <SaleOne />
-          </Grid>
-          <Grid item lg={3}>
-            <SaleTwo />
-          </Grid>
-          <Grid item lg={3}>
-            <SaleThree />
-          </Grid>
-          <Grid item lg={3}>
-            <SaleFour />
-          </Grid>
-          <Grid item lg={3}>
-            <SaleFive />
-          </Grid>
-          <Grid item lg={6}>
-            <SaleSix />
-          </Grid>
-          <Grid item lg={3}>
-            <SaleSeven />
-          </Grid>
-          <Grid item lg={6}>
-            <SaleEight />
-          </Grid>
-          <Grid item lg={3}>
-            <SaleNine />
-          </Grid>
-          <Grid item lg={3}>
-            <SaleTen />
-          </Grid>
-          <Grid item lg={6}>
-            <SaleEleven />
-          </Grid>
-          <Grid item lg={3}>
-            <SaleTweleve />
-          </Grid>
-          <Grid item lg={12}>
-            <SaleThirteen />
-          </Grid>
-          <Grid item lg={12}>
-            <SaleFourteen />
-          </Grid>
-          <Grid item lg={12}>
-            <SaleFifteen />
-          </Grid>
-          <Grid item lg={12}>
-          </Grid>
-        </Grid>
-      </Container>
-      <SaleSixteen />
-      <Container maxWidth='xl'>
-        <Grid container spacing={2}>
-          <Grid item lg={12}>
-            <SaleSeventeen />
-          </Grid>
-          <Grid item lg={4}>
-            <SaleEighteen />
-          </Grid>
-        </Grid>
-      </Container>
-      <SaleNinteen />
-      <Container maxWidth='xl'>
-        <Grid container spacing={2}>
-          <Grid item lg={4}>
-            <SaleTwentyOne />
-          </Grid>
-        </Grid>
-      </Container>
-      <SaleTwentyTwo />
-      <Container maxWidth='xl'>
-        <Grid container spacing={2}>
-          <Grid item lg={6}>
-            <SaleTwentyThree />
-          </Grid>
-          <Grid item lg={6}>
-            <SaleTwentyFour />
-          </Grid>
-          <Grid item lg={6}>
-            <SaleTwentyFive />
-          </Grid>
-          <Grid item lg={6}>
-            <SaleTwentySix />
-          </Grid>
-          <Grid item lg={12}>
-            <SaleTwentySeven />
-          </Grid>
-        </Grid>
-      </Container>
-      <SaleTwentyEight />
-      <SaleTwentyNine />
-      <Container maxWidth='xl'>
-        <Grid container spacing={2}>
-          <Grid item lg={7}>
-            <SaleThirty />
-          </Grid>
-        </Grid>
-      </Container>
+      <TopNoticeOne />
+      <TopNoticeTwo />
     </div>
   );
 };

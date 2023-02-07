@@ -1,8 +1,9 @@
 const lightVars = () => {
 
   document.querySelector(":root").style.setProperty("--bg-color", "#ffffff");
+  document.querySelector(":root").style.setProperty("--bg-dark-color", "#252525");
 
-  document.querySelector(":root").style.setProperty("--bg-alt-color", "#f8f8f8");
+  document.querySelector(":root").style.setProperty("--bg-alt-color", "#f4f4f4");
 
   document.querySelector(":root").style.setProperty("--dark-main-color", "#2b1cc9");
 
@@ -14,7 +15,8 @@ const lightVars = () => {
 
   document.querySelector(":root").style.setProperty("--special-background", "rgb(239 237 237)");
 
-  document.querySelector(":root").style.setProperty("--text-color", "#383e50");
+  document.querySelector(":root").style.setProperty("--text-color", "#777777");
+  document.querySelector(":root").style.setProperty("--text-dark", "#252525");
 
   document.querySelector(":root").style.setProperty("--border-color", "#eee");
 
