@@ -1,0 +1,17 @@
+.brands {
+    padding: 20px;
+    background-color: var(--bg-alt);
+
+    a {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--text-dark);
+        border: 1px solid #e7e7e7;
+        background: #fff;
+        border-radius: 0;
+        min-width: 110px;
+        padding: 13px;
+        text-align: center !important;
+        display: block;
+    }
+}
