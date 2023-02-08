@@ -1,3 +1,3 @@
-import { default as BlogOne } from './Blogs/BlogOne/BlogOne';
+export { default as BlogOne } from './Blogs/BlogOne/BlogOne';
 
-import { default as BlogTwo } from "./Blogs/BlogTwo/BlogTwo";
+export { default as BlogTwo } from "./Blogs/BlogTwo/BlogTwo";
