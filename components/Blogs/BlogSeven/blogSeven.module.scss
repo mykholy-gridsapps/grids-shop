@@ -34,6 +34,10 @@
             right: 5px;
             bottom: 5px;
             cursor: pointer;
+            &.ar {
+                left: 5px;
+                right: auto;
+            }
         }
 
         &:hover {

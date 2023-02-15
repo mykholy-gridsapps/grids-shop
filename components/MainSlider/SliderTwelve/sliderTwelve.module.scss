@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
-$sliderOneColor1: #777;
-$sliderOneColor2: #222529;
+@import '../../../styles/mixins.scss';
+
+$sliderOneColor1: var(--text-color);
+$sliderOneColor2: var(--text-dark);
 $sliderOneColor3: #4dae65;
-$sliderOneColor4: #fff;
-$sliderTwoColor1: #777;
-$sliderTwoColor2: #222529;
+$sliderOneColor4: var(--text-light);
+$sliderTwoColor1: var(--text-color);
+$sliderTwoColor2: var(--text-dark);
 $sliderTwoColor3: #ee8379;
-$sliderTwoColor4: #fff;
+$sliderTwoColor4: var(--text-light);
 
 
 .slider {
@@ -26,6 +28,9 @@ $sliderTwoColor4: #fff;
             right: auto;
             top: 50%;
             transform: translateY(-50%);
+            @include md {
+                left: 5%;
+            }
 
             h4 {
                 font-size: 19px;
@@ -37,6 +42,12 @@ $sliderTwoColor4: #fff;
                 opacity: 1;
                 text-align: left !important;
                 color: $sliderOneColor1;
+                @include md {
+                    font-size: 16px;
+                }
+                @include sm {
+                    font-size: 12px;
+                }
             }
 
             h2 {
@@ -52,6 +63,9 @@ $sliderTwoColor4: #fff;
                 padding-right: 48px;
                 text-align: left !important;
                 color: $sliderOneColor2;
+                @include md {
+                    font-size: 42px;
+                }
             }
 
             .positionRelative {
@@ -66,6 +80,10 @@ $sliderTwoColor4: #fff;
                     margin-top: 0px;
                     text-align: left !important;
                     color: $sliderOneColor2;
+                    @include md {
+                        font-size: 30px;
+                        margin-bottom: 20px;
+                    }
                 }
 
                 h5 {
@@ -80,7 +98,11 @@ $sliderTwoColor4: #fff;
                     text-align: left !important;
                     transform: rotate(-30deg);
                     color: $sliderOneColor3;
-                    font-family: "Segoe Script"
+                    font-family: "Segoe Script";
+                    @include md {
+                        font-size: 30px;
+                        right: 60px;
+                    }
                 }
             }
 
@@ -95,6 +117,9 @@ $sliderTwoColor4: #fff;
                 text-align: right !important;
                 text-transform: uppercase;
                 color: $sliderOneColor1;
+                @include md {
+                    font-size: 16px;
+                }
             }
 
             h6 {
@@ -106,7 +131,11 @@ $sliderTwoColor4: #fff;
                 margin-top: 0px;
                 text-align: right !important;
                 text-transform: uppercase;
-
+                @include md {
+                    line-height: 50px;
+                    font-size: 50px;
+                }
+                
                 sup {
                     font-size: 33%;
                     font-weight: 700;
@@ -115,11 +144,11 @@ $sliderTwoColor4: #fff;
                     margin-right: 16px;
                     letter-spacing: -0.03em;
                 }
-
+                
                 strong {
                     color: $sliderOneColor4;
                     position: relative;
-
+                    
                     &::before {
                         content: "";
                         position: absolute;
@@ -131,7 +160,11 @@ $sliderTwoColor4: #fff;
                         background-color: $sliderOneColor2;
                         z-index: -1;
                         transform: rotate(-2deg);
+                        @include md {
+                            width: 127px;
+                        }
                     }
+
                 }
             }
 

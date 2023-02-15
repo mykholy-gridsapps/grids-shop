@@ -1,18 +1,37 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
-$sliderOneColor1: #222529;
-$sliderOneColor2: #fff;
+@import "../../../styles/mixins.scss";
+$sliderOneColor1: var(--text-dark);
+$sliderOneColor2: var(--text-light);
 $sliderOneColor3: #f14705;
-$sliderOneColor4: #e2e6ea;
-$sliderTwoColor1: #222529;
+$sliderOneColor4: var(--text-light);
+$sliderTwoColor1: var(--text-dark);
 $sliderTwoColor2: #ff7272;
 $sliderOneBadge: #ff7272;
 
 .slider {
+    // margin: 0 -16px;
+
+    @include md {
+        margin: 0 -16px;
+    }
+
+    @include xs {
+        margin: 0 -16px;
+    }
+
     img {
         min-height: 510px;
         object-position: center center;
         object-fit: cover;
         max-width: 100%;
+
+        @include sm {
+            min-height: 400px;
+        }
+
+        @include xs {
+            min-height: 200px;
+        }
     }
 
     .slide1 {
@@ -37,10 +56,20 @@ $sliderOneBadge: #ff7272;
                 text-align: right !important;
                 text-transform: uppercase;
                 color: $sliderOneColor1;
+                
+                @include xs {
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                }
             }
 
             .couponSaleText {
                 margin-bottom: 48px;
+
+                @include xs {
+                    margin-bottom: 18px;
+                }
 
                 h4 {
                     font-size: 18px;
@@ -57,6 +86,11 @@ $sliderOneBadge: #ff7272;
                     transform: skew(2deg, -2deg);
                     background-color: $sliderOneColor1;
                     color: $sliderOneColor2;
+
+                    @include xs {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
                 }
 
                 h5 {
@@ -76,6 +110,15 @@ $sliderOneBadge: #ff7272;
                     background-color: $sliderOneColor1;
                     color: $sliderOneColor2;
                     display: inline-block;
+
+                    @include xs {
+                        font-size: 18px;
+                        line-height: 20px;
+                        padding-bottom: 5px;
+                        padding-left: 8px;
+                        padding-right: 8px;
+                        padding-top: 5px;
+                    }
 
                     i {
                         position: absolute;
@@ -116,6 +159,10 @@ $sliderOneBadge: #ff7272;
                     padding: 15px 40px 18px;
                     display: block;
                     font-weight: 600;
+                    @include xs {
+                        font-size: 12px;
+                        padding: 8px 20px 8px;
+                    }
 
                     &:hover {
                         border-color: $sliderOneColor4;
@@ -148,10 +195,18 @@ $sliderOneBadge: #ff7272;
                 text-align: left !important;
                 text-transform: uppercase;
                 color: $sliderOneColor1;
+                @include xs {
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                }
             }
 
             .couponSaleText {
                 margin-bottom: 48px;
+                @include xs {
+                    margin-bottom: 18px;
+                }
 
                 h4 {
                     font-size: 18px;
@@ -168,6 +223,10 @@ $sliderOneBadge: #ff7272;
                     transform: skew(2deg, -2deg);
                     background-color: $sliderOneColor1;
                     color: $sliderOneColor2;
+                    @include xs {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
                 }
 
                 h5 {
@@ -187,6 +246,14 @@ $sliderOneBadge: #ff7272;
                     background-color: $sliderOneColor1;
                     color: $sliderOneColor2;
                     display: inline-block;
+                    @include xs {
+                        font-size: 18px;
+                        line-height: 20px;
+                        padding-bottom: 5px;
+                        padding-left: 8px;
+                        padding-right: 8px;
+                        padding-top: 5px;
+                    }
 
                     i {
                         position: absolute;
@@ -227,6 +294,10 @@ $sliderOneBadge: #ff7272;
                     padding: 15px 40px 18px;
                     display: block;
                     font-weight: 600;
+                    @include xs {
+                        font-size: 12px;
+                        padding: 8px 20px 8px;
+                    }
 
                     &:hover {
                         border-color: $sliderOneColor4;
@@ -251,6 +322,18 @@ $sliderOneBadge: #ff7272;
             color: $sliderOneColor1 !important;
             font-size: 1.5rem !important;
         }
+
+        @include md {
+            left: 16px;
+        }
+
+        @include xs {
+            left: 5px;
+
+            &::after {
+                font-size: 14px !important;
+            }
+        }
     }
 
     :global(.swiper-button-next) {
@@ -267,6 +350,19 @@ $sliderOneBadge: #ff7272;
             font-size: 1.5rem !important;
         }
 
+        @include md {
+            right: 16px;
+        }
+
+        @include xs {
+            right: 5px;
+
+            &::after {
+                font-size: 14px !important;
+            }
+
+        }
+
     }
 
     &:hover {
@@ -276,6 +372,32 @@ $sliderOneBadge: #ff7272;
 
         :global(.swiper-button-next) {
             display: block;
+        }
+    }
+    &.ar {
+        :global(.swiper-button-prev) {
+            right: 100px;
+            left: auto;
+            @include md {
+                right: 16px;
+            }
+    
+            @include xs {
+                right: 5px;
+            }
+
+        }
+        :global(.swiper-button-next) {
+            left: 100px;
+            right: auto;
+            @include md {
+                left: 16px;
+            }
+    
+            @include xs {
+                left: 5px;
+            }
+
         }
     }
 }

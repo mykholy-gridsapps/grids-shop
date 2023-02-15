@@ -1,11 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
-$sliderOneColor1: #222529;
-$sliderOneColor2: #fff;
-$sliderOneColor3: rgba(255, 255, 255, 0.5);
-$sliderTwoColor1: #222529;
+@import "../../../styles/mixins.scss";
+$sliderOneColor1: var(--text-dark);
+$sliderOneColor2: var(--text-light);
+$sliderOneColor3: var(--text-light);
+$sliderTwoColor1: var(--text-dark);
 $sliderTwoColor2: #e13b3f;
 $sliderOneBg: #e13b3f;
-$sliderTwoBg: #222529;
+$sliderTwoBg: var(--text-dark);
 
 .slider {
     img {
@@ -32,6 +33,13 @@ $sliderTwoBg: #222529;
         align-items: flex-end;
         justify-content: flex-end;
 
+        @include md {
+            min-height: 400px;
+        }
+
+        @include xs {
+            min-height: 300px;
+        }
 
         .bannerLayer {
             position: absolute;
@@ -43,6 +51,18 @@ $sliderTwoBg: #222529;
             font-size: 10px;
             z-index: 10;
             text-align: left !important;
+
+            @include lg {
+                left: 38%;
+            }
+
+            @include sm {
+                left: 0%;
+                margin-right: 0;
+            }
+
+
+
 
             .textContainer {
                 background-color: $sliderOneBg;
@@ -61,6 +81,12 @@ $sliderTwoBg: #222529;
                     text-align: left !important;
                     text-transform: uppercase;
                     color: $sliderOneColor3;
+                    opacity: 0.5;
+
+                    @include md {
+                        font-size: 12px;
+                    }
+
                 }
 
                 h3 {
@@ -74,6 +100,14 @@ $sliderTwoBg: #222529;
                     text-align: left !important;
                     text-transform: uppercase;
                     color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 30px;
+                    }
+
+                    @include xs {
+                        font-size: 24px;
+                    }
                 }
 
                 h2 {
@@ -87,7 +121,17 @@ $sliderTwoBg: #222529;
                     color: #fff;
                     top: 3px;
                     color: $sliderOneColor2;
+                    width: 245px;
 
+                    @include md {
+                        font-size: 130px;
+                        width: 193px;
+                    }
+
+                    @include xs {
+                        font-size: 109px;
+                        width: 150px;
+                    }
 
                     small {
                         position: absolute;
@@ -102,6 +146,18 @@ $sliderTwoBg: #222529;
                         line-height: 1;
                         text-align: center;
                         transform: translateY(-54%);
+
+                        @include md {
+                            font-size: 22px;
+                            right: 60px;
+                            top: 48px;
+                        }
+
+                        @include xs {
+                            font-size: 18px;
+                            right: 40px;
+                            top: 40px;
+                        }
 
                         ins {
                             display: block;
@@ -135,6 +191,14 @@ $sliderTwoBg: #222529;
                     text-transform: uppercase;
                     background-color: $sliderOneColor1;
 
+                    @include md {
+                        padding-bottom: 10px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        padding-top: 10px;
+                        font-size: 16px;
+                    }
+
                 }
             }
 
@@ -149,6 +213,13 @@ $sliderTwoBg: #222529;
         align-items: flex-end;
         justify-content: flex-end;
 
+        @include md {
+            min-height: 400px;
+        }
+
+        @include xs {
+            min-height: 300px;
+        }
 
         .bannerLayer {
             position: absolute;
@@ -160,6 +231,15 @@ $sliderTwoBg: #222529;
             font-size: 10px;
             z-index: 10;
             text-align: left !important;
+
+            @include lg {
+                right: 38%;
+            }
+
+            @include sm {
+                right: 0%;
+                margin-left: 0;
+            }
 
             .textContainer {
                 background-color: $sliderTwoBg;
@@ -178,6 +258,11 @@ $sliderTwoBg: #222529;
                     text-align: left !important;
                     text-transform: uppercase;
                     color: $sliderOneColor3;
+                    opacity: 0.5;
+
+                    @include md {
+                        font-size: 12px;
+                    }
                 }
 
                 h3 {
@@ -191,6 +276,14 @@ $sliderTwoBg: #222529;
                     text-align: left !important;
                     text-transform: uppercase;
                     color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 30px;
+                    }
+
+                    @include xs {
+                        font-size: 24px;
+                    }
                 }
 
                 h2 {
@@ -204,6 +297,16 @@ $sliderTwoBg: #222529;
                     color: #fff;
                     top: 3px;
                     color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 130px;
+                        width: 193px;
+                    }
+
+                    @include xs {
+                        font-size: 109px;
+                        width: 150px;
+                    }
 
 
                     small {
@@ -219,6 +322,18 @@ $sliderTwoBg: #222529;
                         line-height: 1;
                         text-align: center;
                         transform: translateY(-54%);
+
+                        @include md {
+                            font-size: 22px;
+                            right: 60px;
+                            top: 48px;
+                        }
+
+                        @include xs {
+                            font-size: 18px;
+                            right: 40px;
+                            top: 40px;
+                        }
 
                         ins {
                             display: block;
@@ -252,6 +367,14 @@ $sliderTwoBg: #222529;
                     text-transform: uppercase;
                     background-color: $sliderTwoColor2;
 
+                    @include md {
+                        padding-bottom: 10px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        padding-top: 10px;
+                        font-size: 16px;
+                    }
+
                 }
             }
 
@@ -272,6 +395,10 @@ $sliderTwoBg: #222529;
             color: $sliderOneColor1 !important;
             font-size: 1.5rem !important;
         }
+
+        @include lg {
+            left: 0;
+        }
     }
 
     :global(.swiper-button-next) {
@@ -288,6 +415,10 @@ $sliderTwoBg: #222529;
             font-size: 1.5rem !important;
         }
 
+        @include lg {
+            right: 0;
+        }
+
     }
 
     &:hover {
@@ -297,6 +428,107 @@ $sliderTwoBg: #222529;
 
         :global(.swiper-button-next) {
             display: block;
+        }
+    }
+
+    &.ar {
+        .slide1 {
+            .bannerLayer {
+                left: 0;
+                right: 49%;
+                margin-left: 20px;
+                text-align: right !important;
+
+                @include lg {
+                    right: 38%;
+                }
+
+                @include sm {
+                    right: 0%;
+                    margin-left: 0;
+                }
+
+                .textContainer {
+                    h4 {
+                        text-align: right !important;
+                    }
+
+                    h3 {
+                        text-align: right !important;
+                    }
+
+                    h2 {
+                        text-align: right !important;
+
+                        small {
+                            right: 44px;
+                            @include md {
+                                right: 28px;
+                            }
+    
+                            @include xs {
+                                right: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .slide2 {
+            .bannerLayer {
+                right: 0;
+                left: 49%;
+                margin-right: 20px;
+                text-align: right !important;
+
+                @include lg {
+                    left: 38%;
+                }
+
+                @include sm {
+                    left: 0%;
+                    margin-right: 0;
+                }
+                .textContainer {
+                    h4 {
+                        text-align: right !important;
+                    }
+
+                    h3 {
+                        text-align: right !important;
+                    }
+
+                    h2 {
+                        text-align: right !important;
+
+                        small {
+                            right: 44px;
+                            @include md {
+                                right: 28px;
+                            }
+    
+                            @include xs {
+                                right: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        :global(.swiper-button-prev) {
+            left: auto;
+            right: 100px;
+            @include lg {
+                right: 0;
+            }
+        }
+        :global(.swiper-button-next) {
+            right: auto;
+            left: 100px;
+            @include lg {
+                left: 0;
+            }
         }
     }
 }

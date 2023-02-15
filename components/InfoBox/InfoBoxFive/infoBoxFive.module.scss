@@ -1,7 +1,19 @@
+@import '../../../styles/mixins.scss';
+
 .infoBoxesContainer {
     border: 1px solid #e7e7e7;
     margin-bottom: 20px !important;
+    @include md {
 
+        border: none;
+
+        .infoBox {
+            border: 1px solid #e7e7e7;
+            &:last-of-type {
+                border-right: 1px solid #e7e7e7 !important;
+            }
+        }
+    }
     .infoBox {
         border-right: 1px solid #e7e7e7;
         padding: 12px;

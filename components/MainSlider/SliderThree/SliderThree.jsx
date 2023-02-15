@@ -1,17 +1,21 @@
 import React from "react";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
+
 import 'swiper/css';
 import "swiper/css/navigation";
 import cls from './sliderThree.module.scss'
+import { useTranslation } from "next-i18next";
 
-import { Container } from "@mui/system";
 
 const SliderThree = () => {
     const navigation = {
     };
+    const { t, i18n } = useTranslation('common');
+
     return (
-        <div className={cls.slider}>
+        <div className={`${cls.slider} ${cls[i18n.language]}`}>
             <Swiper slidesPerView={1} loop={false} spaceBetween={0} navigation={navigation} modules={[Navigation]}>
                 <SwiperSlide>
                     <div className={cls.slide1}>
@@ -29,7 +33,7 @@ const SliderThree = () => {
                                     99
                                 </b>
                             </h5>
-                            <a href="demo1-shop.html" className={cls.btn}>Shop Now!</a>
+                            <Link href="demo1-shop.html" className={cls.btn}>Shop Now!</Link>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -42,7 +46,7 @@ const SliderThree = () => {
                                 <h3>20% off</h3>
                                 <h3>Accessories</h3>
                                 <h2>Summer Sale</h2>
-                                <a href="category.html" className={cls.btn}>Shop All Sale</a>
+                                <Link href="category.html" className={cls.btn}>Shop All Sale</Link>
                             </div>
                         </div>
                     </div>

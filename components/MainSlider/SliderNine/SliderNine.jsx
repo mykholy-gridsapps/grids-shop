@@ -1,7 +1,10 @@
 import React from "react";
 import Container from "@mui/material/Container";
+import Link from "next/link";
+import { i18n, useTranslation } from "next-i18next";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
+
 import 'swiper/css';
 import "swiper/css/pagination";
 import cls from './sliderNine.module.scss'
@@ -9,8 +12,9 @@ import cls from './sliderNine.module.scss'
 const SliderNine = () => {
     const navigation = {
     };
+    const { t, i18n } = useTranslation("common");
     return (
-        <div className={cls.slider}>
+        <div className={`${cls.slider} ${cls[i18n.language]}`}>
             <Swiper slidesPerView={1} loop={true} spaceBetween={0} navigation={navigation} modules={[Navigation]}>
                 <SwiperSlide>
                     <Container maxWidth='xl'>
@@ -28,7 +32,7 @@ const SliderNine = () => {
                                     </h5>
                                 </div>
                                 <div className={cls.btnContainer}>
-                                    <a href="demo1-shop.html" className={cls.btn}>View All Now</a>
+                                    <Link href="demo1-shop.html" className={cls.btn}>View All Now</Link>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +54,7 @@ const SliderNine = () => {
                                     </h5>
                                 </div>
                                 <div className={cls.btnContainer}>
-                                    <a href="demo1-shop.html" className={cls.btn}>View All Now</a>
+                                    <Link href="demo1-shop.html" className={cls.btn}>View All Now</Link>
                                 </div>
                             </div>
                         </div>

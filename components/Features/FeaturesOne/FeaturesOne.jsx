@@ -6,7 +6,7 @@ const FeaturesOne = () => {
     return (
         <div className={cls.featureBoxesContainer}>
             <Grid container spacing={2}>
-                <Grid item md={4} >
+                <Grid item md={4} xs={12}>
                     <div className={cls.featureBox}>
                         <i className={cls.iconEarphonesAlt}></i>
 
@@ -19,7 +19,7 @@ const FeaturesOne = () => {
                         </div>
                     </div>
                 </Grid>
-                <Grid item md={4} >
+                <Grid item md={4} xs={12}>
                     <div className={cls.featureBox}>
                         <i className={cls.iconCreditCard}></i>
 
@@ -32,7 +32,7 @@ const FeaturesOne = () => {
                         </div>
                     </div>
                 </Grid>
-                <Grid item md={4} >
+                <Grid item md={4} xs={12}>
                     <div className={cls.featureBox}>
                         <i className={cls.iconActionUndo}></i>
 

@@ -1,10 +1,19 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
+@import "../../../styles/mixins.scss";
 $sliderOneColor1: #ff7272;
-$sliderOneColor2: #222529;
+$sliderOneColor2: var(--text-dark);
 
 .slider {
     .slide1 {
         height: 100vh;
+
+        @include sm {
+            height: 370px;
+        }
+
+        @include xs {
+            height: 230px;
+        }
 
         img {
             height: 100% !important;
@@ -31,6 +40,21 @@ $sliderOneColor2: #222529;
                 text-align: center !important;
                 font-family: "Savoye LET";
                 color: $sliderOneColor1;
+
+                @include sm {
+                    font-size: 30px;
+                    line-height: 30px;
+                    margin-bottom: 14px;
+
+                }
+
+                @include xs {
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin-bottom: 8px;
+
+                }
+
             }
 
             h3 {
@@ -43,6 +67,16 @@ $sliderOneColor2: #222529;
                 text-align: center !important;
                 text-transform: uppercase;
                 color: $sliderOneColor2;
+
+                @include sm {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+
+                @include xs {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
             }
 
             h4 {
@@ -55,6 +89,18 @@ $sliderOneColor2: #222529;
                 text-align: center !important;
                 color: $sliderOneColor2;
 
+                @include sm {
+                    font-size: 100px;
+                    line-height: 100px;
+                    margin-bottom: 0px;
+                }
+
+                @include xs {
+                    font-size: 70px;
+                    line-height: 70px;
+                    margin-bottom: 10px;
+                }
+
                 small {
                     display: inline-block;
                     width: 50px;
@@ -64,6 +110,14 @@ $sliderOneColor2: #222529;
                     font-weight: inherit;
                     white-space: normal;
                     line-height: 1;
+
+                    @include sm {
+                        width: 25px;
+                    }
+
+                    @include xs {
+                        width: 15px;
+                    }
                 }
             }
 
@@ -78,6 +132,16 @@ $sliderOneColor2: #222529;
                 text-align: left;
                 display: inline-block;
                 color: $sliderOneColor2;
+
+                @include sm {
+                    font-size: 14px;
+                    line-height: 14px;
+                    margin-bottom: 14px;
+                }
+
+                @include xs {
+                    display: none;
+                }
             }
 
             h6 {
@@ -97,6 +161,15 @@ $sliderOneColor2: #222529;
                 line-height: 1;
                 color: #fff;
                 font-weight: 600;
+
+                @include sm {
+                    font-size: 14px;
+                }
+
+                @include xs {
+                    display: none;
+                }
+
 
                 &::before {
                     content: "";
@@ -133,6 +206,14 @@ $sliderOneColor2: #222529;
                     color: $sliderOneColor2;
                     text-transform: uppercase;
 
+                    @include sm {
+                        font-size: 14px;
+                        padding-bottom: 9px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        padding-top: 9px;
+                    }
+
                     &:hover {
                         background-color: $sliderOneColor2;
                         color: #fff;
@@ -144,6 +225,16 @@ $sliderOneColor2: #222529;
     }
 
     .slide2 {
+        height: 100vh;
+
+        @include sm {
+            height: 370px;
+        }
+
+        @include xs {
+            height: 230px;
+        }
+
         video {
             height: 100%;
             object-fit: cover;
@@ -170,6 +261,21 @@ $sliderOneColor2: #222529;
                 font-family: "Savoye LET";
                 color: $sliderOneColor2;
 
+                @include md {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+
+                @include sm {
+                    font-size: 26px;
+                    line-height: 26px;
+                }
+
+                @include xs {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+
             }
 
             h3 {
@@ -181,6 +287,21 @@ $sliderOneColor2: #222529;
                 text-align: left;
                 text-transform: uppercase;
                 color: $sliderOneColor2;
+
+                @include md {
+                    font-size: 100px;
+                    line-height: 100px;
+                }
+
+                @include sm {
+                    font-size: 70px;
+                    line-height: 70px;
+                }
+
+                @include xs {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
             }
         }
 
@@ -202,6 +323,22 @@ $sliderOneColor2: #222529;
                 text-align: left;
                 text-transform: uppercase;
                 color: $sliderOneColor2;
+
+                @include md {
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+
+                @include sm {
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+
+                @include xs {
+                    font-size: 12px;
+                    line-height: 12px;
+                    letter-spacing: 1.7px;
+                }
             }
 
             h3 {
@@ -213,6 +350,21 @@ $sliderOneColor2: #222529;
                 text-align: left;
                 text-transform: uppercase;
                 color: $sliderOneColor2;
+
+                @include md {
+                    font-size: 100px;
+                    line-height: 100px;
+                }
+
+                @include sm {
+                    font-size: 70px;
+                    line-height: 70px;
+                }
+
+                @include xs {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
 
                 small {
                     display: inline-block;
@@ -243,6 +395,33 @@ $sliderOneColor2: #222529;
                     color: #fff;
                     background-color: $sliderOneColor1;
                     text-transform: uppercase;
+
+                    @include md {
+                        font-size: 14px;
+                        line-height: 14px;
+                        padding-bottom: 10px;
+                        padding-left: 50px;
+                        padding-right: 50px;
+                        padding-top: 10px;
+                    }
+
+                    @include sm {
+                        font-size: 14px;
+                        line-height: 14px;
+                        padding-bottom: 10px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-top: 10px;
+                    }
+
+                    @include xs {
+                        font-size: 12px;
+                        line-height: 12px;
+                        padding-bottom: 5px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-top: 5px;
+                    }
                 }
             }
         }
@@ -254,6 +433,12 @@ $sliderOneColor2: #222529;
         bottom: 10%;
         text-align: center !important;
 
+        @include sm {
+            bottom: 0;
+            margin: 0;
+        }
+
+
         :global(.swiper-pagination-bullet) {
             border: 2px solid var(--text-dark);
             width: 18px;
@@ -261,6 +446,11 @@ $sliderOneColor2: #222529;
             background: transparent;
             opacity: 1;
             position: relative;
+
+            @include xs {
+                width: 14px;
+                height: 14px;
+            }
 
             &:hover {
                 border: 2px solid var(--text-dark);
@@ -280,7 +470,13 @@ $sliderOneColor2: #222529;
                     background-color: var(--text-dark);
                     transition: all 0.3s;
                     border-radius: 50%;
+
+                    @include xs {
+                        width: 4px;
+                        height: 4px;
+                    }
                 }
+
             }
         }
     }

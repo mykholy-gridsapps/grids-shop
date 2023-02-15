@@ -1,5 +1,5 @@
 .brands {
-    background-color: var(--bg-alt);
+    background-color: var(--bg-alt-color);
     padding: 20px 10px;
 
     h2 {
@@ -23,14 +23,14 @@
             width: 60px !important;
             height: 60px !important;
             border-radius: 50%;
-            background: var(--bg-alt);
+            background: var(--bg-alt-color);
             color: var(--main-color) !important;
             left: -18px;
             box-shadow: none;
             
             &:hover {
                 &::after {
-                    background: var(--bg-alt) !important;
+                    background: var(--bg-alt-color) !important;
                     color: var(--main-color) !important;
                 }
             }
@@ -42,14 +42,14 @@
             width: 60px !important;
             height: 60px !important;
             border-radius: 50%;
-            background: var(--bg-alt);
+            background: var(--bg-alt-color);
             color: var(--main-color) !important;
             right: -18px;
             box-shadow: none;
 
             &:hover {
                 &::after {
-                    background: var(--bg-alt) !important;
+                    background: var(--bg-alt-color) !important;
                     color: var(--main-color) !important;
                 }
             }

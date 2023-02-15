@@ -21,11 +21,15 @@
             left: 10px;
             width: 45px;
             padding: 10px 8px 8px;
-            color: #fff;
+            color: var(--text-light);
             background: var(--text-dark);
             text-align: center !important;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            &.ar {
+                right: 10px;
+                left: auto;
+            }
 
             .day {
                 display: block;
@@ -63,6 +67,10 @@
             right: 5px;
             bottom: 5px;
             cursor: pointer;
+            &.ar {
+                right: auto;
+                left: 5px;
+            }
         }
 
         &:hover {
@@ -114,6 +122,11 @@
 
                 &:hover {
                     text-decoration: underline;
+                }
+                &.ar {
+                    i {
+                        transform: rotate(180deg);
+                    }
                 }
             }
         }

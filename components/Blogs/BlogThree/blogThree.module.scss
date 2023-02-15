@@ -11,6 +11,10 @@
         overflow: hidden;
         position: relative;
         border-radius: 0;
+        &.ar {
+            margin-left: 18px;
+            margin-right: 0;
+        }
 
 
         img {
@@ -27,11 +31,15 @@
             left: 10px;
             width: 45px;
             padding: 10px 8px 8px;
-            color: #fff;
+            color: var(--text-light);
             background: var(--text-dark);
             text-align: center !important;
             text-transform: uppercase;
             letter-spacing: 0.05em;
+            &.ar {
+                left: auto;
+                right: 10px;
+            }
 
             .day {
                 display: block;

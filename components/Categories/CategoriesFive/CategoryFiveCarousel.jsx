@@ -1,6 +1,8 @@
 import { Grid } from "@mui/material";
 import React from "react";
+
 import CategoryFive from "./CategoryFive";
+
 import cls from './categoryFiveCarousel.module.scss'
 
 const CategoryFiveCarousel = () => {
@@ -12,7 +14,7 @@ const CategoryFiveCarousel = () => {
 
             <Grid container columnSpacing={2}>
                 {array.map(_ =>
-                    <Grid item md={4} xs={6}>
+                    <Grid item md={4} sm={6} xs={12}>
                         <CategoryFive />
                     </Grid>
                 )}

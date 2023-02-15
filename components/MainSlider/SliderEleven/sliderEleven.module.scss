@@ -1,16 +1,200 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
-$sliderOneColor1: #2b2b2d;
-$sliderOneColor2: #fff;
-$sliderOneColor3: #a7a7a7;
+@import "../../../styles/mixins.scss";
+
+$sliderOneColor1: var(--text-dark);
+$sliderOneColor2: var(--text-light);
+$sliderOneColor3: var(--text-color);
 $sliderOneColor4: #ea6253;
 
 
 .slider {
+    &.ar {
+        .slide1 {
+            .content {
+
+                .bannerLayer {
+
+                    @include md {
+                        margin-left: 30px;
+                        margin-right: 0;
+                    }
+
+                    h4 {
+                        margin-right: -50px;
+                        margin-left: 0;
+
+                        @include md {
+                            margin-right: -135px;
+                            margin-left: 0;
+                        }
+
+                        @include sm {
+                            margin-right: -110px;
+                            margin-left: 0;
+                        }
+
+                        @include xs {
+                            margin-right: 0;
+                            margin-left: 0;
+                        }
+
+                    }
+
+                    .priceBox {
+                        @include md {
+                            margin-right: 0;
+                            margin-left: 16px;
+                        }
+
+                        @include xs {
+                            margin-right: 0;
+                            margin-left: 0;
+                        }
+
+                        .saleText {
+                            margin-left: 40px;
+                            margin-right: 0 !important;
+                        }
+
+                        .oldPrice {
+                            margin-left: 5px;
+                            margin-right: 0;
+                        }
+                    }
+
+                    .btnIconGroup {
+                        margin: -42px 40px 0 0;
+
+                        @include sm {
+                            margin: -20px 85px 0 28px;
+                            width: 210px;
+                        }
+
+                        @include xs {
+                            margin: -20px 85px 0 10px;
+                        }
+
+                        .btn {
+                            margin-right: 0;
+                            margin-left: 0;
+
+                            &::after {
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .slide2 {
+            .content {
+
+                .bannerLayer {
+
+                   
+
+                    h4 {
+                        margin-left: -50px;
+                        margin-right: 0;
+
+                        @include md {
+                            margin-left: -135px;
+                            margin-right: 0;
+                        }
+
+                        @include sm {
+                            margin-left: -110px;
+                            margin-right: 0;
+                        }
+
+                        @include xs {
+                            margin-right: 0;
+                            margin-left: 0;
+                        }
+
+                    }
+
+                    .priceBox {
+                        @include md {
+                            margin-right: 0;
+                            margin-left: 16px;
+                        }
+
+                        @include xs {
+                            margin-right: 0;
+                            margin-left: 0;
+                        }
+
+                        .saleText {
+                            margin-left: 40px;
+                            margin-right: 0 !important;
+                        }
+
+                        .oldPrice {
+                            margin-left: 5px;
+                            margin-right: 0;
+                        }
+                    }
+
+                    .btnIconGroup {
+                        margin: -42px 55px 0 0;
+                        width: 200px;
+                        @include sm {
+                            margin: -20px 50px 0 28px;
+                            width: 210px;
+                        }
+
+                        @include xs {
+                            margin: -20px 85px 0 10px;
+                        }
+
+                        .btn {
+                            margin-right: 0;
+                            margin-left: 0;
+
+                            &::after {
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        :global(.swiper-button-prev) {
+            right: 5%;
+            left: auto;
+
+            @include md {
+                right: 0;
+            }
+        }
+
+        :global(.swiper-button-next) {
+            left: 5%;
+            right: auto;
+
+            @include md {
+                left: 0;
+            }
+        }
+    }
+
     img {
         min-height: 499px;
         object-position: 55%;
         object-fit: cover;
         max-width: 100%;
+
+        @include md {
+            min-height: 310px;
+        }
+
+        @include xs {
+            min-height: 200px;
+        }
     }
 
     .slide1 {
@@ -20,6 +204,10 @@ $sliderOneColor4: #ea6253;
         background-repeat: no-repeat;
         background-position: center center;
         padding: 14vh 0;
+
+        @include md {
+            padding: 40px 0;
+        }
 
         .content {
             display: flex;
@@ -33,6 +221,15 @@ $sliderOneColor4: #ea6253;
                 justify-content: center;
                 align-items: center;
                 position: relative;
+
+                @include md {
+                    flex: 0 0 59%;
+                    max-width: 59%;
+                }
+
+                @include xs {
+                    display: none;
+                }
             }
 
             .bannerLayer {
@@ -40,16 +237,24 @@ $sliderOneColor4: #ea6253;
                 max-width: 38%;
                 position: relative;
                 z-index: 1;
-                padding-left: 20px;
                 display: flex;
                 display: -ms-flexbox;
-                padding: 0 0.8rem;
+                padding: 0 8px;
                 flex-direction: column;
                 -ms-flex-direction: column;
                 align-items: center;
                 -ms-flex-align: center;
                 justify-content: center;
                 -ms-flex-pack: center;
+
+                @include md {
+                    margin-right: 30px;
+                }
+
+                @include xs {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
 
                 h4 {
                     margin-left: -50px;
@@ -67,9 +272,28 @@ $sliderOneColor4: #ea6253;
                     border-radius: 5px;
                     letter-spacing: -0.01em;
                     text-align: center !important;
+
                     &:hover {
                         color: $sliderOneColor4;
                     }
+
+                    @include md {
+                        margin-left: -135px;
+                        font-size: 20px;
+                    }
+
+                    @include sm {
+                        margin-left: -110px;
+                        padding: 9px 18px;
+                        font-size: 16px;
+                    }
+
+                    @include xs {
+                        margin-left: 0;
+                        padding: 9px 18px;
+                        font-size: 16px;
+                    }
+
                 }
 
                 .priceBox {
@@ -84,6 +308,20 @@ $sliderOneColor4: #ea6253;
                     font-size: 14px;
                     font-weight: 700;
 
+                    @include md {
+                        padding: 20px 30px 40px;
+                        margin-right: 16px;
+                    }
+
+                    @include sm {
+                        padding: 10px 20px 30px;
+                    }
+
+                    @include xs {
+                        padding: 10px 20px 30px;
+                        margin-right: 0;
+                    }
+
                     .saleText {
                         font-size: 20px;
                         font-weight: 700;
@@ -92,12 +330,20 @@ $sliderOneColor4: #ea6253;
                         margin-right: 40px;
                         white-space: nowrap;
 
+                        @include sm {
+                            font-size: 20px;
+                        }
+
                         small {
                             font-weight: 500;
                             display: block;
                             font-size: 13px;
                             opacity: 0.7;
                             margin-bottom: 4px;
+
+                            @include sm {
+                                font-size: 10px;
+                            }
                         }
                     }
 
@@ -106,6 +352,14 @@ $sliderOneColor4: #ea6253;
                         text-align: right !important;
                         font-size: 42px;
                         line-height: 1;
+
+                        @include md {
+                            font-size: 30px;
+                        }
+
+                        @include sm {
+                            font-size: 26px;
+                        }
 
                         .oldPrice {
                             display: block;
@@ -116,6 +370,14 @@ $sliderOneColor4: #ea6253;
                             line-height: 1;
                             text-align: right !important;
                             text-decoration: line-through;
+
+                            @include md {
+                                font-size: 18px;
+                            }
+
+                            @include sm {
+                                font-size: 16px;
+                            }
                         }
 
                         .productPrice {
@@ -131,6 +393,15 @@ $sliderOneColor4: #ea6253;
 
                 .btnIconGroup {
                     margin: -42px 28px 0 0;
+
+                    @include sm {
+                        margin: -20px 28px 0 0;
+                        width: 210px;
+                    }
+
+                    @include xs {
+                        margin: -20px 10px 0 0;
+                    }
 
                     .btn {
                         position: relative;
@@ -165,6 +436,15 @@ $sliderOneColor4: #ea6253;
                             margin-left: 5px;
                             background-color: inherit;
                             border-radius: 0 42px 42px 0;
+
+                            @include sm {
+                                width: 40px;
+                                padding: 10px 0;
+                            }
+                        }
+
+                        @include sm {
+                            padding: 10px 20px 10px 20px;
                         }
                     }
                 }
@@ -182,6 +462,10 @@ $sliderOneColor4: #ea6253;
         background-position: center center;
         padding: 14vh 0;
 
+        @include md {
+            padding: 40px 0;
+        }
+
         .content {
             display: flex;
             align-items: center;
@@ -194,6 +478,15 @@ $sliderOneColor4: #ea6253;
                 justify-content: center;
                 align-items: center;
                 position: relative;
+
+                @include md {
+                    flex: 0 0 59%;
+                    max-width: 59%;
+                }
+
+                @include xs {
+                    display: none;
+                }
             }
 
             .bannerLayer {
@@ -212,6 +505,12 @@ $sliderOneColor4: #ea6253;
                 justify-content: center;
                 -ms-flex-pack: center;
 
+                @include xs {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    align-items: center;
+                }
+
                 h4 {
                     margin-right: -50px;
                     width: auto;
@@ -228,6 +527,24 @@ $sliderOneColor4: #ea6253;
                     border-radius: 5px;
                     letter-spacing: -0.01em;
                     text-align: center !important;
+
+                    @include md {
+                        margin-right: -135px;
+                        font-size: 20px;
+                    }
+
+                    @include sm {
+                        margin-right: -110px;
+                        padding: 9px 18px;
+                        font-size: 16px;
+                    }
+
+                    @include xs {
+                        margin-right: 0;
+                        padding: 9px 18px;
+                        font-size: 16px;
+                    }
+
                     &:hover {
                         color: $sliderOneColor4;
                     }
@@ -245,6 +562,20 @@ $sliderOneColor4: #ea6253;
                     font-size: 14px;
                     font-weight: 700;
 
+                    @include md {
+                        padding: 20px 30px 40px;
+                        margin-right: 16px;
+                    }
+
+                    @include sm {
+                        padding: 10px 20px 30px;
+                    }
+
+                    @include xs {
+                        padding: 10px 20px 30px;
+                        margin-right: 0;
+                    }
+
                     .saleText {
                         font-size: 20px;
                         font-weight: 700;
@@ -253,12 +584,20 @@ $sliderOneColor4: #ea6253;
                         margin-right: 40px;
                         white-space: nowrap;
 
+                        @include sm {
+                            font-size: 20px;
+                        }
+
                         small {
                             font-weight: 500;
                             display: block;
                             font-size: 13px;
                             opacity: 0.7;
                             margin-bottom: 4px;
+
+                            @include sm {
+                                font-size: 10px;
+                            }
                         }
                     }
 
@@ -267,6 +606,14 @@ $sliderOneColor4: #ea6253;
                         text-align: right !important;
                         font-size: 42px;
                         line-height: 1;
+
+                        @include md {
+                            font-size: 30px;
+                        }
+
+                        @include md {
+                            font-size: 26px;
+                        }
 
                         .oldPrice {
                             display: block;
@@ -277,6 +624,14 @@ $sliderOneColor4: #ea6253;
                             line-height: 1;
                             text-align: right !important;
                             text-decoration: line-through;
+
+                            @include md {
+                                font-size: 18px;
+                            }
+
+                            @include sm {
+                                font-size: 16px;
+                            }
                         }
 
                         .productPrice {
@@ -291,7 +646,16 @@ $sliderOneColor4: #ea6253;
                 }
 
                 .btnIconGroup {
-                    margin: -36px 0 0 28px;
+                    margin: -36px 0 0 0;
+
+                    @include sm {
+                        margin: -20px 0 0 7px;
+                        width: 210px;
+                    }
+
+                    @include xs {
+                        margin: -20px 10px 0 0;
+                    }
 
                     .btn {
                         position: relative;
@@ -326,6 +690,15 @@ $sliderOneColor4: #ea6253;
                             margin-left: 5px;
                             background-color: inherit;
                             border-radius: 0 42px 42px 0;
+
+                            @include sm {
+                                width: 40px;
+                                padding: 10px 0;
+                            }
+                        }
+
+                        @include sm {
+                            padding: 10px 20px 10px 20px;
                         }
                     }
                 }
@@ -343,6 +716,10 @@ $sliderOneColor4: #ea6253;
         display: none;
         text-align: center !important;
 
+        @include md {
+            left: 0;
+        }
+
         &::after {
             color: $sliderOneColor2 !important;
             font-size: 1.5rem !important;
@@ -357,6 +734,10 @@ $sliderOneColor4: #ea6253;
         right: 5%;
         display: none;
         text-align: center !important;
+
+        @include md {
+            right: 0;
+        }
 
         &::after {
             color: $sliderOneColor2 !important;
@@ -374,4 +755,5 @@ $sliderOneColor4: #ea6253;
             display: block;
         }
     }
+
 }

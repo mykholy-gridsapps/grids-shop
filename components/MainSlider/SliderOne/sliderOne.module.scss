@@ -1,7 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
-$sliderOneColor: #fff;
+@import "../../../styles/mixins.scss";
+$sliderOneColor: var(--text-light);
 $sliderTwoColor1: #777;
-$sliderTwoColor2: #222529;
+$sliderTwoColor2: var(--text-dark);
 $sliderOneBadge: #ff7272;
 
 .slider {
@@ -10,12 +11,15 @@ $sliderOneBadge: #ff7272;
         object-position: center center;
         object-fit: cover;
         max-width: 100%;
+        @include xs {
+            object-position: center right;   
+        }
     }
+    
 
     .slide1 {
         position: relative;
-
-
+        
         .bannerLayer {
             position: absolute;
             padding-bottom: 3px;
@@ -85,10 +89,21 @@ $sliderOneBadge: #ff7272;
             .btn {
                 border-color: var(--text-dark);
                 background-color: var(--text-dark);
-                color: #fff;
+                color: $sliderOneColor;
                 box-shadow: none;
                 font-size: 12px;
                 padding: 12px 34px;
+            }
+        }
+        @include xs {
+            .bannerLayer {
+                h3 {
+                    font-size: 60px;
+                }
+                .btn {
+                    display: inline-block;
+                    margin-top: 15px;
+                }
             }
         }
     }
@@ -145,10 +160,21 @@ $sliderOneBadge: #ff7272;
             .btn {
                 border-color: var(--text-dark);
                 background-color: var(--text-dark);
-                color: #fff;
+                color: $sliderOneColor;
                 box-shadow: none;
                 font-size: 12px;
                 padding: 12px 34px;
+            }
+        }
+        @include xs {
+            .bannerLayer {
+                h2 {
+                    font-size: 40px;
+                }
+                .btn {
+                    display: inline-block;
+                    margin-top: 15px;
+                }
             }
         }
     }
@@ -157,6 +183,9 @@ $sliderOneBadge: #ff7272;
         margin: 16px 5.5% 0;
         position: absolute;
         bottom: 10%;
+        @include xs {
+            bottom: 5%;
+        }
 
         :global(.swiper-pagination-bullet) {
             border: 2px solid var(--text-dark);
@@ -186,6 +215,19 @@ $sliderOneBadge: #ff7272;
                     border-radius: 50%;
                 }
             }
+        }
+    }
+    &.ar {
+        img {
+            transform: rotateY(180deg);
+        }
+        .slide2 {
+            h5 {
+                margin-left: 30px;
+            }
+        }
+        :global(.swiper-pagination) {
+            right: 0;
         }
     }
 }

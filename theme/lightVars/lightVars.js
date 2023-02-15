@@ -16,6 +16,9 @@ const lightVars = () => {
   document.querySelector(":root").style.setProperty("--special-background", "rgb(239 237 237)");
 
   document.querySelector(":root").style.setProperty("--text-color", "#777777");
+
+  document.querySelector(":root").style.setProperty("--text-light", "#fff");
+
   document.querySelector(":root").style.setProperty("--text-dark", "#252525");
 
   document.querySelector(":root").style.setProperty("--border-color", "#eee");
@@ -23,6 +26,7 @@ const lightVars = () => {
   document.querySelector(":root").style.setProperty("--background-light", "#FAFAFA");
 
   document.querySelector(":root").style.setProperty("--hover-color", "#f3f3f3");
+
 
   document.querySelector(":root").style.setProperty("--main-color-light", "#def0ff");
 

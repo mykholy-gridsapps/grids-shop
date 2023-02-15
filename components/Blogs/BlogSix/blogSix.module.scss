@@ -1,3 +1,5 @@
+@import '../../../styles/mixins.scss';
+
 .sectionTitle {
     align-items: center;
     box-sizing: border-box;
@@ -8,8 +10,12 @@
     margin-bottom: 10px;
     margin-top: 10px;
     padding-bottom: 13px;
-    text-align: left;
+    text-align: left !important;
     text-transform: uppercase;
+
+    &.ar {
+        text-align: right !important;
+    }
 
     h2 {
         padding-bottom: 1px;
@@ -26,6 +32,9 @@
         max-height: 100%;
         border: none;
         border-right: 1px solid rgba(0, 0, 0, 0.09);
+        @include xs {
+            margin: 0 5px;
+        }
     }
 
     a {
@@ -36,6 +45,13 @@
 
         i {
             margin-left: 16px;
+        }
+        &.ar {
+            i {
+                margin-left: 0;
+                margin-right: 16px;
+                transform: rotate(180deg);
+            }
         }
     }
 }
@@ -51,7 +67,7 @@
         img {
             width: 100%;
             min-height: 280px;
-          }
+        }
 
         .postDate {
             position: absolute;
@@ -60,7 +76,7 @@
             width: 66px;
             height: 73px;
             padding: 10px 8px 8px;
-            color: #fff;
+            color: var(--text-light);
             background: var(--text-dark);
             text-align: center !important;
             text-transform: uppercase;
@@ -69,6 +85,10 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            &.ar {
+                left: auto;
+                right: 10px;
+            }
 
             .day {
                 display: block;
@@ -98,7 +118,7 @@
             align-items: center;
             justify-content: center;
             background-color: var(--main-color);
-            color: #fff;
+            color: var(--text-light);
             border-radius: 50%;
             position: absolute;
             transition: all 0.5s;
@@ -110,7 +130,7 @@
             cursor: pointer;
         }
 
-        
+
     }
 
     .content {
@@ -130,7 +150,7 @@
                 font-weight: 600;
                 font-size: 11px;
                 line-height: 1;
-                color: #fff;
+                color: var(--text-light);
                 letter-spacing: 0.01em;
                 border-radius: 5px;
                 background-color: var(--text-dark);
@@ -142,7 +162,7 @@
                 font-size: 20px;
                 line-height: 1;
                 letter-spacing: 0.005em;
-                color: #222529;
+                color: var(--text-dark);
             }
 
             p {
@@ -170,7 +190,7 @@
                     background-color: var(--main-color);
                     border-color: var(--main-color);
                     border-bottom-color: var(--main-color);
-                    color: #fff;
+                    color: var(--text-light);
                     text-decoration: none;
                 }
             }

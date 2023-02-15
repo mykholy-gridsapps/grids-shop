@@ -1,18 +1,21 @@
 import React from "react";
+import { useTranslation } from "next-i18next";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
+
 import 'swiper/css';
 import "swiper/css/navigation";
 import cls from './sliderTwo.module.scss'
+import Link from "next/link";
 
-import { Container } from "@mui/system";
 
 const SliderTwo = () => {
     const navigation = {
 
     };
+    const { t, i18n } = useTranslation('common')
     return (
-        <div className={cls.slider}>
+        <div className={`${cls.slider} ${cls[i18n.language]}`}>
             <Swiper slidesPerView={1} loop={true} spaceBetween={0} navigation={navigation} modules={[Navigation]}>
                 <SwiperSlide>
                     <div className={cls.slide1}>
@@ -24,7 +27,7 @@ const SliderTwo = () => {
                             <h4 className="m-b-4">on Jackets</h4>
 
                             <h5 >Starting at<span><sup>$</sup>199<sup>99</sup></span></h5>
-                            <a href="demo3-shop.html" className={cls.btn} role="button">Shop Now</a>
+                            <Link href="demo3-shop.html" className={cls.btn} role="button">Shop Now</Link>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -39,8 +42,8 @@ const SliderTwo = () => {
 
                             <h5>Starting at <span>$<em>19</em>99</span>
                             </h5>
-                            <a href="demo3-shop.html" className={cls.btn} role="button">Shop Now <i
-                                className="fas fa-long-arrow-alt-right"></i></a>
+                            <Link href="demo3-shop.html" className={cls.btn} role="button">Shop Now <i
+                                className="fas fa-long-arrow-alt-right"></i></Link>
                         </div>
                     </div>
                 </SwiperSlide>

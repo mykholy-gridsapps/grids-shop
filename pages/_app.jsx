@@ -33,7 +33,7 @@ function MyApp({ Component, ...rest }) {
       cookie.set("grids-apps-shop-lang", "en", { path: "/" });
     }
     if (!cookie.get("grids-apps-shop-currency")) {
-      cookie.set("grids-apps-shop-currency", "usd", { path: "/" });
+      cookie.set("grids-apps-shop-currency", "USD", { path: "/" });
     }
     if (!cookie.get("grids-apps-shop-theme")) {
       cookie.set("grids-apps-shop-theme", "portoOne", { path: "/" });

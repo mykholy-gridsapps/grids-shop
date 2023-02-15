@@ -1,14 +1,32 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import 'swiper/css';
 
+import 'swiper/css';
 import cls from './brandsThree.module.scss'
 
 const BrandsThree = () => {
     return (
         <div className={cls.brands}>
             <h3>As featured at</h3>
-            <Swiper slidesPerView={7} loop={true} spaceBetween={30} centeredSlides={true}>
+            <Swiper
+                slidesPerView={3}
+                loop={false}
+                spaceBetween={20}
+                centeredSlides={true}
+                breakpoints={{
+                    575: {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                    },
+                    768: {
+                        slidesPerView: 5,
+                        spaceBetween: 60,
+                    },
+                    992: {
+                        slidesPerView: 7,
+                        spaceBetween: 60,
+                    }
+                }}>
                 <SwiperSlide>
                     <div className={cls.brand}>
 

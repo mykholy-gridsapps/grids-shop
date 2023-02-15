@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import "../../../styles/mixins.scss";
 $sliderBg: #e2e2e0;
 $sliderOneColor1: #c59b9c;
-$sliderOneColor2: rgb(102, 102, 102);
-$sliderOneColor3: #222529;
-$sliderTwoColor1: #999;
-$sliderTwoColor2: #222529;
+$sliderOneColor2: var(--text-color);
+$sliderOneColor3: var(--text-dark);
+$sliderTwoColor1: var(--text-color);
+$sliderTwoColor2: var(--text-dark);
 $sliderOneBadge: #ff7272;
 
 .slider {
@@ -15,10 +16,19 @@ $sliderOneBadge: #ff7272;
         max-width: 100%;
         object-position: center top;
         min-height: 360px;
+        @include sm {
+            min-height: 250px;
+        }
+        @include xs {
+            min-height: 200px;
+        }
     }
 
     .slide1 {
         position: relative;
+        @include xs {
+            margin: 0 -16px;
+        }
 
         .bannerLayer {
             position: absolute;
@@ -38,6 +48,19 @@ $sliderOneBadge: #ff7272;
                 margin-top: 0px;
                 text-align: left !important;
                 color: $sliderOneColor1;
+                @include md {
+                    font-size: 50px;
+                    line-height: 30px;
+                }
+                @include sm {
+                    font-size: 40px;
+                    line-height: 20px;
+                }
+                @include xs {
+                    font-size: 30px;
+                    line-height: 20px;
+                    padding: 0 16px;
+                }
             }
 
             .btn {
@@ -78,13 +101,18 @@ $sliderOneBadge: #ff7272;
                     vertical-align: middle;
                     white-space: nowrap
                 }
+                @include xs {
+                    padding: 0 16px;
+                }
             }
         }
     }
 
     .slide2 {
         position: relative;
-
+        @include xs {
+            margin: 0 -16px;
+        }
         .bannerLayer {
             position: absolute;
             padding-bottom: 3px;
@@ -103,6 +131,19 @@ $sliderOneBadge: #ff7272;
                 margin-top: 0px;
                 text-align: left !important;
                 color: $sliderOneColor1;
+                @include md {
+                    font-size: 50px;
+                    line-height: 30px;
+                }
+                @include sm {
+                    font-size: 40px;
+                    line-height: 20px;
+                }
+                @include xs {
+                    font-size: 30px;
+                    line-height: 20px;
+                    padding: 0 16px;
+                }
             }
 
             .btn {
@@ -143,6 +184,9 @@ $sliderOneBadge: #ff7272;
                     vertical-align: middle;
                     white-space: nowrap
                 }
+                @include xs {
+                    padding: 0 16px;
+                }
             }
         }
     }
@@ -152,7 +196,7 @@ $sliderOneBadge: #ff7272;
         border-radius: 0;
         box-shadow: none;
         color: $sliderOneColor3 !important;
-        left: 5%;
+        left: 0;
         display: none;
         text-align: center !important;
 
@@ -167,7 +211,7 @@ $sliderOneBadge: #ff7272;
         border-radius: 0;
         box-shadow: none;
         color: $sliderOneColor3 !important;
-        right: 5%;
+        right: 0;
         display: none;
         text-align: center !important;
 
@@ -185,6 +229,16 @@ $sliderOneBadge: #ff7272;
 
         :global(.swiper-button-next) {
             display: block;
+        }
+    }
+    &.ar {
+        :global(.swiper-button-prev) {
+            right: 0;
+            left: auto;
+        }
+        :global(.swiper-button-next) {
+            left: 0;
+            right: auto;
         }
     }
 }
