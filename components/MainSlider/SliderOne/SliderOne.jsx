@@ -1,19 +1,22 @@
 import React from "react";
+import { useTranslation } from "next-i18next";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from "swiper";
+
 import 'swiper/css';
 import "swiper/css/pagination";
 import cls from './sliderOne.module.scss'
 
-import { Container } from "@mui/system";
 
 const SliderOne = () => {
     const pagination = {
         clickable: true,
 
     };
+    const { t, i18n } = useTranslation('common')
     return (
-        <div className={cls.slider}>
+        <div className={`${cls.slider} ${cls[i18n.language]}`}>
             <Swiper slidesPerView={1} spaceBetween={0} pagination={pagination} modules={[Pagination]}>
                 <SwiperSlide>
                     <div className={cls.slide1}>
@@ -31,7 +34,7 @@ const SliderOne = () => {
                                     99
                                 </b>
                             </h5>
-                            <a href="demo1-shop.html" className={cls.btn}>Shop Now!</a>
+                            <Link href="demo1-shop.html" className={cls.btn}>Shop Now!</Link>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -44,7 +47,7 @@ const SliderOne = () => {
                             <h5>Starting At
                                 <b>$<em>299</em>99</b>
                             </h5>
-                            <a href="demo1-shop.html" className={cls.btn}>Get Yours!</a>
+                            <Link href="demo1-shop.html" className={cls.btn}>Get Yours!</Link>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -57,7 +60,7 @@ const SliderOne = () => {
                             <h5>Starting At
                                 <b>$<em>299</em>99</b>
                             </h5>
-                            <a href="demo1-shop.html" className={cls.btn}>Get Yours!</a>
+                            <Link href="demo1-shop.html" className={cls.btn}>Get Yours!</Link>
                         </div>
                     </div>
                 </SwiperSlide>

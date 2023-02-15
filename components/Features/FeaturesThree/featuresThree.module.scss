@@ -1,5 +1,5 @@
 .featureBoxesContainer {
-    background: #f6f7f9;
+    background: var(bg-alt-color);
     padding-top: 48px;
     padding-bottom: 0;
     margin-top: -2px;
@@ -15,7 +15,7 @@
             margin-bottom: 16px;
             width: 84px;
             height: 84px;
-            border: 2px solid #dddddd;
+            border: 2px solid var(--text-dark);
             color: var(--main-color);
             border-radius: 50%;
             font-size: 35px;

@@ -1,6 +1,9 @@
+@import "../../../styles/mixins.scss";
 .category {
     padding: 0 30px;
-
+@include md {
+    padding: 0 15px;
+}
     &:hover {
         figure {
             &::after {

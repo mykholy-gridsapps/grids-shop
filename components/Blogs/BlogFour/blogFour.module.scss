@@ -26,10 +26,13 @@
         -ms-flex: 1;
         z-index: 1;
         position: relative;
-        margin: 0px 0 0 -32px;
+        margin: 0 0 0 -32px;
         padding: 36px 36px 33px;
         border: 0;
         background-color: var(--bg-color);
+        &.ar {
+            margin: 0 -32px 0 0;
+        }
 
         h2 {
             margin-top: 0;
@@ -50,7 +53,7 @@
             width: auto;
             margin: 0 0 10px;
             padding: 2px 8px;
-            color: #fff;
+            color: var(--text-light);
             background-color: var(--text-dark);
             font-size: 11px;
             font-weight: 700;
@@ -82,6 +85,12 @@
 
                 &:hover {
                     text-decoration: underline;
+                }
+                &.ar {
+                    float: right;
+                    i {
+                        transform: rotate(180deg);
+                    }
                 }
             }
         }

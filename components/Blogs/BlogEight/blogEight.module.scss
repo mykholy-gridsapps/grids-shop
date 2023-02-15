@@ -31,6 +31,10 @@
             right: 5px;
             bottom: 5px;
             cursor: pointer;
+            &.ar {
+                right: auto;
+                left: 5px;
+            }
         }
 
         &:hover {
@@ -57,10 +61,10 @@
             }
 
             span:not(:first-of-type) {
-                color: var(--main-color);
+                color: var(--text-dark);
 
                 a {
-                    color: var(--main-color);
+                    color: var(--text-dark);
 
                 }
             }
@@ -105,6 +109,9 @@
 
                 &:hover {
                     text-decoration: underline;
+                }
+                &.ar {
+                    float: right;
                 }
             }
         }

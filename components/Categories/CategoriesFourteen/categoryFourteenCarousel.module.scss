@@ -1,6 +1,30 @@
+
 .categoriesCarousel {
     padding-top: 60px;
     padding-bottom: 33px;
+    &.ar {
+        .title {
+            h2 {
+                padding-left: 24px;
+                padding-right: 0;
+                border-left: 1px solid #e7e7e7;
+                border-right: none;
+                margin-right: 0;
+                margin-left: 24px;
+                &::after {
+                left: auto;
+                right: 0;
+                }
+            }
+            a {
+                i {
+                    margin-left: 0;
+                    margin-right: 1.5rem;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
 
     .title {
         -ms-flex-align: center !important;

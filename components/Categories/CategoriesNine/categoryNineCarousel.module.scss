@@ -1,3 +1,4 @@
+@import "../../../styles/mixins.scss";
 .categoriesCarousel {
     background: var(--bg-alt-color);
     background: linear-gradient(180deg, var(--bg-alt-color) 0%, var(--bg-color) 100%); 
@@ -34,6 +35,39 @@
             }
         }
     }
+    &.ar {
+        :global(.swiper-button-next) {
+            right: auto;
+            left: -65px;
+        }
+        :global(.swiper-button-prev){
+            left: auto;
+            right: -65px;
+        }
+    }
+    @include xxs {
+    padding: 20px 10px 27px;
+    :global(.swiper-button-next) {
+        right: 2px;
+        left: auto;
+    }
+    :global(.swiper-button-prev){
+        left: 2px;
+        right: auto;
+    }
+    &.ar {
+        :global(.swiper-button-next) {
+            right: auto;
+            left: 2px;
+        }
+        :global(.swiper-button-prev){
+            left: auto;
+            right: 2px;
+        }
+    }
+
+    }
+    
 
     
 }

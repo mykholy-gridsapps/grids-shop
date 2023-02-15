@@ -1,5 +1,5 @@
 .brands {
-    background-color: var(--bg-alt);
+    background-color: var(--bg-alt-color);
     padding: 20px 0;
 
     h2 {
@@ -19,7 +19,7 @@
 
     :global(.swiper) {
         padding: 62px 24px;
-        background-color: #fff;
+        background-color: var(--bg-color);
         border-radius: 7px !important;
 
         :global(.swiper-button-prev) {
@@ -27,16 +27,16 @@
             height: 80px !important;
             border-radius: 3px !important;
             top: 40% !important;
-            background: #fff;
-            border: 1px solid #e7e7e7;
+            background: var(--bg-color);
+            border: 1px solid var(--main-color);
             color: var(--main-color) !important;
-            box-shadow: 0 0 100px 75px rgba(255, 255, 255, 0.6);
             transition: background-color 0.3s, color 0.3s;
             font-size: 26px;
+            position: absolute;
 
             &:hover {
                 background-color: var(--main-color);
-                color: #fff !important;
+                color: var(--bg-color) !important;
             }
         }
 
@@ -45,16 +45,16 @@
             height: 80px !important;
             border-radius: 3px !important;
             top: 40% !important;
-            background: #fff;
-            border: 1px solid #e7e7e7;
+            background: var(--bg-color);
+            border: 1px solid var(--main-color);
             color: var(--main-color) !important;
-            box-shadow: 0 0 100px 75px rgba(255, 255, 255, 0.6);
             transition: background-color 0.3s, color 0.3s;
             font-size: 26px;
+            position: absolute;
 
             &:hover {
                 background-color: var(--main-color);
-                color: #fff !important;
+                color: var(--bg-color) !important;
             }
 
         }

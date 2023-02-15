@@ -1,7 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
-$sliderOneColor1: #222529;
-$sliderOneColor12: #fff;
-$sliderTwoColor1: #222529;
+@import "../../../styles/mixins.scss";
+
+$sliderOneColor1: var(--text-dark);
+$sliderOneColor12: var(--text-light);
+$sliderTwoColor1: var(--text-dark);
 $sliderTwoColor2: #ff7272;
 $sliderOneBadge: #ff7272;
 
@@ -13,6 +15,16 @@ $sliderOneBadge: #ff7272;
         object-position: center center;
         object-fit: cover;
         max-width: 100%;
+
+        @include md {
+            min-height: 400px;
+        }
+        @include sm {
+            min-height: 300px;
+        }
+        @include xs {
+            min-height: 200px;
+        }
     }
 
     .slide1 {
@@ -35,6 +47,13 @@ $sliderOneBadge: #ff7272;
                 padding-bottom: 14px;
                 color: $sliderOneColor1;
                 margin: 0;
+
+                @include sm {
+                    font-size: 16px;
+                }
+                @include xs {
+                    font-size: 14px;
+                }
             }
 
             h2 {
@@ -44,6 +63,12 @@ $sliderOneBadge: #ff7272;
                 font-family: 'Savoye LET', sans-serif;
                 line-height: 1;
                 margin: 0;
+                @include sm {
+                    font-size: 40px;
+                }
+                @include xs {
+                    font-size: 30px;
+                }
             }
 
             h3 {
@@ -52,6 +77,12 @@ $sliderOneBadge: #ff7272;
                 line-height: 1;
                 color: $sliderOneColor1;
                 text-transform: uppercase !important;
+                @include sm {
+                    font-size: 60px;
+                }
+                @include xs {
+                    font-size: 30px;
+                }
 
                 em {
                     display: inline-block;
@@ -74,7 +105,7 @@ $sliderOneBadge: #ff7272;
                 text-transform: uppercase !important;
                 margin: 0;
                 vertical-align: text-bottom !important;
-
+                
                 b {
                     color: $sliderOneColor12;
                     background-color: $sliderOneBadge;
@@ -85,24 +116,35 @@ $sliderOneBadge: #ff7272;
                     transform: rotate(-2deg);
                     display: inline-block;
                     font-weight: 600;
-
-
+                    
+                    
                     em {
                         font-size: 29px;
                         font-style: normal;
                         vertical-align: text-top !important;
+                        @include sm {
+                            font-size: 20px;
+                        }
                     }
 
+                }
+                @include xs {
+                    display: none !important;
                 }
             }
 
             .btn {
                 border-color: var(--text-dark);
                 background-color: var(--text-dark);
-                color: #fff;
+                color: var(--text-light);
                 box-shadow: none;
                 font-size: 15px;
                 padding: 15px 40px 18px;
+                @include sm {
+                    font-size: 14px;
+                    padding: 8px 20px 9px;
+
+                }
             }
         }
     }
@@ -123,6 +165,12 @@ $sliderOneBadge: #ff7272;
                 font-weight: 500;
                 color: $sliderTwoColor1;
                 margin: 0;
+                @include sm {
+                    font-size: 26px;
+                }
+                @include xs {
+                    font-size: 16px;
+                }
             }
 
             h3 {
@@ -130,7 +178,12 @@ $sliderOneBadge: #ff7272;
                 font-weight: 700;
                 color: $sliderTwoColor1;
                 margin: 0;
-
+                @include sm {
+                    font-size: 70px;
+                }
+                @include xs {
+                    font-size: 40px;
+                }
                 em {
                     display: inline-block;
                     font-size: 45%;
@@ -158,6 +211,9 @@ $sliderOneBadge: #ff7272;
                     padding-right: 30px;
                     margin-right: 30px;
                     margin-left: 5px;
+                    @include sm {
+                        font-size: 16px;
+                    }
 
                     em {
                         font-size: 40px;
@@ -165,6 +221,9 @@ $sliderOneBadge: #ff7272;
                         vertical-align: middle;
                         position: relative;
                         top: 1px;
+                        @include sm {
+                            font-size: 26px;
+                        }
                     }
                 }
             }
@@ -172,11 +231,15 @@ $sliderOneBadge: #ff7272;
             .btn {
                 border-color: var(--text-dark);
                 background-color: var(--text-dark);
-                color: #fff;
+                color: var(--text-light);
                 box-shadow: none;
                 font-size: 16px;
                 font-weight: 700;
                 padding: 20px 68px 20px;
+                @include sm {
+                    display: inline-block;
+                padding: 10px 50px 10px;
+                }
             }
         }
     }
@@ -186,13 +249,18 @@ $sliderOneBadge: #ff7272;
         border-radius: 0;
         box-shadow: none;
         color: $sliderOneColor1 !important;
-        left: 100px;
+        left: 50px;
         display: none;
         text-align: center !important;
-
+        @include xs {
+            left: 10px;
+        }
         &::after {
             color: $sliderOneColor1 !important;
             font-size: 1.5rem !important;
+            @include xs {
+                font-size: 12px !important;
+            }
         }
     }
 
@@ -201,13 +269,18 @@ $sliderOneBadge: #ff7272;
         border-radius: 0;
         box-shadow: none;
         color: $sliderOneColor1 !important;
-        right: 100px;
+        right: 50px;
         display: none;
         text-align: center !important;
-
+        @include xs {
+            right: 10px;
+        }
         &::after {
             color: $sliderOneColor1 !important;
             font-size: 1.5rem !important;
+            @include xs {
+                font-size: 12px !important;
+            }
         }
 
     }

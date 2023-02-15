@@ -1,11 +1,12 @@
 import React from "react";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from "swiper";
+
 import 'swiper/css';
 import "swiper/css/pagination";
 import cls from './sliderFive.module.scss'
 
-import { Container } from "@mui/system";
 
 const SliderFive = () => {
     const pagination = {
@@ -36,7 +37,7 @@ const SliderFive = () => {
                                 $<b>199</b>99
                             </h6>
                             <div className={cls.btnContainer}>
-                                <a href="demo1-shop.html" className={cls.btn}>Shop Now!</a>
+                                <Link href="demo1-shop.html" className={cls.btn}>Shop Now!</Link>
                             </div>
                         </div>
                     </div>
@@ -57,7 +58,7 @@ const SliderFive = () => {
                                 80%<small>OFF</small>
                             </h3>
                             <div className={cls.btnContainer}>
-                                <a href="demo1-shop.html" className={cls.btn}>Shop Now!</a>
+                                <Link href="demo1-shop.html" className={cls.btn}>Shop Now!</Link>
                             </div>
                         </div>
                     </div>

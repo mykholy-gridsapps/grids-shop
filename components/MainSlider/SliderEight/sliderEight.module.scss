@@ -1,17 +1,38 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
-$sliderOneColor1: rgba(34, 37, 41, 0.6);
+@import "../../../styles/extends.scss";
+
+$sliderOneColor1: var(--text-color);
 $sliderOneColor2: #e9846b;
-$sliderOneColor3: #222529;
-$sliderTwoColor1: #222529;
+$sliderOneColor3: var(--text-dark);
+$sliderTwoColor1: var(--text-dark);
 $sliderTwoColor2: #ff7272;
 $sliderOneBadge: #ff7272;
 
 .slider {
+
+    margin: 0 -16px;
+
+    @include md {
+        margin: 0 -32px;
+    }
+
+    @include xs {
+        margin: 0 -16px;
+    }
+
     img {
         min-height: 510px;
         object-position: center center;
         object-fit: cover;
         max-width: 100%;
+
+        @include sm {
+            min-height: 400px;
+        }
+
+        @include xs {
+            min-height: 200px;
+        }
     }
 
     .slide1 {
@@ -36,6 +57,14 @@ $sliderOneBadge: #ff7272;
                 opacity: 1;
                 text-align: right !important;
                 color: $sliderOneColor1;
+
+                @include sm {
+                    font-size: 16px;
+                }
+
+                @include xs {
+                    display: none;
+                }
             }
 
             h3 {
@@ -47,6 +76,14 @@ $sliderOneBadge: #ff7272;
                 text-align: right !important;
                 font-family: "Savoye LET";
                 color: $sliderOneColor2;
+
+                @include sm {
+                    font-size: 30px;
+                }
+
+                @include xs {
+                    font-size: 26px;
+                }
             }
 
             h5 {
@@ -74,15 +111,25 @@ $sliderOneBadge: #ff7272;
                 color: $sliderOneColor3;
                 font-weight: 500;
 
+                @include sm {
+                    font-size: 24px;
+                }
+
+                @include xs {
+                    font-size: 18px;
+                }
+
                 b {
                     font-size: 200%;
                     vertical-align: text-top;
                     line-height: 1;
                 }
             }
+
             .btnContainer {
                 display: flex;
                 justify-content: flex-end;
+
                 .btn {
                     border-color: var(--text-dark);
                     background-color: var(--text-dark);
@@ -91,6 +138,11 @@ $sliderOneBadge: #ff7272;
                     font-size: 15px;
                     padding: 15px 40px 18px;
                     display: block;
+
+                    @include sm {
+                        font-size: 12px;
+                        padding: 8px 20px 8px;
+                    }
                 }
             }
         }
@@ -117,6 +169,14 @@ $sliderOneBadge: #ff7272;
                 opacity: 1;
                 text-align: left !important;
                 color: $sliderOneColor1;
+
+                @include sm {
+                    font-size: 16px;
+                }
+
+                @include xs {
+                    display: none;
+                }
             }
 
             h3 {
@@ -128,6 +188,14 @@ $sliderOneBadge: #ff7272;
                 text-align: left !important;
                 font-family: "Savoye LET";
                 color: $sliderOneColor2;
+
+                @include sm {
+                    font-size: 30px;
+                }
+
+                @include xs {
+                    font-size: 26px;
+                }
             }
 
             h5 {
@@ -155,15 +223,25 @@ $sliderOneBadge: #ff7272;
                 color: $sliderOneColor3;
                 font-weight: 500;
 
+                @include sm {
+                    font-size: 24px;
+                }
+
+                @include xs {
+                    font-size: 18px;
+                }
+
                 b {
                     font-size: 200%;
                     vertical-align: text-top;
                     line-height: 1;
                 }
             }
+
             .btnContainer {
                 display: flex;
                 justify-content: flex-start;
+
                 .btn {
                     border-color: var(--text-dark);
                     background-color: var(--text-dark);
@@ -172,6 +250,11 @@ $sliderOneBadge: #ff7272;
                     font-size: 15px;
                     padding: 15px 40px 18px;
                     display: block;
+
+                    @include sm {
+                        font-size: 12px;
+                        padding: 8px 20px 8px;
+                    }
                 }
             }
         }
@@ -190,6 +273,18 @@ $sliderOneBadge: #ff7272;
             color: $sliderOneColor1 !important;
             font-size: 1.5rem !important;
         }
+
+        @include md {
+            left: 16px;
+        }
+
+        @include xs {
+            left: 5px;
+
+            &::after {
+                font-size: 14px !important;
+            }
+        }
     }
 
     :global(.swiper-button-next) {
@@ -206,6 +301,19 @@ $sliderOneBadge: #ff7272;
             font-size: 1.5rem !important;
         }
 
+        @include md {
+            right: 16px;
+        }
+
+        @include xs {
+            right: 5px;
+
+            &::after {
+                font-size: 14px !important;
+            }
+
+        }
+
     }
 
     &:hover {
@@ -215,6 +323,37 @@ $sliderOneBadge: #ff7272;
 
         :global(.swiper-button-next) {
             display: block;
+        }
+    }
+
+    &.ar {
+        h5 {
+            margin-left: 16px;
+            margin-right: 0;
+        }
+        :global(.swiper-button-prev) {
+            right: 100px;
+            left: auto;
+            @include md {
+                right: 16px;
+            }
+    
+            @include xs {
+                right: 5px;
+            }
+
+        }
+        :global(.swiper-button-next) {
+            left: 100px;
+            right: auto;
+            @include md {
+                left: 16px;
+            }
+    
+            @include xs {
+                left: 5px;
+            }
+
         }
     }
 }

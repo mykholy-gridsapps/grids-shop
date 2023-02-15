@@ -1,6 +1,7 @@
 const darkVars = () => {
 
   document.querySelector(":root").style.setProperty("--bg-color", "#161d31");
+  document.querySelector(":root").style.setProperty("--bg-dark-color", "#fff");
 
   document.querySelector(":root").style.setProperty("--bg-alt-color", "#283046");
 
@@ -15,12 +16,17 @@ const darkVars = () => {
   document.querySelector(":root").style.setProperty("--special-background", "#292e3d");
 
   document.querySelector(":root").style.setProperty("--text-color", "#b4b7bd");
+
+  document.querySelector(":root").style.setProperty("--text-light", "#252525");
+
+  document.querySelector(":root").style.setProperty("--text-dark", "#fff");
   
   document.querySelector(":root").style.setProperty("--border-color", "#383e50");
 
   document.querySelector(":root").style.setProperty("--background-light", "#2A2F3F");
 
   document.querySelector(":root").style.setProperty("--hover-color", "#222736");
+
 
   document.querySelector(":root").style.setProperty("--main-color-light", "#313b4f");
 

@@ -10,23 +10,79 @@ import { wrapper } from "../store/store";
 // MATERIAL STUFF
 import Container from "@mui/material/Container";
 
-import ProductsCategoriesOne from "../components/ProductsCategories/ProductsCategoriesOne/ProductsCategoriesOne";
-import ProductsCategoriesTwo from "../components/ProductsCategories/ProductsCategoriesTwo/ProductsCategoriesTwo";
-import ProductsCategoriesThree from "../components/ProductsCategories/ProductsCategoriesThree/ProductsCategoriesThree";
-import ProductsCategoriesFour from "../components/ProductsCategories/ProductsCategoriesFour/ProductsCategoriesFour";
-import ProductsCategoriesFive from "../components/ProductsCategories/ProductsCategoriesFive/ProductsCategoriesFive";
+import {
+  BlogOneCarousel,
+  BlogTwoCarousel,
+  BlogThree,
+  BlogFourCarousel,
+  BlogFiveCarousel,
+  BlogSix,
+  BlogSevenCarousel,
+  BlogEightCarousel,
+  BrandsOne,
+  BrandsTwo,
+  BrandsThree,
+  BrandsFour,
+  BrandsFive,
+  BrandsSix,
+  BrandsSeven,
+  BrandsEight,
+  CategoryOneCarousel,
+  CategoryTwoCarousel,
+  CategoryThreeCarousel,
+  CategoryFourCarousel,
+  CategoryFiveCarousel,
+  CategorySixCarousel,
+  CategorySevenCarousel,
+  CategoryEightCarousel,
+  CategoryNineCarousel,
+  CategoryTenCarousel,
+  CategoryElevenCarousel,
+  CategoryTwelveCarousel,
+  CategoryThirteenCarousel,
+  CategoryFourteenCarousel,
+  FeaturesOne,
+  FeaturesTwo,
+  FeaturesThree,
+  FeaturesFour,
+  FeaturesFive,
+  FeaturesSix,
+  FeaturesSeven,
+  FeaturesEight,
+  InfoBoxOne,
+  InfoBoxTwo,
+  InfoBoxThree,
+  InfoBoxFour,
+  InfoBoxFive,
+  InfoBoxSix,
+  InfoBoxSeven,
+  SliderOne,
+  SliderTwo,
+  SliderThree,
+  SliderFour,
+  SliderFive,
+  SliderSix,
+  SliderSeven,
+  SliderEight,
+  SliderNine,
+  SliderTen,
+  SliderEleven,
+  SliderTwelve
+} from "../components";
+
 
 const Home = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
-    <Container maxWidth="xl" sx={{ padding: "0 !important" }}>
-      <ProductsCategoriesOne />
-      <ProductsCategoriesTwo />
-      <ProductsCategoriesThree />
-      <ProductsCategoriesFour />
-      <ProductsCategoriesFive />
-    </Container>
+    // <Container maxWidth='xl'>
+    //   <Grid container >
+    //     <Grid item xs={12}>
+
+    //     </Grid>
+    //   </Grid>
+    // </Container>
+          <SliderTwelve />
   );
 };
 

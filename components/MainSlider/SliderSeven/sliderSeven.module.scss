@@ -1,10 +1,11 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
-$sliderOneColor1: rgba(34, 37, 41, 0.7);
-$sliderOneColor2: #222529;
+@import "../../../styles/mixins.scss";
+$sliderOneColor1: var(--text-dark);
+$sliderOneColor2: var(--text-dark);
 $sliderTwoColor1: #d93c81;
-$sliderTwoColor2: #a2a2a2;
-$sliderTwoColor3: #fff;
-$sliderTwoColor4: #222529;
+$sliderTwoColor2: var(--text-color);
+$sliderTwoColor3: var(--text-light);
+$sliderTwoColor4: var(--text-dark);
 $sliderOneBadge: #ff7272;
 
 .slider {
@@ -13,6 +14,15 @@ $sliderOneBadge: #ff7272;
         object-position: center center;
         object-fit: cover;
         max-width: 100%;
+
+        @include sm {
+            height: 300px;
+        }
+
+        @include xs {
+            height: 200px;
+        }
+
     }
 
     .slide1 {
@@ -20,14 +30,13 @@ $sliderOneBadge: #ff7272;
 
 
         .bannerLayer {
-            width: 48%;
             left: 2%;
             padding-right: 1.6rem;
             top: 50%;
             transform: translateY(-50%);
             position: absolute;
             right: 6%;
-            width: 404px;
+            width: 430px;
 
             h4 {
                 font-size: 17px;
@@ -38,8 +47,25 @@ $sliderOneBadge: #ff7272;
                 margin-top: 0px;
                 opacity: 1;
                 padding-right: 4px;
-                text-align: right !important;
+                margin-left: 44px;
+                text-align: left !important;
                 color: $sliderOneColor1;
+                opacity: 0.7;
+
+                @include sm {
+                    font-size: 14px;
+                    margin-left: 20px;
+                    line-height: 14px;
+
+                }
+
+                @include xxs {
+                    font-size: 12px;
+                    margin-left: 10px;
+                    line-height: 12px;
+                }
+
+
             }
 
             h2 {
@@ -49,10 +75,25 @@ $sliderOneBadge: #ff7272;
                 line-height: 58px;
                 margin-bottom: 18px;
                 margin-top: 0px;
+                margin-left: 44px;
                 opacity: 1;
-                text-align: right !important;
+                text-align: left !important;
                 text-transform: uppercase;
                 color: $sliderOneColor2;
+
+                @include sm {
+                    font-size: 40px;
+                    margin-left: 20px;
+                    line-height: 40px;
+
+                }
+
+                @include xxs {
+                    font-size: 24px;
+                    margin-left: 10px;
+                    line-height: 24px;
+
+                }
             }
 
             h3 {
@@ -65,6 +106,19 @@ $sliderOneBadge: #ff7272;
                 background: url(../../../public/imgs/slider/slider-7-1-badge.png) center no-repeat;
                 background-size: auto;
                 background-size: contain;
+                max-width: 150px;
+
+                @include sm {
+                    padding: 20px 20px 70px;
+                    margin-left: 20px;
+                    font-size: 40px;
+                }
+
+                @include xxs {
+                    padding: 10px 10px 50px;
+                    margin-left: 10px;
+                    font-size: 26px;
+                }
 
                 small {
                     display: inline-block;
@@ -95,6 +149,10 @@ $sliderOneBadge: #ff7272;
                 padding-left: 10px;
                 padding-right: 10px;
                 padding-top: 24px;
+
+                @include xxs {
+                    padding-top: 12px;
+                }
 
                 h5 {
                     font-size: 13px;
@@ -127,6 +185,10 @@ $sliderOneBadge: #ff7272;
                     line-height: 1;
                     color: #fff;
 
+                    @include xxs {
+                        font-size: 10px;
+                    }
+
                     &::before {
                         content: "";
                         position: absolute;
@@ -142,6 +204,10 @@ $sliderOneBadge: #ff7272;
                     b {
                         font-size: 200%;
                         vertical-align: text-top;
+
+                        @include xxs {
+                            font-size: 20px;
+                        }
                     }
                 }
             }
@@ -149,11 +215,16 @@ $sliderOneBadge: #ff7272;
             .btn {
                 border-color: var(--text-dark);
                 background-color: var(--text-dark);
-                color: #fff;
+                color: var(--text-light);
                 box-shadow: none;
                 font-size: 14px;
                 padding: 12px 44px;
                 display: inline-block;
+
+                @include sm {
+                    display: block;
+
+                }
             }
         }
     }
@@ -178,6 +249,12 @@ $sliderOneBadge: #ff7272;
                 text-align: right !important;
                 text-transform: uppercase;
                 color: $sliderTwoColor1;
+
+                @include xs {
+                    font-size: 20px;
+                    line-height: 20px;
+
+                }
             }
 
             h4 {
@@ -191,6 +268,12 @@ $sliderOneBadge: #ff7272;
                 opacity: 1;
                 text-align: right !important;
                 color: $sliderTwoColor2;
+
+                @include xs {
+                    font-size: 14px;
+                    line-height: 16px;
+
+                }
             }
 
             h3 {
@@ -203,7 +286,13 @@ $sliderOneBadge: #ff7272;
                 opacity: 1;
                 text-align: right !important;
                 text-transform: uppercase;
-                color: $sliderTwoColor3;
+                color: #fff;
+
+                @include xs {
+                    font-size: 20px;
+                    line-height: 22px;
+
+                }
 
                 sup {
                     font-size: 16px;
@@ -217,6 +306,10 @@ $sliderOneBadge: #ff7272;
                     text-transform: uppercase;
                     top: -8px;
                     vertical-align: baseline;
+
+                    @include xs {
+                        font-size: 12px;
+                    }
 
                     &:last-of-type {
                         margin-left: 0;

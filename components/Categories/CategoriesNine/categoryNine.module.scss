@@ -52,6 +52,11 @@
                 line-height: 1.42857;
                 text-transform: uppercase;
                 text-align: center !important;
+                &.ar {
+                    i {
+                        transform: rotate(180deg);
+                    }
+                }
 
 
                 i {

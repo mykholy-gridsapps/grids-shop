@@ -1,9 +1,11 @@
 import React from "react";
+import { Container } from "@mui/system";
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+import BlogFour from "./BlogFour";
+
 import cls from "./blogFourCarousel.module.scss"
 import 'swiper/css';
-import BlogFour from "./BlogFour";
-import { Container } from "@mui/system";
 
 
 const BlogFourCarousel = () => {
@@ -19,7 +21,16 @@ const BlogFourCarousel = () => {
                     Latest News
                 </h2>
                 <p className={cls.description}>Only the latest news from us, stay tuned.</p>
-                <Swiper slidesPerView={2} loop={false} spaceBetween={20}>
+                <Swiper 
+                slidesPerView={1} 
+                loop={false} 
+                spaceBetween={20}
+                breakpoints={{
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                }}>
                     {array.map(_ =>
                         <SwiperSlide>
                             <BlogFour />

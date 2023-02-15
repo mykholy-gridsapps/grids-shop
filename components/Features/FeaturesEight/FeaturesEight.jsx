@@ -6,7 +6,7 @@ const FeaturesEight = () => {
     return (
         <div className={cls.featureBoxesContainer}>
             <Grid container>
-                <Grid item md={4} >
+                <Grid item md={4} xs={12}>
                     <div className={cls.innerContainer}>
                         <div className={cls.featureBox}>
                             <i className="fa-regular fa-headset"></i>
@@ -20,7 +20,7 @@ const FeaturesEight = () => {
                         </div>
                     </div>
                 </Grid>
-                <Grid item md={4} >
+                <Grid item md={4} xs={12}>
                     <div className={cls.innerContainer}>
                         <div className={cls.featureBox}>
                             <i className="fa-regular fa-credit-card"></i>
@@ -34,7 +34,7 @@ const FeaturesEight = () => {
                         </div>
                     </div>
                 </Grid>
-                <Grid item md={4} >
+                <Grid item md={4} xs={12}>
                     <div className={cls.innerContainer}>
                         <div className={cls.featureBox}>
                             <i className="fa-regular fa-share"></i>

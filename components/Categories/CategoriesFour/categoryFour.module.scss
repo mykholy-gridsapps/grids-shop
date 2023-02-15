@@ -34,7 +34,7 @@
                 right: 0;
                 bottom: 0;
                 transform: skew(-20deg);
-                background: #fff;
+                background: var(--bg-color);
             }
 
             &::after {

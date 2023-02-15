@@ -6,7 +6,7 @@ const FeaturesSix = () => {
     return (
         <div className={cls.featureBoxesContainer}>
             <Grid container spacing={2}>
-                <Grid item md={4} >
+                <Grid item md={4} xs={12}>
                     <div className={cls.featureBox}>
                         <div className={cls.featureContent}>
 
@@ -22,7 +22,7 @@ const FeaturesSix = () => {
                         </div>
                     </div>
                 </Grid>
-                <Grid item md={4} >
+                <Grid item md={4} xs={12}>
                     <div className={cls.featureBox}>
                         <div className={cls.featureContent}>
 
@@ -38,7 +38,7 @@ const FeaturesSix = () => {
                         </div>
                     </div>
                 </Grid>
-                <Grid item md={4} >
+                <Grid item md={4} xs={12}>
                     <div className={cls.featureBox}>
                         <div className={cls.featureContent}>
 

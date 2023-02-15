@@ -1,10 +1,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Grid } from "@mui/material";
+import Link from "next/link";
+
 import 'swiper/css';
 import cls from './sliderSeven.module.scss'
-
-import { Container } from "@mui/system";
-import { Grid } from "@mui/material";
 
 const SliderSeven = () => {
     return (
@@ -30,7 +30,7 @@ const SliderSeven = () => {
                                     <h6>
                                         $<b>119</b>99
                                     </h6>
-                                    <a href="demo1-shop.html" className={cls.btn}>Shop Now!</a>
+                                    <Link href="demo1-shop.html" className={cls.btn}>Shop Now!</Link>
                                 </Grid>
                             </Grid>
                         </div>
@@ -49,7 +49,7 @@ const SliderSeven = () => {
                             <h3>
                                 STARTING<br />AT<sup className="pl-2 ml-1">$</sup>199<sup>99</sup>
                             </h3>
-                            <a href="demo1-shop.html" className={cls.btn}>View Sale</a>
+                            <Link href="demo1-shop.html" className={cls.btn}>View Sale</Link>
                         </div>
                     </div>
                 </SwiperSlide>

@@ -1,17 +1,21 @@
 import React from "react";
+import { i18n, useTranslation } from "next-i18next";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
+
 import 'swiper/css';
 import "swiper/css/navigation";
 import cls from './sliderEleven.module.scss'
 
 import { Container } from "@mui/system";
+import Link from "next/link";
 
 const SliderEleven = () => {
     const navigation = {
     };
+    const { t, i18n } = useTranslation('common')
     return (
-        <div className={cls.slider}>
+        <div className={`${cls.slider} ${cls[i18n.language]}`}>
             <Swiper slidesPerView={1} loop={false} spaceBetween={0} navigation={navigation} modules={[Navigation]}>
                 <SwiperSlide>
                     <div className={cls.slide1}>
@@ -31,7 +35,7 @@ const SliderEleven = () => {
                                         </div>
                                     </div>
                                     <div className={cls.btnIconGroup}>
-                                        <a href="demo1-shop.html" className={cls.btn}><i className="fa-solid fa-arrow-right"></i>Select Options</a>
+                                        <Link href="demo1-shop.html" className={cls.btn}><i className="fa-solid fa-arrow-right"></i>Select Options</Link>
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +56,7 @@ const SliderEleven = () => {
                                         </div>
                                     </div>
                                     <div className={cls.btnIconGroup}>
-                                        <a href="demo1-shop.html" className={cls.btn}><i className="fa-solid fa-arrow-right"></i>Select Options</a>
+                                        <Link href="demo1-shop.html" className={cls.btn}><i className="fa-solid fa-arrow-right"></i>Select Options</Link>
                                     </div>
                                 </div>
                                 <figure>

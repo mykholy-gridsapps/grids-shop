@@ -1,8 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
-$sliderOneColor1: #222529;
-$sliderOneColor2: #fff;
-$sliderTwoColor1: #999;
-$sliderTwoColor2: #222529;
+@import "../../../styles/mixins.scss";
+
+$sliderOneColor1: var(--text-dark);
+$sliderOneColor2: var(--text-light);
+$sliderTwoColor1: var(--text-color);
+$sliderTwoColor2: var(--text-dark);
 $sliderOneBadge: #ff7272;
 
 .slider {
@@ -11,6 +13,14 @@ $sliderOneBadge: #ff7272;
         object-position: 55%;
         object-fit: cover;
         max-width: 100%;
+
+        @include sm {
+            min-height: 350px;
+        }
+
+        @include xs {
+            min-height: 250px;
+        }
     }
 
     .slide1 {
@@ -24,6 +34,11 @@ $sliderOneBadge: #ff7272;
             right: 30%;
             top: 20%;
 
+            @include xs {
+                top: 10%;
+                right: 10%;
+            }
+
             h4 {
                 font-size: 16px;
                 font-weight: 500;
@@ -32,6 +47,10 @@ $sliderOneBadge: #ff7272;
                 padding-bottom: 14px;
                 color: $sliderOneColor1;
                 margin: 0;
+
+                @include xs {
+                    font-size: 14px;
+                }
             }
 
             h2 {
@@ -41,6 +60,10 @@ $sliderOneBadge: #ff7272;
                 font-family: 'Savoye LET', sans-serif;
                 line-height: 1;
                 margin: 0;
+
+                @include sm {
+                    font-size: 30px;
+                }
             }
 
             h3 {
@@ -49,6 +72,14 @@ $sliderOneBadge: #ff7272;
                 line-height: 1;
                 color: $sliderOneColor1;
                 text-transform: uppercase !important;
+
+                @include sm {
+                    font-size: 60px;
+                }
+
+                @include xs {
+                    font-size: 40px;
+                }
             }
 
             h5 {
@@ -81,15 +112,28 @@ $sliderOneBadge: #ff7272;
                     }
 
                 }
+
+                @include xs {
+                    display: none !important;
+                }
+
             }
 
             .btn {
                 border-color: var(--text-dark);
                 background-color: var(--text-dark);
-                color: #fff;
+                color: var(--text-light);
                 box-shadow: none;
                 font-size: 14px;
                 padding: 16px 40px;
+
+                @include sm {
+                    display: inline-block;
+                    padding: 8px 20px;
+                    margin-top: 15px;
+
+                }
+
             }
         }
     }
@@ -103,16 +147,34 @@ $sliderOneBadge: #ff7272;
             top: 20%;
             text-transform: uppercase !important;
 
+            @include sm {
+                top: 10%;
+                right: 5%;
+                left: 20%;
+            }
+
             .mxAuto {
                 margin-left: auto !important;
                 margin-right: auto !important;
                 width: max-content;
+
+                @include sm {
+                    margin-right: 0 !important;
+                }
 
                 h4 {
                     color: $sliderTwoColor1;
                     font-size: 34px;
                     font-weight: 500;
                     margin: 0 auto 4px;
+
+                    @include sm {
+                        font-size: 26px;
+                    }
+
+                    @include xs {
+                        font-size: 16px;
+                    }
                 }
 
                 h3 {
@@ -126,6 +188,14 @@ $sliderOneBadge: #ff7272;
                     align-items: center;
                     -ms-flex-align: center;
 
+                    @include sm {
+                        font-size: 50px;
+                    }
+
+                    @include xs {
+                        font-size: 30px;
+                    }
+
                     &:last-of-type {
                         font-size: 34px;
                         line-height: 1;
@@ -136,6 +206,16 @@ $sliderOneBadge: #ff7272;
                         display: -ms-flexbox;
                         align-items: center;
                         -ms-flex-align: center;
+
+                        @include sm {
+                            font-size: 20px;
+                        }
+
+                        @include xs {
+                            font-size: 14px;
+                            margin: 0 auto 10px;
+
+                        }
 
                         &::before {
                             content: "";
@@ -163,12 +243,21 @@ $sliderOneBadge: #ff7272;
                     font-family: "Savoye LET";
                     text-transform: none;
                     color: $sliderTwoColor2;
+
+                    @include sm {
+                        font-size: 36px;
+                    }
+
+                    @include xs {
+                        font-size: 26px;
+                        line-height: 1;
+                    }
                 }
 
                 .btn {
                     border-color: var(--text-dark);
                     background-color: var(--text-dark);
-                    color: #fff;
+                    color: var(--text-light);
                     display: block;
                     text-align: center !important;
                     font-weight: 600;
@@ -177,6 +266,11 @@ $sliderOneBadge: #ff7272;
                     box-shadow: none;
                     font-size: 16px;
                     padding: 16px 26px;
+
+                    @include xs {
+                        font-size: 12px;
+                        padding: 8px 16px;
+                    }
                 }
             }
 
@@ -221,6 +315,34 @@ $sliderOneBadge: #ff7272;
 
         :global(.swiper-button-next) {
             display: block;
+        }
+    }
+
+    &.ar {
+        img {
+            transform: rotateY(180deg);
+        }
+
+        .slide1 {
+            .bannerLayer {
+                right: 8.7%;
+                left: 30%;
+            }
+        }
+
+        .slide2 {
+            .bannerLayer {
+                right: 52%;
+                left: 13%;
+            }
+        }
+        :global(.swiper-button-prev) {
+            left: auto;
+            right: -16px;
+        }
+        :global(.swiper-button-next) {
+            left: -16px;
+            right: auto;
         }
     }
 }

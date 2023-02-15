@@ -1,11 +1,13 @@
 import React from "react";
+import { Container } from "@mui/system";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from "swiper";
+
+import BlogSeven from "./BlogSeven";
+
 import cls from "./blogSevenCarousel.module.scss"
 import 'swiper/css';
 import "swiper/css/pagination";
-import BlogSeven from "./BlogSeven";
-import { Container } from "@mui/system";
 
 
 const BlogSevenCarousel = () => {
@@ -25,7 +27,18 @@ const BlogSevenCarousel = () => {
                 </p>
                 <div className={cls.swiper}>
 
-                    <Swiper slidesPerView={2} loop={false} spaceBetween={20} pagination={pagination} modules={[Pagination]}>
+                    <Swiper 
+                    slidesPerView={1} 
+                    loop={false} 
+                    spaceBetween={20} 
+                    pagination={pagination} 
+                    modules={[Pagination]}
+                    breakpoints={{
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                    }}>
                         {array.map(_ =>
                             <SwiperSlide>
                                 <BlogSeven />
