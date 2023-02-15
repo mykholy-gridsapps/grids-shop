@@ -8,6 +8,7 @@ import HeaderThreeMiddle from "./MiddleHeader";
 import CartDropdown from "../CartDropdown/CartDropdown";
 import WishlistDropdown from "../WishlistDropdown/WishlistDropdown";
 import LangSwitch from "../../switches/LangSwitch/LangSwitch";
+import CurrencySwitch from "../../switches/CurrencySwitch/CurrencySwitch";
 import ModeSwitch from "../../switches/ModeSwitch/ModeSwitch";
 import MobSidebar from "../MobSidebar/MobSidebar";
 
@@ -48,6 +49,8 @@ const Navbar = ({ rounded }) => {
 
           <div className={cls.switches}>
             <LangSwitch color="#fff" />
+
+            <CurrencySwitch color="#fff" />
 
             <ModeSwitch />
           </div>

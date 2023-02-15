@@ -11,7 +11,7 @@ const cookie = new Cookies();
 
 import cls from "./currencySwitch.module.scss";
 
-const CurrencySwitch = () => {
+const CurrencySwitch = ({ color }) => {
   const [hasMounted, setHasMounted] = useState(false);
   useEffect(() => {
     setHasMounted(true);
@@ -39,7 +39,7 @@ const CurrencySwitch = () => {
 
   return (
     <div className={cls.headerDropdown}>
-      <DropDownCurrency menu={menu} side={true} />
+      <DropDownCurrency menu={menu} side={true} color={color} />
     </div>
   );
 };

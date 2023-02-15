@@ -26,6 +26,7 @@
     "react-i18next": "^12.1.0",
     "react-lottie": "^1.2.3",
     "react-redux": "^8.0.5",
+    "react-timer-hook": "^3.0.5",
     "sass": "^1.56.1",
     "swiper": "^8.4.5",
     "universal-cookie": "^4.0.4",

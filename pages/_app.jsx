@@ -33,7 +33,7 @@ function MyApp({ Component, ...rest }) {
       cookie.set("grids-apps-shop-lang", "en", { path: "/" });
     }
     if (!cookie.get("grids-apps-shop-currency")) {
-      cookie.set("grids-apps-shop-currency", "usd", { path: "/" });
+      cookie.set("grids-apps-shop-currency", "USD", { path: "/" });
     }
     if (!cookie.get("grids-apps-shop-theme")) {
       cookie.set("grids-apps-shop-theme", "portoOne", { path: "/" });
@@ -50,7 +50,7 @@ function MyApp({ Component, ...rest }) {
   return (
     <div id={returnedProps.locale}>
       <Head>
-        <title>Grids Apps Shop</title>
+        <title>Tripple Shop</title>
         <link
           href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;800;900&display=swap"
           rel="stylesheet"

@@ -13,7 +13,7 @@ import cls from "./dropDownCurrency.module.scss";
 
 const cookie = new Cookies();
 
-const DropDown = ({ menu }) => {
+const DropDown = ({ menu, color }) => {
   const [openMenu, setOpenMenu] = useState(false);
   const [currency, setCurrency] = useState(cookie.get("grids-apps-shop-currency") || 'USD');
 
@@ -33,9 +33,9 @@ const DropDown = ({ menu }) => {
     <div className={cls.dropdown}>
       {openMenu && <div className={cls.overlay} onClick={handleClose}></div>}
 
-      <span onClick={handleClick}>{menu.find((item) => item.text === currency).text}</span>
+      <span onClick={handleClick} style={{ color: color }}>{menu.find((item) => item.text === currency).text}</span>
       
-      <i className="fa-solid fa-angle-down" onClick={handleClick}></i>
+      <i className="fa-solid fa-angle-down" onClick={handleClick} style={{ color: color }}></i>
 
       <Box
         className={`${cls.dropdownMenu} ${openMenu ? cls.show : ""}`}

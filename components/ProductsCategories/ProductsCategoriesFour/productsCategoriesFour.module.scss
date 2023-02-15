@@ -1,0 +1,80 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/extends.scss';
+
+.homeCategory {
+  margin: 100px 0;
+
+  .homeCategory__wrapper {
+    .homeCategory__head {
+      display: flex;
+      justify-content: center;
+      padding: 10px 20px;
+      background-color: var(--secondary-background);
+      margin-bottom: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      @include sm {
+        display: block;
+        overflow-x: auto;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        @include sm {
+          min-width: 500px;
+        }
+        span {
+          padding: 5px 20px;
+          cursor: pointer;
+          font-size: 0.85rem;
+          &.active {
+            background-color: var(--main-color);
+            color: #fff;
+          }
+        }
+      }
+      &.rounded {
+        border-radius: 20px;
+        div {
+          span {
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+
+    .homeCategory__products {
+      background-color: var(--secondary-background);
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 10px;
+      .side {
+        grid-column: span 2;
+        @include lg {
+          grid-column: span 4;
+        }
+        @include md {
+          grid-column: span 3;
+        }
+      }
+      @include lg {
+        .side {
+          &:nth-of-type(1), &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(8) {
+            display: none;
+          }
+        }
+      }
+      @include sm {
+        .side {
+          grid-column: span 6;
+        }
+      }
+      @include xs {
+        .side {
+          grid-column: span 12;
+        }
+      }
+    }
+  }
+}

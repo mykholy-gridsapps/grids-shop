@@ -1,0 +1,13 @@
+@import '../../../styles/mixins.scss';
+
+.categories {
+  .categories__head {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+}
