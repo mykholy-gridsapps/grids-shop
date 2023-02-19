@@ -1,3 +1,4 @@
+@import "../../../styles/mixins.scss";
 .newsletterBanner {
     padding: 60px 0;
     background-color: var(--bg-alt-color);
@@ -14,8 +15,12 @@
             text-align: right !important;
             color: var(--text-dark);
             font-weight: 800;
+            @include md {
+                text-align: center !important;
+            }
+            
         }
-
+        
         h5 {
             padding: 0;
             margin: 0;
@@ -24,12 +29,16 @@
             line-height: 1.4;
             font-weight: 400;
             text-align: right !important;
+            @include md {
+                text-align: center !important;
+            }
         }
     }
 
     form {
         padding-left: 10px;
         padding-right: 10px;
+        margin-top: 16px;
         margin-bottom: 0;
         justify-content: center !important;
         display: flex !important;
@@ -47,6 +56,9 @@
             line-height: 1.5;
             display: block;
             width: 100%;
+            &:focus-visible {
+                outline: none;
+            }
         }
 
         button {
@@ -64,6 +76,11 @@
             text-align: center;
             white-space: nowrap;
             border: 1px solid transparent;
+            @include xs {
+                padding: 0 10px;
+                font-size: 12px;
+
+            }
         }
     }
 

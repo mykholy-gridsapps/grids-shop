@@ -17,6 +17,9 @@ $sliderTwoColor4: var(--text-light);
         max-width: 100%;
         object-position: center top;
         min-height: 360px;
+        @include xs {
+            min-height: 250px;
+        }
     }
 
     .slide1 {
@@ -28,6 +31,7 @@ $sliderTwoColor4: var(--text-light);
             right: auto;
             top: 50%;
             transform: translateY(-50%);
+
             @include md {
                 left: 5%;
             }
@@ -42,9 +46,11 @@ $sliderTwoColor4: var(--text-light);
                 opacity: 1;
                 text-align: left !important;
                 color: $sliderOneColor1;
+
                 @include md {
                     font-size: 16px;
                 }
+
                 @include sm {
                     font-size: 12px;
                 }
@@ -63,8 +69,18 @@ $sliderTwoColor4: var(--text-light);
                 padding-right: 48px;
                 text-align: left !important;
                 color: $sliderOneColor2;
+
                 @include md {
                     font-size: 42px;
+                }
+
+                @include sm {
+                    font-size: 34px;
+                    line-height: 36px;
+                }
+                @include xs {
+                    font-size: 27px;
+                    line-height: 27px;
                 }
             }
 
@@ -80,9 +96,19 @@ $sliderTwoColor4: var(--text-light);
                     margin-top: 0px;
                     text-align: left !important;
                     color: $sliderOneColor2;
+
                     @include md {
                         font-size: 30px;
                         margin-bottom: 20px;
+                    }
+
+                    @include sm {
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+                    @include xs {
+                        font-size: 18px;
+                        margin-bottom: 16px;
                     }
                 }
 
@@ -99,8 +125,18 @@ $sliderTwoColor4: var(--text-light);
                     transform: rotate(-30deg);
                     color: $sliderOneColor3;
                     font-family: "Segoe Script";
+
                     @include md {
                         font-size: 30px;
+                        right: 60px;
+                    }
+
+                    @include  sm {
+                        font-size: 24px;
+                        right: 60px;
+                    }
+                    @include  xs {
+                        font-size: 18px;
                         right: 60px;
                     }
                 }
@@ -117,8 +153,12 @@ $sliderTwoColor4: var(--text-light);
                 text-align: right !important;
                 text-transform: uppercase;
                 color: $sliderOneColor1;
+
                 @include md {
                     font-size: 16px;
+                }
+                @include xs {
+                    font-size: 12px;
                 }
             }
 
@@ -131,11 +171,21 @@ $sliderTwoColor4: var(--text-light);
                 margin-top: 0px;
                 text-align: right !important;
                 text-transform: uppercase;
+
                 @include md {
                     line-height: 50px;
                     font-size: 50px;
                 }
-                
+
+                @include sm {
+                    line-height: 40px;
+                    font-size: 40px;
+                }
+                @include xs {
+                    line-height: 30px;
+                    font-size: 30px;
+                }
+
                 sup {
                     font-size: 33%;
                     font-weight: 700;
@@ -144,11 +194,11 @@ $sliderTwoColor4: var(--text-light);
                     margin-right: 16px;
                     letter-spacing: -0.03em;
                 }
-                
+
                 strong {
                     color: $sliderOneColor4;
                     position: relative;
-                    
+
                     &::before {
                         content: "";
                         position: absolute;
@@ -160,8 +210,20 @@ $sliderTwoColor4: var(--text-light);
                         background-color: $sliderOneColor2;
                         z-index: -1;
                         transform: rotate(-2deg);
+
                         @include md {
                             width: 127px;
+                        }
+
+                        @include sm {
+                            width: 107px;
+                            top: 4px;
+                            bottom: 4px;
+                        }
+                        @include xs {
+                            width: 85px;
+                            top: 0px;
+                            bottom: 0px;
                         }
                     }
 
@@ -220,6 +282,12 @@ $sliderTwoColor4: var(--text-light);
             right: 22.3%;
             top: 50%;
             transform: translateY(-50%);
+            @include md {
+                right: 10%;
+            }
+            @include sm {
+                right: 5%;
+            }
 
             h4 {
                 font-size: 19px;
@@ -231,6 +299,13 @@ $sliderTwoColor4: var(--text-light);
                 opacity: 1;
                 text-align: left !important;
                 color: $sliderTwoColor1;
+                @include md {
+                    font-size: 16px;
+                }
+
+                @include sm {
+                    font-size: 12px;
+                }
             }
 
             h2 {
@@ -246,6 +321,18 @@ $sliderTwoColor4: var(--text-light);
                 padding-right: 48px;
                 text-align: left !important;
                 color: $sliderTwoColor2;
+                @include md {
+                    font-size: 42px;
+                }
+
+                @include sm {
+                    font-size: 34px;
+                    line-height: 36px;
+                }
+                @include xs {
+                    font-size: 27px;
+                    line-height: 27px;
+                }
             }
 
             .positionRelative {
@@ -260,6 +347,19 @@ $sliderTwoColor4: var(--text-light);
                     margin-top: 0px;
                     text-align: left !important;
                     color: $sliderTwoColor2;
+                    @include md {
+                        font-size: 30px;
+                        margin-bottom: 20px;
+                    }
+
+                    @include sm {
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                    }
+                    @include xs {
+                        font-size: 18px;
+                        margin-bottom: 16px;
+                    }
                 }
 
                 h5 {
@@ -274,7 +374,19 @@ $sliderTwoColor4: var(--text-light);
                     text-align: left !important;
                     transform: rotate(-30deg);
                     color: $sliderTwoColor3;
-                    font-family: "Segoe Script"
+                    font-family: "Segoe Script";
+                    @include md {
+                        font-size: 30px;
+                    }
+
+                    @include  sm {
+                        font-size: 24px;
+                        right: 60px;
+                    }
+                    @include  xs {
+                        font-size: 18px;
+                        right: 60px;
+                    }
                 }
             }
 
@@ -289,6 +401,12 @@ $sliderTwoColor4: var(--text-light);
                 text-align: right !important;
                 text-transform: uppercase;
                 color: $sliderTwoColor1;
+                @include md {
+                    font-size: 16px;
+                }
+                @include xs {
+                    font-size: 12px;
+                }
             }
 
             h6 {
@@ -300,6 +418,19 @@ $sliderTwoColor4: var(--text-light);
                 margin-top: 0px;
                 text-align: right !important;
                 text-transform: uppercase;
+                @include md {
+                    line-height: 50px;
+                    font-size: 50px;
+                }
+
+                @include sm {
+                    line-height: 40px;
+                    font-size: 40px;
+                }
+                @include xs {
+                    line-height: 30px;
+                    font-size: 30px;
+                }
 
                 sup {
                     font-size: 33%;
@@ -325,6 +456,20 @@ $sliderTwoColor4: var(--text-light);
                         background-color: $sliderTwoColor2;
                         z-index: -1;
                         transform: rotate(-2deg);
+                        @include md {
+                            width: 127px;
+                        }
+
+                        @include sm {
+                            width: 107px;
+                            top: 4px;
+                            bottom: 4px;
+                        }
+                        @include xs {
+                            width: 78px;
+                            top: 0px;
+                            bottom: 0px;
+                        }
                     }
                 }
             }

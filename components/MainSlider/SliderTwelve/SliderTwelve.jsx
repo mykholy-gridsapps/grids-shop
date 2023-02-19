@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import cls from './sliderTwelve.module.scss'
 
-import { Container } from "@mui/system";
 
 const SliderTwelve = () => {
     const navigation = {

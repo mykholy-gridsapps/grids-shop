@@ -5,7 +5,7 @@ const lightVars = () => {
 
   document.querySelector(":root").style.setProperty("--bg-alt-color", "#f4f4f4");
 
-  document.querySelector(":root").style.setProperty("--dark-main-color", "#2b1cc9");
+  document.querySelector(":root").style.setProperty("--dark-main-color", "#0b1224");
 
   /* MY COLORS */
 

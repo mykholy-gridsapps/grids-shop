@@ -9,7 +9,7 @@ const NewsletterTen = () => {
         <div className={cls.newsletterBanner}>
             <Container maxWidth='xl' >
                 <Grid container className={cls.container} justifyContent='center' alignItems="center">
-                    <Grid item className={cls.leftSec}>
+                    <Grid item className={cls.leftSec} md={9}>
                         <div className={cls.text} >
                             <i className="fa-regular fa-envelope"></i>
 
@@ -25,8 +25,8 @@ const NewsletterTen = () => {
                             <button>SIGN UP</button>
                         </form>
                     </Grid>
-                    <Grid item>
-                        <div className="social-icons my-3">
+                    <Grid item md={3}>
+                        <div className={cls.socialIcons}>
                             <a href="#" className={[cls.socialIcon, cls.socialFacebook, 'fab fa-facebook-f'].join(' ')} target="_blank"></a>
                             <a href="#" className={[cls.socialIcon, cls.socialTwitter, 'fab fa-twitter'].join(' ')} target="_blank"></a>
                             <a href="#" className={[cls.socialIcon, cls.socialLinked, 'fab fa-linkedin-in'].join(' ')} target="_blank"></a>

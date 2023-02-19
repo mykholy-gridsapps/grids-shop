@@ -1,11 +1,12 @@
 import { Grid } from "@mui/material";
+import { i18n } from "next-i18next";
 import React from "react";
 import cls from "./newsletterEight.module.scss";
 
 
 const NewsletterEight = () => {
     return (
-        <div className={cls.newsletterBanner}>
+        <div className={`${cls.newsletterBanner} ${cls[i18n.language]}`}>
             <div className={cls.bannerContent}>
                 <p>
                     <i className="fa-regular fa-envelope"></i>

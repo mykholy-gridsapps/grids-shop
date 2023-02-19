@@ -50,17 +50,17 @@
                 color: inherit;
                 line-height: inherit;
                 border: none;
-                background-color: #fff;
+                background-color: var(--bg-color);
                 display: block;
                 width: 100%;
                 outline: none;
             }
         }
-
+        
         .btn {
             border-color: var(--text-dark);
             background-color: var(--text-dark);
-            color: #fff;
+            color: var(--text-light);
             box-shadow: none;
             font-size: 12px;
             border-radius: 0;
@@ -69,6 +69,20 @@
             transition: all 0.3s;
             text-transform: uppercase;
             padding: 10px 27px;
+        }
+    }
+    &.ar {
+        form {
+            .formGroup {
+                i {
+                    right: 16px;
+                }
+                input {
+                    padding-left: 15;
+                    padding-right: 40px;
+
+                }
+            }
         }
     }
 

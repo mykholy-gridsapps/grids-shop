@@ -1,11 +1,12 @@
 import { Grid } from "@mui/material";
+import { i18n } from "next-i18next";
 import React from "react";
 import cls from "./newsletterFive.module.scss";
 
 
 const NewsletterFive = () => {
     return (
-        <div className={cls.newsletterBanner}>
+        <div className={`${cls.newsletterBanner} ${cls[i18n.language]}`}>
             <Grid container justifyContent='center' alignItems="center">
                 <Grid className={cls.text} item md={6} xs={12}>
                     <i className="fa-regular fa-envelope"></i>

@@ -55,6 +55,19 @@ export {default as SliderNine} from './MainSlider/SliderNine/SliderNine'
 export {default as SliderTen} from './MainSlider/SliderTen/SliderTen'
 export {default as SliderEleven} from './MainSlider/SliderEleven/SliderEleven'
 export {default as SliderTwelve} from './MainSlider/SliderTwelve/SliderTwelve'
+export {default as SliderThirteen} from './MainSlider/SliderThirteen/SliderThirteen'
 
 // HOME PAGE TEMPLATES
 export { default as TemplateOne } from './HomeTemplates/TemplateOne/TemplateOne';
+
+export {default as NewsletterOne} from './Newsletter/NewsletterOne/NewsletterOne'
+export {default as NewsletterTwo} from './Newsletter/NewsletterTwo/NewsletterTwo'
+export {default as NewsletterThree} from './Newsletter/NewsletterThree/NewsletterThree'
+export {default as NewsletterFour} from './Newsletter/NewsletterFour/NewsletterFour'
+export {default as NewsletterFive} from './Newsletter/NewsletterFive/NewsletterFive'
+export {default as NewsletterSix} from './Newsletter/NewsletterSix/NewsletterSix'
+export {default as NewsletterSeven} from './Newsletter/NewsletterSeven/NewsletterSeven'
+export {default as NewsletterEight} from './Newsletter/NewsletterEight/NewsletterEight'
+export {default as NewsletterNine} from './Newsletter/NewsletterNine/NewsletterNine'
+export {default as NewsletterTen} from './Newsletter/NewsletterTen/NewsletterTen'
+export {default as CategoriesSideOne} from './CategoriesSide/CategoriesSideOne/CategoriesSideOne'
