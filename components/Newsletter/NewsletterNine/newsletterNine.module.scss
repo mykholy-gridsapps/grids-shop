@@ -55,6 +55,10 @@
         margin-bottom: 0;
         justify-content: center !important;
         display: flex !important;
+        @include sm {
+            margin-bottom: 20px;
+
+        }
 
         input {
             padding: 0px 24px 2px 24px;
@@ -68,7 +72,7 @@
             width: 100%;
             outline: none;
         }
-
+        
         button {
             height: 48px;
             padding: 0 35px 3px 35px;
@@ -78,8 +82,30 @@
             border-radius: 0 24px 24px 0;
             font-size: 14px;
             font-weight: 700;
-            min-width: 135px;
             cursor: pointer;
+            text-align: center !important;
+            min-width: 130px;
+            @include xs {
+                font-size: 12px;
+                padding: 0 10px 3px 10px;
+                min-width: 70px;
+                
+            }
+        }
+    }
+    &.ar {
+        .text {
+            i {
+                margin: 0 0 9px 15px;
+            }
+        }
+        form {
+            input {
+                border-radius: 0 24px 24px 0;
+            }
+            button {
+                border-radius: 24px 0 0 24px;
+            }
         }
     }
 

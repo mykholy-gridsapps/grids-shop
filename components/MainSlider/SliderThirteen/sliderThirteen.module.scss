@@ -1,21 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
-$sliderOneColor1: #fff;
-$sliderOneColor2: #222529;
+@import "../../../styles/mixins.scss";
+$sliderOneColor1: var(--text-light);
+$sliderOneColor2: var(--text-dark);
 $sliderOneBadge: #ee8379;
-$sliderTwoColor1: #fff;
-$sliderTwoColor2: #222529;
+$sliderTwoColor1: var(--text-light);
+$sliderTwoColor2: var(--text-dark);
 $sliderTwoBadge: #ee8379;
-$sliderBtnBg: #f4f4f4;
-$sliderBg: #f4f4f4;
+$sliderBtnBg: var(--bg-alt-color);
+$sliderBg: var(--bg-alt-color);
 
 .slider {
     padding: 10px;
     background-color: $sliderBg;
+
     img {
         object-fit: cover;
         max-width: 100%;
         object-position: center top;
         min-height: 360px;
+        filter: brightness(0.8);
+
+        @include sm {
+            min-height: 230px;
+        }
+        @include xs {
+            min-height: 200px;
+        }
     }
 
     .slide1 {
@@ -36,6 +46,14 @@ $sliderBg: #f4f4f4;
                 right: auto;
                 display: inline-block;
 
+                @include md {
+                    left: 5%;
+                }
+
+                @include xs {
+                    display: none;
+                }
+
                 h2 {
                     font-size: 80px;
                     font-style: italic;
@@ -49,6 +67,17 @@ $sliderBg: #f4f4f4;
                     text-align: right;
                     text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
                     color: $sliderOneColor1;
+
+                    @include md {
+                        font-size: 60px;
+                        line-height: 60px;
+                    }
+
+                    @include sm {
+                        font-size: 40px;
+                        line-height: 40px;
+                    }
+
                 }
 
                 h1 {
@@ -60,7 +89,18 @@ $sliderBg: #f4f4f4;
                     margin-top: 0px;
                     opacity: 1;
                     text-align: right !important;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
                     color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 64px;
+                        line-height: 64px;
+                    }
+
+                    @include sm {
+                        font-size: 44px;
+                        line-height: 44px;
+                    }
                 }
 
                 h3 {
@@ -72,7 +112,18 @@ $sliderBg: #f4f4f4;
                     margin-top: 0px;
                     opacity: 1;
                     text-align: right !important;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
                     color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 46px;
+                        line-height: 50px;
+                    }
+
+                    @include sm {
+                        font-size: 26px;
+                        line-height: 30px;
+                    }
 
                 }
             }
@@ -83,6 +134,16 @@ $sliderBg: #f4f4f4;
                 right: 8.1%;
                 display: inline-block;
 
+                @include md {
+                    right: 5%;
+                }
+
+                @include xs {
+                    right: 5%;
+                    left: 5%;
+                    text-align: center !important;
+                }
+
                 h4 {
                     font-size: 22px;
                     font-weight: 700;
@@ -91,7 +152,21 @@ $sliderBg: #f4f4f4;
                     margin-bottom: 8px;
                     margin-top: 0px;
                     text-align: left;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+
                     color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 18px;
+                    }
+
+                    @include sm {
+                        font-size: 16px;
+                    }
+
+                    @include xs {
+                        text-align: center !important;
+                    }
 
                 }
 
@@ -103,7 +178,21 @@ $sliderBg: #f4f4f4;
                     margin-bottom: 0px;
                     margin-top: 0px;
                     text-align: left !important;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+
                     color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 16px;
+                    }
+
+                    @include sm {
+                        font-size: 14px;
+                    }
+
+                    @include xs {
+                        text-align: center !important;
+                    }
 
 
                     span {
@@ -120,8 +209,13 @@ $sliderBg: #f4f4f4;
                     margin-right: 0px;
                     margin-top: 16px;
                     text-align: left;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+
                     color: $sliderOneColor2;
 
+                    @include xs {
+                        text-align: center !important;
+                    }
 
                     span {
                         font-size: 20.3px;
@@ -131,6 +225,14 @@ $sliderBg: #f4f4f4;
                         margin-right: 11px;
                         margin-top: 6px;
                         text-align: left !important;
+
+                        @include md {
+                            font-size: 16px;
+                        }
+
+                        @include sm {
+                            font-size: 14px;
+                        }
                     }
 
                     b {
@@ -146,6 +248,21 @@ $sliderBg: #f4f4f4;
                         position: relative;
                         text-align: left !important;
                         color: $sliderOneColor1;
+
+                        @include md {
+                            font-size: 30px;
+                            line-height: 30px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+
+                        @include sm {
+                            font-size: 20px;
+                            line-height: 20px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+
 
                         &::before {
                             content: "";
@@ -190,6 +307,18 @@ $sliderBg: #f4f4f4;
                     text-align: center;
                     text-transform: uppercase;
                     vertical-align: middle;
+
+                    @include md {
+                        padding-left: 26px;
+                        padding-right: 26px;
+                    }
+
+                    @include sm {
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        padding-left: 16px;
+                        padding-right: 16px;
+                    }
                 }
 
             }
@@ -213,6 +342,13 @@ $sliderBg: #f4f4f4;
                 left: auto;
                 right: 10%;
                 display: inline-block;
+                @include md {
+                    right: 5%;
+                }
+
+                @include xs {
+                    display: none;
+                }
 
                 h2 {
                     font-size: 80px;
@@ -227,6 +363,15 @@ $sliderBg: #f4f4f4;
                     text-align: right;
                     text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
                     color: $sliderOneColor1;
+                    @include md {
+                        font-size: 60px;
+                        line-height: 60px;
+                    }
+
+                    @include sm {
+                        font-size: 40px;
+                        line-height: 40px;
+                    }
 
                     &:last-of-type {
                         margin-right: 0;
@@ -242,7 +387,17 @@ $sliderBg: #f4f4f4;
                     margin-top: 0px;
                     opacity: 1;
                     text-align: left !important;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
                     color: $sliderOneColor2;
+                    @include md {
+                        font-size: 64px;
+                        line-height: 64px;
+                    }
+
+                    @include sm {
+                        font-size: 44px;
+                        line-height: 44px;
+                    }
                 }
 
                 h3 {
@@ -254,7 +409,17 @@ $sliderBg: #f4f4f4;
                     margin-top: 0px;
                     opacity: 1;
                     text-align: right !important;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
                     color: $sliderOneColor2;
+                    @include md {
+                        font-size: 46px;
+                        line-height: 50px;
+                    }
+
+                    @include sm {
+                        font-size: 26px;
+                        line-height: 30px;
+                    }
 
                 }
             }
@@ -264,6 +429,15 @@ $sliderBg: #f4f4f4;
                 left: 9%;
                 right: auto;
                 display: inline-block;
+                @include md {
+                    left: 5%;
+                }
+
+                @include xs {
+                    right: 5%;
+                    left: 5%;
+                    text-align: center !important;
+                }
 
                 h4 {
                     font-size: 22px;
@@ -273,7 +447,20 @@ $sliderBg: #f4f4f4;
                     margin-bottom: 8px;
                     margin-top: 0px;
                     text-align: left;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+
                     color: $sliderOneColor2;
+                    @include md {
+                        font-size: 18px;
+                    }
+
+                    @include sm {
+                        font-size: 16px;
+                    }
+
+                    @include xs {
+                        text-align: center !important;
+                    }
 
                 }
 
@@ -285,7 +472,20 @@ $sliderBg: #f4f4f4;
                     margin-bottom: 0px;
                     margin-top: 0px;
                     text-align: left !important;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+
                     color: $sliderOneColor2;
+                    @include md {
+                        font-size: 16px;
+                    }
+
+                    @include sm {
+                        font-size: 14px;
+                    }
+
+                    @include xs {
+                        text-align: center !important;
+                    }
 
 
                     span {
@@ -302,7 +502,12 @@ $sliderBg: #f4f4f4;
                     margin-right: 0px;
                     margin-top: 16px;
                     text-align: left;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+
                     color: $sliderOneColor2;
+                    @include xs {
+                        text-align: center !important;
+                    }
 
                     span {
                         font-size: 20.3px;
@@ -312,6 +517,13 @@ $sliderBg: #f4f4f4;
                         margin-right: 11px;
                         margin-top: 6px;
                         text-align: left !important;
+                        @include md {
+                            font-size: 16px;
+                        }
+
+                        @include sm {
+                            font-size: 14px;
+                        }
                     }
 
                     b {
@@ -327,6 +539,19 @@ $sliderBg: #f4f4f4;
                         position: relative;
                         text-align: left !important;
                         color: $sliderOneColor1;
+                        @include md {
+                            font-size: 30px;
+                            line-height: 30px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+
+                        @include sm {
+                            font-size: 20px;
+                            line-height: 20px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
 
                         &::before {
                             content: "";
@@ -371,6 +596,17 @@ $sliderBg: #f4f4f4;
                     text-align: center;
                     text-transform: uppercase;
                     vertical-align: middle;
+                    @include md {
+                        padding-left: 26px;
+                        padding-right: 26px;
+                    }
+
+                    @include sm {
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        padding-left: 16px;
+                        padding-right: 16px;
+                    }
                 }
 
             }
@@ -416,6 +652,17 @@ $sliderBg: #f4f4f4;
             position: relative;
         }
 
+    }
+
+    &.ar {
+        :global(.swiper-button-prev) {
+            left: auto;
+            right: -20px;
+        }
+        :global(.swiper-button-next) {
+            right: auto;
+            left: -20px;
+        }
     }
 
 

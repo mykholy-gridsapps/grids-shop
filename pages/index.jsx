@@ -1,4 +1,3 @@
-import Link from "next/link";
 // REDIRECTION FILES
 import langRedirection from "../utils/redirections/langRedirection/langRedirection";
 import routeRedirection from "../utils/redirections/routeRedirection/routeRedirection";
@@ -9,6 +8,8 @@ import { useTranslation } from "next-i18next";
 import { wrapper } from "../store/store";
 // MATERIAL STUFF
 import Container from "@mui/material/Container";
+import { Grid } from "@mui/material";
+import Link from "next/link";
 
 import {
   BlogOneCarousel,
@@ -67,22 +68,33 @@ import {
   SliderNine,
   SliderTen,
   SliderEleven,
-  SliderTwelve
-} from "../components";
+  SliderTwelve,
+  SliderThirteen,
+  NewsletterOne,
+  NewsletterTwo,
+  NewsletterThree,
+  NewsletterFour,
+  NewsletterFive,
+  NewsletterSix,
+  NewsletterSeven,
+  NewsletterEight,
+  NewsletterNine,
+  NewsletterTen,
+  CategoriesSideOne} from "../components";
 
 
 const Home = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
-    // <Container maxWidth='xl'>
-    //   <Grid container >
-    //     <Grid item xs={12}>
+    <Container maxWidth='xl'>
+      <Grid container >
+        <Grid item xs={3}>
 
-    //     </Grid>
-    //   </Grid>
-    // </Container>
-          <SliderTwelve />
+          <CategoriesSideOne />
+        </Grid>
+      </Grid>
+    </Container>
   );
 };
 

@@ -1,18 +1,19 @@
 import { Grid } from "@mui/material";
 import { Container } from "@mui/system";
+import { i18n } from "next-i18next";
 import React from "react";
 import cls from "./newsletterSeven.module.scss";
 
 
 const NewsletterSeven = () => {
     return (
-        <div className={cls.newsletterBanner}>
+        <div className={`${cls.newsletterBanner} ${cls[i18n.language]}`}>
             <Container maxWidth='xxl'>
-                <Grid container justifyContent='start' alignItems="center">
-                    <Grid item lg={3} md={6} xs={12}>
+                <Grid container justifyContent={{lg: "flex-start", md: "center"}} alignItems="center">
+                    <Grid item lg={3} md={5} xs={12}>
                         <h4 className={cls.newsletterTitle}>Sign Up to Newsletter</h4>
                     </Grid>
-                    <Grid item md={6} lg={4} xs={12}>
+                    <Grid item md={5} lg={4} xs={12}>
                         <p>
                             Get all the latest information on Events, Sales and Offers.
                         </p>
