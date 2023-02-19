@@ -33,8 +33,10 @@ const MainLayout = ({ children }) => {
       {/* <HeaderThree /> */}
       <HeaderFour />
       {/* <HeaderFive /> */}
-      {children}
-      <FooterThree />
+      <div className={cls.pagesContent}>
+        {children}
+      </div>
+      <FooterTwo />
       <MobileBar />
 
       {/* SMALL SCREEN SIDE BAR */}

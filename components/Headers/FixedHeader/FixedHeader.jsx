@@ -70,7 +70,7 @@ const FixedHeader = ({ setOpenSidebar }) => {
             >
               <Link href="/">
                 <span>
-                  Pages <i className="fa-light fa-caret-down"></i>
+                  Pages <i className="fa-solid fa-angle-down"></i>
                 </span>
               </Link>
 

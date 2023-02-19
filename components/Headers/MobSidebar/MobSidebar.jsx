@@ -2,6 +2,7 @@ import { useRef } from "react";
 
 import LangSwitch from "../../switches/LangSwitch/LangSwitch";
 import ModeSwitch from "../../switches/ModeSwitch/ModeSwitch";
+import CurrencySwitch from './../../switches/CurrencySwitch/CurrencySwitch';
 
 import Link from 'next/link'
 import { useRouter } from "next/router";
@@ -39,12 +40,9 @@ const MobileMenu = ({ isOpen, closeMobileMenu }) => {
     >
       <div className={`${cls.mobileMenu} ${cls[i18n.language]}`}>
         <div className={cls.head}>
-          <button onClick={() => navigateBtns('/account')}>
-            <i className={`fa-light fa-user ${cls.with}`}></i>
+          <button>
+            <CurrencySwitch />
           </button>
-          {/* <button onClick={() => navigateBtns('/wishlist')}>
-            <i className={`fa-light fa-heart ${cls.with}`}></i>
-          </button> */}
           <button>
             <ModeSwitch />
           </button>

@@ -43,7 +43,7 @@ const SaleThirtyOne = () => {
                         </div>
 
                         <div className={cls.bannerLayerCircle}>
-                            <h4 class="banner-layer-circle-item bg-primary">40
+                            <h4 className=banner-layer-circle-item bg-primary">40
                                 <sup>%</sup>
                             </h4>
                         </div>

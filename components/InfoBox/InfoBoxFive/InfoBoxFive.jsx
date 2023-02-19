@@ -8,7 +8,7 @@ const InfoBoxFive = () => {
         <div className={cls.infoBoxesContainer}>
             <Grid container >
                 <Grid item className={cls.infoBox} lg={4}>
-                    <i class="fa-light fa-truck-fast"></i>
+                    <i className="fa-light fa-truck-fast"></i>
 
                     <div>
                         <h4>FREE SHIPPING &amp; RETURN</h4>
@@ -16,7 +16,7 @@ const InfoBoxFive = () => {
                     </div>
                 </Grid>
                 <Grid item className={cls.infoBox} lg={4}>
-                    <i class="fa-light fa-circle-dollar"></i>
+                    <i className="fa-light fa-circle-dollar"></i>
 
                     <div>
                         <h4>MFiveY BACK GUARANTEE</h4>
@@ -24,7 +24,7 @@ const InfoBoxFive = () => {
                     </div>
                 </Grid>
                 <Grid item className={cls.infoBox} lg={4}>
-                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <i className="fa-solid fa-clock-rotate-left"></i>
 
                     <div>
                         <h4>ONLINE SUPPORT 24/7</h4>

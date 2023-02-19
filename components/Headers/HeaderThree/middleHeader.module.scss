@@ -25,6 +25,9 @@
         height: 80px;
         line-height: 80px;
         cursor: pointer;
+        i {
+          font-size: 0.7rem;
+        }
         &.active {
           a {
             color: var(--secondary-color);
