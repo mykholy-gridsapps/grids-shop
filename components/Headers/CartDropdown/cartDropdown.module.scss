@@ -1,0 +1,78 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.cart__dropdown {
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
+  right: -50%;
+  background-color: var(--secondary-background);
+  width: 350px;
+  min-height: 350px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid var(--main-color);
+  border-radius: 0 0 5px 5px;
+  animation: show 0.3s forwards;
+  padding-bottom: 20px;
+  .cartEmpty {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    svg {
+      width: auto !important;
+      height: 170px !important;
+      margin: auto;
+    }
+    h6 {
+      text-align: center !important;
+      font-size: 0.9rem;
+      position: relative;
+      top: -20px;
+    }
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--hover-color);
+    }
+    img {
+      width: 80px;
+    }
+  }
+  .actions {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    button {
+      flex: 1;
+      text-align: center !important;
+      font-size: 0.8rem !important;
+      padding: 8px 0;
+      background-color: transparent;
+      color: var(--text-color);
+      border: 1px solid var(--border-color);
+      cursor: pointer;
+      &.view {
+        @extend %mainBtn;
+        padding: 8px 0;
+        border-radius: 0;
+      }
+    }
+  }
+
+  &.ar {
+    right: unset;
+    left: -50%;
+  }
+
+  @include xs {
+    display: none;
+  }
+}

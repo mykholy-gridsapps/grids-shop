@@ -1,0 +1,20 @@
+.footer {
+  font-size: 13px;
+  color: #a8a8a8;
+  background: var(--dark-main-color);
+  line-height: 24px;
+
+  .container {
+    max-width: none;
+    padding-left: 4.28vw;
+    padding-right: 4.28vw;
+  }
+
+  a {
+    color: rgb(144, 150, 154);
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

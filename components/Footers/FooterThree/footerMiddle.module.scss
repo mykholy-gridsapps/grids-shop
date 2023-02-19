@@ -1,0 +1,45 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CPoppins:300,400,500,600,700,800%7COswald:300,400,500,600,700,800%7CPlayfair+Display:900%7CShadows+Into+Light:400");
+
+.footerMiddle {
+    border-top: 1px solid #e7e7e7;
+    padding-top: 64px;
+    padding-bottom: 24px§;
+
+
+    .widget {
+        margin-bottom: 30px;
+
+        .widgetTitle {
+            line-height: 1.4;
+            margin: 0 0 15px;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #313131;
+            font-weight: 700;
+        }
+
+        .contactWidget {
+            margin: 0 0 10px;
+
+            .widgetTitle {
+                line-height: 1.4;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 13px;
+                letter-spacing: 0.005em;
+                color: #000;
+                margin-bottom: 0;
+            }
+
+            a {
+                display: block;
+            }
+        }
+
+        .linkParts {
+            line-height: 24px;
+        }
+
+
+    }
+}

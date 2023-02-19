@@ -1,0 +1,53 @@
+.topNotice {
+    position: relative;
+    padding: 9px 20px 10px;
+    font-size: 13px;
+    line-height: 2;
+    letter-spacing: 0.025em;
+    background-color: var(--bg-dark-color);
+
+    .container {
+        text-align: center !important;
+
+        h5 {
+            margin-right: 2px;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 0 !important;
+            display: inline-block !important;
+            line-height: 1.429;
+        }
+
+        .category {
+            margin: 0 2px;
+            padding: 3px 8px 4px 8px;
+            display: inline-block;
+            background: #151719;
+            font-size: 10px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        small {
+            color: #fff;
+            margin-left: 6px;
+            letter-spacing: 0.03em;
+            font-size: 11px;
+            opacity: 0.5;
+            font-weight: 400;
+        }
+
+        button {
+            position: absolute;
+            top: -3%;
+            right: 1%;
+            color: #fff;
+            padding: 0;
+            background: transparent;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+        }
+    }
+}

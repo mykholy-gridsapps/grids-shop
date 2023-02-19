@@ -1,0 +1,46 @@
+@import '../../../styles/mixins.scss';
+
+.topHeader {
+  background-color: var(--main-color);
+  padding: 0;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    // padding-top: 5px;
+    // padding-bottom: 5px;
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      span {
+        font-size: 0.85rem;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+    .options {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      span {
+        padding: 0 10px;
+        border-left: 1px solid rgb(224, 224, 224);
+        cursor: pointer;
+        font-size: 0.85rem;
+        a {
+          color: #fff;
+          padding: 0 10px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  @include md {
+    display: none;
+  }
+}

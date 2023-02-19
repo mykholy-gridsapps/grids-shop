@@ -1,0 +1,39 @@
+.productCategory {
+    padding: 39px 0 35px;
+    background: var(--bg-color);
+    transition: box-shadow 0.2s;
+    position: relative;
+
+    .categoryContent {
+
+        text-align: center !important;
+
+        h3 {
+            color: var(--text-dark);
+            text-align: center !important;
+            margin-bottom: 0;
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: none;
+        }
+
+        i {
+            margin-bottom: 15px;
+            color: var(--text-dark);
+            font-size: 42px;
+            line-height: 1;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.1);
+        h3 {
+            color: var(--main-color);
+        }
+
+        i {
+            color: var(--main-color);
+
+        }
+    }
+}

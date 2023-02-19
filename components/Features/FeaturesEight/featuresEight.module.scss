@@ -1,0 +1,59 @@
+.featureBoxesContainer {
+    margin: 40px 0;
+    .innerContainer {
+        height: 100%;
+        padding: 52px 30px 52px;
+        background-color: var(--secondary-background);
+        box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.07);
+        color: var(--text-color);
+        font-size: 15px;
+        line-height: 2;
+        text-align: center !important;
+
+        .featureBox {
+            text-align: center !important;
+
+            i {
+                margin-bottom: 17px;
+                font-size: 50px;
+                color: var(--text-dark);
+                line-height: 1;
+                text-align: center !important;
+            }
+
+            .featureBoxContent {
+                font-size: 15px;
+                line-height: 1.9;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                h3 {
+                    color: var(--text-dark);
+                    margin: 0;
+                    font-size: 22px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    line-height: 1.4;
+                    letter-spacing: 0;
+                    text-align: center !important;
+                }
+
+                h5 {
+                    color: #555;
+                    font-weight: 400;
+                    margin: 4px 0 0;
+                    font-size: 14px;
+                    line-height: 1.2;
+                    text-align: center !important;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 13px;
+                    line-height: 2;
+                    text-align: center !important;
+                }
+            }
+        }
+    }
+}

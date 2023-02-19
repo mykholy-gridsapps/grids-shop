@@ -1,0 +1,14 @@
+.brands {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    background-color: var(--text-dark);
+    img {
+        max-width: 100%;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        height: auto;
+    }
+}

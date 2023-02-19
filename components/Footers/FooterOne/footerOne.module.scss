@@ -1,0 +1,15 @@
+.footer {
+  font-size: 13px;
+  color: #a8a8a8;
+  line-height: 24px;
+  letter-spacing: 0.05px;
+  &.bgDark {
+    background-color: var(--dark-main-color) !important;
+  }
+  &.positionRelative {
+    position: relative !important;
+  }
+  p {
+    line-height: 24px;
+  }
+}

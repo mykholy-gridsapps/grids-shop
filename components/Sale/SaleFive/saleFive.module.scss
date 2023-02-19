@@ -1,0 +1,105 @@
+.banner {
+    position: relative;
+    font-size: 16px;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+
+    figure {
+        margin: 0;
+        width: 100%;
+
+        img {
+            height: auto;
+            object-fit: cover;
+            width: 100%;
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    .bannerLayer {
+        margin-top: -1px;
+        margin-right: -2px;
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        left: 6%;
+        text-align: right !important;
+
+        h3 {
+            font-size: 19px;
+            color: var(--text-dark);
+            line-height: 1;
+            margin-bottom: 8px !important;
+            text-align: right !important;
+            font-weight: 500;
+        }
+
+        h4 {
+            &:first-of-type {
+                font-size: 40px;
+                line-height: 1;
+                display: flex;
+                display: -ms-flexbox;
+                align-items: center;
+                -ms-flex-align: center;
+                justify-content: center;
+                -ms-flex-pack: center;
+                width: 96px;
+                height: 96px;
+                border-radius: 50%;
+                color: #fff;
+                background: var(--text-dark);
+                letter-spacing: -0.08em;
+                margin-left: auto !important;
+                margin-bottom: 20px !important;
+
+                sup {
+                    line-height: 1;
+                    margin: 0 2px;
+                    letter-spacing: 0;
+                    font-size: 55%;
+
+                    small {
+                        display: block;
+                        font-size: 10px;
+                        letter-spacing: -0.025em;
+                        opacity: 0.5;
+                    }
+                }
+            }
+
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 4px !important;
+            color: var(--text-dark);
+            text-align: right !important;
+        }
+
+        h5 {
+            font-size: 30px;
+            line-height: 1;
+            margin-bottom: 16px !important;
+            color: var(--text-dark);
+            text-align: right !important;
+
+            del {
+                font-size: 14px;
+                font-weight: 500;
+                margin-bottom: 8px !important;
+                display: block !important;
+                text-align: right !important;
+
+            }
+        }
+
+        a {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+    }
+}

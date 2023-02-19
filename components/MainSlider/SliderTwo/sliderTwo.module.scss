@@ -1,0 +1,384 @@
+@import url('https://fonts.cdnfonts.com/css/savoye-let');
+@import "../../../styles/mixins.scss";
+
+$sliderOneColor1: var(--text-color);
+$sliderOneColor2: var(--text-dark);
+
+.slider {
+    .slide1 {
+
+        .bannerLayer {
+            position: absolute;
+            left: 13.45%;
+            right: 4%;
+            top: 20%;
+            padding-bottom: 6px;
+
+            @include md {
+                top: 10%
+            }
+
+            h2 {
+                color: $sliderOneColor1;
+                font-size: 40px;
+                font-weight: 400;
+                letter-spacing: -0.008em;
+                margin: 0 0 9px;
+                font-family: "Savoye LET";
+
+                @include sm {
+                    font-size: 30px;
+                }
+
+                @include xs {
+                    font-size: 20px;
+                }
+            }
+
+            h3 {
+                font-size: 40px;
+                letter-spacing: 0.185em;
+                text-transform: uppercase !important;
+                color: $sliderOneColor2;
+                font-weight: 700;
+                margin: 0;
+                line-height: 1;
+
+                @include sm {
+                    font-size: 25px;
+                }
+
+                @include xs {
+                    font-size: 16px;
+                }
+            }
+
+            h4 {
+                font-size: 90px;
+                line-height: 1;
+                margin: 0 0 24px;
+                color: $sliderOneColor2;
+                font-weight: 700;
+
+                @include sm {
+                    font-size: 60px;
+                }
+
+                @include xs {
+                    font-size: 36px;
+                }
+            }
+
+            h5 {
+                font-size: 18px;
+                padding-top: 7px;
+                margin: 0 0 33px;
+                line-height: 1;
+                text-transform: uppercase !important;
+                color: $sliderOneColor2;
+                font-weight: 700;
+
+                span {
+                    position: relative;
+                    display: inline-block;
+                    margin-top: -8px;
+                    margin-left: 16px;
+                    padding: 5px 9px 5px;
+                    font-size: 36px;
+                    letter-spacing: 0;
+                    vertical-align: text-top;
+                    transform: translateY(1px);
+
+                    &::before {
+                        content: "";
+                        z-index: -1;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: var(--text-light);
+                        transform: rotate(-2deg);
+                    }
+
+                    sup {
+                        margin: 0 1px;
+                        font-size: 55%;
+                        letter-spacing: -0.05em;
+                    }
+
+                    @include sm {
+                        font-size: 25px;
+                    }
+                }
+
+                @include xs {
+                    display: none;
+                }
+            }
+
+            .btn {
+                border-color: $sliderOneColor2;
+                background-color: $sliderOneColor2;
+                color: var(--text-light);
+                box-shadow: none;
+                padding: 20px 50px;
+                display: inline-block;
+
+                @include sm {
+                    padding: 10px 30px;
+                }
+
+                @include xs {
+                    font-size: 14px;
+                    padding: 5px 10px;
+
+                }
+            }
+        }
+    }
+
+    .slide2 {
+        .bannerLayer {
+            position: absolute;
+            left: 13.45%;
+            right: 4%;
+            top: 20%;
+            padding-bottom: 6px;
+
+            @include md {
+                top: 10%
+            }
+
+            h2 {
+                margin-top: 0;
+                margin-bottom: -5px;
+                margin-left: -3px;
+                font-size: 55px;
+                letter-spacing: -0.3px;
+                font-family: "Savoye LET";
+                color: $sliderOneColor2;
+
+                @include sm {
+                    font-size: 40px;
+                }
+
+                @include xs {
+                    font-size: 30px;
+                }
+            }
+
+            h3 {
+                margin-left: -3px;
+                font-size: 112px;
+                line-height: 1;
+                position: relative;
+                padding-left: 33px;
+                text-transform: uppercase !important;
+                color: $sliderOneColor2;
+
+                @include sm {
+                    font-size: 50px;
+                    padding-left: 20px;
+
+                }
+
+                @include xs {
+                    font-size: 40px;
+                    padding-left: 14px;
+                }
+
+                small {
+                    display: inline-block;
+                    position: absolute;
+                    left: -28px;
+                    top: 50%;
+                    transform: translateY(-50%) rotate(-90deg);
+                    transform-origin: 50% 50%;
+                    font-size: 25%;
+                    font-weight: 500;
+
+                    @include sm {
+                        left: -12px;
+                    }
+
+                    @include xs {
+                        left: -8px;
+                    }
+                }
+            }
+
+            hr {
+                margin: 22px 0 0;
+                margin-bottom: 0px;
+                width: 48px;
+                border: 0;
+                border-top: 5px solid $sliderOneColor2;
+                padding-bottom: 7px;
+
+                @include xs {
+                    display: none;
+                }
+            }
+
+            h5 {
+                margin-right: 43px;
+                margin-left: -3px;
+                font-size: 20px;
+                vertical-align: middle;
+                line-height: 1;
+                text-transform: uppercase !important;
+                margin-bottom: 0 !important;
+                margin-top: 0;
+                color: $sliderOneColor2;
+                font-weight: 700;
+                display: inline-block !important;
+
+                span {
+                    font-size: 21px;
+
+                    @include sm {
+                        font-size: 16px;
+                    }
+
+                    em {
+                        display: inline-block;
+                        font-size: 40px;
+                        font-style: normal;
+                        vertical-align: text-top;
+                        transform: translateY(-1px);
+                        letter-spacing: 0;
+
+                        @include sm {
+                            font-size: 30px;
+                        }
+                    }
+                }
+
+                @include sm {
+                    font-size: 16px;
+                }
+
+                @include xs {
+                    display: none !important;
+                }
+            }
+
+            .btn {
+                border-color: $sliderOneColor2;
+                background-color: $sliderOneColor2;
+                color: var(--text-light);
+                box-shadow: none;
+                padding: 20px 50px;
+                display: inline-block;
+
+                @include xs {
+                    padding: 10px 20px;
+
+                }
+            }
+        }
+    }
+
+    :global(.swiper-button-prev) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor2 !important;
+        left: 0px;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            color: $sliderOneColor2 !important;
+            font-size: 1.5rem !important;
+        }
+    }
+
+    :global(.swiper-button-next) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor2 !important;
+        right: 0px;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            color: $sliderOneColor2 !important;
+            font-size: 1.5rem !important;
+        }
+
+    }
+
+    &:hover {
+        :global(.swiper-button-prev) {
+            display: block;
+        }
+
+        :global(.swiper-button-next) {
+            display: block;
+        }
+    }
+
+    &.ar {
+        img {
+            transform: rotateY(180deg);
+        }
+        .slide1 {
+            h5 {
+                span {
+                    margin-right: 16px;
+                    margin-left: 0;
+                }
+            }
+        }
+        .slide2 {
+            .bannerLayer {
+                h3 {
+                    padding-left: 0;
+                    padding-right: 33px;
+                    @include sm {
+                        padding-right: 20px;
+    
+                    }
+    
+                    @include xs {
+                        padding-right: 14px;
+                    }
+                    small {
+                        left: auto;
+                        right: -28px;
+                        @include sm {
+                            right: -12px;
+                        }
+    
+                        @include xs {
+                            right: -8px;
+                        }
+                    }
+                }
+                h5 {
+                    margin-left: 43px;
+                    margin-right: -3px;
+                }
+                .btn {
+                    i {
+                        transform: rotate(180deg);
+                    }
+                }
+
+            }
+        }
+        :global(.swiper-button-prev) {
+            right: 0px;
+            left: auto;
+
+        }
+
+        :global(.swiper-button-next) {
+            right: auto;
+            left: 0px;
+        }
+    }
+}

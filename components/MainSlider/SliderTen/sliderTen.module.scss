@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import "../../../styles/mixins.scss";
+$sliderBg: #e2e2e0;
+$sliderOneColor1: #c59b9c;
+$sliderOneColor2: var(--text-color);
+$sliderOneColor3: var(--text-dark);
+$sliderTwoColor1: var(--text-color);
+$sliderTwoColor2: var(--text-dark);
+$sliderOneBadge: #ff7272;
+
+.slider {
+    background-color: $sliderBg;
+
+    img {
+        object-fit: cover;
+        max-width: 100%;
+        object-position: center top;
+        min-height: 360px;
+        @include sm {
+            min-height: 250px;
+        }
+        @include xs {
+            min-height: 200px;
+        }
+    }
+
+    .slide1 {
+        position: relative;
+        @include xs {
+            margin: 0 -16px;
+        }
+
+        .bannerLayer {
+            position: absolute;
+            padding-bottom: 3px;
+            left: 0;
+            right: auto;
+            top: 50%;
+            transform: translateY(-50%);
+
+            h2 {
+                font-family: 'Nanum Brush Script';
+                font-size: 68px;
+                font-weight: 300;
+                letter-spacing: 0.679994px;
+                line-height: 40px;
+                margin-bottom: 18px;
+                margin-top: 0px;
+                text-align: left !important;
+                color: $sliderOneColor1;
+                @include md {
+                    font-size: 50px;
+                    line-height: 30px;
+                }
+                @include sm {
+                    font-size: 40px;
+                    line-height: 20px;
+                }
+                @include xs {
+                    font-size: 30px;
+                    line-height: 20px;
+                    padding: 0 16px;
+                }
+            }
+
+            .btn {
+                display: inline-flex;
+                color: $sliderOneColor2;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 22px;
+                font-weight: 400;
+                letter-spacing: 0.219996px;
+                line-height: 31.4333px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-top: 0px;
+                text-align: center;
+                vertical-align: middle;
+                white-space: nowrap;
+
+                span {
+                    margin-right: 8px;
+                    display: inline-block;
+                    border-bottom: 1px solid;
+                    line-height: 1.4;
+                }
+
+                i {
+                    font-size: 15px;
+                    font-weight: 400;
+                    letter-spacing: 0.219996px;
+                    line-height: 22px;
+                    margin-bottom: 0px;
+                    margin-left: 2px;
+                    margin-right: 1px;
+                    margin-top: 0px;
+                    text-align: center;
+                    text-transform: none;
+                    vertical-align: middle;
+                    white-space: nowrap
+                }
+                @include xs {
+                    padding: 0 16px;
+                }
+            }
+        }
+    }
+
+    .slide2 {
+        position: relative;
+        @include xs {
+            margin: 0 -16px;
+        }
+        .bannerLayer {
+            position: absolute;
+            padding-bottom: 3px;
+            right: 0;
+            left: auto;
+            top: 50%;
+            transform: translateY(-50%);
+
+            h2 {
+                font-family: 'Nanum Brush Script';
+                font-size: 68px;
+                font-weight: 300;
+                letter-spacing: 0.679994px;
+                line-height: 40px;
+                margin-bottom: 18px;
+                margin-top: 0px;
+                text-align: left !important;
+                color: $sliderOneColor1;
+                @include md {
+                    font-size: 50px;
+                    line-height: 30px;
+                }
+                @include sm {
+                    font-size: 40px;
+                    line-height: 20px;
+                }
+                @include xs {
+                    font-size: 30px;
+                    line-height: 20px;
+                    padding: 0 16px;
+                }
+            }
+
+            .btn {
+                display: inline-flex;
+                color: $sliderOneColor2;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 22px;
+                font-weight: 400;
+                letter-spacing: 0.219996px;
+                line-height: 31.4333px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-top: 0px;
+                text-align: center;
+                vertical-align: middle;
+                white-space: nowrap;
+
+                span {
+                    margin-right: 8px;
+                    display: inline-block;
+                    border-bottom: 1px solid;
+                    line-height: 1.4;
+                }
+
+                i {
+                    font-size: 15px;
+                    font-weight: 400;
+                    letter-spacing: 0.219996px;
+                    line-height: 22px;
+                    margin-bottom: 0px;
+                    margin-left: 2px;
+                    margin-right: 1px;
+                    margin-top: 0px;
+                    text-align: center;
+                    text-transform: none;
+                    vertical-align: middle;
+                    white-space: nowrap
+                }
+                @include xs {
+                    padding: 0 16px;
+                }
+            }
+        }
+    }
+
+    :global(.swiper-button-prev) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor3 !important;
+        left: 0;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            color: $sliderOneColor3 !important;
+            font-size: 18px !important;
+        }
+    }
+
+    :global(.swiper-button-next) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor3 !important;
+        right: 0;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            color: $sliderOneColor3 !important;
+            font-size: 18px !important;
+        }
+
+    }
+
+    &:hover {
+        :global(.swiper-button-prev) {
+            display: block;
+        }
+
+        :global(.swiper-button-next) {
+            display: block;
+        }
+    }
+    &.ar {
+        :global(.swiper-button-prev) {
+            right: 0;
+            left: auto;
+        }
+        :global(.swiper-button-next) {
+            left: 0;
+            right: auto;
+        }
+    }
+}

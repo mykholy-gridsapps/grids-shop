@@ -1,0 +1,77 @@
+.testimonial {
+    padding: 23px 23px 0;
+
+    .testimonialOwner {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-content: center;
+
+        figure {
+            margin-bottom: 13px;
+            max-width: 55px;
+            margin-right: 12px;
+
+            img {
+                display: block;
+                width: 100%;
+                border-radius: 50%;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .testimonialTitle {
+            margin: 0;
+            font-size: 16px;
+            text-transform: capitalize;
+            padding-top: 9px;
+            margin-bottom: 1px;
+            letter-spacing: 0.01em;
+            display: block;
+            color: var(--text-dark);
+        }
+
+        span {
+            text-transform: none;
+            font-weight: 400;
+            font-size: 13px;
+            letter-spacing: 0;
+            display: block;
+            color: var(--text-color);
+            line-height: 1.2;
+        }
+    }
+
+    blockquote {
+        margin: 0 0 5px;
+        padding: 10px 0 10px 38px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 28px;
+            content: "\e842";
+            font-family: "porto";
+            font-style: normal;
+            font-weight: normal;
+            text-align: center;
+            font-feature-settings: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            -moz-osx-font-smoothing: grayscale;
+            color: var(--text-dark);
+        }
+
+        p {
+            font-size: 13px;
+            color: var(--text-color);
+            letter-spacing: 0;
+            line-height: 24px;
+            margin: 0;
+        }
+    }
+}

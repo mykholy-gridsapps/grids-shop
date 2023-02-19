@@ -1,0 +1,56 @@
+// IMPORTING GLOBAL VARIABLES AND MIXINS
+@import "../../../styles/extends.scss";
+
+.dropdown {
+  @extend %dropdown;
+
+  img,
+  h6 {
+    cursor: pointer;
+    margin: 0 !important;
+  }
+
+  img {
+    width: 24px;
+    height: 18px;
+    // border-radius: 50%;
+    object-fit: fill;
+  }
+
+  span {
+    font-size: 0.9rem;
+    padding: 0 3px;
+    border: none !important;
+  }
+
+  i {
+    font-size: 0.7rem;
+  }
+
+  .dropdownMenu {
+    position: absolute;
+    z-index: 1150;
+    min-width: 100%;
+    margin: 0;
+    padding: 0.5rem 0;
+    background: #fff;
+    box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-out;
+  };
+  ul {
+    display: unset !important;
+  }
+  li {
+    display: flex;
+    gap: 5px;
+    padding: 0.5em 7px;
+    color: #777 !important;
+    white-space: nowrap;
+    font-size: 0.9rem !important;
+    font-weight: normal !important;
+    text-transform: unset !important;
+    p {
+      margin: 0 !important;
+    }
+  }
+}

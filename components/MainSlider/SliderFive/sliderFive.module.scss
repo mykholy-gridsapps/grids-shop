@@ -1,0 +1,483 @@
+@import url('https://fonts.cdnfonts.com/css/savoye-let');
+@import "../../../styles/mixins.scss";
+$sliderOneColor1: #ff7272;
+$sliderOneColor2: var(--text-dark);
+
+.slider {
+    .slide1 {
+        height: 100vh;
+
+        @include sm {
+            height: 370px;
+        }
+
+        @include xs {
+            height: 230px;
+        }
+
+        img {
+            height: 100% !important;
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .bannerLayer {
+            position: absolute;
+            left: 6%;
+            right: 6%;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center !important;
+
+            h2 {
+                font-size: 38px;
+                font-weight: 400;
+                letter-spacing: 0.19px;
+                line-height: 38px;
+                margin-bottom: 24px;
+                margin-top: 0px;
+                opacity: 1;
+                text-align: center !important;
+                font-family: "Savoye LET";
+                color: $sliderOneColor1;
+
+                @include sm {
+                    font-size: 30px;
+                    line-height: 30px;
+                    margin-bottom: 14px;
+
+                }
+
+                @include xs {
+                    font-size: 20px;
+                    line-height: 20px;
+                    margin-bottom: 8px;
+
+                }
+
+            }
+
+            h3 {
+                font-size: 67px;
+                font-weight: 700;
+                line-height: 67px;
+                margin-bottom: 4px;
+                margin-top: 0px;
+                opacity: 1;
+                text-align: center !important;
+                text-transform: uppercase;
+                color: $sliderOneColor2;
+
+                @include sm {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+
+                @include xs {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+            }
+
+            h4 {
+                font-size: 170px;
+                font-weight: 700;
+                line-height: 170px;
+                margin-bottom: 24px;
+                margin-top: 0px;
+                opacity: 1;
+                text-align: center !important;
+                color: $sliderOneColor2;
+
+                @include sm {
+                    font-size: 100px;
+                    line-height: 100px;
+                    margin-bottom: 0px;
+                }
+
+                @include xs {
+                    font-size: 70px;
+                    line-height: 70px;
+                    margin-bottom: 10px;
+                }
+
+                small {
+                    display: inline-block;
+                    width: 50px;
+                    font-size: 27%;
+                    word-break: break-all;
+                    text-align: center;
+                    font-weight: inherit;
+                    white-space: normal;
+                    line-height: 1;
+
+                    @include sm {
+                        width: 25px;
+                    }
+
+                    @include xs {
+                        width: 15px;
+                    }
+                }
+            }
+
+            h5 {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 18px;
+                margin-bottom: 18px;
+                margin-right: 12px;
+                margin-top: 0px;
+                opacity: 1;
+                text-align: left;
+                display: inline-block;
+                color: $sliderOneColor2;
+
+                @include sm {
+                    font-size: 14px;
+                    line-height: 14px;
+                    margin-bottom: 14px;
+                }
+
+                @include xs {
+                    display: none;
+                }
+            }
+
+            h6 {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 18px;
+                margin-bottom: 32px;
+                margin-top: 0px;
+                opacity: 1;
+                padding-bottom: 4px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 6px;
+                position: relative;
+                text-align: left;
+                display: inline-block;
+                line-height: 1;
+                color: #fff;
+                font-weight: 600;
+
+                @include sm {
+                    font-size: 14px;
+                }
+
+                @include xs {
+                    display: none;
+                }
+
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    background-color: $sliderOneColor1;
+                    transform: rotate(-2deg);
+                }
+
+                b {
+                    font-size: 200%;
+                    vertical-align: text-top;
+                }
+            }
+
+            .btnContainer {
+                text-align: center !important;
+
+                .btn {
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.18px;
+                    line-height: 25.7167px;
+                    padding-bottom: 18px;
+                    padding-left: 63px;
+                    padding-right: 63px;
+                    padding-top: 18px;
+                    text-align: center;
+                    border: 3px solid $sliderOneColor2;
+                    color: $sliderOneColor2;
+                    text-transform: uppercase;
+
+                    @include sm {
+                        font-size: 14px;
+                        padding-bottom: 9px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        padding-top: 9px;
+                    }
+
+                    &:hover {
+                        background-color: $sliderOneColor2;
+                        color: #fff;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .slide2 {
+        height: 100vh;
+
+        @include sm {
+            height: 370px;
+        }
+
+        @include xs {
+            height: 230px;
+        }
+
+        video {
+            height: 100%;
+            object-fit: cover;
+            width: 100% !important;
+        }
+
+        .bannerLayerLeft {
+            position: absolute;
+            left: 11.4%;
+            right: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            padding-bottom: 6px;
+
+            h2 {
+                font-size: 38px;
+                font-weight: 400;
+                letter-spacing: 0.19px;
+                line-height: 38px;
+                margin-bottom: 0px;
+                margin-left: 0px;
+                margin-top: 0px;
+                text-align: left;
+                font-family: "Savoye LET";
+                color: $sliderOneColor2;
+
+                @include md {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+
+                @include sm {
+                    font-size: 26px;
+                    line-height: 26px;
+                }
+
+                @include xs {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+
+            }
+
+            h3 {
+                font-size: 140px;
+                font-weight: 700;
+                line-height: 140px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                text-align: left;
+                text-transform: uppercase;
+                color: $sliderOneColor2;
+
+                @include md {
+                    font-size: 100px;
+                    line-height: 100px;
+                }
+
+                @include sm {
+                    font-size: 70px;
+                    line-height: 70px;
+                }
+
+                @include xs {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+            }
+        }
+
+        .bannerLayerRight {
+            right: 11.4%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: auto;
+            position: absolute;
+
+            h4 {
+                font-size: 20px;
+                font-weight: 300;
+                letter-spacing: 3.6px;
+                line-height: 20px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                padding-left: 5px;
+                text-align: left;
+                text-transform: uppercase;
+                color: $sliderOneColor2;
+
+                @include md {
+                    font-size: 18px;
+                    line-height: 18px;
+                }
+
+                @include sm {
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+
+                @include xs {
+                    font-size: 12px;
+                    line-height: 12px;
+                    letter-spacing: 1.7px;
+                }
+            }
+
+            h3 {
+                font-size: 150px;
+                font-weight: 700;
+                line-height: 150px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+                text-align: left;
+                text-transform: uppercase;
+                color: $sliderOneColor2;
+
+                @include md {
+                    font-size: 100px;
+                    line-height: 100px;
+                }
+
+                @include sm {
+                    font-size: 70px;
+                    line-height: 70px;
+                }
+
+                @include xs {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+
+                small {
+                    display: inline-block;
+                    width: 1em;
+                    font-size: 27%;
+                    word-break: break-all;
+                    text-align: center;
+                    font-weight: inherit;
+                    white-space: normal;
+                    line-height: 1;
+                }
+            }
+
+            .btnContainer {
+                text-align: center !important;
+                display: flex;
+
+                .btn {
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 25.7167px;
+                    padding-bottom: 20.7px;
+                    padding-left: 99px;
+                    padding-right: 99px;
+                    padding-top: 20.7px;
+                    text-align: center;
+                    border: 3px solid $sliderOneColor1;
+                    color: #fff;
+                    background-color: $sliderOneColor1;
+                    text-transform: uppercase;
+
+                    @include md {
+                        font-size: 14px;
+                        line-height: 14px;
+                        padding-bottom: 10px;
+                        padding-left: 50px;
+                        padding-right: 50px;
+                        padding-top: 10px;
+                    }
+
+                    @include sm {
+                        font-size: 14px;
+                        line-height: 14px;
+                        padding-bottom: 10px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        padding-top: 10px;
+                    }
+
+                    @include xs {
+                        font-size: 12px;
+                        line-height: 12px;
+                        padding-bottom: 5px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    :global(.swiper-pagination) {
+        margin: 16px;
+        position: absolute;
+        bottom: 10%;
+        text-align: center !important;
+
+        @include sm {
+            bottom: 0;
+            margin: 0;
+        }
+
+
+        :global(.swiper-pagination-bullet) {
+            border: 2px solid var(--text-dark);
+            width: 18px;
+            height: 18px;
+            background: transparent;
+            opacity: 1;
+            position: relative;
+
+            @include xs {
+                width: 14px;
+                height: 14px;
+            }
+
+            &:hover {
+                border: 2px solid var(--text-dark);
+            }
+
+            &:global(.swiper-pagination-bullet-active) {
+                border: 2px solid var(--text-dark);
+
+                &::before {
+                    width: 8px;
+                    height: 8px;
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 3px;
+                    top: 3px;
+                    background-color: var(--text-dark);
+                    transition: all 0.3s;
+                    border-radius: 50%;
+
+                    @include xs {
+                        width: 4px;
+                        height: 4px;
+                    }
+                }
+
+            }
+        }
+    }
+}

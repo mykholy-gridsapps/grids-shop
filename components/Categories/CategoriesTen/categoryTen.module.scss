@@ -1,0 +1,168 @@
+.banner {
+    color: var(--main-color);
+
+    &.ar {
+
+        &::before {
+            left: 188px;
+            right: 0;
+            transition: left 0.25s, background 0.25s;
+        }
+
+        .bannerBackground {
+            background-position: left center;
+            padding: 30px 30px 30px 0;
+
+            &::before {
+                border-left: 191px solid transparent;
+                transition: border-left 0.25s, border-top-color 0.25s;
+                left: 0;
+                right: auto;
+                border-right: none;
+            }
+
+            &::after {
+                border-left: 191px solid transparent;
+                transition: border-left 0.25s, border-top-color 0.25s;
+                left: 0;
+                right: auto;
+                border-right: none;
+            }
+        }
+
+        &::after {
+            left: 0;
+            right: auto;
+            border-left: 215px solid;
+            border-right: 0px;
+        }
+
+        &:hover {
+            &::before {
+                left: 210px;
+                right: 0;
+            }
+
+            .bannerBackground {
+                &::before {
+                    border-left-width: 215px;
+                }
+
+                &::after {
+                    border-left-width: 215px;
+                }
+            }
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 188px;
+        left: 0;
+        height: 100%;
+        background: var(--bg-color);
+        transition: right 0.25s, background 0.25s;
+    }
+
+    .bannerBackground {
+        background-image: url('../../../public/imgs/category/category-6.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-color: var(--bg-color);
+        min-height: 360px;
+        height: 100%;
+        padding: 30px 0 30px 30px;
+
+        &::before {
+            content: "";
+            border-top: 180px solid var(--bg-color);
+            border-right: 191px solid transparent;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: border-right 0.25s, border-top-color 0.25s;
+        }
+
+        &::after {
+            content: "";
+            border-bottom: 180px solid var(--bg-color);
+            border-right: 191px solid transparent;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transition: border-right 0.25s, border-bottom-color 0.25s;
+        }
+
+        .bannerContent {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            min-height: 100%;
+            position: relative;
+            z-index: 3;
+
+            span {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.2;
+                color: var(--text-color);
+            }
+
+            h3 {
+                font-weight: 700;
+                font-size: 34px;
+                color: var(--text-dark);
+                text-transform: uppercase;
+                line-height: 1.4;
+                flex: 1;
+                letter-spacing: 0.01em;
+                min-height: 207px;
+            }
+
+            .btn {
+                padding: 13px 24px 12px;
+                letter-spacing: 0.01em;
+                color: var(--main-color);
+                border: 2px solid var(--main-color);
+                background-color: #fff;
+                width: fit-content;
+
+                &:hover {
+                    background-color: var(--main-color);
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        border-right: 215px solid;
+        opacity: 0.7;
+        border-top: 180px solid transparent;
+        border-bottom: 180px solid transparent;
+    }
+
+    &:hover {
+        &::before {
+            right: 210px;
+        }
+
+        .bannerBackground {
+            &::before {
+                border-right-width: 215px;
+            }
+
+            &::after {
+                border-right-width: 215px;
+            }
+        }
+    }
+}

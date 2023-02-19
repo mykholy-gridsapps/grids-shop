@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import "../../../styles/mixins.scss";
+$sliderOneColor1: var(--text-light);
+$sliderOneColor2: var(--text-dark);
+$sliderOneBadge: #ee8379;
+$sliderTwoColor1: var(--text-light);
+$sliderTwoColor2: var(--text-dark);
+$sliderTwoBadge: #ee8379;
+$sliderBtnBg: var(--bg-alt-color);
+$sliderBg: var(--bg-alt-color);
+
+.slider {
+    padding: 10px;
+    background-color: $sliderBg;
+
+    img {
+        object-fit: cover;
+        max-width: 100%;
+        object-position: center top;
+        min-height: 360px;
+        filter: brightness(0.8);
+
+        @include sm {
+            min-height: 230px;
+        }
+        @include xs {
+            min-height: 200px;
+        }
+    }
+
+    .slide1 {
+        position: relative;
+
+        .bannerLayer {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+
+            .bannerLayerLeft {
+                position: absolute;
+                left: 8.3%;
+                right: auto;
+                display: inline-block;
+
+                @include md {
+                    left: 5%;
+                }
+
+                @include xs {
+                    display: none;
+                }
+
+                h2 {
+                    font-size: 80px;
+                    font-style: italic;
+                    font-weight: 800;
+                    letter-spacing: -2px;
+                    line-height: 68px;
+                    margin-bottom: 0px;
+                    margin-right: 39px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: right;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+                    color: $sliderOneColor1;
+
+                    @include md {
+                        font-size: 60px;
+                        line-height: 60px;
+                    }
+
+                    @include sm {
+                        font-size: 40px;
+                        line-height: 40px;
+                    }
+
+                }
+
+                h1 {
+                    font-size: 84px;
+                    font-weight: 700;
+                    letter-spacing: -3.36px;
+                    line-height: 71.4px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: right !important;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+                    color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 64px;
+                        line-height: 64px;
+                    }
+
+                    @include sm {
+                        font-size: 44px;
+                        line-height: 44px;
+                    }
+                }
+
+                h3 {
+                    font-size: 66px;
+                    font-weight: 700;
+                    letter-spacing: -2.64px;
+                    line-height: 56.1px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: right !important;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+                    color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 46px;
+                        line-height: 50px;
+                    }
+
+                    @include sm {
+                        font-size: 26px;
+                        line-height: 30px;
+                    }
+
+                }
+            }
+
+            .bannerLayerRight {
+                position: absolute;
+                left: auto;
+                right: 8.1%;
+                display: inline-block;
+
+                @include md {
+                    right: 5%;
+                }
+
+                @include xs {
+                    right: 5%;
+                    left: 5%;
+                    text-align: center !important;
+                }
+
+                h4 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    letter-spacing: -0.77px;
+                    line-height: 22px;
+                    margin-bottom: 8px;
+                    margin-top: 0px;
+                    text-align: left;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+
+                    color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 18px;
+                    }
+
+                    @include sm {
+                        font-size: 16px;
+                    }
+
+                    @include xs {
+                        text-align: center !important;
+                    }
+
+                }
+
+                h5 {
+                    font-size: 20px;
+                    font-weight: 400;
+                    letter-spacing: -0.5px;
+                    line-height: 20px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    text-align: left !important;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+
+                    color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 16px;
+                    }
+
+                    @include sm {
+                        font-size: 14px;
+                    }
+
+                    @include xs {
+                        text-align: center !important;
+                    }
+
+
+                    span {
+                        text-decoration: line-through;
+                    }
+                }
+
+                h6 {
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 14px;
+                    margin-bottom: 23px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    margin-top: 16px;
+                    text-align: left;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+
+                    color: $sliderOneColor2;
+
+                    @include xs {
+                        text-align: center !important;
+                    }
+
+                    span {
+                        font-size: 20.3px;
+                        font-weight: 400;
+                        letter-spacing: -0.5075px;
+                        line-height: 20.3px;
+                        margin-right: 11px;
+                        margin-top: 6px;
+                        text-align: left !important;
+
+                        @include md {
+                            font-size: 16px;
+                        }
+
+                        @include sm {
+                            font-size: 14px;
+                        }
+                    }
+
+                    b {
+                        font-size: 52px;
+                        font-weight: 700;
+                        letter-spacing: -1.036px;
+                        line-height: 60.6px;
+                        margin-left: 1px;
+                        margin-right: 12px;
+                        padding-bottom: 2.072px;
+                        padding-left: 16.058px;
+                        padding-right: 16.576px;
+                        position: relative;
+                        text-align: left !important;
+                        color: $sliderOneColor1;
+
+                        @include md {
+                            font-size: 30px;
+                            line-height: 30px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+
+                        @include sm {
+                            font-size: 20px;
+                            line-height: 20px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: $sliderOneBadge;
+                            transform: rotate(-2deg);
+                        }
+
+                        sup {
+                            font-size: 52%;
+                            z-index: 1;
+                            position: relative;
+                        }
+
+                        em {
+                            margin-top: -17px;
+                            z-index: 1;
+                            position: relative;
+                        }
+                    }
+                }
+
+                .btn {
+                    background-color: $sliderOneColor2;
+                    border: 1px solid $sliderOneColor2;
+                    border-radius: 3px;
+                    color: $sliderOneColor1;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: 0.14px;
+                    line-height: 20px;
+                    padding-bottom: 16px;
+                    padding-left: 56px;
+                    padding-right: 56px;
+                    padding-top: 14px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    vertical-align: middle;
+
+                    @include md {
+                        padding-left: 26px;
+                        padding-right: 26px;
+                    }
+
+                    @include sm {
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        padding-left: 16px;
+                        padding-right: 16px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .slide2 {
+        position: relative;
+
+        .bannerLayer {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+
+            .bannerLayerRight {
+                position: absolute;
+                left: auto;
+                right: 10%;
+                display: inline-block;
+                @include md {
+                    right: 5%;
+                }
+
+                @include xs {
+                    display: none;
+                }
+
+                h2 {
+                    font-size: 80px;
+                    font-style: italic;
+                    font-weight: 800;
+                    letter-spacing: -2px;
+                    line-height: 68px;
+                    margin-bottom: 0px;
+                    margin-right: 199px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: right;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+                    color: $sliderOneColor1;
+                    @include md {
+                        font-size: 60px;
+                        line-height: 60px;
+                    }
+
+                    @include sm {
+                        font-size: 40px;
+                        line-height: 40px;
+                    }
+
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+
+                h1 {
+                    font-size: 84px;
+                    font-weight: 700;
+                    letter-spacing: -3.36px;
+                    line-height: 71.4px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: left !important;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+                    color: $sliderOneColor2;
+                    @include md {
+                        font-size: 64px;
+                        line-height: 64px;
+                    }
+
+                    @include sm {
+                        font-size: 44px;
+                        line-height: 44px;
+                    }
+                }
+
+                h3 {
+                    font-size: 66px;
+                    font-weight: 700;
+                    letter-spacing: -2.64px;
+                    line-height: 56.1px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: right !important;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+                    color: $sliderOneColor2;
+                    @include md {
+                        font-size: 46px;
+                        line-height: 50px;
+                    }
+
+                    @include sm {
+                        font-size: 26px;
+                        line-height: 30px;
+                    }
+
+                }
+            }
+
+            .bannerLayerLeft {
+                position: absolute;
+                left: 9%;
+                right: auto;
+                display: inline-block;
+                @include md {
+                    left: 5%;
+                }
+
+                @include xs {
+                    right: 5%;
+                    left: 5%;
+                    text-align: center !important;
+                }
+
+                h4 {
+                    font-size: 22px;
+                    font-weight: 700;
+                    letter-spacing: -0.77px;
+                    line-height: 22px;
+                    margin-bottom: 8px;
+                    margin-top: 0px;
+                    text-align: left;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+
+                    color: $sliderOneColor2;
+                    @include md {
+                        font-size: 18px;
+                    }
+
+                    @include sm {
+                        font-size: 16px;
+                    }
+
+                    @include xs {
+                        text-align: center !important;
+                    }
+
+                }
+
+                h5 {
+                    font-size: 20px;
+                    font-weight: 400;
+                    letter-spacing: -0.5px;
+                    line-height: 20px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    text-align: left !important;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+
+                    color: $sliderOneColor2;
+                    @include md {
+                        font-size: 16px;
+                    }
+
+                    @include sm {
+                        font-size: 14px;
+                    }
+
+                    @include xs {
+                        text-align: center !important;
+                    }
+
+
+                    span {
+                        text-decoration: line-through;
+                    }
+                }
+
+                h6 {
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 14px;
+                    margin-bottom: 23px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    margin-top: 16px;
+                    text-align: left;
+                    text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
+
+                    color: $sliderOneColor2;
+                    @include xs {
+                        text-align: center !important;
+                    }
+
+                    span {
+                        font-size: 20.3px;
+                        font-weight: 400;
+                        letter-spacing: -0.5075px;
+                        line-height: 20.3px;
+                        margin-right: 11px;
+                        margin-top: 6px;
+                        text-align: left !important;
+                        @include md {
+                            font-size: 16px;
+                        }
+
+                        @include sm {
+                            font-size: 14px;
+                        }
+                    }
+
+                    b {
+                        font-size: 52px;
+                        font-weight: 700;
+                        letter-spacing: -1.036px;
+                        line-height: 60.6px;
+                        margin-left: 1px;
+                        margin-right: 12px;
+                        padding-bottom: 2.072px;
+                        padding-left: 16.058px;
+                        padding-right: 16.576px;
+                        position: relative;
+                        text-align: left !important;
+                        color: $sliderOneColor1;
+                        @include md {
+                            font-size: 30px;
+                            line-height: 30px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+
+                        @include sm {
+                            font-size: 20px;
+                            line-height: 20px;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: $sliderOneBadge;
+                            transform: rotate(-2deg);
+                        }
+
+                        sup {
+                            font-size: 52%;
+                            z-index: 1;
+                            position: relative;
+                        }
+
+                        em {
+                            margin-top: -17px;
+                            z-index: 1;
+                            position: relative;
+                        }
+                    }
+                }
+
+                .btn {
+                    background-color: $sliderOneColor2;
+                    border: 1px solid $sliderOneColor2;
+                    border-radius: 3px;
+                    color: $sliderOneColor1;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: 0.14px;
+                    line-height: 20px;
+                    padding-bottom: 16px;
+                    padding-left: 56px;
+                    padding-right: 56px;
+                    padding-top: 14px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    vertical-align: middle;
+                    @include md {
+                        padding-left: 26px;
+                        padding-right: 26px;
+                    }
+
+                    @include sm {
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                        padding-left: 16px;
+                        padding-right: 16px;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    :global(.swiper-button-prev) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor2 !important;
+        left: -10px;
+        display: block;
+        text-align: center !important;
+        background-color: $sliderBtnBg;
+        border-radius: 50%;
+
+        &::after {
+            color: $sliderOneColor2 !important;
+            font-size: 18px !important;
+            top: 10px;
+            position: relative;
+        }
+    }
+
+    :global(.swiper-button-next) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor2 !important;
+        right: -10px;
+        display: block;
+        text-align: center !important;
+        background-color: $sliderBtnBg;
+        border-radius: 50%;
+
+
+        &::after {
+            color: $sliderOneColor2 !important;
+            font-size: 18px !important;
+            top: 10px;
+            position: relative;
+        }
+
+    }
+
+    &.ar {
+        :global(.swiper-button-prev) {
+            left: auto;
+            right: -20px;
+        }
+        :global(.swiper-button-next) {
+            right: auto;
+            left: -20px;
+        }
+    }
+
+
+}

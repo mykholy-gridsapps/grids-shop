@@ -1,0 +1,23 @@
+.widgetTestimonials {
+
+    :global(.swiper-pagination) {
+        margin: 25px 0 0;
+        line-height: 1;
+        text-align: center !important;
+        position: relative;
+
+        :global(.swiper-pagination-bullet) {
+            background: var(--text-color);
+            opacity: 1;
+            position: relative;
+
+            &:hover {
+                background: var(--main-color);
+            }
+
+            &:global(.swiper-pagination-bullet-active) {
+                background: var(--main-color);
+            }
+        }
+    }
+}

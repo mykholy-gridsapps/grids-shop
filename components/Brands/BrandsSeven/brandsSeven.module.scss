@@ -1,0 +1,78 @@
+.brands {
+    background-color: var(--bg-alt-color);
+    padding: 20px 0;
+
+    h2 {
+        margin-bottom: 2px;
+        font-size: 22px;
+        line-height: 1;
+        text-transform: none;
+        color: var(--text-dark);
+    }
+
+    p {
+        margin-bottom: 17px;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.03em;
+    }
+
+    :global(.swiper) {
+        padding: 62px 24px;
+        background-color: var(--bg-color);
+        border-radius: 7px !important;
+
+        :global(.swiper-button-prev) {
+            width: 40px !important;
+            height: 80px !important;
+            border-radius: 3px !important;
+            top: 40% !important;
+            background: var(--bg-color);
+            border: 1px solid var(--main-color);
+            color: var(--main-color) !important;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 26px;
+            position: absolute;
+
+            &:hover {
+                background-color: var(--main-color);
+                color: var(--bg-color) !important;
+            }
+        }
+
+        :global(.swiper-button-next) {
+            width: 40px !important;
+            height: 80px !important;
+            border-radius: 3px !important;
+            top: 40% !important;
+            background: var(--bg-color);
+            border: 1px solid var(--main-color);
+            color: var(--main-color) !important;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 26px;
+            position: absolute;
+
+            &:hover {
+                background-color: var(--main-color);
+                color: var(--bg-color) !important;
+            }
+
+        }
+    }
+
+    .brand {
+
+        &:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 80%;
+            vertical-align: middle;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+    }
+}

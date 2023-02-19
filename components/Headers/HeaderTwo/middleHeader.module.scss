@@ -1,0 +1,68 @@
+@import '../../../styles/mixins.scss';
+
+  .search__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .logo {
+      cursor: pointer;
+      .bigImage {
+        height: 75px;
+        @include md {
+          display: none;
+        }
+      }
+    }
+
+    .navbar__search__searchArea {
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      input {
+        width: 550px;
+        height: 40px;
+        padding: 8px 20px;
+        border: 1px solid #fff;
+        outline: none;
+        font-size: 0.9rem;
+      }
+      button {
+        height: 40px;
+        width: 60px;
+        background-color: var(--secondary-color);
+        text-align: center !important;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+      }
+      @include lg {
+        input {
+          width: 450px;
+        }
+      }
+      &.rounded {
+        border-radius: 20px;
+      }
+    }
+    .support {
+      display: flex;
+      align-items: center;
+      gap: 0px;
+      svg {
+        width: auto !important;
+        height: 80px !important;
+      }
+      h6, span {
+        font-size: 0.9rem;
+      }
+      span {
+        font-size: 0.85rem;
+      }
+    }
+    @include md {
+      display: none;
+    }
+  }

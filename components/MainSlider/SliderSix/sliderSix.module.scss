@@ -1,0 +1,534 @@
+@import url('https://fonts.cdnfonts.com/css/savoye-let');
+@import "../../../styles/mixins.scss";
+$sliderOneColor1: var(--text-dark);
+$sliderOneColor2: var(--text-light);
+$sliderOneColor3: var(--text-light);
+$sliderTwoColor1: var(--text-dark);
+$sliderTwoColor2: #e13b3f;
+$sliderOneBg: #e13b3f;
+$sliderTwoBg: var(--text-dark);
+
+.slider {
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #3f3f3f;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 2;
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+    }
+
+    .slide1 {
+        display: flex;
+        position: relative;
+        min-height: 568.92px;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        @include md {
+            min-height: 400px;
+        }
+
+        @include xs {
+            min-height: 300px;
+        }
+
+        .bannerLayer {
+            position: absolute;
+            right: 0%;
+            bottom: 0%;
+            left: 49%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            font-size: 10px;
+            z-index: 10;
+            text-align: left !important;
+
+            @include lg {
+                left: 38%;
+            }
+
+            @include sm {
+                left: 0%;
+                margin-right: 0;
+            }
+
+
+
+
+            .textContainer {
+                background-color: $sliderOneBg;
+                padding: 0 24px;
+                margin: 0;
+                width: 100%;
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 300;
+                    letter-spacing: 2.88px;
+                    line-height: 18px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: left !important;
+                    text-transform: uppercase;
+                    color: $sliderOneColor3;
+                    opacity: 0.5;
+
+                    @include md {
+                        font-size: 12px;
+                    }
+
+                }
+
+                h3 {
+                    font-size: 43px;
+                    font-weight: 700;
+                    letter-spacing: 1.075px;
+                    line-height: 43px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: left !important;
+                    text-transform: uppercase;
+                    color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 30px;
+                    }
+
+                    @include xs {
+                        font-size: 24px;
+                    }
+                }
+
+                h2 {
+                    font-size: 184px;
+                    letter-spacing: -4.6px;
+                    line-height: 0.72;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    position: relative;
+                    text-align: left;
+                    color: #fff;
+                    top: 3px;
+                    color: $sliderOneColor2;
+                    width: 245px;
+
+                    @include md {
+                        font-size: 130px;
+                        width: 193px;
+                    }
+
+                    @include xs {
+                        font-size: 109px;
+                        width: 150px;
+                    }
+
+                    small {
+                        position: absolute;
+                        font-size: 25.9992px;
+                        font-weight: 700;
+                        letter-spacing: normal;
+                        line-height: 26px;
+                        right: 58px;
+                        text-align: center;
+                        top: 64.4px;
+                        letter-spacing: 0;
+                        line-height: 1;
+                        text-align: center;
+                        transform: translateY(-54%);
+
+                        @include md {
+                            font-size: 22px;
+                            right: 60px;
+                            top: 48px;
+                        }
+
+                        @include xs {
+                            font-size: 18px;
+                            right: 40px;
+                            top: 40px;
+                        }
+
+                        ins {
+                            display: block;
+                            text-decoration: none;
+                            font-size: 50%;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+
+            }
+
+            .btnContainer {
+                text-align: center !important;
+                display: flex;
+                margin-top: 30px;
+                justify-content: flex-end;
+
+                .btn {
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.18px;
+                    line-height: 25.7167px;
+                    padding-bottom: 18px;
+                    padding-left: 63px;
+                    padding-right: 63px;
+                    padding-top: 18px;
+                    text-align: center;
+                    border: 3px solid $sliderOneColor1;
+                    color: $sliderOneColor2;
+                    text-transform: uppercase;
+                    background-color: $sliderOneColor1;
+
+                    @include md {
+                        padding-bottom: 10px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        padding-top: 10px;
+                        font-size: 16px;
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+    .slide2 {
+        display: flex;
+        position: relative;
+        min-height: 568.92px;
+        align-items: flex-end;
+        justify-content: flex-end;
+
+        @include md {
+            min-height: 400px;
+        }
+
+        @include xs {
+            min-height: 300px;
+        }
+
+        .bannerLayer {
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            right: 49%;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            font-size: 10px;
+            z-index: 10;
+            text-align: left !important;
+
+            @include lg {
+                right: 38%;
+            }
+
+            @include sm {
+                right: 0%;
+                margin-left: 0;
+            }
+
+            .textContainer {
+                background-color: $sliderTwoBg;
+                padding: 0 24px;
+                margin: 0;
+                width: 100%;
+
+                h4 {
+                    font-size: 18px;
+                    font-weight: 300;
+                    letter-spacing: 2.88px;
+                    line-height: 18px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: left !important;
+                    text-transform: uppercase;
+                    color: $sliderOneColor3;
+                    opacity: 0.5;
+
+                    @include md {
+                        font-size: 12px;
+                    }
+                }
+
+                h3 {
+                    font-size: 43px;
+                    font-weight: 700;
+                    letter-spacing: 1.075px;
+                    line-height: 43px;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    opacity: 1;
+                    text-align: left !important;
+                    text-transform: uppercase;
+                    color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 30px;
+                    }
+
+                    @include xs {
+                        font-size: 24px;
+                    }
+                }
+
+                h2 {
+                    font-size: 184px;
+                    letter-spacing: -4.6px;
+                    line-height: 0.72;
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                    position: relative;
+                    text-align: left;
+                    color: #fff;
+                    top: 3px;
+                    color: $sliderOneColor2;
+
+                    @include md {
+                        font-size: 130px;
+                        width: 193px;
+                    }
+
+                    @include xs {
+                        font-size: 109px;
+                        width: 150px;
+                    }
+
+
+                    small {
+                        position: absolute;
+                        font-size: 25.9992px;
+                        font-weight: 700;
+                        letter-spacing: normal;
+                        line-height: 26px;
+                        right: 58px;
+                        text-align: center;
+                        top: 64.4px;
+                        letter-spacing: 0;
+                        line-height: 1;
+                        text-align: center;
+                        transform: translateY(-54%);
+
+                        @include md {
+                            font-size: 22px;
+                            right: 60px;
+                            top: 48px;
+                        }
+
+                        @include xs {
+                            font-size: 18px;
+                            right: 40px;
+                            top: 40px;
+                        }
+
+                        ins {
+                            display: block;
+                            text-decoration: none;
+                            font-size: 50%;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+
+            }
+
+            .btnContainer {
+                text-align: center !important;
+                display: flex;
+                margin-top: 30px;
+                justify-content: flex-start;
+
+                .btn {
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.18px;
+                    line-height: 25.7167px;
+                    padding-bottom: 18px;
+                    padding-left: 63px;
+                    padding-right: 63px;
+                    padding-top: 18px;
+                    text-align: center;
+                    border: 3px solid $sliderTwoColor2;
+                    color: $sliderOneColor2;
+                    text-transform: uppercase;
+                    background-color: $sliderTwoColor2;
+
+                    @include md {
+                        padding-bottom: 10px;
+                        padding-left: 40px;
+                        padding-right: 40px;
+                        padding-top: 10px;
+                        font-size: 16px;
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+    :global(.swiper-button-prev) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor1 !important;
+        left: 100px;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            color: $sliderOneColor1 !important;
+            font-size: 1.5rem !important;
+        }
+
+        @include lg {
+            left: 0;
+        }
+    }
+
+    :global(.swiper-button-next) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        color: $sliderOneColor1 !important;
+        right: 100px;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            color: $sliderOneColor1 !important;
+            font-size: 1.5rem !important;
+        }
+
+        @include lg {
+            right: 0;
+        }
+
+    }
+
+    &:hover {
+        :global(.swiper-button-prev) {
+            display: block;
+        }
+
+        :global(.swiper-button-next) {
+            display: block;
+        }
+    }
+
+    &.ar {
+        .slide1 {
+            .bannerLayer {
+                left: 0;
+                right: 49%;
+                margin-left: 20px;
+                text-align: right !important;
+
+                @include lg {
+                    right: 38%;
+                }
+
+                @include sm {
+                    right: 0%;
+                    margin-left: 0;
+                }
+
+                .textContainer {
+                    h4 {
+                        text-align: right !important;
+                    }
+
+                    h3 {
+                        text-align: right !important;
+                    }
+
+                    h2 {
+                        text-align: right !important;
+
+                        small {
+                            right: 44px;
+                            @include md {
+                                right: 28px;
+                            }
+    
+                            @include xs {
+                                right: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .slide2 {
+            .bannerLayer {
+                right: 0;
+                left: 49%;
+                margin-right: 20px;
+                text-align: right !important;
+
+                @include lg {
+                    left: 38%;
+                }
+
+                @include sm {
+                    left: 0%;
+                    margin-right: 0;
+                }
+                .textContainer {
+                    h4 {
+                        text-align: right !important;
+                    }
+
+                    h3 {
+                        text-align: right !important;
+                    }
+
+                    h2 {
+                        text-align: right !important;
+
+                        small {
+                            right: 44px;
+                            @include md {
+                                right: 28px;
+                            }
+    
+                            @include xs {
+                                right: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        :global(.swiper-button-prev) {
+            left: auto;
+            right: 100px;
+            @include lg {
+                right: 0;
+            }
+        }
+        :global(.swiper-button-next) {
+            right: auto;
+            left: 100px;
+            @include lg {
+                left: 0;
+            }
+        }
+    }
+}

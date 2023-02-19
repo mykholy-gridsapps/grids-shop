@@ -1,0 +1,105 @@
+@import '../../../styles/mixins.scss';
+
+.featureBoxesContainer {
+    padding-top: 3px;
+
+    .featureBox {
+        color: var(--text-color);
+        background-color: var(--secondary-background);
+        height: 100%;
+        font-size: 12px;
+        line-height: 2;
+        padding: 0 30px;
+        
+        @include lg {
+            padding: 0;
+        }
+        
+        .featureContent {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            width: 87%;
+            margin: auto;
+            text-align: center !important;
+
+            i {
+                margin-bottom: 17px;
+                color: var(--text-dark);
+                font-size: 35px;
+                line-height: 1;
+                text-align: center !important;
+
+                &::before {
+                    font-family: "porto";
+                    font-style: normal;
+                    font-weight: normal;
+                    speak: none;
+                    display: inline-block;
+                    text-decoration: inherit;
+                    width: 1em;
+                    text-align: center;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                }
+
+                &.iconEarphonesAlt {
+
+                    &::before {
+                        content: "";
+                    }
+                }
+
+                &.iconCreditCard {
+
+                    &::before {
+                        content: "";
+                    }
+                }
+
+                &.iconActionUndo {
+                    &::before {
+                        content: "";
+
+                    }
+                }
+            }
+
+            .featureBoxContent {
+                color: #7b858a;
+                font-size: 15px;
+                line-height: 1.9;
+                padding-left: 10px;
+                padding-right: 10px;
+
+                h3 {
+                    color: var(--text-dark);
+                    margin: 0 0 2.5px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    line-height: 1.1;
+                    letter-spacing: 0;
+                    text-align: center !important;
+                }
+
+                h5 {
+                    color: #979797;
+                    font-size: 14px;
+                    font-weight: 500;
+                    margin: 0 0 14px;
+                    text-align: center !important;
+                }
+
+                p {
+                    margin: 0;
+                    font-size: 13px;
+                    text-align: center !important;
+                }
+            }
+        }
+
+    }
+}

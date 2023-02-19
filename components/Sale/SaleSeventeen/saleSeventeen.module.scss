@@ -1,0 +1,91 @@
+@import url('https://fonts.cdnfonts.com/css/savoye-let');
+
+.banner {
+    position: relative;
+
+    img {
+        min-height: 213px;
+        object-fit: cover;
+        width: 100%;
+        height: 232.533px;
+        max-height: 1296px;
+        max-width: 100%;
+        min-height: 232.177px
+    }
+
+    .bannerLayer {
+        padding-left: 3px;
+        padding-bottom: 2px;
+        left: 5%;
+        right: 42%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        -ms-flex-pack: justify !important;
+        justify-content: space-between !important;
+        -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+
+        .bannerLayerLeft {
+            h2 {
+                margin-bottom: 8px;
+                font-size: 25px;
+                font-weight: 400;
+                opacity: 0.7;
+                font-family: "Savoye LET";
+                line-height: 1;
+                color: #fff;
+                text-align: start !important;
+            }
+
+            h4 {
+                font-size: 38px;
+                font-weight: 500;
+                line-height: 1;
+                color: #fff;
+                text-align: start !important;
+            }
+        }
+
+        .bannerLayerRight {
+            margin: 2px -4px 0 0;
+
+            h3 {
+                font-size: 105px;
+                line-height: 1;
+                color: #fff;
+
+                small {
+                    width: 29px;
+                    word-break: break-all;
+                    font-size: 27%;
+                    text-align: center !important;
+                    display: inline-block !important;
+                }
+            }
+        }
+    }
+
+
+    .btn {
+        cursor: pointer;
+        margin-right: -1px;
+        padding: 0 0 2px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: var(--text-dark);
+
+        i {
+            padding-left: 11px;
+        }
+
+        &:hover {
+            color: #4d4f53;
+        }
+    }
+}

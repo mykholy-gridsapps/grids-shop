@@ -1,0 +1,73 @@
+@import '../../../styles/mixins.scss';
+
+.middleHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  position: relative;
+  .logo {
+    cursor: pointer;
+    .bigImage {
+      height: 75px;
+      @include md {
+        display: none;
+      }
+    }
+  }
+  .links {
+    ul {
+      display: flex;
+      gap: 20px;
+      li {
+        font-size: 0.95rem;
+        font-weight: 600;
+        height: 80px;
+        line-height: 80px;
+        cursor: pointer;
+        i {
+          font-size: 0.7rem;
+        }
+        &.active {
+          a {
+            color: var(--secondary-color);
+          }
+        }
+        &:hover {
+          a {
+            color: var(--secondary-color)
+          }
+        }
+        
+        @keyframes show {
+          0% {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0px);
+          }
+        }
+      }
+    }
+  }
+  .support {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    svg {
+      width: auto !important;
+      height: 80px !important;
+    }
+    h6, span {
+      font-size: 0.9rem;
+    }
+    span {
+      font-size: 0.85rem;
+    }
+  }
+  @include md {
+    display: none;
+  }
+}

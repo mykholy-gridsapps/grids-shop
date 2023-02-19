@@ -1,0 +1,184 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CPoppins:300,400,500,600,700,800%7COswald:300,400,500,600,700,800%7CPlayfair+Display:900%7CShadows+Into+Light:400");
+
+.footerMiddle {
+    padding-top: 66px;
+    padding-bottom: 15px;
+
+    .footerRibbon {
+        position: absolute;
+        top: 0;
+        margin: -16px 0 0;
+        padding: 10px 20px 6px;
+        color: #fff;
+        font-size: 21px;
+        z-index: 101;
+        background-color: #0088cc;
+        font-family: "Shadows Into Light", sans-serif;
+        font-weight: 400;
+
+        &::before {
+            content: "";
+            display: block;
+            height: 0;
+            position: absolute;
+            top: 0;
+            width: 7px;
+            right: 100%;
+            border-right: 10px solid #005580;
+            border-top: 16px solid transparent;
+        }
+    }
+
+    .widget {
+        margin-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .widgetTitle {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 600;
+            font-family: Poppins, sans-serif;
+            text-transform: uppercase;
+            margin: 0 0 13px;
+        }
+
+        .logoFooter {
+            margin-top: 16px;
+            margin-bottom: 17px;
+            max-width: 101px;
+        }
+
+        .readMore {
+            font-weight: 700;
+            text-decoration: underline;
+            color: #fff !important;
+        }
+
+        .contactInfo {
+            li {
+                position: relative;
+                margin-bottom: 10px;
+                line-height: 1.4;
+                margin-top: 11px;
+
+                .contactInfoLabel {
+                    display: block;
+                    color: #fff;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .socialIcon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            opacity: 1;
+            margin-left: 2px;
+            line-height: 38px;
+            border: 1px solid transparent;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+
+            &:not(:hover):not(:active):not(:focus) {
+                background-color: transparent;
+                border-color: #313438;
+                color: #fff;
+            }
+
+            &::before,
+            [class^="icon-"]::before {
+                font-family: "porto";
+                font-style: normal;
+                font-weight: normal;
+                speak: none;
+                display: inline-block;
+                text-decoration: inherit;
+                width: 1em;
+                text-align: center;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+                opacity: 0.85;
+            }
+        }
+
+        .iconFacebook {
+            &::before {
+                content: "";
+            }
+
+            &:hover {
+                background-color: #3b5a9a;
+            }
+        }
+
+        .iconTwitter {
+            &::before {
+                content: "";
+            }
+
+            &:hover {
+                background-color: #1aa9e1;
+            }
+        }
+
+        .iconLinkedin {
+
+            &::before,
+            [class^="icon-"]::before {
+                content: "\f0e1";
+                font-family: "Font Awesome 6 Brands";
+                moz-osx-font-smoothing: grayscale;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                line-height: 1;
+            }
+
+            &:hover {
+                background-color: #0073b2;
+            }
+
+        }
+
+        .tagcloud {
+            padding-top: 2px;
+
+            a {
+                padding: 7.04px 6.6px 6.16px;
+                margin: 0 6.6px 6.16px 0;
+                border: 1px solid #313438;
+                color: inherit;
+                font-size: 11px;
+                background: transparent;
+                border-radius: 0;
+                font-weight: 400;
+                text-transform: capitalize;
+                display: inline-block;
+                line-height: 1;
+
+                &:hover {
+                    border-color: #fff;
+                    color: #fff;
+                    background: transparent;
+                }
+            }
+        }
+
+    }
+}

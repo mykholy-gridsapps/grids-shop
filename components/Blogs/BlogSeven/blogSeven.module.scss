@@ -1,0 +1,112 @@
+.post {
+    padding-bottom: 20px;
+
+    .postMedia {
+        margin-bottom: 19px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 0;
+
+
+        img {
+            transition: transform 0.2s;
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+
+        .prodFullScreen {
+            display: flex;
+            width: 30px;
+            height: 30px;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--main-color);
+            color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            transition: all 0.5s;
+            outline: none;
+            opacity: 0;
+            z-index: 1;
+            right: 5px;
+            bottom: 5px;
+            cursor: pointer;
+            &.ar {
+                left: 5px;
+                right: auto;
+            }
+        }
+
+        &:hover {
+            .prodFullScreen {
+                opacity: 1;
+            }
+        }
+    }
+
+    .postBody {
+        margin-left: 0;
+        padding-bottom: 20px;
+        border: 0;
+        line-height: 24px;
+
+        .categoryList {
+            color: var(--main-color);
+            font-size: 10px;
+            letter-spacing: 0.005em;
+            line-height: 22px;
+            text-transform: uppercase;
+        }
+
+
+        h2 {
+            margin-top: 2px;
+            margin-bottom: 2pxpx;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.1;
+            color: var(--text-dark);
+
+            a {
+                color: var(--text-dark);
+            }
+        }
+
+        .postContent {
+            font-size: 13px;
+
+            p {
+                margin-bottom: 10px;
+                font-size: 14px;
+                letter-spacing: -0.025em;
+                line-height: 22px;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                float: none;
+                color: var(--text-dark);
+                font-size: 12px;
+                font-weight: 600;
+
+                i {
+                    margin-left: 2px;
+                    font-size: 9px;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &:hover img {
+        transform: scale(1.1, 1.1);
+    }
+
+}

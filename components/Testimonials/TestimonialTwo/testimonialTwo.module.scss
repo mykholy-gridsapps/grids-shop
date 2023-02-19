@@ -1,0 +1,82 @@
+.testimonial {
+    padding: 24px 0 33px 20px;
+    background-color: var(--bg-color);
+
+    .testimonialOwner {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-content: center;
+
+        figure {
+            margin-bottom: 13px;
+            max-width: 55px;
+            margin-right: 12px;
+
+            img {
+                display: block;
+                width: 100%;
+                border-radius: 50%;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .content {
+            padding-top: 8px;
+
+            .ratings {
+                position: relative;
+                display: inline-block;
+                font-size: 11px;
+                color: var(--text-color)
+            }
+
+            h4 {
+                text-transform: none;
+                font-size: 15px;
+                line-height: 1;
+                display: block;
+                margin-bottom: 0.5rem;
+                color: var(--text-dark);
+                font-weight: 400;
+            }
+            blockquote {
+                margin: 0 0 5px;
+                padding: 10px 0 10px 28px;
+                position: relative;
+        
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    font-size: 20px;
+                    content: "\e842";
+                    font-family: "porto";
+                    font-style: normal;
+                    font-weight: normal;
+                    text-align: center;
+                    font-feature-settings: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    -moz-osx-font-smoothing: grayscale;
+                    color: var(--text-dark);
+                }
+        
+                p {
+                    font-size: 13px;
+                    color: var(--text-color);
+                    letter-spacing: 0;
+                    line-height: 24px;
+                    margin: 0;
+                }
+            }
+            h5 {
+                font-size: 13px;
+                margin-left: 28px;
+                color: var(--text-dark);
+            }
+        }
+    }
+}

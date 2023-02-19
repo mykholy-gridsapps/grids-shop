@@ -1,0 +1,22 @@
+@import "../../../styles/mixins.scss";
+
+.footer {
+  font-size: 13px;
+  color: #a8a8a8;
+  line-height: 24px;
+  letter-spacing: 0.05px;
+  &.positionRelative {
+    position: relative !important;
+  }
+  p {
+    line-height: 24px;
+  }
+  a {
+    &:hover {
+      color: var(--hover-color);
+    }
+  }
+  @include sm {
+    padding-bottom: 80px;
+  }
+}

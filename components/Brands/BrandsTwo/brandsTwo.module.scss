@@ -1,0 +1,16 @@
+.brands {
+    h2 {
+        margin-bottom: 24px;
+        font-size: 22px;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        text-transform: none;
+        text-align: center !important;
+        color: var(--text-dark);
+    }
+
+    .brand {
+        padding: 12.8% 25%;
+        background: var(--bg-alt-color);
+    }
+}

@@ -1,0 +1,146 @@
+.sale {
+    .banner {
+        transition: box-shadow 0.3s;
+        position: relative;
+        font-size: 16px;
+
+        &:hover {
+            box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .bannerLayerTop {
+            top: 7.5%;
+            position: absolute;
+            left: 6%;
+            right: 6%;
+
+            h3 {
+                margin-top: 0;
+                margin-bottom: 6px;
+                font-size: 22px;
+                line-height: 1;
+                color: var(--text-dark);
+            }
+
+            h4 {
+                display: flex;
+                font-size: 16px;
+                line-height: 1;
+                margin-top: 0;
+                margin-bottom: 18px;
+                color: var(--text-dark);
+
+                del {
+                    display: block;
+                    margin-top: 1px;
+                    font-size: 21px;
+                }
+
+                strong {
+                    font-size: 28px;
+                    font-weight: 800;
+                    color: var(--main-color);
+                }
+            }
+        }
+
+        .bannerLayerBottom {
+            right: 5%;
+            left: 5%;
+            bottom: 5%;
+            position: absolute;
+
+            .btn {
+                padding: 14px 30px;
+                background-color: var(--text-dark);
+                border-color: var(--text-dark);
+                color: #fff;
+            }
+
+            img {
+                margin-right: 5px;
+                margin-bottom: 5px;
+                display: block;
+                margin-left: 100%;
+                transform: rotate(270deg);
+                object-fit: cover;
+                transform-origin: bottom left;
+                width: auto !important;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .banner2 {
+        h3 {
+            text-align: center !important;
+        }
+
+        .bannerLayerCircle {
+            top: 50%;
+            left: 45%;
+            right: auto;
+            transform: translate(50%, -50%);
+            position: absolute;
+
+            h4 {
+                font-size: 42px;
+                display: flex;
+                line-height: 1;
+                display: flex;
+                display: -ms-flexbox;
+                align-items: center;
+                -ms-flex-align: center;
+                justify-content: center;
+                -ms-flex-pack: center;
+                margin-bottom: 12px;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                color: #fff;
+                background-color: var(--main-color);
+            }
+        }
+        .bannerLayerBottom {
+            text-align: center !important;
+        }
+    }
+    .banner3 {
+        .bannerLayerTop {
+            h3 {
+                text-align: right !important;
+            }
+            h4 {
+                justify-content: end;
+            }
+        }
+        .bannerLayerBottom {
+            text-align: right !important;
+        }
+        .bannerLeft {
+            right: auto;
+            img {
+                margin-right: 5px;
+                margin-bottom: 5px;
+                display: block;
+                margin-left: 5px;
+                transform: rotate(270deg);
+                object-fit: cover;
+                transform-origin: bottom left;
+                width: auto !important;
+                max-width: 100%;
+                height: auto;
+            }
+
+        }
+    }
+}

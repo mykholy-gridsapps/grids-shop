@@ -1,0 +1,139 @@
+.post {
+    padding-bottom: 20px;
+    .postMedia {
+        margin-bottom: 19px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 0;
+
+
+        img {
+            transition: transform 0.2s;
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .postDate {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 45px;
+            padding: 10px 8px 8px;
+            color: var(--text-light);
+            background: var(--text-dark);
+            text-align: center !important;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            &.ar {
+                right: 10px;
+                left: auto;
+            }
+
+            .day {
+                display: block;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 1;
+                text-align: center !important;
+
+            }
+
+            .month {
+                display: block;
+                font-size: 12px;
+                line-height: 1;
+                opacity: 0.6;
+                text-align: center !important;
+
+            }
+        }
+
+        .prodFullScreen {
+            display: flex;
+            width: 30px;
+            height: 30px;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--main-color);
+            color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            transition: all 0.5s;
+            outline: none;
+            opacity: 0;
+            z-index: 1;
+            right: 5px;
+            bottom: 5px;
+            cursor: pointer;
+            &.ar {
+                right: auto;
+                left: 5px;
+            }
+        }
+
+        &:hover {
+            .prodFullScreen {
+                opacity: 1;
+            }
+        }
+    }
+
+    .postBody {
+        margin-left: 0;
+        padding-bottom: 20px;
+        border: 0;
+        line-height: 24px;
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 7px;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 1.35;
+            color: var(--text-dark);
+
+            a {
+                color: var(--text-dark);
+            }
+        }
+
+        .postContent {
+            font-size: 13px;
+
+            p {
+                line-height: 24px;
+                letter-spacing: 0.01em;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                float: none;
+                color: var(--text-dark);
+                font-size: 12px;
+                font-weight: 600;
+
+                i {
+                    margin-left: 2px;
+                    font-size: 9px;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+                &.ar {
+                    i {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+
+    &:hover img {
+        transform: scale(1.1, 1.1);
+    }
+
+}
