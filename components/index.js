@@ -55,3 +55,6 @@ export {default as SliderNine} from './MainSlider/SliderNine/SliderNine'
 export {default as SliderTen} from './MainSlider/SliderTen/SliderTen'
 export {default as SliderEleven} from './MainSlider/SliderEleven/SliderEleven'
 export {default as SliderTwelve} from './MainSlider/SliderTwelve/SliderTwelve'
+
+// HOME PAGE TEMPLATES
+export { default as TemplateOne } from './HomeTemplates/TemplateOne/TemplateOne';
