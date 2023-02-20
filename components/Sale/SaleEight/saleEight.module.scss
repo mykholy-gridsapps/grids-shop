@@ -1,4 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
+@import "../../../styles/mixins.scss";
+
 .banner {
     position: relative;
     font-size: 16px;
@@ -6,6 +8,22 @@
     align-items: center !important;
     display: -ms-flexbox !important;
     display: flex !important;
+
+    &.ar {
+        img {
+            transform: rotateY(180deg);
+        }
+        .bannerLayer {
+            left: 6%;
+            right: 6.4%;
+            text-align: right !important;
+
+            h4 {
+                text-align: right !important;
+
+            }
+        }
+    }
 
     figure {
         margin: 0;
@@ -37,6 +55,10 @@
             color: var(--text-dark);
             line-height: 1;
             margin: 0 0 8px;
+
+            @include xs {
+                font-size: 20px;
+            }
         }
 
         h4 {
@@ -45,16 +67,25 @@
             line-height: 1;
             text-align: left !important;
             color: var(--text-dark);
+
+            @include xs {
+                font-size: 30px;
+                margin-top: 0;
+            }
         }
 
 
         a {
             background-color: var(--text-dark);
             border-color: var(--text-dark);
-            color: #fff;
+            color: var(--text-light);
             font-size: 12px;
-            padding: 12px 25px;
             font-weight: 600;
+            padding: 12px 25px;
+
+            @include xs {
+                padding: 5px 10px;
+            }
         }
     }
 }

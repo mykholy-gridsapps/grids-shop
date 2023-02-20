@@ -279,13 +279,13 @@
 
 
     .ratingsContainer {
-        margin-left: 0;
-        line-height: 1;
-        margin: 0 0 12px 0;
-        cursor: pointer;
-        position: relative;
-        display: inline-block;
-        font-size: 11px;
+        span {
+
+            font-size: 16px;
+            span {
+                color: var(--text-color);
+            }
+        }
     }
 
     .priceBox {
@@ -353,6 +353,35 @@
             }
         }
 
+    }
+    &.ar {
+        figure {
+            &.imgEffect {
+                a {
+                    &:first-child::after {
+                        right: 0;
+                        left: auto;
+                    }
+                }
+            }
+            .labelGroup {
+                right: 0.8rem;
+                left: auto;
+            }
+            
+        }
+        .productDetails {
+            .productAction {
+                .btnAddCart {
+                    
+                    i {
+                        &::before {
+                            margin: 0 0 0 4px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 

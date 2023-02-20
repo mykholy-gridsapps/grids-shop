@@ -279,13 +279,14 @@
     }
 
     .ratingsContainer {
-        margin-left: 0;
-        line-height: 1;
-        margin: 0 0 12px 0;
-        cursor: pointer;
-        position: relative;
-        display: inline-block;
-        font-size: 11px;
+        span {
+
+            font-size: 16px;
+
+            span {
+                color: var(--text-color);
+            }
+        }
     }
 
     .priceBox {
@@ -316,9 +317,9 @@
         vertical-align: top;
         cursor: pointer;
         transition: all 0.25s ease;
-        border: 1px solid #ddd;
+        border: 1px solid var(--border-color);
         color: var(--text-dark);
-        background: #f4f4f4;
+        background: var(--bg-alt-color);
         margin: 0 0 10px 5px;
 
         &:hover {
@@ -376,7 +377,7 @@
                 display: flex;
                 color: var(--text-dark);
                 text-align: center;
-                border: 1px solid #dae2e6;
+                border: 1px solid var(--border-color);
                 border-left: none;
 
                 button {
@@ -385,9 +386,7 @@
                     border: none;
                     width: 28px;
                     text-align: center !important;
-                    &:hover {
-                        color: var(--main-color);
-                    }
+
                 }
 
             }
@@ -398,7 +397,7 @@
                 display: flex;
                 color: var(--text-dark);
                 text-align: center;
-                border: 1px solid #dae2e6;
+                border: 1px solid var(--border-color);
 
                 button {
                     appearance: none;
@@ -406,9 +405,7 @@
                     border: none;
                     width: 28px;
                     text-align: center !important;
-                    &:hover {
-                        color: var(--main-color);
-                    }
+
                 }
             }
 
@@ -420,8 +417,56 @@
                 font-size: 14px;
                 text-align: center;
                 transition: all 0.3s;
-                border: 1px solid #dae2e6;
+                border: 1px solid var(--border-color);
                 text-align: center !important;
+                background-color: var(--bg-alt-color);
+            }
+        }
+    }
+
+    &.ar {
+        figure {
+            &.imgEffect {
+                a {
+                    &:first-child::after {
+                        right: 0;
+                        left: auto;
+                    }
+                }
+            }
+
+            .labelGroup {
+                right: 0.8rem;
+                left: auto;
+            }
+
+
+        }
+
+        .btnAddCart {
+            margin: 0 10px 5px 0;
+
+            i {
+                &::before {
+                    margin: 0 0 0 4px;
+                }
+            }
+        }
+
+        .productSingleQty {
+            .inputGroup {
+                .inputGroupPrepend {
+                    margin-right: 0;
+                    margin-left: -1px;
+                    border-right: none;
+                    border-left: 1px solid var(--border-color);
+
+                }
+
+                .inputGroupAppend {
+                    margin-left: -1px;
+                    margin-right: 0;
+                }
             }
         }
     }

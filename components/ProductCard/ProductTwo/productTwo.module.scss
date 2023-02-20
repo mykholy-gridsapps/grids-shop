@@ -274,13 +274,13 @@
     }
 
     .ratingsContainer {
-        margin-left: 0;
-        line-height: 1;
-        margin: 0 0 12px 0;
-        cursor: pointer;
-        position: relative;
-        display: inline-block;
-        font-size: 11px;
+        span {
+
+            font-size: 16px;
+            span {
+                color: var(--text-color);
+            }
+        }
     }
 
     .priceBox {
@@ -301,6 +301,37 @@
             line-height: 1;
         }
     }
+    &.ar {
+        figure {
+            &.imgEffect {
+                a {
+                    &:first-child::after {
+                        right: 0;
+                        left: auto;
+                    }
+                }
+            }
+            
 
+            .labelGroup {
+                left: auto;
+                right: 0.8rem;
+            }
+
+            .btnIconGroup {
+                right: auto;
+                left: 15px;
+
+            }
+
+            .btnQuickview {
+                left: auto;
+                right: 0;
+            }
+        }
+
+
+        
+    }
 
 }

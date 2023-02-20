@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
+import { i18n, useTranslation } from 'next-i18next'
+
 import cls from './productSix.module.scss'
+import Link from 'next/link'
+import { Rating } from '@mui/material'
 
 const ProductSix = () => {
     const [quantity, setQuantity] = useState(1)
@@ -13,38 +17,35 @@ const ProductSix = () => {
         }
     }
     return (
-        <div className={[cls.productDefault, cls.innerQuickview, cls.innerIcon].join(' ')}>
+        <div className={`${cls.productDefault} ${cls.innerQuickview} ${cls.innerIcon} ${cls[i18n.language]}`}>
             <figure className={cls.imgEffect}>
-                <a href="demo1-product.html">
+                <Link href="demo1-product.html">
                     <img src="./imgs/product-1.jpg" width="205" height="205"
                         alt="product" />
                     <img src="./imgs/product-1-2.jpg" width="205" height="205"
                         alt="product" />
-                </a>
+                </Link>
                 <div className={cls.labelGroup}>
                     <div className={[cls.productLabel, cls.labelHot].join(' ')}>HOT</div>
                     <div className={[cls.productLabel, cls.labelSale].join(' ')}>-20%</div>
                 </div>
                 <div className={cls.btnIconGroup}>
-                    <a href="wishlist.html" title="Add to Wishlist" className={cls.btnIconWish}>
+                    <Link href="wishlist.html" title="Add to Wishlist" className={cls.btnIconWish}>
                         <i className={cls.iconHeart}></i>
-                    </a>
+                    </Link>
                 </div>
-                <a href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">Quick View</a>
+                <Link href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">Quick View</Link>
             </figure>
             <div className={cls.productDetails}>
                 <div className={cls.categoryList}>
-                    <a href="category.html">Category</a>
+                    <Link href="category.html">Category</Link>
                 </div>
                 <h3 className={cls.productTitle}>
-                    <a href="product.html">Men Black Gentle Belt</a>
+                    <Link href="product.html">Men Black Gentle Belt</Link>
                 </h3>
                 <div className={cls.ratingsContainer}>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-solid fa-star"></i>
-                    <i className="fa-regular fa-star"></i>
-                    <i className="fa-regular fa-star"></i>
+                <Rating name="read-only" value={3} readOnly />
+
                 </div>
                 <div className={cls.priceBox}>
                     <span className={cls.oldPrice}>$59.00</span>
@@ -62,8 +63,8 @@ const ProductSix = () => {
                             </span>
                         </div>
                     </div>
-                    <a href="demo14-product.html" className={cls.btnAddCart}>
-                        <i className="icon-shopping-cart"></i>ADD TO CART</a>
+                    <Link href="demo14-product.html" className={cls.btnAddCart}>
+                        <i className="icon-shopping-cart"></i>ADD TO CART</Link>
                 </div>
             </div>
         </div>

@@ -80,6 +80,21 @@ import {
   NewsletterEight,
   NewsletterNine,
   NewsletterTen,
+  NewsletterEleven,
+  NewsletterTwelve,
+  NewsletterThirteen,
+  NewsletterFourteen,
+  NewsletterFifteen,
+  ProductEight,
+  ProductFive,
+  ProductFour,
+  ProductOne,
+  ProductSeven,
+  ProductSix,
+  ProductThree,
+  ProductTwo,
+  SaleEight,
+  SaleEighteen,
   CategoriesSideOne} from "../components";
 
 
@@ -89,9 +104,8 @@ const Home = () => {
   return (
     <Container maxWidth='xl'>
       <Grid container >
-        <Grid item xs={3}>
-
-          <CategoriesSideOne />
+        <Grid item xs={12}>
+          <SaleEighteen />
         </Grid>
       </Grid>
     </Container>

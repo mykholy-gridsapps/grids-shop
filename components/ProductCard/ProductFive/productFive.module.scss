@@ -65,7 +65,7 @@
                 margin-bottom: 5px;
                 text-transform: uppercase;
                 padding: 5px 11px;
-                color: #fff;
+                color: var(--text-light);
                 font-weight: 600;
                 font-size: 10px;
                 line-height: 1;
@@ -91,7 +91,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                border: 1px solid #ddd;
+                border: 1px solid var(--border-color);
                 border-radius: 50%;
                 margin: 0 0 5px;
                 width: 36px;
@@ -111,7 +111,7 @@
             left: 0;
             width: 100%;
             height: auto;
-            color: #fff;
+            color: var(--text-light);
             background-color: var(--main-color);
             font-size: 13px;
             font-weight: 400;
@@ -128,7 +128,7 @@
             text-align: center !important;
 
             &:hover {
-                color: #fff;
+                color: var(--text-light);
                 opacity: 1 !important;
             }
         }
@@ -195,9 +195,9 @@
                 text-align: center !important;
                 opacity: 0;
                 transition: all 0.25s ease;
-                border: 1px solid #f4f4f4;
-                background: #f4f4f4;
-                color: #6f6e6b;
+                border: 1px solid var(--bg-alt-color);
+                background: var(--bg-alt-color);
+                color: var(--text-color);
                 line-height: 34px;
                 left: 0;
 
@@ -230,9 +230,9 @@
                 text-align: center !important;
                 opacity: 0;
                 transition: all 0.25s ease;
-                border: 1px solid #f4f4f4;
-                background: #f4f4f4;
-                color: #6f6e6b;
+                border: 1px solid var(--bg-alt-color);
+                background: var(--bg-alt-color);
+                color: var(--text-color);
                 line-height: 34px;
                 right: 0;
             }
@@ -246,9 +246,9 @@
                 vertical-align: top;
                 cursor: pointer;
                 transition: all 0.25s ease;
-                border: 1px solid #f4f4f4;
-                background: #f4f4f4;
-                color: #6f6e6b;
+                border: 1px solid var(--bg-alt-color);
+                background: var(--bg-alt-color);
+                color: var(--text-color);
                 line-height: 34px;
 
                 i {
@@ -279,13 +279,14 @@
 
 
     .ratingsContainer {
-        margin-left: 0;
-        line-height: 1;
-        margin: 0 0 12px 0;
-        cursor: pointer;
-        position: relative;
-        display: inline-block;
-        font-size: 11px;
+        span {
+
+            font-size: 16px;
+
+            span {
+                color: var(--text-color);
+            }
+        }
     }
 
     .priceBox {
@@ -346,6 +347,64 @@
                 .btnQuickview {
                     right: -40px;
                     opacity: 1;
+                }
+            }
+        }
+    }
+    &.ar {
+        figure {
+            &.imgEffect {
+                a {
+                    &:first-child::after {
+                        right: 0;
+                        left: auto;
+                    }
+                }
+            }
+            .labelGroup {
+                right: 0.8rem;
+                left: auto;
+            }  
+            .btnIconGroup {
+                left: 1.5rem;
+                right: auto;
+            }  
+        }
+        .productDetails {
+            .productAction {
+                .btnIconWish {
+                    right: 0;
+                    left: auto;
+                }
+                .btnQuickview {
+                    right: auto;
+                    left: 0;
+                }
+                .btnAddCart {
+                    i {
+                        &::before {
+                            margin: 0 0 0 4px;
+                        }
+                    }
+                }
+            }
+        }
+        .priceBox {
+            margin-left: 3px;
+            margin-right: 0;
+        }
+        &:hover {
+            .productDetails {
+                .productAction {
+    
+                    .btnIconWish {
+                        right: -40px;
+                        left: auto;
+                    }
+                    .btnQuickview {
+                        left: -40px;
+                        right: auto;
+                    }
                 }
             }
         }

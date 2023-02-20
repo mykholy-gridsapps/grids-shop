@@ -83,7 +83,7 @@
                 width: 100%;
                 outline: none;
             }
-    
+            
             button {
                 height: 48px;
                 padding: 0 35px 3px 35px;
@@ -95,9 +95,15 @@
                 font-weight: 700;
                 min-width: 135px;
                 cursor: pointer;
+                @include xs {
+                    padding: 0 10px 3px 10px;
+                    min-width: 70px;
+                    font-size: 12px;
+                    
+                }
             }
         }
-    
+        
         .socialIcons {
             text-align: center !important;
             .socialIcon {
@@ -109,22 +115,22 @@
                 font-size: 14px;
                 line-height: 30px;
                 text-align: center !important;
-        
+                
                 +.socialIcon {
                     margin-left: 28px;
                 }
-        
+                
                 &:hover {
                     color: var(--bg-color);
-        
+                    
                     &.socialFacebook {
                         background-color: #3b5a9a;
                     }
-        
+                    
                     &.socialTwitter {
                         background-color: #1aa9e1;
                     }
-        
+                    
                     &.socialLinked {
                         background-color: #0073b2;
                     }
@@ -132,6 +138,34 @@
             }
         }
     }
+    &.ar {
+        .container {
+            .leftSec {
+                .text {
+                    i {
+                        margin: 0 0 0 15px;
+                    }
+                }
+            }
+            form {
+                input {
+                border-radius: 0 24px 24px 0;
+                    
+                }
+                button {
+                    border-radius: 24px 0 0 24px;
 
+                }
+            }
+            .socialIcons {
+                .socialIcon {
+                    +.socialIcon {
+                        margin-right: 28px;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
 
 }

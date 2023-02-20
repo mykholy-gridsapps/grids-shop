@@ -1,12 +1,15 @@
 import { Grid } from "@mui/material";
 import { Container } from "@mui/system";
+import { i18n, useTranslation } from "next-i18next";
 import React from "react";
+
 import cls from "./newsletterTen.module.scss";
 
 
 const NewsletterTen = () => {
+    const { t, i18n } = useTranslation("common");
     return (
-        <div className={cls.newsletterBanner}>
+        <div className={`${cls.newsletterBanner} ${cls[i18n.language]}`}>
             <Container maxWidth='xl' >
                 <Grid container className={cls.container} justifyContent='center' alignItems="center">
                     <Grid item className={cls.leftSec} md={9}>
