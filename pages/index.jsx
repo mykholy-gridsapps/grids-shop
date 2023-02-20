@@ -12,6 +12,7 @@ import { Grid } from "@mui/material";
 import Link from "next/link";
 
 import {
+  TemplateOne,
   BlogOneCarousel,
   BlogTwoCarousel,
   BlogThree,
@@ -102,13 +103,9 @@ const Home = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
-    <Container maxWidth='xl'>
-      <Grid container >
-        <Grid item xs={12}>
-          <SaleEighteen />
-        </Grid>
-      </Grid>
-    </Container>
+    <>
+      <TemplateOne />
+    </>
   );
 };
 

@@ -11,13 +11,13 @@ const CategoriesSideOne = () => {
 
             <div className={cls.body}>
                 <ul className={cls.sideMenu}>
-                    <li><Link href="demo2-shop.html"><i class="far fa-tshirt"></i>Fashion</Link></li>
-                    <li><Link href="demo2-shop.html"><i class="far fa-tachometer-alt-slow"></i>Electronics</Link></li>
-                    <li><Link href="demo2-shop.html"><i class="far fa-gift"></i>Gifts</Link></li>
-                    <li><Link href="demo2-shop.html"><i class="far fa-flower-tulip"></i>Home &amp;
+                    <li><Link href="demo2-shop.html"><i className="far fa-tshirt"></i>Fashion</Link></li>
+                    <li><Link href="demo2-shop.html"><i className="far fa-tachometer-alt-slow"></i>Electronics</Link></li>
+                    <li><Link href="demo2-shop.html"><i className="far fa-gift"></i>Gifts</Link></li>
+                    <li><Link href="demo2-shop.html"><i className="far fa-flower-tulip"></i>Home &amp;
                         Garden</Link></li>
-                    <li><Link href="demo2-shop.html"><i class="far fa-microphone-alt"></i>Music</Link></li>
-                    <li><Link href="demo2-shop.html"><i class="far fa-racquet"></i>Sports</Link></li>
+                    <li><Link href="demo2-shop.html"><i className="far fa-microphone-alt"></i>Music</Link></li>
+                    <li><Link href="demo2-shop.html"><i className="far fa-racquet"></i>Sports</Link></li>
                 </ul>
 
                 <Link href="#" className={cls.btn}>Huge Sale -

@@ -40,7 +40,7 @@ const SliderFour = () => {
                             <img src="./imgs/slider/slider-4-2.jpg" alt="client" />
 
                             <div className={cls.bannerLayer} >
-                                <h2>Women's Business Fashion</h2>
+                                <h2>Womens Business Fashion</h2>
                                 <h3><em>up<br />to</em>60% OFF</h3>
                                 <h5>
                                     Starting at

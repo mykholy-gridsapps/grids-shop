@@ -17,8 +17,8 @@ const BlogFiveCarousel = () => {
                 Latest News
             </h2>
             <Swiper slidesPerView={2} loop={false} spaceBetween={20}>
-                {array.map(_ =>
-                    <SwiperSlide>
+                {array.map((_, idx) =>
+                    <SwiperSlide key={idx}>
                         <BlogFive />
                     </SwiperSlide>
                 )}

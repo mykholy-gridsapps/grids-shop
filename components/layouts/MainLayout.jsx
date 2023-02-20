@@ -28,13 +28,15 @@ const MainLayout = ({ children }) => {
   return (
     <>
       <FixedHeader setOpenSidebar={setOpenSidebar} />
-      <HeaderOne />
+      {/* <HeaderOne /> */}
       {/* <HeaderTwo /> */}
       {/* <HeaderThree /> */}
-      {/* <HeaderFour /> */}
+      <HeaderFour />
       {/* <HeaderFive /> */}
-      {children}
-      <FooterTen />
+      <div className={cls.pagesContent}>
+        {children}
+      </div>
+      <FooterTwo />
       <MobileBar />
 
       {/* SMALL SCREEN SIDE BAR */}

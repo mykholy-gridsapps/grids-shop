@@ -5,7 +5,7 @@ import { Grid } from "@mui/material";
 const FeaturesEight = () => {
     return (
         <div className={cls.featureBoxesContainer}>
-            <Grid container>
+            <Grid container spacing={2}>
                 <Grid item md={4} xs={12}>
                     <div className={cls.innerContainer}>
                         <div className={cls.featureBox}>

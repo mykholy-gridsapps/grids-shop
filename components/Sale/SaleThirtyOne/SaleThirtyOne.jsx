@@ -16,7 +16,7 @@ const SaleThirtyOne = () => {
                         </figure>
 
                         <div className={cls.bannerLayerTop}>
-                            <h3>Women's Bags &amp; Purses</h3>
+                            <h3>Womens Bags &amp; Purses</h3>
                             <h4>
                                 <del>20%</del>
                                 <strong>30%</strong>
@@ -39,11 +39,11 @@ const SaleThirtyOne = () => {
                         </figure>
 
                         <div className={cls.bannerLayerTop}>
-                            <h3>Women's Shoes</h3>
+                            <h3>Womens Shoes</h3>
                         </div>
 
                         <div className={cls.bannerLayerCircle}>
-                            <h4 class="banner-layer-circle-item bg-primary">40
+                            <h4 className="banner-layer-circle-item bg-primary">40
                                 <sup>%</sup>
                             </h4>
                         </div>
@@ -60,7 +60,7 @@ const SaleThirtyOne = () => {
                         </figure>
 
                         <div className={cls.bannerLayerTop}>
-                            <h3>Women's Bags &amp; Purses</h3>
+                            <h3>Womens Bags &amp; Purses</h3>
                             <h4>
                                 <del>20%</del>
                                 <strong>30%</strong>
