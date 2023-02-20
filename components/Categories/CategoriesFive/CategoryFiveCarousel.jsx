@@ -13,8 +13,8 @@ const CategoryFiveCarousel = () => {
             <h2 className={cls.sectionTitle}>Shop By Category</h2>
 
             <Grid container columnSpacing={2}>
-                {array.map(_ =>
-                    <Grid item md={4} sm={6} xs={12}>
+                {array.map((_, idx) =>
+                    <Grid item md={4} sm={6} xs={12} key={idx}>
                         <CategoryFive />
                     </Grid>
                 )}

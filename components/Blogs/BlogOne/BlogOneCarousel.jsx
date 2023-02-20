@@ -16,8 +16,8 @@ const BlogOneCarousel = () => {
     return (
         <div className={cls.swiper}>
             <Swiper slidesPerView={1} loop={true} spaceBetween={0} pagination={pagination} modules={[Pagination]}>
-                {array.map(_ =>
-                    <SwiperSlide>
+                {array.map((_, idx) =>
+                    <SwiperSlide key={idx}>
                         <BlogOne />
                     </SwiperSlide>
                 )}

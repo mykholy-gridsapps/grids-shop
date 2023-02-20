@@ -31,8 +31,8 @@ const BlogFourCarousel = () => {
                         spaceBetween: 20,
                     },
                 }}>
-                    {array.map(_ =>
-                        <SwiperSlide>
+                    {array.map((_, idx) =>
+                        <SwiperSlide key={idx}>
                             <BlogFour />
                         </SwiperSlide>
                     )}

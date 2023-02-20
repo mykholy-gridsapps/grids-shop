@@ -36,9 +36,8 @@ const CategoryFourteenCarousel = () => {
                     spaceBetween: 0,
                 },
             }}>
-                {array.map(_ =>
-
-                    <SwiperSlide>
+                {array.map((_, idx) =>
+                    <SwiperSlide key={idx}>
                         <CategoryFourteen />
                     </SwiperSlide>
                 )}
