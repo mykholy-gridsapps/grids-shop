@@ -1,10 +1,11 @@
 import React from "react";
 // MATERIAL STUFF
-import cls from "./FooterNine.module.scss";
 import { Box } from "@mui/material";
 import FooterMiddle from "./FooterMiddle";
 import { Container } from "@mui/system";
 import FooterBottom from "./FooterBottom";
+
+import cls from "./footerNine.module.scss";
 
 const FooterNine = () => {
   return (
