@@ -18,7 +18,7 @@ const SliderSix = () => {
         <div className={`${cls.slider} ${cls[i18n.language]}`}>
             <Swiper slidesPerView={1} loop={true} spaceBetween={0} navigation={navigation} modules={[Navigation]}>
                 <SwiperSlide>
-                    <Container maxWidth='xl'>
+                    {/* <Container maxWidth='xl'> */}
                         <div className={cls.slide1}>
                             <img src="./imgs/slider/slider-6-1.jpg" alt="client" />
 
@@ -50,10 +50,10 @@ const SliderSix = () => {
 
                             </div>
                         </div>
-                    </Container>
+                    {/* </Container> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Container maxWidth='xl'>
+                    {/* <Container maxWidth='xl'> */}
                         <div className={cls.slide2}>
                             <img src="./imgs/slider/slider-6-2.jpg" alt="client" />
 
@@ -85,7 +85,7 @@ const SliderSix = () => {
 
                             </div>
                         </div>
-                    </Container>
+                    {/* </Container> */}
                 </SwiperSlide>
             </Swiper>
         </div>

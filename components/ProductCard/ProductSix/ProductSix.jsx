@@ -1,8 +1,13 @@
-import React, { useState } from 'react'
+// NEXT STUFF
+import { useState } from 'react';
+// COMPONENTS
+import QuickView from '../QuickView/QuickView';
+
 import cls from './productSix.module.scss'
 
 const ProductSix = () => {
-    const [quantity, setQuantity] = useState(1)
+    const [quantity, setQuantity] = useState(1);
+    const [openQuickView, setOpenQuickView] = useState(false);
 
     const changeQuantity = (type, value) => {
         if (type === 'plus') setQuantity(prev => (prev += 1))
@@ -30,7 +35,7 @@ const ProductSix = () => {
                         <i className={cls.iconHeart}></i>
                     </a>
                 </div>
-                <a href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">Quick View</a>
+                <button className={cls.btnQuickview} title="Quick View" onClick={() => setOpenQuickView(true)}>Quick View</button>
             </figure>
             <div className={cls.productDetails}>
                 <div className={cls.categoryList}>
@@ -66,6 +71,9 @@ const ProductSix = () => {
                         <i className="icon-shopping-cart"></i>ADD TO CART</a>
                 </div>
             </div>
+            {openQuickView && 
+                <QuickView setOpenQuickView={setOpenQuickView} />
+            }
         </div>
     )
 }

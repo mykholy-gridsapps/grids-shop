@@ -8,7 +8,7 @@ import { useTranslation } from "next-i18next";
 // REDUX STUFF
 import { wrapper } from "../../store/store";
 
-import { TemplateOne } from "../../components";
+import { TemplateTwo } from "../../components";
 
 
 const Home = () => {
@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <Container maxWidth="xxxl">
-      <TemplateOne />
+      <TemplateTwo />
     </Container>
   );
 };

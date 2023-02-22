@@ -1,8 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
+// NEXT STUFF
+import { useState } from 'react';
+// COMPONENTS
+import QuickView from '../QuickView/QuickView';
+
 import cls from './productFive.module.scss'
 
 const ProductFive = () => {
+    const [openQuickView, setOpenQuickView] = useState(false);
+
     return (
         <div className={cls.productDefault}>
             <figure>
@@ -39,10 +45,13 @@ const ProductFive = () => {
                     <a href="wishlist.html" className={cls.btnIconWish} title="wishlist"><i className={cls.iconHeart}></i></a>
                     <a href="#" className={cls.btnAddCart}><i
                         className="icon-shopping-cart"></i><span>ADD TO CART</span></a>
-                    <a href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">
-                        <i className="fas fa-external-link-alt"></i></a>
+                    <button className={cls.btnQuickview} title="Quick View" onClick={() => setOpenQuickView(true)}>
+                        <i className="fas fa-external-link-alt"></i></button>
                 </div>
             </div>
+            {openQuickView && 
+                <QuickView setOpenQuickView={setOpenQuickView} />
+            }
         </div>
     )
 }

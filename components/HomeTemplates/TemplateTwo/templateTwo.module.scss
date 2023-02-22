@@ -7,6 +7,9 @@
 .section {
   margin: 40px 0 20px;
 }
+.section2 {
+  margin: 0px 0 80px ;
+}
 
 .sales {
   display: grid;
@@ -41,4 +44,10 @@
       }
     }
   }
+}
+
+.test {
+  display: block;
+  height: 400px;
+  width: 400px;
 }

@@ -1,7 +1,13 @@
-import React from 'react'
+// NEXT STUFF
+import { useState } from 'react';
+// COMPONENTS
+import QuickView from '../QuickView/QuickView';
+
 import cls from './productSeven.module.scss'
 
 const ProductSeven = () => {
+    const [openQuickView, setOpenQuickView] = useState(false);
+
     return (
         <div className={[cls.productDefault, cls.innerQuickview, cls.innerIcon].join(' ')}>
             <figure className={cls.imgEffect}>
@@ -20,8 +26,8 @@ const ProductSeven = () => {
                         <i className="fa-regular fa-bag-shopping"></i>
                     </a>
                 </div>
-                <a href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">Quick
-                    View</a>
+                <button className={cls.btnQuickview} title="Quick View" onClick={() => setOpenQuickView(true)}>Quick
+                    View</button>
             </figure>
             <div className={cls.productDetails}>
                 <div className={cls.categoryWrap}>
@@ -45,6 +51,9 @@ const ProductSeven = () => {
                     <span className={cls.productPrice}>$9.00</span>
                 </div>
             </div>
+            {openQuickView && 
+                <QuickView setOpenQuickView={setOpenQuickView} />
+            }
         </div>
     )
 }

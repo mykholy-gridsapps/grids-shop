@@ -23,53 +23,51 @@ import cls from './templateOne.module.scss';
 const TemplateOne = () => {
   return (
     <div>
-      <Container maxWidth="xl">
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={4} lg={3}>
-            <CategoriesSideOne />
-          </Grid>
-          <Grid item xs={12} md={8} lg={9}>
-            <SliderOne />
-          </Grid>
+      <Grid container spacing={2}>
+        <Grid item xs={12} md={4} lg={3}>
+          <CategoriesSideOne />
         </Grid>
-        <div className={cls.secondPart}>
-          <InfoBoxOne />
+        <Grid item xs={12} md={8} lg={9}>
+          <SliderOne />
+        </Grid>
+      </Grid>
+      <div className={cls.secondPart}>
+        <InfoBoxOne />
 
-          {/* PRODUCTS CATEGORIES */}
-          <div className={cls.section}>
-            <ProductsCategoriesTwo />
-          </div>
-
-          {/* SALES */}
-          <div className={cls.sales}>
-            <div>
-              <SaleFive />
-              <SaleOne />
-            </div>
-            <div>
-              <SaleEight />
-              <SaleSix />
-            </div>
-            <div>
-              <SaleSeven />
-              <SaleFive />
-            </div>
-          </div>
-          {/* SALES */}
-
-          {/* PRODUCTS CATEGORIES */}
-          <div>
-            <ProductsCategoriesFour />
-          </div>
-
-          <BlogSix />
-          <TestimonialFiveCarousel />
-
-          <FeaturesEight />
-          <BrandsSix />
-          <NewsletterFour />
+        {/* PRODUCTS CATEGORIES */}
+        <div className={cls.section}>
+          <ProductsCategoriesTwo />
         </div>
-      </Container>
+
+        {/* SALES */}
+        <div className={cls.sales}>
+          <div>
+            <SaleFive />
+            <SaleOne />
+          </div>
+          <div>
+            <SaleEight />
+            <SaleSix />
+          </div>
+          <div>
+            <SaleSeven />
+            <SaleFive />
+          </div>
+        </div>
+        {/* SALES */}
+
+        {/* PRODUCTS CATEGORIES */}
+        <div>
+          <ProductsCategoriesFour />
+        </div>
+
+        <BlogSix />
+        <TestimonialFiveCarousel />
+
+        <FeaturesEight />
+        <BrandsSix />
+        <NewsletterFour />
+      </div>
     </div>
   )
 }
