@@ -145,10 +145,9 @@ const Home = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
-    <>
+    <Container maxWidth="xl">
       <TemplateOne />
-      
-    </>
+    </Container>
   );
 };
 

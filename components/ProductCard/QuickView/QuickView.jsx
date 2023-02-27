@@ -67,24 +67,7 @@ const QuickView = ({ setOpenQuickView }) => {
           <Grid item xs={12} md={5}>
             <div className={cls.imagesArea}>
               <div className={cls.bigImage}>
-                {/* <ReactImageMagnify {...{
-                  smallImage: {
-                      alt: 'Wristwatch by Ted Baker London',
-                      isFluidWidth: true,
-                      src: "https://www.lifeofpix.com/wp-content/uploads/2018/06/20180120-P1201659-1600x1089.jpg",
-                  },
-                  largeImage: {
-                      src: "https://www.lifeofpix.com/wp-content/uploads/2018/06/20180120-P1201659-1600x1089.jpg",
-                      width: 700,
-                      height: 850
-                  },
-                  enlargedImageContainerDimensions: {
-                      width: '100%',
-                      height: '100%'
-                  },
-                }} /> */}
                 <ZoomImage image={activeImage} />
-                {/* <img src={activeImage} alt="product" /> */}
               </div>
               <div className={cls.smallImages}>
                 <Swiper 

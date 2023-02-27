@@ -125,3 +125,8 @@ export {default as TestimonialTwoCarousel} from './Testimonials/TestimonialTwo/T
 export {default as TopNoticeOne} from './TopNotice/TopNoticeOne/TopNoticeOne'
 export {default as TopNoticeTwo} from './TopNotice/TopNoticeTwo/TopNoticeTwo'
 export {default as TopNoticeThree} from './TopNotice/TopNoticeThree/TopNoticeThree'
+
+export { default as TemplateOne } from './HomeTemplates/TemplateOne/TemplateOne';
+export { default as TemplateTwo } from './HomeTemplates/TemplateTwo/TemplateTwo';
+export { default as TemplateThree } from './HomeTemplates/TemplateThree/TemplateThree';
+export { default as TemplateFour } from './HomeTemplates/TemplateFour/TemplateFour';

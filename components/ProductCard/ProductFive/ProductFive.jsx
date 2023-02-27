@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
+import { useState } from 'react';
 import { Rating } from '@mui/material';
+import QuickView from '../QuickView/QuickView';
 import { i18n, useTranslation } from 'next-i18next'
 import Link from 'next/link';
 import React from 'react'
@@ -7,7 +9,9 @@ import React from 'react'
 import cls from './productFive.module.scss'
 
 const ProductFive = () => {
+    const [openQuickView, setOpenQuickView] = useState(false);
     const { t, i18n } = useTranslation('common');
+
     return (
         <div className={`${cls.productDefault} ${cls[i18n.language]}`}>
             <figure>
@@ -40,8 +44,8 @@ const ProductFive = () => {
                     <Link href="wishlist.html" className={cls.btnIconWish} title="wishlist"><i className={cls.iconHeart}></i></Link>
                     <Link href="#" className={cls.btnAddCart}><i
                         className="icon-shopping-cart"></i><span>ADD TO CART</span></Link>
-                    <Link href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">
-                        <i className="fas fa-external-link-alt"></i></Link>
+                    <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={() => setOpenQuickView(true)}>
+                        <i className="fas fa-external-link-alt"></i></button>
                 </div>
             </div>
             {openQuickView && 

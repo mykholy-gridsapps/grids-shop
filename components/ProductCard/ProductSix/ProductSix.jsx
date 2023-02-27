@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { i18n, useTranslation } from 'next-i18next'
-
+import QuickView from '../QuickView/QuickView';
 import cls from './productSix.module.scss'
 import Link from 'next/link'
 import { Rating } from '@mui/material'
@@ -35,7 +35,7 @@ const ProductSix = () => {
                         <i className={cls.iconHeart}></i>
                     </Link>
                 </div>
-                <Link href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">Quick View</Link>
+                <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={() => setOpenQuickView(true)}>Quick View</button>
             </figure>
             <div className={cls.productDetails}>
                 <div className={cls.categoryList}>

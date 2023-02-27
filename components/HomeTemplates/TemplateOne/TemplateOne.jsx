@@ -72,4 +72,4 @@ const TemplateOne = () => {
   )
 }
 
-export default TemplateOne
+export default TemplateOne;

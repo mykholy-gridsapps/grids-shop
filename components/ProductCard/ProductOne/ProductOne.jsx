@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { Rating } from '@mui/material';
+import QuickView from '../QuickView/QuickView';
 import { i18n, useTranslation } from 'next-i18next'
 import Link from 'next/link';
 import React from 'react'
@@ -6,6 +8,7 @@ import React from 'react'
 import cls from './productOne.module.scss'
 
 const ProductOne = () => {
+    const [openQuickView, setOpenQuickView] = useState(false);
     const { t, i18n } = useTranslation('common');
     return (
         <div className={`${cls.productDefault} ${cls.innerQuickview} ${cls.innerIcon} ${cls[i18n.language]}`}>
@@ -25,7 +28,7 @@ const ProductOne = () => {
                         <i className="fa-solid fa-arrow-right"></i>
                     </Link>
                 </div>
-                <Link href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">Quick View</Link>
+                <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={() => setOpenQuickView(true)}>Quick View</button>
             </figure>
             <div className={cls.productDetails}>
                 <div className={cls.categoryWrap}>

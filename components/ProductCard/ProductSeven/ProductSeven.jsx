@@ -1,11 +1,13 @@
-import React from 'react'
+import { useState } from 'react';
 import { i18n, useTranslation } from 'next-i18next'
+import QuickView from '../QuickView/QuickView';
 import Link from 'next/link';
 import { Rating } from '@mui/material';
 
 import cls from './productSeven.module.scss'
 
 const ProductSeven = () => {
+    const [openQuickView, setOpenQuickView] = useState(false);
     const { t, i18n } = useTranslation('common');
 
     return (
@@ -26,8 +28,8 @@ const ProductSeven = () => {
                         <i className="fa-regular fa-bag-shopping"></i>
                     </Link>
                 </div>
-                <Link href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">Quick
-                    View</Link>
+                <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={() => setOpenQuickView(true)}>Quick
+                    View</button>
             </figure>
             <div className={cls.productDetails}>
                 <div className={cls.categoryWrap}>

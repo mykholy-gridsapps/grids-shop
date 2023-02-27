@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { Rating } from '@mui/material'
+import QuickView from '../QuickView/QuickView';
 import { i18n } from 'next-i18next'
 import Link from 'next/link'
 import React from 'react'
@@ -40,8 +42,8 @@ const ProductFour = () => {
                     <Link href="#" className={cls.btnAddCart}><i
                         className="icon-shopping-cart"></i><span>ADD TO CART</span></Link>
                     <Link href="wishlist.html" className={cls.btnIconWish} title="wishlist"><i className={cls.iconHeart}></i></Link>
-                    <Link href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View">
-                        <i className="fas fa-external-link-alt"></i></Link>
+                    <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={() => setOpenQuickView(true)}>
+                        <i className="fas fa-external-link-alt"></i></button>
                 </div>
             </div>
             {openQuickView && 
