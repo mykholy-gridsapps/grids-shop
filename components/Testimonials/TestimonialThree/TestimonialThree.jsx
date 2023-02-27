@@ -1,9 +1,13 @@
+import { Rating } from "@mui/material";
+import { i18n, useTranslation } from "next-i18next";
 import React from "react";
+
 import cls from './testimonialThree.module.scss';
 
 const TestimonialThree = () => {
+    const { t, i18n } = useTranslation("common");
     return (
-        <div className={cls.testimonial}>
+        <div className={`${cls.testimonial} ${cls[i18n.language]}`}>
             <div className={cls.testimonialOwner}>
                 <figure>
                     <img src="./imgs/clients/client.jpg" alt="client" />
@@ -19,11 +23,7 @@ const TestimonialThree = () => {
 
                     <h5 className="testi-author">by Joe Doe</h5>
                     <div className={cls.ratings}>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-regular fa-star"></i>
+                    <Rating name="read-only" value={3} readOnly />
                     </div>
                 </div>
             </div>

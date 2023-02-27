@@ -1,3 +1,4 @@
+@import "../../../styles/mixins.scss";
 .testimonial {
     margin-bottom: 20px;
     text-align: center !important;
@@ -51,6 +52,9 @@
             font-style: italic;
             text-align: center !important;
             color: var(--text-color);
+            @include xs {
+                font-size: 14px;
+            }
         }
     }
 
@@ -76,7 +80,9 @@
         position: relative;
         display: inline-block;
         font-size: 11px;
-        color: var(--text-color)
+        span {
+            color: var(--text-color)
+        }
     }
 
 

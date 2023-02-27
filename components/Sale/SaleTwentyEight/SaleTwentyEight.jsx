@@ -1,10 +1,14 @@
 import { Container, Grid } from "@mui/material";
+import { i18n, useTranslation } from "next-i18next";
+import Link from "next/link";
 import React from "react";
+
 import cls from "./saleTwentyEight.module.scss"
 
 const SaleTwentyEight = () => {
+    const { t, i18n } = useTranslation('common');
     return (
-        <div className={cls.banner}>
+        <div className={`${cls.banner} ${cls[i18n.language]}`}>
             <Container maxWidth="xxl">
                 <Grid container alignItems="center">
                     <Grid item lg={5} sm={7} xs={10} >
@@ -15,7 +19,7 @@ const SaleTwentyEight = () => {
                         </div>
                     </Grid>
                     <Grid item lg={3} xs={7} >
-                        <a href="demo25-shop.html">Explore Books <i className="fas fa-long-arrow-alt-right"></i></a>
+                        <Link href="demo25-shop.html">Explore Books <i className="fas fa-long-arrow-alt-right"></i></Link>
                     </Grid>
                 </Grid>
             </Container>

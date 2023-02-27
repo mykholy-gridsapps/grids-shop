@@ -1,9 +1,26 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
+@import "../../../styles/mixins.scss";
 
 .banner {
     position: relative;
     font-size: 16px;
-
+&.ar {
+    .bannerLayer {
+        h3 {
+            b {
+                margin-left: 30px;
+                margin-right: 0;
+            }
+        }
+        .btn {
+            i {
+                padding-right: 11px;
+                padding-left: 0;
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
     img {
         min-height: 213px;
         object-fit: cover;
@@ -19,16 +36,23 @@
         left: 6%;
         text-align: right !important;
 
+        @include sm {
+            right: 6%;
+        }
+
         h4 {
             margin-bottom: 8px;
             font-family: "Savoye LET";
             font-size: 22px;
             color: #ee8379;
-            text-align: right !important;
+            // text-align: right !important;
+            @include xs {
+                font-size: 20px;
+            }
         }
 
         h3 {
-            text-align: right !important;
+            // text-align: right !important;
             margin-bottom: 8px;
             font-size: 30px;
             line-height: 1.5;
@@ -36,11 +60,23 @@
             color: var(--text-dark);
             font-weight: 700;
 
+            @include sm {
+                font-size: 20px;
+            }
+
+            @include xs {
+                font-size: 16px;
+            }
+
             b {
                 font-weight: 700;
                 margin-right: 30px;
-                color: #fff;
+                color: var(--text-light);
                 position: relative;
+
+                @include xs {
+                    margin-right: 20px;
+                }
 
                 &::before {
                     content: "";
@@ -64,13 +100,17 @@
             text-transform: uppercase;
             font-weight: 700;
             color: var(--text-dark);
+            @include xs {
+                font-size: 14px;
+            }
 
             i {
                 padding-left: 11px;
             }
+
             &:hover {
                 color: #4d4f53;
-              }
+            }
         }
     }
 }

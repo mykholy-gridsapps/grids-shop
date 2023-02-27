@@ -1,4 +1,6 @@
+import Link from "next/link";
 import React from "react";
+
 import cls from "./saleFour.module.scss"
 
 const SaleFour = () => {
@@ -10,7 +12,7 @@ const SaleFour = () => {
             <div className={cls.bannerLayer}>
                 <h3>Handbags</h3>
                 <h4>Starting at $99</h4>
-                <a href="demo1-shop.html">Shop Now</a>
+                <Link href="demo1-shop.html">Shop Now</Link>
             </div>
         </div>
     )

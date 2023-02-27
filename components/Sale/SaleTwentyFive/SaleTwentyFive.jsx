@@ -1,9 +1,12 @@
+import { i18n, useTranslation } from "next-i18next";
 import React from "react";
+
 import cls from "./saleTwentyFive.module.scss"
 
 const SaleTwentyFive = () => {
+    const { t, i18n } = useTranslation('common');
     return (
-        <div className={cls.banner}>
+        <div className={`${cls.banner} ${cls[i18n.language]}`}>
             <figure>
                 <img src="./imgs/sale/sale-25-1.jpg" />
             </figure>

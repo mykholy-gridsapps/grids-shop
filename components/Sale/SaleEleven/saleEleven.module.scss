@@ -1,3 +1,4 @@
+@import "../../../styles/mixins.scss";
 .banner {
     position: relative;
     font-size: 16px;
@@ -5,7 +6,27 @@
     align-items: center !important;
     display: -ms-flexbox !important;
     display: flex !important;
-
+    &.ar {
+        .bannerLayerLeft {
+            left: 58.4%;
+            right: 4.5%;
+            h5 {
+                margin-left: 0;
+                margin-right: 30px;
+                i {
+                    left: auto;
+                    right: -24px;
+                }
+            }
+        }
+        .bannerLayerRight {
+            right: 55%;
+            left: 8.7%;
+            @include xs {
+                left: 0;
+            }
+        }
+    }
     figure {
         margin: 0;
         width: 100%;
@@ -26,6 +47,7 @@
         transform: translateY(-50%);
         text-align: center !important;
         position: absolute;
+        
 
         h4 {
             padding-bottom: 2px;
@@ -44,12 +66,23 @@
             color: var(--text-dark);
             margin-bottom: 18px;
             font-weight: 700;
+            @include xs {
+                margin-top: 0;
+                margin-bottom: 5px;
+                font-size: 14px;
+
+            }
 
             span {
                 font-size: 28px;
                 margin-bottom: 16px !important;
                 margin-top: 10px !important;
                 display: block !important;
+                @include xs {
+                    font-size: 18px;
+                    margin-bottom: 0 !important;
+    
+                }
             }
         }
 
@@ -58,6 +91,10 @@
             border-top: 1px solid var(--border-color);
             margin-bottom: 20px !important;
             margin-top: 0 !important;
+            @include xs {
+                margin-bottom: 5px !important;
+
+            }
         }
 
         h5 {
@@ -69,7 +106,10 @@
             position: relative;
             display: inline-block;
             color: var(--text-dark);
+            @include xs {
+                font-size: 12px;
 
+            }
 
             i {
                 position: absolute;
@@ -80,15 +120,23 @@
                 font-style: normal;
                 opacity: 0.6;
                 letter-spacing: 0;
+                @include xs {
+                    font-size: 10px;
+    
+                }
             }
 
             b {
                 display: inline-block;
                 padding: 5px 8px;
                 font-size: 1.6em;
-                background-color: #fff;
+                background-color: var(--bg-color);
                 color: var(--text-dark);
                 font-weight: 500;
+                @include xs {
+                    font-size: 14px;
+    
+                }
             }
 
         }
@@ -103,15 +151,23 @@
         transform: translateY(-50%);
         position: absolute;
         text-align: center !important;
+        @include xs {
+            right: 0;
+        }
 
         a {
             background-color: var(--text-dark);
             border-color: var(--text-dark);
             text-transform: uppercase;
-            color: #fff;
+            color: var(--text-light);
             font-size: 12px;
             padding: 12px 25px;
             font-weight: 600;
+            @include xs {
+                font-size: 10px;
+                padding: 5px 10px;
+
+            }
         }
     }
 }

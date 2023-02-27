@@ -1,4 +1,19 @@
+@import "../../../styles/mixins.scss";
+
 .testimonial {
+    &.ar {
+        .testimonialOwner {
+            figure {
+                margin-left: 30px;
+                margin-right: 0;
+
+                @include xs {
+                    margin-left: 10px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 
     .testimonialOwner {
         display: -ms-flexbox;
@@ -18,15 +33,22 @@
                 max-width: 100%;
                 height: auto;
             }
+
+            @include xs {
+                margin-right: 10px;
+                width: 70px;
+                min-width: 70px;
+            }
         }
 
         .content {
 
             .ratings {
-                position: relative;
-                display: inline-block;
-                font-size: 11px;
-                color: var(--main-color)
+
+                span {
+                    font-size: 15px;
+                    color: var(--main-color)
+                }
             }
 
             h4 {

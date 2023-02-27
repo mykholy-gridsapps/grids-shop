@@ -1,13 +1,22 @@
+@import "../../../styles/mixins.scss";
+
 .banner {
     padding-left: 10px;
     padding-right: 10px;
     background-color: var(--text-dark);
+
+    
 
     .col1 {
         flex: 1;
         padding: 16px 8px;
         padding-right: 0;
         text-align: right !important;
+
+        @include xs {
+            text-align: center !important;
+            padding: 0;
+        }
 
         h4 {
             font-size: 21px;
@@ -17,6 +26,18 @@
             text-transform: uppercase !important;
             margin-bottom: 0 !important;
             text-align: right !important;
+
+            @include md {
+                font-size: 15px;
+            }
+
+            @include sm {
+                font-size: 12px;
+            }
+
+            @include xs {
+                text-align: center !important;
+            }
         }
 
         h3 {
@@ -24,8 +45,20 @@
             font-weight: 700;
             letter-spacing: 0.025em;
             line-height: 1;
-            color: #fff;
+            color: var(--text-light);
             text-align: right !important;
+
+            @include md {
+                font-size: 35px;
+            }
+
+            @include sm {
+                font-size: 28px;
+            }
+
+            @include xs {
+                text-align: center !important;
+            }
         }
     }
 
@@ -35,14 +68,22 @@
         padding-left: 24px;
         padding-right: 24px;
 
+        @include xs {
+            padding: 0 20px;
+        }
+
         h5 {
             top: 0.0125em;
             font-size: 184px;
             line-height: 0.7;
             letter-spacing: -0.025em;
             position: relative !important;
-            color: #fff;
+            color: var(--text-light);
             margin: 0;
+
+            @include sm {
+                font-size: 120px;
+            }
 
             small {
                 position: absolute;
@@ -54,6 +95,11 @@
                 line-height: 1;
                 text-align: center;
                 transform: translateY(-54%);
+
+                @include sm {
+                    right: 26px;
+                    font-size: 22px;
+                }
 
                 ins {
                     display: block;
@@ -75,9 +121,36 @@
         a {
             border-color: var(--main-color);
             background-color: var(--main-color);
-            color: #fff;
+            color: var(--text-light);
             box-shadow: none;
             padding: 16px 42px;
+
+            @include sm {
+                padding: 8px 12px;
+            }
+        }
+    }
+    &.ar {
+        .col1 {
+            padding-right: 8px;
+            padding-left: 0;
+            text-align: left !important;
+            h4 {
+                text-align: left !important;
+                @include xs {
+                    text-align: center !important;
+                }
+            }
+            h3 {
+                text-align: left !important;
+                @include xs {
+                    text-align: center !important;
+                }
+            }
+        }
+        .col3 { 
+            padding-right: 16px;
+            padding-left: 0;
         }
     }
 }

@@ -1,7 +1,18 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
+@import "../../../styles/mixins.scss";
 
 .banner {
     position: relative;
+
+    &.ar {
+        img {
+            transform: rotateY(180deg);
+        }
+        .bannerLayer {
+            right: 5%;
+            left: 42%;
+        }
+    }
 
     img {
         min-height: 213px;
@@ -10,7 +21,13 @@
         height: 232.533px;
         max-height: 1296px;
         max-width: 100%;
-        min-height: 232.177px
+        min-height: 232.177px;
+
+        @include sm {
+            height: 150px;
+            min-height: 150px;
+
+        }
     }
 
     .bannerLayer {
@@ -38,16 +55,26 @@
                 opacity: 0.7;
                 font-family: "Savoye LET";
                 line-height: 1;
-                color: #fff;
+                color: var(--text-light);
                 text-align: start !important;
+
+                @include sm {
+                    font-size: 18px;
+
+                }
             }
 
             h4 {
                 font-size: 38px;
                 font-weight: 500;
                 line-height: 1;
-                color: #fff;
+                color: var(--text-light);
                 text-align: start !important;
+
+                @include sm {
+                    font-size: 16px;
+
+                }
             }
         }
 
@@ -57,7 +84,12 @@
             h3 {
                 font-size: 105px;
                 line-height: 1;
-                color: #fff;
+                color: var(--text-light);
+
+                @include sm {
+                    font-size: 50px;
+
+                }
 
                 small {
                     width: 29px;
@@ -65,27 +97,16 @@
                     font-size: 27%;
                     text-align: center !important;
                     display: inline-block !important;
+
+                    @include sm {
+                        width: 15px;
+
+                    }
                 }
             }
         }
     }
 
 
-    .btn {
-        cursor: pointer;
-        margin-right: -1px;
-        padding: 0 0 2px;
-        font-size: 18px;
-        text-transform: uppercase;
-        font-weight: 700;
-        color: var(--text-dark);
 
-        i {
-            padding-left: 11px;
-        }
-
-        &:hover {
-            color: #4d4f53;
-        }
-    }
 }

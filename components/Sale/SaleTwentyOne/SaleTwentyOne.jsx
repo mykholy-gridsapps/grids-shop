@@ -1,6 +1,8 @@
 import { Grid } from "@mui/material";
 import { Container } from "@mui/system";
+import Link from "next/link";
 import React from "react";
+
 import cls from "./saleTwentyOne.module.scss"
 
 const SaleTwentyOne = () => {
@@ -12,7 +14,7 @@ const SaleTwentyOne = () => {
                 <h5 className="ls-n-20 d-inline-block m-r-2 text-left">FROM</h5>
                 <h4 className="ls-n-20 text-price float-right text-left">$
                     <b>19</b>99</h4>
-                    <a href="demo15-shop.html" className="btn btn-modern btn-sm btn-dark">Shop Now!</a>
+                    <Link href="demo15-shop.html" className="btn btn-modern btn-sm btn-dark">Shop Now!</Link>
             </div>
         </div>
     )

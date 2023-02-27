@@ -19,6 +19,7 @@
 
             &:global(.swiper-pagination-bullet-active) {
                 border: 2px solid var(--main-color);
+
                 &::before {
                     width: 4px;
                     height: 4px;
@@ -32,6 +33,13 @@
                     border-radius: 50%;
                 }
             }
+        }
+    }
+
+    &.ar {
+        :global(.swiper-pagination) {
+            margin: 12px 57px 35px 0;
+
         }
     }
 }

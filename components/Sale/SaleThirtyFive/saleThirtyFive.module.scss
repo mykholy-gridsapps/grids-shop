@@ -1,0 +1,135 @@
+.banner {
+    position: relative;
+    z-index: 1;
+    width: 234px;
+
+    .Feature {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        z-index: 3;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-inline-start: 5px solid transparent;
+            border-inline-end: 5px solid transparent;
+            border-bottom: 5px solid #003666;
+            z-index: 5;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-inline-start: 5px solid #003666;
+            z-index: 5;
+        }
+
+        span {
+            position: absolute;
+            top: 0;
+            right: -55px;
+            width: 110px;
+            color: #003666;
+            font-size: 11px;
+            line-height: 20px;
+            font-weight: 600;
+            letter-spacing: -.04em;
+            text-align: center;
+            padding: 32px 15px 1px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-transform-origin: center top;
+            -moz-transform-origin: center top;
+            -ms-transform-origin: center top;
+            -o-transform-origin: center top;
+            transform-origin: center top;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            z-index: 6;
+
+            &::before {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 24px;
+                background-color: #3cf;
+                z-index: -1;
+            }
+        }
+    }
+
+    a {
+        position: relative;
+        display: inline-block;
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            border: solid #fff;
+            border-width: 2px 0;
+            top: 15px;
+            bottom: 15px;
+            left: 50%;
+            right: 50%;
+            margin: auto;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            transition: all .5s ease;
+            pointer-events: none;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            border: solid #fff;
+            border-width: 0 2px;
+            left: 15px;
+            right: 15px;
+            top: 50%;
+            bottom: 50%;
+            margin: auto;
+            -webkit-transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            transition: all .5s ease;
+            pointer-events: none;
+        }
+
+        &:hover {
+            &::before {
+                left: 15px;
+                right: 15px;
+            }
+
+            &::after {
+                top: 15px;
+                bottom: 15px;
+            }
+        }
+    }
+
+
+}

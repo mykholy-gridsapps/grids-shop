@@ -1,3 +1,5 @@
+@import "../../../styles/mixins.scss";
+
 .banner {
     position: relative;
     font-size: 16px;
@@ -37,13 +39,17 @@
 
         h3 {
             font-size: 36px;
-            color: #fff;
+            color: var(--text-light);
             line-height: 1;
             margin-bottom: 16px !important;
             text-align: right !important;
             font-weight: 500;
             text-transform: uppercase;
             font-weight: 600;
+
+            @include xs {
+                font-size: 26px;
+            }
         }
 
         .couponSaleContent {
@@ -54,9 +60,15 @@
                 transform: rotate(-2deg);
                 line-height: 1;
                 margin-bottom: 10px !important;
-                background-color: #fff !important;
+                background-color: var(--bg-color) !important;
                 display: block !important;
                 color: var(--text-dark);
+
+                @include xs {
+                    padding: 5px 8px 5px;
+                    font-size: 16px;
+                    display: none !important;
+                }
             }
 
             h5 {
@@ -66,7 +78,12 @@
                 transform: rotate(-2deg);
                 position: relative;
                 display: inline-block;
-                color: #fff !important;
+                color: var(--text-light) !important;
+
+                @include xs {
+                    margin-bottom: 12px;
+                    font-size: 12px;
+                }
 
                 i {
                     position: absolute;
@@ -83,9 +100,13 @@
                     display: inline-block;
                     padding: 5px 8px;
                     font-size: 26px;
-                    background-color: #fff;
+                    background-color: var(--bg-color);
                     color: var(--text-dark);
                     font-weight: 500;
+
+                    @include xs {
+                        font-size: 16px;
+                    }
                 }
             }
 
@@ -96,12 +117,35 @@
                 font-weight: 600;
                 letter-spacing: 0.012em;
                 border-color: var(--text-dark);
-                background-color: #0e0f11;
-                color: #fff;
+                background-color: var(--text-dark);
+                color: var(--text-light);
                 display: block;
                 text-align: center !important;
+
+                @include xs {
+                    padding: 12px 0;
+                font-size: 12px;
+                width: auto;
+                }
             }
         }
 
+    }
+    &.ar {
+        figure {
+            img {
+                transform: rotateY(180deg);
+            } 
+        }
+        .bannerLayer {
+            .couponSaleContent {
+                h5 {
+                    i {
+                        right: -24px;
+                        left: auto;
+                    }
+                }
+            }
+        }
     }
 }

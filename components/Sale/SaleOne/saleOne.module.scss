@@ -23,7 +23,7 @@
                 margin-bottom: 17px;
                 font-size: 12px;
                 font-weight: 400;
-                color: #fff;
+                color: var(--text-light);
                 border-radius: 50%;
                 letter-spacing: 0.06em;
                 background-color: var(--main-color);
@@ -45,14 +45,14 @@
                     left: 50%;
                     width: 1px;
                     height: 25px;
-                    background: #e7e7e7;
+                    background: var(--bg-alt-color);
                 }
 
                 em {
                     display: block;
                     padding-top: 8px;
                     margin-bottom: -1px;
-                    color: #fff;
+                    color: var(--text-light);
                     font-size: 29px;
                     font-style: normal;
                     font-weight: 800;
@@ -70,7 +70,7 @@
                     border-radius: 50%;
                     width: 9px;
                     height: 9px;
-                    background: #fff;
+                    background: var(--bg-color);
                 }
             }
 
@@ -129,7 +129,7 @@
                 padding: 11px 27px;
                 border-color: var(--text-dark);
                 background-color: var(--text-dark);
-                color: #fff;
+                color: var(--text-light);
                 box-shadow: none;
                 font-size: 12px;
                 text-transform: uppercase;
@@ -198,7 +198,7 @@
                         font-size: 26px;
                         display: inline-block;
                         background-color: var(--text-dark);
-                        color: #fff;
+                        color: var(--text-light);
                         line-height: 1;
                         transform: rotate(-2deg);
                         font-weight: 600;
@@ -217,7 +217,7 @@
                     padding: 11px 27px;
                     border-color: var(--text-dark);
                     background-color: var(--text-dark);
-                    color: #fff;
+                    color: var(--text-light);
                     box-shadow: none;
                     font-size: 12px;
                     text-transform: uppercase;

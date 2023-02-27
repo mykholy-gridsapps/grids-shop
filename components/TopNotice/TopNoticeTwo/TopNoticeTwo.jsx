@@ -1,15 +1,17 @@
 import { Container } from "@mui/system";
+import { i18n, useTranslation } from "next-i18next";
 import React from "react";
 import cls from "./topNoticeTwo.module.scss"
 
 
 const TopNoticeTwo = () => {
+    const { t, i18n } = useTranslation("common");
     const [close, setClose] = React.useState(false);
     const handleClick = () => {
         setClose(current => !current)
     }
     return (
-        <div className={cls.topNotice} style={{ display: close ? 'none' : 'block' }}>
+        <div className={`${cls.topNotice} ${cls[i18n.language]}`} style={{ display: close ? 'none' : 'block' }}>
             <Container maxWidth="xl" className={cls.container}>
                 <div className={cls.notifyLeft}>
                     <h5>

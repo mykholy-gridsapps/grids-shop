@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
-
+@import "../../../styles/mixins.scss";
 .banner {
     margin-top: 20px;
     margin-bottom: 35px;
@@ -28,31 +28,45 @@
             line-height: 1.2;
             text-transform: uppercase !important;
             color: var(--text-dark);
-        }
-
-        h4 {
-            margin-bottom: 14px;
-            color: var(--text-dark);
-            font-size: 16px;
-            line-height: 19px;
-            font-weight: 600;
-
-            b {
-                font-weight: 600;
-                display: block;
-                font-size: 23px;
-                line-height: 1.5;
+            @include xs {
+                font-size: 20px;
             }
         }
 
-        a {
-            border-color: var(--main-color);
-            background-color: var(--main-color);
-            text-transform: uppercase;
-            color: #fff;
-            box-shadow: none;
-            padding: 8px 20px;
-            font-size: 12px;
+        .text2 {
+
+            text-align: end !important;
+            h4 {
+                margin-bottom: 14px;
+                color: var(--text-dark);
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 600;
+                text-align: end !important;
+                @include xs {
+                    font-size: 14px;
+                }
+                b {
+                    font-weight: 600;
+                    display: block;
+                    font-size: 23px;
+                    line-height: 1.5;
+                    text-align: end !important;
+                    @include xs {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            a {
+                border-color: var(--main-color);
+                background-color: var(--main-color);
+                text-transform: uppercase;
+                color: #fff;
+                box-shadow: none;
+                padding: 8px 20px;
+                font-size: 12px;
+            }
         }
     }
 

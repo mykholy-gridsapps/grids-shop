@@ -1,0 +1,259 @@
+@import "../../../styles/mixins.scss";
+
+.productDefault {
+    border: 1px solid #eee;
+    position: relative;
+    overflow: hidden;
+
+    .thumbWrapper {
+        overflow: hidden;
+        position: relative;
+
+        figure {
+            margin: 0;
+            display: block;
+            transition: all .3s ease;
+        }
+
+        .groupButton {
+            position: absolute;
+            top: calc(30% - 10px);
+            bottom: 0;
+            right: 20px;
+            width: calc(100% - 40px);
+            text-align: center !important;
+
+            .search {
+                margin-bottom: 9px;
+                display: flex;
+                justify-content: center;
+                vertical-align: top;
+                font-size: 14px;
+                line-height: 24px;
+                height: 66px;
+
+                a {
+                    transition: all .3s ease;
+                    background-color: var(--bg-dark-color);
+                    color: var(--text-light);
+                    display: flex;
+                    justify-content: center;
+                    height: 0px;
+                    overflow-wrap: break-word;
+                    position: relative;
+                    text-align: center !important;
+                    vertical-align: top;
+                    visibility: visible;
+                    width: 0px;
+                    font-size: 0px;
+                    border-radius: 50%;
+                    line-height: 0;
+                    opacity: 0.5;
+                    overflow: hidden;
+
+                    &:hover {
+                        background-color: var(--main-color);
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .addToWishlist {
+                transform: translateY(100px);
+                transition: bottom .3s ease;
+                transform-origin: bottom;
+                margin: 0 2px;
+                display: inline-block;
+                vertical-align: top;
+                font-size: 14px;
+                line-height: 24px;
+                overflow: hidden;
+                position: absolute;
+                right: 20%;
+                bottom: 60px;
+
+                a {
+                    background-color: var(--bg-dark-color);
+                    color: var(--text-light);
+                    display: inline-block;
+                    height: 32px;
+                    overflow-wrap: break-word;
+                    position: relative;
+                    text-align: center !important;
+                    vertical-align: top;
+                    visibility: visible;
+                    width: 32px;
+                    font-size: 16px;
+                    border-radius: 0;
+                    line-height: 32px;
+                    opacity: 0.5;
+
+                    &:hover {
+                        background-color: var(--main-color);
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .compare {
+                transform: translateY(100px);
+                transition: bottom .3s ease .1s;
+                margin: 0 2px;
+                display: inline-block;
+                vertical-align: top;
+                font-size: 14px;
+                line-height: 24px;
+                overflow: hidden;
+                position: absolute;
+                right: 38%;
+                bottom: 60px;
+
+                a {
+                    background-color: var(--bg-dark-color);
+                    color: var(--text-light);
+                    display: inline-block;
+                    height: 32px;
+                    overflow-wrap: break-word;
+                    position: relative;
+                    text-align: center !important;
+                    vertical-align: top;
+                    visibility: visible;
+                    width: 32px;
+                    font-size: 16px;
+                    border-radius: 0;
+                    line-height: 32px;
+                    opacity: 0.5;
+
+                    &:hover {
+                        background-color: var(--main-color);
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .addToCart {
+                transform: translatey(100px);
+                transition: bottom .3s ease .2s;
+                margin: 0 2px;
+                display: inline-block;
+                vertical-align: top;
+                font-size: 14px;
+                line-height: 24px;
+                overflow: hidden;
+                position: absolute;
+                right: 56%;
+                bottom: 60px;
+
+                a {
+                    background-color: var(--bg-dark-color);
+                    color: var(--text-light);
+                    display: inline-block;
+                    height: 32px;
+                    overflow-wrap: break-word;
+                    position: relative;
+                    text-align: center !important;
+                    vertical-align: top;
+                    visibility: visible;
+                    width: 32px;
+                    font-size: 16px;
+                    border-radius: 0;
+                    line-height: 32px;
+                    opacity: 0.5;
+
+                    &:hover {
+                        background-color: var(--main-color);
+                        opacity: 1;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .productInfo {
+        padding: 13px 14px;
+        background-color: var(--bg-color);
+
+        h2 {
+            font-size: 14px;
+            line-height: 20px;
+            color: var(--text-dark);
+            margin: 0;
+
+            a {
+                color: var(--text-dark);
+
+                &:hover {
+                    color: var(--main-color);
+                }
+            }
+        }
+
+        .rating {
+            span {
+                font-size: 15px;
+            }
+        }
+
+        .price {
+            display: block;
+            font-size: 15px;
+            color: var(--main-color);
+        }
+    }
+
+
+    &:hover {
+        .thumbWrapper {
+            figure {
+                transform: scale(1.15);
+            }
+
+            .groupButton {
+                .addToWishlist {
+                    bottom: 100px;
+                }
+
+                .compare {
+                    bottom: 100px;
+                }
+
+                .addToCart {
+                    bottom: 100px;
+                }
+
+                .search {
+                    a {
+                        width: 66px;
+                        height: 66px;
+                        font-size: 26px;
+                        line-height: 66px;
+                    }
+
+                }
+            }
+
+            .addToCart {
+                bottom: 0;
+            }
+
+        }
+
+    }
+
+    &.ar {
+        .productDetails {
+            padding: 0 10px 0 0;
+            right: 20px;
+            left: auto;
+
+
+
+            .categoryList {
+                text-align: right;
+            }
+        }
+    }
+
+
+}

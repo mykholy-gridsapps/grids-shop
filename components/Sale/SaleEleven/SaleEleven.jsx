@@ -1,9 +1,13 @@
+import { i18n, useTranslation } from "next-i18next";
+import Link from "next/link";
 import React from "react";
+
 import cls from "./saleEleven.module.scss"
 
 const SaleEleven = () => {
+    const { t, i18n } = useTranslation("common");
     return (
-        <div className={cls.banner}>
+        <div className={`${cls.banner} ${cls[i18n.language]}`}>
             <figure>
                 <img src="./imgs/sale/sale-11-1.jpg" alt="banner" />
             </figure>
@@ -16,7 +20,7 @@ const SaleEleven = () => {
             </div>
 
             <div className={cls.bannerLayerRight}>
-                <a href="#" className="btn btn-dark">Check this sale!</a>
+                <Link href="#" className="btn btn-dark">Check this sale!</Link>
             </div>
         </div>
     )

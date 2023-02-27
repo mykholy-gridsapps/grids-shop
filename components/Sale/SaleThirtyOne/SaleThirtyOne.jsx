@@ -3,12 +3,27 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 
 import cls from './saleThirtyOne.module.scss'
+import { i18n, useTranslation } from "next-i18next";
 
 const SaleThirtyOne = () => {
+    const { t, i18n } =useTranslation('common');
     return (
-        <div className={cls.sale}>
+        <div className={`${cls.sale} ${cls[i18n.language]}`}>
 
-            <Swiper slidesPerView={3} loop={false} spaceBetween={20}>
+            <Swiper 
+            slidesPerView={1} 
+            loop={false} 
+            spaceBetween={20}
+            breakpoints={{
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            }}>
                 <SwiperSlide>
                     <div className={cls.banner}>
                         <figure>
@@ -27,9 +42,7 @@ const SaleThirtyOne = () => {
                             <a href="demo33-shop.html" className={cls.btn}>Shop Now</a>
                         </div>
 
-                        <div className={cls.bannerLayerBottom}>
-                            <img src="./imgs/sale/sale-31-2.jpg" alt="brand" width="67" height="21" />
-                        </div>
+                        
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -71,9 +84,7 @@ const SaleThirtyOne = () => {
                             <a href="demo33-shop.html" className={cls.btn}>Shop Now</a>
                         </div>
 
-                        <div className={[cls.bannerLayerBottom, cls.bannerLeft].join(' ')}>
-                            <img src="./imgs/sale/sale-31-2.jpg" alt="brand" width="67" height="21" />
-                        </div>
+                        
                     </div>
                 </SwiperSlide>
             </Swiper>

@@ -1,4 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
+@import "../../../styles/mixins.scss";
 
 .banner {
     background-image: url("../../../public/imgs/sale/sale-22-1.jpg");
@@ -8,6 +9,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
+
+   
+
+    @include md {
+        height: 360px;
+    }
+
+    @include xs {
+        height: 280px;
+    }
 
     .container {
         position: relative;
@@ -23,6 +34,14 @@
             margin-left: auto !important;
             float: right !important;
 
+            @include md {
+                transform: translateY(50%);
+            }
+
+            @include xs {
+                transform: translateY(34%);
+            }
+
             h2 {
                 font-family: "Savoye LET";
                 font-weight: 700;
@@ -31,6 +50,15 @@
                 font-size: 44px;
                 margin-bottom: 8px !important;
                 color: var(--text-dark);
+
+                @include md {
+                    font-size: 30px;
+                }
+
+                @include xs {
+                    font-size: 20px;
+                    text-align: right !important;
+                }
             }
 
             h3 {
@@ -39,6 +67,16 @@
                 line-height: 1;
                 padding-left: 27px;
                 color: var(--text-dark);
+
+                @include md {
+                    font-size: 74px;
+                }
+
+                @include xs {
+                    font-size: 30px;
+                    margin-right: 0;
+                    text-align: right !important;
+                }
 
                 small {
                     display: inline-block;
@@ -49,6 +87,19 @@
                     font-size: 27px;
                     font-weight: 500;
                     text-transform: uppercase !important;
+
+                    @include md {
+                        font-size: 20px;
+                        left: -18px;
+                        transform: translateY(-174%) rotate(-90deg);
+                    }
+
+                    @include xs {
+                        font-size: 12px;
+                        left: auto;
+                        transform: translateY(-300%) rotate(-90deg);
+                        right: 116px;
+                    }
                 }
             }
 
@@ -57,6 +108,11 @@
                 width: 10%;
                 border: none;
                 border-top: 5px solid var(--text-dark);
+
+                @include xs {
+                    margin: 16px 0 0 auto;
+
+                }
             }
 
             h5 {
@@ -72,6 +128,17 @@
                 display: inline-block !important;
                 font-weight: 500;
 
+                @include md {
+                    font-size: 16px;
+                }
+
+                @include xs {
+                    display: block !important;
+                    font-size: 14px;
+                    text-align: end !important;
+                    margin-right: 0;
+                }
+
                 strong {
                     display: inline;
                     font-size: 36px;
@@ -79,6 +146,10 @@
                     vertical-align: text-top;
                     display: inline-block;
                     letter-spacing: -0.02em;
+
+                    @include xs {
+                        font-size: 26px;
+                    }
                 }
             }
 
@@ -87,10 +158,63 @@
                 font-size: 17px;
                 border-color: var(--text-dark);
                 background-color: var(--text-dark);
-                color: #fff;
+                color: var(--text-light);
                 box-shadow: none;
                 text-transform: uppercase;
                 display: inline-block;
+
+                @include md {
+                    padding: 10px 26px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &.ar {
+        .container {
+
+            .bannerLayer {
+                h3 {
+                    margin-right: 0;
+                    margin-left: -7px;
+                    padding-left: 0;
+                    padding-right: 27px;
+                    @include xs {
+                        padding-right: 15px;
+                    }
+                    small {
+                        transform: translateY(-115%) rotate(-90deg);
+    
+                        left: auto !important;
+                        right: -18px;
+                        @include md {
+                            left: auto !important;
+                            font-size: 20px;
+                            right: -10px;
+                            transform: translateY(-140%) rotate(-90deg);
+                        }
+                        @include xs {
+                            font-size: 12px;
+                            left: auto;
+                            transform: translateY(-335%) rotate(-90deg);
+                            right: 0;
+                        }
+                    }
+                }
+                hr {
+                    margin: 16px 0 0 auto;
+                }
+                h5 {
+                    padding-right: 0 !important;
+                    padding-left: 2.5px !important;
+                    margin-right: 0;
+                    margin-left: 22px;
+                }
+                a {
+                    i {
+                        transform: rotateY(180deg);
+                    }
+                }
             }
         }
     }

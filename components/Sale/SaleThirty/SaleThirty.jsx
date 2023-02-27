@@ -1,10 +1,13 @@
 import { Grid } from "@mui/material";
+import { i18n, useTranslation } from "next-i18next";
 import React from "react";
+
 import cls from "./saleThirty.module.scss"
 
 const SaleThirty = () => {
+    const { t, i18n } = useTranslation("common")
     return (
-        <div className={cls.banner}>
+        <div className={`${cls.banner} ${cls[i18n.language]}`}>
             <figure>
                 <img src="./imgs/sale/sale-30-1.jpg" alt="banner" width="951" height="651" />
             </figure>

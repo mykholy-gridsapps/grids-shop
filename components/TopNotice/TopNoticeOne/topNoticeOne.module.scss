@@ -11,7 +11,7 @@
 
         h5 {
             margin-right: 2px;
-            color: #fff;
+            color: var(--text-light);
             font-size: 13px;
             font-weight: 500;
             margin-bottom: 0 !important;
@@ -25,12 +25,12 @@
             display: inline-block;
             background: #151719;
             font-size: 10px;
-            color: #fff;
+            color: var(--text-light);
             font-weight: 700;
         }
 
         small {
-            color: #fff;
+            color: var(--text-light);
             margin-left: 6px;
             letter-spacing: 0.03em;
             font-size: 11px;
@@ -42,7 +42,7 @@
             position: absolute;
             top: -3%;
             right: 1%;
-            color: #fff;
+            color: var(--text-light);
             padding: 0;
             background: transparent;
             border: none;

@@ -96,6 +96,48 @@ import {
   ProductTwo,
   SaleEight,
   SaleEighteen,
+  SaleEleven,
+  SaleFifteen,
+  SaleFive,
+  SaleFour,
+  SaleFourteen,
+  SaleNine,
+  SaleNinteen,
+  SaleOne,
+  SaleSeven,
+  SaleSeventeen,
+  SaleSix,
+  SaleSixteen,
+  SaleTen,
+  SaleThirteen,
+  SaleThirty,
+  SaleThirtyOne,
+  SaleThirtyThree,
+  SaleThree,
+  SaleTweleve,
+  SaleTwenty,
+  SaleTwentyEight,
+  SaleTwentyFive,
+  SaleTwentyFour,
+  SaleTwentyNine,
+  SaleTwentyOne,
+  SaleTwentySeven,
+  SaleTwentySix,
+  SaleTwentyThree,
+  SaleTwentyTwo,
+  SaleTwo,
+  TestimonialFiveCarousel,
+  TestimonialFourCarousel,
+  TestimonialOneCarousel,
+  TestimonialThreeCarousel,
+  TestimonialTwoCarousel,
+  TopNoticeOne,
+  TopNoticeTwo,
+  TopNoticeThree,
+  SaleThirtyFour,
+  ProductNine,
+  ProductTen,
+  SaleThirtyFive,
   CategoriesSideOne} from "../components";
 
 
@@ -104,7 +146,17 @@ const Home = () => {
 
   return (
     <>
-      <TemplateOne />
+      {/* <TemplateOne /> */}
+      <Container >
+        <Grid container>
+          <Grid item xs={3}>
+            <SaleThirtyFive />
+            <br />
+            <br />
+            <br />
+          </Grid>
+        </Grid>
+      </Container>
     </>
   );
 };

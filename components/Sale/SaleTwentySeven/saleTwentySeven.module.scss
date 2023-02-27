@@ -1,84 +1,180 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
+@import "../../../styles/mixins.scss";
 
 .banner {
-    background-color: var(--text-dark);
+    background-color: #22252a;
     position: relative;
-
-    img {
-        object-fit: cover;
-        width: 100%;
-        display: block;
-        max-width: 100%;
-        height: auto;
+&.ar {
+    .text1 {
+        h3 {
+            padding-left: 0;
+            padding-right: 48px;
+            @include sm {
+                padding-left: 0;
+                padding-right: 20px;
+            }
+        }
+        h2 {
+            padding-left: 0;
+            padding-right: 48px;
+            @include sm {
+                padding-left: 0;
+                padding-right: 20px;
+            }
+        }
     }
-
-    h3 {
-        padding-left: 48px;
-        color: rgba(255, 255, 255, 0.4);
-        font-size: 12px;
-        letter-spacing: 0.025em;
-        text-transform: uppercase !important;
-        line-height: 1;
-        font-weight: 600;
+    .text2 {
+        h5 {
+            i {
+                left: auto;
+                right: -25px;
+                @include xs {
+                    left: auto;
+                    right: -13px;
+                }
+            } 
+        }
     }
-
-    h2 {
-        text-transform: uppercase !important;
-        padding-left: 48px;
-        font-size: 32px;
-        color: #fff;
-        line-height: 1;
-        font-weight: 600;
-    }
-
-    h4 {
-        padding: 7px 10px;
-        font-size: 16px;
-        line-height: 1.4;
-        transform: skew(2deg, -2deg);
-        color: var(--text-dark);
-        background-color: #fff;
-    }
-
-    h5 {
-        position: relative;
-        padding: 7px 10px;
-        font-size: 23px;
-        line-height: 0.8;
-        transform: skew(2deg, -2deg);
-        background-color: var(--main-color);
-        color: #fff;
-        display: inline-block;
-
-        i {
-            position: absolute;
-            left: -25px;
-            top: 50%;
-            transform: translateY(-50%) rotate(-90deg);
-            font-style: normal;
-            font-size: 10px;
-            opacity: 0.6;
-            letter-spacing: 0;
+}
+    figure {
+        img {
+            object-fit: cover;
+            width: 100%;
+            display: block;
+            max-width: 100%;
+            height: auto;
         }
 
-        sub {
-            position: absolute;
-            left: 100%;
-            margin-left: 5px;
-            bottom: 5px;
-            font-size: 60%;
+        @include sm {
+            display: none;
+        }
+    }
+
+
+    .text1 {
+        padding: 30px 0;
+
+        @include md {
+            padding: 10px 0;
+        }
+
+        h3 {
+            padding-left: 48px;
+            color: rgba(255, 255, 255, 0.4);
+            font-size: 12px;
+            letter-spacing: 0.025em;
+            text-transform: uppercase !important;
             line-height: 1;
+            font-weight: 600;
+
+            @include sm {
+                padding-left: 20px;
+            }
+        }
+
+        h2 {
+            text-transform: uppercase !important;
+            padding-left: 48px;
+            font-size: 32px;
+            color: #fff;
+            line-height: 1;
+            font-weight: 600;
+
+            @include sm {
+                font-size: 20px;
+                padding-left: 20px;
+            }
         }
     }
 
-    a {
-        background-color: #000;
-        line-height: 1.3333;
-        padding: 12px 27px;
-        color: #fff;
-        box-shadow: none;
-        text-transform: uppercase;
-        font-size: 12px;
+    .text2 {
+        padding: 10px 30px;
+
+        @include sm {
+            padding: 10px 26px;
+        }
+        @include xs {
+            padding: 5px 22px;
+        }
+
+        h4 {
+            padding: 7px 10px;
+            font-size: 16px;
+            line-height: 1.4;
+            transform: skew(2deg, -2deg);
+            color: var(--text-dark);
+            background-color: var(--bg-color);
+            display: inline-block;
+
+            @include xs {
+                padding: 3px 4px;
+                font-size: 12px;
+            }
+        }
+
+        h5 {
+            position: relative;
+            padding: 7px 10px;
+            font-size: 23px;
+            line-height: 0.8;
+            transform: skew(2deg, -2deg);
+            color: #fff;
+            display: block;
+            @include xs {
+                font-size: 20px;
+            }
+            i {
+                position: absolute;
+                left: -25px;
+                top: 50%;
+                transform: translateY(-50%) rotate(-90deg);
+                font-style: normal;
+                font-size: 10px;
+                opacity: 0.6;
+                letter-spacing: 0;
+                @include xs {
+                    left: -13px;
+                }
+            }
+
+            b {
+                background-color: var(--main-color);
+                padding: 2px 5px;
+            }
+
+            sub {
+                position: relative;
+                left: 0;
+                margin-left: 5px;
+                bottom: 5px;
+                font-size: 60%;
+                line-height: 1;
+            }
+        }
+    }
+
+    .btn {
+        padding: 30px 0;
+
+        @include sm {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        a {
+            background-color: #000;
+            line-height: 1.3333;
+            padding: 12px 27px;
+            color: #fff;
+            box-shadow: none;
+            text-transform: uppercase;
+            font-size: 12px;
+
+            @include xs {
+                padding: 8px 10px;
+            }
+        }
     }
 
 

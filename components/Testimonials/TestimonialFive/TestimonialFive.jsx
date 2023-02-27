@@ -1,4 +1,6 @@
+import { Rating } from "@mui/material";
 import React from "react";
+
 import cls from './testimonialFive.module.scss';
 
 const TestimonialFive = () => {
@@ -17,11 +19,8 @@ const TestimonialFive = () => {
 
             <h5 className="testi-author">Joe Doe</h5>
             <div className={cls.ratings}>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-solid fa-star"></i>
-                <i className="fa-regular fa-star"></i>
+            <Rating name="read-only" value={3} readOnly />
+
             </div>
 
         </div>

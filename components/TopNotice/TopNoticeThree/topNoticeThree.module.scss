@@ -1,0 +1,51 @@
+.topNotice {
+    padding: 30px 0px 35px 0px;
+    background-image: url("../../../public/imgs/top-notice/notice-3-1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+    h2 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43px;
+        text-align: center !important;
+        color: rgb(255, 51, 102);
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+        color: var(--text-light);
+        text-align: center !important;
+    }
+
+    p {
+        font-size: 13px;
+        line-height: 20px;
+        color: var(--text-color);
+        text-align: center !important;
+    }
+
+    .btn {
+        position: absolute;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-color: rgba(238,238,238,0.14);
+        color: #777;
+        font-size: 20px;
+        line-height: 24px;
+        margin-inline-start: auto;
+        margin-bottom: -24px;
+        text-align: center !important;
+        cursor: pointer;
+        z-index: 1;
+        right: 10px;
+        top: 10px;
+        
+    }
+}

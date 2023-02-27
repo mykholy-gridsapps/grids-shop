@@ -1,5 +1,7 @@
 import { Grid } from "@mui/material";
+import Link from "next/link";
 import React from "react";
+
 import cls from "./saleTwentySix.module.scss"
 
 const SaleTwentySix = () => {
@@ -12,11 +14,11 @@ const SaleTwentySix = () => {
             <div className={cls.bannerLayer}>
                 <Grid container justifyContent="space-between">
                     <Grid item lg={4} xs={6}>
-                        <h3 className="font1 text-uppercase ls-0 mb-0">Action<br />Cameras</h3>
+                        <h3>Action<br />Cameras</h3>
                     </Grid>
-                    <Grid item lg={4} xs={6} paddingLeft="40px">
-                        <h4 className="font1 ls-n-10">Starting From <b>$399</b></h4>
-                        <a href="demo21-shop.html" className="btn btn-primary ls-n-25">Shop Now</a>
+                    <Grid item lg={4} xs={6} className={cls.text2}>
+                        <h4>Starting From <b>$399</b></h4>
+                        <Link href="demo21-shop.html" className="btn btn-primary ls-n-25">Shop Now</Link>
                     </Grid>
                 </Grid>
             </div>
