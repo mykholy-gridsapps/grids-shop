@@ -6,7 +6,8 @@ import Link from 'next/link'
 import { Rating } from '@mui/material'
 
 const ProductSix = () => {
-    const [quantity, setQuantity] = useState(1)
+    const [quantity, setQuantity] = useState(1);
+    const [openQuickView, setOpenQuickView] = useState(false);
 
     const changeQuantity = (type, value) => {
         if (type === 'plus') setQuantity(prev => (prev += 1))
@@ -67,6 +68,9 @@ const ProductSix = () => {
                         <i className="icon-shopping-cart"></i>ADD TO CART</Link>
                 </div>
             </div>
+            {openQuickView && 
+                <QuickView setOpenQuickView={setOpenQuickView} />
+            }
         </div>
     )
 }

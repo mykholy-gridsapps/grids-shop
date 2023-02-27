@@ -24,6 +24,7 @@ function MyApp({ Component, ...rest }) {
   const { props: returnedProps } = rest;
 
   const [pageLoading, setPageLoading] = useState(false);
+  const [rendered, setRendered] = useState(false);
 
   useEffect(() => {
     if (!cookie.get("grids-apps-shop-mode")) {
@@ -45,7 +46,12 @@ function MyApp({ Component, ...rest }) {
     Router.events.on("routeChangeComplete", () => {
       setPageLoading(false);
     });
+    setRendered(true)
   }, []);
+
+  if(!rendered) {
+    return null;
+  }
 
   return (
     <div id={returnedProps.locale}>

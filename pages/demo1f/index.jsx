@@ -1,3 +1,4 @@
+import Container from '@mui/material/Container';
 // REDIRECTION FILES
 import langRedirection from "../../utils/redirections/langRedirection/langRedirection";
 import routeRedirection from "../../utils/redirections/routeRedirection/routeRedirection";
@@ -7,16 +8,16 @@ import { useTranslation } from "next-i18next";
 // REDUX STUFF
 import { wrapper } from "../../store/store";
 
-import { TemplateTwo } from "../../components";
+import { TemplateOne } from "../../components";
 
 
 const Home = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
-    <>
-      <TemplateTwo />
-    </>
+    <Container maxWidth="xxxl">
+      <TemplateOne />
+    </Container>
   );
 };
 

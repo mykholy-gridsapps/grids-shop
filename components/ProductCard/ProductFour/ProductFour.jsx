@@ -6,6 +6,8 @@ import React from 'react'
 import cls from './productFour.module.scss'
 
 const ProductFour = () => {
+    const [openQuickView, setOpenQuickView] = useState(false);
+
     return (
         <div className={`${cls.productDefault} ${cls[i18n.language]}`}>
             <figure>
@@ -42,6 +44,9 @@ const ProductFour = () => {
                         <i className="fas fa-external-link-alt"></i></Link>
                 </div>
             </div>
+            {openQuickView && 
+                <QuickView setOpenQuickView={setOpenQuickView} />
+            }
         </div>
     )
 }

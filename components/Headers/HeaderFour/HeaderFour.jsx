@@ -21,13 +21,6 @@ const HeaderOne = () => {
 
         <div className={cls.navbar__main}>
           <Container maxWidth="xl" className={`${cls.navbar_mainNav}`}>
-            <div className={cls.smallLogo}>
-              <i
-                className="fa-light fa-grid-2"
-                onClick={() => setOpenSidebar(!openSidebar)}
-              ></i>{" "}
-              <h5>Grids Apps</h5>
-            </div>
 
             <div className={cls.links}>
               <ul className={`${cls.navLinks} ${cls[i18n.language]}`}>

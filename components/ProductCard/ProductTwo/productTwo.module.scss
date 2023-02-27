@@ -1,5 +1,5 @@
 .productDefault {
-    position: relative;
+    // position: relative;
     color: var(--text-color);
     transition: box-shadow 0.3s ease-in-out;
 
@@ -37,6 +37,7 @@
             .btnQuickview {
                 visibility: visible;
                 opacity: 0.85;
+                cursor: pointer;
             }
         }
     }

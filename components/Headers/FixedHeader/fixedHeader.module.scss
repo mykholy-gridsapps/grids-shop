@@ -22,6 +22,8 @@
       display: none;
       .smallImage {
         height: 50px;
+        width: 120px;
+        object-fit: contain;
         @include md {
           display: inline-block;
         }
@@ -64,17 +66,6 @@
               color: var(--secondary-color)
             }
           }
-          
-          @keyframes show {
-            0% {
-              opacity: 0;
-              transform: translateY(30px);
-            }
-            100% {
-              opacity: 1;
-              transform: translateY(0px);
-            }
-          }
         }
       }
       @include md {
@@ -95,14 +86,12 @@
       .cart {
         position: relative;
         cursor: pointer;
-        @keyframes show {
-          0% {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0px);
+        i {
+          font-size: 1.2rem !important;
+        }
+        @include xs {
+          .cartAmount {
+            display: none;
           }
         }
       }

@@ -40,7 +40,11 @@ const BlogTwo = () => {
                 <div className={cls.postContent}>
                     <p>Leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with... </p>
 
-                    <Link href="single.html" className={cls[i18n.language]}>read more <i className="fa-solid fa-chevron-right"></i></Link>
+                    <Link href="single.html" className={cls[i18n.language]}>
+                        <span>
+                            read more <i className="fa-solid fa-chevron-right"></i>
+                        </span>
+                    </Link>
                 </div>
             </div>
             <Lightbox

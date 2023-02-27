@@ -146,17 +146,8 @@ const Home = () => {
 
   return (
     <>
-      {/* <TemplateOne /> */}
-      <Container >
-        <Grid container>
-          <Grid item xs={3}>
-            <SaleThirtyFive />
-            <br />
-            <br />
-            <br />
-          </Grid>
-        </Grid>
-      </Container>
+      <TemplateOne />
+      
     </>
   );
 };

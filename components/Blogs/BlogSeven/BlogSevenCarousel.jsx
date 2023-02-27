@@ -11,10 +11,6 @@ import "swiper/css/pagination";
 
 
 const BlogSevenCarousel = () => {
-    const pagination = {
-        clickable: true,
-
-    };
     const array = [...Array(5)]
     return (
         <div>

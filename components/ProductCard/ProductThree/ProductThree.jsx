@@ -43,6 +43,9 @@ const ProductThree = () => {
                         <i className="fas fa-external-link-alt"></i></Link>
                 </div>
             </div>
+            {openQuickView && 
+                <QuickView setOpenQuickView={setOpenQuickView} />
+            }
         </div>
     )
 }

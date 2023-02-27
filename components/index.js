@@ -58,10 +58,6 @@ export {default as SliderEleven} from './MainSlider/SliderEleven/SliderEleven'
 export {default as SliderTwelve} from './MainSlider/SliderTwelve/SliderTwelve'
 export {default as SliderThirteen} from './MainSlider/SliderThirteen/SliderThirteen'
 
-// HOME PAGE TEMPLATES
-export { default as TemplateOne } from './HomeTemplates/TemplateOne/TemplateOne';
-export { default as TemplateTwo } from './HomeTemplates/TemplateTwo/TemplateTwo';
-
 export {default as NewsletterOne} from './Newsletter/NewsletterOne/NewsletterOne'
 export {default as NewsletterTwo} from './Newsletter/NewsletterTwo/NewsletterTwo'
 export {default as NewsletterThree} from './Newsletter/NewsletterThree/NewsletterThree'

@@ -9,10 +9,6 @@ import 'swiper/css';
 
 
 const BlogFourCarousel = () => {
-    const pagination = {
-        clickable: true,
-
-    };
     const array = [...Array(5)]
     return (
         <div className={cls.swiper}>

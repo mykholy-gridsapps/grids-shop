@@ -6,8 +6,6 @@ import 'swiper/css';
 import cls from './brandsEight.module.scss'
 
 const BrandsEight = () => {
-    const navigation = {
-    };
     return (
         <div className={cls.brands}>
             <h2>Featured Brands</h2>
@@ -15,7 +13,6 @@ const BrandsEight = () => {
             slidesPerView={7} 
             loop={true} 
             spaceBetween={1} 
-            navigation={navigation} 
             modules={[Navigation]}
             breakpoints={{
                 300: {
@@ -52,7 +49,7 @@ const BrandsEight = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={cls.brand}>
-                        <img src="./imgs/brands/brand3.png" alt="brand" width="140" height="60" />
+                        <img src="./imgs/brands/brand1.png" alt="brand" width="140" height="60" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>

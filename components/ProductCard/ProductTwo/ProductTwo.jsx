@@ -6,6 +6,8 @@ import cls from './productTwo.module.scss'
 import { Rating } from '@mui/material'
 
 const ProductTwo = () => {
+    const [openQuickView, setOpenQuickView] = useState(false);
+
     return (
         <div className={`${cls.productDefault} ${cls.innerQuickview} ${cls.innerIcon} ${cls[i18n.language]}`}>
             <figure className={cls.imgEffect}>
@@ -45,6 +47,9 @@ const ProductTwo = () => {
                     <span className={cls.productPrice}>$9.00</span>
                 </div>
             </div>
+            {openQuickView && 
+                <QuickView setOpenQuickView={setOpenQuickView} />
+            }
         </div>
     )
 }

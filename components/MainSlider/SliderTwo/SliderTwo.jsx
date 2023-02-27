@@ -42,8 +42,8 @@ const SliderTwo = () => {
 
                             <h5>Starting at <span>$<em>19</em>99</span>
                             </h5>
-                            <Link href="demo3-shop.html" className={cls.btn} role="button">Shop Now <i
-                                className="fas fa-long-arrow-alt-right"></i></Link>
+                            <Link href="demo3-shop.html" className={cls.btn} role="button"><span>Shop Now <i
+                                className="fas fa-long-arrow-alt-right"></i></span></Link>
                         </div>
                     </div>
                 </SwiperSlide>

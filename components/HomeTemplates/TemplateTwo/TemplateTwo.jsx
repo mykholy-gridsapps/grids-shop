@@ -1,77 +1,77 @@
 // TEMPLATE COMPONENTS
-import CategoriesSideOne from '../../CategoriesSide/CategoriesSideOne/CategoriesSideOne';
-import SliderOne from "../../MainSlider/SliderOne/SliderOne";
-import InfoBoxOne from "../../InfoBox/InfoBoxOne/InfoBoxOne";
-import FeaturesEight from "../../Features/FeaturesEight/FeaturesEight";
-import NewsletterFour from '../../Newsletter/NewsletterFour/NewsletterFour';
-import SaleEight from '../../Sale/SaleEight/SaleEight';
-import SaleSeven from '../../Sale/SaleSeven/SaleSeven';
-import SaleSix from '../../Sale/SaleSix/SaleSix';
+import SliderSix from "../../MainSlider/SliderSix/SliderSix";
+import InfoBoxFour from "../../InfoBox/InfoBoxFour/InfoBoxFour";
+import FeaturesFive from "../../Features/FeaturesFive/FeaturesFive";
+import NewsletterThree from '../../Newsletter/NewsletterThree/NewsletterThree';
+import SaleTen from '../../Sale/SaleTen/SaleTen';
+import SaleNine from '../../Sale/SaleNine/SaleNine';
+import SaleEleven from '../../Sale/SaleEleven/SaleEleven';
 import SaleFive from '../../Sale/SaleFive/SaleFive';
-import SaleOne from '../../Sale/SaleOne/SaleOne';
-import ProductsCategoriesTwo from '../../ProductsCategories/ProductsCategoriesTwo/ProductsCategoriesTwo';
-import ProductsCategoriesFour from '../../ProductsCategories/ProductsCategoriesFour/ProductsCategoriesFour';
-import BlogSix from '../../Blogs/BlogSix/BlogSix';
-import BrandsSix from '../../Brands/BrandsSix/BrandsSix';
-import TestimonialFiveCarousel from '../../Testimonials/TestimonialFive/TestimonialFiveCarousel';
+import SaleTwo from '../../Sale/SaleTwo/SaleTwo';
+import SaleThree from '../../Sale/SaleThree/SaleThree';
+import SaleFour from '../../Sale/SaleFour/SaleFour';
+import ProductsCategoriesOne from '../../ProductsCategories/ProductsCategoriesOne/ProductsCategoriesOne';
+import ProductsCategoriesFive from '../../ProductsCategories/ProductsCategoriesFive/ProductsCategoriesFive';
+import BlogFour from '../../Blogs/BlogFour/BlogFour';
+import BrandsFour from '../../Brands/BrandsFour/BrandsFour';
+import TestimonialFourCarousel from '../../Testimonials/TestimonialFour/TestimonialFourCarousel';
 // MATERIAL UI STUFF
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 // STYLES FILES
 import cls from './templateTwo.module.scss';
 
-const TemplateOne = () => {
+const TemplateTwo = () => {
   return (
     <div>
-      <Container maxWidth="xxxl">
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={4} lg={3}>
-            <CategoriesSideOne />
-          </Grid>
-          <Grid item xs={12} md={8} lg={9}>
-            <SliderOne />
-          </Grid>
+      <Grid container spacing={2}>
+        <Grid item xs={12}>
+          <SliderSix />
         </Grid>
-        <div className={cls.secondPart}>
-          <InfoBoxOne />
+      </Grid>
+      <div className={cls.secondPart}>
+        <InfoBoxFour />
 
-          {/* PRODUCTS CATEGORIES */}
-          <div className={cls.section}>
-            <ProductsCategoriesTwo />
-          </div>
-
-          {/* SALES */}
-          <div className={cls.sales}>
-            <div>
-              <SaleFive />
-              <SaleOne />
-            </div>
-            <div>
-              <SaleEight />
-              <SaleSix />
-            </div>
-            <div>
-              <SaleSeven />
-              <SaleFive />
-            </div>
-          </div>
-          {/* SALES */}
-
-          {/* PRODUCTS CATEGORIES */}
-          <div>
-            <ProductsCategoriesFour />
-          </div>
-
-          <BlogSix />
-          <TestimonialFiveCarousel />
-
-          <FeaturesEight />
-          <BrandsSix />
-          <NewsletterFour />
+        {/* PRODUCTS CATEGORIES */}
+        <div className={cls.section}>
+          <ProductsCategoriesOne />
         </div>
-      </Container>
+
+        {/* SALES */}
+        <div className={cls.sales}>
+          <div>
+            <SaleFive />
+            <SaleTwo />
+            <SaleFour />
+            <SaleThree />
+          </div>
+          <div>
+            <SaleTen />
+            <SaleEleven />
+          </div>
+          <div>
+            <SaleNine />
+            <SaleFive />
+          </div>
+        </div>
+        {/* SALES */}
+
+        {/* PRODUCTS CATEGORIES */}
+        <div className={cls.section2}>
+          <ProductsCategoriesFive />
+        </div>
+
+        <BlogFour />
+        <TestimonialFourCarousel />
+
+        <div className={cls.section}>
+          <FeaturesFive />
+        </div>
+        <BrandsFour />
+        <NewsletterThree />
+      </div>
     </div>
   )
 }
 
-export default TemplateOne
+export default TemplateTwo

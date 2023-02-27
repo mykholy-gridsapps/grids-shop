@@ -11,6 +11,7 @@ import LangSwitch from "../../switches/LangSwitch/LangSwitch";
 import CurrencySwitch from "../../switches/CurrencySwitch/CurrencySwitch";
 import ModeSwitch from "../../switches/ModeSwitch/ModeSwitch";
 import MobSidebar from "../MobSidebar/MobSidebar";
+import SmallScreenSearch from '../SmallScreenSearch/SmallScreenSearch';
 
 import Container from "@mui/material/Container";
 import Tooltip from "@mui/material/Tooltip";
@@ -22,6 +23,7 @@ import cls from "./headerThree.module.scss";
 const Navbar = ({ rounded }) => {
   const [openSidebar, setOpenSidebar] = useState(false);
   const [navDropdown, setNavDropdown] = useState("");
+  const [openSmallSearch, setOpenSmallSearch] = useState(false);
   const router = useRouter();
   const { t, i18n } = useTranslation("nav");
 
@@ -68,6 +70,11 @@ const Navbar = ({ rounded }) => {
           </div>
 
           <div className={cls.navbar__search__account}>
+            <div className={cls.search} onClick={() => setOpenSmallSearch(prev => !prev)}>
+              <span>
+                <i className="fa-light fa-magnifying-glass"></i>
+              </span>
+            </div>
             <div className={cls.account}>
               <Tooltip title="Compare" placement="top">
                 <span onClick={() => router.push("/compare")}>
@@ -98,7 +105,7 @@ const Navbar = ({ rounded }) => {
               <Tooltip title="Cart" placement="top">
                 <span onClick={() => router.push("/cart")}>
                   <i className="fa-light fa-cart-shopping"></i>{" "}
-                  <span>$0.00</span>
+                  <span className={cls.cartAmount}>$0.00</span>
                 </span>
               </Tooltip>
 
@@ -114,6 +121,11 @@ const Navbar = ({ rounded }) => {
         isOpen={openSidebar}
         closeMobileMenu={setOpenSidebar}
       />
+
+      {/* SMALL SCREEN SEARCH */}
+      {openSmallSearch && 
+        <SmallScreenSearch setOpenSmallSearch={setOpenSmallSearch} />
+      }
     </div>
   );
 };

@@ -20,7 +20,11 @@ const BlogFive = () => {
                     <div className={cls.postContent}>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non placerat mi. Etiam non... </p>
 
-                        <Link href="single.html" className={`${cls.readMore} ${cls[i18n.language]}`}>read more <i className="fas fa-angle-right"></i></Link>
+                        <Link href="single.html" className={`${cls.readMore} ${cls[i18n.language]}`}>
+                            <span>
+                                read more <i className="fas fa-angle-right"></i>
+                            </span>
+                        </Link>
                     </div>
                 </div>
             </article>

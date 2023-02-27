@@ -42,6 +42,9 @@ const ProductEight = () => {
                     <span className={cls.productPrice}>$9.00</span>
                 </div>
             </div>
+            {openQuickView && 
+                <QuickView setOpenQuickView={setOpenQuickView} />
+            }
         </div>
     )
 }
