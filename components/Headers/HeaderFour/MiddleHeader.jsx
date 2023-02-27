@@ -6,6 +6,7 @@ import AnimatedIcons from "./../../UIs/AnimatedIcons/AnimatedIcons";
 import CartDropdown from "../CartDropdown/CartDropdown";
 import WishlistDropdown from "../WishlistDropdown/WishlistDropdown";
 import MobSidebar from "../MobSidebar/MobSidebar";
+import SmallScreenSearch from '../SmallScreenSearch/SmallScreenSearch';
 
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
@@ -18,6 +19,7 @@ import cls from "./middleHeader.module.scss";
 const MiddleHeader = () => {
   const [navDropdown, setNavDropdown] = useState(0);
   const [openSidebar, setOpenSidebar] = useState(false);
+  const [openSmallSearch, setOpenSmallSearch] = useState(false);
 
   return (
     <div className={cls.headerMiddle}>
@@ -30,16 +32,18 @@ const MiddleHeader = () => {
                 onClick={() => setOpenSidebar((prev) => !prev)}
               ></i>
               <Link href="/">
-                <img
-                  className={cls.bigImage}
-                  src="./imgs/logos/whiteLogo.png"
-                  alt="tripple-shop-logo"
-                />
-                <img
-                  className={cls.smallImage}
-                  src="./imgs/logos/whiteSmallLogo.png"
-                  alt="tripple-shop-logo"
-                />
+                <span>
+                  <img
+                    className={cls.bigImage}
+                    src="./imgs/logos/whiteLogo.png"
+                    alt="tripple-shop-logo"
+                  />
+                  <img
+                    className={cls.smallImage}
+                    src="./imgs/logos/whiteSmallLogo.png"
+                    alt="tripple-shop-logo"
+                  />
+                </span>
               </Link>
             </div>
           </Grid>
@@ -90,6 +94,11 @@ const MiddleHeader = () => {
               </div>
 
               <div className={cls.navbar__main__account}>
+                <div className={cls.search} onClick={() => setOpenSmallSearch(prev => !prev)}>
+                  <span>
+                    <i className="fa-light fa-magnifying-glass"></i>
+                  </span>
+                </div>
                 <div className={cls.account}>
                   <Tooltip title="compare" placement="top">
                     <span onClick={() => router.push("/compare")}>
@@ -120,7 +129,7 @@ const MiddleHeader = () => {
                   <Tooltip title="Cart" placement="top">
                     <span onClick={() => router.push("/cart")}>
                       <i className="fa-light fa-cart-shopping"></i>{" "}
-                      <span>$0.00</span>
+                      <span className={cls.cartAmount}>$0.00</span>
                     </span>
                   </Tooltip>
 
@@ -138,6 +147,11 @@ const MiddleHeader = () => {
         isOpen={openSidebar}
         closeMobileMenu={setOpenSidebar}
       />
+
+      {/* SMALL SCREEN SEARCH */}
+      {openSmallSearch && 
+        <SmallScreenSearch setOpenSmallSearch={setOpenSmallSearch} />
+      }
     </div>
   );
 };

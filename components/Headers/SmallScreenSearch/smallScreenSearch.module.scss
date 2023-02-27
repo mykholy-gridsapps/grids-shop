@@ -1,0 +1,52 @@
+@import '../../../styles/mixins.scss';
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.search {
+  position: absolute;
+  top: 105%;
+  right: 10%;
+  display: none;
+  align-items: center;
+  z-index: 99999;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 300px;
+  overflow: hidden;
+  animation: show 0.3s forwards;
+  input {
+    padding: 5px 20px;
+    width: 240px;
+    height: 40px;
+    border: 1px solid var(--border-color);
+    font-size: 0.9rem;
+    outline: none;
+  }
+  button {
+    width: 60px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border: none;
+    background-color: var(--main-color);
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+  }
+  &.ar {
+    right: unset;
+    left: 10%;
+  }
+  @include md {
+    display: flex;
+  }
+}

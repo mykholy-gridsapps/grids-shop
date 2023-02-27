@@ -9,12 +9,14 @@ const CategoryNine = () => {
     return (
         <div className={cls.productCategory}>
             <Link href="demo25-shop.html">
-                <img src="imgs/category/category-5.jpg" alt="slider" width="545" height="398" />
-                <div className={cls.homeSlideContent}>
-                    <h3 className="ls-n-10 text-white mb-0">Literature &amp; Fiction</h3>
-                    <span className={cls.productCount}>4 Products</span>
-                    <span className={`${cls.btn} ${cls[i18n.language]}`}>View All Products <i className="fas fa-long-arrow-alt-right"></i></span>
-                </div>
+                <span>
+                    <img src="imgs/category/category-5.jpg" alt="slider" width="545" height="398" />
+                    <div className={cls.homeSlideContent}>
+                        <h3 className="ls-n-10 text-white mb-0">Literature &amp; Fiction</h3>
+                        <span className={cls.productCount}>4 Products</span>
+                        <span className={`${cls.btn} ${cls[i18n.language]}`}>View All Products <i className="fas fa-long-arrow-alt-right"></i></span>
+                    </div>
+                </span>
             </Link>
 
             <div className={cls.productDefault}>

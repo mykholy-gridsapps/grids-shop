@@ -8,10 +8,6 @@ import cls from "./blogEightCarousel.module.scss"
 import 'swiper/css';
 
 const BlogEightCarousel = () => {
-    const pagination = {
-        clickable: true,
-
-    };
     const array = [...Array(3)]
     return (
         <div className={cls.swiper}>

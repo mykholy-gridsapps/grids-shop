@@ -43,7 +43,7 @@ const BrandsSix = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={cls.brand}>
-                        <img src="./imgs/brands/brand3.png" alt="brand" width="140" height="60" />
+                        <img src="./imgs/brands/brand1.png" alt="brand" width="140" height="60" />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>

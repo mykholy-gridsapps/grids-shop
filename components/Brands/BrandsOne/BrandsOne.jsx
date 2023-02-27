@@ -32,7 +32,7 @@ const BrandsOne = () => {
                 <img src="./imgs/brands/brand2.png" alt="brand" width="140" height="60" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src="./imgs/brands/brand3.png" alt="brand" width="140" height="60" />
+                <img src="./imgs/brands/brand1.png" alt="brand" width="140" height="60" />
             </SwiperSlide>
             <SwiperSlide>
                 <img src="./imgs/brands/brand4.png" alt="brand" width="140" height="60" />

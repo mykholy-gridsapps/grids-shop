@@ -36,7 +36,11 @@ const BlogFour = () => {
                 <div className={cls.postContent}>
                     <p>Quisque elementum nibh at dolor pellentesque, a eleifend libero... </p>
 
-                    <Link href="single.html" className={`${cls.readMore} ${cls[i18n.language]}`}>read more <i className="fa-solid fa-arrow-right-long"></i></Link>
+                    <Link href="single.html" className={`${cls.readMore} ${cls[i18n.language]}`}>
+                        <span>
+                            read more <i className="fa-solid fa-arrow-right-long"></i>
+                        </span>
+                    </Link>
                 </div>
             </div>
             <Lightbox

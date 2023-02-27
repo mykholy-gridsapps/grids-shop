@@ -2,6 +2,7 @@
 
 .headerMiddle {
   padding: 10px 0;
+  position: relative;
   .headerLeft,
   .headerRight {
     display: flex;
@@ -30,6 +31,8 @@
       .smallImage {
         display: none;
         height: 50px;
+        width: 120px;
+        object-fit: contain;
         @include md {
           display: inline-block;
         }
@@ -135,18 +138,19 @@
         display: flex;
         align-items: center;
       }
+      .search {
+        display: none;
+        @include md {
+          display: block;
+        }
+      }
 
       .wishlist,
       .cart {
         position: relative;
-        @keyframes show {
-          0% {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0px);
+        @include xs {
+          .cartAmount {
+            display: none;
           }
         }
       }

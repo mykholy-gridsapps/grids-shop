@@ -30,7 +30,7 @@ const BlogSix = () => {
                     <Grid item md={6} className={cls.content} alignItems="center">
 
                         <div className={cls.postBody}>
-                            <Link href="#" className={cls.postCategory}>DESIGN TRENDS</Link>
+                            <Link href="/" className={cls.postCategory}>DESIGN TRENDS</Link>
                             <h3 className={cls.postTitle}>Top quality flooring and parquets</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                                 non placerat

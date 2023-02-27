@@ -116,7 +116,7 @@ const QuickView = ({ setOpenQuickView }) => {
                     <p>( 5 Reviews )</p>
                   </div>
                   <Link href='/'>
-                    <i className="fa-regular fa-eye"></i> See product in details
+                    <><i className="fa-regular fa-eye"></i> See product in details</>
                   </Link>
                 </div>
               </div>

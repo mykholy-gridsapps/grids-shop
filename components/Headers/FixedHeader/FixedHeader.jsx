@@ -60,7 +60,7 @@ const FixedHeader = ({ setOpenSidebar }) => {
             </li>
 
             <li className={`${router.pathname == "/blogs" ? cls.active : ""}`}>
-              <Link href="/">Blogs</Link>
+              <Link href="/blogs">Blogs</Link>
             </li>
 
             <li
@@ -99,7 +99,7 @@ const FixedHeader = ({ setOpenSidebar }) => {
           >
             <Tooltip title="Cart" placement="top">
               <span onClick={() => router.push("/cart")}>
-                <i className="fa-light fa-cart-shopping"></i> <span>$0.00</span>
+                <i className="fa-light fa-cart-shopping"></i> <span className={cls.cartAmount}>$0.00</span>
               </span>
             </Tooltip>
 
