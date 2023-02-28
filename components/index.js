@@ -130,3 +130,5 @@ export { default as TemplateOne } from './HomeTemplates/TemplateOne/TemplateOne'
 export { default as TemplateTwo } from './HomeTemplates/TemplateTwo/TemplateTwo';
 export { default as TemplateThree } from './HomeTemplates/TemplateThree/TemplateThree';
 export { default as TemplateFour } from './HomeTemplates/TemplateFour/TemplateFour';
+export { default as TemplateFive } from './HomeTemplates/TemplateFive/TemplateFive';
+export { default as TemplateSix } from './HomeTemplates/TemplateSix/TemplateSix';

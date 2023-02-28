@@ -28,10 +28,10 @@ const MainLayout = ({ children }) => {
   return (
     <>
       <FixedHeader setOpenSidebar={setOpenSidebar} />
-      {/* <HeaderOne /> */}
+      <HeaderOne />
       {/* <HeaderTwo /> */}
       {/* <HeaderThree /> */}
-      <HeaderFour />
+      {/* <HeaderFour /> */}
       {/* <HeaderFive /> */}
       <div className={cls.pagesContent}>
         {children}

@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useState } from "react";
 
 import AnimatedIcons from "./../../UIs/AnimatedIcons/AnimatedIcons";
@@ -20,6 +21,7 @@ const MiddleHeader = () => {
   const [navDropdown, setNavDropdown] = useState(0);
   const [openSidebar, setOpenSidebar] = useState(false);
   const [openSmallSearch, setOpenSmallSearch] = useState(false);
+  const router = useRouter();
 
   return (
     <div className={cls.headerMiddle}>
