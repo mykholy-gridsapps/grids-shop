@@ -1,0 +1,207 @@
+.footerMiddle {
+    padding-top: 66px;
+    padding-bottom: 15px;
+
+    .widget {
+        margin-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .bigImage {
+            height: 60px;
+            object-fit: contain;
+            object-position: left;
+        }
+
+        .text {
+            h6 {
+                display: flex;
+                font-size: 14px;
+                color: var(--text-dark);
+                font-weight: 300;
+                line-height: 14px;
+                margin-bottom: 10px;
+
+                b {
+                    margin-right: 10px;
+                    font-weight: 700;
+                    min-width: 65px;
+                }
+            }
+        }
+    }
+
+    .links {
+        h4 {
+            font-size: 16px;
+            color: var(--text-dark);
+        }
+
+        ul {
+            li {
+                list-style: inside;
+
+                &::marker {
+                    color: var(--text-dark);
+                }
+
+                a {
+                    color: var(--text-dark);
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    &::marker {
+                        color: var(--main-color);
+                    }
+
+                    a {
+                        color: var(--main-color);
+                    }
+                }
+            }
+
+        }
+
+        form {
+            display: flex;
+            max-width: 570px;
+            margin: 0 auto;
+
+            input {
+                padding: 3px 15px;
+                height: 30px;
+                background-color: var(--bg-color);
+                border: 0;
+                color: #8d8d8d;
+                font-size: 12px;
+                font-style: italic;
+                outline: none;
+                box-shadow: none;
+                width: 100%;
+            }
+
+            button {
+                padding: 0 5px;
+                font-size: 12.8px;
+                font-weight: 600;
+                border-color: var(--main-color);
+                background-color: var(--main-color);
+                color: #fff;
+                box-shadow: none;
+                transition: all 0.3s;
+                text-transform: uppercase;
+                line-height: 1.429;
+                text-align: center;
+                white-space: nowrap;
+                border: 1px solid transparent;
+            }
+        }
+
+        .socialIcon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            opacity: 1;
+            margin-left: 2px;
+            line-height: 38px;
+            border: 1px solid transparent;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+
+
+
+            &::before,
+            [class^="icon-"]::before {
+                font-family: "porto";
+                font-style: normal;
+                font-weight: normal;
+                speak: none;
+                display: inline-block;
+                text-decoration: inherit;
+                width: 1em;
+                text-align: center;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+                opacity: 0.85;
+                background-color: var(--main-color);
+
+            }
+        }
+
+        .iconFacebook {
+            &::before {
+                content: "";
+            }
+
+            &:not(:hover):not(:active):not(:focus) {
+                background-color: #3b5a9a;
+                border: none;
+                color: #fff;
+            }
+        }
+
+        .iconTwitter {
+            &::before {
+                content: "";
+            }
+
+            &:not(:hover):not(:active):not(:focus) {
+                background-color: #1aa9e1;
+                border: none;
+                color: #fff;
+            }
+        }
+
+        .iconLinkedin {
+
+            &::before,
+            [class^="icon-"]::before {
+                content: "\f0e1";
+                font-family: "Font Awesome 6 Brands";
+                moz-osx-font-smoothing: grayscale;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                line-height: 1;
+            }
+
+            &:not(:hover):not(:active):not(:focus) {
+                background-color: #0073b2;
+                background-color: #3b5a9a;
+                border: none;
+                color: #fff;
+            }
+
+        }
+    }
+
+    &.ar {
+        .widget {
+            .bigImage {
+                object-position: right;
+            }
+
+            .text {
+                h6 {
+                    b {
+                        margin-right: 0;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

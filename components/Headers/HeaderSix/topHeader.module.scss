@@ -1,0 +1,119 @@
+@import "../../../styles/extends.scss";
+
+.headerTop {
+  padding: 4px 0;
+  color: var(--text-dark);
+  font-weight: 500;
+  background-color: var(--bg-alt-color);
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include md {
+      display: block;
+
+    }
+
+    .headerLeft,
+    .headerRight {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      @include md {
+        text-align: center !important;
+        justify-content: center;
+      }
+
+      .item {
+        position: relative;
+        padding: 0 8px;
+
+        a {
+          font-size: 13px;
+          padding: 5px 0;
+          color: var(--text-dark);
+          display: block;
+
+          &:hover {
+            color: var(--main-color);
+          }
+        }
+
+        &:last-of-type {
+          &::after {
+            content: none;
+          }
+        }
+
+        &::after {
+          content: '';
+          border-right: 1px solid #cacaca;
+          position: absolute;
+          right: 0;
+          height: 15px;
+          top: 7px;
+        }
+      }
+
+      .linksList {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 0 30px;
+
+        li {
+          a {
+            font-size: 13px;
+            padding: 5px 0;
+            color: var(--text-dark);
+            display: block;
+
+            &:hover {
+              color: var(--main-color);
+            }
+          }
+        }
+      }
+
+      .social_icons {
+        display: flex;
+        gap: 0px;
+        align-items: center;
+
+        i {
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+
+          &:hover {
+            background-color: #fff;
+            color: var(--main-color);
+          }
+        }
+      }
+    }
+  }
+
+  @include sm {
+    display: none;
+  }
+
+  &.ar {
+    .headerLeft,
+      .headerRight {
+        .item {
+          &::after {
+            content: '';
+            left: 0;
+            right: auto !important;
+          }
+        }
+      }
+  }
+}
