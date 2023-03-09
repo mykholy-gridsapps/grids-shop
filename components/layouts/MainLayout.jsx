@@ -42,7 +42,7 @@ const MainLayout = ({ children }) => {
       {/* <HeaderThree /> */}
       {/* <HeaderFour /> */}
       {/* <HeaderFive /> */}
-      <HeaderSix />
+      {/* <HeaderSix /> */}
       <div className={cls.pagesContent}>
         {children}
       </div>

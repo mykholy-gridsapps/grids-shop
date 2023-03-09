@@ -151,14 +151,7 @@ const Home = () => {
 
   return (
     <Container maxWidth="xl">
-      <Grid container>
-        <Grid item lg={12}>
-          <NewsletterSixteen />
-          <br />
-          <br />
-          <br />
-        </Grid>
-      </Grid>
+      <TemplateOne />
     </Container >
   );
 };

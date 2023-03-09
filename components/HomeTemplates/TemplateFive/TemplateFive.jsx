@@ -25,7 +25,6 @@ import SaleTwenty from '../../Sale/SaleTwenty/SaleTwenty';
 
 import ProductsCategoriesTwelve from '../../ProductsCategories/ProductsCategoriesTwelve/ProductsCategoriesTwelve';
 import ProductsCategoriesFour from '../../ProductsCategories/ProductsCategoriesFour/ProductsCategoriesFour';
-import ProductsCategoriesThirteen from '../../ProductsCategories/ProductsCategoriesThirteen/ProductsCategoriesThirteen';
 import BlogSeven from '../../Blogs/BlogSeven/BlogSeven';
 import BrandsFive from '../../Brands/BrandsFive/BrandsFive';
 import TestimonialTwoCarousel from '../../Testimonials/TestimonialTwo/TestimonialTwoCarousel';
@@ -91,7 +90,7 @@ const TemplateFour = () => {
           </Grid>
         </Grid>
 
-        <ProductsCategoriesThirteen />
+        <ProductsCategoriesTwelve />
 
         <TestimonialTwoCarousel />
 
