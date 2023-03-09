@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { globalActions } from '../../../store/globalSlice/global-slice';
 import { i18n, useTranslation } from 'next-i18next'
 import QuickView from '../QuickView/QuickView';
 import cls from './productSix.module.scss'
@@ -8,6 +10,11 @@ import { Rating } from '@mui/material'
 const ProductSix = () => {
     const [quantity, setQuantity] = useState(1);
     const [openQuickView, setOpenQuickView] = useState(false);
+    const dispatch = useDispatch()
+    
+    const open = () => {
+        dispatch(globalActions.openQuickView());
+    }
 
     const changeQuantity = (type, value) => {
         if (type === 'plus') setQuantity(prev => (prev += 1))
@@ -35,7 +42,7 @@ const ProductSix = () => {
                         <i className={cls.iconHeart}></i>
                     </Link>
                 </div>
-                <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={() => setOpenQuickView(true)}>Quick View</button>
+                <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={open}>Quick View</button>
             </figure>
             <div className={cls.productDetails}>
                 <div className={cls.categoryList}>
@@ -68,9 +75,6 @@ const ProductSix = () => {
                         <i className="icon-shopping-cart"></i>ADD TO CART</Link>
                 </div>
             </div>
-            {openQuickView && 
-                <QuickView setOpenQuickView={setOpenQuickView} />
-            }
         </div>
     )
 }

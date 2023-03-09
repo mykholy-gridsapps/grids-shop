@@ -7,6 +7,7 @@ import cls from './productTen.module.scss'
 
 const ProductTen = () => {
     const { t, i18n } = useTranslation('common');
+
     return (
         <div className={`${cls.productDefault} ${cls[i18n.language]}`}>
             <div className={cls.thumbWrapper}>

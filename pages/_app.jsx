@@ -12,6 +12,7 @@ import { wrapper } from "../store/store";
 // COMPONENTS
 import MainLayout from "../components/layouts/MainLayout";
 import Loader from "../components/UIs/Loader/Loader";
+import QuickView from '../components/ProductCard/QuickView/QuickView';
 // STYLES
 import "../public/css/all.min.css";
 import "../styles/globals.scss";
@@ -81,7 +82,7 @@ MyApp.getInitialProps = wrapper.getInitialAppProps(
   (store) => async (context) => {
     return {
       props: {
-        locale: context.ctx.locale,
+        locale: context.ctx.locale
       },
     };
   }

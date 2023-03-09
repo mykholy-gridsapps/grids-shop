@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSelector } from 'react-redux';
 
 import FooterTen from "../Footers/FooterTen/FooterTen";
 import FooterNine from "../Footers/FooterNine/FooterNine";
@@ -21,10 +22,14 @@ import HeaderFive from "../Headers/HeaderFive/HeaderFive";
 
 import MobSidebar from "../Headers/MobSidebar/MobSidebar";
 
+import QuickView from '../ProductCard/QuickView/QuickView';
+
 import cls from './mainLayout.module.scss';
 
 const MainLayout = ({ children }) => {
   const [openSidebar, setOpenSidebar] = useState(false);
+  const { quickViewOpened } = useSelector(({ global }) => global);
+
   return (
     <>
       <FixedHeader setOpenSidebar={setOpenSidebar} />
@@ -38,6 +43,8 @@ const MainLayout = ({ children }) => {
       </div>
       <FooterTwo />
       <MobileBar />
+
+      {quickViewOpened && <QuickView />}
 
       {/* SMALL SCREEN SIDE BAR */}
       <MobSidebar

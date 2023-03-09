@@ -13,7 +13,7 @@ import SaleOne from '../../Sale/SaleOne/SaleOne';
 import SaleFive from '../../Sale/SaleFive/SaleFive';
 import SaleTwo from '../../Sale/SaleTwo/SaleTwo';
 import ProductsCategoriesThree from '../../ProductsCategories/ProductsCategoriesThree/ProductsCategoriesThree';
-import ProductsCategoriesFour from '../../ProductsCategories/ProductsCategoriesFour/ProductsCategoriesFour';
+import ProductsCategoriesTen from '../../ProductsCategories/ProductsCategoriesTen/ProductsCategoriesTen';
 import BlogThree from '../../Blogs/BlogThree/BlogThree';
 import BrandsTwo from '../../Brands/BrandsTwo/BrandsTwo';
 import TestimonialOneCarousel from '../../Testimonials/TestimonialOne/TestimonialOneCarousel';
@@ -58,7 +58,7 @@ const TemplateThree = () => {
 
         {/* PRODUCTS CATEGORIES */}
         <div className={cls.section2}>
-          <ProductsCategoriesFour />
+          <ProductsCategoriesTen />
         </div>
 
         {/* SALES */}

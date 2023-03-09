@@ -1,5 +1,8 @@
 // NEXT STUFF
 import { useState } from 'react';
+// REDUX STUFF
+import { useDispatch } from "react-redux";
+import { globalActions } from '../../../store/globalSlice/global-slice.js';
 // MATERIAL UI STUFF
 import Grid from '@mui/material/Grid';
 import Rating from '@mui/material/Rating';
@@ -14,7 +17,7 @@ import { useTranslation } from 'next-i18next';
 import cls from './quickView.module.scss';
 import Link from 'next/link';
 
-const QuickView = ({ setOpenQuickView }) => {
+const QuickView = () => {
   const images = [
     "./imgs/product-1.jpg",
     "./imgs/product-1-2.jpg",
@@ -28,10 +31,10 @@ const QuickView = ({ setOpenQuickView }) => {
   const [activeVariant, setActiveVariant] = useState('');
   const [quantity, setQuantity] = useState(1);
   const { t, i18n } = useTranslation('common');
-
+  const dispatch = useDispatch()
 
   const close = () => {
-    setOpenQuickView(false)
+    dispatch(globalActions.closeQuickView());
   }
   const breakpoints = {
     200: {

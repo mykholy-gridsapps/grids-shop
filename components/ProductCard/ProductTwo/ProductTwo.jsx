@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import Link from 'next/link'
-
-import QuickView from '../QuickView/QuickView';
+import { useDispatch } from 'react-redux';
+import { globalActions } from '../../../store/globalSlice/global-slice';
 
 import { Rating } from '@mui/material'
 
@@ -12,6 +12,11 @@ import cls from './productTwo.module.scss'
 
 const ProductTwo = () => {
     const [openQuickView, setOpenQuickView] = useState(false);
+    const dispatch = useDispatch()
+    
+    const open = () => {
+        dispatch(globalActions.openQuickView());
+    }
 
     return (
         <div className={`${cls.productDefault} ${cls.innerQuickview} ${cls.innerIcon} ${cls[i18n.language]}`}>
@@ -31,7 +36,7 @@ const ProductTwo = () => {
                         <i className="fa-regular fa-bag-shopping"></i>
                     </Link>
                 </div>
-                <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={() => setOpenQuickView(true)}>Quick
+                <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={open}>Quick
                     View</button>
             </figure>
             <div className={cls.productDetails}>
@@ -52,9 +57,6 @@ const ProductTwo = () => {
                     <span className={cls.productPrice}>$9.00</span>
                 </div>
             </div>
-            {openQuickView && 
-                <QuickView setOpenQuickView={setOpenQuickView} />
-            }
         </div>
     )
 }

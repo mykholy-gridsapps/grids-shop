@@ -6,7 +6,6 @@ import FeaturedProducts from './FeaturedProducts/FeaturedProducts';
 import BestSelling from './BestSelling/BestSelling';
 import Offer from './Offer/Offer';
 
-import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 import { useTranslation } from "next-i18next";
@@ -25,30 +24,28 @@ const DealsTwo = () => {
 
   return (
     <div className={cls.deals}>
-      <Container maxWidth="xxl">
-        <Grid container spacing={3}>
-          <Grid item xs={12} md={4} xl={3}>
-            <Offer />
-          </Grid>
-
-          <Grid item md={8} xl={9}>
-            <div className={cls.tabs}>
-              {tabs.map((tab, idx) => (
-                <span
-                  key={idx}
-                  className={currentTabIndex === idx ? cls.active : ""}
-                  onClick={() => setCurrentTabIndex(idx)}
-                >
-                  <span></span>
-                  {tab}
-                </span>
-              ))}
-            </div>
-
-            <div className={cls.view}>{currentTab}</div>
-          </Grid>
+      <Grid container spacing={3}>
+        <Grid item xs={12} md={4} xl={3}>
+          <Offer />
         </Grid>
-      </Container>
+
+        <Grid item md={8} xl={9}>
+          <div className={cls.tabs}>
+            {tabs.map((tab, idx) => (
+              <span
+                key={idx}
+                className={currentTabIndex === idx ? cls.active : ""}
+                onClick={() => setCurrentTabIndex(idx)}
+              >
+                <span></span>
+                {tab}
+              </span>
+            ))}
+          </div>
+
+          <div className={cls.view}>{currentTab}</div>
+        </Grid>
+      </Grid>
     </div>
   );
 }

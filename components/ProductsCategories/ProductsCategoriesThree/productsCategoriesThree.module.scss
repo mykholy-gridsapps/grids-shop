@@ -57,6 +57,7 @@
       display: grid;
       grid-template-columns: repeat(11, 1fr);
       gap: 10px;
+      padding: 0 5px;
       @include sm {
         grid-template-columns: repeat(12, 1fr);
       }
