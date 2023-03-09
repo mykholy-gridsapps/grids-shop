@@ -29,6 +29,7 @@ export {default as CategoryElevenCarousel} from './Categories/CategoriesEleven/C
 export {default as CategoryTwelveCarousel} from './Categories/CategoriesTwelve/CategoryTwelveCarousel'
 export {default as CategoryThirteenCarousel} from './Categories/CategoriesThirteen/CategoryThirteenCarousel'
 export {default as CategoryFourteenCarousel} from './Categories/CategoriesFourteen/CategoryFourteenCarousel'
+export {default as CategoryFifteen} from './Categories/CategoriesFifteen/CategoryFifteen'
 export {default as FeaturesOne} from './Features/FeaturesOne/FeaturesOne'
 export {default as FeaturesTwo} from './Features/FeaturesTwo/FeaturesTwo'
 export {default as FeaturesThree} from './Features/FeaturesThree/FeaturesThree'
@@ -130,3 +131,9 @@ export { default as TemplateOne } from './HomeTemplates/TemplateOne/TemplateOne'
 export { default as TemplateTwo } from './HomeTemplates/TemplateTwo/TemplateTwo';
 export { default as TemplateThree } from './HomeTemplates/TemplateThree/TemplateThree';
 export { default as TemplateFour } from './HomeTemplates/TemplateFour/TemplateFour';
+export {default as BlogNineCarousel} from './Blogs/BlogNine/BlogNineCarousel'
+export {default as NewsletterSixteen} from './Newsletter/NewsletterSixteen/NewsletterSixteen'
+export {default as InfoBoxEight} from './InfoBox/InfoBoxEight/InfoBoxEight'
+
+
+

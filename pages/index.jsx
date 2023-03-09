@@ -138,7 +138,12 @@ import {
   ProductNine,
   ProductTen,
   SaleThirtyFive,
-  CategoriesSideOne} from "../components";
+  CategoryFifteen,
+  BlogNineCarousel,
+  NewsletterSixteen,
+  InfoBoxEight,
+  CategoriesSideOne
+} from "../components";
 
 
 const Home = () => {
@@ -146,8 +151,15 @@ const Home = () => {
 
   return (
     <Container maxWidth="xl">
-      <TemplateOne />
-    </Container>
+      <Grid container>
+        <Grid item lg={12}>
+          <NewsletterSixteen />
+          <br />
+          <br />
+          <br />
+        </Grid>
+      </Grid>
+    </Container >
   );
 };
 

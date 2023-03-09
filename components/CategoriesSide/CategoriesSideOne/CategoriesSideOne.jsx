@@ -1,14 +1,20 @@
+import { i18n, useTranslation } from "next-i18next";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 import cls from "./categoriesSideOne.module.scss";
 
-const CategoriesSideOne = () => {
+const CategoriesSideOne = ({ classCustome,  open }) => {
+  const [ menu, setMenu ] = useState(open);
+  const { t, i18n } =useTranslation('common');
+  const handleMenu = () => {
+    setMenu(current => !current)
+  }
   return (
-    <div className={cls.wrapper}>
-      <h2 className={cls.title}>Top Categories</h2>
+    <div className={`${cls.wrapper} ${classCustome ? cls.categoriesAbsolute : ""} ${cls[i18n.language]}`}>
+      <h2 className={cls.title} onClick={handleMenu} >Top Categories</h2>
 
-      <div className={cls.body}>
+      <div className={`${cls.body} ${ menu ? "" : cls.closed }`}>
         <ul className={cls.sideMenu}>
           <li>
             <Link href="demo2-shop.html">

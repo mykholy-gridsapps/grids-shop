@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import FooterTweleve from "../Footers/FooterTweleve/FooterTweleve";
+import FooterEleven from "../Footers/FooterEleven/FooterEleven";
 import FooterTen from "../Footers/FooterTen/FooterTen";
 import FooterNine from "../Footers/FooterNine/FooterNine";
 import FooterEight from "../Footers/FooterEight/FooterEight";
@@ -12,12 +14,14 @@ import FooterTwo from "../Footers/FooterTwo/FooterTwo";
 import FooterOne from "../Footers/FooterOne/FooterOne";
 
 import FixedHeader from "../Headers/FixedHeader/FixedHeader";
+import FixedHeaderTwo from "../Headers/FixedHeaderTwo/FixedHeaderTwo";
 import MobileBar from "../Headers/MobileBar/MobileBar";
 import HeaderOne from "../Headers/HeaderOne/HeaderOne";
 import HeaderTwo from "../Headers/HeaderTwo/HeaderTwo";
 import HeaderThree from "../Headers/HeaderThree/HeaderThree";
 import HeaderFour from "../Headers/HeaderFour/HeaderFour";
 import HeaderFive from "../Headers/HeaderFive/HeaderFive";
+import HeaderSix from "../Headers/HeaderSix/HeaderSix";
 
 import MobSidebar from "../Headers/MobSidebar/MobSidebar";
 
@@ -27,16 +31,20 @@ const MainLayout = ({ children }) => {
   const [openSidebar, setOpenSidebar] = useState(false);
   return (
     <>
-      <FixedHeader setOpenSidebar={setOpenSidebar} />
+      {/* <FixedHeader setOpenSidebar={setOpenSidebar} /> */}
+      <FixedHeaderTwo setOpenSidebar={setOpenSidebar} />
       {/* <HeaderOne /> */}
       {/* <HeaderTwo /> */}
       {/* <HeaderThree /> */}
-      <HeaderFour />
+      {/* <HeaderFour /> */}
       {/* <HeaderFive /> */}
+      <HeaderSix />
       <div className={cls.pagesContent}>
         {children}
       </div>
-      <FooterTwo />
+      {/* <FooterTwo /> */}
+      {/* <FooterEleven /> */}
+      <FooterTweleve />
       <MobileBar />
 
       {/* SMALL SCREEN SIDE BAR */}
