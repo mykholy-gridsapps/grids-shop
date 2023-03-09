@@ -31,9 +31,8 @@ const MainLayout = ({ children }) => {
   const [openSidebar, setOpenSidebar] = useState(false);
   return (
     <>
-      {/* <FixedHeader setOpenSidebar={setOpenSidebar} /> */}
-      <FixedHeaderTwo setOpenSidebar={setOpenSidebar} />
-      {/* <HeaderOne /> */}
+      <FixedHeader setOpenSidebar={setOpenSidebar} />
+      <HeaderOne />
       {/* <HeaderTwo /> */}
       {/* <HeaderThree /> */}
       {/* <HeaderFour /> */}

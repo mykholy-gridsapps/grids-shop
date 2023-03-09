@@ -137,3 +137,5 @@ export {default as InfoBoxEight} from './InfoBox/InfoBoxEight/InfoBoxEight'
 
 
 
+export { default as TemplateFive } from './HomeTemplates/TemplateFive/TemplateFive';
+export { default as TemplateSix } from './HomeTemplates/TemplateSix/TemplateSix';
