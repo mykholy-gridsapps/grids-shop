@@ -1,0 +1,17 @@
+.categories {
+  padding: 10px 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  height: 50%;
+  ul {
+    li {
+      cursor: pointer;
+      padding: 3px 0;
+      font-size: 0.9rem;
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}

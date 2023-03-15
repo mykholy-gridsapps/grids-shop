@@ -92,7 +92,7 @@
           place-items: center;
 
           &:hover {
-            background-color: #fff;
+            background-color: var(--secondary-background);
             color: var(--main-color);
           }
         }

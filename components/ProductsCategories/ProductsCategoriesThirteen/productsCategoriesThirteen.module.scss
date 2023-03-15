@@ -1,0 +1,85 @@
+@import '../../../styles/mixins.scss';
+
+.collection {
+  margin: 50px 0;
+  background-color: var(--secondary-background);
+  .head {
+    border-bottom: 2px solid var(--secondary-color);
+    overflow-x: auto;
+    h5 {
+      background-color: var(--secondary-color);
+      color: #fff;
+      padding:  5px 15px;
+      margin: 0;
+    }
+    .headLinks {
+      min-width: 500px;
+      ul {
+        display: flex;
+        gap: 20px;
+        padding: 0 20px;
+        li {
+          font-size: 0.9rem;
+          padding:  6px 5px;
+          cursor: pointer;
+          position: relative;
+          span {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+            width: 10px;
+            height: 10px;
+            border-right: 6px solid transparent;
+            border-bottom: 7px solid var(--secondary-color);
+            border-left: 6px solid transparent;
+          }
+          &.active {
+            border-top: 2px solid var(--secondary-color);
+            span {
+              display: inline-block;
+            }
+          }
+          &:hover {
+            border-top: 2px solid var(--secondary-color);
+            span {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .sale {
+      grid-column: span 4;
+      @include lg {
+        grid-column: span 3;
+      }
+      @include sm {
+        display: none;
+      }
+    }
+    .one, .categories {
+      grid-column: span 2;
+      @include lg {
+        grid-column: span 3;
+      }
+      @include sm {
+        grid-column: span 4;
+      }
+      @include xs {
+        grid-column: span 6;
+      }
+    }
+    .categories {
+      grid-row: span 2;
+      @include lg {
+        grid-row: span 1;
+      }
+    }
+  }
+}

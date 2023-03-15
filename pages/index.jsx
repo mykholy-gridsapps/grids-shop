@@ -145,13 +145,17 @@ import {
   CategoriesSideOne
 } from "../components";
 
+import ProductsCategoriesSixteen from "../components/ProductsCategories/ProductsCategoriesSixteen/ProductsCategoriesSixteen";
+import ProductsCategoriesFourteen from "../components/ProductsCategories/ProductsCategoriesFourteen/ProductsCategoriesFourteen";
+
 
 const Home = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
     <Container maxWidth="xl">
-      <TemplateOne />
+      {/* <TemplateOne /> */}
+      <ProductsCategoriesFourteen />
     </Container >
   );
 };

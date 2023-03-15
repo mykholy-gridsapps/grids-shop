@@ -20,7 +20,7 @@
 
         &:hover {
             .btnIcon {
-                background-color: #fff;
+                background-color: var(--secondary-background);
                 border-color: #ddd;
                 color: black;
                 visibility: visible;

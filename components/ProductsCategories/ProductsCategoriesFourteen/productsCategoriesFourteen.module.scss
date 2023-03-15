@@ -1,0 +1,122 @@
+@import '../../../styles/mixins.scss';
+
+.collection {
+  margin: 50px 0;
+  background-color: var(--secondary-background);
+  .head {
+    border-bottom: 2px solid var(--secondary-color);
+    overflow-x: auto;
+    overflow-y: hidden;
+    h5 {
+      background-color: var(--secondary-color);
+      color: #fff;
+      // padding:  5px 15px;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 200px;
+      i {
+        border-right: 1px solid #fff;
+        border-bottom: none;
+        width: 40px;
+        height: 35px;
+        margin: 0;
+        display: grid;
+        place-content: center;
+        position: relative;
+        top: 1px;
+      }
+      &.ar {
+        i {
+          border-right: unset;
+          border-left: 1px solid #fff;
+        }
+      }
+    }
+    .headLinks {
+      min-width: 500px;
+      ul {
+        display: flex;
+        gap: 20px;
+        padding: 0 20px;
+        li {
+          font-size: 0.9rem;
+          padding:  6px 5px;
+          cursor: pointer;
+          position: relative;
+          span {
+            display: none;
+            position: absolute;
+            bottom: 0;
+            left: 40%;
+            width: 10px;
+            height: 10px;
+            border-right: 6px solid transparent;
+            border-bottom: 7px solid var(--secondary-color);
+            border-left: 6px solid transparent;
+          }
+          &.active {
+            border-top: 2px solid var(--secondary-color);
+            span {
+              display: inline-block;
+            }
+          }
+          &:hover {
+            border-top: 2px solid var(--secondary-color);
+            span {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .sale {
+      grid-column: span 4;
+      @include lg {
+        grid-column: span 3;
+      }
+      @include sm {
+        display: none;
+      }
+    }
+    .one {
+      grid-column: span 2;
+      grid-row: span 1;
+      @include lg {
+        grid-column: span 3;
+      }
+      @include md {
+        grid-column: span 4;
+      }
+      @include sm {
+        grid-column: span 4;
+      }
+      @include xs {
+        grid-column: span 6;
+      }
+    }
+    .categories {
+      grid-column: span 4;
+      grid-row: span 2;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      @include lg {
+        display: inline;
+        grid-row: span 1;
+        .sale {
+          display: none;
+        }
+      }
+      @include sm {
+        display: none;
+      }
+    }
+  }
+}

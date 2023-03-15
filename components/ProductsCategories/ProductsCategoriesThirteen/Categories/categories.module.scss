@@ -1,0 +1,13 @@
+.categories {
+  padding: 10px 15px;
+  ul {
+    li {
+      cursor: pointer;
+      padding: 3px 0;
+      font-size: 0.9rem;
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
