@@ -8,9 +8,10 @@ import LinkDropdown from '../LinkDropdown/LinkDropdown';
 
 import { useTranslation } from "next-i18next";
 
-import cls from './headerFour.module.scss';
+import cls from './headerSeven.module.scss';
+import CategoriesSideOne from "../../CategoriesSide/CategoriesSideOne/CategoriesSideOne";
 
-const HeaderFour = () => {
+const HeaderSeven = () => {
     const [navDropdown, setNavDropdown] = useState(0);
     const { t, i18n } = useTranslation('common');
 
@@ -21,8 +22,16 @@ const HeaderFour = () => {
 
         <div className={cls.navbar__main}>
           <Container maxWidth="xl" className={`${cls.navbar_mainNav}`}>
+            <div className={cls.smallLogo}>
+              <i
+                className="fa-light fa-grid-2"
+                onClick={() => setOpenSidebar(!openSidebar)}
+              ></i>{" "}
+              <h5>Grids Apps</h5>
+            </div>
 
-            <div className={cls.links}>
+            <div className={`${cls.links} ${cls[i18n.language]}`}>
+          <CategoriesSideOne  classCustome={true} open={true} />
               <ul className={`${cls.navLinks} ${cls[i18n.language]}`}>
                 <li
                   onMouseEnter={() => setNavDropdown(1)}
@@ -101,7 +110,7 @@ const HeaderFour = () => {
                 >
                   <span>
                     {" "}
-                    Smart Phones <i className="fa-regular fa-angle-down"></i>
+                    Smart PhSixs <i className="fa-regular fa-angle-down"></i>
                   </span>
 
                   {navDropdown === 6 && (
@@ -116,4 +125,4 @@ const HeaderFour = () => {
     );
 }
 
-export default HeaderFour
+export default HeaderSeven
