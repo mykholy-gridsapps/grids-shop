@@ -1,0 +1,249 @@
+@import "../../../styles/mixins.scss";
+
+.productDefault {
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px dashed transparent;
+
+    &:hover {
+        border: 1px dashed var(--main-color);
+
+        .productImage {
+            img {
+                &:first-of-type {
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+                &:last-of-type {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            .productButtons {
+                .quickviewButton {
+                    transform: translateY(0);
+                    opacity: .92;
+                    z-index: 9;
+                }
+            }
+        }
+        .productContent {
+            .productButtons {
+                .addButton {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+                .compareButton {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
+    .productImage {
+        position: relative;
+        margin-bottom: 7px;
+
+        img {
+            transition: all .4s linear 0s;
+
+            &:first-of-type {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &:last-of-type {
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                height: 100%;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+        }
+
+        .productButtons {
+            .quickviewButton {
+                position: absolute;
+                text-align: center !important;
+                width: 100%;
+                transition: all 200ms ease-out;
+                bottom: -1px;
+                font-size: 12px;
+                line-height: 30px;
+                background-color: var(--bg-alt-color);
+                opacity: 0;
+                color: var(--main-color);
+
+                a {
+                    color: var(--main-color);
+                }
+            }
+        }
+
+    }
+
+    .productContent {
+
+        .productTitleRating {
+            .productTitle {
+                h3 {
+                    font-weight: normal;
+                    line-height: 19px;
+                    max-height: 38px;
+                    overflow: hidden;
+                    padding: 0;
+                    text-overflow: ellipsis;
+                    color: var(--text-dark);
+                    margin: 0;
+                    font-size: 14px;
+
+                    &:hover {
+                        color: var(--main-color);
+                    }
+                }
+            }
+
+            .productRating {
+
+                span {
+                    font-size: 14px;
+                }
+
+                .productRatingCount {
+                    line-height: 11px;
+                    margin-left: 6px;
+                    font-size: 10px;
+                    top: -3px;
+                    position: relative;
+                    opacity: 0.6;
+                    font-weight: 600;
+                }
+            }
+
+        }
+
+        .productPrice {
+            margin-top: 4px;
+            margin-bottom: 7px;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--main-color);
+
+            del {
+                display: inline-block;
+                opacity: .5;
+                margin: 0 5px;
+            }
+
+            ins {
+                text-decoration: none;
+            }
+        }
+
+        .productButtons {
+            display: inline-flex;
+            position: relative;
+
+            .productCart {
+                border-radius: 3px;
+                color: var(--text-light);
+                height: auto;
+                padding: 8.5px 9px;
+                text-indent: 0;
+                width: auto;
+                display: inline-block;
+                margin: 0 !important;
+                line-height: 1;
+                position: relative;
+                background-color: var(--text-dark);
+                font-size: 14px;
+
+                a {
+                    color: var(--text-light);
+                }
+                &:hover {
+                    background-color: var(--main-color);
+                    color: #fff;
+                    a {
+                        color: #fff;
+
+                    }
+                }
+            }
+
+            .addButton {
+                height: 30px;
+                padding: 7px;
+                width: 31px;
+                transition: all 0.4s ease 0s;
+                right: -38px;
+                position: absolute;
+                top: 0;
+                color: var(--main-color);
+                border: 1px dashed var(--main-color);
+                transform: scale(0);
+                opacity: 0;
+                border-radius: 3px;
+                
+                i {
+                    position: relative;
+                    top: -4px;
+                }
+                &:hover {
+                    background-color: var(--main-color);
+                    color: #fff;
+                    a {
+                        color: #fff;
+
+                    }
+                }
+            }
+            
+            .compareButton {
+                height: 30px;
+                padding: 7px;
+                width: 31px;
+                transition: all 0.4s ease 0s;
+                right: -78px;
+                position: absolute;
+                top: 0;
+                color: var(--main-color);
+                border: 1px dashed var(--main-color);
+                transform: scale(0);
+                opacity: 0;
+                border-radius: 3px;
+                
+                i {
+                    position: relative;
+                    top: -4px;
+                }
+                &:hover {
+                    background-color: var(--main-color);
+                    color: #fff;
+                    a {
+                        color: #fff;
+
+                    }
+                }
+            }
+        }
+    }
+    &.ar {
+        .productButtons {
+            .addButton {
+                right: auto;
+                left: -38px;
+            }
+            .compareButton {
+                right: auto;
+                left: -78px;
+            }
+        }
+    }
+
+}

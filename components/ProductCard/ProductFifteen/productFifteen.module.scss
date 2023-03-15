@@ -1,0 +1,38 @@
+@import "../../../styles/mixins.scss";
+
+.productDefault {
+    display: flex;
+    .productImage {
+        margin-right: 10px;
+        width: 30%;
+    }
+    .productDetails {
+        width: 70%;
+        .productTitle {
+            font-size: 14px;
+            color: var(--text-dark);
+            &:hover {
+                color: var(--main-color);
+            }
+        }
+        .productPrice {
+            display: block;
+            color: var(--main-color);
+        }
+    }
+
+    &.ar {
+        .productButtons {
+            .addButton {
+                right: auto;
+                left: -38px;
+            }
+
+            .compareButton {
+                right: auto;
+                left: -78px;
+            }
+        }
+    }
+
+}

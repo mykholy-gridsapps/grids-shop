@@ -131,17 +131,29 @@ import {
   TestimonialOneCarousel,
   TestimonialThreeCarousel,
   TestimonialTwoCarousel,
+  TestimonialSixCarousel,
   TopNoticeOne,
   TopNoticeTwo,
   TopNoticeThree,
   SaleThirtyFour,
   ProductNine,
   ProductTen,
+  ProductEleven,
+  ProductTweleve,
+  ProductThirteen,
+  ProductFourteen,
   SaleThirtyFive,
   CategoryFifteen,
   BlogNineCarousel,
+  BlogTenCarousel,
   NewsletterSixteen,
   InfoBoxEight,
+  InfoBoxNine,
+  ProductFifteen,
+  CategorySixteen,
+  BrandsNine,
+  InfoBoxTen,
+  CategorySeventeenCarousel,
   CategoriesSideOne
 } from "../components";
 
@@ -151,11 +163,53 @@ const Home = () => {
 
   return (
     <Container maxWidth="xl">
-      <Grid container>
-        <Grid item lg={12}>
-          <NewsletterSixteen />
+      <Grid container spacing={2}>
+        <Grid item lg={3}>
+          <ProductEleven />
           <br />
+        </Grid>
+        <Grid item lg={3}>
+          <ProductTweleve />
           <br />
+        </Grid>
+        <Grid item lg={3}>
+          <ProductThirteen />
+          <br />
+        </Grid>
+        <Grid item lg={3}>
+          <ProductFourteen />
+          <br />
+        </Grid>
+        <Grid item lg={3}>
+          <ProductFifteen />
+          <br />
+        </Grid>
+        <Grid item lg={3}>
+          <CategorySixteen />
+          <br />
+        </Grid>
+        <Grid item lg={3} md={4} sm={6} xs={12}>
+          <TestimonialSixCarousel />
+          <br />
+        </Grid>
+        <Grid item xs={12}>
+          <InfoBoxNine />
+          <br />
+        </Grid>
+        <Grid item xs={12}>
+          <BlogTenCarousel />
+          <br />
+        </Grid>
+        <Grid item xs={12}>
+          <BrandsNine />
+          <br />
+        </Grid>
+        <Grid item xs={12}>
+          <InfoBoxTen />
+          <br />
+        </Grid>
+        <Grid item xs={12}>
+          <CategorySeventeenCarousel />
           <br />
         </Grid>
       </Grid>
