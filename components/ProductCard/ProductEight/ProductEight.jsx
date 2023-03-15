@@ -8,7 +8,6 @@ import { Rating } from '@mui/material';
 import cls from './productEight.module.scss'
 
 const ProductEight = () => {
-    const [openQuickView, setOpenQuickView] = useState(false);
     const { t, i18n } = useTranslation('common');
     const dispatch = useDispatch()
     

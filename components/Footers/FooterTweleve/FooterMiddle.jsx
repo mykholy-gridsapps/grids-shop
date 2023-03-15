@@ -17,7 +17,7 @@ const FooterMiddle = () => {
                             <div className={cls.text}>
                                 <h6>
                                     <b>
-                                        <i class="fa-solid fa-location-dot"></i>
+                                        <i className="fa-solid fa-location-dot"></i>
                                     </b>
                                     <span>
 
@@ -26,7 +26,7 @@ const FooterMiddle = () => {
                                 </h6>
                                 <h6>
                                     <b>
-                                        <i class="fa-solid fa-phone"></i>
+                                        <i className="fa-solid fa-phone"></i>
                                     </b>
                                     <span>
                                         +00 123 456 789
@@ -34,7 +34,7 @@ const FooterMiddle = () => {
                                 </h6>
                                 <h6>
                                     <b>
-                                        <i class="fa-solid fa-envelope"></i>
+                                        <i className="fa-solid fa-envelope"></i>
                                     </b>
                                     <span>
                                         support@business.com
@@ -42,7 +42,7 @@ const FooterMiddle = () => {
                                 </h6>
                                 <h6>
                                     <b>
-                                        <i class="fa-solid fa-mobile-screen-button"></i>
+                                        <i className="fa-solid fa-mobile-screen-button"></i>
                                     </b>
                                     <span>
                                         Hotline: 090 999 8686

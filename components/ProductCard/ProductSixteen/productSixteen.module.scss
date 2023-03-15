@@ -3,12 +3,13 @@
 .productDefault {
     border-radius: 3px;
     padding: 10px;
-    border: 1px dashed transparent;
+    border: 1px solid transparent;
 
     &:hover {
-        border: 1px dashed var(--main-color);
+        border: 1px solid var(--main-color);
 
         .productImage {
+            position: relative;
             img {
                 &:first-of-type {
                     opacity: 0;
@@ -46,6 +47,8 @@
     .productImage {
         position: relative;
         margin-bottom: 7px;
+        display: flex;
+        justify-content: center;
 
         img {
             transition: all .4s linear 0s;
@@ -66,6 +69,12 @@
             }
         }
 
+        .countDown {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
         .productButtons {
             .quickviewButton {
                 position: absolute;
@@ -79,13 +88,8 @@
                 opacity: 0;
                 color: var(--main-color);
 
-                button {
+                a {
                     color: var(--main-color);
-                    padding: 0 20px;
-                    cursor: pointer;
-                    border: none;
-                    width: 100%;
-                    text-align: center !important;
                 }
             }
         }
@@ -93,6 +97,7 @@
     }
 
     .productContent {
+        text-align: center !important;
 
         .productTitleRating {
             .productTitle {
@@ -104,6 +109,7 @@
                     padding: 0;
                     text-overflow: ellipsis;
                     color: var(--text-dark);
+                    text-align: center !important;
                     margin: 0;
                     font-size: 14px;
 
@@ -114,6 +120,7 @@
             }
 
             .productRating {
+                text-align: center !important;
 
                 span {
                     font-size: 14px;
@@ -138,6 +145,7 @@
             font-size: 15px;
             font-weight: 600;
             color: var(--main-color);
+            text-align: center !important;
 
             del {
                 display: inline-block;
@@ -186,11 +194,11 @@
                 padding: 7px;
                 width: 31px;
                 transition: all 0.4s ease 0s;
-                right: -38px;
+                left: -38px;
                 position: absolute;
                 top: 0;
                 color: var(--main-color);
-                border: 1px dashed var(--main-color);
+                border: 1px solid var(--main-color);
                 transform: scale(0);
                 opacity: 0;
                 border-radius: 3px;
@@ -214,11 +222,11 @@
                 padding: 7px;
                 width: 31px;
                 transition: all 0.4s ease 0s;
-                right: -78px;
+                right: -38px;
                 position: absolute;
                 top: 0;
                 color: var(--main-color);
-                border: 1px dashed var(--main-color);
+                border: 1px solid var(--main-color);
                 transform: scale(0);
                 opacity: 0;
                 border-radius: 3px;
@@ -235,18 +243,6 @@
 
                     }
                 }
-            }
-        }
-    }
-    &.ar {
-        .productButtons {
-            .addButton {
-                right: auto;
-                left: -38px;
-            }
-            .compareButton {
-                right: auto;
-                left: -78px;
             }
         }
     }

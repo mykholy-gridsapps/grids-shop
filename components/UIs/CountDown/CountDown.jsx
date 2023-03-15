@@ -6,7 +6,7 @@ import { useTranslation } from "next-i18next";
 
 import cls from "./countDown.module.scss";
 
-const CountDown = ({ daysCount }) => {
+const CountDown = ({ daysCount, headColor }) => {
   const { t, i18n } = useTranslation('common');
 
   const expiryTimestamp = new Date();
@@ -31,7 +31,7 @@ const CountDown = ({ daysCount }) => {
   return (
     <div className={cls.countDown}>
 
-      <h6>Hurry Up!</h6>
+      <h6 style={{ color: headColor ? headColor : '' }}>Hurry Up!</h6>
 
       <div className={cls.countDown__parts}>
         {days >= 1 && (

@@ -20,10 +20,10 @@ const TestimonialSixCarousel = () => {
             <div className={cls.title}>
                 <h2>Testimonials</h2>
                 <div className={cls.prev} ref={navigationPrevRef}>
-                    <i class="fa-solid fa-angle-left"></i>
+                    <i className="fa-solid fa-angle-left"></i>
                 </div>
                 <div className={cls.next} ref={navigationNextRef}>
-                    <i class="fa-solid fa-angle-right"></i>
+                    <i className="fa-solid fa-angle-right"></i>
                 </div>
             </div>
             <Swiper

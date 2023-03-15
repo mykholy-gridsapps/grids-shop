@@ -9,7 +9,7 @@ const CategoryFifteen = () => {
                 <Link href="#" className={cls.thumb}>
                     <img src="./imgs/category/category-15.webp" />
                 </Link>
-                <h3 class="title">Electronics</h3>
+                <h3 className="title">Electronics</h3>
                 <Link href="#" className={cls.button}>
                     SHOP NOW
                 </Link>

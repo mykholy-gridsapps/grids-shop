@@ -4,9 +4,9 @@ import React, { useState } from "react";
 
 import cls from "./categoriesSideOne.module.scss";
 
-const CategoriesSideOne = ({ classCustome,  open }) => {
+const CategoriesSideOne = ({ classCustome,  open, show }) => {
   const [ menu, setMenu ] = useState(open);
-  const { t, i18n } =useTranslation('common');
+  const { t, i18n } = useTranslation('common');
   const handleMenu = () => {
     setMenu(current => !current)
   }
@@ -14,7 +14,7 @@ const CategoriesSideOne = ({ classCustome,  open }) => {
     <div className={`${cls.wrapper} ${classCustome ? cls.categoriesAbsolute : ""} ${cls[i18n.language]}`}>
       <h2 className={cls.title} onClick={handleMenu} >Top Categories</h2>
 
-      <div className={`${cls.body} ${ menu ? "" : cls.closed }`}>
+      <div className={`${cls.body} ${ menu ? "" : cls.closed } ${!show ? cls.closed : ''}`}>
         <ul className={cls.sideMenu}>
           <li>
             <Link href="demo2-shop.html">

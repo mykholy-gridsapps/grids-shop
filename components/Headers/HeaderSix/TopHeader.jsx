@@ -17,10 +17,10 @@ const TopHeader = () => {
       <Container maxWidth="xl" className={cls.wrapper}>
         <div className={cls.headerLeft}>
           <div className={cls.item}>
-            <a href="tel:#"> <i class="fa-solid fa-phone"></i> +123 5678 890</a>
+            <a href="tel:#"> <i className="fa-solid fa-phone"></i> +123 5678 890</a>
           </div>
           <div className={cls.item}>
-            <Link href="/account"> <i class="fa-solid fa-envelope"></i> My Account</Link>
+            <Link href="/account"> <i className="fa-solid fa-envelope"></i> My Account</Link>
           </div>
           <div className={cls.item}>
             <LangSwitch />

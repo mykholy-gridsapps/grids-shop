@@ -13,7 +13,7 @@ const NewsletterSixteen = () => {
                 <div>
                     <form>
                         <input type="email" className="form-control mb-1" placeholder="Email address" required />
-                        <button className="btn btn-primary"><i class="fa-regular fa-paper-plane"></i></button>
+                        <button className="btn btn-primary"><i className="fa-regular fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>

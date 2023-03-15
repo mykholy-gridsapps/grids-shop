@@ -148,7 +148,3 @@ export {default as InfoBoxNine} from './InfoBox/InfoBoxNine/InfoBoxNine'
 export {default as InfoBoxTen} from './InfoBox/InfoBoxTen/InfoBoxTen'
 export { default as TemplateFive } from './HomeTemplates/TemplateFive/TemplateFive';
 export { default as TemplateSix } from './HomeTemplates/TemplateSix/TemplateSix';
-
-export {default as BlogNineCarousel} from './Blogs/BlogNine/BlogNineCarousel'
-export {default as NewsletterSixteen} from './Newsletter/NewsletterSixteen/NewsletterSixteen'
-export {default as InfoBoxEight} from './InfoBox/InfoBoxEight/InfoBoxEight'

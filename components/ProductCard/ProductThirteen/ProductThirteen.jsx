@@ -1,6 +1,9 @@
 
 import React from 'react'
-import { i18n, useTranslation } from 'next-i18next'
+import { useDispatch } from 'react-redux';
+import { globalActions } from '../../../store/globalSlice/global-slice';
+
+import { useTranslation } from 'next-i18next'
 import Link from 'next/link';
 import { Rating } from '@mui/material';
 
@@ -8,6 +11,12 @@ import cls from './productThirteen.module.scss'
 
 const ProductThirteen = () => {
     const { t, i18n } = useTranslation('common');
+    const dispatch = useDispatch()
+    
+    const open = () => {
+        dispatch(globalActions.openQuickView());
+    }
+
     return (
         <div className={`${cls.productDefault} ${cls[i18n.language]}`}>
             <div className={cls.productImage}>
@@ -17,12 +26,12 @@ const ProductThirteen = () => {
                 </Link>
                 <div className={cls.productButtons}>
                     <div className={cls.quickviewButton}>
-                        <Link href="#"><i class="fa-solid fa-eye"></i> Quick View</Link>
+                        <button onClick={open}><i className="fa-solid fa-eye"></i> Quick View</button>
                     </div>
                 </div>
                 <div className={cls.addButton}>
                     <Link href="#">
-                        <i class="fa-regular fa-heart"></i>
+                        <i className="fa-regular fa-heart"></i>
                     </Link>
                 </div>
             </div>
@@ -47,7 +56,7 @@ const ProductThirteen = () => {
                     <ins><span><bdi><span>$</span>175.00</bdi></span></ins>
                     <div className={cls.productCart}>
                         <Link href="#">
-                            <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                            <i className="fa-sharp fa-solid fa-cart-shopping"></i>
                         </Link>
                     </div>
                 </div>

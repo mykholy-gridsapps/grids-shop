@@ -1,4 +1,7 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { globalActions } from '../../../store/globalSlice/global-slice';
+
 import { i18n, useTranslation } from 'next-i18next'
 import Link from 'next/link';
 import { Rating } from '@mui/material';
@@ -7,6 +10,12 @@ import cls from './productEleven.module.scss'
 
 const ProductEleven = () => {
     const { t, i18n } = useTranslation('common');
+    const dispatch = useDispatch();
+
+    const open = () => {
+        dispatch(globalActions.openQuickView());
+    }
+
     return (
         <div className={`${cls.productDefault} ${cls[i18n.language]}`}>
             <div className={cls.productImage}>
@@ -16,7 +25,7 @@ const ProductEleven = () => {
                 </Link>
                 <div className={cls.productButtons}>
                     <div className={cls.quickviewButton}>
-                        <Link href="#"><i class="fa-solid fa-eye"></i> Quick View</Link>
+                        <button onClick={open}><i className="fa-solid fa-eye"></i> Quick View</button>
                     </div>
                 </div>
             </div>
@@ -49,12 +58,12 @@ const ProductEleven = () => {
 
                     <div className={cls.addButton}>
                         <Link href="#">
-                            <i class="fa-regular fa-heart"></i>
+                            <i className="fa-regular fa-heart"></i>
                         </Link>
                     </div>
                     <div className={cls.compareButton}>
                         <Link href="#">
-                            <i class="fa-solid fa-rotate"></i>
+                            <i className="fa-solid fa-rotate"></i>
                         </Link>
                     </div>
                 </div>

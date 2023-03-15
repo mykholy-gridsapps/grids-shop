@@ -20,22 +20,22 @@ const ProductTen = () => {
 
                     <div className={cls.search}>
                         <Link href="#">
-                            <i class="fa-regular fa-magnifying-glass"></i>
+                            <i className="fa-regular fa-magnifying-glass"></i>
                         </Link>
                     </div>
                     <div className={cls.addToWishlist}>
                         <Link href="#">
-                            <i class="fa-regular fa-heart"></i>
+                            <i className="fa-regular fa-heart"></i>
                         </Link>
                     </div>
                     <div className={cls.compare}>
                         <Link href="#">
-                            <i class="fa-regular fa-rotate"></i>
+                            <i className="fa-regular fa-rotate"></i>
                         </Link>
                     </div>
                     <div className={cls.addToCart}>
                         <Link href="#">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i className="fa-solid fa-cart-shopping"></i>
                         </Link>
                     </div>
                 </div>

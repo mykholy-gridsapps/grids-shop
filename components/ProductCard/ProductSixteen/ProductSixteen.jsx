@@ -1,22 +1,15 @@
-
 import React from 'react'
-import { useDispatch } from 'react-redux';
-import { globalActions } from '../../../store/globalSlice/global-slice';
+import Link from 'next/link';
+
+import CountDown from '../../UIs/CountDown/CountDown';
 
 import { i18n, useTranslation } from 'next-i18next'
-import Link from 'next/link';
 import { Rating } from '@mui/material';
 
-import cls from './productTweleve.module.scss'
+import cls from './productSixteen.module.scss'
 
-const ProductTweleve = () => {
+const ProductEleven = () => {
     const { t, i18n } = useTranslation('common');
-    const dispatch = useDispatch()
-    
-    const open = () => {
-        dispatch(globalActions.openQuickView());
-    }
-
     return (
         <div className={`${cls.productDefault} ${cls[i18n.language]}`}>
             <div className={cls.productImage}>
@@ -24,11 +17,14 @@ const ProductTweleve = () => {
                     <img src="./imgs/products/product-11-1.jpg" className={cls.frontImage} alt="" />
                     <img src="./imgs/products/product-11-2.jpg" className={cls.backImage} alt="" />
                 </Link>
-                <div className={cls.productButtons}>
-                    <div className={cls.quickviewButton}>
-                        <button onClick={open}><i className="fa-solid fa-eye"></i> Quick View</button>
-                    </div>
+                <div className={cls.countDown}>
+                    <CountDown daysCount={0.8} headColor={'var(--main-color)'} />
                 </div>
+                {/* <div className={cls.productButtons}>
+                    <div className={cls.quickviewButton}>
+                        <Link href="#"><i className="fa-solid fa-eye"></i> Quick View</Link>
+                    </div>
+                </div> */}
             </div>
 
             <div className={cls.productContent}>
@@ -73,4 +69,4 @@ const ProductTweleve = () => {
     )
 }
 
-export default ProductTweleve
+export default ProductEleven

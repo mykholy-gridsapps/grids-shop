@@ -7,7 +7,7 @@ const CategorySixteen = () => {
         <div className={cls.category}>
             <h6 className={cls.categoryTitle}>
                 <Link href="#">Hair Care</Link>
-                <i class="fa-regular fa-angle-right"></i>
+                <i className="fa-regular fa-angle-right"></i>
             </h6>
             <div className={cls.categoryImage}>
                 <Link href="#">
@@ -17,23 +17,23 @@ const CategorySixteen = () => {
             <div className={cls.categoriesList}>
                 <ul>
                     <li>
-                        <i class="fa-regular fa-angle-right"></i>
+                        <i className="fa-regular fa-angle-right"></i>
                         <Link href="#">Conditioners</Link>
                     </li>
                     <li>
-                        <i class="fa-regular fa-angle-right"></i>
+                        <i className="fa-regular fa-angle-right"></i>
                         <Link href="#">Hair Oils</Link>
                     </li>
                     <li>
-                        <i class="fa-regular fa-angle-right"></i>
+                        <i className="fa-regular fa-angle-right"></i>
                         <Link href="#">Hair Treatments</Link>
                     </li>
                     <li>
-                        <i class="fa-regular fa-angle-right"></i>
+                        <i className="fa-regular fa-angle-right"></i>
                         <Link href="#">Shampoos</Link>
                     </li>
                     <li >
-                        <i class="fa-regular fa-angle-right"></i>
+                        <i className="fa-regular fa-angle-right"></i>
                         <Link className={cls.showAll} href="#">Show All</Link>
                     </li>
                 </ul>

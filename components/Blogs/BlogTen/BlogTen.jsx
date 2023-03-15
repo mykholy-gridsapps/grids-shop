@@ -17,10 +17,10 @@ const BlogTen = () => {
                 <div className={cls.hoverOverlay}>
                     <div className={cls.hoverOverlayBtn}>
                         <Link href="#" className={cls.zoomGallery}>
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i className="fa-solid fa-magnifying-glass"></i>
                         </Link>
                         <Link href="#" className={cls.portfolioDetail}>
-                            <i class="fa-regular fa-link"></i>
+                            <i className="fa-regular fa-link"></i>
                         </Link>
                     </div>
                 </div>

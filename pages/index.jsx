@@ -159,6 +159,7 @@ import {
 
 import ProductsCategoriesSixteen from "../components/ProductsCategories/ProductsCategoriesSixteen/ProductsCategoriesSixteen";
 import ProductsCategoriesFourteen from "../components/ProductsCategories/ProductsCategoriesFourteen/ProductsCategoriesFourteen";
+import ProductsCategoriesSeventeen from "../components/ProductsCategories/ProductsCategoriesSeventeen/ProductsCategoriesSeventeen";
 
 
 const Home = () => {
@@ -167,7 +168,7 @@ const Home = () => {
   return (
     <Container maxWidth="xl">
       {/* <TemplateOne /> */}
-      <ProductsCategoriesFourteen />
+      <ProductsCategoriesSeventeen />
     </Container >
   );
 };
