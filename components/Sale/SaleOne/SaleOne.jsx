@@ -9,7 +9,6 @@ import cls from './saleOne.module.scss'
 const SaleOne = () => {
     const pagination = {
         clickable: true,
-
     };
     return (
         <div className={cls.sale}>

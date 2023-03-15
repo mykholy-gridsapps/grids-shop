@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { i18n, useTranslation } from 'next-i18next'
-import QuickView from '../QuickView/QuickView';
+import { useDispatch } from 'react-redux';
+import { globalActions } from '../../../store/globalSlice/global-slice';
+import { i18n, useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import { Rating } from '@mui/material';
 
@@ -9,6 +10,11 @@ import cls from './productEight.module.scss'
 const ProductEight = () => {
     const [openQuickView, setOpenQuickView] = useState(false);
     const { t, i18n } = useTranslation('common');
+    const dispatch = useDispatch()
+    
+    const open = () => {
+        dispatch(globalActions.openQuickView());
+    }
 
     return (
         <div className={`${cls.productDefault} ${cls[i18n.language]}`}>
@@ -28,7 +34,7 @@ const ProductEight = () => {
                         <i className="fa-regular fa-heart"></i>
                     </button>
                 </div>
-                <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={() => setOpenQuickView(true)}>Quick
+                <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={open}>Quick
                     View
                 </button>
             </figure>
@@ -45,9 +51,6 @@ const ProductEight = () => {
                     <span className={cls.productPrice}>$9.00</span>
                 </div>
             </div>
-            {openQuickView && 
-                <QuickView setOpenQuickView={setOpenQuickView} />
-            }
         </div>
     )
 }

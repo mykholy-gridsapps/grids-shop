@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { globalActions } from '../../../store/globalSlice/global-slice';
 import { Rating } from '@mui/material'
-import QuickView from '../QuickView/QuickView';
 import { i18n } from 'next-i18next'
 import Link from 'next/link'
 import React from 'react'
@@ -9,6 +10,11 @@ import cls from './productFour.module.scss'
 
 const ProductFour = () => {
     const [openQuickView, setOpenQuickView] = useState(false);
+    const dispatch = useDispatch()
+    
+    const open = () => {
+        dispatch(globalActions.openQuickView());
+    }
 
     return (
         <div className={`${cls.productDefault} ${cls[i18n.language]}`}>
@@ -42,13 +48,10 @@ const ProductFour = () => {
                     <Link href="#" className={cls.btnAddCart}><i
                         className="icon-shopping-cart"></i><span>ADD TO CART</span></Link>
                     <Link href="wishlist.html" className={cls.btnIconWish} title="wishlist"><i className={cls.iconHeart}></i></Link>
-                    <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={() => setOpenQuickView(true)}>
+                    <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={open}>
                         <i className="fas fa-external-link-alt"></i></button>
                 </div>
             </div>
-            {openQuickView && 
-                <QuickView setOpenQuickView={setOpenQuickView} />
-            }
         </div>
     )
 }

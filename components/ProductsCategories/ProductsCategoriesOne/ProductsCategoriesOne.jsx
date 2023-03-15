@@ -26,21 +26,19 @@ const Deals = () => {
 
   return (
     <div className={cls.deals}>
-      <Container maxWidth="xxl">
-        <div className={cls.tabs}>
-          {tabs.map((tab, idx) => (
-            <span
-              className={currentTabIndex === idx ? cls.active : ""}
-              onClick={() => setCurrentTabIndex(idx)}
-              key={idx}
-            >
-              <span></span> {tab}
-            </span>
-          ))}
-        </div>
+      <div className={cls.tabs}>
+        {tabs.map((tab, idx) => (
+          <span
+            className={currentTabIndex === idx ? cls.active : ""}
+            onClick={() => setCurrentTabIndex(idx)}
+            key={idx}
+          >
+            <span></span> {tab}
+          </span>
+        ))}
+      </div>
 
-        <div className={cls.view}>{currentTab}</div>
-      </Container>
+      <div className={cls.view}>{currentTab}</div>
     </div>
   );
 }

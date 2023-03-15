@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { globalActions } from '../../../store/globalSlice/global-slice';
 import { i18n, useTranslation } from 'next-i18next'
 import QuickView from '../QuickView/QuickView';
 import Link from 'next/link';
@@ -9,6 +11,11 @@ import cls from './productSeven.module.scss'
 const ProductSeven = () => {
     const [openQuickView, setOpenQuickView] = useState(false);
     const { t, i18n } = useTranslation('common');
+    const dispatch = useDispatch()
+    
+    const open = () => {
+        dispatch(globalActions.openQuickView());
+    }
 
     return (
         <div className={`${cls.productDefault} ${cls.innerQuickview} ${cls.innerIcon} ${cls[i18n.language]}`}>
@@ -28,7 +35,7 @@ const ProductSeven = () => {
                         <i className="fa-regular fa-bag-shopping"></i>
                     </Link>
                 </div>
-                <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={() => setOpenQuickView(true)}>Quick
+                <button href="ajax/product-quick-view.html" className={cls.btnQuickview} title="Quick View" onClick={open}>Quick
                     View</button>
             </figure>
             <div className={cls.productDetails}>

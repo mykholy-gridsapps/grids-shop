@@ -17,39 +17,37 @@ const Categories = () => {
 
   return (
     <div className={cls.categories}>
-      <Container maxWidth="xxl">
-        <div className={`${cls.categories__head}`}>
-          <h2>Our Top Categories</h2>
-        </div>
+      <div className={`${cls.categories__head}`}>
+        <h2>Our Top Categories</h2>
+      </div>
 
-        <div className={cls.categories__allCategories}>
-          <Grid container spacing={3}>
-            <Grid item xs={12} md={6} lg={4}>
-              <CategoriesCard />
-            </Grid>
-
-            <Grid item xs={12} md={6} lg={4}>
-              <CategoriesCard />
-            </Grid>
-
-            <Grid item xs={12} md={6} lg={4}>
-              <CategoriesCard />
-            </Grid>
-
-            <Grid item xs={12} md={6} lg={4}>
-              <CategoriesCard />
-            </Grid>
-
-            <Grid item xs={12} md={6} lg={4}>
-              <CategoriesCard />
-            </Grid>
-
-            <Grid item xs={12} md={6} lg={4}>
-              <CategoriesCard />
-            </Grid>
+      <div className={cls.categories__allCategories}>
+        <Grid container spacing={3}>
+          <Grid item xs={12} md={6} lg={4}>
+            <CategoriesCard />
           </Grid>
-        </div>
-      </Container>
+
+          <Grid item xs={12} md={6} lg={4}>
+            <CategoriesCard />
+          </Grid>
+
+          <Grid item xs={12} md={6} lg={4}>
+            <CategoriesCard />
+          </Grid>
+
+          <Grid item xs={12} md={6} lg={4}>
+            <CategoriesCard />
+          </Grid>
+
+          <Grid item xs={12} md={6} lg={4}>
+            <CategoriesCard />
+          </Grid>
+
+          <Grid item xs={12} md={6} lg={4}>
+            <CategoriesCard />
+          </Grid>
+        </Grid>
+      </div>
     </div>
   );
 };

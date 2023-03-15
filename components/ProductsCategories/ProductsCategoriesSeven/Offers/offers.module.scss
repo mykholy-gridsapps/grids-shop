@@ -1,0 +1,15 @@
+.offers {
+  position: relative;
+  height: 100%;
+  padding: 10px;
+  border-left: 1px solid var(--border-color);
+  .offers__head {
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 0.85rem;
+    span {
+      font-weight: 600;
+    }
+  }
+}

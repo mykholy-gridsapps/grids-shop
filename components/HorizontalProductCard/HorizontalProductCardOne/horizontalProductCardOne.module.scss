@@ -1,0 +1,35 @@
+.horizontalCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 10px 0;
+  img {
+    width: 80px;
+    height: 70px;
+  }
+  .info {
+    h6 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin: 0;
+    }
+    span {
+      font-size: 1rem;
+    }
+    .price {
+      display: flex;
+      align-items: flex-end;
+      gap: 5px;
+      span:first-of-type {
+        font-size: 0.8rem;
+        text-decoration: line-through;
+        opacity: 0.8;
+      }
+      span:last-of-type {
+        font-size: 1.1rem;
+        opacity: 1;
+        font-weight: 600;
+      }
+    }
+  }
+}

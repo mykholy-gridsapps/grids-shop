@@ -1,0 +1,17 @@
+.collection {
+  // background-color: rgba(0, 0, 0, 0.1);
+  p {
+    margin-bottom: 20px;
+  }
+  .bigProduct {
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--secondary-background);
+  }
+  .smallProducts {
+    background-color: var(--secondary-background);
+    padding: 0 10px;
+    border-radius: 20px;
+  }
+}
