@@ -15,7 +15,7 @@ const lightVars = () => {
 
   document.querySelector(":root").style.setProperty("--special-background", "rgb(239 237 237)");
 
-  document.querySelector(":root").style.setProperty("--text-color", "#777777");
+  document.querySelector(":root").style.setProperty("--text-color", "#2a2f3b");
 
   document.querySelector(":root").style.setProperty("--text-light", "#fff");
 

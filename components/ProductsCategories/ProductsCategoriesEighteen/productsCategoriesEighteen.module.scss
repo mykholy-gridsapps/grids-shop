@@ -1,0 +1,112 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.productsCategories {
+  .collection {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+
+    .part:first-of-type {
+      grid-column: span 1;
+      grid-row: span 2;
+    }
+
+    .part:nth-of-type(2),
+    .part:nth-of-type(3) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
+    .part {
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+        filter: brightness(0.8);
+      }
+
+      .content {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+
+        p {
+          font-size: 2.5rem;
+          font-weight: bold;
+          transform: translateY(40px);
+          transition: all 0.3s ease-in-out;
+        }
+
+        span {
+          font-weight: 600;
+          opacity: 0;
+          transition: all 0.3s ease-in-out;
+        }
+
+        button {
+          @extend %outlinedBtn;
+          border-color: #fff;
+          color: #fff;
+
+          &:hover {
+            background-color: #fff;
+            color: var(--secondary-color);
+          }
+        }
+      }
+
+      &:hover {
+        .content {
+          p {
+            transform: translateY(0);
+          }
+
+          span,
+          button {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    @include xs {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  .products {
+    padding: 30px 50px;
+
+    h4 {
+      text-align: center !important;
+      margin-bottom: 20px;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    @include xs {
+      padding: 0px;
+
+      .wrapper {
+        flex-direction: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.categories {
+  .categoryWrapper {
+    .category {
+      padding: 30px 20px;
+      background-image: url('../../../public/imgs/headphone.jpg');
+      color: #e5e5e5;
+
+      ul {
+        li {
+          font-size: 0.9rem;
+          padding: 2px 0;
+          cursor: pointer;
+
+          a {
+            color: #e5e5e5;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

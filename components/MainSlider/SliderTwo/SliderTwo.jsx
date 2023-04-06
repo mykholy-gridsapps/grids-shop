@@ -11,7 +11,6 @@ import Link from "next/link";
 
 const SliderTwo = () => {
     const navigation = {
-
     };
     const { t, i18n } = useTranslation('common')
     return (

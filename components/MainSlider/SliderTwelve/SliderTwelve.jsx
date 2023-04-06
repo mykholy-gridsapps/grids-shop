@@ -5,8 +5,6 @@ import cls from './sliderTwelve.module.scss'
 
 
 const SliderTwelve = () => {
-    const navigation = {
-    };
     return (
         <div className={cls.slider}>
             <Swiper slidesPerView={1} loop={true} spaceBetween={0}>

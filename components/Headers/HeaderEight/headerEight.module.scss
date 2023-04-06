@@ -1,0 +1,174 @@
+@import '../../../styles/mixins.scss';
+
+.headerEight {
+  background-color: var(--main-color);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .side {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    .logo {
+      background-color: var(--secondary-color);
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img {
+        height: 40px;     
+        width: 40px;  
+        @include xs {
+          height: 35px;     
+          width: 35px;  
+        }
+      }
+      h5 {
+        @include lg {
+          font-size: 0.9rem;
+        }
+        @include xs {
+          font-size: 0.85rem;
+        }
+      }
+      @include md {
+        padding: 15px;
+      }
+      @include xs {
+        padding: 20px;
+        h5 {
+          display: none;
+        }
+      }
+    }
+    & > ul {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      li {
+        font-size: 0.95rem;
+        cursor: pointer;
+        &:hover {
+          color: var(--secondary-color);
+        }
+      }
+      @include xl {
+        gap: 15px;
+        li {
+          font-size: 0.9rem;
+        }
+      }
+      @include lg {
+        gap: 10px;
+        li {
+          font-size: 0.85rem;
+        }
+      }
+      @include md {
+        display: none;
+      }
+    }
+    .search {
+      position: relative;
+      min-width: 40px;
+      display: flex;
+      justify-content: center;
+      border-left: 1px solid #aab9e6;
+      cursor: pointer;
+      i {
+        font-size: 1.2rem;
+      }
+      &.ar {
+        border-left: unset;
+        border-right: 1px solid #aab9e6;
+      }
+      @include md {
+        border-right: none !important;
+        border-left: none !important;
+      }
+    }
+    @include lg {
+      gap: 20px;
+    }
+  }
+  .actions {
+    display: flex;
+    gap: 30px;
+    padding: 0 30px;
+    .headerContact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        height: 50px !important;
+      }
+      h6 {
+        margin: 0;
+        font-size: 0.7rem;
+        font-weight: 400;
+      }
+      a {
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 600;
+      }
+      @include lg {
+        display: none;
+      }
+    }
+    .navbar__main__account {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      gap: 15px;
+      i {
+        color:  #fff;
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+      span {
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+        height: 50px;
+        display: flex;
+        align-items: center;
+      }
+      .wishlist,
+      .cart {
+        position: relative;
+        i {
+          color: #fff !important;
+        }
+        span {
+          color: #fff;
+        }
+        @keyframes show {
+          0% {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0px);
+          }
+        }
+      }
+      & > i {
+        display: none;
+        @include md {
+          display: block;
+        }
+      }
+      @include lg {
+        gap: 10px;
+      }
+    }
+    @include lg {
+      padding: 10px;
+    }
+  }
+}

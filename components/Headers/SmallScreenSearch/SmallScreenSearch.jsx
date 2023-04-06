@@ -7,7 +7,7 @@ const SmallScreenSearch = ({ setOpenSmallSearch }) => {
 
   const blur = () => {
     setTimeout(() => {
-      setOpenSmallSearch(false)
+      setOpenSmallSearch(false);
     }, 200)
   }
 

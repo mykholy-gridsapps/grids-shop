@@ -1,0 +1,39 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/extends.scss';
+
+.categories {
+  .content {
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    button {
+      @extend %outlinedBtn;
+    }
+  }
+
+  .images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    img {
+      width: 280px;
+      height: 280px;
+      border-radius: 5px;
+      box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    @include xs {
+      flex-direction: column;
+    }
+  }
+}

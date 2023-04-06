@@ -1,0 +1,124 @@
+@import '../../../styles/mixins.scss';
+
+.popupOne {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .close {
+    position: absolute;
+    top: 20%;
+    right: 30%;
+
+    &.ar {
+      right: unset;
+      left: 30%;
+
+      @include sm {
+        left: 10%;
+      }
+    }
+
+    i {
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    @include sm {
+      right: 10%;
+    }
+  }
+
+  .circle {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: clamp(500px, 35vw, 900px);
+    height: clamp(500px, 35vw, 900px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+
+    h4 {
+      span {
+        color: var(--secondary-color);
+      }
+    }
+
+    h2 {
+      text-align: center !important;
+
+      @include xs {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      opacity: 0.7;
+      text-align: center !important;
+    }
+
+    .submit {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      border-radius: 20px;
+      overflow: hidden;
+
+      input,
+      button {
+        height: 45px;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        font-size: 0.9rem;
+      }
+
+      input {
+        width: 300px;
+
+        @include sm {
+          width: 220px;
+        }
+      }
+
+      button {
+        background-color: var(--main-color);
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+
+    .checkbox {
+      display: flex;
+      gap: 5px;
+      margin-top: 10px;
+
+      input {
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+      }
+
+      label {
+        opacity: 0.7;
+      }
+    }
+
+    @include xs {
+      border-radius: 20px;
+      width: auto;
+      max-width: 95%;
+      height: auto;
+      padding: 100px 20px;
+    }
+  }
+}

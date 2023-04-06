@@ -11,22 +11,22 @@ import cls from './productsCategoriesSeventeen.module.scss';
 
 const ProductsCategoriesSeventeen = () => {
   const pagination = {
-      clickable: true,
+    clickable: true,
   };
   const myArr = [0, 1, 2, 3, 4];
   const myArr2 = [0, 1, 2];
   const breakpoints = {
     400: {
-        slidesPerView: 1
+      slidesPerView: 1
     },
     768: {
-        slidesPerView: 3
+      slidesPerView: 3
     },
     992: {
-        slidesPerView: 3
+      slidesPerView: 3
     },
     1200: {
-        slidesPerView: 4
+      slidesPerView: 4
     },
   }
 

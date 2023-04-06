@@ -1,0 +1,57 @@
+@import '../../../styles/mixins.scss';
+
+.featuredNine {
+  margin: 50px 0;
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .itemImage {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &>img {
+      height: 550px;
+      width: 80%;
+    }
+
+    .zoomImage {
+      position: absolute;
+      right: 0;
+      width: 400px;
+      height: 400px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+
+      &.ar {
+        right: unset;
+        left: 0;
+      }
+    }
+
+    @include xs {
+      img {
+        width: 100%;
+      }
+
+      .zoomImage {
+        top: 10%;
+        right: 5%;
+        width: 90%;
+        height: auto;
+        max-height: 200px;
+
+        &.ar {
+          right: unset;
+          left: 5%;
+        }
+      }
+    }
+  }
+
+}

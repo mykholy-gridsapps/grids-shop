@@ -4,8 +4,8 @@ import { Container } from "@mui/system";
 
 import BlogEight from "./BlogEight";
 
-import cls from "./blogEightCarousel.module.scss"
 import 'swiper/css';
+import cls from "./blogEightCarousel.module.scss"
 
 const BlogEightCarousel = () => {
     const array = [...Array(3)]

@@ -1,0 +1,99 @@
+@import '../../../styles/extends.scss';
+
+.newsletter {
+  background-image: url('../../../public/imgs/cta.jpg');
+  background-size: cover;
+  background-position: 100% 100%;
+  padding: 50px 20px;
+
+  h2,
+  p {
+    text-align: center !important;
+  }
+
+  h2 {
+    color: #000;
+    font-size: 2.2rem;
+  }
+
+  p {
+    margin-bottom: 15px;
+    color: #fff;
+  }
+
+  .input,
+  .social {
+    display: flex;
+    align-items: center;
+  }
+
+  .input {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 550px;
+    margin: auto;
+
+    input {
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      background-color: #fff;
+      min-width: 400px;
+      height: 45px;
+    }
+
+    button {
+      @extend %mainBtn;
+      border-radius: 0;
+      border: none;
+      width: 150px;
+      height: 45px;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+
+      @include sm {
+        padding: 5px 20px;
+      }
+    }
+
+    @include sm {
+      flex-direction: column;
+      gap: 10px;
+      width: auto;
+      overflow: visible;
+
+      input {
+        min-width: 300px;
+      }
+
+      button {
+        width: auto;
+      }
+    }
+  }
+
+  .social {
+    gap: 5px;
+    margin-top: 20px;
+    justify-content: center;
+
+    i {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-content: center;
+      background-color: #fff;
+      box-shadow: 5px 5px 30px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--main-color);
+        color: #fff;
+      }
+    }
+  }
+}

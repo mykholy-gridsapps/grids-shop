@@ -1,0 +1,32 @@
+@import '../../../styles/mixins.scss';
+
+.countDown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h6 {
+    text-align: center !important;
+    color: var(--alert);
+    margin-bottom: 10px;
+  }
+
+  .countDown__parts {
+    display: flex;
+    gap: 3px;
+
+    .part {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h5 {
+        font-size: 0.8rem;
+
+        @include md {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}

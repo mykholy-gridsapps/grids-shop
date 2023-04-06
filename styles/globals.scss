@@ -1,6 +1,7 @@
 @import "./mixins.scss";
 @import "./variables.scss";
 @import url('https://fonts.cdnfonts.com/css/poppins');
+
 @font-face {
   font-family: "porto";
   src: url("../public/font/porto.eot?64334846");
@@ -745,4 +746,54 @@ button.swal2-cancel {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.customSliderArrows {
+  position: relative;
+
+  .custom-swiper-next,
+  .custom-swiper-prev {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    i {
+      font-size: 3rem;
+
+      @include xs {
+        font-size: 2rem;
+      }
+    }
+
+    @include md {
+      top: 90%;
+    }
+  }
+
+  .custom-swiper-next {
+    right: 3%;
+  }
+
+  .custom-swiper-prev {
+    left: 3%;
+  }
+}
+
+.plainArrows {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: transparent;
+    box-shadow: none;
+
+    &:after {
+      color: #d0cfcf;
+    }
+  }
 }

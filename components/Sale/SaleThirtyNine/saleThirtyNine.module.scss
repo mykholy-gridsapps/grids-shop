@@ -1,0 +1,72 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/extends.scss';
+
+.saleThirtyNine {
+  background-image: url('../../../public/imgs/parallax.jpg');
+  background-position: 100% 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 20px;
+  position: relative;
+
+  &>span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+
+    p:first-of-type {
+      font-family: "Segoe Script";
+      font-size: 1.8rem;
+
+      span {
+        color: var(--main-color);
+        font-size: 1.8rem;
+      }
+
+      @include xs {
+        font-size: 1.2rem;
+
+        span {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    p {
+      color: #fff;
+      font-size: 1.2rem;
+      text-align: center !important;
+    }
+
+    h2 {
+      font-size: 2.7rem;
+      color: #fff;
+      text-align: center !important;
+
+      @include xs {
+        font-size: 2rem
+      }
+    }
+
+    button {
+      @extend %mainBtn;
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import '../../../styles/mixins.scss';
+
+.categories {
+  margin: 50px 0;
+
+  h4 {
+    text-align: center !important;
+    margin-bottom: 20px;
+  }
+
+  .one {
+    border-radius: 10px;
+    position: relative;
+    min-height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+      min-height: 300px;
+      transition: all 0.3s ease-in;
+    }
+
+    .name {
+      bottom: 10px;
+      width: 90%;
+      position: absolute;
+      left: 5%;
+      background-color: #fff;
+      text-align: center !important;
+      padding: 10px 20px;
+      border-radius: 0 0 10px 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+
+      .name {
+        background-color: var(--main-color);
+        color: #fff;
+      }
+    }
+
+    @include xs {
+      min-height: 250px;
+    }
+  }
+}

@@ -1,4 +1,3 @@
-
 .infoBoxesContainer {
     // border: 1px solid #e7e7e7;
     margin-bottom: 20px !important;
@@ -8,11 +7,11 @@
         padding: 12px;
         padding-right: 15px;
         display: flex;
-        align-items: start;
+        align-items: flex-start;
         width: 100%;
         color: var(--text-dark);
         justify-content: center;
-        
+
 
         i {
             font-size: 40px;
@@ -21,7 +20,7 @@
             line-height: 1;
             color: var(--main-color);
         }
-        
+
         h4 {
             color: inherit;
             margin: 0 0 25px;

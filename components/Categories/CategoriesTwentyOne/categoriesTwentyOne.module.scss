@@ -1,0 +1,51 @@
+.categories {
+  .categoryWrapper {
+    &:nth-of-type(odd) {
+      background-color: #2a2a2a;
+    }
+
+    &:nth-of-type(even) {
+      background-color: var(--main-color);
+    }
+
+    .category {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30%;
+      padding: 30px 20px;
+      color: #dadada;
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        i {
+          font-size: 4rem;
+        }
+
+        h5 {
+          margin: 0;
+          text-align: center !important;
+        }
+      }
+
+      ul {
+        li {
+          font-size: 0.9rem;
+          padding: 2px 0;
+          cursor: pointer;
+
+          a {
+            color: #dadada;
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

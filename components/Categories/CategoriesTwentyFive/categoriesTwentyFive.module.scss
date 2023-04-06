@@ -1,0 +1,35 @@
+.categories {
+  background-color: var(--special-background);
+  padding: 20px;
+
+  .category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+
+    img {
+      width: 100px;
+      height: 100px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    p {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.15);
+      }
+
+      p {
+        a {
+          color: var(--main-color);
+        }
+      }
+    }
+  }
+}

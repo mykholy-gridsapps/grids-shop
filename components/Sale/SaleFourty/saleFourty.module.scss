@@ -1,0 +1,74 @@
+@import '../../../styles/mixins.scss';
+
+.saleFourty {
+  background: url('../../../public/imgs/back.jpg');
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 20px;
+  position: relative;
+
+  &>span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .content {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+    z-index: 2;
+
+    .sale {
+      span {
+        font-size: 1.3rem;
+        border-bottom: 2px solid #fff;
+      }
+
+      h2 {
+        font-size: 4.2rem;
+        margin: 0;
+      }
+    }
+
+    .circle {
+      border: 2px solid #fff;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      display: grid;
+      place-content: center;
+      transform: rotate(-20deg);
+      transition: all 0.3s ease-in-out;
+
+      span,
+      p {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center !important;
+        margin: 0;
+
+        span {
+          color: var(--secondary-color);
+          font-weight: bold;
+          font-size: 2rem;
+        }
+      }
+
+      &:hover {
+        transform: rotate(0) scale(1.1);
+      }
+    }
+
+    @include xs {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import '../../../styles/mixins.scss';
+
+.sideMenuOne {
+  position: fixed;
+  left: 15%;
+  top: 20%;
+  z-index: 999;
+  width: 70px;
+  box-shadow: 5px 5px 40px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-background);
+
+  .link {
+    text-align: center !important;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+
+    i {
+      font-size: 1.3rem;
+    }
+
+    &:hover {
+      i {
+        color: var((--main-color));
+      }
+    }
+
+    .dropdown {
+      display: none;
+
+      &.opened {
+        display: inline-block;
+      }
+    }
+  }
+
+  @include xxl {
+    left: 8%;
+  }
+
+  @include xl {
+    left: 0%;
+  }
+
+  @include lg {
+    display: none;
+  }
+}

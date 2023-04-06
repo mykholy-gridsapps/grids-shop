@@ -1,0 +1,41 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/extends.scss';
+
+.sliderFourteen {
+
+  .slide1,
+  .slide2 {
+    min-height: 80vh;
+    background-image: url('../../../public/imgs/slide1.png');
+    background-size: cover;
+    background-position: 100% 100%;
+
+    .container {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+    }
+
+    button {
+      margin-top: 10px;
+      @extend %mainBtn;
+    }
+
+    @include sm {
+      background-position: center;
+    }
+  }
+
+  .slide2 {
+    background-image: url('../../../public/imgs/slide2.png');
+  }
+}

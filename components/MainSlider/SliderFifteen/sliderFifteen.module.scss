@@ -1,0 +1,58 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/extends.scss';
+
+.sliderFifteen {
+  position: relative;
+
+  .sideMenu {
+    position: absolute;
+    top: 10%;
+    left: 100px;
+    z-index: 99;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .slide1,
+  .slide2 {
+    min-height: 100vh;
+    background-image: url('../../../public/imgs/watch.jpg');
+    background-size: cover;
+    background-position: 100% 100%;
+
+    .container {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+
+    span {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+    }
+
+    button {
+      @extend %outlinedBtn;
+      padding: 15px 40px;
+
+      @include xs {
+        padding: 10px 30px;
+      }
+    }
+
+    @include sm {
+      background-position: center;
+    }
+  }
+
+  .slide2 {
+    background-image: url('../../../public/imgs/slide3.jpg');
+  }
+}

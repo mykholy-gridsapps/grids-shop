@@ -1,9 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import cls from "./blogFiveCarousel.module.scss"
 import 'swiper/css';
 import BlogFive from "./BlogFive";
 
+import cls from "./blogFiveCarousel.module.scss"
 
 const BlogFiveCarousel = () => {
     const array = [...Array(5)]

@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 
 import cls from './zoomImage.module.scss';
 
@@ -6,8 +6,9 @@ const Zoom = ({ image }) => {
   const imageRef = useRef();
 
   const handleMouseMove = (e) => {
-    const x = e.clientX - e.target.offsetLeft - 300;
-    const y = e.clientY - e.target.offsetTop - 100;
+    var element = e.currentTarget.getBoundingClientRect(); // very important
+    const x = e.clientX - element.left;
+    const y = e.clientY - element.top;
     // STYLING IMAGE ON MOUSE MOVE
     imageRef.current.style.transformOrigin = `${x}px ${y}px`;
     imageRef.current.style.transform = 'scale(2)';
@@ -19,8 +20,10 @@ const Zoom = ({ image }) => {
   }
 
   return (
-    <div onMouseMove={(e) => handleMouseMove(e)} onMouseLeave={(e) => handleMouseLeave(e)} className={cls.container}>
-      <img src={image} alt="product image" ref={imageRef} />
+    <div className={cls.container}>
+      <div className={cls.wrapper} onMouseMove={(e) => handleMouseMove(e)} onMouseLeave={(e) => handleMouseLeave(e)}>
+        <img src={image} alt="product image" ref={imageRef} loading="lazy" />
+      </div>
     </div>
   )
 }

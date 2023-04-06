@@ -1,0 +1,84 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.saleWrapper {
+  margin: 50px 0;
+
+  .sale {
+    height: 550px;
+    background-image: url('../../../public/imgs/1.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+
+    .content {
+      * {
+        text-align: center !important;
+        color: #fff;
+      }
+
+      span {
+        display: block;
+        font-size: 1.3rem;
+        font-weight: 600;
+
+        @include xs {
+          font-size: 1rem;
+        }
+      }
+
+      h2 {
+        font-size: clamp(1.8rem, 5vw, 3rem);
+      }
+
+      .btns {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 15px;
+
+        button {
+          @extend %outlinedBtn;
+          border-color: #fff;
+          color: var(--secondary-color);
+
+          &:hover {
+            background-color: #fff;
+            color: var(--secondary-color);
+
+            i {
+              color: var(--secondary-color);
+            }
+          }
+
+          @include xs {
+            font-size: 0.8rem;
+            padding: 10px 20px;
+          }
+        }
+      }
+    }
+
+    @include md {
+      height: auto;
+      padding: 100px 0;
+    }
+  }
+
+  .saleImage {
+    height: 550px;
+    background-image: url('../../../public/imgs/2.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+
+    @include md {
+      height: auto;
+      min-height: 400px;
+    }
+  }
+}

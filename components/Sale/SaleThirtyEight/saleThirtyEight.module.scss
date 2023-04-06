@@ -1,0 +1,193 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/extends.scss';
+
+.saleThirtyEight {
+  margin: 50px 0;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 1px;
+    right: 1px;
+    top: 1px;
+    bottom: 1px;
+    border: 5px dashed #fff;
+    pointer-events: none;
+    clip-path: inset(4px 4px 4px 4px);
+
+    @include sm {
+      content: none;
+    }
+  }
+
+  button:not(.shop) {
+    border-radius: 0;
+    border: none;
+    background-color: #e0e0e0;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 30px;
+    position: relative;
+    text-transform: uppercase;
+
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      right: -27px;
+      top: -40px;
+      bottom: -20px;
+      border-right: 45px solid #e0e0e0;
+      transform: rotate(26deg);
+    }
+
+    span {
+      font-size: 1.5rem;
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        right: -37px;
+        top: -40px;
+        bottom: -20px;
+        border-right: 5px solid #e0e0e0;
+        transform: rotate(26deg);
+      }
+    }
+
+    @include sm {
+      &:before {
+        content: none;
+      }
+
+      span {
+        font-size: 1.2rem;
+
+        &:after {
+          content: none;
+        }
+      }
+    }
+
+    @include xs {
+      span {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .slidingText {
+    border: none;
+    overflow: hidden;
+    flex: 1;
+    background-color: #333333;
+    padding: 10px 0;
+
+    .internalWrapper {
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 3600px;
+
+      @include xs {
+        width: 1200px;
+      }
+
+      @include md {
+        width: 3600px;
+      }
+
+      &.animationOn {
+        animation: slide 45s linear infinite;
+
+        &.ar {
+          animation: slideAr 45s linear infinite;
+        }
+      }
+
+      p {
+        font-size: 1.7rem;
+        font-weight: 500;
+        min-width: 600px;
+        cursor: pointer;
+        color: #fff;
+
+        @include xs {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+
+  .shop {
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    padding: 7px 20px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--main-color);
+      color: #fff;
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+
+  &.ar {
+    button:not(.shop) {
+      &:before {
+        right: unset;
+        left: -20px;
+      }
+
+      span {
+        &:after {
+          right: unset;
+          left: -30px;
+        }
+      }
+    }
+
+    .shop {
+      right: unset;
+      left: 20px;
+    }
+  }
+
+  @include sm {
+    display: block;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+
+  @keyframes slideAr {
+    0% {
+      transform: translate(0, 0);
+    }
+
+    100% {
+      transform: translate(100%, 0);
+    }
+  }
+}

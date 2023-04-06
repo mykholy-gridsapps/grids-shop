@@ -1,0 +1,36 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.sideMenu {
+  ul {
+
+    li {
+      padding: 7px 0;
+      cursor: pointer;
+
+      a {
+        padding: 5px 5px;
+        position: relative;
+
+        @extend %borderLink;
+
+        &.active {
+          color: var(--main-color);
+          border-bottom: 2px solid var(--main-color);
+
+          span {
+            display: none;
+          }
+        }
+
+        span {
+          background-color: var(--main-color);
+        }
+      }
+    }
+  }
+
+  @include md {
+    display: none;
+  }
+}

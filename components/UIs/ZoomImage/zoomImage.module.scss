@@ -1,12 +1,17 @@
 .container {
-  overflow: hidden;
-  background-color: var(--default-background) !important;
-}
+  width: auto;
+  height: auto;
 
-.container img {
-  backgroundPosition: 0% 0%; 
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  cursor: crosshair;
+  .wrapper {
+    overflow: hidden;
+    background-color: var(--default-background) !important;
+
+    img {
+      background-position: 0% 0%;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      cursor: crosshair;
+    }
+  }
 }
