@@ -24,7 +24,7 @@ import SaleTwentyOne from './../../Sale/SaleTwentyOne/SaleTwentyOne';
 import SaleTwenty from './../../Sale/SaleTwenty/SaleTwenty';
 
 import ProductsCategoriesTwo from '../../ProductsCategories/ProductsCategoriesTwo/ProductsCategoriesTwo';
-import ProductsCategoriesEleven from '../../ProductsCategories/ProductsCategoriesEleven/ProductsCategoriesEleven';
+import ProductsCategoriesEleven from '../../ProductsCategories/CollectionEleven/CollectionEleven';
 import BlogOne from '../../Blogs/BlogOne/BlogOne';
 import BrandsSeven from '../../Brands/BrandsSeven/BrandsSeven';
 import TestimonialOneCarousel from '../../Testimonials/TestimonialOne/TestimonialOneCarousel';

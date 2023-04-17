@@ -1,0 +1,169 @@
+@import '../../../styles/extends.scss';
+
+.productCard {
+  cursor: pointer;
+
+  .images {
+    position: relative;
+
+    .actions {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      opacity: 0;
+      z-index: -1;
+      display: grid;
+      place-content: center;
+      gap: 10px;
+      transition: all 0.2s ease-in-out;
+
+      i {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background-color: var(--secondary-background);
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+          background-color: var(--main-color);
+          color: #fff;
+        }
+      }
+
+      &.ar {
+        right: unset;
+        left: 15px;
+      }
+    }
+
+    img {
+      background-color: var(--special-background);
+      margin-bottom: 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+      min-height: 220px;
+      object-fit: contain;
+
+      &.secondary {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+      }
+    }
+
+    .quickView {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: var(--main-color);
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      opacity: 0;
+      z-index: -1;
+      transition: all 0.2s ease-in-out;
+
+      button {
+        @extend %nativeBtn;
+        color: #fff;
+        width: 100%;
+        text-align: center !important;
+      }
+    }
+
+    &:hover {
+      img {
+        &.secondary {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  h6 {
+    text-align: center !important;
+    margin: 0;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    span {
+      font-size: 1.1rem;
+    }
+
+    p {
+      opacity: 0.8;
+      font-size: 0.85rem;
+    }
+  }
+
+  .price {
+    display: flex;
+    gap: 10px;
+    place-content: center;
+    transition: all 0.2s ease-in-out;
+
+    span {
+      font-weight: 600;
+      font-size: 1rem;
+
+      &.prev {
+        opacity: 0.6;
+        font-weight: 500;
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  &>button {
+    background-color: transparent;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--main-color);
+    display: block;
+    margin: auto;
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    @extend %borderLink;
+  }
+
+  &:hover {
+    .images {
+      .actions {
+        z-index: 9;
+        opacity: 1;
+      }
+
+      .quickView {
+        z-index: 9;
+        opacity: 1;
+      }
+    }
+
+    .price {
+      opacity: 0;
+      z-index: -1;
+    }
+
+    &>button {
+      opacity: 1;
+      z-index: 9;
+      transform: translateY(-25px);
+    }
+  }
+}

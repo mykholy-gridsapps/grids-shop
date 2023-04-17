@@ -7,7 +7,6 @@ import Rating from '@mui/material/Rating';
 import cls from './itemDetails.module.scss';
 
 const ItemDetails = () => {
-  const [value, setValue] = useState(2);
   const [counter, setCounter] = useState(1);
   const [variant, setVariant] = useState('');
   const [color, setColor] = useState('');
@@ -28,7 +27,7 @@ const ItemDetails = () => {
         <span>$150.00</span>
       </div>
       <div className={cls.reviews}>
-        <Rating name="read-only" value={value} readOnly />
+        <Rating name="read-only" value={4} readOnly />
         <p>( 6 Reviews )</p>
       </div>
       <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus liberpuro ate vol faucibus adipiscing.</p>

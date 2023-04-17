@@ -1,0 +1,125 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/extends.scss';
+
+.homeCategory {
+  margin: 50px 0;
+
+  .homeCategory__wrapper {
+    .homeCategory__head {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+      background-color: var(--secondary-background);
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--heavy-border);
+
+      @include sm {
+        display: block;
+        overflow-x: scroll;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        a {
+          color: var(--main-color);
+          font-weight: 600;
+          font-size: 0.95rem;
+        }
+      }
+
+      &.rounded {
+        border-radius: 20px;
+
+        div {
+          span {
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+
+    .homeCategory__products {
+      background-color: var(--secondary-background);
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      gap: 10px;
+      padding: 0 5px;
+
+      @include sm {
+        grid-template-columns: repeat(12, 1fr);
+      }
+
+      .side {
+        grid-column: span 2;
+
+        @include lg {
+          grid-column: span 4;
+        }
+
+        @include md {
+          grid-column: span 3;
+        }
+
+        @include sm {
+          grid-column: span 6 !important;
+        }
+
+        @include xs {
+          grid-column: span 12 !important;
+        }
+      }
+
+      .panner {
+        grid-column: span 3;
+        grid-row: span 6;
+
+        img {
+          object-fit: cover;
+        }
+
+        @include md {
+          grid-column: span 5;
+        }
+
+        @include sm {
+          grid-column: span 12;
+        }
+      }
+
+      @include lg {
+        .side {
+
+          &:nth-of-type(1),
+          &:nth-of-type(4),
+          &:nth-of-type(5) {
+            display: none;
+          }
+        }
+      }
+
+      @include sm {
+        .side {
+          grid-column: span 6;
+        }
+
+        .center {
+          display: none;
+        }
+      }
+
+      @include xs {
+        .side {
+          grid-column: span 12;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.bestSeller {
+  border: 1px solid var(--heavy-border);
+  border-radius: 5px;
+  padding: 0 10px;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+
+  h3 {
+    font-size: 1.1rem;
+    padding: 5px 5px 10px;
+    border-bottom: 1px solid var(--heavy-border);
+  }
+
+  &:hover {
+    border-color: var(--main-color);
+  }
+}

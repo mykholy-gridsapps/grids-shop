@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
-import SideMenuDropdown from '../SideMenuDropdown/SideMenuDropdown';
+import SideMenuDropdownThree from '../SideMenuDropdownThree/SideMenuDropdownThree';
 
 import cls from './sideMenuOne.module.scss';
 
 const SideMenuOne = () => {
-  const [openDropdown, setOpenDropdown] = useState('')
+  const [openDropdown, setOpenDropdown] = useState('');
 
   return (
     <div className={cls.sideMenuOne}>
@@ -15,13 +15,13 @@ const SideMenuOne = () => {
       <div className={cls.link} onMouseOver={() => setOpenDropdown('1')} onMouseLeave={() => setOpenDropdown('0')}>
         <i className="fa-light fa-camera-retro"></i>
         <div className={[cls.dropdown, openDropdown === '1' ? cls.opened : ''].join(' ')}>
-          <SideMenuDropdown />
+          <SideMenuDropdownThree />
         </div>
       </div>
       <div className={cls.link} onMouseOver={() => setOpenDropdown('2')} onMouseLeave={() => setOpenDropdown('0')}>
         <i className="fa-light fa-camera-polaroid"></i>
         <div className={[cls.dropdown, openDropdown === '2' ? cls.opened : ''].join(' ')}>
-          <SideMenuDropdown />
+          <SideMenuDropdownThree />
         </div>
       </div>
       <div className={cls.link}>

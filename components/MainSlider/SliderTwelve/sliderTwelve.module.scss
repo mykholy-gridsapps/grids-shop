@@ -12,11 +12,14 @@ $sliderTwoColor4: var(--text-light);
 
 
 .slider {
+    min-height: 80vh;
+
     img {
         object-fit: cover;
         max-width: 100%;
         object-position: center top;
-        min-height: 360px;
+        min-height: 80vh;
+
         @include xs {
             min-height: 250px;
         }
@@ -78,6 +81,7 @@ $sliderTwoColor4: var(--text-light);
                     font-size: 34px;
                     line-height: 36px;
                 }
+
                 @include xs {
                     font-size: 27px;
                     line-height: 27px;
@@ -106,6 +110,7 @@ $sliderTwoColor4: var(--text-light);
                         font-size: 24px;
                         margin-bottom: 20px;
                     }
+
                     @include xs {
                         font-size: 18px;
                         margin-bottom: 16px;
@@ -131,11 +136,12 @@ $sliderTwoColor4: var(--text-light);
                         right: 60px;
                     }
 
-                    @include  sm {
+                    @include sm {
                         font-size: 24px;
                         right: 60px;
                     }
-                    @include  xs {
+
+                    @include xs {
                         font-size: 18px;
                         right: 60px;
                     }
@@ -157,6 +163,7 @@ $sliderTwoColor4: var(--text-light);
                 @include md {
                     font-size: 16px;
                 }
+
                 @include xs {
                     font-size: 12px;
                 }
@@ -181,6 +188,7 @@ $sliderTwoColor4: var(--text-light);
                     line-height: 40px;
                     font-size: 40px;
                 }
+
                 @include xs {
                     line-height: 30px;
                     font-size: 30px;
@@ -220,6 +228,7 @@ $sliderTwoColor4: var(--text-light);
                             top: 4px;
                             bottom: 4px;
                         }
+
                         @include xs {
                             width: 85px;
                             top: 0px;
@@ -282,9 +291,11 @@ $sliderTwoColor4: var(--text-light);
             right: 22.3%;
             top: 50%;
             transform: translateY(-50%);
+
             @include md {
                 right: 10%;
             }
+
             @include sm {
                 right: 5%;
             }
@@ -299,6 +310,7 @@ $sliderTwoColor4: var(--text-light);
                 opacity: 1;
                 text-align: left !important;
                 color: $sliderTwoColor1;
+
                 @include md {
                     font-size: 16px;
                 }
@@ -321,6 +333,7 @@ $sliderTwoColor4: var(--text-light);
                 padding-right: 48px;
                 text-align: left !important;
                 color: $sliderTwoColor2;
+
                 @include md {
                     font-size: 42px;
                 }
@@ -329,6 +342,7 @@ $sliderTwoColor4: var(--text-light);
                     font-size: 34px;
                     line-height: 36px;
                 }
+
                 @include xs {
                     font-size: 27px;
                     line-height: 27px;
@@ -347,6 +361,7 @@ $sliderTwoColor4: var(--text-light);
                     margin-top: 0px;
                     text-align: left !important;
                     color: $sliderTwoColor2;
+
                     @include md {
                         font-size: 30px;
                         margin-bottom: 20px;
@@ -356,6 +371,7 @@ $sliderTwoColor4: var(--text-light);
                         font-size: 24px;
                         margin-bottom: 20px;
                     }
+
                     @include xs {
                         font-size: 18px;
                         margin-bottom: 16px;
@@ -375,15 +391,17 @@ $sliderTwoColor4: var(--text-light);
                     transform: rotate(-30deg);
                     color: $sliderTwoColor3;
                     font-family: "Segoe Script";
+
                     @include md {
                         font-size: 30px;
                     }
 
-                    @include  sm {
+                    @include sm {
                         font-size: 24px;
                         right: 60px;
                     }
-                    @include  xs {
+
+                    @include xs {
                         font-size: 18px;
                         right: 60px;
                     }
@@ -401,9 +419,11 @@ $sliderTwoColor4: var(--text-light);
                 text-align: right !important;
                 text-transform: uppercase;
                 color: $sliderTwoColor1;
+
                 @include md {
                     font-size: 16px;
                 }
+
                 @include xs {
                     font-size: 12px;
                 }
@@ -418,6 +438,7 @@ $sliderTwoColor4: var(--text-light);
                 margin-top: 0px;
                 text-align: right !important;
                 text-transform: uppercase;
+
                 @include md {
                     line-height: 50px;
                     font-size: 50px;
@@ -427,6 +448,7 @@ $sliderTwoColor4: var(--text-light);
                     line-height: 40px;
                     font-size: 40px;
                 }
+
                 @include xs {
                     line-height: 30px;
                     font-size: 30px;
@@ -456,6 +478,7 @@ $sliderTwoColor4: var(--text-light);
                         background-color: $sliderTwoColor2;
                         z-index: -1;
                         transform: rotate(-2deg);
+
                         @include md {
                             width: 127px;
                         }
@@ -465,6 +488,7 @@ $sliderTwoColor4: var(--text-light);
                             top: 4px;
                             bottom: 4px;
                         }
+
                         @include xs {
                             width: 78px;
                             top: 0px;

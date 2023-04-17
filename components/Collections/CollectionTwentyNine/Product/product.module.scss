@@ -1,0 +1,132 @@
+.product {
+  .image {
+    height: 300px;
+
+    * {
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .details {
+    h6 {
+      font-size: 1.2rem;
+      padding: 5px 0;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    .reviews {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      span {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.85rem;
+        opacity: 0.8;
+      }
+    }
+
+    .variants {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      &>div {
+        display: flex;
+        gap: 5px;
+
+        div {
+          width: auto;
+          padding: 4px 10px;
+          height: auto;
+          border: 1px solid var(--border-color);
+          display: grid;
+          place-items: center;
+          cursor: pointer;
+          font-size: 0.85rem;
+
+          &.active {
+            background-color: var(--main-color);
+            color: #fff;
+          }
+
+          &:hover {
+            background-color: var(--main-color);
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+      padding: 15px 0;
+      border-top: 1px solid var(--border-color);
+
+      input {
+        width: 120px;
+      }
+
+      &>button {
+        background-color: var(--special-background);
+        padding: 6px 15px;
+        border: none;
+        font-weight: 600;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        font-size: 0.9rem;
+        min-width: 140px;
+        height: 43px;
+        border-radius: 5px;
+      }
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      i {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+        border: 1px solid var(--heavy-border);
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background-color: var(--main-color);
+          color: #fff;
+          border-color: var(--main-color);
+        }
+      }
+    }
+  }
+}

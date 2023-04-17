@@ -1,0 +1,60 @@
+@import "../../../styles/mixins.scss";
+
+.productDefault {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+
+    .productImage {
+        width: 150px;
+        height: 110px;
+        background-color: var(--special-background);
+
+        img {
+            object-fit: contain;
+        }
+    }
+
+    .productDetails {
+        .productTitle {
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            display: block;
+
+            &:hover {
+                color: var(--main-color);
+            }
+        }
+
+        span {
+            font-size: 1.2rem;
+        }
+
+        .productPrice {
+            display: block;
+            color: var(--main-color);
+            font-weight: 600;
+
+            span {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &.ar {
+        .productButtons {
+            .addButton {
+                right: auto;
+                left: -38px;
+            }
+
+            .compareButton {
+                right: auto;
+                left: -78px;
+            }
+        }
+    }
+
+}

@@ -10,7 +10,6 @@ import BlogOne from "./BlogOne";
 const BlogOneCarousel = () => {
     const pagination = {
         clickable: true,
-
     };
     const array = [...Array(3)]
     return (

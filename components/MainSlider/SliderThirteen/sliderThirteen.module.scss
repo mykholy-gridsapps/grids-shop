@@ -17,12 +17,13 @@ $sliderBg: var(--bg-alt-color);
         object-fit: cover;
         max-width: 100%;
         object-position: center top;
-        min-height: 360px;
         filter: brightness(0.8);
+        min-height: 80vh;
 
         @include sm {
             min-height: 230px;
         }
+
         @include xs {
             min-height: 200px;
         }
@@ -342,6 +343,7 @@ $sliderBg: var(--bg-alt-color);
                 left: auto;
                 right: 10%;
                 display: inline-block;
+
                 @include md {
                     right: 5%;
                 }
@@ -363,6 +365,7 @@ $sliderBg: var(--bg-alt-color);
                     text-align: right;
                     text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
                     color: $sliderOneColor1;
+
                     @include md {
                         font-size: 60px;
                         line-height: 60px;
@@ -389,6 +392,7 @@ $sliderBg: var(--bg-alt-color);
                     text-align: left !important;
                     text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
                     color: $sliderOneColor2;
+
                     @include md {
                         font-size: 64px;
                         line-height: 64px;
@@ -411,6 +415,7 @@ $sliderBg: var(--bg-alt-color);
                     text-align: right !important;
                     text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
                     color: $sliderOneColor2;
+
                     @include md {
                         font-size: 46px;
                         line-height: 50px;
@@ -429,6 +434,7 @@ $sliderBg: var(--bg-alt-color);
                 left: 9%;
                 right: auto;
                 display: inline-block;
+
                 @include md {
                     left: 5%;
                 }
@@ -450,6 +456,7 @@ $sliderBg: var(--bg-alt-color);
                     text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
 
                     color: $sliderOneColor2;
+
                     @include md {
                         font-size: 18px;
                     }
@@ -475,6 +482,7 @@ $sliderBg: var(--bg-alt-color);
                     text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
 
                     color: $sliderOneColor2;
+
                     @include md {
                         font-size: 16px;
                     }
@@ -505,6 +513,7 @@ $sliderBg: var(--bg-alt-color);
                     text-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px;
 
                     color: $sliderOneColor2;
+
                     @include xs {
                         text-align: center !important;
                     }
@@ -517,6 +526,7 @@ $sliderBg: var(--bg-alt-color);
                         margin-right: 11px;
                         margin-top: 6px;
                         text-align: left !important;
+
                         @include md {
                             font-size: 16px;
                         }
@@ -539,6 +549,7 @@ $sliderBg: var(--bg-alt-color);
                         position: relative;
                         text-align: left !important;
                         color: $sliderOneColor1;
+
                         @include md {
                             font-size: 30px;
                             line-height: 30px;
@@ -596,6 +607,7 @@ $sliderBg: var(--bg-alt-color);
                     text-align: center;
                     text-transform: uppercase;
                     vertical-align: middle;
+
                     @include md {
                         padding-left: 26px;
                         padding-right: 26px;
@@ -619,7 +631,7 @@ $sliderBg: var(--bg-alt-color);
         border-radius: 0;
         box-shadow: none;
         color: $sliderOneColor2 !important;
-        left: -10px;
+        left: 10px;
         display: block;
         text-align: center !important;
         background-color: $sliderBtnBg;
@@ -638,7 +650,7 @@ $sliderBg: var(--bg-alt-color);
         border-radius: 0;
         box-shadow: none;
         color: $sliderOneColor2 !important;
-        right: -10px;
+        right: 10px;
         display: block;
         text-align: center !important;
         background-color: $sliderBtnBg;
@@ -659,6 +671,7 @@ $sliderBg: var(--bg-alt-color);
             left: auto;
             right: -20px;
         }
+
         :global(.swiper-button-next) {
             right: auto;
             left: -20px;

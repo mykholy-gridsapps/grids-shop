@@ -1,0 +1,9 @@
+.collection {
+  margin: 20px 0;
+
+  .products {
+    &>div {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.recentViews {
+  margin: 20px 0;
+
+  .head {
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid var(--heavy-border);
+  }
+
+  .products {
+    .swiper {
+      padding: 25px 0;
+    }
+
+    .product {
+      height: 170px;
+      margin: auto;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      * {
+        transition: all 0.2s ease-in-out;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        background-color: var(--special-background);
+        object-fit: contain;
+      }
+
+      span {
+        position: absolute;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.9rem;
+        display: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 2rem 1.6rem -1.6rem rgba(0, 0, 0, 0.3);
+
+        img {
+          filter: brightness(0.5);
+        }
+
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}

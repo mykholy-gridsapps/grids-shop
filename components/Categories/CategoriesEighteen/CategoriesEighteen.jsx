@@ -6,7 +6,7 @@ const CategoriesEighteen = () => {
   return (
     <div className={cls.categories}>
       <h4>Our Categories</h4>
-      <Grid container spacing={3}>
+      <Grid container spacing={3} justifyContent="center">
         <Grid item xs={12} sm={6} md={4} lg={3}>
           <div className={cls.one}>
             <img src="/imgs/category/category-4.jpg" alt="category image" />

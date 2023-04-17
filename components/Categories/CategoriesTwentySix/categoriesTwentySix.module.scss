@@ -1,0 +1,77 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.categories {
+  margin: 10px 0;
+  background-color: var(--special-background);
+  padding: 20px;
+
+  * {
+    transition: all 0.3s ease-in-out;
+  }
+
+  h4 {
+    text-align: center !important;
+    margin-bottom: 20px;
+
+    @include xs {
+      font-size: 1.1rem;
+    }
+  }
+
+  .category {
+    background-color: var(--secondary-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    img {
+      height: 100px;
+      object-fit: contain;
+    }
+
+    .details {
+      overflow: hidden;
+      height: 35px;
+
+      h6 {
+        text-align: center !important;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--main-color);
+        font-size: 0.9rem;
+        @extend %borderLink;
+        opacity: 0;
+
+        span {
+          background-color: var(--main-color);
+        }
+      }
+    }
+
+    &:hover {
+      box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
+
+      img {
+        transform: scale(1.1);
+      }
+
+      .details {
+
+        h6,
+        a {
+          transform: translateY(-25px);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

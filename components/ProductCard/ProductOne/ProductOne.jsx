@@ -9,10 +9,9 @@ import React from 'react'
 import cls from './productOne.module.scss'
 
 const ProductOne = () => {
-    // const [openQuickView, setOpenQuickView] = useState(false);
     const { t, i18n } = useTranslation('common');
-    const dispatch = useDispatch()
-    
+    const dispatch = useDispatch();
+
     const open = () => {
         dispatch(globalActions.openQuickView());
     }
@@ -48,7 +47,7 @@ const ProductOne = () => {
                 </div>
                 <h3 className={cls.productTitle}> <a href="demo1-product.html">Black Grey Headset</a> </h3>
                 <div className={cls.ratingsContainer}>
-                <Rating name="read-only" value={3} readOnly />
+                    <Rating name="read-only" value={3} readOnly />
                 </div>
                 <div className={cls.priceBox}>
                     <span className={cls.productPrice}>$9.00</span>

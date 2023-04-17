@@ -1,13 +1,17 @@
 import Grid from '@mui/material/Grid';
 
+import { useTranslation } from 'next-i18next';
+
 import cls from './saleFourtySix.module.scss';
 
 const SaleFourtySix = () => {
+  const { i18n } = useTranslation('common');
+
   return (
     <div className={cls.sale}>
       <Grid container alignItems="center" spacing={2}>
         <Grid item xs={12} lg={6}>
-          <div className={cls.details}>
+          <div className={`${cls.details} ${cls[i18n.language]}`}>
             <span>Flash Sale</span>
             <h2>Light Sneaker</h2>
             <p>2022 Fashion Style Collection</p>

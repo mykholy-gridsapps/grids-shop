@@ -11,7 +11,8 @@ import "swiper/css/pagination";
 
 
 const BlogSevenCarousel = () => {
-    const array = [...Array(5)]
+    const array = [...Array(5)];
+    const pagination = {}
     return (
         <div>
             <Container maxWidth='xl' >
@@ -23,18 +24,18 @@ const BlogSevenCarousel = () => {
                 </p>
                 <div className={cls.swiper}>
 
-                    <Swiper 
-                    slidesPerView={1} 
-                    loop={false} 
-                    spaceBetween={20} 
-                    pagination={pagination} 
-                    modules={[Pagination]}
-                    breakpoints={{
-                        768: {
-                            slidesPerView: 2,
-                            spaceBetween: 20,
-                        },
-                    }}>
+                    <Swiper
+                        slidesPerView={1}
+                        loop={false}
+                        spaceBetween={20}
+                        pagination={pagination}
+                        modules={[Pagination]}
+                        breakpoints={{
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                        }}>
                         {array.map((_, idx) =>
                             <SwiperSlide key={idx}>
                                 <BlogSeven />

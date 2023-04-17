@@ -38,7 +38,7 @@ body {
   // font-family: IBMPlexSansArabic;
   font-family: 'Poppins', sans-serif;
   color: var(--text-color);
-  background-color: var(--bg-color);
+  background-color: var(--default-background);
 }
 
 body {
@@ -795,5 +795,28 @@ button.swal2-cancel {
     &:after {
       color: #d0cfcf;
     }
+  }
+}
+
+.thumbs {
+  .swiper-slide-active {
+    .thumb {
+      border-color: var(--main-color) !important;
+    }
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--main-color) !important;
+}
+
+.centerBullets {
+  padding: 5px 0 !important;
+
+  .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -5px !important;
   }
 }

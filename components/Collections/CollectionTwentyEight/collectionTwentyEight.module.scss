@@ -1,0 +1,77 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/extends.scss';
+
+.homeCategory {
+  margin: 50px 0;
+
+  .homeCategory__wrapper {
+    .homeCategory__head {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px;
+      background-color: var(--secondary-background);
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--heavy-border);
+
+      @include sm {
+        display: block;
+        overflow-x: scroll;
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+
+        .countDown {
+          background-color: var(--secondary-color);
+          color: #fff;
+          padding: 0px 20px;
+          border-radius: 5px;
+
+          span {
+            font-size: 0.9rem;
+          }
+        }
+
+        @include xs {
+          gap: 0;
+
+          .countDown {
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        a {
+          color: var(--main-color);
+          font-weight: 600;
+          font-size: 0.95rem;
+        }
+      }
+
+      &.rounded {
+        border-radius: 20px;
+
+        div {
+          span {
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+
+    .homeCategory__products {}
+  }
+}

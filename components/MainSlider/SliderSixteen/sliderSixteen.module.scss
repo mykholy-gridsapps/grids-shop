@@ -1,0 +1,59 @@
+@import '../../../styles/extends.scss';
+
+.slider {
+  .slide {
+    background-image: url('../../../public/imgs/slideBg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 40px;
+    min-height: 400px;
+
+    .details {
+      p {
+        font-weight: 600;
+        color: var(--main-color);
+        font-size: 1.2rem;
+      }
+
+      span {
+        opacity: 0.8;
+      }
+
+      button {
+        margin-top: 10px;
+        display: block;
+        @extend %outlinedBtn;
+      }
+    }
+  }
+
+  .thumbs {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    transform: translateY(-40px);
+    z-index: 99;
+
+    .thumb {
+      width: 80px;
+      height: 80px;
+      margin: auto;
+      border-radius: 50%;
+      border: 2px solid var(--heavy-border);
+      overflow: hidden;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      &:hover {
+        border-color: var(--main-color);
+      }
+    }
+  }
+}

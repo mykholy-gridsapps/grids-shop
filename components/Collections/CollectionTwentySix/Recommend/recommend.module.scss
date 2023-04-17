@@ -1,0 +1,14 @@
+@import '../../../../styles/extends.scss';
+
+.recommend {
+  border: 1px solid var(--heavy-border);
+  padding: 0px 20px 10px;
+  border-radius: 5px;
+  height: 100%;
+
+  h4 {
+    margin-bottom: 15px;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--heavy-border);
+  }
+}

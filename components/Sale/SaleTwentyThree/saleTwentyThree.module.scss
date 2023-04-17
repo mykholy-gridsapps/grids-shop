@@ -1,8 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/savoye-let');
 @import "../../../styles/mixins.scss";
+
 .banner {
-    margin-top: 20px;
-    margin-bottom: 35px;
+    // margin-top: 20px;
+    // margin-bottom: 35px;
     position: relative;
     font-size: 16px;
 
@@ -35,6 +36,7 @@
                 letter-spacing: 0.075em;
                 line-height: 1;
                 color: #fff;
+
                 @include xs {
                     font-size: 20px;
 
@@ -45,6 +47,7 @@
                 font-size: 50px;
                 line-height: 1;
                 color: #fff;
+
                 @include xs {
                     font-size: 30px;
 
@@ -62,6 +65,7 @@
             line-height: 1.43;
             text-transform: uppercase;
             font-weight: 700;
+
             @include xs {
                 padding: 8px 14px;
             }

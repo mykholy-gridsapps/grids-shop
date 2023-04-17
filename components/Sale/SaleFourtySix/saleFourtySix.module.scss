@@ -68,5 +68,26 @@
         }
       }
     }
+
+    &.ar {
+      .hotDeal {
+        right: unset;
+        left: 0;
+        background: linear-gradient(104deg, rgba(0, 0, 0, 0) 0%, #c3143d 100%);
+        padding: 10px 20px 10px 100px;
+
+        @include xs {
+          padding: 10px;
+
+          i {
+            font-size: 1.5rem;
+          }
+
+          span {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
   }
 }

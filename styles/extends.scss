@@ -45,6 +45,7 @@
 
 %borderLink {
   position: relative;
+  padding: 3px 0;
 
   span {
     position: absolute;
@@ -53,7 +54,7 @@
     transform: translate(-50%, -50%);
     height: 2px;
     width: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
     transition: all 0.3s ease-in-out;
   }
 
@@ -62,6 +63,15 @@
       width: 100%;
     }
   }
+}
+
+%nativeBtn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 // WISH BUTTON

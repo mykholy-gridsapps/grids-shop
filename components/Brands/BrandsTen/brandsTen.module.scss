@@ -1,0 +1,35 @@
+.brands {
+  margin: 20px 0;
+
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  .swiper {
+    padding: 10px 0;
+  }
+
+  .brand {
+    img {
+      border-radius: 50%;
+      transition: all 0.2s ease-in-out;
+      max-width: 200px;
+      margin: 0 auto 10px;
+    }
+
+    h6 {
+      text-align: center !important;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--secondary-color);
+      }
+    }
+
+    &:hover {
+      img {
+        transform: translateY(-10px);
+      }
+    }
+  }
+}

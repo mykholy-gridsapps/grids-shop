@@ -1,0 +1,39 @@
+@import '../../../../styles/extends.scss';
+
+.categories {
+  border: 1px solid var(--heavy-border);
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  h4 {
+    margin-bottom: 15px;
+  }
+
+  ul {
+    flex: 1;
+
+    li {
+      font-size: 0.9rem;
+      padding: 5px 0;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+  }
+
+  a {
+    font-weight: bold;
+    font-size: 0.9rem;
+    @extend %borderLink;
+    width: 95px;
+
+    span {
+      background-color: var(--main-color);
+    }
+  }
+}
