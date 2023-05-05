@@ -1,0 +1,82 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.slider {
+  margin: 50px 0;
+
+  .main {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--light-main-color);
+    height: 100%;
+    border-radius: 5px;
+
+    .slide {
+      background-image: url('../../../public/imgs/banner.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      padding: 50px 20px;
+
+      span {
+        font-weight: bold;
+        font-size: 0.85rem;
+        color: var(--secondary-color);
+      }
+
+      ul {
+        margin-bottom: 10px;
+
+        li {
+          font-size: 0.85rem;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          i {
+            font-size: 0.5rem;
+          }
+        }
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      .counter {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      .btns {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 15px;
+
+        a {
+          font-size: 0.85rem;
+          background-color: transparent;
+          border: none;
+          font-weight: 600;
+          text-decoration: underline;
+          color: var(--secondary-color);
+        }
+
+        button:first-of-type {
+          @extend %mainBtn;
+          border-radius: 5px;
+          padding: 10px 20px;
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+}

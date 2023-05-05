@@ -1,0 +1,75 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.slider {
+  margin: 20px 0;
+
+  .main {
+    border-radius: 10px;
+    overflow: hidden;
+
+    .slide {
+      background-image: url('../../../public/imgs/slide1.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      padding: 50px 50px 80px;
+
+      h2 {
+        font-size: clamp(2rem, 6vw, 3.3rem);
+      }
+
+      p {
+        font-size: 1.3rem;
+        opacity: 0.8;
+      }
+
+      .subscribe {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+
+        input,
+        button {
+          padding: 15px 25px;
+          border-radius: 30px;
+          border: none;
+          outline: none;
+        }
+
+        input {
+          width: min(100%, 300px);
+        }
+
+        button {
+          background-color: var(--main-color);
+          color: #fff;
+          transform: translateX(-50px);
+          cursor: pointer;
+        }
+
+        &.ar {
+          button {
+            transform: translateX(50px);
+          }
+        }
+
+        @include xs {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+
+          button {
+            transform: translateX(0px) !important;
+          }
+        }
+
+      }
+
+      @include xs {
+        padding: 50px 20px;
+      }
+    }
+  }
+}

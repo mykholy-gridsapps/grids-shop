@@ -9,8 +9,8 @@ import SaleSeven from './../../Sale/SaleSeven/SaleSeven';
 import SaleSix from './../../Sale/SaleSix/SaleSix';
 import SaleFive from './../../Sale/SaleFive/SaleFive';
 import SaleOne from './../../Sale/SaleOne/SaleOne';
-import ProductsCategoriesSix from '../../ProductsCategories/ProductsCategoriesSix/ProductsCategoriesSix';
-import ProductsCategoriesSeven from '../../ProductsCategories/ProductsCategoriesSeven/ProductsCategoriesSeven';
+import CollectionSix from '../../Collections/CollectionSix/CollectionSix';
+import CollectionSeven from '../../Collections/CollectionSeven/CollectionSeven';
 import BlogSix from '../../Blogs/BlogSix/BlogSix';
 import BrandsSix from '../../Brands/BrandsSix/BrandsSix';
 import TestimonialFiveCarousel from './../../Testimonials/TestimonialFive/TestimonialFiveCarousel';
@@ -36,7 +36,7 @@ const TemplateOne = () => {
 
         {/* PRODUCTS CATEGORIES */}
         <div className={cls.section}>
-          <ProductsCategoriesSix />
+          <CollectionSix />
         </div>
 
         {/* SALES */}
@@ -58,7 +58,7 @@ const TemplateOne = () => {
 
         {/* PRODUCTS CATEGORIES */}
         <div>
-          <ProductsCategoriesSeven />
+          <CollectionSeven />
         </div>
 
         <BlogSix />

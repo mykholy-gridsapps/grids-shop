@@ -26,6 +26,7 @@ import HeaderFour from "../Headers/HeaderFour/HeaderFour";
 import HeaderFive from "../Headers/HeaderFive/HeaderFive";
 import HeaderSix from "../Headers/HeaderSix/HeaderSix";
 import HeaderEight from '../Headers/HeaderEight/HeaderEight';
+import HeaderNine from '../Headers/HeaderNine/HeaderNine';
 
 import MobSidebar from "../Headers/MobSidebar/MobSidebar";
 
@@ -43,11 +44,12 @@ const MainLayout = ({ children }) => {
       {/* <HeaderOne /> */}
       {/* <HeaderTwo /> */}
       {/* <HeaderThree /> */}
-      <HeaderFour />
+      {/* <HeaderFour /> */}
       {/* <HeaderFive /> */}
       {/* <HeaderSix /> */}
       {/* <HeaderSeven /> */}
       {/* <HeaderEight /> */}
+      <HeaderNine />
       <div className={cls.pagesContent}>
         {children}
       </div>

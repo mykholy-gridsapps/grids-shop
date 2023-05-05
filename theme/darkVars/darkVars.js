@@ -20,7 +20,7 @@ const darkVars = () => {
   document.querySelector(":root").style.setProperty("--text-light", "#252525");
 
   document.querySelector(":root").style.setProperty("--text-dark", "#fff");
-  
+
   document.querySelector(":root").style.setProperty("--border-color", "#383e50");
 
   document.querySelector(":root").style.setProperty("--background-light", "#2A2F3F");
@@ -38,7 +38,7 @@ const darkVars = () => {
 
   document.querySelector(":root").style.setProperty("--alert-light", "#434147");
 
-  document.querySelector(":root").style.setProperty("--heavy-border", "#505050");
+  document.querySelector(":root").style.setProperty("--heavy-border", "#383e50");
 
   /* MY COLORS */
 

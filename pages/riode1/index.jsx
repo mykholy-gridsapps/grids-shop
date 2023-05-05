@@ -11,7 +11,7 @@ import { wrapper } from "../../store/store";
 import { SaleOne, SaleTwo, SaleThree, SaleFour, SaleFive, SaleSix, SaleSeven, SaleEight, SaleEleven, SliderThirteen } from '../../components';
 import FeaturesTen from '../../components/Features/FeaturesTen/FeaturesTen';
 import CategoriesEighteen from '../../components/Categories/CategoriesEighteen/CategoriesEighteen';
-import ProductsCategoriesTwenty from '../../components/ProductsCategories/ProductsCategoriesTwenty/ProductsCategoriesTwenty';
+import CollectionTwenty from '../../components/Collections/CollectionTwenty/CollectionTwenty';
 
 import cls from './riode1.module.scss';
 
@@ -22,7 +22,7 @@ const index = () => {
       <Container maxWidth="xl">
         <FeaturesTen />
         <CategoriesEighteen />
-        <ProductsCategoriesTwenty />
+        <CollectionTwenty />
         <div className={cls.salesWrapepr}>
           {/* <SaleOne /> */}
           {/* <SaleTwo /> */}

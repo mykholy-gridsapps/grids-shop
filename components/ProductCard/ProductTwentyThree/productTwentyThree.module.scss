@@ -1,0 +1,63 @@
+.productCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid var(--heavy-border);
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+
+  img {
+    width: 100px;
+    object-fit: contain;
+  }
+
+  .details {
+
+    p {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    h6 {
+      font-size: 0.9rem;
+      color: var(--main-color);
+
+    }
+
+    .reviews {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      span {
+        font-size: 1.1rem;
+      }
+
+      p {
+        opacity: 0.8;
+        font-size: 0.85rem;
+      }
+    }
+
+    .price {
+      display: flex;
+      gap: 10px;
+
+      span {
+        font-weight: 600;
+        font-size: 1.2rem;
+
+        &.prev {
+          opacity: 0.6;
+          font-weight: 500;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    border-color: var(--main-color);
+  }
+}

@@ -1,0 +1,149 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.slider {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 50px 0;
+
+  .main {
+    grid-column: span 6;
+    grid-row: span 2;
+    overflow: hidden;
+
+    .slide {
+      background-image: url('../../../public/imgs/banner.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      padding: 20px;
+    }
+  }
+
+  .secondary {
+    grid-column: span 3;
+    grid-row: span 1;
+    background-image: url('../../../public/imgs/banner.png');
+    padding: 20px;
+
+    p {
+      font-size: 1rem !important;
+    }
+  }
+
+  .offers {
+    grid-column: span 3;
+    grid-row: span 2;
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+    max-height: 370px;
+    overflow: hidden;
+    padding: 10px;
+    border: 3px solid var(--secondary-color);
+
+    .slide {
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+      gap: 10px;
+      max-height: 370px;
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        gap: 10px;
+        max-height: 370px;
+      }
+
+      img {
+        height: 61px;
+        width: 100%;
+      }
+    }
+  }
+
+  .main,
+  .secondary {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--light-main-color);
+    height: 100%;
+    border-radius: 5px;
+
+    span {
+      font-weight: bold;
+    }
+
+    p:not(.content) {
+      font-size: 1.3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    .btns {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      a {
+        font-size: 0.85rem;
+        background-color: transparent;
+        border: none;
+        font-weight: 600;
+        text-decoration: underline;
+        color: var(--main-color);
+      }
+
+      button:first-of-type {
+        @extend %secondaryBtn;
+        border-radius: 5px;
+        padding: 5px 20px;
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  @include md {
+    grid-template-rows: repeat(1, 1fr);
+
+    .main {
+      grid-column: span 12;
+      grid-row: span 1;
+    }
+
+    .secondary {
+      grid-column: span 6;
+      grid-row: span 1;
+    }
+
+    .offers {
+      grid-column: span 6;
+      grid-row: span 2;
+    }
+  }
+
+  @include xs {
+    .secondary {
+      grid-column: span 12;
+    }
+
+    .offers {
+      grid-column: span 12;
+      grid-row: span 2;
+    }
+  }
+}

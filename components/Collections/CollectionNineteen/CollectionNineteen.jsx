@@ -10,7 +10,6 @@ import cls from './collectionNineteen.module.scss';
 import SmallCountDown from '../../UIs/SmallCountDown/SmallCountDown';
 
 const CollectionNineteen = () => {
-  const [rate, setRate] = useState(2);
   const [variant, setVariant] = useState('');
   const [color, setColor] = useState('');
   const [counter, setCounter] = useState(1);
@@ -44,7 +43,7 @@ const CollectionNineteen = () => {
                       <span>$119.00</span>
                     </div>
                     <div className={cls.reviews}>
-                      <Rating name="read-only" value={rate} readOnly />
+                      <Rating name="read-only" value={2} readOnly />
                       <p>( 6 Reviews )</p>
                     </div>
                     <div className={cls.colors}>

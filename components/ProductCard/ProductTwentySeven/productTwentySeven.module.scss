@@ -1,0 +1,47 @@
+.productCard {
+  max-width: 130px;
+
+  img {
+    width: 130px;
+    height: 110px;
+    object-fit: contain;
+    background-color: var(--special-background);
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+  .reviews {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    span {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.8rem;
+      opacity: 0.8;
+      font-weight: 500;
+    }
+  }
+
+  .price {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+
+    span {
+      font-size: 0.95rem;
+      font-weight: 600;
+
+      &.prev {
+        text-decoration: line-through;
+        opacity: 0.7;
+        font-weight: 500;
+        font-size: 0.85rem;
+      }
+    }
+  }
+}

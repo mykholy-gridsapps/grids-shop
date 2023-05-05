@@ -23,8 +23,8 @@ import SaleTwentyTwo from './../../Sale/SaleTwentyTwo/SaleTwentyTwo';
 import SaleTwentyOne from './../../Sale/SaleTwentyOne/SaleTwentyOne';
 import SaleTwenty from './../../Sale/SaleTwenty/SaleTwenty';
 
-import ProductsCategoriesTwo from '../../ProductsCategories/ProductsCategoriesTwo/ProductsCategoriesTwo';
-import ProductsCategoriesEleven from '../../ProductsCategories/CollectionEleven/CollectionEleven';
+import CollectionTwo from '../../Collections/CollectionTwo/CollectionTwo';
+import CollectionEleven from '../../Collections/CollectionEleven/CollectionEleven';
 import BlogOne from '../../Blogs/BlogOne/BlogOne';
 import BrandsSeven from '../../Brands/BrandsSeven/BrandsSeven';
 import TestimonialOneCarousel from '../../Testimonials/TestimonialOne/TestimonialOneCarousel';
@@ -45,7 +45,7 @@ const TemplateFour = () => {
 
         {/* PRODUCTS CATEGORIES */}
         <div className={cls.section}>
-          <ProductsCategoriesTwo />
+          <CollectionTwo />
         </div>
 
         <InfoBoxSeven />
@@ -68,7 +68,7 @@ const TemplateFour = () => {
 
         {/* PRODUCTS CATEGORIES */}
         <div className={cls.section2}>
-          <ProductsCategoriesEleven />
+          <CollectionEleven />
         </div>
 
         {/* SALES */}

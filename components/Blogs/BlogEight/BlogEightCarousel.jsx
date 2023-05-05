@@ -8,7 +8,7 @@ import 'swiper/css';
 import cls from "./blogEightCarousel.module.scss"
 
 const BlogEightCarousel = () => {
-    const array = [...Array(3)]
+    const array = [...Array(3)];
     return (
         <div className={cls.swiper}>
             <Container maxWidth="xl">

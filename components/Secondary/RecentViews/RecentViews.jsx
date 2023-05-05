@@ -1,9 +1,28 @@
+import { useEffect, useState } from 'react';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+import { useTranslation } from 'next-i18next';
 
 import 'swiper/css';
 import cls from './recentViews.module.scss';
 
 const RecentViews = () => {
+  const [loadSwiper, setLoadSwiper] = useState(false);
+  const { i18n } = useTranslation('common');
+
+  useEffect(() => {
+    setLoadSwiper(false)
+  }, [i18n.language]);
+
+  useEffect(() => {
+    if (!loadSwiper) {
+      setTimeout(() => {
+        setLoadSwiper(true)
+      }, 100);
+    }
+  }, [loadSwiper])
+
   const array = [...Array(8)];
   const breakpoints = {
     300: {
@@ -30,22 +49,24 @@ const RecentViews = () => {
       </div>
 
       <div className={cls.products}>
-        <Swiper
-          slidesPerView={1}
-          loop={false}
-          spaceBetween={10}
-          breakpoints={breakpoints}
-          className={cls.swiper}
-        >
-          {array.map((_, idx) =>
-            <SwiperSlide key={idx}>
-              <div className={cls.product}>
-                <img src="/imgs/shoes.png" alt="product" loading='lazy' />
-                <span>Nike Shoes</span>
-              </div>
-            </SwiperSlide>
-          )}
-        </Swiper>
+        {loadSwiper &&
+          <Swiper
+            slidesPerView={1}
+            loop={false}
+            spaceBetween={10}
+            breakpoints={breakpoints}
+            className={cls.swiper}
+          >
+            {array.map((_, idx) =>
+              <SwiperSlide key={idx}>
+                <div className={cls.product}>
+                  <img src="/imgs/shoes.png" alt="product" loading='lazy' />
+                  <span>Nike Shoes</span>
+                </div>
+              </SwiperSlide>
+            )}
+          </Swiper>
+        }
       </div>
     </div>
   )

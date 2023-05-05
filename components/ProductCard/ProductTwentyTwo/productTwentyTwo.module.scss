@@ -1,0 +1,150 @@
+@import '../../../styles/extends.scss';
+
+.productCard {
+  position: relative;
+  border: 1px solid var(--heavy-border);
+  border-radius: 5px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+
+  .offer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 3px 10px;
+    position: absolute;
+    top: 20px;
+    font-size: 0.7rem;
+    border-radius: 20px;
+  }
+
+  .images {
+    position: relative;
+
+    .actions {
+      position: absolute;
+      top: 15px;
+      right: 0px;
+      display: grid;
+      place-content: center;
+      gap: 10px;
+      transition: all 0.2s ease-in-out;
+
+      i {
+        opacity: 0;
+        z-index: -1;
+        width: 33px;
+        height: 33px;
+        border-radius: 5px;
+        background-color: var(--secondary-background);
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        transform: translateX(10px);
+        transition: all 0.2s ease-in-out;
+
+        &:first-of-type {
+          transition-delay: 0.1s;
+        }
+
+        &:nth-of-type(2) {
+          transition-delay: 0.2s;
+        }
+
+        &:nth-of-type(3) {
+          transition-delay: 0.3s;
+        }
+      }
+
+      &.ar {
+        right: unset;
+        left: 0px;
+      }
+    }
+
+    img {
+      margin-bottom: 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+      min-height: 200px;
+      object-fit: contain;
+    }
+  }
+
+  .brand {
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+
+  h6 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--main-color);
+  }
+
+  .reviews {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    span {
+      font-size: 1.1rem;
+    }
+
+    p {
+      opacity: 0.8;
+      font-size: 0.85rem;
+    }
+  }
+
+  .price {
+    display: flex;
+    gap: 10px;
+
+    span {
+      font-weight: 600;
+      font-size: 1rem;
+
+      &.prev {
+        opacity: 0.6;
+        font-weight: 500;
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  button {
+    @extend %outlinedBtn;
+    width: 100%;
+    text-align: center !important;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin: 5px 0 10px;
+  }
+
+  ul {
+    li {
+      font-size: 0.75rem;
+      color: var(--main-color);
+      padding: 1px 0;
+    }
+  }
+
+  &:hover {
+    border-color: var(--main-color);
+    transform: translateY(-5px);
+
+    .images {
+      .actions {
+        i {
+          transform: translateX(0px);
+          z-index: 9;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

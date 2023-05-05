@@ -1,12 +1,10 @@
-import { useEffect, useState } from "react";
-
 import { useTimer } from "react-timer-hook";
 
 import { useTranslation } from "next-i18next";
 
 import cls from "./countDown.module.scss";
 
-const CountDown = ({ daysCount, headColor, hideLabel }) => {
+const CountDown = ({ daysCount, headColor, hideLabel, tiny }) => {
   const { t, i18n } = useTranslation('common');
 
   const expiryTimestamp = new Date();
@@ -29,7 +27,7 @@ const CountDown = ({ daysCount, headColor, hideLabel }) => {
   });
 
   return (
-    <div className={cls.countDown}>
+    <div className={`${cls.countDown} ${tiny ? cls.tiny : ''}`}>
 
       {!hideLabel &&
         <h6 style={{ color: headColor ? headColor : '' }}>Hurry Up!</h6>
@@ -41,7 +39,11 @@ const CountDown = ({ daysCount, headColor, hideLabel }) => {
             <div className={cls.part}>
               <div className={cls.number}>{days}</div>
 
-              <h5>Days</h5>
+              {tiny ?
+                <h5>Day</h5>
+                :
+                <h5>Days</h5>
+              }
             </div>
 
             <span>:</span>
@@ -51,7 +53,11 @@ const CountDown = ({ daysCount, headColor, hideLabel }) => {
         <div className={cls.part}>
           <div className={cls.number}>{hours}</div>
 
-          <h5>Hours</h5>
+          {tiny ?
+            <h5>Hour</h5>
+            :
+            <h5>Hours</h5>
+          }
         </div>
 
         <span>:</span>
@@ -59,7 +65,11 @@ const CountDown = ({ daysCount, headColor, hideLabel }) => {
         <div className={cls.part}>
           <div className={cls.number}>{minutes}</div>
 
-          <h5>Minutes</h5>
+          {tiny ?
+            <h5>Min</h5>
+            :
+            <h5>Minutes</h5>
+          }
         </div>
 
         <span>:</span>
@@ -67,7 +77,11 @@ const CountDown = ({ daysCount, headColor, hideLabel }) => {
         <div className={cls.part}>
           <div className={cls.number}>{seconds}</div>
 
-          <h5>Seconds</h5>
+          {tiny ?
+            <h5>Sec</h5>
+            :
+            <h5>Seconds</h5>
+          }
         </div>
 
       </div>

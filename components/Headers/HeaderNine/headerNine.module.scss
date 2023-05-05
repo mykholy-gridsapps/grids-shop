@@ -1,0 +1,160 @@
+@import '../../../styles/mixins.scss';
+
+.navbar {
+  .navbar__main {
+    border-top: 1px solid var(--heavy-border);
+    border-bottom: 1px solid var(--heavy-border);
+
+    .navbar_mainNav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      .smallLogo {
+        display: none;
+      }
+
+      .links {
+        padding-left: 270px;
+
+        .sideCategories {
+          h2 {
+            border-radius: 5px !important;
+            border: none !important;
+          }
+        }
+
+        ul.navLinks {
+          display: flex;
+
+          li {
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            height: 45px;
+            line-height: 45px;
+
+            @include lg {
+              padding: 0 5px;
+              font-size: 0.8rem;
+            }
+
+            &:last-of-type {
+
+              span {
+                border-right: none;
+              }
+            }
+
+            span {
+              border-right: 1px solid #e0e0e0;
+              padding: 0 10px;
+            }
+
+            a {
+              color: #fff;
+            }
+
+            i {
+              font-size: 0.8rem;
+            }
+
+            &:hover {
+              color: var(--secondary-color);
+            }
+          }
+
+          &.ar {
+            li {
+              border-left: unset;
+              border-right: 1px solid #e0e0e0;
+            }
+          }
+        }
+
+        @include lg {
+          padding-left: 200px;
+        }
+
+        @include md {
+          display: none;
+        }
+
+        &.ar {
+          padding-right: 270px;
+          padding-left: 0;
+        }
+      }
+
+      .navbar__main__account {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        gap: 15px;
+
+        @include lg {
+          gap: 10px;
+        }
+
+        i {
+          color: #fff;
+          font-size: 1.3rem;
+          cursor: pointer;
+        }
+
+        span {
+          font-weight: bold;
+          color: #fff;
+          cursor: pointer;
+          height: 50px;
+          display: flex;
+          align-items: center;
+        }
+
+        .wishlist,
+        .cart {
+          position: relative;
+        }
+      }
+
+      .contact {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        svg {
+          width: 50px !important;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+        }
+
+        h6 {
+          margin: 0;
+        }
+
+        span {
+          font-size: 0.8rem;
+          opacity: 0.8;
+        }
+      }
+
+      @include xs {
+        .navbar__search__account {
+          gap: 15px;
+
+          i {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+}

@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   h6 {
     text-align: center !important;
     color: var(--alert);
@@ -13,12 +14,14 @@
   .countDown__parts {
     display: flex;
     gap: 3px;
+
     span {
-      margin-top: -6px;
+      margin-top: 10px;
       position: relative;
       font-size: 2rem;
       color: var(--main-color);
     }
+
     .part {
       display: flex;
       flex-direction: column;
@@ -34,17 +37,53 @@
         display: grid;
         place-items: center;
         font-size: 1rem;
+
         @include md {
           width: 40px;
           height: 40px;
           font-size: 1.1rem;
         }
       }
+
       h5 {
         font-size: 0.75rem;
+
         @include md {
           font-size: 0.8rem;
         }
+      }
+    }
+  }
+
+  &.tiny {
+    h6 {
+      font-size: 0.8rem;
+    }
+
+    .countDown__parts {
+      gap: 5px;
+
+      span {
+        margin-top: -6px;
+      }
+
+      .part {
+        min-width: 20px;
+
+        .number {
+          width: 30px;
+          height: 30px;
+          border-radius: 5px;
+          font-size: 0.85rem;
+        }
+
+        h5 {
+          font-size: 0.7rem;
+        }
+      }
+
+      span {
+        display: none;
       }
     }
   }

@@ -1,0 +1,30 @@
+.collection {
+  margin: 50px 0;
+
+  .category {
+    border: 1px solid var(--heavy-border);
+    border-radius: 5px;
+    padding: 0 20px 15px;
+
+    .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 0;
+
+      button {
+        background-color: transparent;
+        border: 1px solid var(--heavy-border);
+        padding: 2px 7px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 0 2px;
+        font-size: 0.9rem;
+
+        &:hover {
+          color: var(--secondary-color);
+        }
+      }
+    }
+  }
+}

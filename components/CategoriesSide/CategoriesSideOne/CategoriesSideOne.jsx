@@ -1,20 +1,21 @@
-import { i18n, useTranslation } from "next-i18next";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
+
+import { useTranslation } from "next-i18next";
 
 import cls from "./categoriesSideOne.module.scss";
 
-const CategoriesSideOne = ({ classCustome,  open, show }) => {
-  const [ menu, setMenu ] = useState(open);
+const CategoriesSideOne = ({ classCustome, open, background }) => {
+  const [menu, setMenu] = useState(open);
   const { t, i18n } = useTranslation('common');
   const handleMenu = () => {
     setMenu(current => !current)
   }
   return (
     <div className={`${cls.wrapper} ${classCustome ? cls.categoriesAbsolute : ""} ${cls[i18n.language]}`}>
-      <h2 className={cls.title} onClick={handleMenu} >Top Categories</h2>
+      <h2 className={cls.title} onClick={handleMenu} style={{ backgroundColor: background }}>Top Categories</h2>
 
-      <div className={`${cls.body} ${ menu ? "" : cls.closed } ${!show ? cls.closed : ''}`}>
+      <div className={`${cls.body} ${menu ? "" : cls.closed}`}>
         <ul className={cls.sideMenu}>
           <li>
             <Link href="demo2-shop.html">
@@ -60,7 +61,7 @@ const CategoriesSideOne = ({ classCustome,  open, show }) => {
           </li>
         </ul>
 
-        <Link href="/" className={cls.btn}>
+        <Link href="/" className={cls.btn} style={{ backgroundColor: background }}>
           <span>
             Huge Sale -<strong>70%</strong>
             Off

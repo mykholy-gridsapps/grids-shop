@@ -1,0 +1,53 @@
+@import '../../../styles/mixins.scss';
+
+.countDown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h6 {
+    text-align: center !important;
+    color: var(--alert);
+    margin-bottom: 10px;
+  }
+
+  .countDown__parts {
+    display: flex;
+    gap: 3px;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 7px 20px;
+    border-radius: 30px;
+
+    span {
+      margin-top: -3px;
+      position: relative;
+      font-size: 1rem;
+    }
+
+    .part {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 45px;
+
+      .number {
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+        font-size: 0.85rem;
+        font-weight: 600;
+      }
+
+      h5 {
+        font-size: 0.7rem;
+        margin: 0;
+        font-weight: 500;
+
+        @include md {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

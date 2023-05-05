@@ -1,0 +1,145 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.slider {
+  margin: 50px 0;
+
+  .main {
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--light-main-color);
+    height: 100%;
+    border-radius: 5px;
+
+    .slide {
+      background-image: url('../../../public/imgs/banner.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      padding: 20px;
+
+      span {
+        font-weight: bold;
+      }
+
+      p:not(.content) {
+        font-size: 1.3rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      .btns {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        a {
+          font-size: 0.85rem;
+          background-color: transparent;
+          border: none;
+          font-weight: 600;
+          text-decoration: underline;
+          color: var(--main-color);
+        }
+
+        button:first-of-type {
+          @extend %secondaryBtn;
+          border-radius: 5px;
+          padding: 5px 20px;
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+
+  .categories {
+    border-radius: 5px;
+    border: 1px solid var(--heavy-border);
+
+    h4 {
+      border-bottom: 1px solid var(--heavy-border);
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--main-color);
+    }
+
+    ul {
+      padding: 10px 20px 0;
+
+      li {
+        padding: 3px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        font-size: 0.95rem;
+
+        * {
+          transition: all 0.2s ease-in-out;
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+
+        p {
+          background-color: var(--special-background);
+          padding: 2px 8px;
+          border-radius: 5px;
+          font-size: 0.8rem;
+          color: var(--main-color);
+        }
+
+        &:hover {
+          color: var(--secondary-color);
+
+          span {
+            transform: translateX(5px);
+          }
+
+          p {
+            background-color: var(--secondary-color);
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    a {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--secondary-color);
+      padding: 10px 20px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &.ar {
+      ul {
+        li {
+          &:hover {
+            span {
+              transform: translateX(-5px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

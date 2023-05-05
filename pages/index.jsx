@@ -8,18 +8,16 @@ import { useTranslation } from "next-i18next";
 import { wrapper } from "../store/store";
 // MATERIAL STUFF
 import Container from "@mui/material/Container";
-import { Grid } from "@mui/material";
-import Link from "next/link";
 
-import RecentViews from "../components/Secondary/RecentViews/RecentViews";
+import SliderTwentyFour from "../components/MainSlider/SliderTwentyFour/SliderTwentyFour";
 
 const Home = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
-    <Container maxWidth="xl" style={{ position: 'relative' }}>
-      <RecentViews />
-    </Container >
+    <Container maxWidth="xl">
+      <SliderTwentyFour />
+    </Container>
   );
 };
 

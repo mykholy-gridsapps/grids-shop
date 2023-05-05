@@ -1,0 +1,84 @@
+.offerCard {
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+
+  .badge {
+    position: absolute;
+    z-index: 9;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 30px 50px 10px;
+    text-align: center !important;
+    font-size: 0.9rem;
+    transform: rotate(-45deg);
+    top: -22px;
+    left: -50px;
+
+    &.ar {
+      left: unset;
+      right: -50px;
+      transform: rotate(45deg);
+    }
+  }
+
+  .image {
+    height: 100%;
+
+    img {
+      width: 200px;
+      margin: auto;
+    }
+  }
+
+  .details {
+
+    p {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    .reviews {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      span {
+        font-size: 1.1rem;
+      }
+
+      p {
+        opacity: 0.8;
+        font-size: 0.75rem;
+      }
+    }
+
+    .price {
+      display: flex;
+      align-items: flex-end;
+      gap: 10px;
+
+      span {
+        font-weight: 600;
+        font-size: 1.3rem;
+
+        &.prev {
+          opacity: 0.6;
+          font-weight: 500;
+          text-decoration: line-through;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    ul {
+      li {
+        font-size: 0.75rem;
+        color: var(--main-color);
+        padding: 1px 0;
+      }
+    }
+  }
+}

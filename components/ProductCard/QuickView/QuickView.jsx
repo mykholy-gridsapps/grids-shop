@@ -1,4 +1,5 @@
 // NEXT STUFF
+import Link from 'next/link';
 import { useState } from 'react';
 // REDUX STUFF
 import { useDispatch } from "react-redux";
@@ -14,8 +15,8 @@ import ZoomImage from '../../UIs/ZoomImage/ZoomImage';
 // OTHERS
 import { useTranslation } from 'next-i18next';
 // STYLES FILES
+import 'swiper/css';
 import cls from './quickView.module.scss';
-import Link from 'next/link';
 
 const QuickView = () => {
   const images = [
@@ -73,15 +74,15 @@ const QuickView = () => {
                 <ZoomImage image={activeImage} />
               </div>
               <div className={cls.smallImages}>
-                <Swiper 
-                  loop={false} 
-                  spaceBetween={20}
+                <Swiper
+                  loop={false}
+                  spaceBetween={10}
                   breakpoints={breakpoints}>
-                    {images.map((image, idx) => (
-                      <SwiperSlide key={idx} onClick={() => setActiveImage(image)}>
-                        <img src={image} alt="product" className={image === activeImage ? cls.active : ''} />
-                      </SwiperSlide>
-                    ))}
+                  {images.map((image, idx) => (
+                    <SwiperSlide key={idx} onClick={() => setActiveImage(image)}>
+                      <img src={image} alt="product" className={image === activeImage ? cls.active : ''} />
+                    </SwiperSlide>
+                  ))}
                 </Swiper>
               </div>
             </div>
@@ -116,7 +117,7 @@ const QuickView = () => {
                 <p>Variants: </p>
                 <ul>
                   {variants.map((one, idx) => (
-                    <li key={idx} className={one === activeVariant ? cls.active : ''} onClick={() => setActiveVariant(one)}>{ one }</li>
+                    <li key={idx} className={one === activeVariant ? cls.active : ''} onClick={() => setActiveVariant(one)}>{one}</li>
                   ))}
                 </ul>
               </div>

@@ -1,0 +1,49 @@
+@import '../../../styles/mixins.scss';
+
+.wrapper {
+  margin: 50px 0;
+
+  .collection {
+    border: 1px solid var(--heavy-border);
+    border-radius: 5px;
+    padding: 20px;
+    background-color: var(--special-background);
+
+    .categories {
+      height: 100%;
+      border: 1px solid var(--heavy-border);
+      border-radius: 5px;
+      padding: 10px 20px;
+      opacity: 0.8;
+      background-color: var(--secondary-background);
+
+      h5 {
+        border-bottom: 1px solid var(--heavy-border);
+        padding-bottom: 10px;
+        color: var(--main-color);
+      }
+
+      ul {
+        li {
+          cursor: pointer;
+          padding: 4px 0;
+          transition: all 0.2s ease-in-out;
+          font-size: 0.95rem;
+
+          &:hover {
+            color: var(--secondary-color);
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
+
+    .card {
+      border-radius: 5px;
+
+      &>div {
+        background-color: var(--secondary-background);
+      }
+    }
+  }
+}

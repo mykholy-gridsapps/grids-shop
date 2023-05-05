@@ -1,0 +1,133 @@
+.productCard {
+  border: 1px solid var(--heavy-border);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+
+  .sale {
+    position: absolute;
+    z-index: 9;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 10px 0;
+    padding: 3px 10px;
+    font-size: 0.85rem;
+  }
+
+  .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: var(--special-background);
+    border-radius: 10px;
+
+    img {
+      height: 300px;
+      object-fit: contain;
+      transition: all 0.3s ease-out;
+    }
+
+    .actions {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s ease-in-out;
+      z-index: -1;
+      opacity: 0;
+
+      i {
+        width: 40px;
+        height: 40px;
+        background-color: var(--secondary-background);
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+          color: var(--secondary-color);
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+
+  .details {
+    padding: 10px 20px 20px;
+
+    &>span {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    h6 {
+      font-weight: 600;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      span {
+        font-weight: 600;
+        font-size: 1.1rem;
+
+        &.prev {
+          text-decoration: line-through;
+          opacity: 0.8;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      text-align: center !important;
+      padding: 8px 20px;
+      background-color: var(--light-main-color);
+      border: 1px solid transparent;
+      color: var(--main-color);
+      font-size: 0.9rem;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: all 0.2s ease-in-out;
+      margin-top: 10px;
+
+      &:hover {
+        border: 1px solid var(--main-color);
+        background-color: var(--main-color);
+        color: #fff;
+      }
+    }
+  }
+
+  &:hover {
+    .image {
+      img {
+        transform: scale(1.2);
+      }
+
+      .actions {
+        z-index: 1;
+        opacity: 1;
+      }
+    }
+  }
+}

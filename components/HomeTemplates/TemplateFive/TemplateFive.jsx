@@ -23,8 +23,8 @@ import SaleTwentyTwo from '../../Sale/SaleTwentyTwo/SaleTwentyTwo';
 import SaleTwentyOne from '../../Sale/SaleTwentyOne/SaleTwentyOne';
 import SaleTwenty from '../../Sale/SaleTwenty/SaleTwenty';
 
-import ProductsCategoriesTwelve from '../../ProductsCategories/ProductsCategoriesTwelve/ProductsCategoriesTwelve';
-import ProductsCategoriesFour from '../../ProductsCategories/ProductsCategoriesFour/ProductsCategoriesFour';
+import CollectionTwelve from '../../Collections/CollectionTwelve/CollectionTwelve';
+import CollectionFour from '../../Collections/CollectionFour/CollectionFour';
 import BlogSeven from '../../Blogs/BlogSeven/BlogSeven';
 import BrandsFive from '../../Brands/BrandsFive/BrandsFive';
 import TestimonialTwoCarousel from '../../Testimonials/TestimonialTwo/TestimonialTwoCarousel';
@@ -47,19 +47,19 @@ const TemplateFour = () => {
 
         {/* PRODUCTS CATEGORIES */}
         <div className={cls.section}>
-          <ProductsCategoriesTwelve />
+          <CollectionTwelve />
         </div>
 
         {/* SALES */}
         <div className={cls.sales2}>
-            <SaleTwentyEight />
-            <SaleTwentyFive />
+          <SaleTwentyEight />
+          <SaleTwentyFive />
         </div>
         {/* SALES */}
 
         {/* PRODUCTS CATEGORIES */}
         <div className={cls.section2}>
-          <ProductsCategoriesFour />
+          <CollectionFour />
         </div>
 
         {/* SALES */}
@@ -90,7 +90,7 @@ const TemplateFour = () => {
           </Grid>
         </Grid>
 
-        <ProductsCategoriesTwelve />
+        <CollectionTwelve />
 
         <TestimonialTwoCarousel />
 

@@ -1,0 +1,42 @@
+@import '../../../styles/extends.scss';
+
+.collection {
+  .slide {
+    background-color: var(--light-main-color);
+    // color: var(--text-inside);
+    padding: 50px 20px;
+
+    img {
+      transform: scale(0.5);
+    }
+
+    .details {
+      opacity: 0;
+      transform: translateY(50px);
+
+      h2 {
+        font-size: clamp(2rem, 4vw, 2.8rem);
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      .actions {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+
+        span {
+          font-size: 1.5rem;
+        }
+
+        button {
+          @extend %outlinedBtn;
+        }
+      }
+    }
+  }
+}

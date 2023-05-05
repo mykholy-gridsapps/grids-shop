@@ -38,7 +38,7 @@ const lightVars = () => {
 
   document.querySelector(":root").style.setProperty("--alert-light", "#fff6e8");
 
-  document.querySelector(":root").style.setProperty("--heavy-border", "#dcdcdc");
+  document.querySelector(":root").style.setProperty("--heavy-border", "#e3e2e2");
 
   /* MY COLORS */
 

@@ -12,8 +12,8 @@ import SaleNine from '../../Sale/SaleNine/SaleNine';
 import SaleOne from '../../Sale/SaleOne/SaleOne';
 import SaleFive from '../../Sale/SaleFive/SaleFive';
 import SaleTwo from '../../Sale/SaleTwo/SaleTwo';
-import ProductsCategoriesThree from '../../ProductsCategories/ProductsCategoriesThree/ProductsCategoriesThree';
-import ProductsCategoriesTen from '../../ProductsCategories/ProductsCategoriesTen/ProductsCategoriesTen';
+import CollectionThree from '../../Collections/CollectionThree/CollectionThree';
+import CollectionTen from '../../Collections/CollectionTen/CollectionTen';
 import BlogThree from '../../Blogs/BlogThree/BlogThree';
 import BrandsTwo from '../../Brands/BrandsTwo/BrandsTwo';
 import TestimonialOneCarousel from '../../Testimonials/TestimonialOne/TestimonialOneCarousel';
@@ -34,7 +34,7 @@ const TemplateThree = () => {
 
         {/* PRODUCTS CATEGORIES */}
         <div className={cls.section}>
-          <ProductsCategoriesThree />
+          <CollectionThree />
         </div>
 
         <InfoBoxSix />
@@ -58,7 +58,7 @@ const TemplateThree = () => {
 
         {/* PRODUCTS CATEGORIES */}
         <div className={cls.section2}>
-          <ProductsCategoriesTen />
+          <CollectionTen />
         </div>
 
         {/* SALES */}

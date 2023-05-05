@@ -1,0 +1,35 @@
+.features {
+  margin: 50px 0;
+
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--heavy-border);
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+
+    i {
+      font-size: 2rem;
+      color: var(--main-color);
+    }
+
+    h6 {
+      margin: 0;
+      color: var(--main-color);
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin: 0;
+    }
+
+    &:hover {
+      border-color: var(--main-color);
+      background-color: var(--light-main-color);
+    }
+  }
+}

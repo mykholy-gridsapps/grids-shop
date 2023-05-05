@@ -1,0 +1,32 @@
+@import '../../../styles/mixins.scss';
+
+.collection {
+  margin: 50px 0;
+
+  .head {
+    margin-bottom: 10px;
+
+    h4 {
+      text-align: center !important;
+      color: var(--main-color);
+    }
+
+    p {
+      text-align: center !important;
+      opacity: 0.8;
+    }
+
+    @include sm {
+      margin-bottom: 20px;
+    }
+  }
+
+  .centerbullets {
+    padding: 20px !important;
+
+    @include sm {
+      padding: 0 !important;
+    }
+  }
+
+}
