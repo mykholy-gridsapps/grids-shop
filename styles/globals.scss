@@ -688,6 +688,47 @@ button.swal2-cancel {
   }
 }
 
+.lightSwiper {
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50%;
+    background-color: transparent !important;
+    color: var(--main-color) !important;
+    box-shadow: none;
+
+    &:after {
+      font-size: 1rem !important;
+      font-weight: 600;
+    }
+
+    &.swiper-button-prev {
+      transform: translateX(-6px);
+    }
+
+    &.swiper-button-next {
+      transform: translateX(6px);
+    }
+
+    &:hover {
+      &:after {
+        color: unset;
+      }
+    }
+
+    @include xs {
+      width: 35px;
+      height: 35px;
+
+      &:after {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
 .quantityArea {
   display: flex;
   align-items: center;
@@ -786,6 +827,44 @@ button.swal2-cancel {
 
   .custom-swiper-prev {
     left: 3%;
+  }
+}
+
+.smallCustomSliderArrows {
+  position: relative;
+
+  .custom-swiper-next,
+  .custom-swiper-prev {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    i {
+      font-size: 2rem;
+
+      @include xs {
+        font-size: 1.5rem;
+      }
+    }
+
+    @include md {
+      top: 90%;
+    }
+  }
+
+  .custom-swiper-next {
+    right: 1%;
+  }
+
+  .custom-swiper-prev {
+    left: 2%;
   }
 }
 

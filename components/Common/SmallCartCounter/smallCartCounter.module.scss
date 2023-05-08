@@ -1,0 +1,30 @@
+.cartCounter {
+  display: flex;
+  align-items: center;
+
+  button {
+    width: 30px !important;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    border: none;
+    border-radius: 0 !important;
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+  }
+
+  input {
+    height: 40px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    width: 40px;
+    text-align: center !important;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+  }
+}

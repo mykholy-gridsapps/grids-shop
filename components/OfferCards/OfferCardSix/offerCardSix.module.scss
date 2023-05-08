@@ -1,0 +1,47 @@
+@import '../../../styles/extends.scss';
+
+.offerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 0.9rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.4rem;
+    opacity: 0.8;
+  }
+
+  h2 {
+    text-align: center !important;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 20px;
+  }
+
+  .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+
+    button:first-of-type {
+      @extend %mainBtn;
+    }
+
+    button:last-of-type {
+      @extend %outlinedBtn;
+    }
+
+    button {
+      padding: 10px 20px !important;
+      border-radius: 0 !important;
+      text-align: center !important;
+    }
+  }
+}

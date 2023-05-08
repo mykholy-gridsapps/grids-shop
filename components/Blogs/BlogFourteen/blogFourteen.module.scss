@@ -1,0 +1,170 @@
+@import '../../../styles/mixins.scss';
+
+.blogs {
+  margin: 50px 0;
+
+  &>h3 {
+    text-align: center !important;
+    margin-bottom: 30px;
+  }
+
+  .blog {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    .image {
+      position: relative;
+
+      .date {
+        position: absolute;
+        background-color: #fff;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+        padding: 10px;
+        z-index: 9;
+
+        p {
+          margin: 0;
+          font-weight: 500;
+          font-size: 1.2rem;
+          text-align: center !important;
+        }
+
+        span {
+          font-size: 0.8rem;
+          transform: translateY(-3px);
+        }
+      }
+
+    }
+
+    .details {
+      background-color: var(--secondary-background);
+      padding: 10px 20px 0;
+      transform: translateX(-20px);
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+      .top {
+        display: flex;
+        justify-content: center;
+        transform: translateY(-28px);
+
+        p {
+          background-color: var(--main-color);
+          padding: 2px 20px;
+          color: var(--text-inside);
+          font-size: 0.9rem;
+        }
+      }
+
+      .content {
+        transform: translateY(-20px);
+
+        * {
+          text-align: center !important;
+        }
+
+        h5 {
+          font-weight: 600;
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+
+          div {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            img {
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+            }
+
+            span {
+              font-size: 0.85rem;
+              opacity: 0.8;
+            }
+
+            i {
+              opacity: 0.8;
+            }
+          }
+        }
+
+        p {
+          font-size: 0.85rem;
+          opacity: 0.8;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 2px;
+          color: var(--main-color);
+          font-weight: 600;
+          margin: 10px 0;
+          font-size: 0.9rem;
+
+          span {
+            opacity: 0;
+          }
+
+          @keyframes moving {
+            0% {
+              transform: translateX(0px);
+            }
+
+            50% {
+              transform: translateX(5px);
+            }
+
+            100% {
+              transform: translateX(0px);
+            }
+          }
+
+          &:hover {
+            opacity: 1;
+
+            span {
+              opacity: 1;
+              animation: moving 1s forwards infinite;
+            }
+          }
+        }
+      }
+
+      &.ar {
+        transform: translateX(20px);
+      }
+    }
+
+    &:hover {
+      .image {
+        img {
+          filter: brightness(0.8);
+        }
+      }
+    }
+
+    @include xs {
+      display: block;
+
+      .details {
+        transform: translateX(0px);
+      }
+    }
+  }
+}

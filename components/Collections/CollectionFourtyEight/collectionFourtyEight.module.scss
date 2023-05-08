@@ -1,0 +1,52 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.collection {
+  margin: 50px 0;
+
+  .products {
+    .head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 10px;
+      border-bottom: 1px solid var(--heavy-border);
+
+      div {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin: 0 20px;
+
+          li {
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+
+            &.active {
+              color: var(--secondary-color);
+            }
+          }
+
+          @include xs {
+            margin: 0;
+          }
+        }
+      }
+
+      button {
+        @extend %swiperCustomArrows;
+      }
+    }
+
+    .swiper {
+      padding: 10px 10px 150px;
+    }
+  }
+}

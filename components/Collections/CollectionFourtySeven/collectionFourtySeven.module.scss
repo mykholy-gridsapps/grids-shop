@@ -1,0 +1,80 @@
+@import '../../../styles/extends.scss';
+
+.collection {
+  margin: 50px 0;
+
+  .deal {
+    background-color: var(--special-background);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+    img {
+      max-height: 365px;
+      object-fit: contain;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+
+    p {
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      li {
+        padding: 5px 20px;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        background-color: var(--secondary-background);
+
+        &:hover {
+          filter: brightness(0.9);
+        }
+      }
+    }
+  }
+
+  .offer {
+    gap: 20px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+    }
+
+    p {
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+
+    button {
+      @extend %lightBtn;
+      padding: 5px 15px;
+      font-size: 0.9rem;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.15);
+      }
+    }
+  }
+}

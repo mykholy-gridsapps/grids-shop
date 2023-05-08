@@ -1,0 +1,44 @@
+@import '../../../styles/extends.scss';
+
+.collection {
+  background-image: url('../../../public/imgs/back4.jpg');
+  background-position: 100% 100%;
+  background-size: cover;
+  padding: 20px;
+  margin: 50px 0;
+
+  .image {
+
+    img {
+      object-fit: contain;
+      max-height: 500px;
+    }
+  }
+
+  .details {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin: 0
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    button {
+      @extend %outlinedBtn;
+      margin: 20px 0;
+    }
+  }
+
+  .slide {
+    background-color: #fff;
+    border-radius: 10px;
+    // overflow: hidden;
+  }
+}

@@ -51,6 +51,30 @@
   }
 }
 
+%lightBtn {
+  text-align: center !important;
+  padding: 10px 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  outline: none;
+  color: var((--main-color));
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(0.98);
+  }
+
+  @include sm {
+    padding: 8px 25px;
+  }
+
+  @include sm {
+    padding: 6px 20px;
+    font-size: 1rem;
+  }
+}
+
 %outlinedBtn {
   padding: 8px 25px;
   background-color: transparent;
@@ -63,6 +87,19 @@
   &:hover {
     background-color: var(--main-color);
     color: #fff;
+  }
+}
+
+%swiperCustomArrows {
+  background-color: transparent;
+  border: 1px solid var(--heavy-border);
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 2px;
+
+  &:hover {
+    color: var(--secondary-color);
   }
 }
 

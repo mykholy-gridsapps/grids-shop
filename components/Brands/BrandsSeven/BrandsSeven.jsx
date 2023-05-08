@@ -5,7 +5,6 @@ import { Navigation } from "swiper";
 
 import 'swiper/css';
 import "swiper/css/navigation";
-
 import cls from './brandsSeven.module.scss'
 
 const BrandsSeven = () => {
