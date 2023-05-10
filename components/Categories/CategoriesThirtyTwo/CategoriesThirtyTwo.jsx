@@ -2,7 +2,7 @@ import Grid from '@mui/material/Grid';
 
 import cls from './categoriesThirtyTwo.module.scss';
 
-const CollectionFiftyTwo = () => {
+const CategoriesThirtyTwo = () => {
   return (
     <div className={cls.categories}>
       <Grid container spacing={2} justifyContent="center">
@@ -33,4 +33,4 @@ const CollectionFiftyTwo = () => {
   )
 }
 
-export default CollectionFiftyTwo
+export default CategoriesThirtyTwo

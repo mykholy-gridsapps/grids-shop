@@ -1,0 +1,124 @@
+@import '../../../styles/extends.scss';
+
+.productCard {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  max-width: 250px;
+  margin: auto;
+  // background-color: var(--default-background);
+  padding: 10px;
+
+  .images {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 0 auto 5px;
+
+    img {
+      height: 250px;
+      object-fit: contain;
+      transition: all 0.3s ease-in-out;
+
+      &.secondary {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: -1;
+      }
+    }
+
+    .actions {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: var(--secondary-background);
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 10px 5px;
+      z-index: -1;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+
+      i {
+        cursor: pointer;
+        font-size: 1.1rem;
+        opacity: 0.8;
+        width: 35px;
+        height: 35px;
+        display: grid;
+        place-content: center;
+      }
+    }
+
+    .btns {
+      position: absolute;
+      bottom: -100%;
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+      display: flex;
+      align-items: center;
+
+      &>button {
+        @extend %transBtn;
+        width: 100%;
+        height: 40px;
+      }
+    }
+  }
+
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+
+    h6 {
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    span {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    .price {
+      font-weight: 600;
+      color: var(--main-color);
+    }
+  }
+
+  &:hover {
+    .images {
+      img {
+        opacity: 0;
+        z-index: -1;
+
+        &.secondary {
+          opacity: 1;
+          z-index: 2;
+        }
+      }
+
+      .actions {
+        opacity: 1;
+        z-index: 3;
+      }
+
+      button {
+        bottom: 0;
+        opacity: 1;
+        z-index: 3;
+      }
+    }
+
+    .btns {
+      bottom: 0;
+    }
+  }
+}

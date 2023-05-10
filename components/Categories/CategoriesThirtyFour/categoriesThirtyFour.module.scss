@@ -1,0 +1,80 @@
+@import '../../../styles/extends.scss';
+
+.categories {
+  margin: 50px 0;
+
+  .head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 30px auto;
+
+    span {
+      font-weight: 600;
+      color: var(--secondary-color);
+    }
+
+    p {
+      text-align: center !important;
+      font-size: 0.85rem;
+      opacity: 0.8;
+    }
+  }
+
+  .gridItem {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 4px;
+
+    .productImage {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+    }
+
+    .productDetails {
+      flex: 1;
+    }
+
+    .categoryTitle {
+      font-size: 1.2rem;
+    }
+
+    .categoryList {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        margin-bottom: 4px;
+        padding: 2px 0;
+        cursor: pointer;
+        position: relative;
+
+        i {
+          color: var(--main-color);
+          font-weight: bold;
+        }
+      }
+    }
+
+    button {
+      @extend %mainBtn;
+      border-radius: 0;
+      padding: 7px 20px;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+
+    @include xs {
+      display: block;
+    }
+  }
+}

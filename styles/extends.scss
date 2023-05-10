@@ -90,6 +90,47 @@
   }
 }
 
+%transBtn {
+  padding: 8px 25px;
+  background-color: var(--main-color);
+  color: var(--text-inside);
+  border: 2px solid var(--main-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+
+  span {
+    transition: all 0.2s ease-in-out;
+    display: block;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: -100%;
+
+    i {
+      font-size: 1.2rem;
+    }
+  }
+
+  &:hover {
+    .top {
+      transform: translateY(-130%);
+    }
+
+    .bottom {
+      bottom: 10%;
+    }
+  }
+}
+
 %swiperCustomArrows {
   background-color: transparent;
   border: 1px solid var(--heavy-border);

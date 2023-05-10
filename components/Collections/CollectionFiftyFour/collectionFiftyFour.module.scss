@@ -1,0 +1,113 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.collection {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 15px;
+  margin: 50px 0;
+
+  .item {
+    text-align: center;
+    height: 100%;
+    min-height: 250px;
+    position: relative;
+    overflow: hidden;
+    color: var(--text-inside);
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+    }
+
+    @include xs {
+      grid-column: span 12 !important;
+      grid-row: span 6 !important;
+    }
+
+    &:not(.item2):hover {
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .item1 {
+    padding: 20px;
+    grid-column: span 5;
+    grid-row: span 6;
+  }
+
+  .item2 {
+    grid-column: span 7;
+    grid-row: span 7;
+  }
+
+  .item3 {
+    padding: 20px;
+    grid-column: span 5;
+    grid-row: span 6;
+  }
+
+  .item4 {
+    padding: 20px;
+    grid-column: span 7;
+    grid-row: span 5;
+  }
+
+  .item2 {
+    .swiper {
+      height: 100%;
+    }
+
+    .slide {
+      padding: 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .bigTitle {
+        max-width: 300px;
+        text-align: center !important;
+      }
+    }
+  }
+
+  .smallTitle {
+    font-size: 14px;
+    color: #777;
+  }
+
+  .bigTitle {
+    font-size: 24px;
+    font-weight: bold;
+    max-width: 200px;
+  }
+
+  .btns {
+    display: flex;
+    gap: 5px;
+  }
+
+  .button {
+    @extend %mainBtn;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+  }
+
+  .outlined {
+    @extend %outlinedBtn;
+    padding: 8px 20px;
+  }
+}

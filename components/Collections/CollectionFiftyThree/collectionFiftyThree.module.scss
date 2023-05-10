@@ -1,0 +1,27 @@
+@import '../../../styles/extends.scss';
+
+.collection {
+  margin: 50px 0;
+
+  .head {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    h3 {
+      border-bottom: 2px solid var(--main-color);
+      text-transform: uppercase;
+    }
+  }
+
+  .view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+
+    button {
+      @extend %mainBtn;
+    }
+  }
+}
