@@ -40,8 +40,8 @@ const ProductThirtyNine = () => {
               </span>
             </Tooltip>
             <button>
-              <span className={cls.text}>Read More</span>
-              <span className={cls.icon}><i className="fa-light fa-eye"></i></span>
+              <span className={cls.top}>Read More</span>
+              <span className={cls.bottom}><i className="fa-light fa-eye"></i></span>
             </button>
             <Tooltip title="add to cart" placement="top">
               <span onClick={() => router.push("/cart")}>

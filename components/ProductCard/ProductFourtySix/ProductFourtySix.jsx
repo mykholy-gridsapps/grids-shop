@@ -1,17 +1,19 @@
-import CountDownTwo from '../../UIs/CountDownTwo/CountDownTwo';
-
 import Tooltip from "@mui/material/Tooltip";
 
 import { useTranslation } from "next-i18next";
 
-import cls from './offerCardSeven.module.scss';
+import cls from './productFourtySix.module.scss';
 
-const OfferCardSeven = () => {
+const ProductFourtySix = () => {
   const { i18n } = useTranslation('common');
 
   return (
     <div className={cls.productCard}>
+      <div className={cls.sale}>
+        -50%
+      </div>
       <div className={cls.images}>
+        <img src="/imgs/sh.png" alt="product" />
         <div className={cls.actions}>
           <Tooltip title="add to wishlist" placement="top">
             <span onClick={() => router.push("/cart")}>
@@ -29,23 +31,22 @@ const OfferCardSeven = () => {
             </span>
           </Tooltip>
         </div>
-        <img src="/imgs/sh.png" alt="product" />
-        <img src="/imgs/shoes.png" alt="product" className={cls.secondary} />
-        <button>
-          <span className={cls.top}>Add To Cart</span>
-          <span className={cls.bottom}><i className="fa-light fa-cart-shopping"></i></span>
-        </button>
       </div>
       <div className={cls.details}>
+        <div className={cls.colors}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <h6>Nike Shoes</h6>
         <span>Accessories</span>
         <div className={cls.price}>
           $199.00
         </div>
-        <CountDownTwo daysCount={2} background={`var(--secondary-background)`} />
       </div>
     </div>
   )
 }
 
-export default OfferCardSeven;
+export default ProductFourtySix;

@@ -140,39 +140,13 @@
       align-items: center;
 
       button {
-        @extend %btn;
-        padding: 8px 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
+        @extend %transBtn;
+        padding: 7px 20px;
         width: 100%;
-        border-radius: 0 !important;
 
         span {
-          transition: all 0.2s ease-in-out;
           font-size: 0.9rem !important;
-        }
-
-        .icon {
-          position: absolute;
-          top: 100%;
-
-          i {
-            font-size: 1.1rem;
-          }
-        }
-
-        &:hover {
-          .text {
-            transform: translateY(-30px);
-          }
-
-          .icon {
-            top: 15%;
-            z-index: 1;
-          }
+          font-weight: 400;
         }
       }
     }

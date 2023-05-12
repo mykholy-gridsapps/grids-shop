@@ -1,0 +1,47 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.collection {
+  margin: 50px 0;
+
+  .offer {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 200px;
+    }
+
+    .details {
+      span {
+        opacity: 0.8;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      button {
+        @extend %mainBtn;
+        font-size: 0.9rem;
+        padding: 8px 20px !important;
+        border-radius: 0;
+      }
+    }
+
+    @include xs {
+      display: block;
+    }
+  }
+
+  .products {
+    h6 {
+      margin-bottom: 20px;
+    }
+
+    &>div:not(:last-of-type) {
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--heavy-border);
+    }
+  }
+}

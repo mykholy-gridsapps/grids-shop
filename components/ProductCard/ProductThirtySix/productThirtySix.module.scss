@@ -53,47 +53,18 @@
     }
 
     button {
-      position: absolute;
-      bottom: -20px;
-      width: 100%;
-      height: 40px;
-      text-align: center !important;
+      @extend %transBtn;
       background-color: var(--light-main-color);
-      border: none;
       color: var(--main-color);
-      padding: 8px 20px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      cursor: pointer;
+      border: 0;
+      width: 100%;
+      bottom: -30px;
       opacity: 0;
       z-index: -1;
-      transition: all 0.2s ease-in-out;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      span {
-        transition: all 0.2s ease-in-out;
-      }
-
-      i {
-        transform: translateY(10px);
-        transition: all 0.2s ease-in-out;
-        font-size: 1.2rem;
-      }
 
       &:hover {
         background-color: var(--main-color);
         color: var(--text-inside);
-
-        span {
-          transform: translateY(-30px);
-        }
-
-        i {
-          transform: translateY(-25px);
-        }
       }
     }
   }

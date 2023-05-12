@@ -5,9 +5,9 @@ import Tooltip from "@mui/material/Tooltip";
 
 import { useTranslation } from 'next-i18next';
 
-import cls from './productThirtySeven.module.scss';
+import cls from './productFourtyFive.module.scss';
 
-const ProductThirtySeven = () => {
+const ProductFourtyFive = () => {
   const { i18n } = useTranslation('common');
   const dispatch = useDispatch();
 
@@ -30,22 +30,21 @@ const ProductThirtySeven = () => {
           </Tooltip>
         </div>
         <img className={cls.main} src="/imgs/shoes.png" alt="product" loading='lazy' />
-        <img className={cls.secondary} src="/imgs/sh2.png" alt="product" loading='lazy' />
       </div>
-      <h6>Gold Watch</h6>
-      <span>Nike Shoes</span>
-      <div className={cls.trans}>
+      <div className={cls.details}>
+        <h6>Gold Watch</h6>
         <div className={cls.price}>
           <span>$164.47</span>
           <span className={cls.prev}>$183.47</span>
         </div>
+      </div>
+      <div className={cls.btn}>
         <button>
           Add To Cart
-          <span></span>
         </button>
       </div>
     </div>
   )
 }
 
-export default ProductThirtySeven;
+export default ProductFourtyFive;

@@ -45,8 +45,8 @@ const ProductThirtyOne = () => {
           </div>
         </div>
         <button>
-          <span className={cls.text}>Add To Cart</span>
-          <span className={cls.icon}><i className="fa-light fa-cart-shopping"></i></span>
+          <span className={cls.top}>Add To Cart</span>
+          <span className={cls.bottom}><i className="fa-light fa-cart-shopping"></i></span>
         </button>
         <div className={cls.hiddenDetails}>
           <ul>

@@ -881,6 +881,19 @@ button.swal2-cancel {
   }
 }
 
+.darkPlainArrows {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: transparent;
+    box-shadow: none;
+
+    &:after {
+      color: var(--text-color);
+    }
+  }
+}
+
 .thumbs {
   .swiper-slide-active {
     .thumb {

@@ -3,6 +3,9 @@
 .productCard {
   cursor: pointer;
   margin: 50px 0;
+  padding-bottom: 20px;
+  background-color: var(--special-background);
+  overflow: hidden;
 
   .images {
     position: relative;
@@ -37,20 +40,11 @@
     }
 
     img {
-      background-color: var(--special-background);
       margin-bottom: 15px;
       border-radius: 5px;
       transition: all 0.3s ease-in-out;
       min-height: 300px;
       object-fit: contain;
-
-      &.secondary {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-      }
     }
 
     &:hover {
@@ -62,19 +56,24 @@
     }
   }
 
-  h6 {
-    margin: 0;
-    font-weight: 500;
-    font-size: 1rem;
-  }
+  .details {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(20px);
+    transition: all 0.2s ease-in-out;
 
-  span {
-    font-size: 0.9rem;
-    opacity: 0.8;
-  }
+    h6 {
+      margin: 0;
+      font-weight: 500;
+      font-size: 1rem;
+    }
 
-  .trans {
-    overflow: hidden;
+    span {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
 
     .price {
       display: flex;
@@ -92,20 +91,19 @@
         }
       }
     }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    transform: translateY(60px);
+    transition: all 0.2s ease-in-out;
 
     button {
-      background-color: transparent;
-      border: none;
-      font-size: 0.9rem;
-      font-weight: bold;
-      color: var(--main-color);
-      display: block;
-      opacity: 0;
-      z-index: -1;
-      cursor: pointer;
-      text-transform: uppercase;
-      transition: all 0.2s ease-in-out;
-      @extend %borderLink;
+      @extend %mainBtn;
+      padding: 8px 20px;
+      border-radius: 5px;
+      font-size: 0.8rem;
     }
   }
 
@@ -117,18 +115,12 @@
       }
     }
 
-    .trans {
-      .price {
-        opacity: 0;
-        z-index: -1;
-        transform: translateY(-20px);
-      }
+    .details {
+      transform: translateY(-10px);
+    }
 
-      &>button {
-        opacity: 1;
-        z-index: 9;
-        transform: translateY(-25px);
-      }
+    .btn {
+      transform: translateY(0px);
     }
   }
 }
