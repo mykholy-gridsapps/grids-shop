@@ -20,14 +20,28 @@ const LangSwitch = ({ color }) => {
     setHasMounted(true);
   }, []);
 
+  // const switchLang = (lang) => {
+  //   i18n.changeLanguage(lang);
+  //   cookie.set("grids-apps-shop-lang", lang, { path: "/" });
+
+  //   if (lang === "ar") {
+  //     router.replace(router, null, { locale: lang });
+  //   } else {
+  //     router.replace(router, router.asPath, { locale: lang });
+  //   }
+  // };
+
   const switchLang = (lang) => {
-    i18n.changeLanguage(lang);
+    // i18n.changeLanguage(lang);
     cookie.set("grids-apps-shop-lang", lang, { path: "/" });
 
+    const newPathname = router.pathname;
     if (lang === "ar") {
       router.replace(router, null, { locale: lang });
+      window.location.href = `/ar${newPathname}`;
     } else {
       router.replace(router, router.asPath, { locale: lang });
+      window.location.href = `${newPathname}`;
     }
   };
 

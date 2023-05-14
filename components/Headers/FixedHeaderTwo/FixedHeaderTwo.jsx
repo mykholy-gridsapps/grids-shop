@@ -51,7 +51,7 @@ const FixedHeaderTwo = ({ setOpenSidebar }) => {
           </Link>
         </div>
         <div className={cls.links}>
-          <CategoriesSideOne classCustome={true} open={false} show={scrollTop >= 200 ? true : false} />
+          <CategoriesSideOne classCustome={true} open={false} show={scrollTop >= 200 ? true : false} scrollTop={scrollTop} />
           <ul className={cls.mainLinks}>
             <li className={`${router.pathname == "/" ? cls.active : ""}`}>
               <Link href="/">

@@ -9,14 +9,11 @@ import { wrapper } from "../store/store";
 // MATERIAL STUFF
 import Container from "@mui/material/Container";
 
-import ProductTwentyFive from "../components/ProductCard/ProductTwentyFive/ProductTwentyFive";
-
 const Home = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
     <Container maxWidth="xl">
-      <ProductTwentyFive />
     </Container>
   );
 };
