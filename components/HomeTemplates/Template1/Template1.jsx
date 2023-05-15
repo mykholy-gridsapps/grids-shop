@@ -1,19 +1,17 @@
 // REDIRECTION FILES
-import langRedirection from "../utils/redirections/langRedirection/langRedirection";
-import routeRedirection from "../utils/redirections/routeRedirection/routeRedirection";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import langRedirection from "../../../utils/redirections/langRedirection/langRedirection";
+import routeRedirection from "../../../utils/redirections/routeRedirection/routeRedirection";
 // INTERNATIONALIZATION
-import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 // REDUX STUFF
-import { wrapper } from "../store/store";
+import { wrapper } from "../../../store/store";
 // MATERIAL STUFF
-import Template1 from "../components/HomeTemplates/Template1/Template1";
+import Container from "@mui/material/Container";
 
-const Home = () => {
-  const { t, i18n } = useTranslation("common");
-
+const Template1 = () => {
   return (
-    <Template1 />
+    <Container>
+    </Container>
   );
 };
 
@@ -34,4 +32,4 @@ export const getServerSideProps = wrapper.getServerSideProps(
     }
 );
 
-export default Home;
+export default Cart;
