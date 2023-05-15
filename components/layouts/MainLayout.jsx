@@ -49,13 +49,13 @@ const MainLayout = ({ children }) => {
       {/* <HeaderSix /> */}
       {/* <HeaderSeven /> */}
       {/* <HeaderEight /> */}
-      <HeaderNine />
+      {/* <HeaderNine /> */}
       <div className={cls.pagesContent}>
         {children}
       </div>
       {/* <FooterTwo /> */}
       {/* <FooterEleven /> */}
-      <FooterThirteen />
+      {/* <FooterThirteen /> */}
       <MobileBar />
 
       {quickViewOpened && <QuickView />}
