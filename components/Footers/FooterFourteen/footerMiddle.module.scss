@@ -1,0 +1,78 @@
+.footerMiddle {
+    padding-top: 66px;
+    padding-bottom: 15px;
+
+    .widget {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .widgetTitle {
+            font-size: 15px;
+            font-weight: 600;
+            font-family: Poppins, sans-serif;
+            text-transform: uppercase;
+            margin: 0 0 13px;
+
+            &.fontWeightBold {
+                font-weight: 700 !important;
+            }
+        }
+
+        .logoFooter {
+            margin-top: 17px;
+            margin-bottom: 15px;
+            max-width: 111px;
+        }
+
+        .location {
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        .post {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+
+            &:not(:last-of-type) {
+                border-bottom: 1px solid var(--heavy-border);
+            }
+
+            img {
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+            }
+
+            h6 {
+                font-size: 0.8rem;
+                margin: 0;
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--main-color);
+                }
+            }
+
+            span {
+                opacity: 0.8;
+                font-size: 0.75rem;
+            }
+        }
+
+        li {
+            a {
+
+                &:hover {
+                    color: var(--main-color);
+                }
+            }
+        }
+    }
+}

@@ -11,7 +11,7 @@ import cls from "./topHeader.module.scss";
 const TopHeader = () => {
   return (
     <div className={cls.headerTop}>
-      <Container maxWidth="xl" className={cls.wrapper}>
+      <div className={cls.wrapper}>
         <div className={cls.headerLeft}>
           <p className={cls.topMessage}><i className="fa-solid fa-envelope"></i> info@emallshop.com</p>
           <p className={cls.topMessage}><i className="fa-solid fa-phone"></i> +81 59832452528</p>
@@ -45,7 +45,7 @@ const TopHeader = () => {
             </div>
           </div>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };

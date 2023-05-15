@@ -24,11 +24,11 @@ const HeaderNine = () => {
       <MiddleHeader />
 
       <div className={cls.navbar__main}>
-        <Container maxWidth="xl" className={`${cls.navbar_mainNav}`}>
+        <div className={`${cls.navbar_mainNav}`}>
 
           <div className={`${cls.links} ${cls[i18n.language]}`}>
             <div className={cls.sideCategories}>
-              <CategoriesSideOne classCustome={true} open={false} background={`var(--main-color)`} />
+              <CategoriesSideOne classCustome={true} open={true} background={`var(--main-color)`} />
             </div>
             <ul className={`${cls.navLinks} ${cls[i18n.language]}`}>
               <li
@@ -97,7 +97,7 @@ const HeaderNine = () => {
               <span>24/7 support center</span>
             </div>
           </div>
-        </Container>
+        </div>
       </div>
     </div>
   );

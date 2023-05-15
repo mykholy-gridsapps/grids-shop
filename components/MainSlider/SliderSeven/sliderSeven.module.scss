@@ -14,15 +14,6 @@ $sliderOneBadge: #ff7272;
         object-position: center center;
         object-fit: cover;
         max-width: 100%;
-
-        @include sm {
-            height: 300px;
-        }
-
-        @include xs {
-            height: 200px;
-        }
-
     }
 
     .slide1 {

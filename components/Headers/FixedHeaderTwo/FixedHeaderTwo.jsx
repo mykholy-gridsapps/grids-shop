@@ -13,7 +13,7 @@ import Container from "@mui/material/Container";
 import Tooltip from "@mui/material/Tooltip";
 
 import cls from './fixedHeaderTwo.module.scss';
-import CategoriesSideOne from '../../CategoriesSide/CategoriesSideOne/CategoriesSideOne';
+import FixedCategoriesSideOne from '../../CategoriesSide/FixedCategoriesSideOne/FixedCategoriesSideOne';
 
 const FixedHeaderTwo = ({ setOpenSidebar }) => {
   const router = useRouter();
@@ -51,7 +51,7 @@ const FixedHeaderTwo = ({ setOpenSidebar }) => {
           </Link>
         </div>
         <div className={cls.links}>
-          <CategoriesSideOne classCustome={true} open={false} show={scrollTop >= 200 ? true : false} scrollTop={scrollTop} />
+          <FixedCategoriesSideOne classCustome={true} open={false} show={false} scrollTop={scrollTop} />
           <ul className={cls.mainLinks}>
             <li className={`${router.pathname == "/" ? cls.active : ""}`}>
               <Link href="/">

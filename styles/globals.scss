@@ -868,6 +868,66 @@ button.swal2-cancel {
   }
 }
 
+.darkSmallCustomSliderArrows {
+  position: relative;
+
+  .custom-swiper-next,
+  .custom-swiper-prev {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: var(--text-color);
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+
+    i {
+      font-size: 2rem;
+
+      @include xs {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .custom-swiper-next {
+    right: -5%;
+
+    @include sm {
+      right: -6.5%;
+    }
+
+    @include xs {
+      right: -12.5%;
+    }
+  }
+
+  .custom-swiper-prev {
+    left: -3%;
+
+    @include md {
+      left: -2%;
+    }
+
+    @include sm {
+      left: -3%;
+    }
+  }
+
+  &:hover {
+
+    .custom-swiper-next,
+    .custom-swiper-prev {
+      opacity: 1;
+    }
+  }
+}
+
 .plainArrows {
 
   .swiper-button-next,
@@ -998,4 +1058,17 @@ button.swal2-cancel {
       animation: detailsAppear 1.5s forwards;
     }
   }
+}
+
+// GLOBAL TEMPLATES STYLES
+.margin {
+  margin: 80px 0;
+}
+
+.marginTop {
+  margin: 80px 0 0;
+}
+
+.marginBottom {
+  margin: 0px 0 80PX;
 }
