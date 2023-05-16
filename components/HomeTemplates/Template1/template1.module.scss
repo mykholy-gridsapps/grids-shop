@@ -1,0 +1,6 @@
+@import "../../../styles/mixins.scss";
+.side {
+    @include md {
+        display: none;
+    }
+}

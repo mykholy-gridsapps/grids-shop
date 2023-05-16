@@ -1,0 +1,52 @@
+.collection {
+  margin: 20px 0;
+
+  .head {
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .pagination {
+      margin: 16px 5.5% 0;
+
+      .bullet {
+        border: 2px solid var(--text-dark);
+        width: 14px;
+        height: 14px;
+        background: transparent;
+        opacity: 1;
+        position: relative;
+
+        &:hover {
+          border: 2px solid var(--text-dark);
+        }
+
+        &.active {
+          border: 2px solid var(--text-dark);
+
+          &::before {
+            width: 4px;
+            height: 4px;
+            content: "";
+            display: block;
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            background-color: var(--text-dark);
+            transition: all 0.3s;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

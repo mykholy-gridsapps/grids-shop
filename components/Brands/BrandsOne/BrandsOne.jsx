@@ -7,22 +7,27 @@ import cls from './brandsOne.module.scss'
 const BrandsOne = () => {
     return (
 
-        <Swiper
-        slidesPerView={3}
+        <Swiper 
+        className={cls.swiper}
+        slidesPerView={1}
         loop={false}
         spaceBetween={20}
         breakpoints={{
-            575: {
-                slidesPerView: 4,
-                spaceBetween: 40,
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            480: {
+                slidesPerView: 3,
+                spaceBetween: 20,
             },
             768: {
-                slidesPerView: 6,
-                spaceBetween: 40,
+                slidesPerView: 4,
+                spaceBetween: 20,
             },
             992: {
-                slidesPerView: 6,
-                spaceBetween: 60,
+                slidesPerView: 5,
+                spaceBetween: 20,
             },
         }}>
             <SwiperSlide>
