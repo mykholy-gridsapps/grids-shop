@@ -1,30 +1,30 @@
 import { useState } from "react";
 
-import Container from "@mui/material/Container";
-
 import MiddleHeader from './MiddleHeader';
-import TopHeader from './TopHeader';
 import LinkDropdown from '../LinkDropdown/LinkDropdown';
 import CategoriesSideOne from "../../CategoriesSide/CategoriesSideOne/CategoriesSideOne";
-import AnimatedIcons from "./../../UIs/AnimatedIcons/AnimatedIcons";
+import CartDropdown from "../CartDropdown/CartDropdown";
+import WishlistDropdown from "../WishlistDropdown/WishlistDropdown";
+
+import Container from "@mui/material/Container";
+import Tooltip from "@mui/material/Tooltip";
 
 import { useTranslation } from "next-i18next";
 
-import * as animationData from "../../../public/animated/call2.json";
+import cls from './headerTen.module.scss';
+import LangSwitch from "../../switches/LangSwitch/LangSwitch";
+import ModeSwitch from "../../switches/ModeSwitch/ModeSwitch";
 
-import cls from './headerNine.module.scss';
-
-const HeaderNine = ({ openCategories }) => {
+const HeaderTen = ({ openCategories }) => {
   const [navDropdown, setNavDropdown] = useState(0);
   const { t, i18n } = useTranslation('common');
 
   return (
     <div className={cls.navbar}>
-      <TopHeader />
       <MiddleHeader />
 
       <div className={cls.navbar__main}>
-        <div className={`${cls.navbar_mainNav}`}>
+        <Container maxWidth="xl" className={`${cls.navbar_mainNav}`}>
 
           <div className={`${cls.links} ${cls[i18n.language]}`}>
             <div className={cls.sideCategories}>
@@ -90,17 +90,56 @@ const HeaderNine = ({ openCategories }) => {
             </ul>
           </div>
 
-          <div className={cls.contact}>
-            <AnimatedIcons animationData={animationData} />
-            <div>
-              <h6>1900-888</h6>
-              <span>24/7 support center</span>
+          <div className={cls.actions}>
+            <LangSwitch />
+            <ModeSwitch />
+
+            <div className={cls.compare}>
+              <Tooltip title="compare" placement="top">
+                <span onClick={() => router.push("/compare")}>
+                  <i className="fa-regular fa-code-compare"></i>
+                </span>
+              </Tooltip>
+            </div>
+
+            <div
+              className={cls.wishlist}
+              onMouseEnter={() => setNavDropdown("wishlist")}
+              onMouseLeave={() => setNavDropdown("")}
+            >
+              <Tooltip title="wishlist" placement="top">
+                <span onClick={() => router.push("/wishlist")}>
+                  <i className="fa-regular fa-heart"></i>
+                </span>
+              </Tooltip>
+
+              <span className={cls.num}>3</span>
+
+              {navDropdown === "wishlist" && <WishlistDropdown />}
+            </div>
+
+            <div
+              className={cls.cart}
+              onMouseEnter={() => setNavDropdown("cart")}
+              onMouseLeave={() => setNavDropdown("")}
+            >
+              <Tooltip title="Cart" placement="top">
+                <span onClick={() => router.push("/cart")}>
+                  <i className="fa-regular fa-cart-shopping"></i>{" "}
+                </span>
+              </Tooltip>
+
+              <span className={cls.num}>5</span>
+
+              {navDropdown === "cart" && <CartDropdown />}
             </div>
           </div>
-        </div>
+
+
+        </Container>
       </div>
     </div>
   );
 }
 
-export default HeaderNine;
+export default HeaderTen;

@@ -1,12 +1,19 @@
 import Link from 'next/link';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from "swiper";
 
 import 'swiper/css';
+import "swiper/css/navigation";
 import cls from './blogThirteen.module.scss';
 
 const BlogThirteen = () => {
   const array = [...Array(5)];
+
+  const navigation = {
+    nextEl: '.custom-swiper-next',
+    prevEl: '.custom-swiper-prev',
+  };
 
   const breakpoints = {
     300: {
@@ -24,8 +31,10 @@ const BlogThirteen = () => {
   }
 
   return (
-    <div className={cls.blog}>
+    <div className={`${cls.blog} darkSmallCustomSliderArrows`}>
       <Swiper
+        modules={[Navigation]}
+        navigation={navigation}
         slidesPerView={1}
         loop={false}
         spaceBetween={10}
@@ -61,6 +70,8 @@ const BlogThirteen = () => {
           </SwiperSlide>
         )}
       </Swiper>
+      <button className='custom-swiper-prev'><i class="fa-sharp fa-light fa-angle-left"></i></button>
+      <button className='custom-swiper-next'><i class="fa-sharp fa-light fa-angle-right"></i></button>
     </div>
   )
 }

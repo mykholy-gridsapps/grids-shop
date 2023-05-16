@@ -3,3 +3,7 @@ export { default as Template2 } from './HomeTemplates/Template2/Template2';
 export { default as Template3 } from './HomeTemplates/Template3/Template3';
 
 export { default as Template43 } from './HomeTemplates/Template43/Template43';
+
+export { default as Template44 } from './HomeTemplates/Template44/Template44';
+
+export { default as Template45 } from './HomeTemplates/Template45/Template45';

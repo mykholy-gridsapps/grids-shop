@@ -12,15 +12,13 @@ import BrandsOne from '../../Brands/BrandsOne/BrandsOne';
 // MATERIAL STUFF
 import Container from "@mui/material/Container";
 import Grid from '@mui/material/Grid';
-// STYLES
-import cls from './template43.module.scss';
 
 const Template43 = () => {
   return (
-    <div className={cls.template}>
+    <div>
       <Container maxWidth="xl">
 
-        <HeaderNine />
+        <HeaderNine openCategories={true} />
 
         <Grid container>
           <Grid item md={2.8}></Grid>
