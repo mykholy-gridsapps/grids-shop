@@ -3,11 +3,10 @@
 .wrapper {
     border: 1px solid var(--border-color);
     position: relative;
-    margin-bottom: 20px;
 
     &.categoriesAbsolute {
         position: absolute !important;
-        left: 0px;
+        left: 24px;
         z-index: 9;
         width: 270px;
         cursor: pointer;

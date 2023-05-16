@@ -75,6 +75,20 @@
   }
 }
 
+%flatBtn {
+  padding: 8px 25px;
+  background-color: var(--main-color);
+  color: var(--text-inside);
+  border: 2px solid var(--main-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
+
 %outlinedBtn {
   padding: 8px 25px;
   background-color: transparent;

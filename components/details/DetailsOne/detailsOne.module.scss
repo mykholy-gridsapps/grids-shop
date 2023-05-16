@@ -1,0 +1,41 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.details {
+  background-image: url('../../../public/imgs/lastBack.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+
+  .content {
+    span {
+      opacity: 0.7;
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .btns {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 30px;
+
+      button:first-of-type {
+        @extend %flatBtn;
+      }
+
+      button:last-of-type {
+        @extend %outlinedBtn;
+      }
+    }
+  }
+
+  @include xs {
+    background-image: none;
+  }
+}

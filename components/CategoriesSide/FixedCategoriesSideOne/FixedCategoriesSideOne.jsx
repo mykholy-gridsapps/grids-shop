@@ -3,9 +3,9 @@ import { useState } from "react";
 
 import { useTranslation } from "next-i18next";
 
-import cls from "./categoriesSideOne.module.scss";
+import cls from "./fixedCategoriesSideOne.module.scss";
 
-const CategoriesSideOne = ({ classCustome, open, background }) => {
+const FixedCategoriesSideOne = ({ classCustome, open, background, scrollTop }) => {
   const [menu, setMenu] = useState(open);
   const { t, i18n } = useTranslation('common');
   const handleMenu = () => {
@@ -15,7 +15,7 @@ const CategoriesSideOne = ({ classCustome, open, background }) => {
     <div className={`${cls.wrapper} ${classCustome ? cls.categoriesAbsolute : ""} ${cls[i18n.language]}`}>
       <h2 className={cls.title} onClick={handleMenu} style={{ backgroundColor: background }}>Top Categories</h2>
 
-      <div className={`${cls.body} ${!menu ? cls.closed : ""}`}>
+      <div className={`${cls.body} ${!menu || scrollTop < 200 ? cls.closed : ""}`}>
         <ul className={cls.sideMenu}>
           <li>
             <Link href="demo2-shop.html">
@@ -86,4 +86,4 @@ const CategoriesSideOne = ({ classCustome, open, background }) => {
   );
 };
 
-export default CategoriesSideOne;
+export default FixedCategoriesSideOne;

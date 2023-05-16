@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
 
 import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
 
 import 'swiper/css';
 import "swiper/css/navigation";
@@ -21,27 +22,29 @@ const CollectionFourtyFive = () => {
         spaceBetween={10}
         navigation={navigation}
         modules={[Navigation]}
-        className='animatedSwiper'>
+        className='animatedSwiper plainArrows'>
         {array.map((_, idx) =>
           <SwiperSlide key={idx}>
-            <div className={cls.slide}>
-              <Grid container alignItems='center'>
-                <Grid item md={6}>
-                  <img src="/imgs/chair.webp" alt="product" />
-                </Grid>
-                <Grid item md={6}>
-                  <div className={`${cls.details} details`}>
-                    <span>PRODUCT LANDING PAGE</span>
-                    <h2>Vitr Chair - Classic Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, tenetur? Exercitationem nam eos repellendus neque beatae, excepturi asperiores iste at quas impedit obcaecati alias deserunt quos voluptas voluptate corrupti voluptatum!</p>
-                    <div className={cls.actions}>
-                      <span>$19999.00</span>
-                      <button>Add To Cart</button>
+            <Container maxWidth="xl">
+              <div className={cls.slide}>
+                <Grid container alignItems='center'>
+                  <Grid item md={6}>
+                    <img src="/imgs/chair.webp" alt="product" />
+                  </Grid>
+                  <Grid item md={6}>
+                    <div className={`${cls.details} details`}>
+                      <span>PRODUCT LANDING PAGE</span>
+                      <h2>Vitr Chair - Classic Design</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, tenetur? Exercitationem nam eos repellendus neque beatae, excepturi asperiores iste at quas impedit obcaecati alias deserunt quos voluptas voluptate corrupti voluptatum!</p>
+                      <div className={cls.actions}>
+                        <span>$19999.00</span>
+                        <button>Add To Cart</button>
+                      </div>
                     </div>
-                  </div>
+                  </Grid>
                 </Grid>
-              </Grid>
-            </div>
+              </div>
+            </Container>
           </SwiperSlide>
         )}
       </Swiper>

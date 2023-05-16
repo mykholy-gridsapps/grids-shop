@@ -1,9 +1,10 @@
 @import '../../../styles/extends.scss';
 
 .collection {
+  background-color: var(--main-color);
+
   .slide {
-    background-color: var(--light-main-color);
-    // color: var(--text-inside);
+    color: var(--text-inside);
     padding: 50px 20px;
 
     img {

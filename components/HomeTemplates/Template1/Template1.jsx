@@ -8,7 +8,7 @@ import SaleOne from "../../Sale/SaleOne/SaleOne";
 import SaleTwo from "../../Sale/SaleTwo/SaleTwo";
 import SaleThree from "../../Sale/SaleThree/SaleThree";
 import SaleFour from "../../Sale/SaleFour/SaleFour";
-import CollectionFiftyEight from "../../Collections/CollectionFiftyEight/CollectionFiftyEight";
+import CollectionSixty from "../../Collections/CollectionSixty/CollectionSixty";
 import BrandsOne from "../../Brands/BrandsOne/BrandsOne";
 import CollectionFiftyNine from "../../Collections/CollectionFiftyNine/CollectionFiftyNine";
 import FeaturesOne from "../../Features/FeaturesOne/FeaturesOne"
@@ -47,7 +47,7 @@ const Template1 = () => {
                  <SaleFour />
               </Grid>
             </Grid>
-            <CollectionFiftyEight />
+            <CollectionSixty />
             <BrandsOne />
             <CollectionFiftyNine />
             <FeaturesOne />

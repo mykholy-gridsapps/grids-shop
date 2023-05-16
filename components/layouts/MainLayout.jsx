@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSelector } from 'react-redux';
 
 import FooterThirteen from "../Footers/FooterThirteen/FooterThirteen";
-import FooterTweleve from "../Footers/FooterTweleve/FooterTweleve";
+import FooterTwelve from "../Footers/FooterTwelve/FooterTwelve";
 import FooterEleven from "../Footers/FooterEleven/FooterEleven";
 import FooterTen from "../Footers/FooterTen/FooterTen";
 import FooterNine from "../Footers/FooterNine/FooterNine";

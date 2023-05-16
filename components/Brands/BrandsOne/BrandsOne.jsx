@@ -48,6 +48,9 @@ const BrandsOne = () => {
             <SwiperSlide>
                 <img src="./imgs/brands/brand6.png" alt="brand" width="140" height="60" />
             </SwiperSlide>
+            <SwiperSlide>
+                <img src="./imgs/brands/brand6.png" alt="brand" width="140" height="60" />
+            </SwiperSlide>
         </Swiper>
     )
 }
