@@ -38,13 +38,13 @@ const Template1 = () => {
             <SliderOne />
             <Grid container spacing={3}>
               <Grid item md={4} xs={12}>
-                 <SaleTwo />
+                <SaleTwo />
               </Grid>
               <Grid item md={4} xs={12}>
-                 <SaleThree />
+                <SaleThree />
               </Grid>
               <Grid item md={4} xs={12}>
-                 <SaleFour />
+                <SaleFour />
               </Grid>
             </Grid>
             <CollectionSixty />

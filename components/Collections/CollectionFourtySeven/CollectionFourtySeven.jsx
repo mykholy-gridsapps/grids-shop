@@ -1,4 +1,4 @@
-import ProductTwentyNine from '../../ProductCard/ProductTwentyNine/ProductTwentyNine';
+import ProductFourtySeven from '../../ProductCard/ProductFourtySeven/ProductFourtySeven';
 
 import Grid from '@mui/material/Grid';
 
@@ -79,7 +79,7 @@ const CollectionFourtySeven = () => {
               className='lightSwiper'>
               {array.map((_, idx) =>
                 <SwiperSlide key={idx}>
-                  <ProductTwentyNine />
+                  <ProductFourtySeven />
                 </SwiperSlide>
               )}
             </Swiper>

@@ -7,7 +7,7 @@
     background-color: var(--special-background);
     border-radius: 15px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 10px 20px;
 
     img {
       max-height: 365px;
@@ -30,10 +30,11 @@
       gap: 10px;
 
       li {
-        padding: 5px 20px;
+        padding: 5px 15px;
         border-radius: 5px;
         font-size: 0.9rem;
         background-color: var(--secondary-background);
+        cursor: pointer;
 
         &:hover {
           filter: brightness(0.9);
@@ -44,7 +45,7 @@
 
   .offer {
     gap: 20px;
-    padding: 30px 20px;
+    padding: 20px;
     border-radius: 15px;
     position: relative;
     overflow: hidden;

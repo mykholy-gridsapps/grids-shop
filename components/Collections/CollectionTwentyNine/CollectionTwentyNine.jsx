@@ -6,8 +6,6 @@ import { useTranslation } from 'next-i18next';
 
 import cls from './collectionTwentyNine.module.scss';
 import Product from './Product/Product';
-import ProductEighteen from '../../ProductCard/ProductEighteen/ProductEighteen';
-import CategoriesSixteen from '../CategoriesSixteen/CategoriesSixteen';
 import ProductSeventeen from '../../ProductCard/ProductSeventeen/ProductSeventeen';
 
 const CollectionTwentyNine = () => {
