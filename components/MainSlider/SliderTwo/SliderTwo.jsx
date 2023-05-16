@@ -15,7 +15,12 @@ const SliderTwo = () => {
     const { t, i18n } = useTranslation('common')
     return (
         <div className={`${cls.slider} ${cls[i18n.language]}`}>
-            <Swiper slidesPerView={1} loop={true} spaceBetween={0} navigation={navigation} modules={[Navigation]}>
+            <Swiper 
+            slidesPerView={1} 
+            loop={true} 
+            spaceBetween={0} 
+            navigation={navigation} 
+            modules={[Navigation]}>
                 <SwiperSlide>
                     <div className={cls.slide1}>
                         <img src="./imgs/slider/slider-2-1.jpg" alt="client" />

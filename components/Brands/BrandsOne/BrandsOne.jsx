@@ -4,10 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import cls from './brandsOne.module.scss'
 
-const BrandsOne = () => {
+const BrandsOne = ({border, slides}) => {
     return (
 
         <Swiper 
+        style={{border: border}}
         className={cls.swiper}
         slidesPerView={1}
         loop={false}
@@ -26,7 +27,7 @@ const BrandsOne = () => {
                 spaceBetween: 20,
             },
             992: {
-                slidesPerView: 5,
+                slidesPerView: slides,
                 spaceBetween: 20,
             },
         }}>

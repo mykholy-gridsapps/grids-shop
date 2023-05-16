@@ -7,9 +7,9 @@ import { i18n, useTranslation } from 'next-i18next'
 import Link from 'next/link';
 import { Rating } from '@mui/material';
 
-import cls from './productTweleve.module.scss'
+import cls from './productTwelve.module.scss'
 
-const ProductTweleve = () => {
+const ProductTwelve = () => {
     const { t, i18n } = useTranslation('common');
     const dispatch = useDispatch()
     
@@ -73,4 +73,4 @@ const ProductTweleve = () => {
     )
 }
 
-export default ProductTweleve
+export default ProductTwelve

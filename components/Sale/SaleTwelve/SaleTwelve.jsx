@@ -1,7 +1,7 @@
 import React from "react";
-import cls from "./saleTweleve.module.scss"
+import cls from "./saleTwelve.module.scss"
 
-const SaleTweleve = () => {
+const SaleTwelve = () => {
     return (
         <div className={cls.banner}>
             <img src="./imgs/sale/sale-12-1.jpg" width="419" height="629" alt="Banner" />
@@ -13,4 +13,4 @@ const SaleTweleve = () => {
         </div>
     )
 }
-export default SaleTweleve; 
+export default SaleTwelve; 

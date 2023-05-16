@@ -3,9 +3,9 @@ import React from "react";
 import cls from "./infoBoxOne.module.scss"
 
 
-const InfoBoxOne = () => {
+const InfoBoxOne = ({margin}) => {
     return (
-        <div className={cls.infoBoxesContainer}>
+        <div className={cls.infoBoxesContainer} style={{margin: margin}}>
             <Grid container >
                 <Grid item className={cls.infoBox} lg={4}>
                     <i className="fa-light fa-truck-fast"></i>

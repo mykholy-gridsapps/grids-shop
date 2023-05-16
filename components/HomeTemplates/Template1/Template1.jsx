@@ -48,7 +48,7 @@ const Template1 = () => {
               </Grid>
             </Grid>
             <CollectionSixty />
-            <BrandsOne />
+            <BrandsOne slides="5"/>
             <CollectionFiftyNine />
             <FeaturesOne />
           </Grid>

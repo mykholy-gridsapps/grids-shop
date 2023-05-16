@@ -1,0 +1,19 @@
+@import "../../../styles/mixins.scss";
+.categoryContent {
+    padding: 60px 10px 30px;
+}
+.bannersContent {
+    padding: 60px 10px 50px;
+    background-color: #f4f4f4;
+}
+.collectionContent {
+    padding: 60px 10px 40px;
+}
+.featuresContent {
+    padding: 0 10px 25px;
+    hr {
+        border-top: 1px solid #e7e7e7;
+        border-bottom: none;
+        margin-bottom: 60px;
+    }
+}
