@@ -10,7 +10,7 @@ import { useTranslation } from "next-i18next";
 
 import cls from './headerOne.module.scss';
 
-const HeaderOne = () => {
+const HeaderOne = ({bgColor}) => {
     const [navDropdown, setNavDropdown] = useState(0);
     const { t, i18n } = useTranslation('common');
 
@@ -19,7 +19,7 @@ const HeaderOne = () => {
         <TopHeader />
         <MiddleHeader />
 
-        <div className={cls.navbar__main}>
+        <div className={cls.navbar__main} style={{backgroundColor: bgColor}}>
           <Container maxWidth="xl" className={`${cls.navbar_mainNav}`}>
             <div className={cls.smallLogo}>
               <i

@@ -19,25 +19,25 @@ const CategoryTwoCarousel = () => {
             <h2 className={cls.title}>Shop By Category</h2>
             <Swiper
                 slidesPerView={5}
-                spaceBetween={0}
+                spaceBetween={20}
                 navigation={true}
                 modules={[Navigation]}
                 breakpoints={{
                     300: {
                         slidesPerView: 2,
-                        spaceBetween: 0,
+                        spaceBetween: 20,
                     },
                     500: {
                         slidesPerView: 3,
-                        spaceBetween: 0,
+                        spaceBetween: 20,
                     },
                     700: {
                         slidesPerView: 4,
-                        spaceBetween: 0,
+                        spaceBetween: 20,
                     },
                     992: {
                         slidesPerView: 5,
-                        spaceBetween: 0,
+                        spaceBetween: 20,
                     },
                 }}>
                 {array.map((_, idx) =>
