@@ -17,6 +17,8 @@
         gap: 10px
       }
       .links {
+        background-color: var(--main-color);
+        width: 100%;
         ul.navLinks {
           display: flex;
           li {

@@ -1,0 +1,82 @@
+@import '../../../styles/mixins.scss';
+
+.collection {
+
+  .head {
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.36px;
+      line-height: 25.2px;
+      margin-bottom: 19px;
+      margin-left: -8px;
+      margin-right: -8px;
+      margin-top: 0px;
+      text-align: center !important;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: "";
+        margin: 0 8px;
+        flex: 1;
+        -ms-flex: 1;
+        height: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      &::after {
+        content: "";
+        margin: 0 8px;
+        flex: 1;
+        -ms-flex: 1;
+        height: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+
+  }
+
+  :global(.swiper-button-prev) {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    color: #222529 !important;
+    left: 0px;
+    display: none;
+    text-align: center !important;
+
+    &::after {
+      color: #222529 !important;
+      font-size: 16px !important;
+    }
+  }
+
+  :global(.swiper-button-next) {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    color: #222529 !important;
+    right: 0px;
+    display: none;
+    text-align: center !important;
+
+    &::after {
+      color: #222529 !important;
+      font-size: 16px !important;
+    }
+
+  }
+
+  &:hover {
+    :global(.swiper-button-prev) {
+      display: block;
+    }
+
+    :global(.swiper-button-next) {
+      display: block;
+    }
+  }
+}
