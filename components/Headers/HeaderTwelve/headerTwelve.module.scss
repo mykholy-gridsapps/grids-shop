@@ -2,9 +2,8 @@
 
 .navbar {
   .navbar__main {
-    border-top: 1px solid var(--heavy-border);
-    border-bottom: 1px solid var(--heavy-border);
     background-color: var(--main-color);
+    padding: 5px 0;
 
     .navbar_mainNav {
       display: flex;

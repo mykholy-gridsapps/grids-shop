@@ -1,0 +1,142 @@
+.blog {
+  margin: 50px 0;
+
+  h3 {
+    margin-bottom: 5px;
+  }
+
+  .swiper {
+    padding: 10px 0;
+  }
+
+  .item {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    background-color: var(--secondary-background);
+
+    .image {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        height: 220px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        width: 100%;
+        padding: 5px 10px;
+        transition: all 0.2s ease-in-out;
+
+        div {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          position: relative;
+
+          img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+          }
+
+          span {
+            font-size: 0.9rem;
+            font-weight: 600;
+          }
+
+          .num {
+            background-color: var(--main-color);
+            width: 20px;
+            height: 20px;
+            display: grid;
+            place-content: center;
+            border-radius: 50%;
+            font-size: 0.75rem;
+            position: absolute;
+            top: -10px;
+            right: 0;
+          }
+
+          i {
+            margin: 0 5px;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .details {
+      padding: 10px 15px;
+
+      h6 {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      span {
+        display: block;
+        font-size: 0.8rem;
+        opacity: 0.8;
+      }
+
+      p {
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+
+      a {
+        display: flex;
+        align-items: flex-end;
+        gap: 2px;
+        color: var(--main-color);
+        font-weight: 600;
+        margin: 10px 0;
+        font-size: 0.9rem;
+
+        span {
+          opacity: 0;
+        }
+
+        @keyframes moving {
+          0% {
+            transform: translateX(0px);
+          }
+
+          50% {
+            transform: translateX(5px);
+          }
+
+          100% {
+            transform: translateX(0px);
+          }
+        }
+
+        &:hover {
+          opacity: 1;
+
+          span {
+            opacity: 1;
+            animation: moving 1s forwards infinite;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .image {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,6 @@
 @import '../../../styles/mixins.scss';
 
 .newsletterBanner {
-    margin: 40px 0;
     background-color: var(--main-color);
     padding: 16px 16px 7px;
 
@@ -20,7 +19,7 @@
         i {
             margin: 0 15px 9px 0;
             font-size: 45px;
-            color: var(--bg-color) !important;
+            color: var(--text-inside);
 
             @include xs {
                 margin: 0;
@@ -28,10 +27,11 @@
         }
 
         .newsletterContent {
+            color: var(--text-inside);
+
             h3 {
                 font-size: 18px;
                 font-weight: 600;
-                color: var(--bg-color);
                 margin: 0;
 
                 @include xs {
@@ -106,7 +106,7 @@
             input {
                 border-radius: 0 24px 24px 0;
             }
-            
+
             button {
                 border-radius: 24px 0 0 24px;
             }

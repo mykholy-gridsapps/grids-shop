@@ -1,14 +1,46 @@
 @import "../../../styles/extends.scss";
 
 .headerMiddle {
-  padding: 10px 0;
+  padding: 5px 0;
   background-color: transparent;
   position: relative;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .headerLeft,
   .headerRight {
     display: flex;
     align-items: center;
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        opacity: 0.8;
+        font-size: 0.95rem;
+        cursor: pointer;
+
+        li {
+          span {
+            color: var(--main-color);
+            font-weight: bold;
+          }
+        }
+      }
+
+      @include md {
+        display: none;
+      }
+    }
   }
 
   .headerLeft {
@@ -54,80 +86,19 @@
         }
       }
     }
+
+    .links {
+      margin: 0 20px;
+
+      ul {
+        display: flex;
+      }
+    }
   }
 
   .headerRight {
     display: flex;
     justify-content: space-between;
-
-    .headerSearchWrapper {
-      display: flex;
-      position: static;
-      margin: 0;
-      border-width: 0;
-      box-sizing: content-box;
-      height: 45px;
-      border-radius: 30px;
-      border: 1px solid var(--heavy-border);
-      overflow: hidden;
-
-      input {
-        border: none;
-        padding: 0 20px;
-        font-size: 0.8rem;
-        min-width: 550px;
-        outline: none;
-        background-color: transparent;
-
-        @include lg {
-          min-width: 450px;
-        }
-      }
-
-      .btn {
-        position: relative;
-        border: none;
-        width: 41px;
-        height: 41px;
-        margin: 2px 2px;
-        border-radius: 50%;
-        background-color: var(--main-color);
-        color: var(--text-inside);
-        font-size: 16px;
-        text-align: center !important;
-        cursor: pointer;
-      }
-
-      @include md {
-        display: none;
-      }
-    }
-
-    .headerContact {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 5px;
-      color: var(--text-dark);
-
-      svg {
-        height: 55px !important;
-      }
-
-      h6 {
-        margin: 0;
-        font-size: 0.9rem;
-      }
-
-      a {
-        font-size: 0.8rem;
-        color: var(--text-dark);
-      }
-
-      @include md {
-        display: none;
-      }
-    }
 
     .navbar__main__account {
       display: flex;

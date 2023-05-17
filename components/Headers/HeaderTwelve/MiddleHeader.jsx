@@ -13,6 +13,8 @@ import * as animationData from "../../../public/animated/call2.json";
 
 
 import cls from "./middleHeader.module.scss";
+import LangSwitch from '../../switches/LangSwitch/LangSwitch';
+import ModeSwitch from '../../switches/ModeSwitch/ModeSwitch';
 
 const MiddleHeader = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -20,8 +22,8 @@ const MiddleHeader = () => {
 
   return (
     <Container maxWidth="xl" className={cls.headerMiddle}>
-      <Grid container justifyContent="space-between" alignItems="center">
-        <Grid item lg={3} className={cls.headerLeft}>
+      <div className={cls.wrapper}>
+        <div className={cls.headerLeft}>
           <div className={cls.logo}>
             <i
               className="fa-light fa-grid-2"
@@ -41,26 +43,35 @@ const MiddleHeader = () => {
                 />
               </span>
             </Link>
+          </div>
+          <div className={cls.links}>
+            <ul>
+              <li><i className="fa-light fa-location-dot"></i> Find A Store</li>
+              <li><i className="fa-light fa-door-open"></i> Open Until <span>9PM</span></li>
+            </ul>
+          </div>
+        </div>
 
-            <div className={cls.links}>
+        <div className={cls.headerRight}>
 
+          <div className={cls.links}>
+            <ul>
+              <li><i className="fa-light fa-address-card"></i> About us</li>
+              <li><i className="fa-light fa-truck"></i> Track order</li>
+            </ul>
+            <LangSwitch />
+            <ModeSwitch />
+          </div>
+
+          <div className={cls.navbar__main__account}>
+            <div className={cls.search} onClick={() => setOpenSmallSearch(prev => !prev)}>
+              <span>
+                <i className="fa-light fa-magnifying-glass"></i>
+              </span>
             </div>
           </div>
-        </Grid>
-
-        <Grid item lg={9}>
-          <div className={cls.headerRight}>
-
-            <div className={cls.navbar__main__account}>
-              <div className={cls.search} onClick={() => setOpenSmallSearch(prev => !prev)}>
-                <span>
-                  <i className="fa-light fa-magnifying-glass"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-        </Grid>
-      </Grid>
+        </div>
+      </div>
 
       {/* SMALL SCREEN SIDE BAR */}
       <MobSidebar

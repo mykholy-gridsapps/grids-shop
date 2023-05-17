@@ -1,0 +1,20 @@
+@import '../../../styles/mixins.scss';
+
+.collection {
+  .image {
+    height: 95%;
+
+    @include xs {
+      margin-bottom: 20px;
+      height: 90%;
+    }
+  }
+
+  .products {
+    .sale {
+      margin-top: 20px;
+    }
+  }
+
+  .image {}
+}

@@ -1,9 +1,8 @@
 import HorizontalProductCardOne from "../../HorizontalProductCard/HorizontalProductCardOne/HorizontalProductCardOne"
-import SwiperCore, { Pagination } from 'swiper/core';
 
+import { Grid } from "@mui/material";
 
 import cls from './collectionFiftyNine.module.scss';
-import { Grid } from "@mui/material";
 
 const CollectionFiftyEight = () => {
 

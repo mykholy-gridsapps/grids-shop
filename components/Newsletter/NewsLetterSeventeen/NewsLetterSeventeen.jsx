@@ -1,6 +1,6 @@
 import { useTranslation } from 'next-i18next';
 
-import cls from './newsLetterSeventeen.module.scss';
+import cls from './newsletterSeventeen.module.scss';
 
 const NewsLetterSeventeen = () => {
   const { i18n } = useTranslation('common');
