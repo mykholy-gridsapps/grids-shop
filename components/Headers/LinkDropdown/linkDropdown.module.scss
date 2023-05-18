@@ -10,6 +10,7 @@
   padding: 10px 20px;
   border-top: 3px solid var(--main-color);
   animation: show 0.3s forwards;
+
   .linkDropdown {
     h5 {
       color: var(--main-color);
@@ -17,8 +18,10 @@
       height: unset !important;
       line-height: 40px !important;
     }
+
     ul {
       display: block !important;
+
       li {
         color: var(--text-color) !important;
         padding: 5px 0 !important;
@@ -27,20 +30,24 @@
         line-height: 22px !important;
         height: auto !important;
         background: none !important;
+
         &:hover {
           text-decoration: underline;
         }
       }
     }
+
     img {
       object-fit: contain;
     }
   }
+
   @keyframes show {
     0% {
       opacity: 0;
       transform: translateY(30px);
     }
+
     100% {
       opacity: 1;
       transform: translateY(0px);

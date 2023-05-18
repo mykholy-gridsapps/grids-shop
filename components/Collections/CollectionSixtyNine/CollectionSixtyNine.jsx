@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
-import ProductThirty from '../../ProductCard/ProductThirty/ProductThirty';
+import ProductThirtySix from '../../ProductCard/ProductThirtySix/ProductThirtySix';
 
 import Grid from '@mui/material/Grid';
 
 import { useTranslation } from "next-i18next";
 
-import cls from './collectionFiftyEight.module.scss';
+import cls from './collectionSixtyNine.module.scss';
 
-const CollectionFiftyEight = () => {
+const CollectionSixtyNine = () => {
   const [currentTabIndex, setCurrentTabIndex] = useState('Today Deals')
   const { t, i18n } = useTranslation('common');
 
@@ -44,13 +44,21 @@ const CollectionFiftyEight = () => {
         <Grid container>
           {[...Array(8)].map((_, idx) => (
             <Grid item xs={12} sm={6} md={4} lg={3} key={idx}>
-              <ProductThirty />
+              <ProductThirtySix />
             </Grid>
           ))}
         </Grid>
+      </div>
+
+      <div className={cls.btn}>
+        <button>
+          <span>
+            Load More Products
+          </span>
+        </button>
       </div>
     </div>
   );
 }
 
-export default CollectionFiftyEight;
+export default CollectionSixtyNine;

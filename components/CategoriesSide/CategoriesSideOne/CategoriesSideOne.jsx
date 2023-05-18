@@ -13,7 +13,10 @@ const CategoriesSideOne = ({ classCustome, open, background }) => {
   }
   return (
     <div className={`${cls.wrapper} ${classCustome ? cls.categoriesAbsolute : ""} ${cls[i18n.language]}`}>
-      <h2 className={cls.title} onClick={handleMenu} style={{ backgroundColor: background }}>Top Categories</h2>
+      <h2 className={cls.title} onClick={handleMenu} style={{ backgroundColor: background }}>
+        <i class="fa-regular fa-bars"></i>
+        Top Categories
+      </h2>
 
       <div className={`${cls.body} ${!menu ? cls.closed : ""}`}>
         <ul className={cls.sideMenu}>

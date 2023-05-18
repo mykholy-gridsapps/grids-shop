@@ -16,6 +16,13 @@
             padding: 11px 20px;
             background: var(--bg-dark-color);
             color: var(--text-inside);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            i {
+                font-size: 1.2rem;
+            }
         }
 
         .body {

@@ -27,7 +27,7 @@ const BlogFourteen = () => {
       <Swiper
         slidesPerView={1}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}

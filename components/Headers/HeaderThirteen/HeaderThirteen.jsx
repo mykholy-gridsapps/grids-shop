@@ -1,11 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import MobSidebar from "../MobSidebar/MobSidebar";
 import SmallScreenSearch from '../SmallScreenSearch/SmallScreenSearch';
-import LangSwitch from '../../switches/LangSwitch/LangSwitch';
-import ModeSwitch from '../../switches/ModeSwitch/ModeSwitch';
 import LinkDropdown from '../LinkDropdown/LinkDropdown';
 import CartDropdown from "../CartDropdown/CartDropdown";
 import WishlistDropdown from "../WishlistDropdown/WishlistDropdown";
@@ -23,10 +21,6 @@ const MiddleHeader = () => {
   const [openSmallSearch, setOpenSmallSearch] = useState(false);
   const [navDropdown, setNavDropdown] = useState(0);
   const { t, i18n } = useTranslation('common');
-
-  useEffect(() => {
-    console.log(openSidebar)
-  }, [openSidebar])
 
   return (
     <Container maxWidth="xl" className={cls.headerMiddle}>
