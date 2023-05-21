@@ -1,11 +1,11 @@
 import React from "react";
 import cls from "./saleThree.module.scss"
 
-const SaleThree = () => {
+const SaleThree = ({imgHeight}) => {
     return (
         <div className={cls.banner}>
             <figure>
-                <img src="./imgs/sale/sale-3-1.jpg" alt="banner" />
+                <img src="./imgs/sale/sale-3-1.jpg" alt="banner" style={{height: imgHeight}}/>
             </figure>
             <div className={cls.bannerLayer}>
                 <h3>Deal Promos</h3>

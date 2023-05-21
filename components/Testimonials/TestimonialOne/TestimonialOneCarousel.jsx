@@ -12,18 +12,21 @@ const TestimonialOneCarousel = () => {
     const { t, i18n } = useTranslation('common');
     const pagination = {
         clickable: true,
-        
+
     };
     return (
+        <div className={cls.testimonal}>
+            <h2>LATEST REVIEWS</h2>
 
-        <Swiper className={`${cls.widgetTestimonials} ${cls[i18n.language]}`} pagination={pagination} modules={[Pagination]}>
-            <SwiperSlide>
-                <TestimonalOne />
-            </SwiperSlide>
-            <SwiperSlide>
-                <TestimonalOne />
-            </SwiperSlide>
-        </Swiper>
+            <Swiper className={`${cls.widgetTestimonials} ${cls[i18n.language]}`} pagination={pagination} modules={[Pagination]}>
+                <SwiperSlide>
+                    <TestimonalOne />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <TestimonalOne />
+                </SwiperSlide>
+            </Swiper>
+        </div>
     )
 }
 

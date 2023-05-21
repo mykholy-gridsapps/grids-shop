@@ -1,0 +1,57 @@
+@import "../../../styles/extends.scss";
+
+.headerTop {
+  padding: 7px 0;
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--main-color);
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .headerLeft, .headerRight {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .topMessage {
+        margin: 0 30px;
+        font-size: 0.8rem;
+        @include md {
+          display: none;
+        }
+      }
+      .linksList {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 0 30px;
+        li {
+          a {
+            color: #fff;
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .social_icons {
+        display: flex;
+        gap: 0px;
+        align-items: center;
+        i {
+          cursor: pointer;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          display: grid;
+          place-items: center;
+          &:hover {
+            background-color: var(--secondary-background);
+            color: var(--main-color);
+          }
+        }
+      }
+    }
+  }
+  @include sm {
+    display: none;
+  }
+}
