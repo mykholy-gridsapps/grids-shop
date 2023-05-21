@@ -12,11 +12,11 @@ import { Navigation } from "swiper";
 import 'swiper/css';
 import cls from './collectionFifty.module.scss';
 
-const CollectionFifty = () => {
+const CollectionFifty = ({ slides }) => {
   const [activeLink, setActiveLink] = useState('NEW');
 
   const array = [...Array(3)];
-  const products = [...Array(8)];
+  const products = [...Array(slides || 8)];
   const navigation = {
     nextEl: '.custom-swiper-next2',
     prevEl: '.custom-swiper-prev2',
@@ -56,7 +56,7 @@ const CollectionFifty = () => {
               className={cls.swiper}>
               {array.map((_, idx) =>
                 <SwiperSlide key={idx}>
-                  <Grid container justifyContent="center">
+                  <Grid container spacing={2} justifyContent="center">
                     {products.map((_, idx) => (
                       <Grid item xs={12} sm={6} md={4} lg={4} xl={3} key={idx}>
                         <ProductThirtyFour />

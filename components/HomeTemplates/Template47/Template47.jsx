@@ -1,11 +1,17 @@
 import HeaderFifteen from '../../Headers/HeaderFifteen/HeaderFifteen';
-import SliderFourteen from '../../MainSlider/SliderFourteen/SliderFourteen';
-import CategoriesThirtySix from '../../Categories/CategoriesThirtySix/CategoriesThirtySix';
+import SliderThree from '../../MainSlider/SliderThree/SliderThree';
+import CategoriesThirtyEight from '../../Categories/CategoriesThirtyEight/CategoriesThirtyEight';
+import CollectionFourtyEight from '../../Collections/CollectionFourtyEight/CollectionFourtyEight';
+import CollectionFourtyNine from '../../Collections/CollectionFourtyNine/CollectionFourtyNine';
+import CollectionSeventyOne from '../../Collections/CollectionSeventyOne/CollectionSeventyOne';
+import CollectionFifty from '../../Collections/CollectionFifty/CollectionFifty';
+import CollectionSeventyTwo from '../../Collections/CollectionSeventyTwo/CollectionSeventyTwo';
+import BlogTwelve from '../../Blogs/BlogTwelve/BlogTwelve';
+
+import FeaturesFifteen from '../../Features/FeaturesFifteen/FeaturesFifteen';
 import FooterEighteen from '../../Footers/FooterEighteen/FooterEighteen';
 
 import Container from '@mui/material/Container';
-
-import cls from './template47.module.scss';
 
 const Template47 = () => {
   return (
@@ -13,13 +19,48 @@ const Template47 = () => {
 
       <HeaderFifteen />
 
-      <SliderFourteen />
+      <SliderThree />
+
+      <CategoriesThirtyEight />
 
       <Container maxWidth="xl">
-        <CategoriesThirtySix />
+
+        <div className="marginTop">
+          <CollectionFourtyEight />
+        </div>
+
+        <CollectionSeventyOne />
+
+        <div className="margin">
+          <FeaturesFifteen />
+        </div>
+
+        <div className="marginTop">
+          <CollectionFourtyEight reverse={true} />
+        </div>
+
+        <CollectionSeventyOne reverse={true} />
+
+        <div className='margin'>
+          <CollectionFifty slides={4} />
+        </div>
+
+      </Container>
+
+      <CollectionSeventyTwo />
+
+      <Container maxWidth="xl">
+
+        <div className='marginTop'>
+          <CollectionFourtyNine />
+        </div>
+
+        <BlogTwelve />
+
       </Container>
 
       <FooterEighteen />
+
 
     </div>
   )

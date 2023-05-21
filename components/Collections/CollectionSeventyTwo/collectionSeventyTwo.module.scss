@@ -2,7 +2,7 @@
 @import '../../../styles/mixins.scss';
 
 .collection {
-  margin: 50px 0;
+  background-color: var(--special-background);
 
   .big {
     display: flex;
@@ -17,9 +17,23 @@
       align-items: center;
       justify-content: space-between;
       gap: 10px;
-      padding: 0 10px 5px;
-      border-bottom: 1px solid var(--heavy-border);
       margin-bottom: 20px;
+      border-bottom: 1px solid var(--heavy-border);
+
+      h4 {
+        position: relative;
+        padding: 10px 0 5px;
+        display: flex;
+        justify-content: flex-start;
+
+        span {
+          position: absolute;
+          bottom: -5px;
+          height: 2px;
+          width: 150px;
+          background-color: var(--secondary-color);
+        }
+      }
 
       div {
         display: flex;

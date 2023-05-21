@@ -1,17 +1,19 @@
 .pagesDropdown {
   position: absolute;
   z-index: 9999;
-  top: 90%;
+  top: 50%;
   left: 0;
   width: 100%;
-  min-height: 400px;
-  background-color: var(--secondary-background);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
-  border-top: 3px solid var(--main-color);
   animation: show 0.3s forwards;
+  padding-top: 30px;
 
   .linkDropdown {
+    min-height: 400px;
+    background-color: var(--secondary-background);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-top: 3px solid var(--main-color);
+
     h5 {
       color: var(--main-color);
       font-size: 1rem;
