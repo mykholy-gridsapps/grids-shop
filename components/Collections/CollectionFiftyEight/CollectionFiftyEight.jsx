@@ -2,15 +2,10 @@ import { useState } from 'react';
 
 import ProductThirty from '../../ProductCard/ProductThirty/ProductThirty';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from "swiper";
-
 import Grid from '@mui/material/Grid';
 
 import { useTranslation } from "next-i18next";
 
-import 'swiper/css';
-import "swiper/css/navigation";
 import cls from './collectionFiftyEight.module.scss';
 
 const CollectionFiftyEight = () => {

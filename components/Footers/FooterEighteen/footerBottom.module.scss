@@ -1,0 +1,11 @@
+.footerBottom {
+    border-top: 1px solid rgb(70, 91, 122);
+    padding: 10px 0;
+    align-items: center !important;
+    justify-content: center;
+    display: flex !important;
+
+    .footerCopyright {
+        color: var(--text-inside);
+    }
+}

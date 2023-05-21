@@ -1,0 +1,70 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.collection {
+  background-color: var(--special-background);
+
+  .big {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .products {
+    .head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--heavy-border);
+
+      h4 {
+        position: relative;
+        padding: 10px 0 5px;
+        display: flex;
+        justify-content: flex-start;
+
+        span {
+          position: absolute;
+          bottom: -5px;
+          height: 2px;
+          width: 150px;
+          background-color: var(--secondary-color);
+        }
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin: 0 20px;
+
+          li {
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+
+            &.active {
+              color: var(--secondary-color);
+            }
+          }
+
+          @include xs {
+            margin: 0;
+          }
+        }
+      }
+
+      button {
+        @extend %swiperCustomArrows;
+      }
+    }
+  }
+}

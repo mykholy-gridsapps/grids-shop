@@ -11,7 +11,7 @@ import { Navigation } from "swiper";
 import 'swiper/css';
 import cls from './collectionFourtyEight.module.scss';
 
-const CollectionFourtyEight = () => {
+const CollectionFourtyEight = ({ reverse }) => {
   const [activeLink, setActiveLink] = useState('NEW')
 
   const array = [...Array(3)];
@@ -29,7 +29,7 @@ const CollectionFourtyEight = () => {
 
   return (
     <div className={cls.collection}>
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={2} justifyContent="center" flexDirection={reverse ? "row-reverse" : ""}>
         <Grid item xs={12} lg={5}>
           <div className={cls.big}>
             <OfferCardFive />

@@ -1,0 +1,51 @@
+@import '../../../styles/mixins.scss';
+
+.collection {
+  .image {
+    img {
+      min-height: 550px;
+
+      @include lg {
+        min-height: 600px;
+      }
+
+      @include sm {
+        min-height: 400px;
+      }
+    }
+  }
+
+  .products {
+    height: 100%;
+    background-color: var(--special-background);
+    padding: 30px;
+
+    .head {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+
+      * {
+        text-align: center !important;
+      }
+
+      h5 {
+        margin: 0;
+      }
+
+      p {
+        font-size: 0.85rem;
+        max-width: 60%;
+        opacity: 0.8;
+      }
+    }
+
+    .swiper {
+      &>div {
+        padding-bottom: 40px;
+      }
+    }
+  }
+}

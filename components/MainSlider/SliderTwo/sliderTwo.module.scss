@@ -16,8 +16,7 @@ $sliderOneColor2: var(--text-dark);
             right: 4%;
             padding-bottom: 6px;
 
-            @include md {
-            }
+            @include md {}
 
             h2 {
                 color: $sliderOneColor1;
