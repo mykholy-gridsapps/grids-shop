@@ -12,6 +12,7 @@ const CollectionFiftyOne = () => {
     <div className={cls.collection}>
       <div className={cls.head}>
         <h4>MOST POPULAR FOR MAN</h4>
+        <span></span>
       </div>
       <Grid container spacing={2}>
         <Grid item xs={12} lg={4}>

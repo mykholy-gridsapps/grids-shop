@@ -13,7 +13,6 @@ const FooterNineteen = () => {
       <Container maxWidth="xl">
         <FooterBottom></FooterBottom>
       </Container>
-
     </Box>
   );
 };

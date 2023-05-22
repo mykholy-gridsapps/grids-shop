@@ -4,22 +4,44 @@
   margin: 50px 0;
 
   .head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 10px 5px;
     border-bottom: 1px solid var(--heavy-border);
     margin-bottom: 20px;
-    position: relative;
 
-    span {
-      position: absolute;
-      bottom: -1px;
-      height: 3px;
-      width: 150px;
-      background-color: var(--secondary-color);
+    div {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 20px;
+
+        li {
+          font-size: 0.9rem;
+          font-weight: 600;
+          cursor: pointer;
+
+          &.active {
+            color: var(--secondary-color);
+          }
+        }
+
+        @include xs {
+          margin: 0;
+        }
+      }
     }
 
-    @include xs {
-      h4 {
-        font-size: 1.1rem;
-      }
+    button {
+      @extend %swiperCustomArrows;
     }
   }
 

@@ -4,49 +4,60 @@
   padding: 10px 0;
   background-color: var(--main-color);
   position: relative;
+
   .headerLeft,
   .headerRight {
     display: flex;
     align-items: center;
   }
+
   .headerLeft {
     .logo {
       display: flex;
       align-items: center;
       gap: 10px;
+
       a {
         color: #fff;
       }
+
       i {
         cursor: pointer;
         font-size: 1.2rem;
         cursor: pointer;
         display: none;
-        color: #fff;
+        color: var(--text-inside);
+
         @include md {
           display: block;
         }
       }
+
       .bigImage {
         height: 75px;
+
         @include md {
           display: none;
         }
       }
+
       .smallImage {
         display: none;
         height: 50px;
         width: 120px;
         object-fit: contain;
+
         @include md {
           display: inline-block;
         }
       }
     }
   }
+
   .headerRight {
     display: flex;
     justify-content: space-between;
+
     .headerSearchWrapper {
       display: flex;
       position: static;
@@ -59,6 +70,7 @@
       border: 1px solid #fff;
       overflow: hidden;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
       input {
         border: none;
         padding: 0 20px;
@@ -68,10 +80,12 @@
         background-color: var(--secondary-background);
         color: #000;
       }
+
       .selectCustom {
         margin: 0;
         background: transparent;
         position: relative;
+
         select {
           width: 135px;
           border: none;
@@ -84,11 +98,13 @@
           background: transparent;
           padding: 0 10px;
           outline: none;
+
           option {
             color: #000;
           }
         }
       }
+
       .btn {
         position: relative;
         border: none;
@@ -101,6 +117,7 @@
         text-align: center !important;
         cursor: pointer;
       }
+
       @include md {
         display: none;
       }
@@ -111,18 +128,22 @@
       align-items: center;
       justify-content: center;
       gap: 5px;
-      color: #fff;
+      color: var(--text-inside);
+
       svg {
         height: 55px !important;
       }
+
       h6 {
         margin: 0;
         font-size: 0.9rem;
       }
+
       a {
         font-size: 0.8rem;
-        color: #fff;
+        color: var(--text-inside);
       }
+
       @include md {
         display: none;
       }
@@ -133,14 +154,17 @@
       align-items: center;
       height: 50px;
       gap: 15px;
+
       @include lg {
         gap: 10px;
       }
+
       i {
         color: #fff;
         font-size: 1.3rem;
         cursor: pointer;
       }
+
       span {
         font-weight: bold;
         color: #fff;
@@ -149,8 +173,10 @@
         display: flex;
         align-items: center;
       }
+
       .search {
         display: none;
+
         @include md {
           display: block;
         }
@@ -159,6 +185,7 @@
       .wishlist,
       .cart {
         position: relative;
+
         @include xs {
           .cartAmount {
             display: none;
@@ -167,9 +194,11 @@
       }
     }
   }
+
   @include md {
     padding: 10px 0;
   }
+
   @include sm {
     padding: 5px 0;
   }

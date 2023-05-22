@@ -6,7 +6,7 @@
   max-width: 250px;
   margin: auto;
   // background-color: var(--default-background);
-  padding: 10px;
+  // padding: 10px;
 
   .images {
     position: relative;
@@ -15,7 +15,7 @@
     margin: 0 auto 5px;
 
     img {
-      height: 250px;
+      height: 200px;
       object-fit: contain;
       transition: all 0.3s ease-in-out;
 
