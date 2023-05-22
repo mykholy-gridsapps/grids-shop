@@ -1,0 +1,105 @@
+@import url('https://fonts.cdnfonts.com/css/savoye-let');
+@import "../../../styles/mixins.scss";
+
+.banner {
+    position: relative;
+    font-size: 16px;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+
+    &.ar {
+        img {
+            transform: rotateY(180deg);
+        }
+
+        .bannerLayer {
+            left: 6%;
+            right: 6.4%;
+            text-align: right !important;
+
+            h4 {
+                text-align: right !important;
+
+            }
+        }
+    }
+
+    figure {
+        margin: 0;
+        width: 100%;
+
+        img {
+            height: auto;
+            object-fit: cover;
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+    .bannerLayer {
+        margin-top: -1px;
+        margin-right: -2px;
+        right: 6%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        left: 6.4%;
+        text-align: end !important;
+
+        h2 {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 30px;
+            margin-bottom: 16px;
+            margin-top: 0px;
+            text-align: end !important;
+            color: #222529;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 30px;
+            margin-bottom: 16px;
+            margin-top: 0px;
+            text-align: end !important;
+            color: #222529;
+        }
+
+        h4 {
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 0.15px;
+            line-height: 15px;
+            margin-bottom: 16px;
+            margin-top: 0px;
+            text-align: end !important;
+            color: #ff7272;
+
+            sup {
+                font-size: 50%;
+                top: -.5em;
+                position: relative;
+                line-height: 0;
+                vertical-align: baseline;
+            }
+
+        }
+
+
+        a {
+            background-color: var(--text-dark);
+            border-color: var(--text-dark);
+            color: var(--text-light);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 12px 25px;
+
+            @include xs {
+                padding: 5px 10px;
+            }
+        }
+    }
+}

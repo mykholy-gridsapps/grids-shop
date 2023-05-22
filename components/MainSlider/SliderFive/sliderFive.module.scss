@@ -7,14 +7,6 @@ $sliderOneColor2: var(--text-dark);
     .slide1 {
         height: 100vh;
 
-        @include sm {
-            height: 370px;
-        }
-
-        @include xs {
-            height: 230px;
-        }
-
         img {
             height: 100% !important;
             object-fit: cover;

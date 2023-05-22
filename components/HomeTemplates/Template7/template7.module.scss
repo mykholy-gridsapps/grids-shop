@@ -1,0 +1,20 @@
+@import "../../../styles/mixins.scss";
+
+.products {
+    padding-top: 5vw;
+    padding-right: 6%;
+    padding-bottom: 5vw;
+    padding-left: 6%;
+}
+
+.features {
+    margin-top: 70px;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    hr {
+        border: none;
+        border-bottom: 1px solid #e7e7e7;
+    }
+}
