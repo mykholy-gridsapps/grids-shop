@@ -1,0 +1,57 @@
+@import '../../../styles/mixins.scss';
+
+.categories {
+  margin-top: 45px;
+  margin-bottom: 48px;
+
+  .item {
+    h3 {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      line-height: 16px;
+      margin-bottom: 8px;
+      margin-top: 0px;
+      text-align: center !important;
+    }
+
+    .headingSpacer {
+      width: 10px;
+      margin: 0px auto 17px;
+      border-top: 2px solid #e13b3f;
+    }
+
+    .bannerMeta {
+      padding: 13px 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      border-bottom: 1px solid #e7e7e7;
+
+      a {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1.4px;
+        line-height: 24px;
+        text-align: start !important;
+        color: #222529;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: start !important;
+        color: #858585;
+
+        strong {
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 24px;
+          text-align: start !important;
+          color: #e13b3f;
+        }
+      }
+    }
+  }
+}

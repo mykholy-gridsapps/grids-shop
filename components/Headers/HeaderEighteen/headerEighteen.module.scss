@@ -1,0 +1,135 @@
+@import '../../../styles/mixins.scss';
+
+.header {
+  z-index: 2;
+  padding: 0 0 10px;
+  background-color: transparent;
+
+  .middleHeader {
+    display: flex !important;
+    justify-content: start;
+    align-items: center;
+    padding-top: 0;
+    position: relative;
+
+    .headerContact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 0;
+
+      svg {
+        height: 50px !important;
+      }
+
+      h6 {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+
+      a {
+        font-size: 0.8rem;
+      }
+
+      @include md {
+        display: none;
+      }
+    }
+
+    .logo {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+
+      i {
+        display: none;
+
+        @include md {
+          display: inline-block;
+        }
+      }
+
+      .bigImage {
+        height: 45px;
+        object-fit: contain;
+
+      }
+    }
+
+    .links {
+      ul {
+        display: flex;
+        gap: 20px;
+
+        li {
+          font-size: 14px;
+          font-weight: 600;
+          height: 80px;
+          line-height: 80px;
+          cursor: pointer;
+
+          i {
+            font-size: 0.7rem;
+          }
+
+          &.active {
+            a {
+              color: var(--secondary-color);
+            }
+          }
+
+          &:hover {
+            a {
+              color: var(--secondary-color)
+            }
+          }
+        }
+      }
+
+      @include md {
+        display: none;
+      }
+    }
+
+    .navbar__search__account {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      gap: 15px;
+
+      i {
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+
+      span {
+        font-weight: bold;
+        cursor: pointer;
+        height: 50px;
+        display: flex;
+        align-items: center;
+      }
+
+      .search {
+        display: none;
+
+        @include md {
+          display: block;
+        }
+      }
+
+      .wishlist,
+      .cart {
+        position: relative;
+
+        @include xs {
+          .cartAmount {
+            display: none;
+          }
+        }
+      }
+    }
+
+  }
+}
