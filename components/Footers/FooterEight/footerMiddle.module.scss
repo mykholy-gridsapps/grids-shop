@@ -145,11 +145,11 @@
             form {
                 position: relative;
                 margin-bottom: 0;
-                max-width: 370px;
+                max-width: 100%;
 
                 .formControl {
                     height: 48px;
-                    padding: 11px 124px 11px 20px;
+                    padding: 11px 16px 11px 20px;
                     margin-bottom: 10px;
                     background-color: #292c30;
                     border-radius: 30px;
@@ -163,7 +163,7 @@
                 .btn {
                     position: absolute;
                     min-width: 63px;
-                    padding: 16.5px 15px;
+                    padding: 17.5px 15px;
                     top: 0;
                     right: 0;
                     font-weight: 700;

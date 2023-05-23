@@ -1,0 +1,129 @@
+.banner {
+    position: relative;
+    font-size: 16px;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    height: 100%;
+
+    figure {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        border: 10px solid #65829d;
+
+        img {
+            height: auto;
+            object-fit: cover;
+            width: 100%;
+            display: block;
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+
+    .labelLeft {
+        position: absolute;
+        border-radius: 50%;
+        padding-top: calc(1em - .4em);
+        width: 2.184em;
+        height: 2.184em;
+        background-color: #222529;
+        letter-spacing: -0.08em;
+        line-height: 1;
+        color: #fff;
+        text-align: center !important;
+        left: 10%;
+        top: 11.4%;
+        font-size: 1.0303em;
+    }
+
+    .labelRight {
+        position: absolute;
+        border-radius: 50%;
+        padding-top: calc(1em - .4em);
+        width: 2.184em;
+        height: 2.184em;
+        background-color: #222529;
+        letter-spacing: -0.08em;
+        line-height: 1;
+        color: #fff;
+        text-align: center !important;
+        right: 10.2%;
+        top: 11.4%;
+        font-size: 0.75em;
+    }
+
+    .labelBottom {
+        position: absolute;
+        border-radius: 50%;
+        padding-top: calc(1em - .4em);
+        width: 2.184em;
+        height: 2.184em;
+        background-color: #222529;
+        letter-spacing: -0.08em;
+        line-height: 1;
+        color: #fff;
+        text-align: center !important;
+        font-size: 0.63em;
+        right: 12.2%;
+        bottom: 14.7%;
+    }
+
+    .bannerLayer {
+        top: 51%;
+        transform: translateY(-50%);
+        position: absolute;
+        left: 6%;
+        right: 6%;
+        text-align: center !important;
+
+        h3 {
+            padding-bottom: 1px;
+            font-size: 1.35em;
+            text-align: center !important;
+        }
+
+        h4 {
+            margin-bottom: 1.6rem;
+            font-size: 0.93em;
+            font-weight: 600;
+            color: #777777;
+            text-align: center !important;
+        }
+
+        a {
+            background-color: #222529;
+            color: #fff;
+            font-size: 0.75em;
+            padding: 0.83em 1.5em 0.85em;
+        }
+    }
+
+    small {
+        letter-spacing: -0.025em;
+        font-size: 70%;
+        display: inline-block;
+        font-weight: inherit;
+    }
+
+    sup {
+        position: static;
+        font-size: 75%;
+        line-height: 0;
+        vertical-align: baseline;
+    }
+
+    sub {
+        display: block;
+        font-size: 4px;
+        line-height: 1;
+        position: static;
+        font-weight: 400;
+        letter-spacing: 0;
+        padding-left: 0.1em;
+        letter-spacing: -0.025em;
+        opacity: 0.5;
+    }
+}

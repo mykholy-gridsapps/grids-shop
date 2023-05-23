@@ -315,7 +315,7 @@ $sliderTwoBg: var(--text-dark);
                         font-weight: 700;
                         letter-spacing: normal;
                         line-height: 26px;
-                        right: 58px;
+                        right: 72px;
                         text-align: center;
                         top: 64.4px;
                         letter-spacing: 0;
@@ -387,7 +387,7 @@ $sliderTwoBg: var(--text-dark);
         border-radius: 0;
         box-shadow: none;
         color: $sliderOneColor1 !important;
-        left: 100px;
+        left: 0;
         display: none;
         text-align: center !important;
 
@@ -406,7 +406,7 @@ $sliderTwoBg: var(--text-dark);
         border-radius: 0;
         box-shadow: none;
         color: $sliderOneColor1 !important;
-        right: 100px;
+        right: 0;
         display: none;
         text-align: center !important;
 
