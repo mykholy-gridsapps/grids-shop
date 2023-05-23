@@ -4,15 +4,15 @@ import { useTranslation } from "next-i18next";
 
 import cls from './productThirtyFour.module.scss';
 
-const ProductThirtyFour = () => {
+const ProductThirtyFour = ({ background }) => {
   const { i18n } = useTranslation('common');
 
   return (
-    <div className={cls.productCard}>
+    <div className={cls.productCard} style={{ backgroundColor: background }}>
       <div className={cls.sale}>
         -50%
       </div>
-      <div className={cls.images}>
+      <div className={cls.images} style={{ backgroundColor: background }}>
         <img src="/imgs/sh.png" alt="product" />
         <img src="/imgs/shoes.png" alt="product" className={cls.secondary} />
         <div className={cls.actions}>
