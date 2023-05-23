@@ -9,10 +9,14 @@ import Container from '@mui/material/Container';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
 
+import { useTranslation } from 'next-i18next';
+
 import 'swiper/css';
 import cls from './collectionSeventyTwo.module.scss';
 
-const CollectionSeventyTwo = ({ slides }) => {
+const CollectionSeventyTwo = () => {
+  const { i18n } = useTranslation('common');
+
   const products = [...Array(10)];
   const navigation = {
     nextEl: '.custom-swiper-next2',
@@ -51,8 +55,8 @@ const CollectionSeventyTwo = ({ slides }) => {
                   </h4>
                 </div>
                 <div>
-                  <button className='custom-swiper-prev2'><i className="fa-sharp fa-light fa-arrow-left fa-sm"></i></button>
-                  <button className='custom-swiper-next2'><i className="fa-sharp fa-light fa-arrow-right fa-sm"></i></button>
+                  <button className='custom-swiper-prev2'><i className={`fa-sharp fa-light fa-arrow-${i18n.language === 'ar' ? 'right' : 'left'} fa-sm`}></i></button>
+                  <button className='custom-swiper-next2'><i className={`fa-sharp fa-light fa-arrow-${i18n.language === 'ar' ? 'left' : 'right'} fa-sm`}></i></button>
                 </div>
               </div>
               <Swiper

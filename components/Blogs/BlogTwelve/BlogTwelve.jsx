@@ -76,8 +76,8 @@ const BlogTwelve = () => {
             </SwiperSlide>
           )}
         </Swiper>
-        <button className='custom-swiper-prev'><i class="fa-sharp fa-light fa-angle-left"></i></button>
-        <button className='custom-swiper-next'><i class="fa-sharp fa-light fa-angle-right"></i></button>
+        <button className='custom-swiper-prev'><i className={`fa-sharp fa-light fa-angle-${i18n.language === 'ar' ? 'right' : 'left'}`}></i></button>
+        <button className='custom-swiper-next'><i className={`fa-sharp fa-light fa-angle-${i18n.language === 'ar' ? 'left' : 'right'}`}></i></button>
       </div>
     </>
   )

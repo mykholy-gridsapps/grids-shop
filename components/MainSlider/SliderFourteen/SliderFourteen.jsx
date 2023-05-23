@@ -6,9 +6,13 @@ import { Navigation } from "swiper";
 import Grid from '@mui/material/Grid';
 import Container from '@mui/system/Container';
 
+import { useTranslation } from 'next-i18next';
+
 import cls from './sliderFourteen.module.scss';
 
 const SliderFourteen = () => {
+  const { i18n } = useTranslation('common');
+
   const navigation = {
     nextEl: '.custom-swiper-next',
     prevEl: '.custom-swiper-prev',
@@ -58,8 +62,8 @@ const SliderFourteen = () => {
             </Container>
           </div>
         </SwiperSlide>
-        <button className='custom-swiper-next'><i className="fa-sharp fa-light fa-arrow-right fa-sm"></i></button>
-        <button className='custom-swiper-prev'><i className="fa-sharp fa-light fa-arrow-left fa-sm"></i></button>
+        <button className='custom-swiper-prev'><i className={`fa-sharp fa-light fa-arrow-${i18n.language === 'ar' ? 'right' : 'left'} fa-sm`}></i></button>
+        <button className='custom-swiper-next'><i className={`fa-sharp fa-light fa-arrow-${i18n.language === 'ar' ? 'left' : 'right'} fa-sm`}></i></button>
       </Swiper>
     </div>
   )

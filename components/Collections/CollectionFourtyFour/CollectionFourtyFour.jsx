@@ -5,10 +5,14 @@ import { Navigation } from "swiper";
 
 import Grid from '@mui/material/Grid';
 
+import { useTranslation } from 'next-i18next';
+
 import 'swiper/css';
 import cls from './collectionFourtyFour.module.scss';
 
 const CollectionFourtyFour = () => {
+  const { i18n } = useTranslation('common');
+
   const array = [...Array(4)];
 
   const navigation = {
@@ -25,8 +29,8 @@ const CollectionFourtyFour = () => {
               <div className={cls.head}>
                 <h6>New Arrivals</h6>
                 <div>
-                  <button className='custom-swiper-prev'><i className="fa-sharp fa-light fa-arrow-left fa-sm"></i></button>
-                  <button className='custom-swiper-next'><i className="fa-sharp fa-light fa-arrow-right fa-sm"></i></button>
+                  <button className='custom-swiper-prev'><i className={`fa-sharp fa-light fa-arrow-${i18n.language === 'ar' ? 'right' : 'left'} fa-sm`}></i></button>
+                  <button className='custom-swiper-next'><i className={`fa-sharp fa-light fa-arrow-${i18n.language === 'ar' ? 'left' : 'right'} fa-sm`}></i></button>
                 </div>
               </div>
               <div className={cls.products}>

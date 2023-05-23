@@ -31,7 +31,7 @@
     margin-top: 20px;
 
     button:first-of-type {
-      @extend %mainBtn;
+      @extend %flatBtn;
     }
 
     button:last-of-type {

@@ -5,8 +5,8 @@ import CollectionFourtyNine from '../../Collections/CollectionFourtyNine/Collect
 import CollectionEighty from '../../Collections/CollectionEighty/CollectionEighty';
 import CollectionFiftyTwo from '../../Collections/CollectionFiftyTwo/CollectionFiftyTwo';
 import PriefCollectionTwo from '../../PriefCollections/PriefCollectionTwo/PriefCollectionTwo';
-import SaleTwentyTwo from '../../Sale/SaleFifty/SaleFifty';
-
+import SaleSixty from '../../Sale/SaleSixty/SaleSixty';
+import BrandsOne from '../../Brands/BrandsOne/BrandsOne';
 import FooterTwenty from '../../Footers/FooterTwenty/FooterTwenty';
 
 import Container from '@mui/material/Container';
@@ -42,13 +42,25 @@ const Template50 = () => {
 
         <PriefCollectionTwo />
 
-        <Grid container>
+        <div className="margin">
+          <Grid container spacing={2} justifyContent="center">
 
-          <Grid item xs={12} md={6} lg={4}>
-            <SaleTwentyTwo />
+            <Grid item xs={12} md={6} lg={4}>
+              <SaleSixty />
+            </Grid>
+
+            <Grid item xs={12} md={6} lg={4}>
+              <SaleSixty />
+            </Grid>
+
+            <Grid item xs={12} md={6} lg={4}>
+              <SaleSixty />
+            </Grid>
+
           </Grid>
+        </div>
 
-        </Grid>
+        <BrandsOne />
 
       </Container>
 
