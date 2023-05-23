@@ -3,12 +3,11 @@
 .navbar {
 
   .navbar__main {
-    border-top: 1px solid var(--heavy-border);
-    border-bottom: 1px solid var(--heavy-border);
+    background-color: var(--main-color);
 
     .navbar_mainNav {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       position: relative;
 
@@ -19,10 +18,28 @@
       .switches {
         display: flex;
         align-items: center;
-        gap: 10px
+        gap: 10px;
       }
 
       .links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .sideCategories {
+          div {
+            border: none;
+          }
+
+          h2 {
+            color: var(--text-inside);
+            padding: 8px 20px;
+            background-color: var(--main-color);
+            min-width: 250px;
+            filter: brightness(1.2);
+          }
+        }
+
         ul.navLinks {
           display: flex;
 
@@ -32,6 +49,7 @@
             cursor: pointer;
             height: 45px;
             line-height: 45px;
+            color: var(--text-inside);
 
             @include lg {
               padding: 0 15px;
@@ -63,11 +81,13 @@
 
       .entry {
         font-size: 0.9rem;
-        opacity: 0.8;
+        opacity: 0.9;
         display: flex;
         gap: 10px;
 
         a {
+          color: var(--text-inside);
+
           &:hover {
             color: var(--secondary-color);
           }

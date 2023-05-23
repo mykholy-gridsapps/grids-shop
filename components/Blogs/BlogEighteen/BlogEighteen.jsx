@@ -7,10 +7,10 @@ import { useTranslation } from 'next-i18next';
 
 import 'swiper/css';
 import "swiper/css/navigation";
-import cls from './blogTwelve.module.scss';
+import cls from './blogEighteen.module.scss';
 
-const BlogTwelve = () => {
-  const { i18n } = useTranslation('common');
+const BlogEighteen = () => {
+  const { i18n } = useTranslation('common')
 
   const array = [...Array(5)];
 
@@ -65,12 +65,13 @@ const BlogTwelve = () => {
                 </div>
                 <div className={cls.details}>
                   <h6>Creative water features and exterior</h6>
-                  <span>Posted By: ahmad eid</span>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aspernatur mollitia rem reprehenderit repellat perspiciatis fugit esse</p>
-                  <Link href='/'>
-                    Continue Reading
-                    <span>...</span>
-                  </Link>
+                  <div className={cls.user}>
+                    <div>
+                      <img src="/imgs/5.jpg" alt="user" />
+                      <span>ahmad eid</span>
+                    </div>
+                    <span>30 <i className="fa-regular fa-comments"></i></span>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
@@ -83,4 +84,4 @@ const BlogTwelve = () => {
   )
 }
 
-export default BlogTwelve
+export default BlogEighteen;

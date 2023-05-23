@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
-import ProductThirty from '../../ProductCard/ProductThirty/ProductThirty';
-import SaleFourtyOne from '../../Sale/SaleFourtyOne/SaleFourtyOne';
+import ProductThirtySix from '../../ProductCard/ProductThirtySix/ProductThirtySix';
 import SaleFourtyFour from '../../Sale/SaleFourtyFour/SaleFourtyFour';
 
 import Grid from '@mui/material/Grid';
@@ -10,12 +9,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
 
 import 'swiper/css';
-import cls from './collectionFourtyNine.module.scss';
+import cls from './collectionEighty.module.scss';
 
-const CollectionFourtyNine = ({ reverse }) => {
-  const [activeLink, setActiveLink] = useState('NEW')
+const CollectionEighty = () => {
+  const [activeLink, setActiveLink] = useState('NEW');
 
-  const array = [...Array(3)];
   const products = [...Array(6)];
   const navigation = {
     nextEl: '.custom-swiper-next2',
@@ -26,18 +24,30 @@ const CollectionFourtyNine = ({ reverse }) => {
     'NEW',
     'FEATURED',
     'TOP SELLERS'
-  ]
+  ];
+
+  const breakpoints = {
+    300: {
+      slidesPerView: 1
+    },
+    500: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 3
+    },
+    992: {
+      slidesPerView: 4
+    },
+    1200: {
+      slidesPerView: 5
+    },
+  }
 
   return (
     <div className={cls.collection}>
-      <Grid container spacing={2} justifyContent="center" flexDirection={reverse ? 'row-reverse' : ''}>
-        <Grid item xs={12} lg={3}>
-          <div className={cls.big}>
-            <SaleFourtyOne />
-            <SaleFourtyOne />
-          </div>
-        </Grid>
-        <Grid item xs={12} lg={9}>
+      <Grid container spacing={2} justifyContent="center">
+        <Grid item xs={12}>
           <div className={cls.products}>
             <div className={cls.head}>
               <div>
@@ -54,29 +64,32 @@ const CollectionFourtyNine = ({ reverse }) => {
               </div>
             </div>
             <Swiper
-              slidesPerView={1}
               loop={false}
               spaceBetween={20}
               modules={[Navigation]}
               navigation={navigation}
+              breakpoints={breakpoints}
               className={cls.swiper}>
-              {array.map((_, idx) =>
+              {products.map((_, idx) => (
                 <SwiperSlide key={idx}>
-                  <Grid container>
-                    {products.map((_, idx) => (
-                      <Grid item xs={12} sm={6} md={4} lg={4} xl={4} key={idx}>
-                        <ProductThirty />
-                      </Grid>
-                    ))}
-                  </Grid>
+                  <ProductThirtySix />
                 </SwiperSlide>
-              )}
+              ))}
             </Swiper>
           </div>
+        </Grid>
+        <Grid item xs={12} md={6} lg={4}>
+          <SaleFourtyFour />
+        </Grid>
+        <Grid item xs={12} md={6} lg={4}>
+          <SaleFourtyFour />
+        </Grid>
+        <Grid item xs={12} md={6} lg={4}>
+          <SaleFourtyFour />
         </Grid>
       </Grid>
     </div>
   )
 }
 
-export default CollectionFourtyNine;
+export default CollectionEighty;

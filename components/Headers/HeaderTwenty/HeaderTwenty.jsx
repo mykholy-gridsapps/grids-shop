@@ -1,17 +1,18 @@
 import { useState } from "react";
+import Link from "next/link";
 
 import Container from "@mui/material/Container";
 
 import MiddleHeader from './MiddleHeader';
 import TopHeader from './TopHeader';
 import LinkDropdown from '../LinkDropdown/LinkDropdown';
+import CategoriesSideTwo from "../../CategoriesSide/CategoriesSideTwo/CategoriesSideTwo";
 
 import { useTranslation } from "next-i18next";
 
-import cls from './headerSeven.module.scss';
-import CategoriesSideOne from "../../CategoriesSide/CategoriesSideOne/CategoriesSideOne";
+import cls from './headerTwenty.module.scss';
 
-const HeaderSeven = () => {
+const HeaderTwenty = () => {
   const [navDropdown, setNavDropdown] = useState(0);
   const { t, i18n } = useTranslation('common');
 
@@ -32,7 +33,7 @@ const HeaderSeven = () => {
 
           <div className={`${cls.links} ${cls[i18n.language]}`}>
             <div className={cls.sideCategories}>
-              <CategoriesSideOne classCustome={true} open={false} />
+              <CategoriesSideTwo classCustome={true} open={false} />
             </div>
             <ul className={`${cls.navLinks} ${cls[i18n.language]}`}>
               <li
@@ -91,35 +92,16 @@ const HeaderSeven = () => {
                   <LinkDropdown />
                 )}
               </li>
-
-              <li
-                onMouseEnter={() => setNavDropdown(5)}
-                onMouseLeave={() => setNavDropdown(0)}
-              >
-                <span>
-                  {" "}
-                  Tv & Audio <i className="fa-regular fa-angle-down"></i>
-                </span>
-
-                {navDropdown === 5 && (
-                  <LinkDropdown />
-                )}
-              </li>
-
-              <li
-                onMouseEnter={() => setNavDropdown(6)}
-                onMouseLeave={() => setNavDropdown(0)}
-              >
-                <span>
-                  {" "}
-                  Smart PhSixs <i className="fa-regular fa-angle-down"></i>
-                </span>
-
-                {navDropdown === 6 && (
-                  <LinkDropdown />
-                )}
-              </li>
             </ul>
+          </div>
+
+          <div className={cls.entry}>
+            <Link href="/">
+              SPECIAL OFFER
+            </Link>
+            <Link href="/">
+              PURCHASE THEME
+            </Link>
           </div>
         </Container>
       </div>
@@ -127,4 +109,4 @@ const HeaderSeven = () => {
   );
 }
 
-export default HeaderSeven
+export default HeaderTwenty;

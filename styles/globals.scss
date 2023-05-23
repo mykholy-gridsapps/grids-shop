@@ -919,6 +919,32 @@ button.swal2-cancel {
     }
   }
 
+  &.ar {
+    .custom-swiper-next {
+      right: -3%;
+
+      @include sm {
+        right: -6.5%;
+      }
+
+      @include xs {
+        right: -12.5%;
+      }
+    }
+
+    .custom-swiper-prev {
+      left: -5%;
+
+      @include md {
+        left: -2%;
+      }
+
+      @include sm {
+        left: -3%;
+      }
+    }
+  }
+
   &:hover {
 
     .custom-swiper-next,

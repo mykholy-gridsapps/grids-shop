@@ -1,0 +1,129 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.slider {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 20px;
+
+  .main {
+    grid-column: span 6;
+    grid-row: span 2;
+    overflow: hidden;
+    min-height: 500px;
+
+    .slide {
+      background-image: url('../../../public/imgs/sli2.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      padding: 20px;
+    }
+
+    @include sm {
+      min-height: auto;
+    }
+  }
+
+  .wide {
+    grid-column: span 6;
+    grid-row: span 1;
+    background-image: url('../../../public/imgs/sli2.jpg');
+    padding: 20px;
+    min-height: 150px;
+
+    p {
+      font-size: 1rem !important;
+    }
+  }
+
+  .secondary {
+    grid-column: span 3;
+    grid-row: span 1;
+    background-image: url('../../../public/imgs/sli2.jpg');
+    padding: 20px;
+    min-height: 150px;
+
+    p {
+      font-size: 1rem !important;
+    }
+  }
+
+  .main,
+  .secondary,
+  .wide {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    span {
+      font-weight: bold;
+    }
+
+    p:not(.content) {
+      font-size: 1.3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    .btns {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      a {
+        font-size: 0.85rem;
+        background-color: transparent;
+        border: none;
+        font-weight: 600;
+        text-decoration: underline;
+        color: var(--main-color);
+      }
+
+      button:first-of-type {
+        @extend %flatBtn;
+        border-radius: 5px;
+        padding: 5px 20px;
+        font-size: 0.85rem;
+      }
+    }
+  }
+
+  @include md {
+    grid-template-rows: repeat(1, 1fr);
+
+    .main {
+      grid-column: span 12;
+      grid-row: span 1;
+    }
+
+    .secondary {
+      grid-column: span 6;
+      grid-row: span 1;
+    }
+
+    .wide {
+      grid-column: span 12;
+    }
+  }
+
+  @include xs {
+
+    .secondary,
+    .wide {
+      grid-column: span 12;
+    }
+  }
+}

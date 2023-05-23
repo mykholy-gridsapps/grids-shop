@@ -3,11 +3,15 @@ import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
 
+import { useTranslation } from 'next-i18next';
+
 import 'swiper/css';
 import "swiper/css/navigation";
 import cls from './blogThirteen.module.scss';
 
 const BlogThirteen = () => {
+  const { i18n } = useTranslation('common');
+
   const array = [...Array(5)];
 
   const navigation = {
@@ -31,7 +35,7 @@ const BlogThirteen = () => {
   }
 
   return (
-    <div className={`${cls.blog} darkSmallCustomSliderArrows`}>
+    <div className={`${cls.blog} darkSmallCustomSliderArrows ${i18n.language}`}>
       <Swiper
         modules={[Navigation]}
         navigation={navigation}
