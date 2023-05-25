@@ -3,11 +3,15 @@ import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
 
+import { useTranslation } from 'next-i18next';
+
 import 'swiper/css';
 import "swiper/css/navigation";
 import cls from './blogSeventeen.module.scss';
 
 const BlogSeventeen = () => {
+  const { i18n } = useTranslation('common')
+
   const array = [...Array(5)];
 
   const navigation = {
@@ -31,7 +35,7 @@ const BlogSeventeen = () => {
   }
 
   return (
-    <div className={`${cls.blog} darkSmallCustomSliderArrows`}>
+    <div className={`${cls.blog} darkSmallCustomSliderArrows ${i18n.language}`}>
       <h3>Expert Advice</h3>
       <Swiper
         modules={[Navigation]}
@@ -71,8 +75,8 @@ const BlogSeventeen = () => {
           </SwiperSlide>
         )}
       </Swiper>
-      <button className='custom-swiper-prev'><i class="fa-sharp fa-light fa-angle-left"></i></button>
-      <button className='custom-swiper-next'><i class="fa-sharp fa-light fa-angle-right"></i></button>
+      <button className='custom-swiper-prev'><i className={`fa-sharp fa-light fa-angle-${i18n.language === 'ar' ? 'right' : 'left'}`}></i></button>
+      <button className='custom-swiper-next'><i className={`fa-sharp fa-light fa-angle-${i18n.language === 'ar' ? 'left' : 'right'}`}></i></button>
     </div>
   )
 }

@@ -8,10 +8,14 @@ import Grid from '@mui/material/Grid';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
 
+import { useTranslation } from 'next-i18next';
+
 import 'swiper/css';
 import cls from './collectionFourty.module.scss';
 
 const CollectionFourty = () => {
+  const { i18n } = useTranslation('common');
+
   const [activeTab, setActiveTab] = useState('All');
   const array = [...Array(3)];
 
@@ -41,8 +45,8 @@ const CollectionFourty = () => {
             ))}
           </ul>
           <div>
-            <button className='custom-swiper-prev'><i className="fa-sharp fa-light fa-arrow-left fa-sm"></i></button>
-            <button className='custom-swiper-next'><i className="fa-sharp fa-light fa-arrow-right fa-sm"></i></button>
+            <button className='custom-swiper-prev'><i className={`fa-sharp fa-light fa-arrow-${i18n.language === 'ar' ? 'right' : 'left'} fa-sm`}></i></button>
+            <button className='custom-swiper-next'><i className={`fa-sharp fa-light fa-arrow-${i18n.language === 'ar' ? 'left' : 'right'} fa-sm`}></i></button>
           </div>
         </div>
       </div>

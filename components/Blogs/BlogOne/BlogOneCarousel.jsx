@@ -1,10 +1,11 @@
-import React from "react";
+import BlogOne from "./BlogOne";
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from "swiper";
+
 import cls from "./blogOneCarousel.module.scss"
 import 'swiper/css';
 import "swiper/css/pagination";
-import BlogOne from "./BlogOne";
 
 
 const BlogOneCarousel = () => {

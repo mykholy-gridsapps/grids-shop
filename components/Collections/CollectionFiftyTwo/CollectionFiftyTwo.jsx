@@ -2,6 +2,7 @@ import ProductThirtySix from '../../ProductCard/ProductThirtySix/ProductThirtySi
 import OfferCardSix from '../../OfferCards/OfferCardSix/OfferCardSix';
 
 import Grid from '@mui/material/Grid';
+import Container from '@mui/material/Container';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from "swiper";
@@ -30,33 +31,35 @@ const CollectionFiftyTwo = () => {
 
   return (
     <div className={cls.collection}>
-      <Grid container spacing={2} alignItems="center">
-        <Grid item xs={12} md={4}>
-          <div className={cls.offerCard}>
-            <OfferCardSix />
-          </div>
+      <Container maxWidth="xl">
+        <Grid container spacing={2} alignItems="center">
+          <Grid item xs={12} md={4}>
+            <div className={cls.offerCard}>
+              <OfferCardSix />
+            </div>
+          </Grid>
+          <Grid item xs={12} md={8}>
+            <div className={cls.products}>
+              <Swiper
+                slidesPerView={1}
+                loop={false}
+                spaceBetween={10}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                modules={[Autoplay]}
+                breakpoints={breakpoints}>
+                {[...Array(10)].map(((_, idx) => (
+                  <SwiperSlide key={idx}>
+                    <ProductThirtySix />
+                  </SwiperSlide>
+                )))}
+              </Swiper>
+            </div>
+          </Grid>
         </Grid>
-        <Grid item xs={12} md={8}>
-          <div className={cls.products}>
-            <Swiper
-              slidesPerView={1}
-              loop={false}
-              spaceBetween={10}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              modules={[Autoplay]}
-              breakpoints={breakpoints}>
-              {[...Array(10)].map(((_, idx) => (
-                <SwiperSlide key={idx}>
-                  <ProductThirtySix />
-                </SwiperSlide>
-              )))}
-            </Swiper>
-          </div>
-        </Grid>
-      </Grid>
+      </Container>
     </div>
   )
 }

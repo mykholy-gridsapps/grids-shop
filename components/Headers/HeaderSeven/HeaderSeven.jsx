@@ -31,7 +31,9 @@ const HeaderSeven = () => {
           </div>
 
           <div className={`${cls.links} ${cls[i18n.language]}`}>
-            <CategoriesSideOne classCustome={true} open={false} />
+            <div className={cls.sideCategories}>
+              <CategoriesSideOne classCustome={true} open={false} />
+            </div>
             <ul className={`${cls.navLinks} ${cls[i18n.language]}`}>
               <li
                 onMouseEnter={() => setNavDropdown(1)}

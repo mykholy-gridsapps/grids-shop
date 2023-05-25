@@ -8,11 +8,15 @@ import Grid from '@mui/material/Grid';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
 
+import { useTranslation } from 'next-i18next';
+
 import 'swiper/css';
 import cls from './collectionSeventyFive.module.scss';
 
 const CollectionSeventyFive = () => {
+  const { i18n } = useTranslation('common');
   const [activeLink, setActiveLink] = useState('NEW');
+
   const array = [...Array(8)];
   const navigation = {
     nextEl: '.custom-swiper-next2',
@@ -57,8 +61,8 @@ const CollectionSeventyFive = () => {
               </ul>
             </div>
             <div>
-              <button className='custom-swiper-prev2'><i className="fa-sharp fa-light fa-arrow-left fa-sm"></i></button>
-              <button className='custom-swiper-next2'><i className="fa-sharp fa-light fa-arrow-right fa-sm"></i></button>
+              <button className='custom-swiper-prev2'><i className={`fa-sharp fa-light fa-arrow-${i18n.language === 'ar' ? 'right' : 'left'} fa-sm`}></i></button>
+              <button className='custom-swiper-next2'><i className={`fa-sharp fa-light fa-arrow-${i18n.language === 'ar' ? 'left' : 'right'} fa-sm`}></i></button>
             </div>
           </div>
           <div className={cls.products}>
