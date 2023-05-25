@@ -6,6 +6,7 @@ import BlogFour from "./BlogFour";
 
 import cls from "./blogFourCarousel.module.scss"
 import 'swiper/css';
+import Link from "next/link";
 
 
 const BlogFourCarousel = () => {
@@ -33,7 +34,9 @@ const BlogFourCarousel = () => {
                         </SwiperSlide>
                     )}
                 </Swiper>
+
             </Container>
+                <Link className={cls.showMore} href="#">Our Blog</Link>
         </div>
     )
 }

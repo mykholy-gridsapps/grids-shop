@@ -1,0 +1,111 @@
+@import "../../../styles/extends.scss";
+
+.navbar__main {
+  background-color: #222529;
+  color: #fff;
+  
+  .navbar_mainNav {
+    display: flex !important;
+    justify-content: space-between;
+  
+    .headerLeft {
+      .topMessage {
+        padding: 16px 0;
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0;
+  
+        a {
+          color: #fff;
+          font-weight: 700;
+        }
+      }
+    }
+  
+    .links {
+      display: flex;
+      align-items: center;
+  
+      ul.navLinks {
+        display: flex;
+  
+        li {
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: 0.12px;
+          line-height: 18px;
+          padding: 16px 19px;
+          position: relative;
+          text-align: start !important;
+  
+          @include lg {
+            padding: 0 15px;
+            font-size: 0.8rem;
+          }
+  
+          a {
+            color: #fff;
+          }
+  
+          i {
+            font-size: 0.8rem;
+          }
+  
+          &:hover {
+            color: var(--secondary-color);
+            background-color: rgba(0, 0, 0, 0.05)
+          }
+          
+          &.active {
+            span {
+              z-index: 1;
+              position: relative;
+              color: #222529;
+            }
+            &:before {
+              content: "";
+              position: absolute;
+              margin-left: 0;
+              top: 0;
+              left: -2px;
+              right: -2px;
+              bottom: 0;
+              transform: skew(-23deg);
+              background: #fff;
+              opacity: 1;
+              z-index: 0;
+            }
+            ::after {
+              content: "";
+              margin-top: 0;
+              margin-left: 3px;
+              font-size: 12px;
+              font-weight: 800;
+              font-family: "porto";
+            }
+          }
+  
+        }
+  
+        &.ar {
+          li {
+            border-left: unset;
+            border-right: 1px solid var(--heavy-border);
+          }
+        }
+      }
+      
+      .switch {
+        margin: 0 5px;
+        span {
+          font-size: 12px;
+        }
+      }
+  
+      @include md {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.collection {
+  .banner {
+    border-left: 1px solid #dedede;
+    position: relative;
+
+    .bannerContent {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 20px 20px 20px 24px;
+      font-size: 13px;
+      line-height: 1.154;
+      letter-spacing: -0.025em;
+
+      h3 {
+        font-size: 22px;
+        letter-spacing: -0.02em;
+        line-height: 1;
+        color: #222529;
+      }
+
+      p {
+        margin-top: 3px;
+        margin-bottom: 15px;
+        color: #777777;
+      }
+
+      hr {
+        width: 35px;
+        border-top-width: 4px;
+        margin: 19px 0 18px;
+        border-top: 5px solid #222529;
+
+      }
+
+      a {
+        margin-left: -1px;
+        margin-top: 5px;
+        padding: 0;
+        color: #222529;
+        letter-spacing: 0.01em;
+        border-radius: 0;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.429;
+      }
+    }
+
+    img {
+      min-height: 200px;
+      max-height: 210px;
+      object-fit: cover;
+    }
+    &:last-of-type {
+      border-right: 1px solid #dedede;
+    }
+  }
+}

@@ -8,8 +8,14 @@ $sliderTwoColor2: var(--text-dark);
 $sliderOneBadge: #ff7272;
 
 .slider {
+    background: #9C9895;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: 63px;
     img {
-        min-height: 499px;
+        height: 600px;
+        max-height: 100vh;
         object-position: 55%;
         object-fit: cover;
         max-width: 100%;

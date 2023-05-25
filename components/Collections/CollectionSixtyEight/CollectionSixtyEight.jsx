@@ -10,13 +10,13 @@ import "swiper/css/navigation";
 import cls from './collectionSixtyEight.module.scss';
 
 
-const CollectionSixtyEight = () => {
+const CollectionSixtyEight = ({bgColor, fontSize}) => {
   const navigation = {
   };
   return (
-    <div className={cls.collection}>
+    <div className={cls.collection} style={{backgroundColor: bgColor}}>
       <div className={cls.head}>
-        <h2> Featured Products</h2>
+        <h2 style={{fontSize: fontSize}}> Featured Products</h2>
       </div>
       <Swiper
         slidesPerView={1}

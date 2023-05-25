@@ -1,7 +1,7 @@
 @import '../../../styles/mixins.scss';
 
 .infoBoxesContainer {
-    margin-bottom: 20px !important;
+    margin-bottom: 20px;
     border: 1px solid #e7e7e7;
 
     @include md {

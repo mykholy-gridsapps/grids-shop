@@ -3,7 +3,8 @@
     padding-top: 55px;
     padding-bottom: 60px;
     background-color: var(--bg-alt-color);
-
+    text-align: center !important;
+    
     .title {
         margin-bottom: -1px;
         font-size: 22px;
@@ -12,6 +13,7 @@
         color: var(--text-dark);
         line-height: 1.5;
     }
+
     .description {
         font-size: 14px;
         margin-bottom: 50px !important;
@@ -57,4 +59,17 @@
             }
         }
     }
+
+    .showMore {
+        margin-bottom: 6px;
+        margin-top: 24px;
+        padding: 14px 36px;
+        min-width: 160px;
+        color: #fff;
+        font-size: 14px;
+        border: 0;
+        background-color: #2a2e32;
+        display: inline-block;
+    }
+
 }

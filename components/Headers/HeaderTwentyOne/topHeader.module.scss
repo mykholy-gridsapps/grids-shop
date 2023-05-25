@@ -1,0 +1,54 @@
+@import "../../../styles/extends.scss";
+
+.headerTop {
+  padding: 0;
+  color: #777777;
+  font-weight: 300;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .headerLeft,
+    .headerRight {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11px;
+
+      .linksList {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 100%;
+
+        li {
+          padding: 0 5px;
+
+          a {
+            color: #777777;
+            font-size: 11px;
+          }
+
+        }
+      }
+
+      .switches {
+        display: flex;
+        gap: 10px;
+
+        span,
+        i {
+          color: #777777;
+          font-size: 11px;
+        }
+      }
+
+    }
+  }
+
+  @include sm {
+    display: none;
+  }
+}
