@@ -1,0 +1,155 @@
+@import '../../../styles/mixins.scss';
+
+.navbar {
+  .navbar__main {
+    .navbar_mainNav {
+      border-bottom: 1px solid var(--heavy-border);
+
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      .smallLogo {
+        display: none;
+      }
+
+      .navbar__main__account {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        gap: 15px;
+
+        @include lg {
+          gap: 10px;
+        }
+
+        i {
+          color: #fff;
+          font-size: 1.3rem;
+          cursor: pointer;
+        }
+
+        span {
+          font-weight: bold;
+          color: #fff;
+          cursor: pointer;
+          height: 50px;
+          display: flex;
+          align-items: center;
+        }
+
+        .wishlist,
+        .cart {
+          position: relative;
+        }
+      }
+
+      .side {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        h2 {
+          min-width: 250px;
+        }
+
+        .links {
+          ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            li {
+              cursor: pointer;
+
+              span {
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                font-weight: 600;
+              }
+
+              &:hover {
+                span {
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+
+          @include md {
+            display: none;
+          }
+        }
+      }
+
+      .actions {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        a {
+          text-transform: uppercase;
+          opacity: 0.8;
+          font-weight: 600;
+          font-size: 0.9rem;
+
+          &:hover {
+            color: var(--secondary-color);
+          }
+        }
+
+        .wishlist,
+        .compare {
+          font-size: 0.9rem;
+          font-weight: 600;
+          cursor: pointer;
+          position: relative;
+
+          i {
+            font-size: 1rem;
+          }
+
+          .num {
+            position: absolute;
+            top: -8px;
+            left: 7px;
+            background-color: var(--main-color);
+            color: var(--text-inside);
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 0.7rem;
+
+            &.ar {
+              left: unset;
+              right: 7px;
+            }
+          }
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      @include xs {
+        .navbar__search__account {
+          gap: 15px;
+
+          i {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+}

@@ -9,7 +9,7 @@ import 'swiper/css';
 import "swiper/css/navigation";
 import cls from './blogTwelve.module.scss';
 
-const BlogTwelve = () => {
+const BlogTwelve = ({ slides }) => {
   const { i18n } = useTranslation('common');
 
   const array = [...Array(5)];
@@ -21,8 +21,11 @@ const BlogTwelve = () => {
     600: {
       slidesPerView: 2,
     },
-    1200: {
+    992: {
       slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: slides || 3,
     },
   }
 
@@ -76,8 +79,8 @@ const BlogTwelve = () => {
             </SwiperSlide>
           )}
         </Swiper>
-        <button className='custom-swiper-prev'><i className={`fa-sharp fa-light fa-angle-${i18n.language === 'ar' ? 'right' : 'left'}`}></i></button>
-        <button className='custom-swiper-next'><i className={`fa-sharp fa-light fa-angle-${i18n.language === 'ar' ? 'left' : 'right'}`}></i></button>
+        <button className='custom-swiper-prev'><i className={`fa-sharp fa-light fa-angle-left`}></i></button>
+        <button className='custom-swiper-next'><i className={`fa-sharp fa-light fa-angle-right`}></i></button>
       </div>
     </>
   )

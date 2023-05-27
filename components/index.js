@@ -13,7 +13,9 @@ export { default as Template6 } from './HomeTemplates/Template6/Template6';
 export { default as Template7 } from './HomeTemplates/Template7/Template7';
 
 export { default as Template8 } from './HomeTemplates/Template8/Template8';
+
 export { default as Template9 } from './HomeTemplates/Template9/Template9';
+
 export { default as Template11 } from './HomeTemplates/Template11/Template11';
 
 export { default as Template43 } from './HomeTemplates/Template43/Template43';
@@ -33,3 +35,5 @@ export { default as Template49 } from './HomeTemplates/Template49/Template49';
 export { default as Template50 } from './HomeTemplates/Template50/Template50';
 
 export { default as Template51 } from './HomeTemplates/Template51/Template51';
+
+export { default as Template52 } from './HomeTemplates/Template52/Template52';
