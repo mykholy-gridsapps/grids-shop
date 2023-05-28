@@ -1,0 +1,53 @@
+@import "../../../styles/extends.scss";
+
+.headerTop {
+  padding: 3px 0;
+  font-weight: 700;
+  border-bottom: 1px solid var(--heavy-border);
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .headerLeft,
+    .headerRight {
+      display: flex;
+      align-items: center;
+
+      .topMessage {
+        margin: 0 10px;
+        font-size: 0.8rem;
+
+        @include md {
+          display: none;
+        }
+      }
+
+      .linksList {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 0 30px;
+
+        li {
+          a {
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      button {
+        @extend %mainBtn;
+        font-size: 0.75rem;
+        padding: 7px 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  @include sm {
+    display: none;
+  }
+}

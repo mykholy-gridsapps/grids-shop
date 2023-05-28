@@ -37,3 +37,5 @@ export { default as Template50 } from './HomeTemplates/Template50/Template50';
 export { default as Template51 } from './HomeTemplates/Template51/Template51';
 
 export { default as Template52 } from './HomeTemplates/Template52/Template52';
+
+export { default as Template53 } from './HomeTemplates/Template53/Template53';
