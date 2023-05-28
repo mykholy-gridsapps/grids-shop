@@ -3,10 +3,11 @@ import SliderTwentyNine from '../../MainSlider/SliderTwentyNine/SliderTwentyNine
 import SaleThirtyOne from '../../Sale/SaleFourtyNine/SaleFourtyNine';
 import CollectionEightyOne from '../../Collections/CollectionEightyOne/CollectionEightyOne';
 import SaleSixtyOne from '../../Sale/SaleSixtyOne/SaleSixtyOne';
-
-
 import CollectionFiftyThree from '../../Collections/CollectionFiftyThree/CollectionFiftyThree';
-
+import CollectionEightyTwo from '../../Collections/CollectionEightyTwo/CollectionEightyTwo';
+import SaleSixtyThree from '../../Sale/SaleSixtyThree/SaleSixtyThree';
+import BlogEighteen from '../../Blogs/BlogTwelve/BlogTwelve';
+import PartnersOne from '../../Partners/PartnersOne/PartnersOne';
 import FooterFourteen from '../../Footers/FooterFourteen/FooterFourteen';
 
 import Container from '@mui/material/Container';
@@ -15,6 +16,7 @@ import Grid from '@mui/material/Grid';
 const Template51 = () => {
   return (
     <div>
+
       <HeaderTwentyTwo openSideCategories={true} />
 
       <Container maxWidth="xl">
@@ -50,6 +52,16 @@ const Template51 = () => {
         <div className="margin">
           <CollectionFiftyThree />
         </div>
+
+        <CollectionEightyTwo />
+
+        <SaleSixtyThree />
+
+        <div className="margin">
+          <BlogEighteen />
+        </div>
+
+        <PartnersOne />
 
       </Container>
 

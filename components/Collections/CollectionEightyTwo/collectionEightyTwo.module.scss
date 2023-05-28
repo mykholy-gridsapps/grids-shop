@@ -1,0 +1,90 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.collection {
+
+  .secondary {
+    @include md {
+      display: none;
+    }
+  }
+
+  .featured {
+    margin-top: 30px;
+
+    .featuredHeader {
+      background-color: var(--main-color);
+      color: var(--text-inside);
+      padding: 10px 20px;
+      margin: 0;
+    }
+
+    .content {
+      border: 2px solid var(--heavy-border);
+      padding: 0 10px;
+
+      .single {
+        padding: 10px 0;
+
+        &:not(:last-of-type) {
+          border-bottom: 1px solid var(--heavy-border);
+        }
+      }
+    }
+  }
+
+  .big {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .products {
+    .head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 0 10px 5px;
+      border-bottom: 1px solid var(--heavy-border);
+      margin-bottom: 10px;
+
+      div {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin: 0 20px;
+
+          li {
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+
+            &.active {
+              color: var(--secondary-color);
+            }
+          }
+
+          @include xs {
+            margin: 0;
+          }
+        }
+      }
+
+      button {
+        @extend %swiperCustomArrows;
+      }
+    }
+
+    .swiper {
+      padding-top: 10px;
+      padding-bottom: 80px;
+    }
+  }
+}

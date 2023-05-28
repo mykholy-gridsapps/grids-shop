@@ -1,0 +1,138 @@
+@import '../../../styles/mixins.scss';
+
+.navbar {
+  .navbar__main {
+    .navbar_mainNav {
+      border-top: 1px solid var(--heavy-border);
+      border-bottom: 1px solid var(--heavy-border);
+
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      .smallLogo {
+        display: none;
+      }
+
+      .navbar__main__account {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        gap: 15px;
+
+        @include lg {
+          gap: 10px;
+        }
+
+        i {
+          color: #fff;
+          font-size: 1.3rem;
+          cursor: pointer;
+        }
+
+        span {
+          font-weight: bold;
+          color: #fff;
+          cursor: pointer;
+          height: 50px;
+          display: flex;
+          align-items: center;
+        }
+
+        .wishlist,
+        .cart {
+          position: relative;
+        }
+      }
+
+      .side {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .sideCategories {
+          &>div {
+            border-top: none;
+            border-bottom: none;
+            border-color: var(--heavy-border);
+          }
+
+          h2 {
+            min-width: 250px;
+            background-color: transparent;
+            color: var(--text-color);
+          }
+        }
+
+        .links {
+          ul {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            li {
+              cursor: pointer;
+
+              span {
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                font-weight: 600;
+              }
+
+              &:hover {
+                span {
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+
+          @include md {
+            display: none;
+          }
+        }
+      }
+
+      .details {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 600;
+        font-size: 0.9rem;
+
+        p {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+
+          i {
+            background-color: var(--secondary-color);
+            color: var(--text-inside);
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: grid;
+            place-content: center;
+          }
+        }
+      }
+
+      @include xs {
+        .navbar__search__account {
+          gap: 15px;
+
+          i {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+}

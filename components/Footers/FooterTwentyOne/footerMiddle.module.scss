@@ -1,0 +1,194 @@
+@import '../../../styles/mixins.scss';
+
+.footerMiddle {
+    padding-top: 20px;
+    padding-bottom: 15px;
+
+    .features {
+        padding: 20px 0;
+        margin-bottom: 30px;
+        border-bottom: 1px solid var(--heavy-border);
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            i {
+                color: var(--main-color);
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .widget {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .widgetTitle {
+            font-size: 15px;
+            font-weight: 600;
+            font-family: Poppins, sans-serif;
+            text-transform: uppercase;
+            margin: 0 0 13px;
+
+            &.fontWeightBold {
+                font-weight: 700 !important;
+            }
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+
+            i {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+                display: grid;
+                place-content: center;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: var(--main-color);
+                    color: var(--text-inside);
+                }
+            }
+        }
+
+        .logoFooter {
+            margin-top: 17px;
+            margin-bottom: 15px;
+            max-width: 150px;
+        }
+
+        .location {
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        li {
+            padding: 5px 0;
+            font-size: 0.9rem;
+
+            a {
+
+                &:hover {
+                    color: var(--main-color);
+                }
+            }
+        }
+
+        .contactInfo {
+            li {
+                position: relative;
+                margin-bottom: 10px;
+                line-height: 1.4;
+
+                .contactInfoLabel {
+                    display: block;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                }
+
+                &:last-child {
+                    margin-bottom: 1.8rem;
+                }
+            }
+        }
+
+        .socialIcon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-decoration: none;
+            opacity: 1;
+            margin-left: 2px;
+            line-height: 38px;
+            border: 1px solid var(--heavy-border);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+
+            &:not(:hover):not(:active):not(:focus) {
+                background-color: transparent;
+            }
+
+            &::before,
+            [class^="icon-"]::before {
+                font-family: "porto";
+                font-style: normal;
+                font-weight: normal;
+                speak: none;
+                display: inline-block;
+                text-decoration: inherit;
+                width: 1em;
+                text-align: center;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+
+            &:hover {
+                text-decoration: none;
+                opacity: 0.85;
+                color: #fff;
+                border-color: transparent;
+            }
+
+            &.iconFacebook {
+                &::before {
+                    content: "";
+                }
+
+                &:hover {
+                    background-color: #3b5a9a;
+                }
+            }
+
+            &.iconTwitter {
+                &::before {
+                    content: "";
+                }
+
+                &:hover {
+                    background-color: #1aa9e1;
+                }
+            }
+
+            &.iconLinkedin {
+
+                &::before,
+                [class^="icon-"]::before {
+                    content: "\f0e1";
+                    font-family: "Font Awesome 6 Brands";
+                    moz-osx-font-smoothing: grayscale;
+                    font-style: normal;
+                    font-variant: normal;
+                    text-rendering: auto;
+                    line-height: 1;
+                }
+
+                &:hover {
+                    background-color: #0073b2;
+                }
+
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,54 @@
+@import '../../../styles/extends.scss';
+
+.sale {
+  position: relative;
+  padding: 0 40px;
+  background-image: url('../../../public/imgs/backo.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+
+  img {
+    position: relative;
+    object-fit: fill;
+    top: 80px;
+
+    @include md {
+      display: none;
+    }
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+    button {
+      @extend %flatBtn;
+      padding: 7px 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      width: 150px;
+      text-align: center !important;
+      text-transform: uppercase;
+      margin-top: 10px;
+    }
+  }
+
+  @include md {
+    padding: 50px;
+  }
+
+  @include xs {
+    padding: 50px 20px;
+  }
+}

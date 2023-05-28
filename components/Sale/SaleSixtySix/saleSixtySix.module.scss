@@ -1,0 +1,94 @@
+@import url('https://fonts.cdnfonts.com/css/savoye-let');
+@import "../../../styles/mixins.scss";
+
+.banner {
+    position: relative;
+
+    .bannerLayer {
+        position: absolute;
+        padding-bottom: 3px;
+        left: 5.5%;
+        right: 6%;
+        top: 20%;
+
+        h4 {
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            opacity: 0.7;
+            padding-bottom: 14px;
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 44px;
+            letter-spacing: 0.002em;
+            color: var(--text-light);
+            font-family: 'Savoye LET', sans-serif;
+            line-height: 1;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 76px;
+            margin-bottom: 16px !important;
+            line-height: 1;
+            color: var(--text-light);
+            text-transform: uppercase !important;
+        }
+
+        h5 {
+            margin-right: -2px;
+            font-size: 11px;
+            margin-top: -4px;
+            line-height: 1;
+            color: var(--text-light);
+            display: inline-block !important;
+            text-transform: uppercase !important;
+            margin: 0;
+            vertical-align: text-bottom !important;
+
+            b {
+                color: var(--text-light);
+                background-color:  #ff7272;
+                position: relative;
+                padding: 4px 8px;
+                margin: 0 6px 0 12px;
+                font-size: 12px;
+                transform: rotate(-2deg);
+                display: inline-block;
+                font-weight: 700px;
+
+
+                em {
+                    font-size: 24px;
+                    font-style: normal;
+                    vertical-align: text-top !important;
+                }
+
+            }
+        }
+
+        .btn {
+            border-color: var(--text-dark);
+            background-color: var(--text-dark);
+            color: var(--text-light);
+            box-shadow: none;
+            font-size: 12px;
+            padding: 12px 34px;
+        }
+    }
+
+    @include xs {
+        .bannerLayer {
+            h3 {
+                font-size: 60px;
+            }
+
+            .btn {
+                display: inline-block;
+                margin-top: 15px;
+            }
+        }
+    }

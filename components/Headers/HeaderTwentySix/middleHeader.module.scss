@@ -1,0 +1,217 @@
+@import "../../../styles/extends.scss";
+
+.headerMiddle {
+  padding: 10px 0;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      a {
+        color: var(--text-dark);
+      }
+
+      &>i {
+        cursor: pointer;
+        font-size: 1.2rem;
+        cursor: pointer;
+        display: none;
+        color: var(--text-dark);
+
+        @include md {
+          display: block;
+        }
+      }
+
+      .bigImage {
+        height: 60px;
+        max-width: 100%;
+        object-fit: contain;
+
+        @include md {
+          display: none;
+        }
+      }
+
+      .smallImage {
+        display: none;
+        height: 50px;
+        width: 120px;
+        object-fit: contain;
+
+        @include md {
+          display: inline-block;
+        }
+      }
+
+    }
+
+    .headerSearchWrapper {
+      display: flex;
+      position: static;
+      margin: 0;
+      border-width: 0;
+      box-sizing: content-box;
+      height: 42px;
+      border: 1px solid var(--heavy-border);
+      overflow: hidden;
+
+      input {
+        border: none;
+        padding: 0 20px;
+        font-size: 0.8rem;
+        min-width: 600px;
+        outline: none;
+        background-color: var(--secondary-background);
+
+        @include xl {
+          min-width: 500px;
+        }
+
+        @include lg {
+          min-width: 200px;
+        }
+      }
+
+      .selectCustom {
+        margin: 0;
+        background: transparent;
+        position: relative;
+        background-color: var(--secondary-background);
+
+        select {
+          width: 150px;
+          border: none;
+          border-left: 1px solid var(--border-color);
+          margin: 0;
+          font-size: 13px;
+          height: 100%;
+          box-shadow: none;
+          background: transparent;
+          padding: 0 10px;
+          outline: none;
+
+          option {
+            color: #000;
+          }
+        }
+      }
+
+      .btn {
+        position: relative;
+        border: none;
+        border-left: 1px solid var(--border-color);
+        width: 50px;
+        background-color: var(--main-color);
+        color: var(--text-inside);
+        font-size: 16px;
+        text-align: center !important;
+        cursor: pointer;
+      }
+
+      @include md {
+        display: none;
+      }
+    }
+
+    .headerRight {
+      display: flex;
+      justify-content: space-between;
+
+      .navbar__main__account {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        gap: 15px;
+
+        @include lg {
+          gap: 10px;
+        }
+
+        .actions {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          a {
+            text-transform: uppercase;
+            opacity: 0.8;
+            font-weight: 600;
+            font-size: 0.9rem;
+
+            &:hover {
+              color: var(--secondary-color);
+            }
+          }
+
+          .wishlist,
+          .compare {
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+
+            i {
+              font-size: 1rem;
+            }
+
+            .num {
+              position: absolute;
+              top: -8px;
+              left: 7px;
+              background-color: var(--main-color);
+              color: var(--text-inside);
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              display: grid;
+              place-items: center;
+              font-size: 0.7rem;
+
+              &.ar {
+                left: unset;
+                right: 7px;
+              }
+            }
+
+            &:hover {
+              opacity: 0.8;
+            }
+          }
+
+          @include md {
+            display: none;
+          }
+        }
+
+        .search {
+          display: none;
+
+          i {
+            font-size: 1.2rem;
+            cursor: pointer;
+          }
+
+          @include md {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  @include md {
+    padding: 10px 0;
+  }
+
+  @include sm {
+    padding: 5px 0;
+  }
+}

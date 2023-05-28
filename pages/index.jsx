@@ -7,13 +7,13 @@ import { useTranslation } from "next-i18next";
 // REDUX STUFF
 import { wrapper } from "../store/store";
 // MATERIAL STUFF
-import { Template1, Template11, Template12, Template2, Template3, Template4, Template5, Template51, Template6, Template7, Template8, Template9 } from "../components";
+import { Template53 } from "../components";
 
 const Home = () => {
   const { t, i18n } = useTranslation("common");
 
   return (
-    <Template12 />
+    <Template53 />
   );
 };
 

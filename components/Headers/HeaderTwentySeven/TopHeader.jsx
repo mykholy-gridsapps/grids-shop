@@ -11,10 +11,18 @@ import cls from "./topHeader.module.scss";
 const TopHeader = () => {
   return (
     <div className={cls.headerTop}>
-      <div className={cls.wrapper}>
+      <Container maxWidth="xl" className={cls.wrapper}>
         <div className={cls.headerLeft}>
-          <p className={cls.topMessage}><i className="fa-solid fa-envelope"></i> info@emallshop.com</p>
-          <p className={cls.topMessage}><i className="fa-solid fa-phone"></i> +81 59832452528</p>
+          <div>
+            <LangSwitch />
+          </div>
+          <div>
+            <CurrencySwitch />
+          </div>
+          <div>
+            <ModeSwitch />
+          </div>
+          <p className={cls.topMessage}>Welcome To Tripple Shop</p>
         </div>
 
         <div className={cls.headerRight}>
@@ -22,6 +30,9 @@ const TopHeader = () => {
             <ul className={cls.linksList}>
               <li>
                 <Link href="/account">My Account</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact Us</Link>
               </li>
               <li>
                 <Link href="/wishlist">My Wishlist</Link>
@@ -34,18 +45,10 @@ const TopHeader = () => {
               </li>
             </ul>
 
-            <div>
-              <LangSwitch />
-            </div>
-            <div>
-              <CurrencySwitch />
-            </div>
-            <div>
-              <ModeSwitch />
-            </div>
+            <button>Subscribe us</button>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };
