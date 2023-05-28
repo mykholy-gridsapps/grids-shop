@@ -11,9 +11,11 @@
     figure {
         margin: 0;
         width: 100%;
+        min-height: 100%;
 
         img {
             height: auto;
+            min-height: 100%;
             object-fit: cover;
             width: 100%;
             display: block;

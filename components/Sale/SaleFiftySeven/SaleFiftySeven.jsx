@@ -2,10 +2,10 @@ import Link from "next/link";
 import React from "react";
 import cls from "./saleFiftySeven.module.scss"
 
-const SaleFiftySeven = () => {
+const SaleFiftySeven = ({height}) => {
     return (
-        <div className={cls.banner}>
-            <figure>
+        <div className={cls.banner} style={{height: height}}>
+            <figure >
                 <img src="./imgs/sale/sale-57-1.jpg" alt="banner" />
             </figure>
 

@@ -1,0 +1,23 @@
+@import '../../../styles/extends.scss';
+
+.categories {
+  margin-top: -100px;
+  margin-bottom: 60px;
+  a {
+    display: block;
+    text-align: center !important;
+    width: 100%;
+    padding: 16px 0 15px;
+    font-size: 14px;
+    letter-spacing: -0.005em;
+    border-color: #222529;
+    background-color: #222529;
+    &:hover {
+      border-color: #34393f;
+      background-color: #34393f;
+
+    }
+    color: #fff;
+    box-shadow: none;
+  }
+}

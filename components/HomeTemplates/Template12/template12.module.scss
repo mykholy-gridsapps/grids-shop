@@ -1,0 +1,13 @@
+@import "../../../styles/mixins.scss";
+
+.banners {
+    padding: 0 8px;
+}
+.container {
+    padding: 0 30px;
+    .seprator {
+        border: none;
+        border-bottom: 1px solid #e7e7e7;
+        margin-bottom: 50px;
+    }
+}

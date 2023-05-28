@@ -1,0 +1,114 @@
+@import '../../../styles/mixins.scss';
+
+.header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 10px;
+
+  .middleHeader {
+    display: flex !important;
+    justify-content: start;
+    align-items: center;
+    padding-top: 0;
+    position: relative;
+
+    .logo {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      i {
+        display: none;
+        @include md {
+          display: inline-block;
+        }
+      }
+      .bigImage {
+        height: 45px;
+        margin: 0 10px;
+        object-fit: contain;
+
+      }
+    }
+
+    .links {
+      margin-left: 3.28vw;
+
+      ul {
+        display: flex;
+        gap: 20px;
+
+        li {
+          font-size: 0.95rem;
+          font-weight: 600;
+          height: 80px;
+          line-height: 80px;
+          cursor: pointer;
+
+          i {
+            font-size: 0.7rem;
+          }
+
+          &.active {
+            a {
+              color: var(--secondary-color);
+            }
+          }
+
+          &:hover {
+            a {
+              color: var(--secondary-color)
+            }
+          }
+        }
+      }
+
+      @include md {
+        display: none;
+      }
+    }
+
+    .navbar__search__account {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      gap: 15px;
+      margin-left: auto;
+
+      i {
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+
+      span {
+        font-weight: bold;
+        cursor: pointer;
+        height: 50px;
+        display: flex;
+        align-items: center;
+      }
+
+      .search {
+        display: none;
+
+        @include md {
+          display: block;
+        }
+      }
+
+      .wishlist,
+      .cart {
+        position: relative;
+
+        @include xs {
+          .cartAmount {
+            display: none;
+          }
+        }
+      }
+    }
+
+  }
+}

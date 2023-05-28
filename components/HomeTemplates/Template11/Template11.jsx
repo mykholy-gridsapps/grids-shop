@@ -9,7 +9,7 @@ import CollectionSixty from "../../Collections/CollectionSixtySeven/CollectionSi
 import FooterFive from "../../Footers/FooterEight/FooterEight";
 import HeaderTwentyThree from "../../Headers/HeaderTwentyThree/HeaderTwentyThree";
 import InfoBoxFive from "../../InfoBox/InfoBoxFive/InfoBoxFive";
-import SliderFive from "../../MainSlider/SliderThree/SliderThree";
+import SliderThirty from "../../MainSlider/SliderThirty/SliderThirty";
 import SaleSixteen from "../../Sale/SaleSixteen/SaleSixteen";
 
 import cls from "./template11.module.scss"
@@ -19,7 +19,7 @@ const Template11 = () => {
   return (
     <>
       <HeaderTwentyThree />
-      <SliderFive />
+      <SliderThirty />
       <div className={cls.collection}>
         <Container maxWidth="xl">
           <CollectionEightyThree />

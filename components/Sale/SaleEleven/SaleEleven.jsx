@@ -4,12 +4,12 @@ import React from "react";
 
 import cls from "./saleEleven.module.scss"
 
-const SaleEleven = () => {
+const SaleEleven = ({height}) => {
     const { t, i18n } = useTranslation("common");
     return (
-        <div className={`${cls.banner} ${cls[i18n.language]}`}>
-            <figure>
-                <img src="./imgs/sale/sale-11-1.jpg" alt="banner" />
+        <div className={`${cls.banner} ${cls[i18n.language]}`} style={{height: height}}>
+            <figure style={{height: height}}>
+                <img src="./imgs/sale/sale-11-1.jpg" alt="banner" style={{height: height}}/>
             </figure>
             <div className={cls.bannerLayerLeft}>
                 <h4 className="m-b-3 text-body">Check our discounts</h4>
