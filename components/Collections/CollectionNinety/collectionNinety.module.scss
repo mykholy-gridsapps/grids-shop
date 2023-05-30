@@ -1,0 +1,18 @@
+@import '../../../styles/extends.scss';
+@import '../../../styles/mixins.scss';
+
+.collection {
+  .products {
+    .head {
+      gap: 10px;
+      padding: 0 10px 5px;
+      border-bottom: 1px solid var(--heavy-border);
+      margin-bottom: 10px;
+    }
+
+    .swiper {
+      padding-top: 10px;
+      padding-bottom: 80px;
+    }
+  }
+}

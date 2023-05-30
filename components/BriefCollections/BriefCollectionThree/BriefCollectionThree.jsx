@@ -5,13 +5,13 @@ import Grid from '@mui/material/Grid';
 
 import { useTranslation } from 'next-i18next';
 
-import cls from './priefCollectionThree.module.scss';
+import cls from './briefCollectionThree.module.scss';
 
-const PriefCollectionThree = () => {
+const BriefCollectionThree = () => {
   const { i18n } = useTranslation('common');
 
   return (
-    <div className={cls.priefCollection}>
+    <div className={cls.briefCollection}>
       <Grid container spacing={2} alignItems="center">
         <Grid item xs={12} sm={6} md={6} lg={3}>
           <div className={cls.salePart}>
@@ -37,4 +37,4 @@ const PriefCollectionThree = () => {
   )
 }
 
-export default PriefCollectionThree;
+export default BriefCollectionThree;

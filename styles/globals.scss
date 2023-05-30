@@ -878,7 +878,7 @@ button.swal2-cancel {
     background-color: transparent;
     color: var(--text-color);
     position: absolute;
-    top: 50%;
+    top: 45%;
     z-index: 9;
     border: none;
     outline: none;
@@ -1097,4 +1097,12 @@ button.swal2-cancel {
 
 .marginBottom {
   margin: 0px 0 80PX;
+}
+
+.marginBig {
+  margin: 80px 0;
+
+  @include md {
+    margin-top: 0;
+  }
 }

@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import cls from './blogSeventeen.module.scss';
 
 const BlogSeventeen = () => {
-  const { i18n } = useTranslation('common')
+  const { i18n } = useTranslation('common');
 
   const array = [...Array(5)];
 

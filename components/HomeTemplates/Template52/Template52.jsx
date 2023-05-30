@@ -5,7 +5,7 @@ import CollectionEightyFive from '../../Collections/CollectionEightyFive/Collect
 import SaleSixtyFour from '../../Sale/SaleSixtyFour/SaleSixtyFour';
 import SaleSixtyFive from '../../Sale/SaleSixtyFive/SaleSixtyFive';
 import BlogTwelve from '../../Blogs/BlogTwelve/BlogTwelve';
-import PriefCollectionThree from '../../PriefCollections/PriefCollectionThree/PriefCollectionThree';
+import BriefCollectionThree from '../../BriefCollections/BriefCollectionThree/BriefCollectionThree';
 import FooterTwentyOne from '../../Footers/FooterTwentyOne/FooterTwentyOne';
 
 import Container from '@mui/material/Container';
@@ -57,7 +57,7 @@ const Template52 = () => {
           <BlogTwelve slides={4} />
         </div>
 
-        <PriefCollectionThree />
+        <BriefCollectionThree />
 
       </Container>
 

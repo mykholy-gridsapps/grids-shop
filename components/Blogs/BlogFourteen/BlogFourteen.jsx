@@ -1,15 +1,19 @@
 import Link from 'next/link';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 
 import { useTranslation } from 'next-i18next';
 
 import 'swiper/css';
+import "swiper/css/pagination";
 import cls from './blogFourteen.module.scss';
 
 const BlogFourteen = () => {
-  const { i18n } = useTranslation('common')
+  const { i18n } = useTranslation('common');
+  const pagination = {
+    clickable: true,
+  };
 
   const array = [...Array(3)];
   const breakpoints = {
@@ -23,17 +27,23 @@ const BlogFourteen = () => {
 
   return (
     <div className={`${cls.blogs} customSliderArrows`}>
-      <h3>Our New Blogs</h3>
+      <div className={cls.head}>
+        <span>WELCOME TO TRIPPLE SHOP</span>
+        <h2>OUR LATEST NEWS</h2>
+        <p>Nec sem consequat mi gravida augue augue suspendisse condimentum condimentum vestibulum augue mi gravida ugue.</p>
+      </div>
       <Swiper
         slidesPerView={1}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay]}
+        modules={[Autoplay, Pagination]}
         loop={false}
         spaceBetween={20}
-        breakpoints={breakpoints}>
+        pagination={pagination}
+        breakpoints={breakpoints}
+        className='centerBullets'>
         {array.map((_, idx) =>
           <SwiperSlide key={idx}>
             <div className={cls.blog}>

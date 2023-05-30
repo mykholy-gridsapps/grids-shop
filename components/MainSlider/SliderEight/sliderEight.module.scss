@@ -29,10 +29,6 @@ $sliderOneBadge: #ff7272;
         @include sm {
             min-height: 400px;
         }
-
-        @include xs {
-            min-height: 200px;
-        }
     }
 
     .slide1 {
@@ -265,7 +261,7 @@ $sliderOneBadge: #ff7272;
         border-radius: 0;
         box-shadow: none;
         color: $sliderOneColor1 !important;
-        left: 100px;
+        left: 50px;
         display: none;
         text-align: center !important;
 
@@ -292,7 +288,7 @@ $sliderOneBadge: #ff7272;
         border-radius: 0;
         box-shadow: none;
         color: $sliderOneColor1 !important;
-        right: 100px;
+        right: 50px;
         display: none;
         text-align: center !important;
 
@@ -331,25 +327,29 @@ $sliderOneBadge: #ff7272;
             margin-left: 16px;
             margin-right: 0;
         }
+
         :global(.swiper-button-prev) {
-            right: 100px;
+            right: 50px;
             left: auto;
+
             @include md {
                 right: 16px;
             }
-    
+
             @include xs {
                 right: 5px;
             }
 
         }
+
         :global(.swiper-button-next) {
-            left: 100px;
+            left: 50px;
             right: auto;
+
             @include md {
                 left: 16px;
             }
-    
+
             @include xs {
                 left: 5px;
             }

@@ -1,0 +1,24 @@
+@import '../../../styles/mixins.scss';
+
+.collection {
+
+  .head {
+    margin-bottom: 20px;
+
+    span {
+      display: block;
+      color: var(--main-color);
+      font-weight: 600;
+    }
+
+    p {
+      opacity: 0.8;
+      margin-bottom: 30px;
+    }
+
+    * {
+      text-align: center !important;
+    }
+  }
+
+}

@@ -3,6 +3,7 @@
     padding: 10px 0;
     align-items: center !important;
     display: flex !important;
+    justify-content: space-between;
 
     .footerCopyright {
         font-size: 12px;
@@ -11,7 +12,6 @@
 
     .footerRight {
         margin-top: 0rem;
-        margin-left: auto;
 
         .paymentIcons {
             margin-right: 2px;

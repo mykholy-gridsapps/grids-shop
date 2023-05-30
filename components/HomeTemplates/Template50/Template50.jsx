@@ -4,7 +4,7 @@ import CategoriesThirtyTwo from '../../Categories/CategoriesThirtyTwo/Categories
 import CollectionFourtyNine from '../../Collections/CollectionFourtyNine/CollectionFourtyNine';
 import CollectionEighty from '../../Collections/CollectionEighty/CollectionEighty';
 import CollectionFiftyTwo from '../../Collections/CollectionFiftyTwo/CollectionFiftyTwo';
-import PriefCollectionTwo from '../../PriefCollections/PriefCollectionTwo/PriefCollectionTwo';
+import BriefCollectionTwo from '../../BriefCollections/BriefCollectionTwo/BriefCollectionTwo';
 import SaleSixty from '../../Sale/SaleSixty/SaleSixty';
 import BrandsOne from '../../Brands/BrandsOne/BrandsOne';
 import FooterTwenty from '../../Footers/FooterTwenty/FooterTwenty';
@@ -40,7 +40,7 @@ const Template50 = () => {
 
       <Container maxWidth="xl">
 
-        <PriefCollectionTwo />
+        <BriefCollectionTwo />
 
         <div className="margin">
           <Grid container spacing={2} justifyContent="center">

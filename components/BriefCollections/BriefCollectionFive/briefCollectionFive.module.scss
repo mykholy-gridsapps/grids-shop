@@ -1,6 +1,6 @@
 @import '../../../styles/mixins.scss';
 
-.priefCollection {
+.briefCollection {
   h4 {
     font-size: 1.1rem;
   }
@@ -14,32 +14,48 @@
   }
 
   .newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid var(--heavy-border);
+    height: 100%;
     position: relative;
-    padding: 20px;
+    padding: 30px 20px;
 
-    h5 {
-      font-size: 1.1rem;
+    span {
+      font-weight: 600;
+      color: var(--secondary-color);
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      margin: 0;
     }
 
     p {
       opacity: 0.8;
       font-size: 0.9rem;
+      text-align: center !important;
+      max-width: 400px;
+      margin-bottom: 30px;
     }
 
     .form {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px;
       margin-bottom: 1rem;
+      width: 100%;
 
       .input {
-        border-radius: 5px;
         border: none;
         padding: 0.5rem 15px;
-        margin-right: 0.5rem;
         outline: none;
         border: 1px solid var(--heavy-border);
-        width: 100%;
+        max-width: 300px;
         background-color: var(--secondary-background);
         font-size: 0.9rem;
       }
@@ -47,12 +63,10 @@
       .button {
         background-color: var(--main-color);
         color: var(--text-inside);
-        padding: 0.5rem 20px;
+        padding: 0.6rem 25px;
         font-size: 0.8rem;
-        border-radius: 5px;
         border: none;
         cursor: pointer;
-        margin-top: 10px;
       }
     }
 
@@ -100,16 +114,6 @@
           transform: scale(1.2);
         }
       }
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      width: 1px;
-      height: 100%;
-      border-left: 1px solid var(--heavy-border);
-      top: 0;
-      left: 0;
     }
 
     &.ar {

@@ -1,0 +1,145 @@
+@import '../../../styles/mixins.scss';
+
+.header {
+  z-index: 2;
+  padding: 0 0 10px;
+  background-color: transparent;
+
+  .middleHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    position: relative;
+
+    .logo {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      flex-basis: auto;
+
+      i {
+        display: none;
+
+        @include md {
+          display: inline-block;
+        }
+      }
+
+      .bigImage {
+        height: 55px;
+        margin: 0 10px;
+        object-fit: contain;
+
+        @include xs {
+          height: 45px;
+        }
+
+      }
+    }
+
+    .links {
+
+      ul {
+        display: flex;
+        gap: 20px;
+
+        li {
+          font-size: 0.95rem;
+          font-weight: 600;
+          height: 80px;
+          line-height: 80px;
+          cursor: pointer;
+
+          i {
+            font-size: 0.7rem;
+          }
+
+          &.active {
+            a {
+              color: var(--secondary-color);
+            }
+          }
+
+          &:hover {
+            a {
+              color: var(--secondary-color)
+            }
+          }
+        }
+      }
+
+      @include md {
+        display: none;
+      }
+    }
+
+    .navbar__search__account {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 50px;
+      gap: 15px;
+      flex-basis: 20%;
+
+      a {
+        font-weight: 600;
+        font-size: 0.9rem;
+        opacity: 0.8;
+
+        &:hover {
+          color: var(--secondary-color);
+        }
+
+        @include xs {
+          display: none;
+        }
+      }
+
+      i {
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+
+      span {
+        font-weight: bold;
+        cursor: pointer;
+        height: 50px;
+        display: flex;
+        align-items: center;
+      }
+
+      .search {
+        display: none;
+
+        @include md {
+          display: block;
+        }
+      }
+
+      .wishlist,
+      .cart {
+        position: relative;
+
+        @include xs {
+          .cartAmount {
+            display: none;
+          }
+        }
+      }
+
+      @include xl {
+        flex-basis: 25%;
+      }
+
+      @include lg {
+        flex-basis: 30%;
+      }
+
+      @include md {
+        flex-basis: 50%;
+      }
+    }
+
+  }
+}

@@ -8,9 +8,9 @@ import { Navigation } from "swiper";
 import { useTranslation } from 'next-i18next';
 
 import 'swiper/css';
-import cls from './priefCollectionOne.module.scss';
+import cls from './briefCollectionOne.module.scss';
 
-const PriefCollectionOne = () => {
+const BriefCollectionOne = () => {
   const { i18n } = useTranslation('common');
 
   const array = [...Array(3)];
@@ -31,7 +31,7 @@ const PriefCollectionOne = () => {
   };
 
   return (
-    <div className={cls.priefCollection}>
+    <div className={cls.briefCollection}>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6} lg={4}>
           <div className={cls.part}>
@@ -113,4 +113,4 @@ const PriefCollectionOne = () => {
   )
 }
 
-export default PriefCollectionOne
+export default BriefCollectionOne

@@ -1,0 +1,120 @@
+@import '../../../styles/mixins.scss';
+
+.testimoinal {
+  position: relative;
+
+  &>img {
+    position: absolute;
+    z-index: -1;
+    filter: brightness(0.5);
+  }
+
+  .clients {
+    padding: 100px 0;
+
+    * {
+      color: #fff;
+    }
+
+    h2 {
+      text-align: center !important;
+      position: relative;
+      font-size: 2rem;
+
+      span {
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        height: 2px;
+        width: 100px;
+        transform: translateX(-50%);
+        background-color: var(--secondary-color);
+      }
+
+      @include xs {
+        font-size: 1.5rem;
+      }
+    }
+
+    .sympol {
+      text-align: center !important;
+
+      i {
+        font-size: 2.5rem;
+      }
+    }
+
+    .one {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      * {
+        text-align: center !important;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+
+      span {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    :global(.swiper-pagination) {
+
+
+      :global(.swiper-pagination-bullet) {
+        border: 2px solid #fff;
+        width: 15px;
+        height: 15px;
+        background: transparent;
+        opacity: 1;
+        position: relative;
+
+        @include xs {
+          width: 14px;
+          height: 14px;
+        }
+
+        &:global(.swiper-pagination-bullet-active) {
+          background-color: #fff;
+
+          &::before {
+            width: 7px;
+            height: 7px;
+            content: "";
+            display: block;
+            position: absolute;
+            left: 2px;
+            top: 2px;
+            background-color: #fff;
+            transition: all 0.3s;
+            border-radius: 50%;
+
+            @include xs {
+              width: 6px;
+              height: 6px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
