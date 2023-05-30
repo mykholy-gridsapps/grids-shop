@@ -9,7 +9,7 @@ import { useTranslation } from "next-i18next";
 import cls from './productFourtyThree.module.scss';
 
 const ProductFourtyThree = () => {
-  const [counter, setCounter] = useState(0)
+  const [counter, setCounter] = useState(1)
   const { i18n } = useTranslation('common');
 
   return (
