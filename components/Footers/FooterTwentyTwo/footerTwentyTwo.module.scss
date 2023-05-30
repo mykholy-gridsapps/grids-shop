@@ -1,0 +1,134 @@
+@import '../../../styles/extends.scss';
+
+.footer {
+  margin-top: 80px;
+  border-top: 1px solid var(--heavy-border);
+  padding-top: 20px;
+
+  .side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 70px;
+    margin-bottom: 20px;
+
+    *:not(input) {
+      text-align: center !important;
+    }
+
+    span {
+      opacity: 0.8;
+      font-size: 1.1rem;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 2rem;
+    }
+
+    p {
+      opacity: 0.8;
+    }
+
+    .form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 20px;
+
+      input {
+        padding: 10px 15px;
+        outline: none;
+        border: 1px solid var(--heavy-border);
+        font-size: 0.9rem;
+      }
+
+      button {
+        @extend %flatBtn;
+      }
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 20px;
+
+      i {
+        width: 40px;
+        height: 40px;
+        border: 2px solid var(--heavy-border);
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+
+        &:hover {
+          background-color: var(--main-color);
+          color: var(--text-inside);
+          border-color: var(--main-color);
+        }
+      }
+    }
+
+    &.first {
+      border-right: 1px solid var(--heavy-border);
+
+      &.ar {
+        border-right: unset;
+        border-left: 1px solid var(--heavy-border);
+      }
+    }
+
+    @include lg {
+      padding: 50px;
+    }
+
+    @include md {
+      padding: 30px;
+    }
+
+    @include sm {
+      &.first {
+        border: none;
+      }
+    }
+
+    @include xs {
+      padding: 20px 0;
+    }
+  }
+
+  .bottom {
+    border-top: 1px solid var(--heavy-border);
+    padding: 5px 0;
+
+    .bottomWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      p {
+        opacity: 0.8;
+        font-size: 0.9rem;
+      }
+
+      .bottomImages {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          width: 60px;
+          height: 30px;
+          background-color: var(--special-background);
+          padding: 5px 10px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}

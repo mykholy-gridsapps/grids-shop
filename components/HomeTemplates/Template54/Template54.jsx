@@ -6,7 +6,8 @@ import CollectionEightyEight from '../../Collections/CollectionEightyEight/Colle
 import CategoriesFourtyTwo from '../../Categories/CategoriesFourtyTwo/CategoriesFourtyTwo';
 import CollectionEightyNine from '../../Collections/CollectionEightyNine/CollectionEightyNine';
 import TestimonialEight from '../../Testimonials/TestimonialEight/TestimonialEight';
-
+import BlogFourteen from '../../Blogs/BlogFourteen/BlogFourteen';
+import BriefCollectionFive from '../../BriefCollections/BriefCollectionFive/BriefCollectionFive'
 import FooterFourteen from '../../Footers/FooterFourteen/FooterFourteen';
 
 import Container from '@mui/material/Container';
@@ -57,6 +58,16 @@ const Template54 = () => {
       </Container>
 
       <TestimonialEight />
+
+      <Container maxWidth="xl">
+
+        <div className='margin'>
+          <BlogFourteen />
+        </div>
+
+        <BriefCollectionFive />
+
+      </Container>
 
       <FooterFourteen />
 

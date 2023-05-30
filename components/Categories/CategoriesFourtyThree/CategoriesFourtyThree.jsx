@@ -1,4 +1,4 @@
-import ProductThirtySeven from '../../ProductCard/ProductThirtySeven/ProductThirtySeven';
+import Link from 'next/link';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
@@ -7,9 +7,9 @@ import { useTranslation } from 'next-i18next';
 
 import 'swiper/css';
 import "swiper/css/navigation";
-import cls from './collectionEightyNine.module.scss';
+import cls from './categoriesFourtyThree.module.scss';
 
-const CollectionEightyNine = () => {
+const CategoriesFourtyThree = () => {
   const { i18n } = useTranslation('common');
 
   const array = [...Array(5)];
@@ -21,11 +21,6 @@ const CollectionEightyNine = () => {
 
   return (
     <div className={cls.categories}>
-      <div className={cls.head}>
-        <span>WELCOME TO TRIPPLE SHOP</span>
-        <h2>OUR BESTSELLERS</h2>
-        <p>Visit our shop to see amazing creations from our designers.</p>
-      </div>
 
       <div className={`${cls.products} darkSmallCustomSliderArrows ${i18n.language} ${i18n.language}`}>
         <Swiper
@@ -41,16 +36,20 @@ const CollectionEightyNine = () => {
             500: {
               slidesPerView: 2,
             },
-            768: {
+            992: {
               slidesPerView: 3,
-            },
-            1200: {
-              slidesPerView: 4,
             },
           }}>
           {array.map((_, idx) =>
             <SwiperSlide key={idx}>
-              <ProductThirtySeven />
+              <div className={cls.category}>
+                <img src="/imgs/lastBack.jpg" alt="category" />
+                <div className={cls.content}>
+                  <span>Sound Explosion</span>
+                  <h3>Smart Electronic</h3>
+                  <Link href="/">READ MORE</Link>
+                </div>
+              </div>
             </SwiperSlide>
           )}
         </Swiper>
@@ -61,4 +60,4 @@ const CollectionEightyNine = () => {
   )
 }
 
-export default CollectionEightyNine;
+export default CategoriesFourtyThree

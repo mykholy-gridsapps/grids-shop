@@ -1,17 +1,31 @@
 @import '../../../styles/mixins.scss';
 
 .blogs {
-  margin: 50px 0;
 
-  &>h3 {
-    text-align: center !important;
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     margin-bottom: 30px;
+
+    span {
+      font-weight: 600;
+      color: var(--main-color);
+    }
+
+    p {
+      max-width: 600px;
+      text-align: center !important;
+      opacity: 0.8;
+    }
   }
 
   .blog {
     display: grid;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
 
     .image {
       position: relative;

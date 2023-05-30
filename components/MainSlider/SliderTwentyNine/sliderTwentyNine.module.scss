@@ -11,10 +11,18 @@ $sliderOneBadge: #ff7272;
 .slider {
 
     img {
-        height: 450px;
+        height: 700px;
         object-position: center center;
         object-fit: cover;
         max-width: 100%;
+
+        @include xs {
+            height: 400px !important;
+        }
+
+        @include sm {
+            height: 500px;
+        }
     }
 
     .slide1 {
@@ -314,7 +322,7 @@ $sliderOneBadge: #ff7272;
         }
 
         :global(.swiper-button-prev) {
-            right: 100px;
+            right: 50px;
             left: auto;
 
             @include md {
@@ -328,7 +336,7 @@ $sliderOneBadge: #ff7272;
         }
 
         :global(.swiper-button-next) {
-            left: 100px;
+            left: 50px;
             right: auto;
 
             @include md {
