@@ -1,0 +1,291 @@
+@import "../../../styles/mixins.scss";
+
+.slider {
+    background-color: #f4f4f4;
+    font-size: 14px;
+
+    img {
+        object-fit: cover;
+        object-position: center top;
+        width: auto;
+        min-height: 500px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    @include xs {
+        font-size: 2.5vw;
+    }
+    
+    .slide1 {
+        position: relative;
+        
+            margin: 0 -24px;
+        @include xs {
+            margin: 0 -16px;
+        }
+
+        .bannerLayer {
+            position: absolute;
+            right: 6.75%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: auto;
+
+            h4 {
+                font-size: 1.1875em;
+                font-weight: 500;
+                letter-spacing: 0.08em;
+                opacity: 0.7;
+                margin-top: 0;
+                margin-bottom: 16px;
+                text-transform: capitalize;
+            }
+
+            h2 {
+                font-size: 2.5em;
+                font-weight: 500;
+                letter-spacing: 0.09em;
+                margin-top: 0;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                font-size: 5.875em;
+                line-height: 1.1;
+                margin-top: 0;
+                margin-bottom: 8px;
+                text-transform: uppercase;
+            }
+
+            h5 {
+                font-size: 0.875em;
+                margin-top: -4px;
+                margin-top: 0;
+                letter-spacing: -0.02em;
+                margin-top: 0;
+                margin-bottom: 10px;
+                padding-top: 5px;
+                padding-bottom: 2.5px;
+                display: inline-block;
+                vertical-align: middle;
+                text-transform: uppercase;
+
+                b {
+                    position: relative;
+                    padding: 4px 8px;
+                    margin: 0 0.2em 0 0.8em;
+                    font-size: 1.03em;
+                    line-height: 1;
+                    letter-spacing: -0.02em;
+                    vertical-align: sub;
+                    transform: rotate(-2deg);
+                    background-color: #ff7272;
+                    color: #fff;
+                    display: inline-block;
+                    font-weight: 700;
+
+                    em {
+                        font-size: 2em;
+                        font-style: normal;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            a {
+                font-size: 0.9375em;
+                padding: 1.034em 2.946em;
+                border-color: #222529;
+                background-color: #222529;
+                color: #fff;
+                box-shadow: none;
+                transition: all 0.3s;
+                text-transform: uppercase;
+                border-radius: 0;
+                font-weight: 700;
+                line-height: 1.429;
+            }
+
+            .btn {
+                display: inline-flex;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 22px;
+                font-weight: 400;
+                letter-spacing: 0.219996px;
+                line-height: 31.4333px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                padding-top: 0px;
+                text-align: center;
+                vertical-align: middle;
+                white-space: nowrap;
+
+                span {
+                    margin-right: 8px;
+                    display: inline-block;
+                    border-bottom: 1px solid;
+                    line-height: 1.4;
+                }
+
+                i {
+                    font-size: 15px;
+                    font-weight: 400;
+                    letter-spacing: 0.219996px;
+                    line-height: 22px;
+                    margin-bottom: 0px;
+                    margin-left: 2px;
+                    margin-right: 1px;
+                    margin-top: 0px;
+                    text-align: center;
+                    text-transform: none;
+                    vertical-align: middle;
+                    white-space: nowrap
+                }
+
+                @include xs {
+                    padding: 0 16px;
+                }
+            }
+        }
+    }
+
+    .slide2 {
+        position: relative;
+
+        @include xs {
+            margin: 0 -16px;
+        }
+
+        .bannerLayer {
+            position: absolute;
+            left: 8.7%;
+            top: 50%;
+            transform: translateY(-50%);
+            right: auto;
+
+            h4 {
+                color: #999;
+                font-size: 2.125em;
+                font-weight: 500;
+                line-height: 1;
+                margin: 0;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                &:first-of-type {
+                    font-size: 4.3125em;
+                    line-height: 1;
+                    margin-top: 0;
+                    margin-bottom: 8px;
+                    text-transform: uppercase;
+                }
+
+                &:last-of-type {
+                    font-size: 2.125em;
+                    line-height: 1;
+                    display: flex;
+                    align-items: center;
+                    margin: 0 -15px 16px;
+                    text-transform: uppercase;
+
+                    &:before {
+                        content: "";
+                        margin: 0 15px;
+                        flex: 1;
+                        height: 0;
+                        border-top: 5px solid #222529;
+                    }
+
+                    &::after {
+                        content: "";
+                        margin: 0 15px;
+                        flex: 1;
+                        height: 0;
+                        border-top: 5px solid #222529;
+                    }
+                }
+
+            }
+
+            h2 {
+                font-size: 2.125em;
+                font-weight: 500;
+                line-height: 1.2;
+                letter-spacing: 0.12em;
+                margin-top: 0;
+                margin-bottom: 24px;
+                text-transform: uppercase;
+            }
+
+            a {
+                padding: 1.25em 3.125em;
+                font-size: 1em;
+                letter-spacing: 0.12em;
+                margin-left: 2px;
+                cursor: pointer;
+                border-color: #222529;
+                background-color: #222529;
+                color: #fff;
+                box-shadow: none;
+                display: block;
+                text-align: center !important;
+                width: 100%;
+            }
+        }
+    }
+
+    :global(.swiper-button-prev) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        left: 0;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            font-size: 18px !important;
+        }
+    }
+
+    :global(.swiper-button-next) {
+        background: transparent;
+        border-radius: 0;
+        box-shadow: none;
+        right: 0;
+        display: none;
+        text-align: center !important;
+
+        &::after {
+            font-size: 18px !important;
+        }
+
+    }
+
+    &:hover {
+        :global(.swiper-button-prev) {
+            display: block;
+        }
+
+        :global(.swiper-button-next) {
+            display: block;
+        }
+    }
+
+    &.ar {
+        :global(.swiper-button-prev) {
+            right: 0;
+            left: auto;
+        }
+
+        :global(.swiper-button-next) {
+            left: 0;
+            right: auto;
+        }
+    }
+}

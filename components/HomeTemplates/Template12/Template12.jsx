@@ -1,7 +1,7 @@
 import { Container, Grid } from "@mui/material";
 import React from "react";
 import CategoriesFourtyOne from "../../Categories/CategoriesFourtyOne/CategoriesFourtyOne";
-import HeaderOne from "../../Headers/HeaderTwentyFour/HeaderTwentyFour";
+import HeaderTwentyFour from "../../Headers/HeaderTwentyFour/HeaderTwentyFour";
 import SliderThirtyOne from "../../MainSlider/SliderThirtyOne/SliderThirtyOne";
 import SaleSeventeen from "../../Sale/SaleSeventeen/SaleSeventeen";
 import SaleSix from "../../Sale/SaleSix/SaleSix";
@@ -23,7 +23,7 @@ import cls from "./template12.module.scss"
 const Template12 = () => {
   return (
     <>
-      <HeaderOne />
+      <HeaderTwentyFour />
       <SliderThirtyOne />
       <CategoriesFourtyOne />
       <Grid container spacing={1} className={cls.banners}>

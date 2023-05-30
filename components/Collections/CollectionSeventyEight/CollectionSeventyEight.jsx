@@ -4,14 +4,14 @@ import HorizontalProductCardTwo from "../../HorizontalProductCard/HorizontalProd
 import cls from './collectionSeventyEight.module.scss';
 import { Grid } from "@mui/material";
 
-const CollectionSeventyEight = () => {
+const CollectionSeventyEight = ({seprator}) => {
 
   return (
     <div className={cls.collection}>
       <Grid container spacing={3}>
         <Grid item md={4} sm={6} xs={12}>
           <h3>Top Rated Products</h3>
-          <div className={cls.headingSpacer}></div>
+          <div className={cls.headingSpacer} style={{visibility: seprator}}></div>
 
           <HorizontalProductCardTwo />
           <HorizontalProductCardTwo />
@@ -19,7 +19,7 @@ const CollectionSeventyEight = () => {
         </Grid>
         <Grid item md={4} sm={6} xs={12}>
           <h3>Best Selling Products</h3>
-          <div className={cls.headingSpacer}></div>
+          <div className={cls.headingSpacer} style={{visibility: seprator}}></div>
 
           <HorizontalProductCardTwo />
           <HorizontalProductCardTwo />
@@ -27,7 +27,7 @@ const CollectionSeventyEight = () => {
         </Grid>
         <Grid item md={4} sm={6} xs={12}>
           <h3>Latest Products</h3>
-          <div className={cls.headingSpacer}></div>
+          <div className={cls.headingSpacer} style={{visibility: seprator}}></div>
 
           <HorizontalProductCardTwo />
           <HorizontalProductCardTwo />

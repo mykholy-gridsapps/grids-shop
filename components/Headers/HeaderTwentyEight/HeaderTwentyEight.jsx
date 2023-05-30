@@ -8,7 +8,7 @@ import LinkDropdown from '../LinkDropdown/LinkDropdown';
 
 import { useTranslation } from "next-i18next";
 
-import cls from './headerOne.module.scss';
+import cls from './headerTwentyEight.module.scss';
 
 const HeaderOne = ({bgColor, topBg, topColor}) => {
     const [navDropdown, setNavDropdown] = useState(0);

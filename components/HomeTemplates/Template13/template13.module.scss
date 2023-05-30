@@ -1,0 +1,10 @@
+@import "../../../styles/mixins.scss";
+
+.container {
+    margin-top: 20px;
+    .side {
+        @include md {
+            display: none;
+        }
+    }
+}

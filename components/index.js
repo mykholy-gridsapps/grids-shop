@@ -18,6 +18,8 @@ export { default as Template9 } from './HomeTemplates/Template9/Template9';
 
 export { default as Template11 } from './HomeTemplates/Template11/Template11';
 export { default as Template12 } from './HomeTemplates/Template12/Template12';
+export { default as Template13 } from './HomeTemplates/Template13/Template13';
+export { default as Template14 } from './HomeTemplates/Template14/Template14';
 
 export { default as Template43 } from './HomeTemplates/Template43/Template43';
 

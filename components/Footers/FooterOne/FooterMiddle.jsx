@@ -3,11 +3,11 @@ import { Box, Container } from "@mui/system";
 import React from "react";
 import cls from "./footerMiddle.module.scss"
 
-const FooterMiddle = () => {
+const FooterMiddle = ({label}) => {
     return (
         <div className={cls.footerMiddle}>
             <Container maxWidth="xl" className={cls.positionStatic}>
-                <div className={cls.footerRibbon}>Get in touch</div>
+                <div className={cls.footerRibbon} style={{display: label}}>Get in touch</div>
                 <Grid container>
                     <Grid item lg={3} sm={6} sx={{pb : {sm:"0", xs: "4.5px", }}}>
                         <div className={cls.widget}>

@@ -4,10 +4,10 @@ import { Grid } from "@mui/material";
 
 import cls from './collectionFiftyNine.module.scss';
 
-const CollectionFiftyEight = () => {
+const CollectionFiftyEight = ({border}) => {
 
   return (
-    <div className={cls.collection}>
+    <div className={cls.collection} style={{border: border}}>
       <Grid container spacing={3}>
         <Grid item md={4} sm={6} xs={12}>
           <h3>Top Rated Products</h3>

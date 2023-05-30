@@ -1,0 +1,140 @@
+@import '../../../styles/mixins.scss';
+
+.navbar {
+  .navbar__main {
+    background-color: transparent;
+    border-top: 2px solid #e7e7e7;
+
+    .navbar_mainNav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      .smallLogo {
+        display: none;
+      }
+
+      .switches {
+        display: flex;
+        align-items: center;
+        gap: 10px
+      }
+
+      .links {
+        background-color: transparent;
+        width: 100%;
+        margin-top: -2px;
+
+        ul.navLinks {
+          display: flex;
+          justify-content: center;
+
+          li {
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            color: #222529;
+            height: 45px;
+            line-height: 45px;
+            margin: 0 20px;
+            border-top: 2px solid transparent;
+
+            @include lg {
+              padding: 0 15px;
+              font-size: 0.8rem;
+            }
+
+            i {
+              font-size: 0.8rem;
+            }
+
+            &:hover {
+              color: #88b250;
+              border-top: 2px solid #88b250;
+            }
+          }
+
+          &.ar {
+            li {
+              border-left: unset;
+              border-right: 1px solid #e0e0e0;
+            }
+          }
+        }
+
+        @include md {
+          display: none;
+        }
+      }
+
+      .navbar__main__account {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        gap: 15px;
+
+        @include lg {
+          gap: 10px;
+        }
+
+        i {
+          color: #fff;
+          font-size: 1.3rem;
+          cursor: pointer;
+        }
+
+        span {
+          font-weight: bold;
+          color: #fff;
+          cursor: pointer;
+          height: 50px;
+          display: flex;
+          align-items: center;
+        }
+
+        .wishlist,
+        .cart {
+          position: relative;
+        }
+      }
+
+      @include md {
+        .smallLogo {
+          display: inline;
+          color: #fff;
+          display: flex;
+          gap: 15px;
+          align-items: center;
+
+          i {
+            cursor: pointer;
+            font-size: 1.2rem;
+          }
+        }
+
+        .switches {
+          display: none;
+        }
+
+        .navbar__search__searchArea {
+          display: none;
+        }
+      }
+
+      @include xs {
+        .navbar__search__account {
+          gap: 15px;
+
+          i {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    @include md {
+      display: none;
+    }
+  }
+}

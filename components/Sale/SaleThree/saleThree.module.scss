@@ -1,3 +1,4 @@
+@import "../../../styles/mixins.scss";
 .banner {
     transition: box-shadow 0.35s;
     position: relative;
@@ -20,6 +21,9 @@
             object-fit: cover;
             border: solid var(--border-color);
             border-width: 0.9em;
+            @include md {
+                height: 170px !important;
+            }
         }
     }
 

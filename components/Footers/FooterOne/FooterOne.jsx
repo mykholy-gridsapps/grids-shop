@@ -6,10 +6,10 @@ import FooterMiddle from "./FooterMiddle";
 import { Container } from "@mui/system";
 import FooterBottom from "./FooterBottom";
 
-const FooterOne = () => {
+const FooterOne = ({label}) => {
   return (
     <Box component='footer' className={[cls.footer, cls.bgDark, cls.positionRelative].join(' ')}>
-      <FooterMiddle />
+      <FooterMiddle label={label} />
       <Container maxWidth="xl">
         <FooterBottom></FooterBottom>
       </Container>
