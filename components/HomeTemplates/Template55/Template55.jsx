@@ -1,5 +1,5 @@
 import HeaderTwentyNine from '../../Headers/HeaderTwentyNine/HeaderTwentyNine';
-import SliderTwenty from '../../MainSlider/SliderTwentyNine/SliderTwentyNine';
+import SliderTwentyNine from '../../MainSlider/SliderTwentyNine/SliderTwentyNine';
 import CategoriesFourtyThree from '../../Categories/CategoriesFourtyThree/CategoriesFourtyThree';
 import CollectionNinety from '../../Collections/CollectionNinety/CollectionNinety';
 import FooterTwentyTwo from '../../Footers/FooterTwentyTwo/FooterTwentyTwo';
@@ -14,7 +14,7 @@ const Template55 = () => {
         <HeaderTwentyNine />
       </Container>
 
-      <SliderTwenty />
+      <SliderTwentyNine />
 
       <Container maxWidth="xxxl">
 

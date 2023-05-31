@@ -9,7 +9,7 @@
     height: 40px;
     display: grid;
     place-content: center;
-    border: none;
+    border: none !important;
     border-radius: 0 !important;
     background-color: var(--main-color);
     color: #fff;
