@@ -10,7 +10,7 @@ $sliderOneBadge: #ff7272;
 
 .slider {
 
-    margin: 0 -16px;
+    margin: 20px -16px 0;
 
     @include md {
         margin: 0 -32px;
@@ -261,7 +261,7 @@ $sliderOneBadge: #ff7272;
         border-radius: 0;
         box-shadow: none;
         color: $sliderOneColor1 !important;
-        left: 50px;
+        left: 120px;
         display: none;
         text-align: center !important;
 
@@ -288,7 +288,7 @@ $sliderOneBadge: #ff7272;
         border-radius: 0;
         box-shadow: none;
         color: $sliderOneColor1 !important;
-        right: 50px;
+        right: 120px;
         display: none;
         text-align: center !important;
 

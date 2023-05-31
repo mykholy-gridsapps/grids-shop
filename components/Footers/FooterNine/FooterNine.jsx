@@ -7,17 +7,20 @@ import FooterBottom from "./FooterBottom";
 
 import cls from "./footerNine.module.scss";
 
-const FooterNine = () => {
+const FooterNine = ({bgColor}) => {
   return (
-    <Container maxWidth="xl">
-      <Box component='footer' className={[cls.footer, cls.bgDark].join(' ')}>
-        <FooterMiddle />
-        <Container maxWidth="xl">
+    <footer style={{backgroundColor: bgColor}}>
 
-          <FooterBottom />
-        </Container>
-      </Box>
-    </Container>
+      <Container maxWidth="xl">
+        <Box component='footer' className={[cls.footer, cls.bgDark].join(' ')}>
+          <FooterMiddle />
+          <Container maxWidth="xl">
+
+            <FooterBottom />
+          </Container>
+        </Box>
+      </Container>
+    </footer>
   );
 };
 
