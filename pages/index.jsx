@@ -2,15 +2,12 @@
 import langRedirection from "../utils/redirections/langRedirection/langRedirection";
 import routeRedirection from "../utils/redirections/routeRedirection/routeRedirection";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-// INTERNATIONALIZATION
-import { useTranslation } from "next-i18next";
 // REDUX STUFF
 import { wrapper } from "../store/store";
 // MATERIAL STUFF
 import { Template57 } from "../components";
 
 const Home = () => {
-  const { t, i18n } = useTranslation("common");
 
   return (
     <Template57 />

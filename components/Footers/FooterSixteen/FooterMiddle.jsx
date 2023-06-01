@@ -33,6 +33,8 @@ const FooterMiddle = () => {
                                         <li><a href="dashboard.html">My Account</a></li>
                                         <li><a href="#">Orders history</a></li>
                                         <li><a href="#">Advanced search</a></li>
+                                        <li><a href="#">Orders history</a></li>
+                                        <li><a href="#">Advanced search</a></li>
                                     </ul>
                                 </div>
                             </Grid>
@@ -43,6 +45,8 @@ const FooterMiddle = () => {
                                         <li><a href="demo8-about.html">Super Fast HTML Template</a></li>
                                         <li><a href="demo8-contact.html">Top Rated Theme in Themeforest</a></li>
                                         <li><a href="my-account.html">33 Unique Shop Demos</a></li>
+                                        <li><a href="#">Powerful Admin Panel</a></li>
+                                        <li><a href="#">Mobile & Retina Optimized</a></li>
                                         <li><a href="#">Powerful Admin Panel</a></li>
                                         <li><a href="#">Mobile & Retina Optimized</a></li>
                                     </ul>

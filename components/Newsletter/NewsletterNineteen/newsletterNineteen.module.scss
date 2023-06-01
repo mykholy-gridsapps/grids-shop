@@ -1,0 +1,58 @@
+@import '../../../styles/mixins.scss';
+
+.newsletter {
+  background-color: var(--main-color);
+  padding: 100px 30px;
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-inside);
+
+    h2 {
+      span {
+        color: var(--secondary-color);
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      text-align: center !important;
+    }
+  }
+
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    input,
+    button {
+      padding: 12px 20px;
+      font-size: 0.9rem;
+      border: none;
+      outline: none;
+    }
+
+    input {
+      min-width: 300px;
+
+      @include xs {
+        min-width: 250px;
+      }
+    }
+
+    button {
+      background-color: var(--secondary-color);
+      color: var(--text-inside);
+      cursor: pointer;
+    }
+
+    @include xs {
+      gap: 10px;
+    }
+  }
+}

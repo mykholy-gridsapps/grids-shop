@@ -1,0 +1,43 @@
+@import '../../../styles/mixins.scss';
+
+.sales {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+
+  .sale {
+    &:first-of-type {
+      grid-column: span 4;
+      grid-row: span 2;
+    }
+
+    &:nth-of-type(2) {
+      grid-column: span 5;
+      grid-row: span 1;
+    }
+
+    &:nth-of-type(3) {
+      grid-column: span 3;
+      grid-row: span 1;
+    }
+
+    &:nth-of-type(4) {
+      grid-column: span 3;
+      grid-row: span 1;
+    }
+
+    &:nth-of-type(5) {
+      grid-column: span 5;
+      grid-row: span 1;
+    }
+
+    @include md {
+      grid-column: span 6 !important;
+    }
+
+    @include xs {
+      grid-column: span 12 !important;
+    }
+  }
+}
