@@ -1,12 +1,14 @@
 .categoriesCarousel {
-    padding: 40px 0;
-    .sectionTitle {
-        margin-bottom: 24px;
-        font-size: 22px;
-        line-height: 1.2;
-        letter-spacing: -0.02em;
-        text-transform: none;
-        color: var(--text-dark);
-        text-align: center !important;
-      }
+  padding: 40px 0;
+
+  .sectionTitle {
+    margin-bottom: 24px;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-transform: none;
+    color: var(--text-dark);
+    text-align: center !important;
+  }
+  border-bottom: 1px solid #e7e7e7;
 }

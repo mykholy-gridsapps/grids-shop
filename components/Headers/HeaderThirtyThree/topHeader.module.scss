@@ -1,0 +1,113 @@
+@import "../../../styles/extends.scss";
+
+.headerTop {
+  color: #383b3f;
+  font-weight: 700;
+  font-size: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e7e7e7;
+
+  span {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .headerLeft,
+    .headerRight {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .topMessage {
+        margin: 0 30px;
+        font-size: 10px;
+
+        @include md {
+          display: none;
+        }
+      }
+
+      .linksList {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin: 0 30px;
+
+        li {
+          a {
+            color: #383b3f;
+            font-size: 10px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .contactLink {
+        i {
+          font-size: 14px;
+          margin-right: 5px;
+        }
+
+        h6 {
+          display: inline-block;
+          margin: 0;
+          font-size: 10px;
+          font-weight: 500;
+
+          a {
+            color: #383b3f;
+          }
+        }
+      }
+
+      .navbar__search__account {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        gap: 15px;
+        margin-left: auto;
+
+        i {
+          font-size: 15px;
+          cursor: pointer;
+        }
+
+        span {
+          font-weight: bold;
+          cursor: pointer;
+          height: 50px;
+          display: flex;
+          align-items: center;
+        }
+
+        .search {
+          display: none;
+
+          @include md {
+            display: block;
+          }
+        }
+
+        .wishlist,
+        .cart {
+          position: relative;
+
+          @include xs {
+            .cartAmount {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include sm {
+    display: none;
+  }
+}

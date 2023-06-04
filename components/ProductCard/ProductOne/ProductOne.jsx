@@ -8,7 +8,7 @@ import React from 'react'
 
 import cls from './productOne.module.scss'
 
-const ProductOne = () => {
+const ProductOne = ({color}) => {
     const { t, i18n } = useTranslation('common');
     const dispatch = useDispatch();
 
@@ -39,18 +39,18 @@ const ProductOne = () => {
             <div className={cls.productDetails}>
                 <div className={cls.categoryWrap}>
                     <div className={cls.categoryList}>
-                        <Link href="demo1-shop.html" className={cls.productCategory}>category</Link>
+                        <Link href="demo1-shop.html" className={cls.productCategory} style={{color: color}}>category</Link>
                     </div>
-                    <Link href="wishlist.html" title="Add to Wishlist" className={cls.btnIconWish}>
+                    <Link href="wishlist.html" title="Add to Wishlist" className={cls.btnIconWish}  style={{color: color}}>
                         <i className={cls.iconHeart}></i>
                     </Link>
                 </div>
-                <h3 className={cls.productTitle}> <a href="demo1-product.html">Black Grey Headset</a> </h3>
+                <h3 className={cls.productTitle}> <Link href="#"  style={{color: color}}>Black Grey Headset</Link> </h3>
                 <div className={cls.ratingsContainer}>
-                    <Rating name="read-only" value={3} readOnly />
+                    <Rating name="read-only" value={3} readOnly  style={{color: color}}/>
                 </div>
                 <div className={cls.priceBox}>
-                    <span className={cls.productPrice}>$9.00</span>
+                    <span className={cls.productPrice}  style={{color: color}}>$9.00</span>
                 </div>
             </div>
         </div>
