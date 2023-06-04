@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import ProductTwo from "../../ProductCard/ProductThree/ProductThree"
+import ProductThree from "../../ProductCard/ProductThree/ProductThree"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from "swiper";
 
@@ -40,25 +40,25 @@ const CollectionSixtyFour = ({ title, slides }) => {
         }}
         className={cls.swiper}>
         <SwiperSlide>
-          <ProductTwo />
+          <ProductThree />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductTwo />
+          <ProductThree />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductTwo />
+          <ProductThree />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductTwo />
+          <ProductThree />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductTwo />
+          <ProductThree />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductTwo />
+          <ProductThree />
         </SwiperSlide>
         <SwiperSlide>
-          <ProductTwo />
+          <ProductThree />
         </SwiperSlide>
 
       </Swiper>

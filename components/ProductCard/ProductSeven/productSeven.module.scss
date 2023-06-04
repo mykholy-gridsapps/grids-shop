@@ -2,9 +2,9 @@
     position: relative;
     color: var(--text-color);
     transition: box-shadow 0.3s ease-in-out;
+    background-color: #fff;
 
     &.innerIcon {
-        margin-bottom: 19px;
 
         &:not(.product-widget) {
             &:hover {
@@ -172,6 +172,7 @@
 
     &:hover {
         box-shadow: 0 25px 35px -5px rgba(0,0,0,0.1);
+        z-index: 3;
         figure {
             img {
                 &:first-child {

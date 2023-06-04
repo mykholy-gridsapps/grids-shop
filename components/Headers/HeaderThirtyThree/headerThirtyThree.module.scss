@@ -1,0 +1,63 @@
+@import '../../../styles/mixins.scss';
+
+.header {
+  z-index: 2;
+  padding: 0 10px;
+
+  .middleHeader {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    position: relative;
+
+    .logo {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      i {
+        display: none;
+        @include md {
+          display: inline-block;
+        }
+      }
+      .bigImage {
+        height: 45px;
+        margin: 0 10px;
+        object-fit: contain;
+
+      }
+    }
+
+    .links {
+      ul {
+        display: flex;
+        gap: 20px;
+
+        li {
+          font-size: 0.95rem;
+          font-weight: 500;
+          height: 80px;
+          line-height: 80px;
+          cursor: pointer;
+          color: #555555;
+          a {
+            color: #555555;
+
+          }
+
+          i {
+            font-size: 0.7rem;
+          }
+        }
+      }
+
+      @include md {
+        display: none;
+      }
+    }
+
+    
+
+  }
+}

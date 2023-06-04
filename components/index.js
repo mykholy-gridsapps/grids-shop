@@ -22,6 +22,8 @@ export { default as Template12 } from './HomeTemplates/Template12/Template12';
 export { default as Template13 } from './HomeTemplates/Template13/Template13';
 export { default as Template14 } from './HomeTemplates/Template14/Template14';
 export { default as Template15 } from './HomeTemplates/Template15/Template15';
+export { default as Template16 } from './HomeTemplates/Template16/Template16';
+export { default as Template17 } from './HomeTemplates/Template17/Template17';
 
 export { default as Template43 } from './HomeTemplates/Template43/Template43';
 

@@ -1,0 +1,40 @@
+@import url('https://fonts.cdnfonts.com/css/savoye-let');
+
+.wrapper {
+  padding: 50px 0;
+  background-image: url("../../../public/imgs/collection/collection-96-1.jpg");
+  background-attachment: fixed;
+
+  h2 {
+    font-family: "Savoye LET";
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 4px;
+    text-align: center !important;
+    color: #fff;
+  }
+
+  h5 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.36px;
+    line-height: 18px;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    padding-top: 5px;
+    text-align: center !important;
+    text-transform: uppercase;
+    color: #fff;
+
+    strong {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: -0.72px;
+      line-height: 36px;
+      vertical-align: text-top;
+      text-transform: uppercase;
+    }
+  }
+}

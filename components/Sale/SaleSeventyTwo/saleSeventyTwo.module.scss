@@ -1,0 +1,139 @@
+@import url('https://fonts.cdnfonts.com/css/savoye-let');
+@import "../../../styles/mixins.scss";
+
+.banner {
+    background-color: #222529;
+    height: 380px;
+    position: relative;
+    height: 360px;
+    position: relative;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 12px 63px 12px;
+    border: 1.45em solid #c0c0c2;
+    color: #fff;
+    text-align: center;
+
+
+    .bannerLayer {
+        position: relative;
+
+
+        h3 {
+            margin-right: -7px;
+            display: inline-block;
+            font-size: 3.85em;
+            color: #fff;
+            line-height: 1;
+            padding-left: 27px;
+            position: relative;
+            text-transform: uppercase;
+
+
+            small {
+                display: inline-block;
+                position: absolute;
+                top: 45%;
+                font-size: 0.265em;
+                left: -0.98em;
+                font-weight: 500;
+                transform: translateY(-50%) rotate(-90deg);
+                text-transform: uppercase;
+            }
+        }
+
+        hr {
+            width: 9.8%;
+            margin: -1px auto 0 2px;
+            border-top: 3px solid #fff;
+        }
+
+        h5 {
+            display: inline-block;
+            margin-right: 3.2rem;
+            color: #fff;
+            font-size: 0.7em;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            padding-top: 5px;
+            padding-right: 2.5px;
+
+            span {
+                margin: 0 2px;
+                
+                strong {
+                    display: inline;
+                    font-size: 2em;
+                    line-height: 1;
+                    vertical-align: text-top;
+                    margin: 0 2px;
+                }
+            }
+
+        }
+
+        a {
+            font-size: 0.7em;
+            padding: 1em 2em;
+            background: #fff;
+        }
+    }
+
+    &.ar {
+
+        .bannerLayer {
+            h3 {
+                margin-right: 0;
+                margin-left: -7px;
+                padding-left: 0;
+                padding-right: 27px;
+
+                @include xs {
+                    padding-right: 15px;
+                }
+
+                small {
+                    transform: translateY(-115%) rotate(-90deg);
+
+                    left: auto !important;
+                    right: -18px;
+
+                    @include md {
+                        left: auto !important;
+                        font-size: 20px;
+                        right: -10px;
+                        transform: translateY(-140%) rotate(-90deg);
+                    }
+
+                    @include xs {
+                        font-size: 12px;
+                        left: auto;
+                        transform: translateY(-335%) rotate(-90deg);
+                        right: 0;
+                    }
+                }
+            }
+
+            hr {
+                margin: 16px 0 0 auto;
+            }
+
+            h5 {
+                padding-right: 0 !important;
+                padding-left: 2.5px !important;
+                margin-right: 0;
+                margin-left: 22px;
+            }
+
+            a {
+                i {
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+
+
+}
