@@ -73,4 +73,4 @@ const SliderSeventeen = () => {
   )
 }
 
-export default SliderSeventeen
+export default SliderSeventeen;

@@ -8,7 +8,6 @@
   justify-content: center;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  margin: 50px 0;
 
   .main {
     grid-column: span 8;
@@ -30,6 +29,7 @@
     grid-row: span 1;
     background-image: url('../../../public/imgs/banner.png');
     padding: 20px;
+    min-height: 250px;
   }
 
   .main,

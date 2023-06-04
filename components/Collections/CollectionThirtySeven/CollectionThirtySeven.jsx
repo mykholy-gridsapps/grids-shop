@@ -68,7 +68,9 @@ const CollectionThirtySeven = () => {
           </Swiper>
         </Grid>
         <Grid item xs={12} lg={3}>
-          <SaleThirtyNine />
+          <div className={cls.sale}>
+            <SaleThirtyNine />
+          </div>
         </Grid>
       </Grid>
     </div>
