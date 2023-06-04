@@ -19,8 +19,11 @@ export { default as Template9 } from './HomeTemplates/Template9/Template9';
 export { default as Template11 } from './HomeTemplates/Template11/Template11';
 
 export { default as Template12 } from './HomeTemplates/Template12/Template12';
+
 export { default as Template13 } from './HomeTemplates/Template13/Template13';
+
 export { default as Template14 } from './HomeTemplates/Template14/Template14';
+
 export { default as Template15 } from './HomeTemplates/Template15/Template15';
 
 export { default as Template43 } from './HomeTemplates/Template43/Template43';
@@ -52,3 +55,11 @@ export { default as Template55 } from './HomeTemplates/Template55/Template55';
 export { default as Template56 } from './HomeTemplates/Template56/Template56';
 
 export { default as Template57 } from './HomeTemplates/Template57/Template57';
+
+export { default as Template58 } from './HomeTemplates/Template58/Template58';
+
+export { default as Template59 } from './HomeTemplates/Template59/Template59';
+
+export { default as Template60 } from './HomeTemplates/Template60/Template60';
+
+export { default as Template61 } from './HomeTemplates/Template61/Template61';

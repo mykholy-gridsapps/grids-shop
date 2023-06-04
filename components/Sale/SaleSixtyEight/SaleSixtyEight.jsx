@@ -15,7 +15,7 @@ const SaleSixtyEight = () => {
         128Gb
       </h2>
       <p>Special Sale</p>
-      <button>LEARN MORE <i className={`fa-sharp fa-solid fa-caret-${i18n.language === 'ar' ? 'left' : 'right'}`}></i></button>
+      <button>SHOP NOW <i className={`fa-sharp fa-solid fa-caret-${i18n.language === 'ar' ? 'left' : 'right'}`}></i></button>
     </div>
   )
 }

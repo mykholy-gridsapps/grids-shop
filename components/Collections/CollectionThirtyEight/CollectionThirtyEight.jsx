@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import OfferCardThree from '../../OfferCards/OfferCardThree/OfferCardThree';
 import OfferCardTwo from '../../OfferCards/OfferCardTwo/OfferCardTwo';
-import SaleThirtyFour from '../../Sale/SaleThirtyFour/SaleThirtyFour';
+import SaleThirtyFive from '../../Sale/SaleThirtyFive/SaleThirtyFive';
 
 import Grid from '@mui/material/Grid';
 
@@ -38,7 +38,7 @@ const CollectionThirtyEight = () => {
           <OfferCardThree />
         </Grid>
         <Grid item lg={2} className={cls.salePart}>
-          <SaleThirtyFour />
+          <SaleThirtyFive />
         </Grid>
         <Grid item xs={12} sm={6} md={6} lg={4} xl={3}>
           <OfferCardTwo />

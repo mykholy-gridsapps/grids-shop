@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import ProductTwentyTwo from '../../ProductCard/ProductTwentyTwo/ProductTwentyTwo';
-import SaleFourtyFive from '../../Sale/SaleFourtyFive/SaleFourtyFive';
+import SaleFiftySeven from '../../Sale/SaleFiftySeven/SaleFiftySeven';
 
 import Grid from '@mui/material/Grid';
 
@@ -62,7 +62,7 @@ const CollectionFourty = () => {
           <SwiperSlide key={idx}>
             <Grid container spacing={2}>
               <Grid item xs={12} sm={6} md={6} lg={3}>
-                <SaleFourtyFive />
+                <SaleFiftySeven />
               </Grid>
               <Grid item xs={12} sm={6} md={6} lg={3}>
                 <ProductTwentyTwo />

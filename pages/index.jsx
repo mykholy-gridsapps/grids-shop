@@ -5,12 +5,12 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 // REDUX STUFF
 import { wrapper } from "../store/store";
 // MATERIAL STUFF
-import { Template57 } from "../components";
+import { Template61 } from "../components";
 
 const Home = () => {
 
   return (
-    <Template57 />
+    <Template61 />
   );
 };
 

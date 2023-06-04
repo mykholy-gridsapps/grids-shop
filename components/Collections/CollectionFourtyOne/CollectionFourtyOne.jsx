@@ -112,6 +112,8 @@ const CollectionFourtyOne = () => {
                     <ProductSeventeen />
                     <ProductSeventeen />
                     <ProductSeventeen />
+                    <ProductSeventeen />
+                    <ProductSeventeen />
                   </SwiperSlide>
                 )}
               </Swiper>
