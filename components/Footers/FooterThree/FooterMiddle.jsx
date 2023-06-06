@@ -3,13 +3,13 @@ import { Box, Container } from "@mui/system";
 import React from "react";
 import cls from "./footerMiddle.module.scss"
 
-const FooterMiddle = () => {
+const FooterMiddle = ({color}) => {
     return (
         <div className={cls.footerMiddle}>
             <Grid container>
                 <Grid item lg={6} xl={4}>
                     <div className={cls.widget}>
-                        <h4 className={cls.widgetTitle}>Contact Info</h4>
+                        <h4 className={cls.widgetTitle}   style={{color: color}}>Contact Info</h4>
                         <Grid container>
                             <Grid sm={6}>
                                 <div className={cls.contactWidget}>
@@ -39,8 +39,8 @@ const FooterMiddle = () => {
                     </div>
                 </Grid>
                 <Grid item sm={6} lg={3} xl={4}>
-                    <div className={cls.widget}>
-                        <h4 className={cls.widgetTitle}>My Account</h4>
+                    <div className={cls.widget} >
+                        <h4 className={cls.widgetTitle}  style={{color: color}}>My Account</h4>
                         <Grid container className={cls.linkParts}>
                             <Grid item component='ul' xl={4} className={cls.linkPart}>
                                 <li><a href="demo3-about.html">About Us</a></li>
@@ -55,8 +55,8 @@ const FooterMiddle = () => {
                     </div>
                 </Grid>
                 <Grid item sm={6} lg={3} xl={4}>
-                    <div className={cls.widget}>
-                        <h4 className={cls.widgetTitle}>Main Features</h4>
+                    <div className={cls.widget} >
+                        <h4 className={cls.widgetTitle}  style={{color: color}}>Main Features</h4>
                         <Grid container className={cls.linkParts}>
                             <Grid item component='ul' xl={6} className={cls.linkPart}>
                                 <li><a href="#">Super Fast HTML Template</a></li>

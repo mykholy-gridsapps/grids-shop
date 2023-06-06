@@ -15,13 +15,13 @@ import MobSidebar from "../MobSidebar/MobSidebar";
 
 import cls from './headerEleven.module.scss';
 
-const HeaderEleven = () => {
+const HeaderEleven = ({color}) => {
   const router = useRouter()
   const [navDropdown, setNavDropdown] = useState("");
   const [openSidebar, setOpenSidebar] = useState(false);
 
   return (
-    <div className={`${cls.header}`}>
+    <div className={`${cls.header}`} style={{color: color}}>
 
       <Container maxWidth="xxl" className={`${cls.middleHeader}`}>
         <div className={cls.logo}>
@@ -39,19 +39,19 @@ const HeaderEleven = () => {
         </div>
 
         <div className={cls.links}>
-          <ul>
-            <li className={`${router.pathname == "/" ? cls.active : ""}`}>
+          <ul >
+            <li className={`${router.pathname == "/" ? cls.active : ""}`} >
               <Link href="/">
                 Home
               </Link>
             </li>
 
-            <li className={`${router.pathname == "/about" ? cls.active : ""}`}>
-              <Link href="/about">About</Link>
+            <li className={`${router.pathname == "/about" ? cls.active : ""}`} >
+              <Link href="/about" style={{color: color}}>About</Link>
             </li>
 
             <li className={`${router.pathname == "/blogs" ? cls.active : ""}`}>
-              <Link href="/">Blogs</Link>
+              <Link href="/" style={{color: color}}>Blogs</Link>
             </li>
 
             <li
@@ -59,7 +59,7 @@ const HeaderEleven = () => {
               onMouseEnter={() => setNavDropdown("pages")}
               onMouseLeave={() => setNavDropdown("")}
             >
-              <Link href="/">
+              <Link href="/" style={{color: color}}>
                 <span>
                   Pages <i className="fa-solid fa-angle-down"></i>
                 </span>
@@ -69,11 +69,11 @@ const HeaderEleven = () => {
             </li>
 
             <li className={`${router.pathname == "/policy" ? cls.active : ""}`}>
-              <Link href="/policy">Policy</Link>
+              <Link href="/policy" style={{color: color}}>Policy</Link>
             </li>
 
             <li className={`${router.pathname == "/contact" ? cls.active : ""}`}>
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact" style={{color: color}}>Contact</Link>
             </li>
           </ul>
         </div>

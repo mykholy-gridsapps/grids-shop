@@ -3,13 +3,13 @@ import React from "react";
 import cls from './footerTop.module.scss'
 
 
-const FooterTop = () => {
+const FooterTop = ({color}) => {
     return (
         <div className={cls.footerTop}>
             <div className={cls.footerLeft}>
                 <div className={cls.widgetNewsletterInfo}>
-                    <h5 className={cls.widgetNewsletterTitle}>subscribe newsletter</h5>
-                    <p className={cls.widgetNewsletterContent}>Get all the latest information on Events, Sales
+                    <h5 className={cls.widgetNewsletterTitle} style={{color: color}}>subscribe newsletter</h5>
+                    <p className={cls.widgetNewsletterContent}  style={{color: color}}>Get all the latest information on Events, Sales
                         and Offers.</p>
                 </div>
                 <form action="#">
@@ -21,9 +21,9 @@ const FooterTop = () => {
             </div>
             <div className={cls.footerRight}>
                 <div className={cls.socialIcons}>
-                    <a href="#" className={[cls.socialIcon, cls.socialFacebook].join(' ')} target="_blank"></a>
-                    <a href="#" className={[cls.socialIcon, cls.socialTwitter].join(' ')} target="_blank"></a>
-                    <a href="#" className={[cls.socialIcon, cls.socialInstagram].join(' ')} target="_blank"></a>
+                    <a  style={{color: color}} href="#" className={[cls.socialIcon, cls.socialFacebook].join(' ')} target="_blank"></a>
+                    <a  style={{color: color}} href="#" className={[cls.socialIcon, cls.socialTwitter].join(' ')} target="_blank"></a>
+                    <a  style={{color: color}} href="#" className={[cls.socialIcon, cls.socialInstagram].join(' ')} target="_blank"></a>
                 </div>
             </div>
         </div>

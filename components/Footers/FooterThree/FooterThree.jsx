@@ -7,12 +7,12 @@ import FooterMiddle from "./FooterMiddle";
 import { Container } from "@mui/system";
 import FooterBottom from "./FooterBottom";
 
-const FooterThree = () => {
+const FooterThree = ({bgColor, color}) => {
   return (
-    <Box component='footer' className={cls.footer}>
+    <Box component='footer' className={cls.footer} style={{backgroundColor: bgColor, color: color}}>
       <Container className={cls.container} maxWidth="xxl">
-        <FooterTop />
-        <FooterMiddle />
+        <FooterTop  color={color}/>
+        <FooterMiddle color={color}/>
         <FooterBottom></FooterBottom>
       </Container>
 
