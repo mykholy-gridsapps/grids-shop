@@ -11,7 +11,7 @@ import { useTranslation } from 'next-i18next';
 import 'swiper/css';
 import cls from './collectionFourtyOne.module.scss';
 
-const CollectionFourtyOne = () => {
+const CollectionFourtyOne = ({ reverse }) => {
   const { i18n } = useTranslation('common');
 
   const array = [...Array(3)];
@@ -40,7 +40,7 @@ const CollectionFourtyOne = () => {
 
   return (
     <div className={cls.collection}>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} flexDirection={reverse ? 'row-reverse' : ''}>
         <Grid item xs={12} lg={9}>
           <div className={cls.head}>
             <div>

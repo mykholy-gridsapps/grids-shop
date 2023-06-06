@@ -12,10 +12,11 @@ import { useTranslation } from 'next-i18next';
 import 'swiper/css';
 import cls from './collection102.module.scss';
 
-const Collection102 = () => {
+const Collection102 = ({ slides }) => {
   const [activeTab, setActiveTab] = useState('Best seller')
   const { i18n } = useTranslation('common');
   const array = [...Array(3)];
+  const arr = [...Array(slides || 5)];
 
   const navigation = {
     nextEl: '.custom-swiper-next',
@@ -54,21 +55,11 @@ const Collection102 = () => {
             {array.map((_, idx) =>
               <SwiperSlide key={idx}>
                 <Grid container spacing={2}>
-                  <Grid item xs={12} sm={6} md={6} lg={4} xl={12 / 5}>
-                    <ProductTwentyTwo />
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={6} lg={4} xl={12 / 5}>
-                    <ProductTwentyTwo />
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={6} lg={4} xl={12 / 5}>
-                    <ProductTwentyTwo />
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={6} lg={4} xl={12 / 5}>
-                    <ProductTwentyTwo />
-                  </Grid>
-                  <Grid item xs={12} sm={6} md={6} lg={4} xl={12 / 5}>
-                    <ProductTwentyTwo />
-                  </Grid>
+                  {arr.map((_, idx) => (
+                    <Grid item xs={12} sm={6} md={6} lg={4} xl={12 / 5}>
+                      <ProductTwentyTwo />
+                    </Grid>
+                  ))}
                 </Grid>
               </SwiperSlide>
             )}

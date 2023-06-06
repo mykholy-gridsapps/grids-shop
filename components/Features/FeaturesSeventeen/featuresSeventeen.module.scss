@@ -1,58 +1,52 @@
 .featureBoxesContainer {
-    margin: 40px 0;
+    background-color: var(--special-background);
 
-    .innerContainer {
-        height: 100%;
-        padding: 20px 30px;
-        background-color: var(--secondary-background);
-        color: var(--text-color);
-        font-size: 15px;
-        line-height: 2;
-        text-align: center !important;
+    .featureBox {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 10px;
 
-        .featureBox {
-            display: flex;
-            align-items: center;
-            gap: 20px;
+        i {
+            font-size: 30px;
+            color: var(--text-dark);
+            line-height: 1;
+            text-align: center !important;
+        }
 
-            i {
-                margin-bottom: 17px;
-                font-size: 30px;
+        .featureBoxContent {
+            font-size: 15px;
+            line-height: 1.9;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            h3 {
                 color: var(--text-dark);
-                line-height: 1;
-                text-align: center !important;
+                margin: 0;
+                font-size: 1rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 1.4;
+                letter-spacing: 0;
             }
 
-            .featureBoxContent {
-                font-size: 15px;
-                line-height: 1.9;
-                padding-left: 10px;
-                padding-right: 10px;
-
-                h3 {
-                    color: var(--text-dark);
-                    margin: 0;
-                    font-size: 0.9rem;
-                    font-weight: 700;
-                    text-transform: uppercase;
-                    line-height: 1.4;
-                    letter-spacing: 0;
-                }
-
-                h5 {
-                    color: #555;
-                    font-weight: 400;
-                    margin: 4px 0 0;
-                    font-size: 14px;
-                    line-height: 1.2;
-                }
-
-                p {
-                    margin: 0;
-                    font-size: 13px;
-                    line-height: 2;
-                }
+            h5 {
+                color: #555;
+                font-weight: 400;
+                margin: 4px 0 0;
+                font-size: 14px;
+                line-height: 1.2;
             }
+
+            p {
+                margin: 0;
+                font-size: 13px;
+                line-height: 2;
+            }
+        }
+
+        &:hover {
+            background-color: var(--secondary-background);
         }
     }
 }
