@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 import ProductThirty from '../../ProductCard/ProductThirty/ProductThirty';
 import SaleFourtyOne from '../../Sale/SaleFourtyOne/SaleFourtyOne';
-import SaleFourtyFour from '../../Sale/SaleFourtyFour/SaleFourtyFour';
 
 import Grid from '@mui/material/Grid';
 

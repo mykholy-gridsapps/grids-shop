@@ -1,0 +1,235 @@
+@import "../../../styles/extends.scss";
+
+.header {
+  padding: 0px;
+  background-color: transparent;
+  position: relative;
+  border-bottom: 1px solid var(--heavy-border);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  .headerLeft,
+  .headerRight {
+    display: flex;
+    align-items: center;
+  }
+
+  .headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      a {
+        color: var(--text-dark);
+      }
+
+      i {
+        cursor: pointer;
+        font-size: 1.2rem;
+        cursor: pointer;
+        display: none;
+
+        @include md {
+          display: block;
+        }
+      }
+
+      .bigImage {
+        height: 65px;
+        max-width: 100%;
+        object-fit: contain;
+
+        @include md {
+          display: none;
+        }
+      }
+
+      .smallImage {
+        display: none;
+        height: 50px;
+        width: 120px;
+        object-fit: contain;
+
+        @include md {
+          display: inline-block;
+        }
+      }
+    }
+
+    .headerSearchWrapper {
+      display: flex;
+      position: static;
+      margin: 0;
+      border-width: 0;
+      box-sizing: content-box;
+      height: 45px;
+      overflow: hidden;
+      border: 1px solid var(--heavy-border);
+
+      input {
+        border: none;
+        padding: 0 20px;
+        font-size: 0.8rem;
+        min-width: 300px;
+        outline: none;
+        background-color: transparent;
+      }
+
+      .selectCustom {
+        margin: 0;
+        position: relative;
+
+        select {
+          width: 135px;
+          border: none;
+          border-right: 1px solid var(--heavy-border);
+          margin: 0;
+          font-size: 13px;
+          height: 100%;
+          box-shadow: none;
+          background: transparent;
+          padding: 0 10px;
+          outline: none;
+
+          option {
+            color: #000;
+          }
+
+          &.ar {
+            border-right: unset;
+            border-left: 1px solid var(--heavy-border);
+          }
+        }
+      }
+
+      .btn {
+        position: relative;
+        border: none;
+        border-left: 1px solid var(--heavy-border);
+        width: 55px;
+        font-size: 16px;
+        border-radius: 0 3px 3px 0;
+        text-align: center !important;
+        cursor: pointer;
+        background-color: transparent;
+
+        &.ar {
+          border-left: none;
+        }
+      }
+
+      @include lg {
+        display: none;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      ul.navLinks {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        li {
+          font-size: 0.85rem;
+          font-weight: 600;
+          cursor: pointer;
+          height: 45px;
+          line-height: 45px;
+
+          span {
+            padding: 0 10px;
+          }
+
+          i {
+            font-size: 0.8rem;
+          }
+
+          &:hover {
+            color: var(--secondary-color);
+
+            span {
+              border-right: none;
+            }
+          }
+        }
+      }
+
+      @include md {
+        display: none;
+      }
+    }
+  }
+
+  .headerRight {
+    display: flex;
+    justify-content: space-between;
+
+    .navbar__main__account {
+      display: flex;
+      align-items: center;
+      height: 50px;
+      gap: 15px;
+
+      @include lg {
+        gap: 10px;
+      }
+
+      i {
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+
+      span {
+        font-weight: bold;
+        cursor: pointer;
+        height: 50px;
+        display: flex;
+        align-items: center;
+      }
+
+      .search {
+        display: none;
+
+        @include md {
+          display: block;
+        }
+      }
+
+      .wishlist,
+      .cart,
+      .compare,
+      .search {
+        position: relative;
+
+        @include xs {
+          .cartAmount {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @include md {
+    padding: 10px 0;
+  }
+
+  @include sm {
+    padding: 5px 0;
+  }
+}

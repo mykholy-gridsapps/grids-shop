@@ -23,8 +23,8 @@ const CategoriesThirty = () => {
     <div className={cls.categories}>
       <div className={cls.head}>
         <div>
-          <h4>Top Selling Products</h4>
-          <p>Special products in this month.</p>
+          <h4>Featured Categories</h4>
+          <p>Choose your necessary products from this feature categories.</p>
         </div>
         <div>
           <button className='custom-swiper-prev'><i className={`fa-sharp fa-light fa-arrow-${i18n.language === 'ar' ? 'right' : 'left'} fa-sm`}></i></button>
