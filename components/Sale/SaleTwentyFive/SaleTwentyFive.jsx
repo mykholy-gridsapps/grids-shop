@@ -3,10 +3,10 @@ import React from "react";
 
 import cls from "./saleTwentyFive.module.scss"
 
-const SaleTwentyFive = () => {
+const SaleTwentyFive = ({margin}) => {
     const { t, i18n } = useTranslation('common');
     return (
-        <div className={`${cls.banner} ${cls[i18n.language]}`}>
+        <div className={`${cls.banner} ${cls[i18n.language]}`} style={{margin: margin}}>
             <figure>
                 <img src="./imgs/sale/sale-25-1.jpg" />
             </figure>

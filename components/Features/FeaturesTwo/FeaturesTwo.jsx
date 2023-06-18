@@ -2,9 +2,9 @@ import React from "react";
 import cls from "./featuresTwo.module.scss"
 import { Grid } from "@mui/material";
 
-const FeaturesTwo = ({bgColor, color}) => {
+const FeaturesTwo = ({bgColor, color, padding}) => {
     return (
-        <div className={cls.featureBoxesContainer} style={{backgroundColor: bgColor}}>
+        <div className={cls.featureBoxesContainer} style={{backgroundColor: bgColor, padding: padding}}>
             <Grid container spacing={2}>
                 <Grid item lg={3} sm={6}>
                     <div className={cls.featureBox}>
