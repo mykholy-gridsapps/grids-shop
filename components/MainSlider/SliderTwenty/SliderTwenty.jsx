@@ -55,12 +55,12 @@ const SliderTwenty = () => {
               )}
             </Swiper>
             <div className={cls.btns}>
-              <button className='custom-swiper-prev'><i className={`fa-sharp fa-light fa-arrow-${i18n.language === 'ar' ? 'right' : 'left'} fa-sm`}></i></button>
-              <button className='custom-swiper-next'><i className={`fa-sharp fa-light fa-arrow-${i18n.language === 'ar' ? 'left' : 'right'} fa-sm`}></i></button>
+              <button className='custom-swiper-prev'><i className={`fa-sharp fa-light fa-arrow-left fa-sm`}></i></button>
+              <button className='custom-swiper-next'><i className={`fa-sharp fa-light fa-arrow-right fa-sm`}></i></button>
             </div>
           </div>
         </Grid>
-        <Grid item xs={12} sm={6} lg={3}>
+        <Grid item xs={12} sm={12} lg={3}>
           <div className={cls.part}>
             <div className={cls.content}>
               <h6>Comfort Chair</h6>
