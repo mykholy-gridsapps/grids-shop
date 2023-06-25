@@ -265,6 +265,223 @@ const SliderThirtyEight = () => {
                     <i className="fa-duotone fa-eye"></i>
                   </li>
 
+                  <li>
+                    <span>Bluetooth Speakers</span>
+                    <i className="fa-duotone fa-eye"></i>
+                  </li>
+
+                  <li onMouseEnter={() => setDropDown(1)} onMouseLeave={() => setDropDown(0)}>
+                    <span>Cameras</span>
+                    <i className={`fa-regular fa-angle-${i18n.language === 'en' ? 'right' : 'left'}`}></i>
+
+                    {dropDown === 1 &&
+
+                      <div className={`${cls.dropDown} ${cls[i18n.language]}`}>
+
+                        <Grid container>
+
+                          <Grid item lg={6}>
+
+                            <ul>
+                              <li>Computers</li>
+                              <li>Cases</li>
+                              <li>Laptops</li>
+                              <li>Mobiles</li>
+                              <li>Tv & Audios</li>
+                              <li>Samsung</li>
+                              <li>Dell</li>
+                            </ul>
+
+                          </Grid>
+
+                          <Grid item lg={6}>
+
+                            <ul>
+                              <li>Thin Laptops</li>
+                              <li>Lenovo</li>
+                              <li>Acer</li>
+                              <li>Panasonic</li>
+                              <li>Microsoft</li>
+                              <li>Gadgets</li>
+                              <li>Store</li>
+                            </ul>
+
+                          </Grid>
+
+                          <Grid item lg={6}>
+
+                            <ul>
+                              <li>Deals</li>
+                              <li>Security</li>
+                              <li>Headphones</li>
+                              <li>Computers</li>
+                              <li>Cameras</li>
+                              <li>Bikes</li>
+                              <li>Software</li>
+                            </ul>
+
+                          </Grid>
+
+                          <Grid item lg={6}>
+
+                            <img src="/imgs/products/play.png" alt="productImage" />
+
+                          </Grid>
+
+                        </Grid>
+
+                      </div>
+
+                    }
+
+                  </li>
+
+                  <li>
+                    <span>Cameras & Photography</span>
+                    <i className="fa-duotone fa-eye"></i>
+                  </li>
+
+                  <li onMouseEnter={() => setDropDown(2)} onMouseLeave={() => setDropDown(0)}>
+                    <span>Cases</span>
+                    <i className={`fa-regular fa-angle-${i18n.language === 'en' ? 'right' : 'left'}`}></i>
+
+                    {dropDown === 2 &&
+
+                      <div className={`${cls.dropDown} ${cls[i18n.language]}`}>
+
+                        <Grid container>
+
+                          <Grid item lg={6}>
+
+                            <ul>
+                              <li>Computers</li>
+                              <li>Cases</li>
+                              <li>Laptops</li>
+                              <li>Mobiles</li>
+                              <li>Tv & Audios</li>
+                              <li>Samsung</li>
+                              <li>Dell</li>
+                            </ul>
+
+                          </Grid>
+
+                          <Grid item lg={6}>
+
+                            <ul>
+                              <li>Thin Laptops</li>
+                              <li>Lenovo</li>
+                              <li>Acer</li>
+                              <li>Panasonic</li>
+                              <li>Microsoft</li>
+                              <li>Gadgets</li>
+                              <li>Store</li>
+                            </ul>
+
+                          </Grid>
+
+                          <Grid item lg={6}>
+
+                            <ul>
+                              <li>Deals</li>
+                              <li>Security</li>
+                              <li>Headphones</li>
+                              <li>Computers</li>
+                              <li>Cameras</li>
+                              <li>Bikes</li>
+                              <li>Software</li>
+                            </ul>
+
+                          </Grid>
+
+                          <Grid item lg={6}>
+
+                            <img src="/imgs/products/laptop.png" alt="productImage" />
+
+                          </Grid>
+
+                        </Grid>
+
+                      </div>
+
+                    }
+
+                  </li>
+
+                  <li>
+                    <span>Chargers</span>
+                    <i className="fa-duotone fa-eye"></i>
+                  </li>
+
+                  <li onMouseEnter={() => setDropDown(3)} onMouseLeave={() => setDropDown(0)}>
+                    <span>Computer Cases</span>
+                    <i className={`fa-regular fa-angle-${i18n.language === 'en' ? 'right' : 'left'}`}></i>
+
+                    {dropDown === 3 &&
+
+                      <div className={`${cls.dropDown} ${cls[i18n.language]}`}>
+
+                        <Grid container>
+
+                          <Grid item lg={6}>
+
+                            <ul>
+                              <li>Computers</li>
+                              <li>Cases</li>
+                              <li>Laptops</li>
+                              <li>Mobiles</li>
+                              <li>Tv & Audios</li>
+                              <li>Samsung</li>
+                              <li>Dell</li>
+                            </ul>
+
+                          </Grid>
+
+                          <Grid item lg={6}>
+
+                            <ul>
+                              <li>Thin Laptops</li>
+                              <li>Lenovo</li>
+                              <li>Acer</li>
+                              <li>Panasonic</li>
+                              <li>Microsoft</li>
+                              <li>Gadgets</li>
+                              <li>Store</li>
+                            </ul>
+
+                          </Grid>
+
+                          <Grid item lg={6}>
+
+                            <ul>
+                              <li>Deals</li>
+                              <li>Security</li>
+                              <li>Headphones</li>
+                              <li>Computers</li>
+                              <li>Cameras</li>
+                              <li>Bikes</li>
+                              <li>Software</li>
+                            </ul>
+
+                          </Grid>
+
+                          <Grid item lg={6}>
+
+                            <img src="/imgs/products/headphone.png" alt="productImage" />
+
+                          </Grid>
+
+                        </Grid>
+
+                      </div>
+
+                    }
+                  </li>
+
+                  <li>
+                    <span>Labtops</span>
+                    <i className="fa-duotone fa-eye"></i>
+                  </li>
+
                 </ul>
 
               </div>
@@ -335,7 +552,7 @@ const SliderThirtyEight = () => {
 
       <Container maxWidth="xxl">
         <div className={cls.announs}>
-          <Grid container justifyContent="center" spacing={3}>
+          <Grid container justifyContent="flex-end" spacing={3}>
 
             <Grid item sm={6} lg={4} xl={3}>
               <div className={cls.announs_box}>
@@ -360,16 +577,6 @@ const SliderThirtyEight = () => {
             <Grid item sm={6} lg={4} xl={3}>
               <div className={cls.announs_box}>
                 <img src="/imgs/header/headphone.png" alt="image" />
-                <div className={cls.details}>
-                  <h3>Catch our deals</h3>
-                  <p>$300</p>
-                </div>
-              </div>
-            </Grid>
-
-            <Grid item sm={6} lg={4} xl={3}>
-              <div className={cls.announs_box}>
-                <img src="/imgs/header/annuon3.png" alt="image" />
                 <div className={cls.details}>
                   <h3>Catch our deals</h3>
                   <p>$300</p>

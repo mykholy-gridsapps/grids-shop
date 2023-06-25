@@ -5,14 +5,11 @@
   .header_wrapper {
     background-color: var(--special-background);
     height: 500px;
-    overflow: hidden;
-
     .categoriesGrid {
       @include md {
         display: none;
       }
     }
-
     .categoriesList {
       grid-column: span 2;
       grid-row: span 6;
@@ -82,6 +79,9 @@
         display: none;
       }
     }
+    @include md {
+      overflow: hidden;
+    }
   }
 
   .header__slider {
@@ -108,7 +108,7 @@
       }
     }
     img {
-      height: 500px;
+      height: 450px;
       object-fit: contain;
     }
     @include sm {
@@ -141,7 +141,6 @@
     .header__slider {
       .slide {
         height: 600px;
-        overflow: hidden;
         padding-top: 50px;
         .label {
           color: var(--main-color);

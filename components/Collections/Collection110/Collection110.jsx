@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import ProductFifty from '../../ProductCard/ProductFifty/ProductFifty';
-import SaleTwenty from '../../Sale/SaleTwentySeven/SaleTwentySeven';
+import SaleTwentySeven from '../../Sale/SaleTwentySeven/SaleTwentySeven';
 
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
@@ -243,7 +243,7 @@ const Collection110 = ({ rounded }) => {
   return (
     <div className={`${cls.homeCategory} ${rounded ? cls.rounded : ''}`}>
       <Container maxWidth="xxl">
-        <SaleTwenty />
+        <SaleTwentySeven />
         <div className={cls.homeCategory__wrapper}>
           <div className={`${cls.homeCategory__head} ${cls[i18n.language]}`}>
             <h3>Electronics</h3>

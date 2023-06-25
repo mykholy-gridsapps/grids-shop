@@ -71,3 +71,5 @@ export { default as Template61 } from './HomeTemplates/Template61/Template61';
 export { default as Template62 } from './HomeTemplates/Template62/Template62';
 
 export { default as Template63 } from './HomeTemplates/Template63/Template63';
+
+export { default as Template64 } from './HomeTemplates/Template64/Template64';

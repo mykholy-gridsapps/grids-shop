@@ -44,26 +44,64 @@ const HeaderThirtyFive = ({ rounded }) => {
           </Link>
         </div>
 
-        <div
-          className={`${cls.navbar__search__searchArea} ${cls.rounded} ${rounded ? cls.rounded : ""
-            } ${cls[i18n.language]}`}
-        >
-          <input type="text" placeholder="Search" />
+        <div className={cls.links}>
+          <ul className={`${cls.navLinks} ${cls[i18n.language]}`}>
+            <li
+              onMouseEnter={() => setNavDropdown(1)}
+              onMouseLeave={() => setNavDropdown(0)}
+            >
+              <span>
+                {" "}
+                GPS & Car <i className="fa-regular fa-angle-down"></i>
+              </span>
 
-          <select name="" id="">
-            <option value="" disabled selected>Select Option</option>
-            <option value="All">All</option>
-            <option value="Featured">Featured</option>
-            <option value="Featured">Featured</option>
-            <option value="Featured">Featured</option>
-            <option value="Featured">Featured</option>
-            <option value="Featured">Featured</option>
-            <option value="Featured">Featured</option>
-          </select>
+              {navDropdown === 1 && (
+                <LinkDropdown />
+              )}
+            </li>
 
-          <button>
-            <i className="fa-light fa-magnifying-glass"></i>
-          </button>
+            <li
+              onMouseEnter={() => setNavDropdown(2)}
+              onMouseLeave={() => setNavDropdown(0)}
+            >
+              <span>
+                {" "}
+                Electronics <i className="fa-regular fa-angle-down"></i>
+              </span>
+
+              {navDropdown === 2 && (
+                <LinkDropdown />
+              )}
+            </li>
+
+            <li
+              onMouseEnter={() => setNavDropdown(3)}
+              onMouseLeave={() => setNavDropdown(0)}
+            >
+              <span>
+                {" "}
+                Tv & Audio <i className="fa-regular fa-angle-down"></i>
+              </span>
+
+              {navDropdown === 3 && (
+                <LinkDropdown />
+              )}
+            </li>
+
+            <li
+              onMouseEnter={() => setNavDropdown(4)}
+              onMouseLeave={() => setNavDropdown(0)}
+            >
+              <span>
+                {" "}
+                Smart Phones <i className="fa-regular fa-angle-down"></i>
+              </span>
+
+              {navDropdown === 4 && (
+                <LinkDropdown />
+              )}
+            </li>
+          </ul>
         </div>
 
         <div className={cls.support}>
@@ -100,64 +138,26 @@ const HeaderThirtyFive = ({ rounded }) => {
             <ModeSwitch />
           </div>
 
-          <div className={cls.links}>
-            <ul className={`${cls.navLinks} ${cls[i18n.language]}`}>
-              <li
-                onMouseEnter={() => setNavDropdown(1)}
-                onMouseLeave={() => setNavDropdown(0)}
-              >
-                <span>
-                  {" "}
-                  GPS & Car <i className="fa-regular fa-angle-down"></i>
-                </span>
+          <div
+            className={`${cls.navbar__search__searchArea} ${cls.rounded} ${rounded ? cls.rounded : ""
+              } ${cls[i18n.language]}`}
+          >
+            <input type="text" placeholder="Search" />
 
-                {navDropdown === 1 && (
-                  <LinkDropdown />
-                )}
-              </li>
+            <select name="" id="">
+              <option value="" disabled selected>Select Option</option>
+              <option value="All">All</option>
+              <option value="Featured">Featured</option>
+              <option value="Featured">Featured</option>
+              <option value="Featured">Featured</option>
+              <option value="Featured">Featured</option>
+              <option value="Featured">Featured</option>
+              <option value="Featured">Featured</option>
+            </select>
 
-              <li
-                onMouseEnter={() => setNavDropdown(2)}
-                onMouseLeave={() => setNavDropdown(0)}
-              >
-                <span>
-                  {" "}
-                  Electronics <i className="fa-regular fa-angle-down"></i>
-                </span>
-
-                {navDropdown === 2 && (
-                  <LinkDropdown />
-                )}
-              </li>
-
-              <li
-                onMouseEnter={() => setNavDropdown(3)}
-                onMouseLeave={() => setNavDropdown(0)}
-              >
-                <span>
-                  {" "}
-                  Tv & Audio <i className="fa-regular fa-angle-down"></i>
-                </span>
-
-                {navDropdown === 3 && (
-                  <LinkDropdown />
-                )}
-              </li>
-
-              <li
-                onMouseEnter={() => setNavDropdown(4)}
-                onMouseLeave={() => setNavDropdown(0)}
-              >
-                <span>
-                  {" "}
-                  Smart Phones <i className="fa-regular fa-angle-down"></i>
-                </span>
-
-                {navDropdown === 4 && (
-                  <LinkDropdown />
-                )}
-              </li>
-            </ul>
+            <button>
+              <i className="fa-light fa-magnifying-glass"></i>
+            </button>
           </div>
 
           <div className={cls.navbar__main__account}>
