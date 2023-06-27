@@ -24,12 +24,20 @@
       border: 2px solid var(--main-color);
       border-radius: 30px;
       input {
-        width: 650px;
+        width: 500px;
         height: 40px;
         padding: 8px 20px;
         outline: none;
         border: none;
         font-size: 0.95rem;
+        background-color: transparent;
+      }
+      select {
+        border: none;
+        outline: none;
+        opacity: 0.8;
+        font-size: 0.9rem;
+        background-color: transparent;
       }
       button {
         height: 40px;
@@ -42,7 +50,7 @@
       }
       @include lg {
         input {
-          width: 450px;
+          width: 400px;
         }
       }
       &.rounded {

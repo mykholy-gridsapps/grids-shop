@@ -49,6 +49,17 @@ const HeaderThirtySix = ({ rounded }) => {
         >
           <input type="text" placeholder="Search for products" />
 
+          <select name="" id="">
+            <option value="" disabled selected>Select Option</option>
+            <option value="All">All</option>
+            <option value="Featured">Featured</option>
+            <option value="Featured">Featured</option>
+            <option value="Featured">Featured</option>
+            <option value="Featured">Featured</option>
+            <option value="Featured">Featured</option>
+            <option value="Featured">Featured</option>
+          </select>
+
           <button>
             <i className="fa-light fa-magnifying-glass"></i>
           </button>

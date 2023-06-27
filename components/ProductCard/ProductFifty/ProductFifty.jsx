@@ -34,7 +34,7 @@ const ProductBox = () => {
       <div className={cls.inside}>
         <span className={cls.label}>Electronics</span>
         <h4 className={cls.title} onClick={() => router.push('/product/123')}>Tablet Red EliteBook Revolve 810 G2</h4>
-        <img src="/imgs/products/laptop.png" alt="productImage" />
+        <img src="/imgs/chair.webp" alt="productImage" />
         <div className={cls.content}>
           <div className={cls.cart}>
             <p>$350</p>

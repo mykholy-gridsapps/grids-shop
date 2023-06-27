@@ -1,5 +1,37 @@
+@import '../../../styles/extends.scss';
+
 .collection {
   background: url('../../../public/imgs/bg65.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 100% 100%;
+  padding-top: 30px;
+  .swiper {
+    padding-bottom: 30px;
+  }
+  .products {
+    .head {
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--heavy-border);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h4 {
+        display: flex;
+        span {
+          position: absolute;
+          bottom: -2px;
+          height: 3px;
+          background-color: var(--main-color);
+          width: 100px;
+        }
+      }
+      div {
+        display: flex;
+        button {
+          @extend %swiperCustomArrows;
+        }
+      }
+    }
+  }
 }

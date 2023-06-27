@@ -85,7 +85,7 @@ const SliderFourty = () => {
               <div className={cls.announs_box}>
                 <img src="/imgs/header/Sounddevice.png" alt="image" />
                 <div className={cls.details}>
-                  <h3>Catch the hotest deals</h3>
+                  <h3>Catch our deals</h3>
                   <p>$300</p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const SliderFourty = () => {
               <div className={cls.announs_box}>
                 <img src="/imgs/header/annuon3.png" alt="image" />
                 <div className={cls.details}>
-                  <h3>Catch the hotest deals</h3>
+                  <h3>Catch our deals</h3>
                   <p>$300</p>
                 </div>
               </div>
@@ -103,7 +103,7 @@ const SliderFourty = () => {
               <div className={cls.announs_box}>
                 <img src="/imgs/header/headphone.png" alt="image" />
                 <div className={cls.details}>
-                  <h3>Catch the hotest deals</h3>
+                  <h3>Catch our deals</h3>
                   <p>$300</p>
                 </div>
               </div>

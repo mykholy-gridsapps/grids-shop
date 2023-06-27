@@ -1,3 +1,5 @@
+@import '../../../styles/mixins.scss';
+
 .featureBoxesContainer {
     padding-top: 10px;
     border: 1px solid var(--heavy-border);
@@ -56,6 +58,9 @@
         &.last {
             border-right: none;
             border-right: none;
+        }
+        @include lg {
+            border: none;
         }
     }
 }
