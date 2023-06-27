@@ -6,9 +6,9 @@ import { Navigation } from "swiper";
 import { useTranslation } from 'next-i18next';
 
 import 'swiper/css';
-import cls from './productFiftyOne.module.scss';
+import cls from './blogTwentyOne.module.scss';
 
-const ProductFiftyOne = () => {
+const BlogTwentyOne = () => {
   const { i18n } = useTranslation('common');
 
   const array = [...Array(3)];
@@ -21,7 +21,7 @@ const ProductFiftyOne = () => {
     <div className={cls.productCard}>
       <div className={cls.head}>
         <h4>
-          Featured Products
+          From The Blog
           <span></span>
         </h4>
         <div>
@@ -39,17 +39,12 @@ const ProductFiftyOne = () => {
         {array.map((_, idx) =>
           <SwiperSlide key={idx}>
             <div className={cls.images}>
-              <img className={cls.main} src="/imgs/shoes.png" alt="product" loading='lazy' />
+              <img className={cls.main} src="/imgs/2.jpg" alt="product" loading='lazy' />
             </div>
-            <span className={cls.brand}>Apple</span>
-            <h6>2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB</h6>
-            <div className={cls.reviews}>
-              <Rating name="read-only" value={5} readOnly />
-              <p>(300)</p>
-            </div>
-            <div className={cls.price}>
-              <span>$164.47</span>
-              <span className={cls.prev}>$183.47</span>
+            <span className={cls.brand}>Uncategorized, Uncategorized, Uncategorized</span>
+            <h6>Robot Wars – Post with Gallery</h6>
+            <div className={cls.comments}>
+              3 <i className="fa-regular fa-comments"></i>
             </div>
           </SwiperSlide>
         )}
@@ -58,4 +53,4 @@ const ProductFiftyOne = () => {
   )
 }
 
-export default ProductFiftyOne;
+export default BlogTwentyOne;

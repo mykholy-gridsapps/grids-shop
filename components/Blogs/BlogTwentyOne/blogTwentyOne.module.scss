@@ -38,16 +38,10 @@
       margin-bottom: 15px;
       border-radius: 5px;
       transition: all 0.3s ease-in-out;
-      min-height: 250px;
-      max-height: 300px;
+      max-height: 250px;
       object-fit: contain;
     }
   }
-
-  * {
-    text-align: center !important;
-  }
-
   .brand {
     display: block;
     font-size: 0.85rem;
@@ -60,38 +54,8 @@
     font-weight: 500;
   }
 
-  .reviews {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-
-    span {
-      font-size: 1.1rem;
-    }
-
-    p {
-      opacity: 0.8;
-      font-size: 0.85rem;
-    }
-  }
-
-  .price {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-
-    span {
-      font-weight: 600;
-      font-size: 1.1rem;
-
-      &.prev {
-        opacity: 0.6;
-        font-weight: 500;
-        text-decoration: line-through;
-      }
-    }
+  .comments {
+    opacity: 0.7;
   }
 
   &:hover {

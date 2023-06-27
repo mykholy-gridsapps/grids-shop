@@ -20,7 +20,7 @@ const FooterTwentyFive = () => {
   return (
     <div className={cls.footer}>
       <div className={cls.footer__top}>
-        <Container maxWidth="xl">
+        <Container maxWidth="xxl">
           <div className={cls.footer__top_wrapper}>
             <h5>
               <i className="fa-light fa-paper-plane-top"></i>{" "}
@@ -31,17 +31,17 @@ const FooterTwentyFive = () => {
               className={`${cls.navbar__search__searchArea} ${cls.rounded} ${cls[i18n.language]
                 }`}
             >
-              <input type="text" placeholder="Search" />
+              <input type="text" placeholder="Enter Email Address" />
 
               <button>
-                <i className="fa-light fa-magnifying-glass"></i>
+                SignUp
               </button>
             </div>
           </div>
         </Container>
       </div>
 
-      <Container maxWidth="xl">
+      <Container maxWidth="xxl">
         <div className={cls.footer__columns}>
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} md={4}>
@@ -190,7 +190,7 @@ const FooterTwentyFive = () => {
       </Container>
 
       <div className={cls.footer__bottom}>
-        <Container maxWidth="xl" className={cls.footer__bottom_wrapper}>
+        <Container maxWidth="xxl" className={cls.footer__bottom_wrapper}>
           <span>© Tripple shop - All Rights Reserved</span>
 
           <img

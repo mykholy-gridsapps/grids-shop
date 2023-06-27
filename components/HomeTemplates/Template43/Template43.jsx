@@ -6,7 +6,7 @@ import CategoriesThirtyFive from '../../Categories/CategoriesThirtyFive/Categori
 import CollectionFiftyEight from '../../Collections/CollectionFiftyEight/CollectionFiftyEight';
 import CollectionFourtyFive from '../../Collections/CollectionFourtyFive/CollectionFourtyFive';
 import DetailsOne from "../../details/DetailsOne/DetailsOne";
-import NewsLetterEight from '../../Newsletter/NewsLetterEight/NewsLetterEight';
+import NewsLetterEight from '../../Newsletter/NewsletterEight/NewsletterEight';
 import BlogTwelve from '../../Blogs/BlogTwelve/BlogTwelve';
 import BrandsOne from '../../Brands/BrandsOne/BrandsOne';
 // MATERIAL STUFF
