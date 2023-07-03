@@ -13,18 +13,18 @@ import { useTranslation } from "next-i18next";
 
 import cls from './collection116.module.scss';
 
-const Collection107 = () => {
+const Collection116 = ({ slides }) => {
   const [activeTab, setActiveTab] = useState('today');
   const { t, i18n } = useTranslation('common');
 
   const renderView = () => {
     switch (activeTab) {
       case 'today':
-        return <TodaysDeals />
+        return <TodaysDeals slides={slides} />
       case 'featured':
-        return <FeaturedProducts />
+        return <FeaturedProducts slides={slides} />
       case 'best':
-        return <BestSelling />
+        return <BestSelling slides={slides} />
     }
   }
 
@@ -44,4 +44,4 @@ const Collection107 = () => {
   )
 }
 
-export default Collection107;
+export default Collection116;

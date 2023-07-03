@@ -1,0 +1,18 @@
+@import '../../../styles/mixins.scss';
+
+.deals {
+  .offerSaving {
+    background-color: var(--secondary-background);
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .sale {
+    margin-bottom: 40px;
+  }
+
+  .swiper {
+    padding-bottom: 30px;
+  }
+}

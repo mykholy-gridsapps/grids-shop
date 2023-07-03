@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import cls from './bestSelling.module.scss';
 
-const BestSelling = () => {
+const BestSelling = ({ slides }) => {
   const breakpoints = {
     300: {
       slidesPerView: 1,
@@ -20,7 +20,7 @@ const BestSelling = () => {
       slidesPerView: 4,
     },
     1400: {
-      slidesPerView: 5,
+      slidesPerView: slides || 5,
     },
   }
 

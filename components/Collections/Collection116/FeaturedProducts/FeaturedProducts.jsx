@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import cls from './featuredProducts.module.scss';
 
-const FeaturedProducts = () => {
+const FeaturedProducts = ({ slides }) => {
   const breakpoints = {
     300: {
       slidesPerView: 1,
@@ -20,7 +20,7 @@ const FeaturedProducts = () => {
       slidesPerView: 4,
     },
     1400: {
-      slidesPerView: 5,
+      slidesPerView: slides || 5,
     },
   }
 
