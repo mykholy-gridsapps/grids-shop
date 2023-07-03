@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import ProductFifty from '../../ProductCard/ProductFifty/ProductFifty';
-import SaleTwenty from "../../Sale/SaleTwentySeven/SaleTwentySeven";
+import SaleTwentySeven from "../../Sale/SaleTwentySeven/SaleTwentySeven";
 import OfferCardNine from "../../OfferCards/OfferCardNine/OfferCardNine";
 
 import Container from "@mui/material/Container";
@@ -38,7 +38,7 @@ const Collection121 = ({ slides }) => {
     <div className={cls.deals}>
       <Container maxWidth="xxl">
         <div className={cls.sale}>
-          <SaleTwenty />
+          <SaleTwentySeven />
         </div>
         <div className={cls.view}>
           <Grid container spacing={2}>

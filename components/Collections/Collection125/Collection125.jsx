@@ -1,16 +1,19 @@
 import { useState } from 'react';
 
-import ProductFourtyNine from '../../ProductCard/ProductFourtyNine/ProductFourtyNine';
+import ProductFifty from '../../ProductCard/ProductFifty/ProductFifty';
+import SaleFourty from '../../Sale/SaleFourty/SaleFourty';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from "swiper";
 
+import Grid from '@mui/material/Grid';
+
 import { useTranslation } from 'next-i18next';
 
 import 'swiper/css';
-import cls from './collection112.module.scss';
+import cls from './collection125.module.scss';
 
-const Collection112 = ({ rounded, slides }) => {
+const Collection125 = ({ rounded }) => {
   const [currentCategory, setCurrentCategory] = useState(1)
   const { i18n } = useTranslation();
 
@@ -18,28 +21,41 @@ const Collection112 = ({ rounded, slides }) => {
     0: {
       slidesPerView: 1,
     },
-    768: {
+    500: {
       slidesPerView: 2,
     },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
     1200: {
-      slidesPerView: slides || 3,
+      slidesPerView: 6,
     },
   }
 
   return (
     <div className={`${cls.homeCategory} ${rounded ? cls.rounded : ''}`}>
+      <div className={cls.sale}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={6}>
+            <SaleFourty />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <SaleFourty />
+          </Grid>
+        </Grid>
+      </div>
       <div className={cls.homeCategory__wrapper}>
         <div className={`${cls.homeCategory__head} ${cls[i18n.language]}`}>
           <h3>
             Electronics
             <span></span>
           </h3>
-          <div>
-            <span className={currentCategory === 1 ? cls.active : ''} onClick={() => setCurrentCategory(1)}>Labtops</span>
-            <span className={currentCategory === 2 ? cls.active : ''} onClick={() => setCurrentCategory(2)}>Memory Cards</span>
-            <span className={currentCategory === 3 ? cls.active : ''} onClick={() => setCurrentCategory(3)}>External Hard Drives</span>
-            <span className={currentCategory === 4 ? cls.active : ''} onClick={() => setCurrentCategory(4)}>SSDs</span>
-          </div>
+          <p>
+            Go to Daily Deals Section <i className={`fa-regular fa-angle-${i18n.language === 'en' ? 'right' : 'left'}`}></i>
+          </p>
         </div>
         <div className={`${cls.homeCategory__products} ${cls[i18n.language]}`}>
           <Swiper
@@ -53,9 +69,9 @@ const Collection112 = ({ rounded, slides }) => {
             className={cls.swiper}
             breakpoints={breakpoints}
           >
-            {[...Array(5)].map((_, idx) => (
+            {[...Array(10)].map((_, idx) => (
               <SwiperSlide key={idx}>
-                <ProductFourtyNine />
+                <ProductFifty />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -65,4 +81,4 @@ const Collection112 = ({ rounded, slides }) => {
   )
 }
 
-export default Collection112;
+export default Collection125;

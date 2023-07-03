@@ -17,8 +17,6 @@ import FooterTwentyFive from '../../Footers/FooterTwentyFive/FooterTwentyFive';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 
-import cls from './template.module.scss';
-
 const Template64 = () => {
   return (
     <>
