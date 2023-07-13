@@ -1,0 +1,22 @@
+.categoriesCarousel {
+    padding-top: 60px;
+    padding-bottom: 33px;
+
+    .title {
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        justify-content: center;
+
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -0.025em;
+            color: var(--text-dark);
+            margin-bottom: 18px;
+            text-transform: uppercase;
+        }
+    }
+}

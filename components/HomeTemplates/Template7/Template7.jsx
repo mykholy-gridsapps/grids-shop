@@ -12,8 +12,10 @@ import SaleFiftySeven from "../../Sale/SaleFiftySeven/SaleFiftySeven";
 import SaleFiftyEight from "../../Sale/SaleFiftyEight/SaleFiftyEight";
 import SaleFiftyNine from "../../Sale/SaleFiftyNine/SaleFiftyNine";
 import FooterFour from "../../Footers/FooterFour/FooterFour";
+import CollectionEightySix from "../../Collections/CollectionEightySix/CollectionEightySix";
 
 import cls from "./template7.module.scss"
+import CollectionSeventyEight from "../../Collections/CollectionSeventyEight/CollectionSeventyEight";
 
 
 const Template7 = () => {
@@ -26,7 +28,7 @@ const Template7 = () => {
             <SaleFiftySix />
           </Grid>
           <Grid item lg={3} sm={6} xs={12}>
-            <Grid container  className={cls.banners}>
+            <Grid container className={cls.banners}>
               <Grid item xs={12} className={cls.banner}>
                 <SaleFiftyEight />
               </Grid>
@@ -43,9 +45,10 @@ const Template7 = () => {
       </Container>
       <CategoriesThree />
       <Container maxWidth="xl" >
+        <CollectionEightySix />
+        <CollectionSeventyEight />
 
-        <CollectionSixtySeven />
-        <BrandsOne slides="6"/>
+        <BrandsOne slides="6" />
         <Grid container spacing={3}>
           <Grid item md={6} xs={12}>
             <BlogThree />
@@ -55,7 +58,7 @@ const Template7 = () => {
           </Grid>
         </Grid>
       </Container>
-      <FooterFour/>
+      <FooterFour />
     </>
   );
 };

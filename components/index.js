@@ -29,6 +29,7 @@ export { default as Template16 } from './HomeTemplates/Template16/Template16';
 export { default as Template17 } from './HomeTemplates/Template17/Template17';
 export { default as Template18 } from './HomeTemplates/Template18/Template18';
 export { default as Template19 } from './HomeTemplates/Template19/Template19';
+export { default as Template20 } from './HomeTemplates/Template20/Template20';
 
 export { default as Template43 } from './HomeTemplates/Template43/Template43';
 
