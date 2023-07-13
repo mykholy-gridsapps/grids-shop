@@ -5,7 +5,7 @@ import Container from "@mui/material/Container";
 import MiddleHeader from './MiddleHeader';
 import TopHeader from './TopHeader';
 import LinkDropdown from '../LinkDropdown/LinkDropdown';
-import CategoriesSideOne from "../../CategoriesSide/CategoriesSideOne/CategoriesSideOne";
+import CategoriesSideTwo from "../../CategoriesSide/CategoriesSideTwo/CategoriesSideTwo";
 import AnimatedIcons from "./../../UIs/AnimatedIcons/AnimatedIcons";
 
 import { useTranslation } from "next-i18next";
@@ -28,7 +28,7 @@ const HeaderNine = ({ openCategories }) => {
 
           <div className={`${cls.links} ${cls[i18n.language]}`}>
             <div className={cls.sideCategories}>
-              <CategoriesSideOne classCustome={true} open={openCategories} background={`var(--main-color)`} />
+              <CategoriesSideTwo classCustome={true} open={openCategories} background={`var(--main-color)`} />
             </div>
             <ul className={`${cls.navLinks} ${cls[i18n.language]}`}>
               <li

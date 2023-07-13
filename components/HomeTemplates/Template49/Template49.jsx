@@ -7,7 +7,7 @@ import BlogEighteen from '../../Blogs/BlogEighteen/BlogEighteen';
 import TestimonialSeven from '../../Testimonials/TestimonialSeven/TestimonialSeven';
 
 import NewsletterEighteen from '../../Newsletter/NewsletterEighteen/NewsletterEighteen';
-import FooterFourteen from "../../footers/FooterFourteen/FooterFourteen";
+import FooterFourteen from "../../Footers/FooterFourteen/FooterFourteen";
 
 import Container from "@mui/material/Container";
 

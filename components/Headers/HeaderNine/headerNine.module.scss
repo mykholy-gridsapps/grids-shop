@@ -16,9 +16,11 @@
       }
 
       .links {
-        padding-left: 270px;
+        display: flex;
+        align-items: center;
 
         .sideCategories {
+          min-width: 260px;
           h2 {
             border-radius: 5px !important;
             border: none !important;

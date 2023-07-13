@@ -1,0 +1,113 @@
+@import '../../../styles/mixins.scss';
+@import '../../../styles/extends.scss';
+
+.homeCategory {
+  margin: 50px 0;
+  .homeCategory__wrapper {
+    .homeCategory__head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      position: relative;
+      border-bottom: 1px solid var(--border-color);
+      padding: 0px 0 5px;
+      h3 {
+        font-size: 1.1rem;
+        font-weight: 500;
+        display: flex;
+        span {
+          position: absolute;
+          bottom: -2px;
+          height: 3px;
+          background-color: var(--main-color);
+          width: 100px;
+        }
+      }
+
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 5px;
+        span {
+          padding: 5px 20px;
+          cursor: pointer;
+          font-size: 0.9rem;
+          border-radius: 20px;
+          &.active {
+            border: 2px solid var(--main-color);
+          }
+        }
+      }
+      &.rounded {
+        border-radius: 20px;
+        div {
+          span {
+            border-radius: 20px;
+          }
+        }
+      }
+    }
+    .homeCategory__products {
+      background-color: var(--secondary-background);
+      display: grid;
+      grid-template-columns: repeat(11, 1fr);
+      gap: 10px;
+      padding: 0 5px;
+      @include sm {
+        grid-template-columns: repeat(12, 1fr);
+      }
+      .side {
+        grid-column: span 2;
+        @include lg {
+          grid-column: span 3;
+        }
+        @include md {
+          grid-column: span 3;
+        }
+        @include sm {
+          grid-column: span 6 !important;
+        }
+        @include xs {
+          grid-column: span 12 !important;
+        }
+      }
+      .panner {
+        grid-column: span 3;
+        grid-row: span 6;
+        img {
+          object-fit: cover;
+        }
+        @include md {
+          grid-column: span 5;
+        }
+        @include sm {
+          grid-column: span 12;
+        }
+      }
+      @include lg {
+        .side {
+          &:nth-of-type(1),
+          &:nth-of-type(4),
+          &:nth-of-type(5) {
+            display: none;
+          }
+        }
+      }
+      @include sm {
+        .side {
+          grid-column: span 6;
+        }
+        .center {
+          display: none;
+        }
+      }
+      @include xs {
+        .side {
+          grid-column: span 12;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import '../../../styles/extends.scss';
+
+.collection {
+  .head {
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--heavy-border);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+      display: flex;
+      span {
+        position: absolute;
+        bottom: -2px;
+        height: 3px;
+        background-color: var(--main-color);
+        width: 100px;
+      }
+    }
+    div {
+      display: flex;
+      button {
+        @extend %swiperCustomArrows;
+      }
+    }
+  }
+  .swiper {
+    padding-bottom: 30px;
+  }
+}

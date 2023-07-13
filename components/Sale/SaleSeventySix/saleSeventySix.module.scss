@@ -1,0 +1,20 @@
+.sale {
+  img {
+    height: 350px;
+  }
+
+  h3,
+  p {
+    text-align: center !important;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--main-color);
+  }
+
+  p {
+    opacity: 0.7;
+  }
+}

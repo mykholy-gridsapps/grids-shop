@@ -1,0 +1,37 @@
+.categories {
+  .category {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    background-color: var(--secondary-background);
+    padding: 5px 10px;
+
+    img {
+      width: 120px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+
+    &:hover {
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

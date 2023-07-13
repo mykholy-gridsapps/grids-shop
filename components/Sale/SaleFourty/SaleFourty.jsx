@@ -7,7 +7,7 @@ const SaleFourty = () => {
     <div className={cls.saleFourty}>
       <span></span>
       <Grid container>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12}>
           <div className={cls.content}>
             <div className={cls.sale}>
               <span>END OF SEASON</span>

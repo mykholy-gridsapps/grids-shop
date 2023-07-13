@@ -9,7 +9,6 @@ import CollectionFourtyOne from '../../Collections/CollectionFourtyOne/Collectio
 import BlogNineteen from '../../Blogs/BlogNineteen/BlogNineteen';
 import FeaturesEleven from '../../Features/FeaturesEleven/FeaturesEleven';
 import NewsletterNineteen from '../../Newsletter/NewsletterNineteen/NewsletterNineteen';
-
 import FooterTwentyFour from '../../Footers/FooterTwentyFour/FooterTwentyFour';
 
 import Container from '@mui/material/Container';
