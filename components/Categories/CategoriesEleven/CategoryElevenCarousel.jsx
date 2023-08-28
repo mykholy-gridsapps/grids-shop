@@ -17,25 +17,25 @@ const CategoryElevenCarousel = () => {
     return (
         <div className={`${cls.categoriesCarousel} ${cls[i18n.language]}`}>
             <h2 className={cls.sectionTitle}>Browse By Category</h2>
-            <Swiper 
-            slidesPerView={1} 
-            spaceBetween={20} 
-            navigation={true} 
-            modules={[Navigation]}
-            breakpoints={{
-                450: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 20,
-                },
-                992: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                },
-            }}>
+            <Swiper
+                slidesPerView={1}
+                spaceBetween={20}
+                navigation={true}
+                modules={[Navigation]}
+                breakpoints={{
+                    450: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    992: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                }}>
                 {array.map((_, idx) =>
                     <SwiperSlide key={idx}>
                         <CategoryEleven />

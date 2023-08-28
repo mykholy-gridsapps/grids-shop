@@ -1,13 +1,11 @@
-import HeaderThirtyEight from '../../Headers/HeaderThirtyEight/HeaderThirtyEight';
+import HeaderThirtyNine from '../../Headers/HeaderThirtyNine/HeaderThirtyNine';
 import SliderFourtyThree from '../../MainSlider/SliderFourtyThree/SliderFourtyThree';
-import Collection124 from '../../Collections/Collection124/Collection124';
+import Collection127 from '../../Collections/Collection127/Collection127';
 import Collection125 from '../../Collections/Collection125/Collection125';
-import Collection126 from '../../Collections/Collection126/Collection126';
-import Collection112 from '../../Collections/Collection112/Collection112';
-import CategoriesFourtyEight from '../../Categories/CategoriesFourtyEight/CategoriesFourtyEight';
+import Collection128 from '../../Collections/Collection128/Collection128';
+import CategoriesFourtyNine from '../../Categories/CategoriesFourtyNine/CategoriesFourtyNine';
 import SaleFourty from '../../Sale/SaleFourty/SaleFourty';
-import SaleFiftyThree from '../../Sale/SaleFiftyThree/SaleFiftyThree';
-import SaleFourtyThree from '../../Sale/SaleFourtyThree/SaleFourtyThree';
+import SaleSeventySeven from '../../Sale/SaleSeventySeven/SaleSeventySeven';
 
 import BrandsTwelve from '../../Brands/BrandsTwelve/BrandsTwelve';
 import BriefCollectionSix from '../../BriefCollections/BriefCollectionSix/BriefCollectionSix';
@@ -20,19 +18,48 @@ const Template68 = () => {
   return (
     <>
 
-      <HeaderThirtyEight />
+      <HeaderThirtyNine />
 
       <SliderFourtyThree />
 
       <Container maxWidth="xxl">
 
-        <div className="margin">
-          <BrandsTwelve />
+        <div style={{ marginTop: '20px' }}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+              <SaleFourty />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <SaleFourty />
+            </Grid>
+          </Grid>
         </div>
+
+        <CategoriesFourtyNine />
+
+        <div className="margin">
+          <Collection127 />
+        </div>
+
+        <Collection125 />
+
+        <div className="margin">
+          <Collection128 withSale={true} />
+        </div>
+
+        <Collection128 />
+
+        <div className="margin">
+          <SaleSeventySeven />
+        </div>
+
+        <BrandsTwelve />
 
       </Container>
 
-      <BriefCollectionSix />
+      <div className='marginTop'>
+        <BriefCollectionSix />
+      </div>
 
       <FooterTwentyFive />
 

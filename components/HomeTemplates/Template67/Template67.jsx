@@ -30,7 +30,7 @@ const Template67 = () => {
           <Collection124 />
         </div>
 
-        <Collection125 />
+        <Collection125 withSale={true} />
 
         <div className="margin">
           <Collection126 />

@@ -1,16 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from 'react';
 
+import ProductFifty from '../../ProductCard/ProductFifty/ProductFifty';
+
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+
 import { useTranslation } from 'next-i18next';
 
+import 'swiper/css';
 import cls from './sliderFourtyThree.module.scss';
 
 const SliderFourtyThree = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
   const { i18n } = useTranslation();
+  const array = [...Array(8)];
 
   const tabs = [
     'So much to watch in 4k tvs',
@@ -144,57 +150,37 @@ const SliderFourtyThree = () => {
 
           </Grid>
 
+          <div className={cls.products}>
+            <Swiper
+              slidesPerView={1}
+              loop={false}
+              spaceBetween={5}
+              className={cls.swiper}
+              breakpoints={{
+                500: {
+                  slidesPerView: 2,
+                },
+                768: {
+                  slidesPerView: 3,
+                },
+                992: {
+                  slidesPerView: 4,
+                },
+                1200: {
+                  slidesPerView: 6,
+                },
+              }}>
+              {array.map((_, idx) =>
+                <SwiperSlide key={idx}>
+                  <ProductFifty />
+                </SwiperSlide>
+              )}
+            </Swiper>
+          </div>
+
         </Container>
 
       </div>
-
-      <Container maxWidth="xxl">
-        <div className={cls.announs}>
-          <Grid container justifyContent="center" spacing={3}>
-
-            <Grid item sm={6} lg={4} xl={3}>
-              <div className={cls.announs_box}>
-                <img src="/imgs/header/Sounddevice.png" alt="image" />
-                <div className={cls.details}>
-                  <h3>Catch the hotest deals</h3>
-                  <p>$300</p>
-                </div>
-              </div>
-            </Grid>
-
-            <Grid item sm={6} lg={4} xl={3}>
-              <div className={cls.announs_box}>
-                <img src="/imgs/header/annuon3.png" alt="image" />
-                <div className={cls.details}>
-                  <h3>Catch the hotest deals</h3>
-                  <p>$300</p>
-                </div>
-              </div>
-            </Grid>
-
-            <Grid item sm={6} lg={4} xl={3}>
-              <div className={cls.announs_box}>
-                <img src="/imgs/header/headphone.png" alt="image" />
-                <div className={cls.details}>
-                  <h3>Catch the hotest deals</h3>
-                  <p>$300</p>
-                </div>
-              </div>
-            </Grid>
-
-            <Grid item sm={6} lg={4} xl={3}>
-              <div className={cls.announs_box}>
-                <img src="/imgs/header/Sounddevice.png" alt="image" />
-                <div className={cls.details}>
-                  <h3>Catch the hotest deals</h3>
-                  <p>$300</p>
-                </div>
-              </div>
-            </Grid>
-
-          </Grid>
-        </div>
-      </Container>
     </div>
   )
 }

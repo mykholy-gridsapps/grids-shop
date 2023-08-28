@@ -13,7 +13,7 @@ import { useTranslation } from 'next-i18next';
 import 'swiper/css';
 import cls from './collection125.module.scss';
 
-const Collection125 = ({ rounded }) => {
+const Collection125 = ({ withSale, rounded }) => {
   const [currentCategory, setCurrentCategory] = useState(1)
   const { i18n } = useTranslation();
 
@@ -37,16 +37,18 @@ const Collection125 = ({ rounded }) => {
 
   return (
     <div className={`${cls.homeCategory} ${rounded ? cls.rounded : ''}`}>
-      <div className={cls.sale}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={6}>
-            <SaleFourty />
+      {withSale &&
+        <div className={cls.sale}>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+              <SaleFourty />
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <SaleFourty />
+            </Grid>
           </Grid>
-          <Grid item xs={12} md={6}>
-            <SaleFourty />
-          </Grid>
-        </Grid>
-      </div>
+        </div>
+      }
       <div className={cls.homeCategory__wrapper}>
         <div className={`${cls.homeCategory__head} ${cls[i18n.language]}`}>
           <h3>

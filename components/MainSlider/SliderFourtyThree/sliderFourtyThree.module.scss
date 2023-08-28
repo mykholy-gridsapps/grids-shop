@@ -87,13 +87,13 @@
       margin: 0;
       padding: 10px 20px;
       font-weight: 600;
-      font-size: 1.1rem;
+      font-size: 1rem;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 10px;
-      position:relative;
+      position: relative;
       &.active {
         background-color: var(--main-color);
         color: #fff;
@@ -139,7 +139,7 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
-        position:relative;
+        position: relative;
         &.active {
           &:after {
             top: 6px;
@@ -209,6 +209,12 @@
         color: var(--main-color);
         margin-top: 15px;
       }
+    }
+  }
+
+  .products {
+    .swiper {
+      padding-bottom: 40px;
     }
   }
 }
