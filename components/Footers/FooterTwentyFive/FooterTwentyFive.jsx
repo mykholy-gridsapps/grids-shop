@@ -175,7 +175,7 @@ const FooterTwentyFive = () => {
             </Grid>
 
             <Grid item xs={12} sm={6} md={2} className={cls.footerPart}>
-              <h4>Care</h4>
+              <h4>Customer Care</h4>
               <ul>
                 <li>My Account</li>
                 <li>Track your Order</li>

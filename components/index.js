@@ -86,3 +86,9 @@ export { default as Template66 } from './HomeTemplates/Template66/Template66';
 export { default as Template67 } from './HomeTemplates/Template67/Template67';
 
 export { default as Template68 } from './HomeTemplates/Template68/Template68';
+
+export { default as Template69 } from './HomeTemplates/Template69/Template69';
+
+export { default as Template70 } from './HomeTemplates/Template70/Template70';
+
+export { default as Template71 } from './HomeTemplates/Template71/Template71';

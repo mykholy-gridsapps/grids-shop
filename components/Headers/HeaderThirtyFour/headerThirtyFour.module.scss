@@ -1,9 +1,10 @@
 @import "../../../styles/extends.scss";
 
 .header {
-  padding: 0px;
-  background-color: transparent;
   position: relative;
+  z-index: 2;
+  padding: 0px;
+  background-color: var(--secondary-background);
   border-bottom: 1px solid var(--heavy-border);
 
   .container {
