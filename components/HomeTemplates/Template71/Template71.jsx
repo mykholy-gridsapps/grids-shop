@@ -1,6 +1,7 @@
-import HeaderFourty from '../../Headers/HeaderFourty/HeaderFourty';
-import SliderFourtyFour from '../../MainSlider/SliderFourtyFour/SliderFourtyFour';
+import HeaderTwentyTwo from '../../Headers/HeaderTwentyTwo/HeaderTwentyTwo';
+import SliderFourtyFive from '../../MainSlider/SliderFourtyFive/SliderFourtyFive';
 import Collection128 from '../../Collections/Collection128/Collection128';
+import Collection125 from '../../Collections/Collection125/Collection125';
 import Collection129 from '../../Collections/Collection129/Collection129';
 import SaleFourty from '../../Sale/SaleFourty/SaleFourty';
 import SaleTwentySeven from '../../Sale/SaleTwentySeven/SaleTwentySeven';
@@ -18,13 +19,24 @@ const Template71 = () => {
   return (
     <>
 
-      <HeaderFourty />
+      <HeaderTwentyTwo size="xxl" />
 
-      <SliderFourtyFour />
+      <SliderFourtyFive />
 
       <Container maxWidth="xxl">
 
+        {/* Component Here */}
         <div className="margin">
+          <Collection125 />
+        </div>
+
+        <Collection125 />
+
+        <div className="margin">
+          <Collection125 />
+        </div>
+
+        {/* <div className="margin">
           <Collection130 />
         </div>
 
@@ -51,7 +63,9 @@ const Template71 = () => {
               <SaleFourty />
             </Grid>
           </Grid>
-        </div>
+        </div> */}
+
+        {/* <Collection129 /> */}
 
         <BrandsTwelve />
 

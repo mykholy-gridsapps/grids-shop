@@ -8,10 +8,10 @@ import Container from "@mui/system/Container";
 
 import cls from "./topHeader.module.scss";
 
-const TopHeader = () => {
+const TopHeader = ({ size }) => {
   return (
     <div className={cls.headerTop}>
-      <Container maxWidth="xl" className={cls.wrapper}>
+      <Container maxWidth={size ? size : 'xl'} className={cls.wrapper}>
         <div className={cls.headerLeft}>
           <p className={cls.topMessage}><i className="fa-solid fa-envelope"></i> info@emallshop.com</p>
           <p className={cls.topMessage}><i className="fa-solid fa-phone"></i> +81 59832452528</p>

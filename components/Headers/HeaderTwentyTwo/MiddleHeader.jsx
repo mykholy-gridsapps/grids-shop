@@ -16,7 +16,7 @@ import Tooltip from "@mui/material/Tooltip";
 
 import cls from "./middleHeader.module.scss";
 
-const MiddleHeader = () => {
+const MiddleHeader = ({ size }) => {
   const [navDropdown, setNavDropdown] = useState(0);
   const [openSidebar, setOpenSidebar] = useState(false);
   const [openSmallSearch, setOpenSmallSearch] = useState(false);
@@ -24,7 +24,7 @@ const MiddleHeader = () => {
 
   return (
     <div className={cls.headerMiddle}>
-      <Container maxWidth="xl">
+      <Container maxWidth={size ? size : 'xl'}>
         <Grid container justifyContent="space-between" alignItems="center">
           <Grid item lg={3} className={cls.headerLeft}>
             <div className={cls.logo}>

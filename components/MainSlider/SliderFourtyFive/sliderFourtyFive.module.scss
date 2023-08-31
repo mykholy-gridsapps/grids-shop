@@ -1,0 +1,128 @@
+@import '../../../styles/extends.scss';
+
+.header {
+  transform: translateY(-2px);
+  .header_wrapper {
+    background-color: var(--main-color);
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .header__slider {
+    .slide {
+      height: 500px;
+      overflow: hidden;
+      color: var(--text-inside);
+      p {
+        font-weight: 700;
+        font-size: 1.2rem;
+      }
+      .title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+      button {
+        @extend %mainBtn;
+        margin-top: 40px;
+      }
+      .details {
+        .price {
+          color: var(--secondary-color);
+        }
+        button {
+          border: 1px solid var(--text-inside);
+          margin-top: 20px;
+        }
+      }
+    }
+    img {
+      height: 500px;
+      object-fit: contain;
+    }
+    @include sm {
+      .slide {
+        height: auto;
+        overflow: hidden;
+        p {
+          text-align: center !important;
+        }
+        .title {
+          text-align: center !important;
+        }
+      }
+    }
+  }
+  @include sm {
+
+    .header_wrapper {
+      height: auto;
+    }
+
+    .header__slider {
+      .slide {
+        height: 600px;
+        overflow: hidden;
+        padding-top: 50px;
+        .label {
+          color: var(--main-color);
+        }
+        .title {
+          font-size: 2.8rem;
+        }
+        .price {
+          font-size: 2.2rem;
+          font-weight: bold;
+        }
+        button {
+          margin-top: 20px;
+        }
+        @include sm {
+          height: auto;
+          padding-bottom: 30px;
+          .details {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            h4 {
+              text-align: center !important;
+            }
+          }
+        }
+      }
+      img {
+        height: 300px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .announs {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    .announs_box {
+      background-color: var(--special-background);
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+      }
+      p {
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: var(--main-color);
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .categories {
+    background-color: var(--main-color);
+    padding: 20px 0px;
+    border-top: 1px solid var(--text-inside);
+  }
+}

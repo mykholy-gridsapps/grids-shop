@@ -12,17 +12,17 @@ import { useTranslation } from "next-i18next";
 
 import cls from './headerTwentyTwo.module.scss';
 
-const HeaderTwenty = ({ openSideCategories }) => {
+const HeaderTwenty = ({ openSideCategories, size }) => {
   const [navDropdown, setNavDropdown] = useState(0);
   const { t, i18n } = useTranslation('common');
 
   return (
     <div className={cls.navbar}>
-      <TopHeader />
-      <MiddleHeader />
+      <TopHeader size={size} />
+      <MiddleHeader size={size} />
 
       <div className={cls.navbar__main}>
-        <Container maxWidth="xl" className={`${cls.navbar_mainNav}`}>
+        <Container maxWidth={size ? size : 'xl'} className={`${cls.navbar_mainNav}`}>
           <div className={cls.smallLogo}>
             <i
               className="fa-light fa-grid-2"
